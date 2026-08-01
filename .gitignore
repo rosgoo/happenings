@@ -1,0 +1,31 @@
+# Raw upstream feeds — regenerable via fetch.py, and large. Deliberately not
+# committed: they churn three times a day, so git would store fresh blobs for no
+# diffing benefit. Actions passes them between jobs as artifacts instead.
+# data/ is the part that earns version control.
+raw/
+
+# Run logs
+data/*.out
+
+# This run's changed events, handed to the alert matcher. Not a durable
+# artifact — event-history.jsonl is the ledger.
+data/event-changes.json
+
+# Development page cache — raw venue pages kept so parser changes can be
+# re-applied without re-crawling. Local working files, never published.
+data/page-cache/
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Astro / Vercel
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*.local
+
+# Grove project metadata — local tooling config, not part of the build.
+.grove/
