@@ -94,9 +94,9 @@ enabled source that goes quiet fails the build.
 |---|---|---|---|
 | 2 | `socrata` | NYC Parks Public Events (`w3wp-dpdi`) | **yes** |
 | 2 | `socrata` | NYC Permitted Events (`tvpp-9vvx`) | **yes** |
-| 0 | `predicthq`, `seatgeek` | aggregators — free tiers, need a key | no |
+| 0 | `ticketmaster`, `seatgeek` | ticketing APIs — free keys, aligned incentives | no |
 | 1 | `ics`, `jsonld`, `localist`, `custom` | institutions and arts venues | no |
-| 3 | `ticketmaster` | Discovery API — needs a key, read the terms | no |
+| — | ~~`predicthq`~~ | great coverage, but its licence restricts public display | no |
 
 `fudw-fgrp` and `6v4b-5gp4` are **dead** (newest rows 2019) and are deliberately
 absent rather than silently returning nothing.
@@ -155,11 +155,30 @@ Two things worth knowing:
 - **Article HTML is fetched with a `Range` header**, ~260 KB instead of 1.3 MB.
   Pulling a megabyte of someone else's bandwidth to read one `<img>` is waste.
 
+## Picking data partners
+
+The rule this project learned the hard way, after briefly ranking PredictHQ
+first:
+
+> **Use sources whose business is getting people to the event. Avoid sources
+> whose business is selling the event data.**
+
+A ticketing or artist-promotion API *wants* you to display listings and link
+out — that is how they get paid, and it is exactly what happenings does on
+every row. A demand-intelligence vendor sells exclusivity to customers who
+never show the data to anyone; a free public mirror of their product is against
+their interest, and their licence says so. PredictHQ's terms prohibit
+"republish … display … make available or distribute" their data except as a
+plan specifically grants, and display is plan-gated. Great coverage, wrong
+shape for a public index.
+
 ## What's next
 
-1. **PredictHQ free key** — one signup measures how much of the long tail is
-   already solved before any custom adapter gets written.
-2. **Tier 1 venues** — Pioneer Works, Roulette, LPR, IFC, the university lecture
+1. **Ticketmaster Discovery key** — free, self-serve, instant, 5,000 calls/day.
+   Built for third parties to make event-discovery experiences, so displaying
+   and linking is the point rather than the exception.
+2. **SeatGeek**, then **Songkick / Bandsintown** — same logic, same alignment.
+3. **Tier 1 venues** — Pioneer Works, Roulette, LPR, IFC, the university lecture
    calendars. They're the reason the project exists and none are in yet.
 3. **Subway filter** — designed, not built. Stations don't move, so it's a
    one-time static join against GTFS.
