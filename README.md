@@ -13,16 +13,20 @@ Sibling project to gearherd, and a deliberate inversion of it — same pipeline
 discipline, much friendlier face.
 
 **Status: v1 running on city open data.** 6,100 events · 1,120 venues ·
-162 neighbourhoods · 523 static pages. The interesting venues aren't in it yet
-— see *What's next*.
+196 neighbourhoods · 1,200 places · 577 static pages. 70% of events are placed
+to a neighbourhood; 176 places carry a credited photo. The ticketed venues
+aren't in it yet — see *What's next*.
 
 ## Run it
 
 ```bash
 python3 fetch.py --neighborhoods   # one-off: NTA polygons (changes on the decade)
-python3 fetch.py                   # extract  -> raw/nyc/
+python3 fetch.py --parks           # one-off: park polygons (parks don't move)
+python3 fetch.py                   # extract   -> raw/nyc/
+python3 geocode.py                 # place it  -> data/nyc/geocode-cache.json
 python3 normalize.py               # transform -> data/nyc/
 python3 validate.py                # quality gate; exit 1 blocks the commit
+python3 places.py                  # things that are OPEN, with photos
 
 npm install
 npm run dev                        # http://localhost:4321/nyc
@@ -100,30 +104,70 @@ absent rather than silently returning nothing.
 Eventbrite is skipped: `robots.txt` permits event pages, but they closed public
 search deliberately in 2020 and the ToS needs a real read first.
 
-## What the data honestly is
+## Placing things on a map
 
-- **20% of events are placed to a neighbourhood.** The parks feed carries
-  coordinates; the permits feed gives a street description and a borough.
-  Geocoding those descriptions is the highest-value next step.
-- **0% state a price**, so there is no price filter and nothing is marked free.
+`lib/places.py` is the location service: anything that describes a place —
+coordinates, a park name, a street intersection — resolves through one
+interface to a point, a neighbourhood and a borough. Strategies are tried in
+descending order of authority and each result records which one answered:
+
+| Strategy | What it is | Notes |
+|---|---|---|
+| `coordinates` | already located | just needs the polygon lookup |
+| `register` | NYC Parks Properties polygons | authoritative lookup, not a guess. Does the heavy lifting: 76% of unplaced rows |
+| `gazetteer` | names resolved on an earlier run | a name seen once is free forever |
+| `geocoder` | NYC Planning Labs GeoSearch, keyless | address-shaped strings only, above a confidence floor |
+
+Matching is **exact after normalisation** — no edit distance, no
+nearest-neighbour. Unresolved goes to `geocode-unresolved.csv`, never silently
+into the data. This took neighbourhood coverage from 20% to **70%**.
+
+Swapping in libpostal, a self-hosted Pelias/Nominatim, or shapely for the
+polygon work means appending one strategy, not touching callers.
+
+## What the data honestly is
+- **0% of events state a price**, so there is no price filter and nothing is marked free.
   Most of these events almost certainly are free — asserting it would be
   guessing, and an event with no stated price is *unknown*, not free.
 - **26,000 rows are quarantined** in `data/nyc/rejected.json` with their titles,
   so the classifier is audited by reading a file. Mostly youth/adult league field
   permits: real permits, but not things you can turn up to.
 
+## Images
+
+`places.py` is the only source here that carries photographs. OpenStreetMap
+supplies the places; a linked Wikipedia article's infobox supplies the photo;
+the Commons REST API supplies the author. **An image whose author cannot be
+established is dropped rather than shown uncredited.**
+
+Everything is hotlinked at source and never rehosted — simultaneously the
+correct rights position and the cheapest possible bandwidth policy. Places
+without a photo get their flat category block, which is the design rather than
+an apology.
+
+Two things worth knowing:
+
+- **`api.wikimedia.org` publishes no robots.txt; `wikidata.org` disallows
+  `/w/`.** So the Wikidata P18 route is behind `--wikidata-images`, off by
+  default. Their API policy invites API use with a descriptive User-Agent, so
+  the two documents disagree — that is a judgement for whoever runs this, not
+  something the pipeline should assume.
+- **Article HTML is fetched with a `Range` header**, ~260 KB instead of 1.3 MB.
+  Pulling a megabyte of someone else's bandwidth to read one `<img>` is waste.
+
 ## What's next
 
 1. **PredictHQ free key** — one signup measures how much of the long tail is
    already solved before any custom adapter gets written.
-2. **Geocode permitted-event locations** — takes neighbourhood coverage from 20%
-   to most of the way, and the neighbourhood spine is the whole design.
-3. **Tier 1 venues** — Pioneer Works, Roulette, LPR, IFC, the university lecture
+2. **Tier 1 venues** — Pioneer Works, Roulette, LPR, IFC, the university lecture
    calendars. They're the reason the project exists and none are in yet.
-4. **Subway filter** — designed, not built. Stations don't move, so it's a
+3. **Subway filter** — designed, not built. Stations don't move, so it's a
    one-time static join against GTFS.
-5. **Series detection**, then neighbourhood **reach** (nobody lives inside a
+4. **Series detection**, then neighbourhood **reach** (nobody lives inside a
    polygon).
+5. **The last 30% of geocoding** — 518 unresolved locations, mostly street
+   intersections GeoSearch missed. `geocode-unresolved.csv` is ranked by how
+   many events ride on each.
 
 ## Legal posture
 

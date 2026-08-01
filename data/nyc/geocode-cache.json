@@ -1,0 +1,3467 @@
+{
+"10 AVENUE between WEST   57 STREET and WEST   58 STREET": null,
+"10 STREET between 7 AVENUE and 8 AVENUE": null,
+"100% Playground": {
+"confidence": 1.0,
+"lat": 40.64641082258553,
+"lon": -73.89916945827606,
+"matched": "100% Playground",
+"source": "parks-properties"
+},
+"101 AVENUE between 115 STREET and 113 STREET": null,
+"10612 LIVERPOOL STREET, TUSKEGEE AIRMAN WAY between LIVERPOOL STREET and PRINCETON STREET,  PRINCETON STREET between TUSKEGEE AIRMEN WAY and 106 AVENUE,  PRINCETON STREET between 106 AVENUE and 105 AVENUE,  105 AVENUE between PRINCETON STREET and LIVERPOOL STREET,  105 AVENUE between LIVERPOOL STREET and WALTHAM STREET,  WALTHAM STREET between 105 AVENUE and 106 AVENUE,  106 AVENUE between WALTHAM STREET and LIVERPOOL STREET, 10612 LIVERPOOL STREET": null,
+"107 STREET between SUTTER AVENUE and DEAD END STREET": null,
+"108 STREET between 107 AVENUE and 109 AVENUE": null,
+"109 AVENUE Open Street 2026": {
+"confidence": 0.8,
+"lat": 40.679628,
+"lon": -73.972733,
+"matched": "109 ST MARKS AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"109 STREET between 107 AVENUE and 109 AVENUE": null,
+"112 ROAD between 221 STREET and 223 STREET": null,
+"113 BAXTER STREET, BAXTER STREET between HESTER STREET and CANAL STREET,  BAXTER STREET between CANAL STREET and BAYARD STREET,  BAYARD STREET between BAXTER STREET and MOTT STREET,  MOTT STREET between BAYARD STREET and PARK ROW,  ST JAMES PLACE between WORTH STREET and MADISON STREET,  MADISON STREET between ST JAMES PLACE and CATHERINE STREET,  WORTH STREET between PARK ROW and MULBERRY STREET,  MULBERRY STREET between WORTH STREET and BROOME STREET,  CANAL STREET between MULBERRY STREET and BAXTER STREET,  JAMES STREET between ST JAMES PLACE and MADISON STREET, 113 BAXTER STREET": null,
+"116 ROAD between NASHVILLE BOULEVARD and SPRINGFIELD BOULEVARD": null,
+"116 STREET between ATLANTIC AVENUE and 95 AVENUE": null,
+"117 STREET between 133 AVENUE and 135 AVENUE": null,
+"122- 02 123 STREET,122 02 123 STREET,111 - 14 101 AVENUE, LIBERTY AVENUE between 123 STREET and 111 STREET,  111 STREET between LIBERTY AVENUE and 101 AVENUE": null,
+"123 STREET between LIBERTY AVENUE and 107 AVENUE": null,
+"123 STREET between ROCKAWAY BOULEVARD and SUTTER AVENUE": null,
+"124 STREET between LINDEN BOULEVARD and 115 AVENUE": null,
+"133 STREET between FOCH BOULEVARD and 116 AVENUE": null,
+"134 STREET between 115 AVENUE and 116 AVENUE": null,
+"134 STREET between ADAM CLAYTON POWELL JR BOULEVARD and FREDERICK DOUGLASS BLVD,  ADAM CLAYTON POWELL JR BOULEVARD between WEST  134 STREET and WEST  135 STREET,  ADAM CLAYTON POWELL JR BOULEVARD between WEST  135 STREET and WEST  136 STREET,  WEST  136 STREET between ADAM CLAYTON POWELL JR BOULEVARD and MALCOLM X BOULEVARD,  MALCOLM X BOULEVARD between WEST  137 STREET and WEST  138 STREET,  MALCOLM X BOULEVARD between WEST  138 STREET and WEST  139 STREET,  MALCOLM X BOULEVARD between WEST  139 STREET and WEST  140 STREET,  MALCOLM X BOULEVARD between WEST  140 STREET and WEST  141 STREET,  MALCOLM X BOULEVARD between WEST  141 STREET and WEST  142 STREET,  WEST  142 STREET between MALCOLM X BOULEVARD and 5 AVENUE,  MALCOLM X BOULEVARD between WEST  136 STREET and WEST  137 STREET,  WEST  134 STREET between FREDERICK DOUGLASS BOULEVARD and ST NICHOLAS AVENUE": null,
+"134TH STREET between ROCKAWAY BOULEVARD and SUTTER AVE": null,
+"139 STREET between LINDEN BOULEVARD and 115 AVENUE": null,
+"14 AVENUE between 49 STREET and 50 STREET": null,
+"148 ROAD between 241 STREET and EDGEWOOD STREET": null,
+"148 STREET between SUTTER AVENUE and 130 AVENUE": null,
+"15 STREET between 2 AVENUE and 3 AVENUE": null,
+"154 STREET between UNION TURNPIKE and 79 AVENUE": null,
+"158 STREET between 140 AVENUE and 137 AVENUE": null,
+"174 STREET between 115 AVENUE and 116 AVENUE": null,
+"178 STREET between 90 AV and JAMAICA AV": null,
+"191-24 PINEVILLE LANE, PINEVILLE LANE between ADAIR STREET and 193 STREET,  193 STREET between PINEVILLE LANE and SPRINGFIELD BOULEVARD,  SPRINGFIELD BOULEVARD between 193 STREET and 197 STREET, 131-24 SPRINGFIELD BOULEVARD": null,
+"196 STREET between UNION TURNPIKE and 75 AVENUE": null,
+"2 AVENUE between EAST   32 STREET and EAST   33 STREET": null,
+"2030 BATH AVENUE, BATH AVENUE between BAY   25 STREET and BAY PARKWAY, 2030 BATH AVENUE,2030 BATH AVENUE": null,
+"215 ST between 104 AVE and HOLLIS AVE": null,
+"219 STREET between 135 AVENUE and 136 AVENUE": null,
+"221 STREET between 133 AVENUE and MERRICK BOULEVARD": null,
+"23 STREET between 4 AVENUE and 5 AVENUE": null,
+"232 STREET between 115 ROAD and 116 AVENUE": {
+"confidence": 0.8,
+"lat": 40.693745,
+"lon": -73.728439,
+"matched": "115-115 232 STREET, Cambria Heights, NY, USA",
+"source": "geosearch"
+},
+"235 WEST   44 STREET between 8 AVENUE and BROADWAY": null,
+"246 STREET between 82 AVENUE and 83 AVENUE": null,
+"252 STREET between 87 AVENUE and 87 ROAD": null,
+"263 MARCY AVENUE,263 MARCY AVENUE, HEWES STREET between MARCY AVENUE and HARRISON AVENUE,  HARRISON AVENUE between HEWES STREET and BARTLETT STREET,  BARTLETT STREET between HARRISON AVENUE and THROOP AVENUE,  THROOP AVENUE between BARTLETT STREET and THORNTON STREET, 115 THROOP AVENUE": null,
+"27 STREET between DITMARS BOULEVARD and 21 AVENUE,  CRESCENT STREET between DITMARS BOULEVARD and 21 AVENUE, 21-21 CRESCENT STREET, 21 AVENUE between 27 STREET and CRESCENT STREET,  DITMARS BOULEVARD between 19 STREET and SHORE BOULEVARD,  19 STREET between 23 AVENUE and DITMARS BOULEVARD": null,
+"27109 80 AVENUE,27109 80 AVENUE, 271 STREET between 79 AVENUE and 80 AVENUE,  79 AVENUE between 271 STREET and 259 STREET, 259-16 79 AVENUE": null,
+"29 STREET between 4 AVENUE and 5 AVENUE": null,
+"3  AVENUE between MARINE AVENUE and 82 STREET": {
+"confidence": 0.8,
+"lat": 40.620339,
+"lon": -74.037692,
+"matched": "3 MARINE AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"3 AVENUE between 82 STREET and 68 STREET": {
+"confidence": 0.8,
+"lat": 40.738091,
+"lon": -73.881569,
+"matched": "82-03 ST JAMES AVENUE, Elmhurst, NY, USA",
+"source": "geosearch"
+},
+"31 AVENUE Open Street 2026": {
+"confidence": 0.8,
+"lat": 40.680568,
+"lon": -73.976205,
+"matched": "31 ST MARK'S AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"31 STREET between 5 AVENUE and 4 AVENUE": null,
+"32 AVENUE between 146 STREET and 147 PLACE": null,
+"34 AVENUE between 69 STREET and JUNCTION BOULEVARD,  34 AVENUE between 69 STREET and JUNCTION BOULEVARD,  34 AVENUE between 77 STREET and 78 STREET": null,
+"34 AVENUE between 77 STREET and 78 STREET": null,
+"34 AVENUE between 93 STREET and 94 STREET": null,
+"35 AVENUE between 82 STREET and 81 STREET": {
+"confidence": 0.8,
+"lat": 40.738739,
+"lon": -73.880668,
+"matched": "82-35 ST JAMES AVENUE, Elmhurst, NY, USA",
+"source": "geosearch"
+},
+"4 STREET between 5 AVENUE and DEAD END": null,
+"41 AVENUE between 80 STREET and 81 STREET": null,
+"41 STREET between 6 AVENUE and 5 AVENUE": {
+"confidence": 0.8,
+"lat": 40.72431,
+"lon": -73.98204,
+"matched": "6 ST & AVENUE B COMM GARDEN, New York, NY, USA",
+"source": "geosearch"
+},
+"418 EAST   45 STREET, EAST   45 STREET between CHURCH AVENUE and SNYDER AVENUE,  SNYDER AVENUE between EAST   45 STREET and EAST   38 STREET,  EAST   38 STREET between SNYDER AVENUE and LINDEN BOULEVARD,  LINDEN BOULEVARD between EAST   38 STREET and UTICA AVENUE,  UTICA AVENUE between LINDEN BOULEVARD and CHURCH AVENUE,  CHURCH AVENUE between UTICA AVENUE and EAST   45 STREET": null,
+"44 STREET between 8 AVENUE and 7 AVENUE": null,
+"448 COLLEGE AVENUE, COLLEGE AVENUE between EAST  146 STREET and EAST  148 STREET,  EAST  148 STREET between COLLEGE AVENUE and COURTLANDT AVENUE,  COURTLANDT AVENUE between EAST  148 STREET and EAST  149 STREET,  EAST  149 STREET between COURTLANDT AVENUE and MORRIS AVENUE,  MORRIS AVENUE between EAST  149 STREET and EAST  148 STREET,  EAST  148 STREET between MORRIS AVENUE and COLLEGE AVENUE,  COLLEGE AVENUE between EAST  148 STREET and EAST  146 STREET, 448 COLLEGE AVENUE,349 EAST  149 STREET,234 EAST  149 STREET": null,
+"48 STREET between 4 AVENUE and 3 AVENUE": null,
+"49 STREET between 4 AVENUE and 3 AVENUE": null,
+"50 STREET between 4 AVENUE and 3 AVENUE": null,
+"508 WEST   37 STREET, WEST   37 STREET between 10 AVENUE and 11 AVENUE": null,
+"53 STREET between 5 AVENUE and 4 AVENUE": null,
+"54 STREET between 4 AVENUE and 5 AVENUE": null,
+"56 ROAD between 61 STREET and 64 STREET,  61 STREET between 56 ROAD and 56 AVENUE,  56 AVENUE between 61 STREET and 64 STREET,  64 STREET between 56 ROAD and 56 AVENUE,  56 ROAD between 61 STREET and 64 STREET": null,
+"564 GRANT AVENUE, GRANT AVENUE between GLENMORE AVENUE and PITKIN AVENUE,  PITKIN AVENUE between GRANT AVENUE and RUBY STREET,  PITKIN AVENUE between RUBY STREET and 78 STREET,  78 STREET between PITKIN AVENUE and 101 AVENUE,  101 AVENUE between 78 STREET and DREW STREET,  101 AVENUE between DREW STREET and LIBERTY AVENUE,  LIBERTY AVENUE between 101 AVENUE and GRANT AVENUE,  GRANT AVENUE between LIBERTY AVENUE and GLENMORE AVENUE, 564 GRANT AVENUE": null,
+"6 AVENUE between WEST   34 STREET and WEST   42 STREET": null,
+"60 STREET between 3 AVENUE and 4 AVENUE": null,
+"6101 BROADWAY, BROADWAY between 61 STREET and 62 STREET,  35 AVENUE between 62 STREET and 75 STREET,  75 STREET between 35 AVENUE and 37 ROAD,  37 ROAD between 75 STREET and 74 STREET,  74 STREET between 37 ROAD and 35 AVENUE,  35 AVENUE between 74 STREET and 62 STREET,  BROADWAY between 62 STREET and 61 STREET, 61-01 BROADWAY between 61 STREET and 62 STREET": null,
+"62 STREET between 3 AVENUE and 2 AVENUE": null,
+"67 PLACE between OTTO ROAD and 70 AVENUE": null,
+"68 STREET between 16 AVENUE and NEW UTRECHT AVENUE": null,
+"69 ST between 37 AVE and 35 AVE,  37 AVE between 69 ST and 87 ST,  87 STREET  between 37 AVE and 35 AVE": null,
+"69 STREET between NORTHERN BLVD and 35 AVENUE,  NORTHERN BOULEVARD between 69 STREET and 87 STREET,  87 STREET between NORTHERN BOULEVARD and 32 AVENUE,  NORTHERN BOULEVARD between 85 STREET and 86 STREET": null,
+"69TH ST between 37 AVE and 35 AVE,  37 AVENUE between 69 STREET and 87 STREET,  87 STREET  between 37 AVE and 35 AVE,  37 AVENUE between 86 STREET and 87 STREET": null,
+"7 AVENUE between WEST   49 STREET and WEST   53 STREET,  WEST   49 STREET between 7 AVENUE and 12 AVENUE,  12 AVENUE between WEST   49 STREET and 11 AVENUE,  WEST ST between 12TH and LIBERTY STREET,  LIBERTY ST between WEST ST and S END AVE,  LIBERTY between WEST ST and S END AVE": null,
+"70 STREET between 13 AVENUE and 14 AVENUE": null,
+"71st Avenue Plaza": {
+"confidence": 0.8,
+"lat": 40.635206,
+"lon": -73.96258,
+"matched": "10 NEWKIRK AVENUE PLAZA, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"76 STREET between 97 AVENUE and 101 AVENUE": null,
+"78 STREET between MYRTLE AVENUE and 78 AVENUE": null,
+"79 STREET between 78 AVENUE and 77 AVENUE": null,
+"79 STREET between NORTHERN BOULEVARD and 34 AVENUE": null,
+"8 AVENUE between 66 STREET and 68 STREET,  8 AVENUE between 66 STREET and 43 STREET,  8 AVENUE between 43 STREET and 41 STREET": null,
+"8 AVENUE between WEST  155 STREET and WEST  154 STREET": null,
+"80 STREET between SUTTER AVENUE and PITKIN AVENUE": null,
+"825 7 AVENUE, 7 AVENUE between WEST   53 STREET and WEST   54 STREET,  WEST   53 STREET between 7 AVENUE and 6 AVENUE,  6 AVENUE between WEST   53 STREET and WEST   54 STREET,  WEST   54 STREET between 6 AVENUE and 7 AVENUE, 825 7 AVENUE,825 7 AVENUE": null,
+"85 STREET between BAY   16 STREET and 18 AVENUE": null,
+"87 STREET between JAMAICA AVENUE and 85TH ROAD": null,
+"88 STREET between NARROWS AVENUE and COLONIAL ROAD": null,
+"90 STREET between 165 AVENUE and 164 AVENUE": null,
+"97 STREET between 3 AVENUE and 4 AVENUE": null,
+"A Philip Randolph Square": {
+"confidence": 1.0,
+"lat": 40.803823987507656,
+"lon": -73.95245924209124,
+"matched": "A Philip Randolph Square",
+"source": "parks-properties"
+},
+"A.R.R.O.W. REC CENTER": null,
+"ALBANY AVENUE between FARRAGUT ROAD and FOSTER AVENUE": null,
+"ALLERTON AVENUE between RADCLIFF AVENUE and COLDEN AVENUE,  ALLERTON AVENUE between RADCLIFF AVENUE and LACONIA AVENUE,  ALLERTON AVENUE between LACONIA AVENUE and LURTING AVENUE": null,
+"ARLINGTON AVENUE between CLEVELAND STREET and ELTON STREET": null,
+"AUDUBON AVENUE between WEST  166 STREET and WEST  167 STREET": null,
+"AVENUE OF AMERICAS between CARMINE STREET and WEST    3 STREET": null,
+"Abe Lebewohl Triangle": {
+"confidence": 1.0,
+"lat": 40.73007547516475,
+"lon": -73.98782626776173,
+"matched": "Abe Lebewohl Triangle",
+"source": "parks-properties"
+},
+"Abingdon Square": {
+"confidence": 1.0,
+"lat": 40.73730109243242,
+"lon": -74.00544759712798,
+"matched": "Abingdon Square",
+"source": "parks-properties"
+},
+"Abraham Lincoln Playground": {
+"confidence": 1.0,
+"lat": 40.811962032766715,
+"lon": -73.93693676046486,
+"matched": "Abraham Lincoln Playground",
+"source": "parks-properties"
+},
+"Adam Yauch Park": {
+"confidence": 1.0,
+"lat": 40.692070144779805,
+"lon": -73.99888650558223,
+"matched": "Adam Yauch Park",
+"source": "parks-properties"
+},
+"Addabbo Park": null,
+"Al Qui?ones Playground": null,
+"Al Stabile Playground": null,
+"Albemarle Playground (PS 230)": {
+"confidence": 1.0,
+"lat": 40.64587453159062,
+"lon": -73.98045765742498,
+"matched": "Albemarle Playground",
+"source": "parks-properties"
+},
+"Alexander Hamilton Playground": {
+"confidence": 1.0,
+"lat": 40.82309254464249,
+"lon": -73.95125277157905,
+"matched": "Alexander Hamilton Playground",
+"source": "parks-properties"
+},
+"Alfred E. Smith Playground": {
+"confidence": 1.0,
+"lat": 40.71047362823622,
+"lon": -73.99758183594054,
+"matched": "Alfred E. Smith Playground",
+"source": "parks-properties"
+},
+"Alley Athletic Playground": null,
+"Alley Park (PS 213)": {
+"confidence": 1.0,
+"lat": 40.7474900119886,
+"lon": -73.74446210723188,
+"matched": "Alley Park",
+"source": "parks-properties"
+},
+"Alley Pond Park": {
+"confidence": 1.0,
+"lat": 40.75860227276757,
+"lon": -73.75563517435319,
+"matched": "Alley Pond Park",
+"source": "parks-properties"
+},
+"Ambrosini Field": {
+"confidence": 1.0,
+"lat": 40.84421536866381,
+"lon": -73.78375074950526,
+"matched": "Ambrosini Field",
+"source": "parks-properties"
+},
+"American Playground": {
+"confidence": 1.0,
+"lat": 40.72872186341989,
+"lon": -73.9578107261826,
+"matched": "American Playground",
+"source": "parks-properties"
+},
+"American Veterans Memorial Pier": {
+"confidence": 1.0,
+"lat": 40.63954514399818,
+"lon": -74.03744562241468,
+"matched": "American Veterans Memorial Pier",
+"source": "parks-properties"
+},
+"Amersfort Park": {
+"confidence": 1.0,
+"lat": 40.628447996829095,
+"lon": -73.93891728471519,
+"matched": "Amersfort Park",
+"source": "parks-properties"
+},
+"Andrew Haswell Green Park": null,
+"Andrews Grove": {
+"confidence": 1.0,
+"lat": 40.743373957137315,
+"lon": -73.95477250507044,
+"matched": "Andrews Grove",
+"source": "parks-properties"
+},
+"Andries Playground (JHS 240)": null,
+"Annadale Playground": {
+"confidence": 1.0,
+"lat": 40.73110647427073,
+"lon": -73.85170927953546,
+"matched": "Annadale Playground",
+"source": "parks-properties"
+},
+"Annunciation Park": null,
+"Aqueduct Walk Tremont Ave - E. Fordham Rd": {
+"confidence": 0.8,
+"lat": 40.86571,
+"lon": -73.9017,
+"matched": "AQUEDUCT WALK, Bronx, NY, USA",
+"source": "geosearch"
+},
+"Archie Spigner Park": {
+"confidence": 1.0,
+"lat": 40.69395805888074,
+"lon": -73.78000262624526,
+"matched": "Archie Spigner Park",
+"source": "parks-properties"
+},
+"Asser Levy Park": {
+"confidence": 1.0,
+"lat": 40.575194600761726,
+"lon": -73.97099506152453,
+"matched": "Asser Levy Park",
+"source": "parks-properties"
+},
+"Asser Levy Playground": {
+"confidence": 1.0,
+"lat": 40.736306486602004,
+"lon": -73.97524543829262,
+"matched": "Asser Levy Playground",
+"source": "parks-properties"
+},
+"Astoria Heights Playground": {
+"confidence": 1.0,
+"lat": 40.76012882012849,
+"lon": -73.9118022900956,
+"matched": "Astoria Heights Playground",
+"source": "parks-properties"
+},
+"Astoria Park": {
+"confidence": 1.0,
+"lat": 40.779155607119264,
+"lon": -73.9222991445556,
+"matched": "Astoria Park",
+"source": "parks-properties"
+},
+"Athens Square": {
+"confidence": 1.0,
+"lat": 40.76786514924511,
+"lon": -73.92231351359257,
+"matched": "Athens Square",
+"source": "parks-properties"
+},
+"August Wilson Theatre": null,
+"Austin J. McDonald Playground": {
+"confidence": 1.0,
+"lat": 40.62951334481928,
+"lon": -74.11534159785654,
+"matched": "Austin J. McDonald Playground",
+"source": "parks-properties"
+},
+"Avenue C Plaza": {
+"confidence": 0.8,
+"lat": 40.640426,
+"lon": -73.979794,
+"matched": "3 AVENUE C, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"BABBAGE ST between JAMAICA AVE and HILLSIDE AVE": null,
+"BARBEY STREET between PITKIN AVENUE and BELMONT AVENUE": null,
+"BARKER AVENUE between BRITTON STREET and ALLERTON AVENUE": null,
+"BEACH   56 STREET between BEACH CHANNEL DRIVE and ARVERNE BOULEVARD": null,
+"BEACH  122 STREET between BEACH CHANNEL DRIVE and NEWPORT AVENUE": null,
+"BEACH  123 STREET between ROCKAWAY BEACH BOULEVARD and OCEAN PROMENADE": {
+"confidence": 0.8,
+"lat": 40.59555,
+"lon": -73.76845,
+"matched": "3516 ROCKAWAY BEACH BOULEVARD, Edgemere, NY, USA",
+"source": "geosearch"
+},
+"BEACH CHANNEL DRIVE between BEACH   32 STREET and HARTMAN LANE,  NAMEOKE AVENUE between BEACH CHANNEL DRIVE and REDFERN AVENUE,  CENTRAL AVENUE between BAYPORT PLACE and MOTT AVENUE,  BEACH   20 STREET between MOTT AVENUE and CORNAGA AVENUE,  BROOKHAVEN AVE between BEACH 19TH ST and GATEWAY BLVD,  BEACH   19 STREET between NEW HAVEN AVENUE and EVERDELL AVENUE": null,
+"BEAVER STREET between FAYETTE STREET and ELLERY STREET": null,
+"BEDFORD AVENUE between UNION STREET and PRESIDENT STREET": null,
+"BELMONT AVENUE between ASHFORD STREET and CLEVELAND STREET": null,
+"BERGEN STREET between BEDFORD AVENUE and FRANKLIN AVENUE": null,
+"BERGEN STREET between FRANKLIN AVENUE and CLASSON AVENUE": null,
+"BERGEN STREET between THOMAS BOYLAND STREET and ROCKAWAY AVENUE": null,
+"BEVY COURT between EVERETT AVENUE and DEVON AVENUE": null,
+"BLAINE COURT between BEMENT AVENUE and NORTH BURGHER AVENUE": null,
+"BLAKE AVENUE between THOMAS S BOYLAND STREET and BRISTOL STREET": null,
+"BLAKE AVENUE between UNION STREET and TAPSCOTT STREET": null,
+"BLEECKER STREET between CHRISTOPHER STREET and BANK STREET": null,
+"BLEECKER STREET between LEROY STREET and CARMINE STREET": null,
+"BOGOTA STREET between TRAVIS AVENUE and DEAD END": null,
+"BOND STREET between LAFAYETTE STREET and BOWERY": null,
+"BOWNE STREET between POPLAR AVENUE and QUINCE AVENUE": null,
+"BRISTOL STREET between LIVONIA AVENUE and RIVERDALE AVENUE": null,
+"BRISTOL STREET between SUTTER AVENUE and PITKIN AVENUE": null,
+"BROADWAY between 72 STREET and 74 STREET,  BROADWAY between 72 STREET and 74 STREET,  BROADWAY between 73 STREET and 74 STREET": {
+"confidence": 0.8,
+"lat": 40.687772,
+"lon": -73.979766,
+"matched": "72 ST OF ARTS AND CULTURE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"BROADWAY between BLEECKER STREET and EAST HOUSTON STREET": null,
+"BROADWAY between DYCKMAN STREET and CUMMING STREET": null,
+"BROADWAY between PRINCE STREET and EAST HOUSTON STREET": null,
+"BROADWAY between WEST  113 STREET and WEST  116 STREET": null,
+"BROADWAY between WEST  120 STREET and WEST  116 STREET,  WEST  121 STREET between BROADWAY and AMSTERDAM AVENUE,  AMSTERDAM AVENUE between WEST  120 STREET and WEST  121 STREET,  WEST  116 STREET between BROADWAY and RIVERSIDE DRIVE,  MANHATTAN AVENUE between WEST  110 STREET and WEST  109 STREET,  CLAREMONT AVENUE between WEST  119 STREET and WEST  116 STREET": null,
+"BROOK AVENUE between EAST  142 STREET and EAST  143 STREET": null,
+"BUFFALO AVENUE between STERLING PLACE and PARK PLACE": null,
+"Bailey Playground": {
+"confidence": 1.0,
+"lat": 40.88342863514099,
+"lon": -73.89888365325844,
+"matched": "Bailey Playground",
+"source": "parks-properties"
+},
+"Baisley Pond Park": {
+"confidence": 1.0,
+"lat": 40.677477990896136,
+"lon": -73.78614009467593,
+"matched": "Baisley Pond Park",
+"source": "parks-properties"
+},
+"Banneker Playground (PS 256)": {
+"confidence": 1.0,
+"lat": 40.69046973537457,
+"lon": -73.94910957374998,
+"matched": "Banneker Playground",
+"source": "parks-properties"
+},
+"Barretto Point Park": {
+"confidence": 1.0,
+"lat": 40.80501317942157,
+"lon": -73.8883154186265,
+"matched": "Barretto Point Park",
+"source": "parks-properties"
+},
+"Baruch Playground": {
+"confidence": 1.0,
+"lat": 40.71699368718352,
+"lon": -73.97689250459297,
+"matched": "Baruch Playground",
+"source": "parks-properties"
+},
+"Bath Beach Park": {
+"confidence": 1.0,
+"lat": 40.602622730423626,
+"lon": -74.01154595731965,
+"matched": "Bath Beach Park",
+"source": "parks-properties"
+},
+"Bay Terrace Playground": {
+"confidence": 1.0,
+"lat": 40.782200214139905,
+"lon": -73.77758361433146,
+"matched": "Bay Terrace Playground",
+"source": "parks-properties"
+},
+"Bayside Fields": {
+"confidence": 1.0,
+"lat": 40.77293183540513,
+"lon": -73.78624734631026,
+"matched": "Bayside Fields",
+"source": "parks-properties"
+},
+"Bayswater Park": {
+"confidence": 1.0,
+"lat": 40.59900256847528,
+"lon": -73.76951511950845,
+"matched": "Bayswater Park",
+"source": "parks-properties"
+},
+"Beach 17 Playground (O'Donohue Park)": {
+"confidence": 1.0,
+"lat": 40.5948480530516,
+"lon": -73.74893936366321,
+"matched": "Beach 17 Playground",
+"source": "parks-properties"
+},
+"Behagen Playground": {
+"confidence": 1.0,
+"lat": 40.82542339794644,
+"lon": -73.90125753057276,
+"matched": "Behagen Playground",
+"source": "parks-properties"
+},
+"Bella Abzug Park": null,
+"Bellevue South Park": {
+"confidence": 1.0,
+"lat": 40.74011946451429,
+"lon": -73.9779304602393,
+"matched": "Bellevue South Park",
+"source": "parks-properties"
+},
+"Bennett Park": {
+"confidence": 1.0,
+"lat": 40.85272811289549,
+"lon": -73.93807646684624,
+"matched": "Bennett Park",
+"source": "parks-properties"
+},
+"Benson Playground (PS 200)": {
+"confidence": 1.0,
+"lat": 40.60240315770599,
+"lon": -74.00230509852545,
+"matched": "Benson Playground",
+"source": "parks-properties"
+},
+"Bensonhurst Park": {
+"confidence": 1.0,
+"lat": 40.596750468184005,
+"lon": -74.00117788582136,
+"matched": "Bensonhurst Park",
+"source": "parks-properties"
+},
+"Betsy Head Park": {
+"confidence": 1.0,
+"lat": 40.66260074046448,
+"lon": -73.91304654806393,
+"matched": "Betsy Head Park",
+"source": "parks-properties"
+},
+"Bicentennial Veterans Memorial Park": null,
+"Big Bush Park": null,
+"Bill Bojangles Robinson Playground": null,
+"Bill Brown Playground": null,
+"Blake Hobbs Playground": null,
+"Blood Root Valley": {
+"confidence": 1.0,
+"lat": 40.5891311092987,
+"lon": -74.13093347574502,
+"matched": "Blood Root Valley",
+"source": "parks-properties"
+},
+"Bloomingdale Park": {
+"confidence": 1.0,
+"lat": 40.53383482858517,
+"lon": -74.22178464853415,
+"matched": "Bloomingdale Park",
+"source": "parks-properties"
+},
+"Bloomingdale Playground": {
+"confidence": 1.0,
+"lat": 40.79928913553493,
+"lon": -73.96599510917217,
+"matched": "Bloomingdale Playground",
+"source": "parks-properties"
+},
+"Booker T. Washington Playground": {
+"confidence": 1.0,
+"lat": 40.80101172307656,
+"lon": -73.96393042688779,
+"matched": "Booker T. Washington Playground",
+"source": "parks-properties"
+},
+"Bowling Green": null,
+"Bowne Park": {
+"confidence": 1.0,
+"lat": 40.77070084346252,
+"lon": -73.8068568094191,
+"matched": "Bowne Park",
+"source": "parks-properties"
+},
+"Bowne Playground": {
+"confidence": 1.0,
+"lat": 40.758316880571726,
+"lon": -73.82482643003748,
+"matched": "Bowne Playground",
+"source": "parks-properties"
+},
+"Breukelen Ballfields (PS 260 - Playground only)": {
+"confidence": 1.0,
+"lat": 40.65264227643747,
+"lon": -73.89268232463185,
+"matched": "Breukelen Ballfields",
+"source": "parks-properties"
+},
+"Brevoort Playground": null,
+"Bridge and Tunnel Park": null,
+"Brigadier General Charles Young Playground": {
+"confidence": 1.0,
+"lat": 40.81902182533926,
+"lon": -73.93496222025912,
+"matched": "Brigadier General Charles Young Playground",
+"source": "parks-properties"
+},
+"Broad Channel American Park": {
+"confidence": 1.0,
+"lat": 40.59721490115516,
+"lon": -73.82210015833147,
+"matched": "Broad Channel American Park",
+"source": "parks-properties"
+},
+"Broad Channel Park": null,
+"Bronx Park": {
+"confidence": 1.0,
+"lat": 40.86237646863854,
+"lon": -73.87792585366397,
+"matched": "Bronx Park",
+"source": "parks-properties"
+},
+"Brookfield Park": {
+"confidence": 1.0,
+"lat": 40.56868684105707,
+"lon": -74.15964353963484,
+"matched": "Brookfield Park",
+"source": "parks-properties"
+},
+"Brookville Park": {
+"confidence": 1.0,
+"lat": 40.66098709608494,
+"lon": -73.74376676439854,
+"matched": "Brookville Park",
+"source": "parks-properties"
+},
+"Brower Park (PS 289 - Playground Only)": {
+"confidence": 1.0,
+"lat": 40.67401699130728,
+"lon": -73.94307163232945,
+"matched": "Brower Park",
+"source": "parks-properties"
+},
+"Bryant Park": null,
+"Bush Terminal Park": null,
+"Bushwick Inlet Park": {
+"confidence": 1.0,
+"lat": 40.72502731416226,
+"lon": -73.9602289368663,
+"matched": "Bushwick Inlet Park",
+"source": "parks-properties"
+},
+"Bushwick Playground": {
+"confidence": 1.0,
+"lat": 40.695850787567935,
+"lon": -73.91211582184825,
+"matched": "Bushwick Playground",
+"source": "parks-properties"
+},
+"CARROLL STREET between SMITH STREET and COURT STREET": null,
+"CC Moore Homestead Playground": null,
+"CHESTER STREET between LIVONIA AVENUE and DUMONT AVENUE": null,
+"CLARKSON AVENUE between EAST   37 STREET and EAST   38 STREET": null,
+"CLEVELAND STREET between SUTTER AVENUE and BLAKE AVENUE": null,
+"COMMONWEALTH AVENUE between LAFAYETTE AVENUE and SEWARD AVENUE": null,
+"CORTELYOU ROAD between RUGBY ROAD and ARGYLE ROAD": null,
+"COURTLANDT AVENUE between EAST  149 STREET and EAST  150 STREET": null,
+"COURTLANDT AVENUE between EAST  162 STREET and EAST  161 STREET": null,
+"COVERT STREET between KNICKERBOCKER AVENUE and WILSON AVENUE": null,
+"CROSS BRONX EXPRESSWAY between DEWEY AVENUE and EAST TREMONT AVENUE": null,
+"Cadman Plaza Park": {
+"confidence": 1.0,
+"lat": 40.69864803921748,
+"lon": -73.9907959666593,
+"matched": "Cadman Plaza Park",
+"source": "parks-properties"
+},
+"Callahan-Kelly Playground": {
+"confidence": 1.0,
+"lat": 40.678492451477716,
+"lon": -73.90449954831776,
+"matched": "Callahan-Kelly Playground",
+"source": "parks-properties"
+},
+"Calvert Vaux Park": {
+"confidence": 1.0,
+"lat": 40.58602111441342,
+"lon": -73.99254429039073,
+"matched": "Calvert Vaux Park",
+"source": "parks-properties"
+},
+"Cambria Playground/Cabbell Park": null,
+"Canal Park": {
+"confidence": 1.0,
+"lat": 40.72540941388271,
+"lon": -74.0105375024882,
+"matched": "Canal Park",
+"source": "parks-properties"
+},
+"Canarsie Park": null,
+"Captain Rivera Playground": {
+"confidence": 1.0,
+"lat": 40.8179706289459,
+"lon": -73.90683802180249,
+"matched": "Captain Rivera Playground",
+"source": "parks-properties"
+},
+"Carl Schurz Park": {
+"confidence": 1.0,
+"lat": 40.775986521789314,
+"lon": -73.94275466875715,
+"matched": "Carl Schurz Park",
+"source": "parks-properties"
+},
+"Carroll Park": null,
+"Caserta Playground": {
+"confidence": 1.0,
+"lat": 40.837309463571245,
+"lon": -73.8539248662548,
+"matched": "Caserta Playground",
+"source": "parks-properties"
+},
+"Castle Hill Little League": null,
+"Cedar Playground": {
+"confidence": 1.0,
+"lat": 40.85542158353258,
+"lon": -73.91692717655827,
+"matched": "Cedar Playground",
+"source": "parks-properties"
+},
+"Central Park": {
+"confidence": 1.0,
+"lat": 40.78515285136863,
+"lon": -73.96290810173596,
+"matched": "Central Park",
+"source": "parks-properties"
+},
+"Challenge Playground": null,
+"Chappetto Square": {
+"confidence": 1.0,
+"lat": 40.775030283055216,
+"lon": -73.92234171098288,
+"matched": "Chappetto Square",
+"source": "parks-properties"
+},
+"Chelsea Green Park": null,
+"Chelsea Park": {
+"confidence": 1.0,
+"lat": 40.74996003026562,
+"lon": -74.0009579736819,
+"matched": "Chelsea Park",
+"source": "parks-properties"
+},
+"Chester Playground (PS 327)": {
+"confidence": 1.0,
+"lat": 40.66878343831612,
+"lon": -73.91191458480769,
+"matched": "Chester Playground",
+"source": "parks-properties"
+},
+"City Hall Park": {
+"confidence": 1.0,
+"lat": 40.712171343406034,
+"lon": -74.00681218742442,
+"matched": "City Hall Park",
+"source": "parks-properties"
+},
+"City Line Park (IS 292)": null,
+"Claremont Park": null,
+"Classon Playground": {
+"confidence": 1.0,
+"lat": 40.689488117850814,
+"lon": -73.96054443207265,
+"matched": "Classon Playground",
+"source": "parks-properties"
+},
+"Classon Playground (PS 270)": {
+"confidence": 1.0,
+"lat": 40.689488117850814,
+"lon": -73.96054443207265,
+"matched": "Classon Playground",
+"source": "parks-properties"
+},
+"Clement Clarke Moore Park": {
+"confidence": 1.0,
+"lat": 40.7465460292956,
+"lon": -74.004332422227,
+"matched": "Clement Clarke Moore Park",
+"source": "parks-properties"
+},
+"Clintonville Playground": null,
+"Clove Lakes Park": {
+"confidence": 1.0,
+"lat": 40.619188180602706,
+"lon": -74.11219404386073,
+"matched": "Clove Lakes Park",
+"source": "parks-properties"
+},
+"Co-op City Field": {
+"confidence": 1.0,
+"lat": 40.87590020105116,
+"lon": -73.82389450310806,
+"matched": "Co-op City Field",
+"source": "parks-properties"
+},
+"Cobble Hill Park": {
+"confidence": 1.0,
+"lat": 40.68821164504713,
+"lon": -73.9959191425049,
+"matched": "Cobble Hill Park",
+"source": "parks-properties"
+},
+"Coffey Park": {
+"confidence": 1.0,
+"lat": 40.67772319587819,
+"lon": -74.00815700552357,
+"matched": "Coffey Park",
+"source": "parks-properties"
+},
+"Coleman Playground": {
+"confidence": 1.0,
+"lat": 40.71130055329982,
+"lon": -73.99317466080613,
+"matched": "Coleman Playground",
+"source": "parks-properties"
+},
+"Collect Pond Park": {
+"confidence": 1.0,
+"lat": 40.716251564174435,
+"lon": -74.00179479909623,
+"matched": "Collect Pond Park",
+"source": "parks-properties"
+},
+"College Point Fields": {
+"confidence": 1.0,
+"lat": 40.776309066688206,
+"lon": -73.83692150648893,
+"matched": "College Point Fields",
+"source": "parks-properties"
+},
+"Colonel David Marcus Playground": null,
+"Colucci Playground": {
+"confidence": 1.0,
+"lat": 40.853120490564265,
+"lon": -73.83440887958876,
+"matched": "Colucci Playground",
+"source": "parks-properties"
+},
+"Columbus Park": {
+"confidence": 1.0,
+"lat": 40.693327782451576,
+"lon": -73.99028932100045,
+"matched": "Columbus Park",
+"source": "parks-properties"
+},
+"Commodore Barry Park": null,
+"Concrete Plant Park": {
+"confidence": 1.0,
+"lat": 40.825494958005734,
+"lon": -73.88508173001466,
+"matched": "Concrete Plant Park",
+"source": "parks-properties"
+},
+"Coney Island Beach & Boardwalk": {
+"confidence": 1.0,
+"lat": 40.572915963134776,
+"lon": -73.97922131113852,
+"matched": "Coney Island Beach & Boardwalk",
+"source": "parks-properties"
+},
+"Coney Island Boat Basin/Six Diamonds": null,
+"Coney Island Creek Park": {
+"confidence": 1.0,
+"lat": 40.581209454030365,
+"lon": -74.0053273471629,
+"matched": "Coney Island Creek Park",
+"source": "parks-properties"
+},
+"Conference House Park": {
+"confidence": 1.0,
+"lat": 40.50044864763386,
+"lon": -74.25182262203899,
+"matched": "Conference House Park",
+"source": "parks-properties"
+},
+"Cooney Grauer Field": {
+"confidence": 1.0,
+"lat": 40.88025396894691,
+"lon": -73.90130196121038,
+"matched": "Cooney Grauer Field",
+"source": "parks-properties"
+},
+"Cooper Park": {
+"confidence": 1.0,
+"lat": 40.71599957237204,
+"lon": -73.93720369723198,
+"matched": "Cooper Park",
+"source": "parks-properties"
+},
+"Corlears Hook Park": {
+"confidence": 1.0,
+"lat": 40.71165263736735,
+"lon": -73.97901859685912,
+"matched": "Corlears Hook Park",
+"source": "parks-properties"
+},
+"Corona Plaza": {
+"confidence": 0.8,
+"lat": 40.753,
+"lon": -73.84593,
+"matched": "CORONA YARD, Flushing, NY, USA",
+"source": "geosearch"
+},
+"Courtney Callender Playground": null,
+"Cpl. Thompson Park": {
+"confidence": 1.0,
+"lat": 40.638073981728645,
+"lon": -74.11887032928807,
+"matched": "CPL. Thompson Park",
+"source": "parks-properties"
+},
+"Crack Is Wack Playground": {
+"confidence": 1.0,
+"lat": 40.80423782602544,
+"lon": -73.93182714187525,
+"matched": "Crack Is Wack Playground",
+"source": "parks-properties"
+},
+"Crispus Attucks Playground": {
+"confidence": 1.0,
+"lat": 40.68152154057549,
+"lon": -73.95915439133695,
+"matched": "Crispus Attucks Playground",
+"source": "parks-properties"
+},
+"Crocheron Park": null,
+"Crotona Park": {
+"confidence": 1.0,
+"lat": 40.83532495843019,
+"lon": -73.89774090876627,
+"matched": "Crotona Park",
+"source": "parks-properties"
+},
+"Cunningham Park": {
+"confidence": 1.0,
+"lat": 40.728040651299814,
+"lon": -73.76263564470361,
+"matched": "Cunningham Park",
+"source": "parks-properties"
+},
+"Cypress Hills Playground": null,
+"DECATUR STREET between EVERGREEN AVENUE and CENTRAL AVENUE": null,
+"DECATUR STREET between PATCHEN AVENUE and RALPH AVENUE": null,
+"DECATUR STREET between THROOP AVENUE and ALBANY AVENUE": null,
+"DECATUR STREET between THROOP AVENUE and TOMPKINS AVENUE": null,
+"DESBROSSES STREET between HUDSON STREET and GREENWICH STREET": null,
+"DILLON STREET between CLAUDE AVENUE and MATHIAS AVENUE": null,
+"DITMAS AVENUE between EAST   21 STREET and OCEAN AVENUE": null,
+"DUPONT STREET between MANHATTAN AVENUE and MCGUINESS BOULEVARD": null,
+"Dag Hammarskjold Plaza": {
+"confidence": 1.0,
+"lat": 40.75230752380733,
+"lon": -73.9689986656716,
+"matched": "Dag Hammarskjold Plaza",
+"source": "parks-properties"
+},
+"Dante Park": null,
+"Dawson Playground": null,
+"De Matti Playground": null,
+"De Witt Clinton Park": {
+"confidence": 1.0,
+"lat": 40.76800759031608,
+"lon": -73.9941990447731,
+"matched": "De Witt Clinton Park",
+"source": "parks-properties"
+},
+"Dean Playground": {
+"confidence": 1.0,
+"lat": 40.68089941509693,
+"lon": -73.97323624328409,
+"matched": "Dean Playground",
+"source": "parks-properties"
+},
+"Delphin H. Greene Playground": null,
+"Derosa O'Boyle Triangle": {
+"confidence": 1.0,
+"lat": 40.82255282836239,
+"lon": -73.81905122408844,
+"matched": "Derosa O'Boyle Triangle",
+"source": "parks-properties"
+},
+"Desalvio Playground": {
+"confidence": 1.0,
+"lat": 40.7216177412193,
+"lon": -73.99609672346608,
+"matched": "DeSalvio Playground",
+"source": "parks-properties"
+},
+"Detective Keith L Williams Park": {
+"confidence": 1.0,
+"lat": 40.70240825762363,
+"lon": -73.78380784816265,
+"matched": "Detective Keith L Williams Park",
+"source": "parks-properties"
+},
+"Devoe Park": {
+"confidence": 1.0,
+"lat": 40.863356165817684,
+"lon": -73.90759625241716,
+"matched": "Devoe Park",
+"source": "parks-properties"
+},
+"Dimattina Playground": {
+"confidence": 1.0,
+"lat": 40.679670826735695,
+"lon": -74.00232396239363,
+"matched": "Dimattina Playground",
+"source": "parks-properties"
+},
+"Diversity Plaza": {
+"confidence": 0.8,
+"lat": 40.747409,
+"lon": -73.892179,
+"matched": "7301 DIVERSITY PLAZA, Jackson Heights, NY, USA",
+"source": "geosearch"
+},
+"Dr. Charles R. (Drew Park)": {
+"confidence": 1.0,
+"lat": 40.68061231860808,
+"lon": -73.80280108131319,
+"matched": "Dr. Charles R. Drew Park",
+"source": "parks-properties"
+},
+"Dr. Green Playground": {
+"confidence": 1.0,
+"lat": 40.66716001234303,
+"lon": -73.90715918336795,
+"matched": "Dr. Green Playground",
+"source": "parks-properties"
+},
+"Dr. Ronald McNair Park": null,
+"Dry Dock Playground": {
+"confidence": 1.0,
+"lat": 40.72536727910372,
+"lon": -73.97541266196566,
+"matched": "Dry Dock Playground",
+"source": "parks-properties"
+},
+"Duane Park": {
+"confidence": 1.0,
+"lat": 40.71717657626312,
+"lon": -74.00938505720599,
+"matched": "Duane Park",
+"source": "parks-properties"
+},
+"Dubos Point Wildlife Sanctuary": {
+"confidence": 1.0,
+"lat": 40.59993653235196,
+"lon": -73.79427391349273,
+"matched": "Dubos Point Wildlife Sanctuary",
+"source": "parks-properties"
+},
+"Dunbar Playground": {
+"confidence": 1.0,
+"lat": 40.82298017511216,
+"lon": -73.9063159565307,
+"matched": "Dunbar Playground",
+"source": "parks-properties"
+},
+"Dutch Kills Playground": {
+"confidence": 1.0,
+"lat": 40.75742176896742,
+"lon": -73.93316655732214,
+"matched": "Dutch Kills Playground",
+"source": "parks-properties"
+},
+"Dyker Beach Park": {
+"confidence": 1.0,
+"lat": 40.605752851143635,
+"lon": -74.0190032347609,
+"matched": "Dyker Beach Park",
+"source": "parks-properties"
+},
+"EAST    4 STREET between BOWERY and SECOND AVENUE": null,
+"EAST    6 STREET between FDR DRIVE and AVENUE D": null,
+"EAST    8 STREET between AVENUE C and AVENUE D": null,
+"EAST   10 STREET between FIRST AVENUE and SECOND AVENUE": null,
+"EAST   17 STREET between BROADWAY and PARK AVENUE SOUTH": {
+"confidence": 0.8,
+"lat": 40.737597,
+"lon": -73.990976,
+"matched": "17 EAST 17 STREET, New York, NY, USA",
+"source": "geosearch"
+},
+"EAST   19 STREET between CHURCH AVENUE and DEAD END": null,
+"EAST   31 STREET between CHURCH AVENUE and SNYDER AVENUE": null,
+"EAST   31 STREET between MADISON AVENUE and FIFTH AVENUE": null,
+"EAST   32 STREET between CLARENDON ROAD and AVENUE D": null,
+"EAST   32 STREET between SNYDER AVENUE and TILDEN AVENUE": null,
+"EAST   34 STREET between AVENUE D and CLARENDON ROAD": null,
+"EAST   37 STREET between AVENUE D and CLARENDON ROAD": null,
+"EAST   37 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST   38 STREET between 5 AVENUE and PARK AVENUE,  MADISON AVENUE between EAST   38 STREET and EAST   27 STREET,  EAST   27 STREET between MADISON AVENUE and 5 AVENUE,  EAST   37 STREET between 5 AVENUE and MADISON AVENUE,  EAST   27 STREET between MADISON AVENUE and PARK AVENUE SOUTH,  MADISON AVENUE between EAST   28 STREET and EAST   29 STREET": null,
+"EAST   38 STREET between CORTELYOU ROAD and CLARENDON ROAD": null,
+"EAST   38 STREET between GLENWOOD ROAD and AVENUE H": null,
+"EAST   40 STREET between CORTELYOU ROAD and CLARENDON ROAD": null,
+"EAST   42 STREET between LEXINGTON AVENUE and PARK AVENUE": null,
+"EAST   42 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST   43 STREET between CLARENDON ROAD and CORTELYOU ROAD": null,
+"EAST   45 STREET between AVENUE H and AVENUE I": null,
+"EAST   46 STREET between AVENUE D and CLARENDON ROAD": null,
+"EAST   48 STREET between FARRAGUT ROAD and FOSTER AVENUE": null,
+"EAST   48 STREET between GLENWOOD ROAD and AVENUE H": null,
+"EAST   51 STREET between TILDEN AVENUE and BEVERLY ROAD": null,
+"EAST   52 STREET between 5 AVENUE and AVENUE OF THE AMERICAS": null,
+"EAST   52 STREET between AVENUE K and AVENUE L": null,
+"EAST   55 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST   58 STREET between AVENUE T and AVENUE U": null,
+"EAST   59 STREET between CHURCH AVENUE and SNYDER AVENUE": null,
+"EAST   70 STREET between AVENUE T and AVENUE N": null,
+"EAST   70 STREET between AVENUE V and AVENUE W": null,
+"EAST   74 STREET between AVENUE U and AVENUE T": null,
+"EAST   82 STREET between 1 AVENUE and YORK AVENUE": null,
+"EAST   84 STREET between FIFTH AVENUE and MADISON AVENUE": null,
+"EAST   86 STREET between RALPH AVENUE and AVENUE B": null,
+"EAST   88 STREET between AVENUE J and FLATLANDS AVENUE": null,
+"EAST   93 STREET between WILLMOHR STREET and KINGS HIGHWAY": null,
+"EAST   99 STREET between FOSTER AVENUE and FARRAGUT ROAD": null,
+"EAST  104 STREET between THIRD AVENUE and SECOND AVENUE": null,
+"EAST  105 STREET between FIRST AVENUE and FDR DRIVE": null,
+"EAST  112 STREET between PARK AVENUE and MADISON AVENUE": null,
+"EAST  115 STREET between SECOND AVENUE and THIRD AVENUE": null,
+"EAST  117 STREET between PLEASANT AVENUE and FIRST AVENUE": null,
+"EAST  121 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST  123 STREET between 2 AVENUE and 3 AVENUE": null,
+"EAST  124 STREET between MADISON AVENUE and PARK AVENUE": null,
+"EAST  124 STREET between PARK AVENUE and MADISON AVENUE": null,
+"EAST  125 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST  149 STREET between MORRIS AVENUE and PARK AVENUE": null,
+"EAST  179 STREET between MAPES AVENUE and PROSPECT AVENUE": null,
+"EAST  181 STREET between MORRIS AVENUE and WALTON AVENUE": null,
+"EAST  183 STREET between PROSPECT AVENUE and SOUTHERN BOULEVARD": null,
+"EAST  192 STREET between GRAND CONCOURSE and VALENTINE AVENUE": null,
+"EAST  218 STREET between BRONXWOOD AVENUE and BARNES AVENUE": null,
+"EAST 115 STREET Open Street 2026": {
+"confidence": 0.8,
+"lat": 40.58004,
+"lon": -73.94271,
+"matched": "115 JAFFREY STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"EAST BURNSIDE AVENUE between MORRIS AVENUE and WALTON AVENUE": null,
+"EAST FORDHAM ROAD between JEROME AVENUE and WASHINGTON AVENUE": null,
+"EDGECOMBE AVENUE between WEST  135 STREET and WEST  136 STREET,  WEST  136 STREET between EDGECOMBE AVENUE and FREDERICK DOUGLASS BOULEVARD,  WEST  135 STREET between EDGECOMB AVENUE and FREDERICK DOUGLAS BOULEVARD,  EDGECOMBE AVENUE between WEST  136 STREET and WEST  139 STREET,  WEST  139 STREET between EDGECOMBE AVENUE and ST NICHOLAS AVENUE,  ST NICHOLAS AVENUE between WEST  135 STREET and WEST  155 STREET,  WEST  141 STREET between ST NICHOLAS AVENUE and CONVENT AVENUE,  CONVENT AVENUE between WEST  141 STREET and WEST  135 STREET,  WEST  135 STREET between ST NICHOLAS TERRACE and CONVENT AVENUE,  WEST  127 STREET between ST NICHOLAS TERRACE and ST NICHOLAS AVENUE,  ST NICHOLAS AVENUE between WEST  127 STREET and WEST  138 STREET,  ST NICHOLAS TERRACE between WEST  135 STREET and WEST  127 STREET,  ST NICHOLAS AVENUE between WEST  138 STREET and WEST  139 STREET": null,
+"ELLINGTON STREET between TARGEE STREET and VANDERBILT AVENUE": null,
+"ELTINGVILLE BOULEVARD between BARLOW AVENUE and LEVERETT AVENUE": null,
+"ELY AVENUE between DOWNES AVENUE and TENAFLY PLACE": null,
+"EMERALD STREET between LINDEN BOULEVARD and LORING AVENUE": null,
+"East River Esplanade 36th-38th": null,
+"East River Park": null,
+"East River Playground": {
+"confidence": 1.0,
+"lat": 40.78925196728539,
+"lon": -73.93805474848143,
+"matched": "East River Playground",
+"source": "parks-properties"
+},
+"East River Waterfront Esplanade": null,
+"East Springfield Playground": {
+"confidence": 1.0,
+"lat": 40.698385300917785,
+"lon": -73.73995445175399,
+"matched": "East Springfield Playground",
+"source": "parks-properties"
+},
+"Eastchester Playground": {
+"confidence": 1.0,
+"lat": 40.869890990816884,
+"lon": -73.85286063768402,
+"matched": "Eastchester Playground",
+"source": "parks-properties"
+},
+"Eastern Parkway": {
+"confidence": 1.0,
+"lat": 40.67264010577558,
+"lon": -73.96701127719692,
+"matched": "Eastern Parkway",
+"source": "parks-properties"
+},
+"Edenwald Playground": {
+"confidence": 1.0,
+"lat": 40.884691115100566,
+"lon": -73.84459588589519,
+"matched": "Edenwald Playground",
+"source": "parks-properties"
+},
+"Electric Playground / Elechester Playground": null,
+"Elijah Stroud Playground (PS 316)": null,
+"Elizabeth Street Park": {
+"confidence": 0.8,
+"lat": 40.88591,
+"lon": -73.917,
+"matched": "ST ELIZABETH SETON PARK, Bronx, NY, USA",
+"source": "geosearch"
+},
+"Ella Fitzgerald Playground": null,
+"Elmhurst Park": {
+"confidence": 1.0,
+"lat": 40.729987325383654,
+"lon": -73.88507804886964,
+"matched": "Elmhurst Park",
+"source": "parks-properties"
+},
+"Emerald Playground (PS 200)": null,
+"Equity Park": null,
+"Ericsson Playground (JHS 126)": {
+"confidence": 1.0,
+"lat": 40.7204212900267,
+"lon": -73.94834461834701,
+"matched": "Ericsson Playground",
+"source": "parks-properties"
+},
+"Eugene McCabe Field": {
+"confidence": 1.0,
+"lat": 40.8024193475598,
+"lon": -73.94155952166857,
+"matched": "Eugene McCabe Field",
+"source": "parks-properties"
+},
+"FATHER CAPODANNO BOULEVARD between GREELEY AVENUE and SAND LANE,  FATHER CAPODANNO BOULEVARD between GREELEY AVENUE and SAND LANE,  FATHER CAPODANNO BOULEVARD between GREELEY AVENUE and SAND LANE": null,
+"FENIMORE STREET between ROGERS AVENUE and NOSTRAND AVENUE": null,
+"FLATBUSH AVENUE between CHURCH AVENUE and MARTENSE STREET,  FLATBUSH AVENUE between MARTENSE STREET and EMPIRE BOULEVARD,  EMPIRE BOULEVARD between FLATBUSH AVENUE and WASHINGTON AVENUE,  WASHINGTON AVENUE between EMPIRE BOULEVARD and MONTGOMERY STREET,  WASHINGTON AVENUE between MONTGOMERY STREET and PRESIDENT STREET,  MONTGOMERY STREET between WASHINGTON AVENUE and FRANKLIN AVENUE": null,
+"FORSYTH STREET between DIVISION STREET and EAST BROADWAY": null,
+"FRANKLIN AVENUE between MAIN STREET and SAULL STREET,  MAIN STREET between FRANKLIN AVENUE and ELDER AVENUE,  ELDER AVENUE between MAIN STREET and COLDEN STREET,  COLDEN STREET between ELDER AVENUE and JUNIPER AVENUE": null,
+"FREDERICK DOUGLASS BOULEVARD between WEST  123 STREET and WEST  126 STREET,  WEST  125 STREET between FREDERICK DOUGLASS BOULEVARD and MALCOLM X BOULEVARD,  MALCOLM X BOULEVARD between WEST  125 STREET and CENTRAL PARK NORTH,  CENTRAL PARK NORTH between MALCOLM X BOULEVARD and ADAM CLAYTON POWELL BOULEVARD,  ADAM CLAYTON POWELL JR BOULEVARD between CENTRAL PARK NORTH and WEST  116 STREET,  ST NICHOLAS AVENUE between WEST  116 STREET and FREDERICK DOUGLASS BOULEVARD,  FREDERICK DOUGLASS BOULEVARD between WEST  121 STREET and WEST  124 STREET, 2320 FREDERICK DOUGLASS BOULEVARD,2320 FREDERICK DOUGLASS BOULEVARD": null,
+"FT WASHINGTON AVENUE between WEST  168 STREET and WEST  169 STREET": null,
+"Faber Park": null,
+"Faber Pool and Park": {
+"confidence": 1.0,
+"lat": 40.64104057900743,
+"lon": -74.13586198946182,
+"matched": "Faber Pool and Park",
+"source": "parks-properties"
+},
+"Fairview Park": null,
+"Father Duffy Square": {
+"confidence": 1.0,
+"lat": 40.758982821491124,
+"lon": -73.98501533852624,
+"matched": "Father Duffy Square",
+"source": "parks-properties"
+},
+"Father Macris Park": null,
+"Ferry Point Park": {
+"confidence": 1.0,
+"lat": 40.81300515750339,
+"lon": -73.83715378134316,
+"matched": "Ferry Point Park",
+"source": "parks-properties"
+},
+"Field Of Dreams Park": null,
+"Fisher Pool": {
+"confidence": 1.0,
+"lat": 40.75878620882787,
+"lon": -73.86944181617396,
+"matched": "Fisher Pool",
+"source": "parks-properties"
+},
+"Flushing Fields": {
+"confidence": 1.0,
+"lat": 40.77199249123347,
+"lon": -73.81651083195459,
+"matched": "Flushing Fields",
+"source": "parks-properties"
+},
+"Flushing Meadows Corona Park": null,
+"Fordham Landing Playground": {
+"confidence": 1.0,
+"lat": 40.86442914477795,
+"lon": -73.90977426080133,
+"matched": "Fordham Landing Playground",
+"source": "parks-properties"
+},
+"Forest Park": null,
+"Fort Greene Park": null,
+"Fort Hamilton Athletic Field (Ft. Hamilton HS)": {
+"confidence": 1.0,
+"lat": 40.62686461516259,
+"lon": -74.03730655442746,
+"matched": "Fort Hamilton Athletic Field",
+"source": "parks-properties"
+},
+"Fort Totten Park": {
+"confidence": 1.0,
+"lat": 40.79326844610249,
+"lon": -73.7754769402531,
+"matched": "Fort Totten Park",
+"source": "parks-properties"
+},
+"Fort Tryon Park": {
+"confidence": 1.0,
+"lat": 40.86171259459579,
+"lon": -73.93340550067764,
+"matched": "Fort Tryon Park",
+"source": "parks-properties"
+},
+"Fort Washington Park": {
+"confidence": 1.0,
+"lat": 40.84989450327189,
+"lon": -73.94502473122537,
+"matched": "Fort Washington Park",
+"source": "parks-properties"
+},
+"Francis Lewis Park": {
+"confidence": 1.0,
+"lat": 40.79680981038457,
+"lon": -73.82544578241217,
+"matched": "Francis Lewis Park",
+"source": "parks-properties"
+},
+"Frank D. O'Connor Playground": {
+"confidence": 1.0,
+"lat": 40.74412181637704,
+"lon": -73.8864422722273,
+"matched": "Frank D. O'Connor Playground",
+"source": "parks-properties"
+},
+"Frank Golden Park": {
+"confidence": 1.0,
+"lat": 40.78485865246674,
+"lon": -73.8337602514334,
+"matched": "Frank Golden Park",
+"source": "parks-properties"
+},
+"Frank Principe Park / Maurice Park": null,
+"Franklin D Roosevelt Boardwalk and Beach": {
+"confidence": 1.0,
+"lat": 40.57929043439068,
+"lon": -74.07708825358296,
+"matched": "Franklin D. Roosevelt Boardwalk and Beach",
+"source": "parks-properties"
+},
+"Franz Sigel Park": {
+"confidence": 1.0,
+"lat": 40.82269771930089,
+"lon": -73.92569470917918,
+"matched": "Franz Sigel Park",
+"source": "parks-properties"
+},
+"Fred Samuel Playground": {
+"confidence": 1.0,
+"lat": 40.81717034922564,
+"lon": -73.93916234341448,
+"matched": "Fred Samuel Playground",
+"source": "parks-properties"
+},
+"Frederick B. Judge Playground": {
+"confidence": 1.0,
+"lat": 40.68328182805491,
+"lon": -73.80799577915788,
+"matched": "Frederick B. Judge Playground",
+"source": "parks-properties"
+},
+"Frederick Douglass Playground": {
+"confidence": 1.0,
+"lat": 40.79696119331445,
+"lon": -73.96745566462664,
+"matched": "Frederick Douglass Playground",
+"source": "parks-properties"
+},
+"Frederick Johnson Playground": {
+"confidence": 1.0,
+"lat": 40.82462865921354,
+"lon": -73.93525433373551,
+"matched": "Frederick Johnson Playground",
+"source": "parks-properties"
+},
+"Freshkills Park": {
+"confidence": 1.0,
+"lat": 40.577177223478536,
+"lon": -74.1845043683168,
+"matched": "Freshkills Park",
+"source": "parks-properties"
+},
+"Friends Field": {
+"confidence": 1.0,
+"lat": 40.61863596158953,
+"lon": -73.97339725704892,
+"matched": "Friends Field",
+"source": "parks-properties"
+},
+"Fulton Park": {
+"confidence": 1.0,
+"lat": 40.67981094282618,
+"lon": -73.93264456258025,
+"matched": "Fulton Park",
+"source": "parks-properties"
+},
+"GEORGE STREET between KNICKERBOCKER AVENUE and WILSON AVENUE": null,
+"GLEBE AVENUE between WESTCHESTER AVENUE and LYON AVENUE": {
+"confidence": 0.8,
+"lat": 40.83506,
+"lon": -73.85095,
+"matched": "GLEBE AV WESTCHESTER AV PROJECTS, Bronx, NY, USA",
+"source": "geosearch"
+},
+"GOODALL STREET between HYLAN BOULEVARD and TENNYSON DRIVE": null,
+"GREEN VALLEY ROAD between MANCHESTER DRIVE and MANCHESTER DRIVE": null,
+"GREENE AVENUE between LEWIS AVENUE and STUYVESANT AVENUE": null,
+"Garment District (Broadway Boulevard) Plaza": null,
+"Gen. Douglas MacArthur Park": {
+"confidence": 1.0,
+"lat": 40.58695960374274,
+"lon": -74.10013312755898,
+"matched": "Gen. Douglas MacArthur Park",
+"source": "parks-properties"
+},
+"Glen Oaks Oval /Tenney Park": null,
+"Glenwood Playground": {
+"confidence": 1.0,
+"lat": 40.636837436999,
+"lon": -73.91968675142436,
+"matched": "Glenwood Playground",
+"source": "parks-properties"
+},
+"Golconda Playground (PS 287)": null,
+"Gonzalo Plasencia Playground (JHS 136)": null,
+"Gordon Triangle": {
+"confidence": 1.0,
+"lat": 40.74872733976376,
+"lon": -73.95200947288903,
+"matched": "Gordon Triangle",
+"source": "parks-properties"
+},
+"Grandview Playground (The Big Park)": null,
+"Grant Park": {
+"confidence": 1.0,
+"lat": 40.836980622761175,
+"lon": -73.91294840038285,
+"matched": "Grant Park",
+"source": "parks-properties"
+},
+"Gravesend Park": {
+"confidence": 1.0,
+"lat": 40.623502549713606,
+"lon": -73.98350540979727,
+"matched": "Gravesend Park",
+"source": "parks-properties"
+},
+"Great Kills Park": {
+"confidence": 1.0,
+"lat": 40.55711529765316,
+"lon": -74.11140085617491,
+"matched": "Great Kills Park",
+"source": "parks-properties"
+},
+"Great Kills Veterans Playground": null,
+"Greeley Square Park": {
+"confidence": 1.0,
+"lat": 40.748559787606354,
+"lon": -73.98830748111416,
+"matched": "Greeley Square Park",
+"source": "parks-properties"
+},
+"Greeley Square Plaza": {
+"confidence": 0.8,
+"lat": 40.74861,
+"lon": -73.98832,
+"matched": "GREELEY SQUARE, New York, NY, USA",
+"source": "geosearch"
+},
+"Green Central Knoll": null,
+"Grover Cleveland Playground": {
+"confidence": 1.0,
+"lat": 40.711179491961545,
+"lon": -73.9106763635739,
+"matched": "Grover Cleveland Playground",
+"source": "parks-properties"
+},
+"Gun Hill Playground": {
+"confidence": 1.0,
+"lat": 40.87472474616751,
+"lon": -73.86542439469777,
+"matched": "Gun Hill Playground",
+"source": "parks-properties"
+},
+"HANCOCK STREET between WILSON AVENUE and CENTRAL AVENUE": null,
+"HARROD PLACE between WESTCHESTER AVENUE and MORRISON AVENUE": null,
+"HART STREET between LEWIS AVENUE and MARCUS GARVEY AVENUE": null,
+"HART STREET between ONDERDONK AVENUE and WOODWARD AVENUE": null,
+"HAWTHORNE STREET between BEDFORD AVENUE and ROGERS AVENUE": null,
+"HEGEMAN AVENUE between POWELL STREET and CHRISTOPHER AVENUE": null,
+"HENDRICKSON STREET between AVENUE P and QUENTIN ROAD": null,
+"HENDRIX STREET between HEGEMAN AVENUE and LINDEN BOULEVARD": null,
+"HINSDALE STREET between LINDEN BOULEVARD and DEWITT AVENUE": null,
+"HOLLAND AVENUE between EAST GUN HILL ROAD and MAGENTA STREET": null,
+"Haffen Park": {
+"confidence": 1.0,
+"lat": 40.873609936164385,
+"lon": -73.83885680442367,
+"matched": "Haffen Park",
+"source": "parks-properties"
+},
+"Haggerty Park": {
+"confidence": 1.0,
+"lat": 40.71297310090492,
+"lon": -73.75689583933503,
+"matched": "Haggerty Park",
+"source": "parks-properties"
+},
+"Hallets Cove Playground": null,
+"Hamilton Fish Park": {
+"confidence": 1.0,
+"lat": 40.71977101371464,
+"lon": -73.98053996750225,
+"matched": "Hamilton Fish Park",
+"source": "parks-properties"
+},
+"Hamilton Metz Field": {
+"confidence": 1.0,
+"lat": 40.66251744202739,
+"lon": -73.94095916534425,
+"matched": "Hamilton Metz Field",
+"source": "parks-properties"
+},
+"Hammel Playground": null,
+"Happy Warrior Playground": null,
+"Harlem Art Park": null,
+"Harlem River Park": {
+"confidence": 1.0,
+"lat": 40.803804498237476,
+"lon": -73.93131777643698,
+"matched": "Harlem River Park",
+"source": "parks-properties"
+},
+"Harris Brother Park": null,
+"Harris Park": {
+"confidence": 1.0,
+"lat": 40.87641042390018,
+"lon": -73.891497302573,
+"matched": "Harris Park",
+"source": "parks-properties"
+},
+"Harry Maze Playground": {
+"confidence": 1.0,
+"lat": 40.64300899410384,
+"lon": -73.92314918938112,
+"matched": "Harry Maze Playground",
+"source": "parks-properties"
+},
+"Hart Playground": {
+"confidence": 1.0,
+"lat": 40.77411275947475,
+"lon": -73.81904810597727,
+"matched": "Hart Playground",
+"source": "parks-properties"
+},
+"Hattie Carthan Playground (PS 305)": {
+"confidence": 1.0,
+"lat": 40.68555807575448,
+"lon": -73.94619679540486,
+"matched": "Hattie Carthan Playground",
+"source": "parks-properties"
+},
+"Hawkins Park": null,
+"Heckscher Playground": null,
+"Henry Hudson Park": null,
+"Henry M. Jackson Playground": {
+"confidence": 1.0,
+"lat": 40.71390488503433,
+"lon": -73.98156706760257,
+"matched": "Henry M. Jackson Playground",
+"source": "parks-properties"
+},
+"Herald Square Plaza": {
+"confidence": 0.8,
+"lat": 40.74999,
+"lon": -73.987119,
+"matched": "4 HERALD SQUARE, New York, NY, USA",
+"source": "geosearch"
+},
+"Herbert Von King Park": {
+"confidence": 1.0,
+"lat": 40.68957304604841,
+"lon": -73.94633306189021,
+"matched": "Herbert Von King Park",
+"source": "parks-properties"
+},
+"Highbridge Park": {
+"confidence": 1.0,
+"lat": 40.84223779906902,
+"lon": -73.92642699796602,
+"matched": "Highbridge Park",
+"source": "parks-properties"
+},
+"Highland Park": {
+"confidence": 1.0,
+"lat": 40.6873063807691,
+"lon": -73.88837648434532,
+"matched": "Highland Park",
+"source": "parks-properties"
+},
+"Hillel Plaza": {
+"confidence": 0.8,
+"lat": 40.632511,
+"lon": -73.948366,
+"matched": "21 HILLEL PLACE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Hillside Park (JHS 172)": null,
+"Hinton Park": {
+"confidence": 1.0,
+"lat": 40.75643091438161,
+"lon": -73.85513499047273,
+"matched": "Hinton Park",
+"source": "parks-properties"
+},
+"Hoffman Park": {
+"confidence": 1.0,
+"lat": 40.73269926086248,
+"lon": -73.87203860134511,
+"matched": "Hoffman Park",
+"source": "parks-properties"
+},
+"Holcombe Rucker Park": {
+"confidence": 1.0,
+"lat": 40.83038005608999,
+"lon": -73.9357022558032,
+"matched": "Holcombe Rucker Park",
+"source": "parks-properties"
+},
+"Holocaust Memorial Park": null,
+"Hope Ballfields": null,
+"Howard Bennett Playground": {
+"confidence": 1.0,
+"lat": 40.81368882349196,
+"lon": -73.93863014907154,
+"matched": "Howard Bennett Playground",
+"source": "parks-properties"
+},
+"Howard Playground": {
+"confidence": 1.0,
+"lat": 40.67174440395862,
+"lon": -73.90819257059931,
+"matched": "Howard Playground",
+"source": "parks-properties"
+},
+"Hudson Theatre": null,
+"Hunter's Point South Park": {
+"confidence": 1.0,
+"lat": 40.74019467070614,
+"lon": -73.96207706451932,
+"matched": "Hunter's Point South Park",
+"source": "parks-properties"
+},
+"Hunts Point Riverside Park": {
+"confidence": 1.0,
+"lat": 40.81770326221938,
+"lon": -73.88107719933465,
+"matched": "Hunts Point Riverside Park",
+"source": "parks-properties"
+},
+"I-Am-Park": {
+"confidence": 1.0,
+"lat": 40.8113252167422,
+"lon": -73.91012596560603,
+"matched": "I-Am-Park",
+"source": "parks-properties"
+},
+"INWOOD STREET between 123 AVENUE and ROCKAWAY BOULEVARD": null,
+"INWOOD STREET between SUTTER AVENUE and 130 AVENUE": null,
+"ISHAM STREET between SEAMAN AVENUE and COOPER STREET": null,
+"Idlewild Park": {
+"confidence": 1.0,
+"lat": 40.65420661667671,
+"lon": -73.75276642760743,
+"matched": "Idlewild Park",
+"source": "parks-properties"
+},
+"Inwood Hill Park": {
+"confidence": 1.0,
+"lat": 40.8720077129439,
+"lon": -73.92286694411315,
+"matched": "Inwood Hill Park",
+"source": "parks-properties"
+},
+"Irving Square Park": {
+"confidence": 1.0,
+"lat": 40.692540364060605,
+"lon": -73.90899450698922,
+"matched": "Irving Square Park",
+"source": "parks-properties"
+},
+"Isham Park": null,
+"J. Hood Wright Park": {
+"confidence": 1.0,
+"lat": 40.84663825486058,
+"lon": -73.94206325599052,
+"matched": "J. Hood Wright Park",
+"source": "parks-properties"
+},
+"JAMAICA AVENUE between PARSONS BOULEVARD and 170 STREET": null,
+"JEFFERSON AVENUE between MARCUS GARVEY AVENUE and LEWIS AVENUE": null,
+"JHS 51 JOP": null,
+"Jackie Robinson Park": {
+"confidence": 1.0,
+"lat": 40.82963747540082,
+"lon": -73.93918456157068,
+"matched": "Jackie Robinson Park",
+"source": "parks-properties"
+},
+"Jackie Robinson Park (PS 21)": {
+"confidence": 1.0,
+"lat": 40.82963747540082,
+"lon": -73.93918456157068,
+"matched": "Jackie Robinson Park",
+"source": "parks-properties"
+},
+"Jackie Robinson Playground (PS 320)": {
+"confidence": 1.0,
+"lat": 40.665830931961395,
+"lon": -73.95914456386967,
+"matched": "Jackie Robinson Playground",
+"source": "parks-properties"
+},
+"Jackson Square": null,
+"Jacob H. Schiff Playground": {
+"confidence": 1.0,
+"lat": 40.820351630516875,
+"lon": -73.95198865555861,
+"matched": "Jacob H. Schiff Playground",
+"source": "parks-properties"
+},
+"Jacob Joffe Fields": {
+"confidence": 1.0,
+"lat": 40.624706551800095,
+"lon": -73.91931141279498,
+"matched": "Jacob Joffe Fields",
+"source": "parks-properties"
+},
+"Jamaica Playground": {
+"confidence": 1.0,
+"lat": 40.693495707662834,
+"lon": -73.79093005039914,
+"matched": "Jamaica Playground",
+"source": "parks-properties"
+},
+"James Forten Playground": {
+"confidence": 1.0,
+"lat": 40.67660068970413,
+"lon": -73.96568478869018,
+"matched": "James Forten Playground",
+"source": "parks-properties"
+},
+"James J Walker Park": {
+"confidence": 1.0,
+"lat": 40.729746637247565,
+"lon": -74.00567998644674,
+"matched": "James J Walker Park",
+"source": "parks-properties"
+},
+"James Weldon Johnson Playground": {
+"confidence": 1.0,
+"lat": 40.797073069289006,
+"lon": -73.94166170210633,
+"matched": "James Weldon Johnson Playground",
+"source": "parks-properties"
+},
+"Jennifer's Playground": {
+"confidence": 1.0,
+"lat": 40.62003521643829,
+"lon": -74.16303273067598,
+"matched": "Jennifer's Playground",
+"source": "parks-properties"
+},
+"Jesse Owens Playground": {
+"confidence": 1.0,
+"lat": 40.69152306115832,
+"lon": -73.93246763375228,
+"matched": "Jesse Owens Playground",
+"source": "parks-properties"
+},
+"Jitu Weusi (Putnam) Plaza": {
+"confidence": 0.8,
+"lat": 40.68256,
+"lon": -73.96183,
+"matched": "JITU WEUSI PLAZA, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"John Golden Park": {
+"confidence": 1.0,
+"lat": 40.77372988628833,
+"lon": -73.76814198970165,
+"matched": "John Golden Park",
+"source": "parks-properties"
+},
+"John J Carty Park": null,
+"John Jay Park": {
+"confidence": 1.0,
+"lat": 40.76922828423987,
+"lon": -73.94949484602226,
+"matched": "John Jay Park",
+"source": "parks-properties"
+},
+"Johnny Hartman Square": null,
+"Joseph Austin Playground": null,
+"Joyce Kilmer Park": {
+"confidence": 1.0,
+"lat": 40.827442522604976,
+"lon": -73.92288940649294,
+"matched": "Joyce Kilmer Park",
+"source": "parks-properties"
+},
+"Judge Moses Weinstein Playground / Vleigh Plgd.": null,
+"Julio Carballo Fields": {
+"confidence": 1.0,
+"lat": 40.81611780090116,
+"lon": -73.88969760247335,
+"matched": "Julio Carballo Fields",
+"source": "parks-properties"
+},
+"Juniper Valley Park": {
+"confidence": 1.0,
+"lat": 40.72162376414135,
+"lon": -73.87440550998198,
+"matched": "Juniper Valley Park",
+"source": "parks-properties"
+},
+"KATONAH AVENUE between EAST  240 STREET and EAST  239 STREET": null,
+"KENMORE STREET between WOODROW ROAD and DIERAUF STREET": null,
+"KENT AVENUE between DIVISION AVENUE and SOUTH   10 STREET,  KENT AVENUE between SOUTH  10 ST and NORTH 9 ST,  KENT AVENUE between NORTH    9 STREET and NORTH   11 STREET": null,
+"KENT AVENUE between SOUTH   10 STREET and DIVISION AVENUE,  KENT AVENUE between SOUTH   10 STREET and NORTH    9 STREET,  KENT AVENUE between NORTH    9 STREET and NORTH   11 STREET": null,
+"KNAPP STREET between DRAPER PLACE and FREEDOM AVENUE": null,
+"KNICKERBOCKER AVENUE between STARR STREET and SUYDAM STREET": null,
+"KNICKERBOCKER AVENUE between STARR STREET and SUYDAM STREET,  KNICKERBOCKER AVENUE between WEIRFIELD STREET and HALSEY STREET": null,
+"KOSCIUSZKO STREET between LEWIS AVENUE and STUYVESANT AVENUE": null,
+"KOSCIUSZKO STREET between MARCUS GARVEY BOULEVARD and LEWIS AVENUE": null,
+"KOSCIUSZKO STREET between STUYVESANT AVENUE and MALCOM X BOULEVARD": null,
+"Kaiser Park": {
+"confidence": 1.0,
+"lat": 40.579358383046035,
+"lon": -73.99730405463674,
+"matched": "Kaiser Park",
+"source": "parks-properties"
+},
+"Kelly Park": null,
+"Kennedy Playground /Raymond O'Connor": null,
+"Kensington Plaza": {
+"confidence": 0.8,
+"lat": 40.640226,
+"lon": -73.97734,
+"matched": "KENSINGTON SCHOOL, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Kissena Corridor West": null,
+"Kissena Park": {
+"confidence": 1.0,
+"lat": 40.744610571393125,
+"lon": -73.79936680780006,
+"matched": "Kissena Park",
+"source": "parks-properties"
+},
+"Kolbert Playground": {
+"confidence": 1.0,
+"lat": 40.62009593303803,
+"lon": -73.95796547655628,
+"matched": "Kolbert Playground",
+"source": "parks-properties"
+},
+"Korean War Veterans Plaza": {
+"confidence": 1.0,
+"lat": 40.695772351528504,
+"lon": -73.99052012050088,
+"matched": "Korean War Veterans Plaza",
+"source": "parks-properties"
+},
+"Kwame Ture Recreation Center": {
+"confidence": 1.0,
+"lat": 40.84432828646797,
+"lon": -73.91943555291046,
+"matched": "Kwame Ture Recreation Center",
+"source": "parks-properties"
+},
+"LAFAYETTE AVENUE between TOMPKINS AVENUE and THROOP AVENUE": null,
+"LAKE STREET between AVENUE W and VILLAGE ROAD SOUTH": null,
+"LAMOKA AVENUE between WAINWRIGHT AVENUE and POMPEY AVENUE": null,
+"LEFFERTS PLACE between CLASSON AVENUE and GRAND AVENUE": null,
+"LENOX AVENUE between WEST  117 STREET and WEST  118 STREET": null,
+"LENOX AVENUE between WEST  136 STREET and WEST  137 STREET": null,
+"LIBERTY AVENUE between LEFFERTS BOULEVARD and 120 STREET": null,
+"LIBERTY AVENUE between LEFFERTS BOULEVARD and 126 STREET,  126 STREET between LIBERTY AVENUE and 95 AVENUE, Phil \"Scooter\" Rizzuto Park / Smokey Oval": null,
+"LIBERTY AVENUE between NEW JERSEY AVENUE and VERMONT STREET": null,
+"LINCOLN PLACE between 7 AVENUE and 6 AVENUE": null,
+"LONGFELLOW AVENUE between EAST  173 STREET and EAST  174 STREET": null,
+"LYNDALE AVENUE between SYCAMORE STREET and KOCH BOULEVARD": null,
+"LaTourette Park & Golf Course": {
+"confidence": 1.0,
+"lat": 40.57007654749868,
+"lon": -74.15706433662497,
+"matched": "LaTourette Park & Golf Course",
+"source": "parks-properties"
+},
+"Langston Hughes Playground (St. Nicholas Playground North)": {
+"confidence": 1.0,
+"lat": 40.812135237643176,
+"lon": -73.94664791885661,
+"matched": "Langston Hughes Playground",
+"source": "parks-properties"
+},
+"Latimer Playground": {
+"confidence": 1.0,
+"lat": 40.69634063504929,
+"lon": -73.7863895594683,
+"matched": "Latimer Playground",
+"source": "parks-properties"
+},
+"Lawrence Virgilio Playground": {
+"confidence": 1.0,
+"lat": 40.74734958203655,
+"lon": -73.91019750171235,
+"matched": "Lawrence Virgilio Playground",
+"source": "parks-properties"
+},
+"Leif Ericson Park": {
+"confidence": 1.0,
+"lat": 40.63651847624524,
+"lon": -74.02106156249225,
+"matched": "Leif Ericson Park",
+"source": "parks-properties"
+},
+"Lemon Creek Park": {
+"confidence": 1.0,
+"lat": 40.51402763498842,
+"lon": -74.19966978775405,
+"matched": "Lemon Creek Park",
+"source": "parks-properties"
+},
+"Lillian D Wald Playground": {
+"confidence": 1.0,
+"lat": 40.712088747963314,
+"lon": -73.98446551549203,
+"matched": "Lillian D Wald Playground",
+"source": "parks-properties"
+},
+"Lincoln Terrace / (Arthur S. Somers Park)": null,
+"Linden Park (Gershwin Park - JHS 166)": null,
+"Lindower Park": {
+"confidence": 1.0,
+"lat": 40.61217429167347,
+"lon": -73.91092156269099,
+"matched": "Lindower Park",
+"source": "parks-properties"
+},
+"Little Bay Park": {
+"confidence": 1.0,
+"lat": 40.78980620371511,
+"lon": -73.78691724635846,
+"matched": "Little Bay Park",
+"source": "parks-properties"
+},
+"Livonia Park": {
+"confidence": 1.0,
+"lat": 40.66389506072842,
+"lon": -73.9019119569962,
+"matched": "Livonia Park",
+"source": "parks-properties"
+},
+"Locust Manor Playground": {
+"confidence": 1.0,
+"lat": 40.68604536480141,
+"lon": -73.75642925082973,
+"matched": "Locust Manor Playground",
+"source": "parks-properties"
+},
+"Lopez Playground": null,
+"Loreto Playground": {
+"confidence": 1.0,
+"lat": 40.848973956236556,
+"lon": -73.85196920759256,
+"matched": "Loreto Playground",
+"source": "parks-properties"
+},
+"Lou Gehrig Plaza": {
+"confidence": 0.8,
+"lat": 40.822557,
+"lon": -73.921533,
+"matched": "LOU GEHRIG JHS, Bronx, NY, USA",
+"source": "geosearch"
+},
+"Lyons Square Playground": null,
+"MACDONOUGH STREET between PATCHEN AVENUE and MALCOLM X BOULEVARD": null,
+"MACDONOUGH STREET between RALPH AVENUE and HOWARD AVENUE": null,
+"MACON STREET between THROOP AVENUE and MARCUS GARVEY BOULEVARD": null,
+"MADISON AVENUE between EAST   98 STREET and EAST   99 STREET": null,
+"MAJOR DEEGAN between CITY LIMITS and MANHATTAN,  MAJOR DEEGAN EXWY between CITY LIMITS and W FORDHAM RD,  UNIVERSITY HIGHT BR (207ST BRIDGE) between MAJOR DEEGAN EXWY and 10 AV,  10 AVENUE between WEST  207 STREET and DYCKMAN STREET,  HARLEM RIVER DRIVE between DYCKMAN STREET and FDR,  FDR between HARLEM RIVER DR and BATTERY PARK UNDERPASS,  WEST STREET between BATTERY PLACE and LIBERTY STREET,  SOUTH END AVENUE between LIBERTY STREET and WEST THAMES STREET,  LIBERTY STREET between WEST STREET and SOUTH END AVENUE,  FDR NORTH between SOUTH ST and HARLEM RIVER DR TO GWB,  G WASHINGTON BRIDGE between HARLEM RIVER DR and PALISDES PARKWAY": null,
+"MAPLE AVENUE between FRAME PLACE and MAIN STREET,  MAPLE AVENUE between FRAME PLACE and MAIN STREET,  MAIN STREET between MAPLE AVENUE and ROOSEVELT AVENUE, 136-20 ROOSEVELT AVENUE,136-20 ROOSEVELT AVENUE": null,
+"MENAHAN STREET between WILSON AVENUE and KNICKERBOCKER AVENUE": null,
+"MICKLE AVENUE between GIVAN AVENUE and BURKE AVENUE": null,
+"MIDWOOD STREET between ALBANY AVENUE and KINGSTON AVENUE": null,
+"MONTGOMERY STREET between CLOVE ROAD and NEW YORK AVENUE": null,
+"MOORE STREET between BUSHWICK AVENUE and HUMBOLDT STREET": null,
+"MORRIS AVENUE between EAST  182 STREET and EAST  183 STREET": null,
+"MORRISON AVENUE between WATSON AVENUE and HARROD PLACE": null,
+"MOSCO STREET between MOTT STREET and MULBERRY STREET": null,
+"MOTT STREET between PELL STREET and WORTH STREET,  MOTT STREET between PELL STREET and WORTH STREET,  CHATHAM SQUARE between MOTT STREET and EAST BROADWAY,  EAST BROADWAY between CHATHAM SQUARE and RUTGERS STREET,  RUTGERS STREET between EAST BROADWAY and MADISON STREET,  MADISON STREET between RUTGERS STREET and JAMES STREET,  JAMES STREET between SAINT JAMES PLACE and MADISON STREET,  SAINT JAMES PLACE between OLIVER STREET and JAMES STREET,  OLIVER STREET  between CHATHAM SQUARE and SAINT JAMES PLACE,  MOTT STREET between PELL STREET and WORTH STREET, 25 MOTT STREET": null,
+"MOUNT CARMEL PLACE between EAST   26 STREET and EAST   28 STREET": null,
+"MURDOCK AVENUE between EAST  233 STREET and STRANG AVENUE": null,
+"MacArthur Park": null,
+"MacDonald Park": {
+"confidence": 1.0,
+"lat": 40.72215478883951,
+"lon": -73.84663069861612,
+"matched": "MacDonald Park",
+"source": "parks-properties"
+},
+"Macneil Park": null,
+"Macombs Dam Park": {
+"confidence": 1.0,
+"lat": 40.82786803213428,
+"lon": -73.9295570230094,
+"matched": "Macombs Dam Park",
+"source": "parks-properties"
+},
+"Madison Square Park": null,
+"Mae Grant Playground": {
+"confidence": 1.0,
+"lat": 40.79248421132617,
+"lon": -73.94934343089615,
+"matched": "Mae Grant Playground",
+"source": "parks-properties"
+},
+"Mafera Park": {
+"confidence": 1.0,
+"lat": 40.70722790773657,
+"lon": -73.8907920759044,
+"matched": "Mafera Park",
+"source": "parks-properties"
+},
+"Mahoney Playground": {
+"confidence": 1.0,
+"lat": 40.64342347754777,
+"lon": -74.08603158525138,
+"matched": "Mahoney Playground",
+"source": "parks-properties"
+},
+"Manhattan Beach Park": {
+"confidence": 1.0,
+"lat": 40.576154191005735,
+"lon": -73.94026105046399,
+"matched": "Manhattan Beach Park",
+"source": "parks-properties"
+},
+"Mapes Park": {
+"confidence": 1.0,
+"lat": 40.84709135174983,
+"lon": -73.88575386388995,
+"matched": "Mapes Park",
+"source": "parks-properties"
+},
+"Maple Playground": {
+"confidence": 1.0,
+"lat": 40.755895598828964,
+"lon": -73.82598236878933,
+"matched": "Maple Playground",
+"source": "parks-properties"
+},
+"Marble Hill Playground": {
+"confidence": 1.0,
+"lat": 40.877471854393924,
+"lon": -73.90815081634727,
+"matched": "Marble Hill Playground",
+"source": "parks-properties"
+},
+"Marconi Park": {
+"confidence": 1.0,
+"lat": 40.69345884243222,
+"lon": -73.79546092994839,
+"matched": "Marconi Park",
+"source": "parks-properties"
+},
+"Marcus Garvey Park": {
+"confidence": 1.0,
+"lat": 40.80436986379128,
+"lon": -73.94411791188682,
+"matched": "Marcus Garvey Park",
+"source": "parks-properties"
+},
+"Marcus Garvey Square": {
+"confidence": 1.0,
+"lat": 40.877755675336644,
+"lon": -73.86634272609008,
+"matched": "Marcus Garvey Square",
+"source": "parks-properties"
+},
+"Marcy Playground": {
+"confidence": 1.0,
+"lat": 40.69564552332918,
+"lon": -73.95081844283509,
+"matched": "Marcy Playground",
+"source": "parks-properties"
+},
+"Maria Hernandez Park": null,
+"Marine Park": {
+"confidence": 1.0,
+"lat": 40.58673736727406,
+"lon": -73.91050111997139,
+"matched": "Marine Park",
+"source": "parks-properties"
+},
+"Marion Hopkinson Playground": {
+"confidence": 1.0,
+"lat": 40.68182197800392,
+"lon": -73.91317006947361,
+"matched": "Marion Hopkinson Playground",
+"source": "parks-properties"
+},
+"Markham Playground": {
+"confidence": 1.0,
+"lat": 40.62332117508919,
+"lon": -74.14593279138384,
+"matched": "Markham Playground",
+"source": "parks-properties"
+},
+"Martin Luther King Jr. Playground": {
+"confidence": 1.0,
+"lat": 40.66756285591511,
+"lon": -73.89032163976816,
+"matched": "Martin Luther King Jr. Playground",
+"source": "parks-properties"
+},
+"Martinez Playground": {
+"confidence": 1.0,
+"lat": 40.70906613800299,
+"lon": -73.94438460028931,
+"matched": "Martinez Playground",
+"source": "parks-properties"
+},
+"Marx Brothers Playground": {
+"confidence": 1.0,
+"lat": 40.784341041110466,
+"lon": -73.9460330736051,
+"matched": "Marx Brothers Playground",
+"source": "parks-properties"
+},
+"McCaffrey Playground": {
+"confidence": 1.0,
+"lat": 40.75908525477221,
+"lon": -73.99128579227171,
+"matched": "McCaffrey Playground",
+"source": "parks-properties"
+},
+"McCarren Park": null,
+"McDonald Playground": {
+"confidence": 1.0,
+"lat": 40.600493709608685,
+"lon": -73.97191292064382,
+"matched": "McDonald Playground",
+"source": "parks-properties"
+},
+"McGuire Fields": {
+"confidence": 1.0,
+"lat": 40.61355570932031,
+"lon": -73.89837911922892,
+"matched": "McGuire Fields",
+"source": "parks-properties"
+},
+"McKinley Square": null,
+"McLaughlin Park": {
+"confidence": 1.0,
+"lat": 40.69655680345229,
+"lon": -73.98586733642296,
+"matched": "McLaughlin Park",
+"source": "parks-properties"
+},
+"Mckinley Park": {
+"confidence": 1.0,
+"lat": 40.62681406503171,
+"lon": -74.01635335459562,
+"matched": "McKinley Park",
+"source": "parks-properties"
+},
+"Melrose Commons": null,
+"Merriam Playground": {
+"confidence": 1.0,
+"lat": 40.83958226108799,
+"lon": -73.9268107317041,
+"matched": "Merriam Playground",
+"source": "parks-properties"
+},
+"Midland Field": {
+"confidence": 1.0,
+"lat": 40.576254391240205,
+"lon": -74.0993285120998,
+"matched": "Midland Field",
+"source": "parks-properties"
+},
+"Milestone Park": {
+"confidence": 1.0,
+"lat": 40.60950802933146,
+"lon": -73.99938836340843,
+"matched": "Milestone Park",
+"source": "parks-properties"
+},
+"Mill Pond Park": {
+"confidence": 1.0,
+"lat": 40.82360886626707,
+"lon": -73.93163583153651,
+"matched": "Mill Pond Park",
+"source": "parks-properties"
+},
+"Minetta Playground": {
+"confidence": 1.0,
+"lat": 40.73069742865243,
+"lon": -74.00126352887523,
+"matched": "Minetta Playground",
+"source": "parks-properties"
+},
+"Mitchell Square": null,
+"Monsignor Crawford Field": {
+"confidence": 1.0,
+"lat": 40.61457171841343,
+"lon": -73.91604139163893,
+"matched": "Monsignor Crawford Field",
+"source": "parks-properties"
+},
+"Monsignor Kett Playground": {
+"confidence": 1.0,
+"lat": 40.86257427623735,
+"lon": -73.92078817393794,
+"matched": "Monsignor Kett Playground",
+"source": "parks-properties"
+},
+"Monsignor McGolrick Park": null,
+"Monsignor Raul Del Valle Square": null,
+"Montbellier Park": {
+"confidence": 1.0,
+"lat": 40.675518240459546,
+"lon": -73.7563964509,
+"matched": "Montbellier Park",
+"source": "parks-properties"
+},
+"Montefiore SquarePark": null,
+"Morningside Park": {
+"confidence": 1.0,
+"lat": 40.80539264150668,
+"lon": -73.95904647560913,
+"matched": "Morningside Park",
+"source": "parks-properties"
+},
+"Mosholu Parkway": {
+"confidence": 1.0,
+"lat": 40.87824182376286,
+"lon": -73.88310656690504,
+"matched": "Mosholu Parkway",
+"source": "parks-properties"
+},
+"Mother Cabrini Park": {
+"confidence": 1.0,
+"lat": 40.68443819810192,
+"lon": -74.00499308052692,
+"matched": "Mother Cabrini Park",
+"source": "parks-properties"
+},
+"Mott Playground": null,
+"Mount Eden Malls": {
+"confidence": 1.0,
+"lat": 40.8428890862198,
+"lon": -73.90906757436515,
+"matched": "Mount Eden Malls",
+"source": "parks-properties"
+},
+"Muller Triangle": null,
+"Murphy's Brother's Playground": null,
+"Murray Playground": null,
+"NORMAN AVENUE between DOBBIN STREET and BANKER STREET,  NORMAN AVENUE between DOBBIN STREET and BANKER STREET,  BANKER STREET between NORMAN AVENUE and MESEROLE AVENUE,  BANKER STREET between NORMAN AVENUE and MESEROLE AVENUE": null,
+"NORTH ELLIOTT PLACE between FLUSHING AVENUE and PARK AVENUE": null,
+"NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD": null,
+"Newtown Barge Playground": null,
+"Nicholas Naquan Heyward Jr. Park": {
+"confidence": 1.0,
+"lat": 40.68450964407333,
+"lon": -73.98778958302067,
+"matched": "Nicholas Naquan Heyward Jr. Park",
+"source": "parks-properties"
+},
+"Noble Playground": {
+"confidence": 1.0,
+"lat": 40.83717975811763,
+"lon": -73.87256395426941,
+"matched": "Noble Playground",
+"source": "parks-properties"
+},
+"Northerleigh Park": {
+"confidence": 1.0,
+"lat": 40.62289725234551,
+"lon": -74.13359748188195,
+"matched": "Northerleigh Park",
+"source": "parks-properties"
+},
+"Northern Playground": {
+"confidence": 1.0,
+"lat": 40.75584038918254,
+"lon": -73.8745559826667,
+"matched": "Northern Playground",
+"source": "parks-properties"
+},
+"Nostrand Playground (PS 269)": {
+"confidence": 1.0,
+"lat": 40.6381483131792,
+"lon": -73.94714957006765,
+"matched": "Nostrand Playground",
+"source": "parks-properties"
+},
+"OLD BROADWAY between WEST  125 STREET and WEST  126 STREET": null,
+"OLINVILLE AVENUE between THWAITES PLACE and PELHAM PARKWAY NORTH": null,
+"ONDERDONK AVENUE between STOCKHOLM STREET and STANHOPE STREET,  ONDERDONK AVENUE between STOCKHOLM STREET and MENAHAN STREET,  MENAHAN STREET between ONDERDONK AVENUE and WOODWARD AVENUE,  WOODWARD AVENUE between MENAHAN STREET and HART STREET,  HART STREET between WOODWARD AVENUE and ONDERDONK AVENUE,  ONDERDONK AVENUE between HART STREET and STANHOPE STREET,  ONDERDONK AVENUE between STOCKHOLM STREET and STANHOPE STREET": null,
+"Ocean Parkway Malls": {
+"confidence": 1.0,
+"lat": 40.64966646337701,
+"lon": -73.97494289070133,
+"matched": "Ocean Parkway Malls",
+"source": "parks-properties"
+},
+"Owl's Head Park": null,
+"P.O. Reinaldo Salgado Playground (PS 309)": {
+"confidence": 1.0,
+"lat": 40.68788503120931,
+"lon": -73.92585725154423,
+"matched": "P.O. Reinaldo Salgado Playground",
+"source": "parks-properties"
+},
+"P.O. Serrano Playground": {
+"confidence": 1.0,
+"lat": 40.82341946785183,
+"lon": -73.85087468063155,
+"matched": "P.O. Serrano Playground",
+"source": "parks-properties"
+},
+"P.S. 29 Ball Field": null,
+"PARK PLACE between BROOKLYN AVENUE and KINGSTON AVENUE": null,
+"PARK PLACE between NEW YORK AVENUE and BROOKLYN AVENUE": null,
+"PARKSIDE AVENUE between BEDFORD AVENUE and ROGERS AVENUE": null,
+"PATCHEN AVENUE between PUTNAM AVENUE and MADISON STREET": null,
+"PELHAM PARKWAY SOUTH between WILSON AVENUE and EASTCHESTER ROAD": null,
+"PLATTWOOD AVENUE between CROSSBAY BOULEVARD and 96 STREET": null,
+"PLEASANT AVENUE between EAST  114 STREET and EAST  115 STREET,  EAST  115 STREET between PLEASANT AVENUE and 1 AVENUE,  1 AVENUE between EAST  115 STREET and EAST  116 STREET,  EAST  116 STREET between 1 AVENUE and 2 AVENUE,  2 AVENUE between EAST  116 STREET and EAST  106 STREET,  EAST  106 STREET between 2 AVENUE and 1 AVENUE,  1 AVENUE between EAST  106 STREET and EAST  109 STREET,  EAST  109 STREET between 2 AVENUE and 1 AVENUE,  2 AVENUE between EAST  109 STREET and EAST  108 STREET,  EAST  108 STREET between 2 AVENUE and 1 AVENUE,  1 AVENUE between EAST  108 STREET and EAST  114 STREET,  EAST  114 STREET between 1 AVENUE and PLEASANT AVENUE,  PLEASANT AVENUE between EAST  114 STREET and EAST  115 STREET": null,
+"POPLAR STREET between LURTING AVENUE and WILLIAMSBRIDGE ROAD": null,
+"PRESCOTT AVENUE between SOUTH RAILROAD AVENUE and EDISON STREET": null,
+"PRESIDENT STREET between ROGERS AVENUE and BEDFORD AVENUE": null,
+"PRINCE STREET between MULBERRY STREET and MOTT STREET": null,
+"PRINCETON AVENUE between CLAWSON STREET and HYLAN BOULEVARD": null,
+"PROSPECT PLACE between CLASSON AVENUE and GRAND AVENUE": null,
+"PUTNAM AVENUE between NOSTRAND AVENUE and MARCY AVENUE": null,
+"Paerdegat Park": {
+"confidence": 1.0,
+"lat": 40.63785356676207,
+"lon": -73.93803869373832,
+"matched": "Paerdegat Park",
+"source": "parks-properties"
+},
+"Parade Ground": {
+"confidence": 1.0,
+"lat": 40.650617820804065,
+"lon": -73.97071366144694,
+"matched": "Parade Ground",
+"source": "parks-properties"
+},
+"Park Of The Americas / Linden Park": null,
+"Park Slope Playground (PS 282)": {
+"confidence": 1.0,
+"lat": 40.67683268288741,
+"lon": -73.97842970502462,
+"matched": "Park Slope Playground",
+"source": "parks-properties"
+},
+"Park at Beach 108 Street": {
+"confidence": 1,
+"lat": 40.58372,
+"lon": -73.83247,
+"matched": "PARK AT BEACH 108 STREET, Rockaway Park, NY, USA",
+"source": "geosearch"
+},
+"Parkside Playground": null,
+"Parque De Los Ninos": null,
+"Patrick O'Rourke Park (PS 201)": null,
+"Patterson Playground": {
+"confidence": 1.0,
+"lat": 40.815473992364296,
+"lon": -73.92249931405729,
+"matched": "Patterson Playground",
+"source": "parks-properties"
+},
+"Paul Raimonda Playground": {
+"confidence": 1.0,
+"lat": 40.772733892721135,
+"lon": -73.8974547076475,
+"matched": "Paul Raimonda Playground",
+"source": "parks-properties"
+},
+"Pearl Street Plaza": {
+"confidence": 0.8,
+"lat": 40.700897,
+"lon": -73.988198,
+"matched": "138 PEARL STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Pelham Bay Little League": {
+"confidence": 1.0,
+"lat": 40.841551787055316,
+"lon": -73.83923653964983,
+"matched": "Pelham Bay Little League",
+"source": "parks-properties"
+},
+"Pelham Bay Park": {
+"confidence": 1.0,
+"lat": 40.86712815836117,
+"lon": -73.8025162891677,
+"matched": "Pelham Bay Park",
+"source": "parks-properties"
+},
+"Pelham Bay Park and Orchard Beach": {
+"confidence": 1.0,
+"lat": 40.86712815836117,
+"lon": -73.8025162891677,
+"matched": "Pelham Bay Park",
+"source": "parks-properties"
+},
+"Pena Herrera Park (PS 1)": null,
+"Penn South Playground": {
+"confidence": 1.0,
+"lat": 40.74748926831348,
+"lon": -73.99867670301077,
+"matched": "Penn South Playground",
+"source": "parks-properties"
+},
+"Pershing Square Plaza": {
+"confidence": 0.8,
+"lat": 40.75177,
+"lon": -73.97793,
+"matched": "PERSHING SQUARE, New York, NY, USA",
+"source": "geosearch"
+},
+"Peter's Field": {
+"confidence": 1.0,
+"lat": 40.73612682519238,
+"lon": -73.98147883000864,
+"matched": "Peter's Field",
+"source": "parks-properties"
+},
+"Phil \"Scooter\" Rizzuto Park / Smokey Oval": null,
+"Pier 42": null,
+"Pink Playground": null,
+"Playground Eighty Nine LXXXIX": {
+"confidence": 1.0,
+"lat": 40.788550815638935,
+"lon": -73.9719415349946,
+"matched": "Playground Eighty Nine LXXXIX",
+"source": "parks-properties"
+},
+"Playground One": {
+"confidence": 1.0,
+"lat": 40.7123116771486,
+"lon": -73.99748237327806,
+"matched": "Playground One",
+"source": "parks-properties"
+},
+"Poe Park": {
+"confidence": 1.0,
+"lat": 40.8653354835126,
+"lon": -73.89419909111741,
+"matched": "Poe Park",
+"source": "parks-properties"
+},
+"Police Officer Edward Byrne Park": null,
+"Pomonok Playground (PS 201)": {
+"confidence": 1.0,
+"lat": 40.73596633355909,
+"lon": -73.81363775749534,
+"matched": "Pomonok Playground",
+"source": "parks-properties"
+},
+"Poor Richard's Playground": null,
+"Potomac Playground (IS 258)": {
+"confidence": 1.0,
+"lat": 40.682001549658466,
+"lon": -73.94439526213932,
+"matched": "Potomac Playground",
+"source": "parks-properties"
+},
+"Prall Playground": {
+"confidence": 1.0,
+"lat": 40.62867153190925,
+"lon": -74.11815195926111,
+"matched": "Prall Playground",
+"source": "parks-properties"
+},
+"Pratt Playground": {
+"confidence": 1.0,
+"lat": 40.692590354864805,
+"lon": -73.96244390749605,
+"matched": "Pratt Playground",
+"source": "parks-properties"
+},
+"Printer's Park": null,
+"Prospect Park": {
+"confidence": 1.0,
+"lat": 40.662104694156795,
+"lon": -73.96894233026497,
+"matched": "Prospect Park",
+"source": "parks-properties"
+},
+"Pugsley Creek Park": {
+"confidence": 1.0,
+"lat": 40.812464795879514,
+"lon": -73.85074506457732,
+"matched": "Pugsley Creek Park",
+"source": "parks-properties"
+},
+"Pulaski Park": {
+"confidence": 1.0,
+"lat": 40.80486007636553,
+"lon": -73.92403349164708,
+"matched": "Pulaski Park",
+"source": "parks-properties"
+},
+"Pulaski Playground (PS 304)": {
+"confidence": 1.0,
+"lat": 40.69355963840845,
+"lon": -73.94177285043608,
+"matched": "Pulaski Playground",
+"source": "parks-properties"
+},
+"QUEENS BOULEVARD between 69 ROAD and 70 AVENUE": {
+"confidence": 0.8,
+"lat": 40.727077,
+"lon": -73.855153,
+"matched": "69-000 QUEENS BOULEVARD, Rego Park, NY, USA",
+"source": "geosearch"
+},
+"QUINCY STREET between FRANKLIN AVENUE and CLASSON AVENUE": null,
+"QUINCY STREET between NOSTRAND AVENUE and MARCY AVENUE": null,
+"Quarry Ballfields": {
+"confidence": 1.0,
+"lat": 40.8509155719022,
+"lon": -73.89110872365988,
+"matched": "Quarry Ballfields",
+"source": "parks-properties"
+},
+"Queens Farm Park": {
+"confidence": 1.0,
+"lat": 40.74840185822054,
+"lon": -73.72127148604676,
+"matched": "Queens Farm Park",
+"source": "parks-properties"
+},
+"Queensbridge Park": {
+"confidence": 1.0,
+"lat": 40.753577447162364,
+"lon": -73.94664217064027,
+"matched": "Queensbridge Park",
+"source": "parks-properties"
+},
+"RADCLIFF AVENUE between MAGENTA STREET and DUNCAN STREET": null,
+"RALEIGH STREET between ECKFORD AVENUE and ALBERT ROAD": null,
+"RAMBLEWOOD AVENUE between OCEANVIEW PLACE and SYCAMORE STREET": null,
+"REV RICARDO TANON AVENUE between WESTCHESTER AVENUE and EAST  161 STREET,  REV RICARDO TANON AVENUE between WESTCHESTER AVENUE and LONGWOOD AVENUE,  LONGWOOD AVENUE between REV RICARDO TANON AVENUE and SOUTHERN BOULEVARD,  SOUTHERN BOULEVARD between LONGWOOD AVENUE and INTERVALE AVENUE,  INTERVALE AVENUE between SOUTHERN BOULEVARD and EAST  163 STREET,  EAST  163 STREET between INTERVALE AVENUE and WESTCHESTER AVENUE,  WESTCHESTER AVENUE between EAST  163 STREET and EAST  161 STREET,  WESTCHESTER AVENUE between REV RICARDO TANON AVENUE and EAST  161 STREET": null,
+"RIDGEWOOD AVENUE between KATAN AVENUE and GENESEE AVENUE": null,
+"RIVERDALE AVE between W 259TH ST and W 260TH ST": null,
+"ROCKAWAY BEACH BOULEVARD between BEACH   52 STREET and BEACH   53 STREET": null,
+"ROCKWOOD STREET Open Street 2026": null,
+"ROGERS AVENUE between MONTGOMERY STREET and SULLIVAN PLACE": null,
+"ROOSEVELT AVENUE between 103 STREET and 104 STREET": null,
+"Railroad Playground": {
+"confidence": 1.0,
+"lat": 40.649715832615314,
+"lon": -73.9145450901387,
+"matched": "Railroad Playground",
+"source": "parks-properties"
+},
+"Rainbow Playground": {
+"confidence": 1.0,
+"lat": 40.64055124718082,
+"lon": -74.01098096995393,
+"matched": "Rainbow Playground",
+"source": "parks-properties"
+},
+"Rainey Park": {
+"confidence": 1.0,
+"lat": 40.76664400453852,
+"lon": -73.94069147519453,
+"matched": "Rainey Park",
+"source": "parks-properties"
+},
+"Ralph Bunche Park": {
+"confidence": 1.0,
+"lat": 40.74914831611752,
+"lon": -73.96988262712463,
+"matched": "Ralph Bunche Park",
+"source": "parks-properties"
+},
+"Ralph Demarco Park": null,
+"Randall's Island Park": {
+"confidence": 1.0,
+"lat": 40.80123987071641,
+"lon": -73.92392044467614,
+"matched": "Randall's Island Park",
+"source": "parks-properties"
+},
+"Rappaport Playground": {
+"confidence": 1.0,
+"lat": 40.63703997305513,
+"lon": -74.00065510246581,
+"matched": "Rappaport Playground",
+"source": "parks-properties"
+},
+"Ravenswood Playground": {
+"confidence": 1.0,
+"lat": 40.76201143436659,
+"lon": -73.93598172579641,
+"matched": "Ravenswood Playground",
+"source": "parks-properties"
+},
+"Real Good Park": null,
+"Red Hook Recreation Area": {
+"confidence": 1.0,
+"lat": 40.67182774548341,
+"lon": -74.00729165800787,
+"matched": "Red Hook Recreation Area",
+"source": "parks-properties"
+},
+"Redfern Playground": {
+"confidence": 1.0,
+"lat": 40.611037181043486,
+"lon": -73.75011314743637,
+"matched": "Redfern Playground",
+"source": "parks-properties"
+},
+"Reiff Playground": {
+"confidence": 1.0,
+"lat": 40.71864609984016,
+"lon": -73.90171614702687,
+"matched": "Reiff Playground",
+"source": "parks-properties"
+},
+"Renaissance Playground": {
+"confidence": 1.0,
+"lat": 40.82138289324266,
+"lon": -73.94144010326136,
+"matched": "Renaissance Playground",
+"source": "parks-properties"
+},
+"Rev J Polite Playground": {
+"confidence": 1.0,
+"lat": 40.827011215003836,
+"lon": -73.89710692394408,
+"matched": "Rev J Polite Playground",
+"source": "parks-properties"
+},
+"Rev. Dr. Maggie Howard Playground": {
+"confidence": 1.0,
+"lat": 40.62332413314308,
+"lon": -74.07950967233184,
+"matched": "Rev. Dr. Maggie Howard Playground",
+"source": "parks-properties"
+},
+"Reverend T. Wendell Foster Park": null,
+"Richard Tucker Square": {
+"confidence": 1.0,
+"lat": 40.77350480344194,
+"lon": -73.98190288324078,
+"matched": "Richard Tucker Park",
+"source": "parks-properties"
+},
+"Richman (Echo) Park": {
+"confidence": 1.0,
+"lat": 40.849049070361325,
+"lon": -73.90148118020372,
+"matched": "Richman (Echo) Park",
+"source": "parks-properties"
+},
+"Riverdale Playground": {
+"confidence": 1.0,
+"lat": 40.88757185719626,
+"lon": -73.91478216103305,
+"matched": "Riverdale Playground",
+"source": "parks-properties"
+},
+"Riverside Park": {
+"confidence": 1.0,
+"lat": 40.82736379272499,
+"lon": -73.95237348978003,
+"matched": "Riverside Park",
+"source": "parks-properties"
+},
+"Riverside Park South": {
+"confidence": 1.0,
+"lat": 40.77791840938467,
+"lon": -73.98977703552903,
+"matched": "Riverside Park South",
+"source": "parks-properties"
+},
+"Robert Moses Playground": {
+"confidence": 1.0,
+"lat": 40.74811231829414,
+"lon": -73.96973863694532,
+"matched": "Robert Moses Playground",
+"source": "parks-properties"
+},
+"Roberto Clemente Ballfield": {
+"confidence": 1.0,
+"lat": 40.706261491286554,
+"lon": -73.96754692579222,
+"matched": "Roberto Clemente Ballfield",
+"source": "parks-properties"
+},
+"Roberto Clemente Plaza": {
+"confidence": 0.8,
+"lat": 40.70643,
+"lon": -73.96771,
+"matched": "ROBERTO CLEMENTE BALLFIELD, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Rochdale Park": {
+"confidence": 1.0,
+"lat": 40.67477458691139,
+"lon": -73.77475603974409,
+"matched": "Rochdale Park",
+"source": "parks-properties"
+},
+"Rockaway Beach Boardwalk": null,
+"Rockaway Beach and Boardwalk": {
+"confidence": 1.0,
+"lat": 40.59263255318983,
+"lon": -73.75430654338706,
+"matched": "Rockaway Beach and Boardwalk",
+"source": "parks-properties"
+},
+"Rockaway Community Park": {
+"confidence": 1.0,
+"lat": 40.59905181738705,
+"lon": -73.78354817420906,
+"matched": "Rockaway Community Park",
+"source": "parks-properties"
+},
+"Rodney Park North": {
+"confidence": 1.0,
+"lat": 40.70911764230992,
+"lon": -73.956263052075,
+"matched": "Rodney Park North",
+"source": "parks-properties"
+},
+"Roy Wilkins Park": null,
+"Rufus King Park": {
+"confidence": 1.0,
+"lat": 40.70417723741035,
+"lon": -73.80339282544054,
+"matched": "Rufus King Park",
+"source": "parks-properties"
+},
+"Russell Pederson Playground": null,
+"Russell Sage Playground": {
+"confidence": 1.0,
+"lat": 40.724190146878776,
+"lon": -73.8514471902555,
+"matched": "Russell Sage Playground",
+"source": "parks-properties"
+},
+"SACKETT STREET between VAN BRUNT STREET and DEAD  END": null,
+"SARATOGA AVENUE between BLAKE AVENUE and DUMONT AVENUE": null,
+"SCHENCK AVENUE between NEW LOTS AVENUE and LIVONIA AVENUE": null,
+"SCHENECTADY AVENUE between AVENUE D and FOSTER AVENUE": {
+"confidence": 0.8,
+"lat": 40.562228,
+"lon": -74.132473,
+"matched": "26 D & T DIMARTINIS AVENUE, Staten Island, NY, USA",
+"source": "geosearch"
+},
+"SECOND AVENUE between EAST   97 STREET and EAST   99 STREET": null,
+"SEVENTH AVENUE between WEST   47 STREET and WEST   57 STREET": null,
+"SHEFFIELD AVENUE between BELMONT AVENUE and PITKIN AVENUE": null,
+"SHEPHERD AVENUE between SUTTER AVENUE and BELMONT AVENUE": null,
+"SHERIF S BYRD PLACE between JESUP AVENUE and SHAKESPEARE AVENUE": null,
+"SHERMAN AVENUE between ACADEMY STREET and WEST  204 STREET": null,
+"SIXTH AVENUE between WEST   37 STREET and WEST   38 STREET,  WEST   36 STREET between 5 AVENUE and BROADWAY,  WEST   37 STREET between 7 AVENUE and 5 AVENUE,  WEST   38 STREET between 7 AVENUE and 5 AVENUE,  SIXTH AVENUE between WEST   36 STREET and WEST   55 STREET,  WEST   55 STREET between SIXTH AVENUE and FIFTH AVENUE,  WEST   55 STREET between 7 AVENUE and 6 AVENUE": null,
+"SOMERS STREET between EASTERN PARKWAY and MOTHER GASTON BOULEVARD": null,
+"SOUTH STREET between FULTON STREET and JOHN STREET": null,
+"SOUTHERN BOULEVARD between BARRETTO STREET and TIFFANY STREET": null,
+"SPENCER COURT between DEKALB AVENUE and KOSCIUSZKO STREET": null,
+"ST ANNS AVENUE between EAST  137 STREET and EAST  135 STREET": null,
+"ST MARKS AVENUE between ALBANY AVENUE and KINGSTON AVENUE": null,
+"STERLING PLACE between NEW YORK AVENUE and NOSTRAND AVENUE": null,
+"STERLING STREET between ROGERS AVENUE and BEDFORD AVENUE": null,
+"STICKBALL BOULEVARD between RANDALL AVENUE and SEWARD AVENUE": null,
+"STRAUSS STREET between LIVONIA AVENUE and DUMONT AVENUE": null,
+"STUYVESANT AVENUE between MONROE STREET and GATES AVENUE": null,
+"SULLIVAN PLACE between NOSTRAND AVENUE and ROGERS AVENUE": null,
+"SYCAMORE STREET between WOODS OF ARDEN ROAD and PRESTON AVENUE": null,
+"Sakura Park": null,
+"Samuel N. Bennerson 2nd Playground": {
+"confidence": 1.0,
+"lat": 40.77383196657484,
+"lon": -73.98697256565633,
+"matched": "Samuel N. Bennerson 2nd Playground",
+"source": "parks-properties"
+},
+"Sara D. Roosevelt Park": {
+"confidence": 1.0,
+"lat": 40.71654955062075,
+"lon": -73.99408051883188,
+"matched": "Sara D. Roosevelt Park",
+"source": "parks-properties"
+},
+"Saratoga Park": {
+"confidence": 1.0,
+"lat": 40.684953755341475,
+"lon": -73.91874060485097,
+"matched": "Saratoga Park",
+"source": "parks-properties"
+},
+"Scarangella Park": null,
+"Schmul Park": {
+"confidence": 1.0,
+"lat": 40.58789479305904,
+"lon": -74.18443505783898,
+"matched": "Schmul Park",
+"source": "parks-properties"
+},
+"Sean's Place": {
+"confidence": 1.0,
+"lat": 40.76079666881703,
+"lon": -73.91829102471553,
+"matched": "Sean's Place",
+"source": "parks-properties"
+},
+"Seaside Wildlife Nature Park": null,
+"Sergeant Collins Triangle": {
+"confidence": 1.0,
+"lat": 40.75170084373079,
+"lon": -73.90283233609165,
+"matched": "Sergeant Collins Triangle",
+"source": "parks-properties"
+},
+"Seth Low Playground": null,
+"Seton Park": {
+"confidence": 1.0,
+"lat": 40.886317855263336,
+"lon": -73.91694084596175,
+"matched": "Seton Park",
+"source": "parks-properties"
+},
+"Seward Park": {
+"confidence": 1.0,
+"lat": 40.71461527382301,
+"lon": -73.98896851468551,
+"matched": "Seward Park",
+"source": "parks-properties"
+},
+"Sheltering Arms Playground": {
+"confidence": 1.0,
+"lat": 40.8150628147872,
+"lon": -73.95629588853454,
+"matched": "Sheltering Arms Playground",
+"source": "parks-properties"
+},
+"Sherman Creek": null,
+"Shore Parkway": null,
+"Shore Road Park": {
+"confidence": 0.8,
+"lat": 40.62052,
+"lon": -73.91302,
+"matched": "SHORE ROAD PARK, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Shore Road Park and Parkway": {
+"confidence": 0.8,
+"lat": 40.65534,
+"lon": -73.88662,
+"matched": "SHORE PARK AND PARKWAY, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Sidney Hillman Playground": {
+"confidence": 1.0,
+"lat": 40.71516557119549,
+"lon": -73.97969035154935,
+"matched": "Sidney Hillman Playground",
+"source": "parks-properties"
+},
+"Silver Lake Park": {
+"confidence": 1.0,
+"lat": 40.62269768093123,
+"lon": -74.09994106811027,
+"matched": "Silver Lake Park",
+"source": "parks-properties"
+},
+"Slattery Playground": {
+"confidence": 1.0,
+"lat": 40.85723294142464,
+"lon": -73.89843961520096,
+"matched": "Slattery Playground",
+"source": "parks-properties"
+},
+"Slope Park": null,
+"Socrates Sculpture Park": {
+"confidence": 1.0,
+"lat": 40.76855914680811,
+"lon": -73.93668457795404,
+"matched": "Socrates Sculpture Park",
+"source": "parks-properties"
+},
+"Sol Bloom Playground": {
+"confidence": 1.0,
+"lat": 40.78955625693517,
+"lon": -73.9687518444818,
+"matched": "Sol Bloom Playground",
+"source": "parks-properties"
+},
+"Soundview Park": {
+"confidence": 1.0,
+"lat": 40.809334702643646,
+"lon": -73.86188514333637,
+"matched": "Soundview Park",
+"source": "parks-properties"
+},
+"South Oxford Park": {
+"confidence": 1.0,
+"lat": 40.68362554984574,
+"lon": -73.97246371564222,
+"matched": "South Oxford Park",
+"source": "parks-properties"
+},
+"Southern Fields": {
+"confidence": 1.0,
+"lat": 40.66571838134444,
+"lon": -73.8274788614756,
+"matched": "Southern Fields",
+"source": "parks-properties"
+},
+"Space Time Playground": {
+"confidence": 1.0,
+"lat": 40.82224806743943,
+"lon": -73.85972739556927,
+"matched": "Space Time Playground",
+"source": "parks-properties"
+},
+"Sperandeo Brothers Playground (IS 302)": {
+"confidence": 1.0,
+"lat": 40.67728442671517,
+"lon": -73.88439776449464,
+"matched": "Sperandeo Brothers Playground",
+"source": "parks-properties"
+},
+"Spring Creek Park": {
+"confidence": 1.0,
+"lat": 40.65025657190032,
+"lon": -73.8755674832878,
+"matched": "Spring Creek Park",
+"source": "parks-properties"
+},
+"Springfield Park": {
+"confidence": 1.0,
+"lat": 40.66212634624414,
+"lon": -73.76165298039956,
+"matched": "Springfield Park",
+"source": "parks-properties"
+},
+"Spuyten Duyvil Playground": {
+"confidence": 1.0,
+"lat": 40.887182333393184,
+"lon": -73.91616970492112,
+"matched": "Spuyten Duyvil Playground",
+"source": "parks-properties"
+},
+"St Catherine's Park": {
+"confidence": 1.0,
+"lat": 40.76510515964995,
+"lon": -73.95866090591184,
+"matched": "St. Catherine's Park",
+"source": "parks-properties"
+},
+"St Nicholas Park": {
+"confidence": 1.0,
+"lat": 40.81777236592691,
+"lon": -73.94907331818926,
+"matched": "St. Nicholas Park",
+"source": "parks-properties"
+},
+"St. Andrew's Playground": {
+"confidence": 1.0,
+"lat": 40.67858206866785,
+"lon": -73.94208443763031,
+"matched": "St. Andrew's Playground",
+"source": "parks-properties"
+},
+"St. James Park": {
+"confidence": 1.0,
+"lat": 40.86502564190266,
+"lon": -73.89777386385049,
+"matched": "St. James Park",
+"source": "parks-properties"
+},
+"St. John's Park": {
+"confidence": 1.0,
+"lat": 40.67416715846769,
+"lon": -73.9348170770808,
+"matched": "St. John's Park",
+"source": "parks-properties"
+},
+"St. Mary's Park": {
+"confidence": 1.0,
+"lat": 40.81177033883884,
+"lon": -73.9111938392133,
+"matched": "St. Mary's Park",
+"source": "parks-properties"
+},
+"St. Michael's Playground": {
+"confidence": 1.0,
+"lat": 40.7587428474165,
+"lon": -73.90020555843228,
+"matched": "St. Michael's Playground",
+"source": "parks-properties"
+},
+"St. Nicholas Park": {
+"confidence": 1.0,
+"lat": 40.81777236592691,
+"lon": -73.94907331818926,
+"matched": "St. Nicholas Park",
+"source": "parks-properties"
+},
+"St. Vartan Park": {
+"confidence": 1.0,
+"lat": 40.74502931687435,
+"lon": -73.9735923128226,
+"matched": "St. Vartan Park",
+"source": "parks-properties"
+},
+"Stanley Isaacs Playground": {
+"confidence": 1.0,
+"lat": 40.78266560230886,
+"lon": -73.94454217844714,
+"matched": "Stanley Isaacs Playground",
+"source": "parks-properties"
+},
+"Star Spangled Playground (IS 117)": {
+"confidence": 1.0,
+"lat": 40.691743616132136,
+"lon": -73.95801213997784,
+"matched": "Star Spangled Playground",
+"source": "parks-properties"
+},
+"Starlight Park": {
+"confidence": 1.0,
+"lat": 40.832707951627874,
+"lon": -73.88310364869425,
+"matched": "Starlight Park",
+"source": "parks-properties"
+},
+"Steinway Playground": {
+"confidence": 1.0,
+"lat": 40.77643272296632,
+"lon": -73.90360778236817,
+"matched": "Steinway Playground",
+"source": "parks-properties"
+},
+"Sternberg Park (Lindsey Park)": null,
+"Steuben Playground": {
+"confidence": 1.0,
+"lat": 40.697221516318066,
+"lon": -73.96334012189259,
+"matched": "Steuben Playground",
+"source": "parks-properties"
+},
+"Stuyvesant Square": null,
+"Sumner Playground (PS 59)": {
+"confidence": 1.0,
+"lat": 40.69735027378079,
+"lon": -73.94297455622485,
+"matched": "Sumner Playground",
+"source": "parks-properties"
+},
+"Sunset Park": {
+"confidence": 1.0,
+"lat": 40.64788101283248,
+"lon": -74.00317619666967,
+"matched": "Sunset Park",
+"source": "parks-properties"
+},
+"Sutter Ballfields": {
+"confidence": 1.0,
+"lat": 40.67106051700054,
+"lon": -73.88747660261612,
+"matched": "Sutter Ballfields",
+"source": "parks-properties"
+},
+"Sutton Place Park": {
+"confidence": 1.0,
+"lat": 40.75670747132018,
+"lon": -73.96016931130207,
+"matched": "Sutton Place Park",
+"source": "parks-properties"
+},
+"TENTH AVENUE between WEST   16 STREET and WEST   15 STREET": null,
+"THOMAS S BOYLAND STREET between SUMPTER STREET and MACDOUGAL STREET": null,
+"TOMPKINS AVENUE between PUTNAM AVENUE and JEFFERSON AVENUE": null,
+"TROY AVENUE between AVENUE H and AVENUE I": null,
+"TROY AVENUE between CHURCH AVENUE and LINDEN BOULEVARD": null,
+"Taaffe Playground": {
+"confidence": 1.0,
+"lat": 40.69498017672824,
+"lon": -73.96081415031685,
+"matched": "Taaffe Playground",
+"source": "parks-properties"
+},
+"Tanahey Playground": {
+"confidence": 1.0,
+"lat": 40.71010060282198,
+"lon": -73.99534464590884,
+"matched": "Tanahey Playground",
+"source": "parks-properties"
+},
+"Tappen Park": null,
+"Terrace Playground": {
+"confidence": 1.0,
+"lat": 40.61374146361627,
+"lon": -74.0982162850054,
+"matched": "Terrace Playground",
+"source": "parks-properties"
+},
+"The High Line": {
+"confidence": 1.0,
+"lat": 40.74463542981844,
+"lon": -74.0069729244604,
+"matched": "The High Line",
+"source": "parks-properties"
+},
+"The Pearly Gates": null,
+"Theodore Roosevelt Park": {
+"confidence": 1.0,
+"lat": 40.78101944559502,
+"lon": -73.97396925984452,
+"matched": "Theodore Roosevelt Park",
+"source": "parks-properties"
+},
+"Thomas Jefferson Park": {
+"confidence": 1.0,
+"lat": 40.79282044421742,
+"lon": -73.93481999905852,
+"matched": "Thomas Jefferson Park",
+"source": "parks-properties"
+},
+"Thomas Paine Park (Foley Square)": {
+"confidence": 1.0,
+"lat": 40.714501902064384,
+"lon": -74.00284074749815,
+"matched": "Thomas Paine Park",
+"source": "parks-properties"
+},
+"Tiffany Playground": {
+"confidence": 1.0,
+"lat": 40.82482053952242,
+"lon": -73.89436695696149,
+"matched": "Tiffany Playground",
+"source": "parks-properties"
+},
+"Times Square": null,
+"Tompkins Square Park": {
+"confidence": 1.0,
+"lat": 40.7261981000373,
+"lon": -73.98162110518723,
+"matched": "Tompkins Square Park",
+"source": "parks-properties"
+},
+"Tompkinsville Park": {
+"confidence": 1.0,
+"lat": 40.63738848963783,
+"lon": -74.07637372809879,
+"matched": "Tompkinsville Park",
+"source": "parks-properties"
+},
+"Torsney Playground": {
+"confidence": 1.0,
+"lat": 40.747489275174416,
+"lon": -73.92270941186877,
+"matched": "Torsney Playground",
+"source": "parks-properties"
+},
+"Travers Park": {
+"confidence": 1.0,
+"lat": 40.75412380809019,
+"lon": -73.88939912095185,
+"matched": "Travers Park",
+"source": "parks-properties"
+},
+"Triborough Bridge Playground B": {
+"confidence": 1.0,
+"lat": 40.77455235417843,
+"lon": -73.92292619581325,
+"matched": "Triborough Bridge Playground B",
+"source": "parks-properties"
+},
+"Twenty-Four Sycamores Park": {
+"confidence": 1.0,
+"lat": 40.75948547803715,
+"lon": -73.95858763032211,
+"matched": "Twenty-Four Sycamores Park",
+"source": "parks-properties"
+},
+"UNION STREET between FRANKLIN AVENUE and BEDFORD AVENUE": null,
+"UNIVERSITY AVENUE between WEST 165 ST and WEST 166 ST": null,
+"UTICA AVENUE between LINDEN BOULEVARD and CHURCH AVENUE": null,
+"Underhill Avenue Plaza": {
+"confidence": 0.8,
+"lat": 40.680951,
+"lon": -73.964897,
+"matched": "4 UNDERHILL AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Union Square Park": {
+"confidence": 1.0,
+"lat": 40.73498082024556,
+"lon": -73.99014041679172,
+"matched": "Union Square Park",
+"source": "parks-properties"
+},
+"Utopia Playground": null,
+"VANDERBILT AVENUE Open Street 2026": null,
+"VARICK STREET between WATTS STREET and CANAL STREET": null,
+"VERMONT STREET between HEGEMAN AVENUE and NEW LOTS AVENUE": null,
+"VERNON AVENUE between MARCY AVENUE and NOSTRAND AVENUE": {
+"confidence": 0.8,
+"lat": 40.6952,
+"lon": -73.94309,
+"matched": "VERNON & THROOP AVE BLOCK ASSOC, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"Van Cortlandt Park": {
+"confidence": 1.0,
+"lat": 40.89435678480994,
+"lon": -73.89167784534175,
+"matched": "Van Cortlandt Park",
+"source": "parks-properties"
+},
+"Van Voorhees Playground": {
+"confidence": 1.0,
+"lat": 40.690120731555574,
+"lon": -73.99937279081823,
+"matched": "Van Voorhees Playground",
+"source": "parks-properties"
+},
+"Vesuvio Playground": {
+"confidence": 1.0,
+"lat": 40.7254096271771,
+"lon": -74.00268394102633,
+"matched": "Vesuvio Playground",
+"source": "parks-properties"
+},
+"Veterans Park": null,
+"Vinmont Veteran Park": {
+"confidence": 1.0,
+"lat": 40.90260181976052,
+"lon": -73.90482017009319,
+"matched": "Vinmont Veteran Park",
+"source": "parks-properties"
+},
+"Virginia Park": null,
+"Vito Locascio Field / Loring Field": null,
+"WARWICK STREET between SUTTER AVENUE and BLAKE AVENUE": null,
+"WASHINGTON AVENUE between EAST TREMONT AVENUE and EAST  176 STREET": null,
+"WASHINGTON AVENUE between EMPIRE BOULEVARD and FLATBUSH AVENUE": null,
+"WASHINGTON STREET between WEST   13 STREET and LITTLE WEST   12 STREET": null,
+"WATKINS STREET between NEWPORT STREET and LOTT AVENUE": null,
+"WATSON AVENUE between SHELLY AVENUE and RAWSON PLACE": null,
+"WEIRFIELD STREET between IRVING AVENUE and KNICKERBOCKER AVENUE": null,
+"WEST    2 STREET between 65 STREET and AVENUE P": {
+"confidence": 0.8,
+"lat": 40.77163,
+"lon": -73.979645,
+"matched": "2 WEST 65 STREET, New York, NY, USA",
+"source": "geosearch"
+},
+"WEST    3 STREET between AVENUE S and HIGHLAWN AVENUE": null,
+"WEST    4 STREET between CORNELIA STREET and GROVE STREET": null,
+"WEST    8 STREET between HIGHLAWN AVENUE and AVENUE S": null,
+"WEST   11 ROAD between CROSSBAY BOULEVARD and DEAD END": null,
+"WEST   15 ROAD between CROSSBAY BOULEVARD and DEAD END": null,
+"WEST   16 STREET between MERMAID AVENUE and SURF AVENUE": null,
+"WEST   23 STREET between 8 AVENUE and 9 AVENUE": null,
+"WEST   25 STREET between 11 AVENUE and 10 AVENUE": null,
+"WEST   27 STREET between 7 AVENUE and 8 AVENUE": null,
+"WEST   43 STREET between 7 AVENUE and 6 AVENUE": null,
+"WEST   49 STREET between 11 AVENUE and 12 AVENUE": null,
+"WEST   53 STREET between 6 AVENUE and 7 AVENUE,  WEST   53 STREET between 7 AVENUE and BROADWAY,  WEST   52 STREET between 6 AVENUE and 7 AVENUE,  7 AVENUE between WEST   51 STREET and WEST   52 STREET,  WEST   51 STREET between 6 AVENUE and 7 AVENUE": null,
+"WEST   60 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE": null,
+"WEST   62 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE": null,
+"WEST   97 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE": null,
+"WEST  106 STREET between WEST END AVENUE and RIVERSIDE DRIVE EAST": null,
+"WEST  107 STREET between CENTRAL PARK WEST and MANHATTAN AVENUE": null,
+"WEST  117 STREET between LENOX AVENUE and 5 AVENUE": null,
+"WEST  118 STREET between LENOX AVENUE and ADAM CLAYTON POWELL BOULEVARD": null,
+"WEST  123 STREET between 7 AVENUE and LENOX AVENUE": null,
+"WEST  124 STREET between 7 AVENUE and FREDRICK DOUGLASS BOULEVARD": null,
+"WEST  124 STREET between MOUNT MORRIS PARK WEST and MALCOLM X BOULEVARD": null,
+"WEST  129 STREET between 7 AVENUE and 8 AVENUE": null,
+"WEST  135 STREET between 7 AVENUE and LENOX AVENUE": null,
+"WEST  137 STREET between BROADWAY and RIVERSIDE DRIVE": {
+"confidence": 0.8,
+"lat": 40.816333,
+"lon": -73.94158,
+"matched": "137 WEST 137 STREET, New York, NY, USA",
+"source": "geosearch"
+},
+"WEST  154 STREET between AMSTERDAM AVENUE and ST NICHOLAS AVENUE": null,
+"WEST  175 STREET between BROADWAY and WADSWORTH AVENUE": {
+"confidence": 0.8,
+"lat": 40.845053,
+"lon": -73.936338,
+"matched": "576 WEST 175 STREET, New York, NY, USA",
+"source": "geosearch"
+},
+"WEST  187 STREET between AMSTERDAM AVENUE and LAUREL HILL TERRACE": null,
+"WEST HOUSTON STREET between THOMPSON STREET and MACDOUGAL STREET": null,
+"WESTMINSTER ROAD between CATON AVENUE and CHURCH AVENUE": null,
+"WILLIS AVE between BRUCKNER BLVD and EAST 132TH ST": null,
+"WILLOUGHBY AVENUE between THROOP AVENUE and MARCUS GARVEY BOULEVARD": {
+"confidence": 0.8,
+"lat": 40.6952,
+"lon": -73.94309,
+"matched": "VERNON & THROOP AVE BLOCK ASSOC, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"WNYC Transmitter Park": null,
+"WORTMAN AVENUE between VERMONT STREET and VAN SICLEN AVENUE": null,
+"Wagner Playground": {
+"confidence": 1.0,
+"lat": 40.79966285369566,
+"lon": -73.93528260193659,
+"matched": "Wagner Playground",
+"source": "parks-properties"
+},
+"Wald Playground": {
+"confidence": 1.0,
+"lat": 40.719576119726774,
+"lon": -73.97675961823687,
+"matched": "Wald Playground",
+"source": "parks-properties"
+},
+"Walker Park": {
+"confidence": 1.0,
+"lat": 40.642980083540444,
+"lon": -74.10950569789945,
+"matched": "Walker Park",
+"source": "parks-properties"
+},
+"Walt Whitman Park": {
+"confidence": 1.0,
+"lat": 40.69835442545867,
+"lon": -73.98927517761528,
+"matched": "Walt Whitman Park",
+"source": "parks-properties"
+},
+"Walter Gladwin Park": null,
+"Walter Ward Playground": {
+"confidence": 1.0,
+"lat": 40.65737876400591,
+"lon": -73.84368915955227,
+"matched": "Walter Ward Playground",
+"source": "parks-properties"
+},
+"Walton Park": {
+"confidence": 1.0,
+"lat": 40.85532783881496,
+"lon": -73.90517445710442,
+"matched": "Walton Park",
+"source": "parks-properties"
+},
+"Washington Empire Plaza": null,
+"Washington Hall Park": {
+"confidence": 1.0,
+"lat": 40.69525518456335,
+"lon": -73.96675423774293,
+"matched": "Washington Hall Park",
+"source": "parks-properties"
+},
+"Washington Market Park": {
+"confidence": 1.0,
+"lat": 40.71726883542525,
+"lon": -74.01167410284289,
+"matched": "Washington Market Park",
+"source": "parks-properties"
+},
+"Washington Park (MS 51)": {
+"confidence": 1.0,
+"lat": 40.855787967112654,
+"lon": -73.89361360026592,
+"matched": "Washington Park",
+"source": "parks-properties"
+},
+"Washington Square Park": null,
+"Washington's Walk": {
+"confidence": 1.0,
+"lat": 40.87510004135514,
+"lon": -73.90066741525138,
+"matched": "Washington's Walk",
+"source": "parks-properties"
+},
+"Watson Gleason Playground": null,
+"Wayanda Park (PS 34)": {
+"confidence": 1.0,
+"lat": 40.710850139695026,
+"lon": -73.73878986388091,
+"matched": "Wayanda Park",
+"source": "parks-properties"
+},
+"West Harlem Piers": null,
+"West Playground": {
+"confidence": 1.0,
+"lat": 40.5876206052918,
+"lon": -73.97019068474425,
+"matched": "West Playground",
+"source": "parks-properties"
+},
+"Westbourne Playground": {
+"confidence": 1.0,
+"lat": 40.607726626887356,
+"lon": -73.76419567788331,
+"matched": "Westbourne Playground",
+"source": "parks-properties"
+},
+"Westerleigh Park": {
+"confidence": 1.0,
+"lat": 40.61974703050721,
+"lon": -74.13459799301863,
+"matched": "Westerleigh Park",
+"source": "parks-properties"
+},
+"White Playground": null,
+"Whitey Ford Field": {
+"confidence": 1.0,
+"lat": 40.7775855763709,
+"lon": -73.93495556794599,
+"matched": "Whitey Ford Field",
+"source": "parks-properties"
+},
+"William F. Passannante Ballfield": {
+"confidence": 1.0,
+"lat": 40.728608495676376,
+"lon": -74.00214166153043,
+"matched": "William F. Passannante Ballfield",
+"source": "parks-properties"
+},
+"William Sheridan Playground (PS 84)": {
+"confidence": 1.0,
+"lat": 40.715273665285345,
+"lon": -73.96401553981359,
+"matched": "William Sheridan Playground",
+"source": "parks-properties"
+},
+"Williamsbridge Oval": {
+"confidence": 1.0,
+"lat": 40.87750230980381,
+"lon": -73.87758240336764,
+"matched": "Williamsbridge Oval",
+"source": "parks-properties"
+},
+"Willowbrook Park": {
+"confidence": 1.0,
+"lat": 40.59867664193803,
+"lon": -74.15493665699167,
+"matched": "Willowbrook Park",
+"source": "parks-properties"
+},
+"Wingate Park": {
+"confidence": 1.0,
+"lat": 40.65867248165506,
+"lon": -73.94438161952355,
+"matched": "Wingate Park",
+"source": "parks-properties"
+},
+"Winthrop Playground (PS 92)": {
+"confidence": 1.0,
+"lat": 40.65637752036562,
+"lon": -73.95472181279666,
+"matched": "Winthrop Playground",
+"source": "parks-properties"
+},
+"Wolfe's Pond Park": {
+"confidence": 1.0,
+"lat": 40.517278010686425,
+"lon": -74.18958619069461,
+"matched": "Wolfe's Pond Park",
+"source": "parks-properties"
+},
+"Woods Playground (PS 345)": {
+"confidence": 1.0,
+"lat": 40.674451751162316,
+"lon": -73.92890186322089,
+"matched": "Woods Playground",
+"source": "parks-properties"
+},
+"Worth Square": {
+"confidence": 1.0,
+"lat": 40.742692209082676,
+"lon": -73.98898029473679,
+"matched": "Worth Square",
+"source": "parks-properties"
+},
+"Yellowstone Park": {
+"confidence": 1.0,
+"lat": 40.72617294219632,
+"lon": -73.84776088951705,
+"matched": "Yellowstone Park",
+"source": "parks-properties"
+},
+"Yolanda Garcia Park": null
+}

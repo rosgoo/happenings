@@ -13,6 +13,37 @@ export const events = read('events');
 export const venues = read('venues');
 export const meta = read('meta');
 
+// Places are a different entity from events: they are OPEN rather than ON.
+// Optional, because the OSM stage may not have run.
+export const places = (() => {
+  try { return read('places'); } catch { return []; }
+})();
+
+export const PLACE_KINDS = {
+  museum: 'Museum', gallery: 'Gallery', aquarium: 'Aquarium', zoo: 'Zoo',
+  theatre: 'Theatre', cinema: 'Cinema', 'arts-centre': 'Arts centre',
+  nightclub: 'Nightclub', 'music-venue': 'Music venue',
+  'escape-room': 'Escape room', arcade: 'Arcade', bowling: 'Bowling',
+  'ice-rink': 'Ice rink', climbing: 'Climbing',
+};
+
+// Places reuse the event category palette rather than inventing a second one --
+// eight colours is already the whole system.
+const PLACE_COLOR = {
+  museum: 'art', gallery: 'art', aquarium: 'outdoors', zoo: 'outdoors',
+  theatre: 'performance', cinema: 'art', 'arts-centre': 'art',
+  nightclub: 'music', 'music-venue': 'music', 'escape-room': 'learning',
+  arcade: 'community', bowling: 'sports', 'ice-rink': 'sports',
+  climbing: 'sports',
+};
+export const placeColor = (kind) => `var(--c-${PLACE_COLOR[kind] || 'community'})`;
+
+export function placesIn(hoodSlug, limit = 8) {
+  return places.filter((p) => p.neighborhood === hoodSlug)
+    .sort((a, b) => (b.image_url ? 1 : 0) - (a.image_url ? 1 : 0))
+    .slice(0, limit);
+}
+
 export const CATEGORY_LABELS = {
   music: 'Music', sports: 'Sports', 'food-drink': 'Food & Drink', art: 'Art',
   performance: 'Performance', learning: 'Learning', community: 'Community',

@@ -24,6 +24,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import taxonomy  # noqa: E402
 from lib.geo import Neighborhoods  # noqa: E402
+from lib.places import Resolver, norm as pnorm  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -90,6 +91,22 @@ class Builder:
         self.tz = ZoneInfo(self.cfg["tz"])
         with open(os.path.join(cdir, "neighborhoods.geojson")) as f:
             self.hoods = Neighborhoods(json.load(f))
+
+        # geocode.py resolved the location strings that arrive without
+        # coordinates -- park names against the city's own park register,
+        # address-shaped strings against a geocoder. Load it as a gazetteer so
+        # a name seen once is free forever. Absent cache = degrade to borough
+        # only, never guess.
+        gaz = {}
+        gpath = os.path.join(ROOT, "data", city, "geocode-cache.json")
+        if os.path.exists(gpath):
+            with open(gpath) as f:
+                for loc, hit in json.load(f).items():
+                    if hit:
+                        gaz[pnorm(loc)] = {"lat": hit["lat"], "lon": hit["lon"],
+                                           "name": hit.get("matched")}
+        self.resolver = Resolver(self.hoods, gazetteer=gaz)
+        print(f"  gazetteer: {len(gaz)} located names")
         self.events, self.rejected = [], []
         self.venues = {}
         self.seen = set()
@@ -107,27 +124,22 @@ class Builder:
             return None
         v = self.venues.get(slug)
         if v is None:
-            hood = self.hoods.locate(lon, lat) if (lat is not None and lon is not None) else None
-            v = {
-                "id": slug, "name": name, "kind": kind,
-                "lat": lat, "lon": lon,
-                "neighborhood": hood["slug"] if hood else None,
-                "neighborhood_name": hood["name"] if hood else None,
-                "neighborhood_source": "point-in-polygon" if hood else None,
-                "nta_type": hood["nta_type"] if hood else None,
-                "borough": (hood["borough"] if hood else borough),
-                "borough_source": "point-in-polygon" if hood else ("source" if borough else None),
-                "count": 0,
-            }
+            p = self.resolver.resolve(name=name, lat=lat, lon=lon, borough=borough)
+            v = {"id": slug, "name": name, "kind": kind, "count": 0,
+                 "lat": None, "lon": None, "neighborhood": None,
+                 "neighborhood_name": None, "nta_type": None,
+                 "borough": borough, "location_source": None,
+                 "location_confidence": None}
+            if p:
+                v.update(p.as_dict())
+                v["borough"] = v["borough"] or borough
             self.venues[slug] = v
         elif v["lat"] is None and lat is not None:
-            # A later row carried coordinates the first one didn't. Upgrade.
-            hood = self.hoods.locate(lon, lat)
-            v.update(lat=lat, lon=lon)
-            if hood:
-                v.update(neighborhood=hood["slug"], neighborhood_name=hood["name"],
-                         neighborhood_source="point-in-polygon", nta_type=hood["nta_type"],
-                         borough=hood["borough"], borough_source="point-in-polygon")
+            # A later row carried coordinates the first one didn't. Upgrade --
+            # coordinates outrank every name-based strategy.
+            p = self.resolver.resolve(lat=lat, lon=lon, borough=borough)
+            if p:
+                v.update(p.as_dict())
         return v
 
     # -- emit --------------------------------------------------------------
@@ -160,6 +172,7 @@ class Builder:
             "neighborhood_name": venue["neighborhood_name"],
             "borough": venue["borough"],
             "lat": venue["lat"], "lon": venue["lon"],
+            "location_source": venue.get("location_source"),
             "category": category,
             "subcategory": subcategory,
             "category_source": cat_source,
@@ -312,6 +325,8 @@ class Builder:
                 "neighborhood": round(100 * with_hood / max(1, len(self.events)), 1),
                 "coordinates": round(100 * sum(1 for e in self.events if e["lat"]) /
                                      max(1, len(self.events)), 1),
+                "borough": round(100 * sum(1 for e in self.events if e["borough"]) /
+                                 max(1, len(self.events)), 1),
                 "url": round(100 * sum(1 for e in self.events if e["url"]) /
                              max(1, len(self.events)), 1),
                 "price": round(100 * sum(1 for e in self.events if e["is_free"] is not None) /
@@ -319,6 +334,8 @@ class Builder:
             },
             "by_category": dict(cat_counts.most_common()),
             "by_neighborhood": dict(hood_counts.most_common()),
+            "by_location_source": dict(Counter(
+                e.get("location_source") or "unresolved" for e in self.events).most_common()),
             "sources": used,
             "stats": dict(self.stats.most_common()),
         }

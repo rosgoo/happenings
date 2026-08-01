@@ -131,16 +131,60 @@ def fetch_neighborhoods(city):
     print(f"  wrote {len(feats)} neighbourhoods -> {out} ({size:.1f} MB)")
 
 
+def fetch_parks(city):
+    """One-off. Park polygons are the thing that places permitted events: that
+    feed names a park rather than giving coordinates, and parks do not move."""
+    cfg = load_city(city)["parks"]
+    print(f"parks: {cfg['host']}/{cfg['dataset']}")
+    rows, offset = [], 0
+    while True:
+        url = (f"https://{cfg['host']}/resource/{cfg['dataset']}.json"
+               f"?$limit=500&$offset={offset}")
+        batch = http.get_json(url, delay=1.0)
+        rows.extend(batch)
+        if len(batch) < 500:
+            break
+        offset += 500
+
+    feats = []
+    for r in rows:
+        geom = r.get(cfg["geom_field"])
+        if not geom:
+            continue
+        names = []
+        for f in cfg["name_fields"]:
+            v = (r.get(f) or "").strip()
+            if v and v not in names:
+                names.append(v)
+        if not names:
+            continue
+        feats.append({
+            "type": "Feature",
+            "properties": {"names": names, "borough": r.get(cfg["borough_field"]),
+                           "typecategory": r.get("typecategory")},
+            "geometry": geom,
+        })
+    out = os.path.join(city_dir(city), "parks.geojson")
+    with open(out, "w") as f:
+        json.dump({"type": "FeatureCollection", "features": feats}, f)
+    print(f"  wrote {len(feats)} park properties -> {out} "
+          f"({os.path.getsize(out) / 1e6:.1f} MB)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--city", default="nyc")
     ap.add_argument("--source", help="fetch only this source id")
     ap.add_argument("--neighborhoods", action="store_true")
+    ap.add_argument("--parks", action="store_true")
     ap.add_argument("--horizon", type=int, default=120, help="days forward to fetch")
     args = ap.parse_args()
 
     if args.neighborhoods:
         fetch_neighborhoods(args.city)
+        return 0
+    if args.parks:
+        fetch_parks(args.city)
         return 0
 
     raw_dir = os.path.join(ROOT, "raw", args.city)

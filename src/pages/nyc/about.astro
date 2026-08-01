@@ -80,10 +80,15 @@ const rejected = Object.entries(meta.stats)
 
   <h2 class="sec">What's missing</h2><div class="rule"></div>
   <ul style="max-width:70ch;line-height:1.65">
-    <li><b>The interesting venues.</b> This build is city open data only. Pioneer
-      Works, Roulette, Le Poisson Rouge, IFC, the university lecture calendars —
-      none of them are here yet, and they are the whole reason the project
-      exists.</li>
+    <li><b>Ticketed venues.</b> Pioneer Works, Roulette, Le Poisson Rouge, the
+      university lecture calendars — none are here yet, and they are the whole
+      reason the project exists.</li>
+    <li><b>Photos for events.</b> No event feed here carries one. The
+      <a href="/nyc/places">places</a> do, via Wikimedia Commons — everything
+      else gets its category block.</li>
+    <li><b>The last 30% of places.</b> 518 location strings, mostly street
+      intersections, that no park name matched and no geocoder resolved
+      confidently. They are ranked by how many events ride on them.</li>
     <li><b>Prices and ticket links.</b> Needs sources that publish them.</li>
     <li><b>Subway filtering.</b> Designed, not built. Stations don't move, so
       it's a one-time static join against GTFS.</li>

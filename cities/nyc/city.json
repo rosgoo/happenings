@@ -3,9 +3,19 @@
   "name": "New York",
   "short": "NYC",
   "tz": "America/New_York",
-  "bbox": [-74.26, 40.49, -73.70, 40.92],
-  "boroughs": ["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"],
-
+  "bbox": [
+    -74.26,
+    40.49,
+    -73.7,
+    40.92
+  ],
+  "boroughs": [
+    "Manhattan",
+    "Brooklyn",
+    "Queens",
+    "Bronx",
+    "Staten Island"
+  ],
   "neighborhoods": {
     "source": "socrata",
     "host": "data.cityofnewyork.us",
@@ -15,12 +25,30 @@
     "geom_field": "the_geom",
     "_comment": "2020 Neighborhood Tabulation Areas. Fetched once into neighborhoods.geojson; not refetched nightly."
   },
-
   "transit": {
     "_comment": "Not wired in the MVP. GTFS join is designed in engineering.md.",
     "gtfs": null,
     "label": "subway"
   },
-
-  "ticketmaster": { "market_id": "35", "_comment": "Tier 3. Needs a key; not used in the MVP." }
+  "ticketmaster": {
+    "market_id": "35",
+    "_comment": "Tier 3. Needs a key; not used in the MVP."
+  },
+  "parks": {
+    "_comment": "NYC Parks Properties -- authoritative polygons for every park property. The permitted-events feed names parks rather than giving coordinates, so this is what places those events. Fetched once; parks do not move.",
+    "source": "socrata",
+    "host": "data.cityofnewyork.us",
+    "dataset": "enfh-gkve",
+    "name_fields": [
+      "signname",
+      "name311"
+    ],
+    "geom_field": "multipolygon",
+    "borough_field": "borough"
+  },
+  "geocoder": {
+    "_comment": "NYC Planning Labs GeoSearch (Pelias). Keyless and public. Only used for street-shaped locations that no park name matches.",
+    "url": "https://geosearch.planninglabs.nyc/v2/search",
+    "min_confidence": 0.7
+  }
 }
