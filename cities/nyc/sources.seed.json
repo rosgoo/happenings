@@ -34,6 +34,45 @@
     { "name": "Cooper Union",             "slug": "cooper-union",   "adapter": null, "probe": { "date": "2026-08-01", "note": "events.cooper.edu no DNS. Endpoint unknown." } },
     { "name": "Pace University",          "slug": "pace",           "adapter": null, "probe": { "date": "2026-08-01", "note": "events.pace.edu no DNS. Endpoint unknown." } }
   ],
+  "aggregators": {
+    "_comment": "TIER 0 — try these BEFORE writing any custom venue adapter. All probed live 2026-08-01: each returned a clean auth error, meaning the endpoint is real and only needs a key.",
+    "predicthq": { "endpoint": "https://api.predicthq.com/v1/events/", "unauth": 401, "free_tier": true,  "priority": 1, "note": "The one real tier-1/2 aggregator. Hundreds of sources, ~20M events; explicitly covers conferences, performing arts, expos, community. Measure NYC coverage FIRST." },
+    "seatgeek":  { "endpoint": "https://api.seatgeek.com/2/events",     "unauth": 403, "free_tier": true,  "priority": 2, "note": "Open + documented, free client_id. Broader long tail than Ticketmaster." },
+    "eventbrite_organizers": { "endpoint": null,                        "unauth": null, "free_tier": null, "priority": 3, "note": "Public SEARCH is dead (Feb 2020). But organizer/event pages are public with JSON-LD, and eventbrite.com is the #1 linked host in NYC curation. Harvest organizer IDs from curation and follow those specific organizers. Never a sweep. Re-read terms first." },
+    "songkick":  { "endpoint": "https://api.songkick.com/api/3.0/events.json", "unauth": 401, "free_tier": null, "priority": 4, "note": "Music long tail, key by request." },
+    "bandsintown": { "endpoint": "https://rest.bandsintown.com/",       "unauth": 403, "free_tier": null, "priority": 4, "note": "Artist-centric music." }
+  },
+  "curation_feeds": {
+    "_comment": "Roster DISCOVERY only. Count outbound link hosts to rank which venues to approach directly. NEVER parse the prose into events -- that is extracting editorial labour and would need an LLM, which the pipeline bans.",
+    "coolstuffnyc": { "rss": "https://coolstuffnyc.substack.com/feed", "probe": { "date": "2026-08-01", "status": 200, "bytes": 728626, "items": 20 } },
+    "theskint":     { "rss": "https://www.theskint.com/feed/",         "probe": { "date": "2026-08-01", "status": 200, "bytes": 171153 } },
+    "nonsensenyc":  { "rss": null, "probe": { "date": "2026-08-01", "status": 404, "note": "no /feed at that path" } },
+    "hellgatenyc":  { "rss": null, "probe": { "date": "2026-08-01", "status": 404, "note": "no /rss at that path" } }
+  },
+  "curation_ranked": {
+    "_comment": "First run of the link-host frequency count across coolstuffnyc + theskint, 2026-08-01. Evidence-ranked and reproducible -- better input than any single recommendation. Excludes self/social/CDN hosts. Rebuild weekly; it updates itself for free.",
+    "hosts": [
+      { "host": "eventbrite.com",       "mentions": 31, "note": "Not a venue -- the #1 destination. See aggregators.eventbrite_organizers." },
+      { "host": "nycgovparks.org",      "mentions": 27, "note": "Already covered by tier 2 (NYC Open Data)." },
+      { "host": "littlefieldnyc.com",   "mentions": 15 },
+      { "host": "caveat.nyc",           "mentions": 13 },
+      { "host": "bryantpark.org",       "mentions":  8 },
+      { "host": "funeralofgod.com",     "mentions":  8 },
+      { "host": "hudsonriverpark.org",  "mentions":  7 },
+      { "host": "joyce.org",            "mentions":  6 },
+      { "host": "cityparksfoundation.org", "mentions": 5 },
+      { "host": "rooftopfilms.com",     "mentions":  5 },
+      { "host": "lincolncenter.org",    "mentions":  4 },
+      { "host": "jerseycityculture.org","mentions":  4, "note": "Out of city -- reach/metro question." },
+      { "host": "bricartsmedia.org",    "mentions":  3 },
+      { "host": "brooklynbridgepark.org","mentions": 3 },
+      { "host": "grandbazaarnyc.org",   "mentions":  3 },
+      { "host": "flophousecomedy.com",  "mentions":  3 },
+      { "host": "59e59.org",            "mentions":  2 },
+      { "host": "cosmobrooklyn.com",    "mentions":  2 },
+      { "host": "heavenandearthbk.com", "mentions":  2 }
+    ]
+  },
   "_next": [
     "Re-probe JSON-LD Event on real event DETAIL pages (the first pass wrongly checked homepages).",
     "Sweep every entry above for .ics / text/calendar endpoints — likely the highest-yield tier-1 adapter.",
