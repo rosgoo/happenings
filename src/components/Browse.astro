@@ -12,53 +12,16 @@ const BANDS = [
 ];
 ---
 <div id="browse" data-src="/nyc/events.json" data-scope={JSON.stringify(scope)}>
-  <div class="filterbar">
-    <div id="strip" class="strip"></div>
-
-    {cats.length > 0 && (
-      <>
-        <div class="filterlabel">What</div>
-        <div id="cats" class="chips">
-          {cats.map((c) => (
-            <button class="ch" data-v={c.slug} aria-pressed="false">
-              <span class="dot" style={`background:${catColor(c.slug)}`}></span>
-              {c.name} <span style="color:var(--ink-2)">{c.count}</span>
-            </button>
-          ))}
-        </div>
-      </>
-    )}
-
-    <div class="filterlabel">When in the day</div>
-    <div id="bands" class="chips">
-      {BANDS.map(([v, label]) => (
-        <button class="ch" data-v={v} aria-pressed="false">{label}</button>
-      ))}
-    </div>
-
-    {hoods.length > 0 && (
-      <>
-        <div class="filterlabel">Where</div>
-        <div id="hoods" class="chips">
-          {hoods.map((h) => (
-            <button class="ch" data-v={h.slug} aria-pressed="false">
-              {h.name} <span style="color:var(--ink-2)">{h.count}</span>
-            </button>
-          ))}
-        </div>
-      </>
-    )}
-
-    <div class="chips" style="margin-top:14px">
-      <input id="q" type="search" placeholder="Search titles and places…"
-             style="min-width:230px" />
-      <button class="ch act" id="surprise">Surprise me →</button>
-      <button class="ch" id="clear">Clear all</button>
-    </div>
-  </div>
+  <!-- The day strip stays on the page: it is navigation, not filtering, and
+       its per-day counts are the fastest read of where the week is busy. -->
+  <div id="strip" class="strip"></div>
 
   <div class="count">
     <span id="count"><b>…</b></span>
+    <button class="ch act filterbtn" id="openfilters">
+      Filters<span class="n hide" id="fcount">0</span>
+    </button>
+    <button class="ch" id="surprise">Surprise me →</button>
     <span id="views" class="views">
       <button class="ch" data-view="list" aria-pressed="true">List</button>
       <button class="ch" data-view="grid" aria-pressed="false">Grid</button>
@@ -98,6 +61,58 @@ const BANDS = [
 
   <button class="ch hide" id="more" style="margin-top:16px">Show more</button>
 </div>
+
+<div id="scrim"></div>
+<aside id="drawer" aria-hidden="true" aria-label="Filters">
+  <div class="dhead">
+    <b>Filters</b>
+    <button class="iconbtn" id="closefilters" aria-label="Close filters">×</button>
+  </div>
+  <div class="dbody">
+    <div class="filterlabel">Search</div>
+    <input id="q" type="search" placeholder="Titles and places…"
+           style="width:100%;margin-top:7px" />
+
+    {cats.length > 0 && (
+      <>
+        <div class="filterlabel">What</div>
+        <div id="cats" class="chips">
+          {cats.map((c) => (
+            <button class="ch" data-v={c.slug} aria-pressed="false">
+              <span class="dot" style={`background:${catColor(c.slug)}`}></span>
+              {c.name} <span style="color:var(--ink-2)">{c.count}</span>
+            </button>
+          ))}
+        </div>
+      </>
+    )}
+
+    <div class="filterlabel">When in the day</div>
+    <div id="bands" class="chips">
+      {BANDS.map(([v, label]) => (
+        <button class="ch" data-v={v} aria-pressed="false">{label}</button>
+      ))}
+    </div>
+
+    {hoods.length > 0 && (
+      <>
+        <div class="filterlabel">Where</div>
+        <div id="hoods" class="chips">
+          {hoods.map((h) => (
+            <button class="ch" data-v={h.slug} aria-pressed="false">
+              {h.name} <span style="color:var(--ink-2)">{h.count}</span>
+            </button>
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+  <div class="dfoot">
+    <span id="dcount"><b>…</b></span>
+    <button class="ch" id="clear" style="margin-left:auto">Clear all</button>
+    <button class="ch act" id="applyfilters">Done</button>
+  </div>
+</aside>
 
 <script>
   import '../scripts/browse.js';

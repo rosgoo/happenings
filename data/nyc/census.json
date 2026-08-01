@@ -1,0 +1,340 @@
+{
+ "generated_at": "2026-08-01T23:24:56.090280+00:00",
+ "count": 10,
+ "sites": [
+  {
+   "name": "Hoboken Fire Department Museum",
+   "url": "https://www.hobokenmuseum.org/visit/hoboken-fire-department-museum/",
+   "host": "www.hobokenmuseum.org",
+   "kind": "tourism=museum",
+   "osm_id": 367697376,
+   "status": 404,
+   "final_url": "https://hobokenmuseum.org/visit/hoboken-fire-department-museum/",
+   "error": null,
+   "listing_url": "https://hobokenmuseum.org/events/",
+   "detail_url": "https://hobokenmuseum.org/event/artscrafts/2026-08-06/",
+   "signals": {
+    "ics": [
+     "https://hobokenmuseum.org/events/?ical=1"
+    ],
+    "rss": [
+     "https://hobokenmuseum.org/events/feed/",
+     "https://hobokenmuseum.org/feed/"
+    ],
+    "jsonld_home": [
+     "EntryPoint",
+     "ImageObject",
+     "Organization",
+     "PropertyValueSpecification",
+     "SearchAction",
+     "WebSite"
+    ],
+    "platforms": [],
+    "cms": [],
+    "js_rendered": false,
+    "wp": true,
+    "jsonld_detail": [
+     "BreadcrumbList",
+     "EntryPoint",
+     "Event",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "Place",
+     "PostalAddress",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction",
+     "WebPage",
+     "WebSite"
+    ],
+    "jsonld_event": true,
+    "tribe": 39,
+    "squarespace_json": null
+   }
+  },
+  {
+   "name": "Fraunces Tavern Museum",
+   "url": "https://www.frauncestavernmuseum.org/",
+   "host": "www.frauncestavernmuseum.org",
+   "kind": "tourism=museum",
+   "osm_id": 368052081,
+   "status": 200,
+   "final_url": "https://www.frauncestavernmuseum.org/",
+   "error": null,
+   "listing_url": null,
+   "detail_url": null,
+   "signals": {
+    "ics": [],
+    "rss": [],
+    "jsonld_home": [
+     "LocalBusiness",
+     "Organization",
+     "WebSite"
+    ],
+    "platforms": [
+     "eventbrite"
+    ],
+    "cms": [
+     "squarespace"
+    ],
+    "js_rendered": false,
+    "wp": false,
+    "jsonld_detail": [],
+    "jsonld_event": false,
+    "tribe": null,
+    "squarespace_json": true
+   }
+  },
+  {
+   "name": "National Museum of the American Indian",
+   "url": "https://americanindian.si.edu/",
+   "host": "americanindian.si.edu",
+   "kind": "tourism=museum",
+   "osm_id": 368061337,
+   "status": 403,
+   "final_url": "https://americanindian.si.edu/",
+   "error": null,
+   "listing_url": null,
+   "detail_url": null,
+   "signals": {}
+  },
+  {
+   "name": "Bronx Museum of the Arts",
+   "url": "https://bronxmuseum.org/",
+   "host": "bronxmuseum.org",
+   "kind": "tourism=museum",
+   "osm_id": 368061518,
+   "status": 200,
+   "final_url": "https://bronxmuseum.org/",
+   "error": null,
+   "listing_url": "https://bronxmuseum.org/events/",
+   "detail_url": "https://bronxmuseum.org/es/events/",
+   "signals": {
+    "ics": [],
+    "rss": [],
+    "jsonld_home": [
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "ReadAction",
+     "SearchAction",
+     "WebPage",
+     "WebSite"
+    ],
+    "platforms": [],
+    "cms": [],
+    "js_rendered": false,
+    "wp": true,
+    "jsonld_detail": [
+     "BreadcrumbList",
+     "CollectionPage",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "SearchAction",
+     "WebSite"
+    ],
+    "jsonld_event": false,
+    "tribe": false,
+    "squarespace_json": null
+   }
+  },
+  {
+   "name": "Yeshiva University Museum",
+   "url": "https://www.yumuseum.org/",
+   "host": "www.yumuseum.org",
+   "kind": "tourism=museum",
+   "osm_id": 368061605,
+   "status": 200,
+   "final_url": "https://www.yumuseum.org/",
+   "error": null,
+   "listing_url": "https://www.yumuseum.org/programs",
+   "detail_url": "https://www.yumuseum.org/programs/all",
+   "signals": {
+    "ics": [],
+    "rss": [],
+    "jsonld_home": [],
+    "platforms": [],
+    "cms": [],
+    "js_rendered": false,
+    "wp": false,
+    "jsonld_detail": [],
+    "jsonld_event": false,
+    "tribe": null,
+    "squarespace_json": null
+   }
+  },
+  {
+   "name": "Museum of the Moving Image",
+   "url": "https://movingimage.us/",
+   "host": "movingimage.us",
+   "kind": "tourism=museum",
+   "osm_id": 368061644,
+   "status": 403,
+   "final_url": "https://movingimage.us/",
+   "error": null,
+   "listing_url": null,
+   "detail_url": null,
+   "signals": {}
+  },
+  {
+   "name": "New York Transit Museum",
+   "url": "https://www.nytransitmuseum.org",
+   "host": "www.nytransitmuseum.org",
+   "kind": "tourism=museum",
+   "osm_id": 368061648,
+   "status": 200,
+   "final_url": "https://www.nytransitmuseum.org",
+   "error": null,
+   "listing_url": "https://www.nytransitmuseum.org/programs/",
+   "detail_url": "https://www.nytransitmuseum.org/program/r46/",
+   "signals": {
+    "ics": [],
+    "rss": [
+     "https://www.nytransitmuseum.org/programs/feed/"
+    ],
+    "jsonld_home": [
+     "BreadcrumbList",
+     "EntryPoint",
+     "Event",
+     "GeoCoordinates",
+     "ListItem",
+     "Offer",
+     "Place",
+     "PostalAddress",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction",
+     "WebPage",
+     "WebSite"
+    ],
+    "platforms": [],
+    "cms": [],
+    "js_rendered": false,
+    "wp": true,
+    "jsonld_detail": [
+     "BreadcrumbList",
+     "EntryPoint",
+     "Event",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "Offer",
+     "Place",
+     "PostalAddress",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction",
+     "WebPage",
+     "WebSite"
+    ],
+    "jsonld_event": true,
+    "tribe": 51,
+    "squarespace_json": null
+   }
+  },
+  {
+   "name": "Lower East Side Tenement Museum",
+   "url": "https://www.tenement.org/",
+   "host": "www.tenement.org",
+   "kind": "tourism=museum",
+   "osm_id": 368061660,
+   "status": 403,
+   "final_url": "https://www.tenement.org/",
+   "error": null,
+   "listing_url": null,
+   "detail_url": null,
+   "signals": {}
+  },
+  {
+   "name": "Erasmus Hall Museum",
+   "url": "https://6tocelebrate.org/site/erasmus-hall-museum-erasmus-hall-high-school/",
+   "host": "6tocelebrate.org",
+   "kind": "tourism=museum",
+   "osm_id": 368061667,
+   "status": 200,
+   "final_url": "https://6tocelebrate.org/site/erasmus-hall-museum-erasmus-hall-high-school/",
+   "error": null,
+   "listing_url": "https://6tocelebrate.org/events/",
+   "detail_url": null,
+   "signals": {
+    "ics": [],
+    "rss": [
+     "https://6tocelebrate.org/comments/feed/",
+     "https://6tocelebrate.org/events/feed/",
+     "https://6tocelebrate.org/feed/"
+    ],
+    "jsonld_home": [
+     "BreadcrumbList",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "WebPage",
+     "WebSite"
+    ],
+    "platforms": [],
+    "cms": [],
+    "js_rendered": false,
+    "wp": true,
+    "jsonld_detail": [],
+    "jsonld_event": false,
+    "tribe": false,
+    "squarespace_json": null
+   }
+  },
+  {
+   "name": "Bartow-Pell Mansion Museum",
+   "url": "https://www.bartowpellmansionmuseum.org/",
+   "host": "www.bartowpellmansionmuseum.org",
+   "kind": "tourism=museum",
+   "osm_id": 368061866,
+   "status": 200,
+   "final_url": "https://www.bartowpellmansionmuseum.org/",
+   "error": null,
+   "listing_url": "https://www.bartowpellmansionmuseum.org/visit/exhibitions/",
+   "detail_url": "https://www.bartowpellmansionmuseum.org/visit/exhibitions/past-exhibitions/",
+   "signals": {
+    "ics": [],
+    "rss": [
+     "https://www.bartowpellmansionmuseum.org/comments/feed/",
+     "https://www.bartowpellmansionmuseum.org/feed/"
+    ],
+    "jsonld_home": [
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction",
+     "WebPage",
+     "WebSite"
+    ],
+    "platforms": [],
+    "cms": [],
+    "js_rendered": false,
+    "wp": true,
+    "jsonld_detail": [
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction",
+     "WebPage",
+     "WebSite"
+    ],
+    "jsonld_event": false,
+    "tribe": false,
+    "squarespace_json": null
+   }
+  }
+ ]
+}

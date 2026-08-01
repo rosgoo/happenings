@@ -105,25 +105,45 @@ if (root) {
   }
 
   function cardHTML(e) {
-    // No source in this build carries an image, so every card renders the
-    // fallback -- a flat category block, which is a design element rather than
-    // an apology. It shows the CATEGORY, not the title: the title already sits
-    // below it as the link, and repeating it just reads as a bug.
-    const ink = PAPER_ON.includes(e.c) ? 'var(--paper)' : 'var(--ink)';
+    // Text first. The event's NAME is what anyone is actually reading, so it
+    // gets the size and the top of the card. Category is a tag exactly as in
+    // the list, plus a hairline down the left edge for scanning -- not a
+    // full-bleed colour block, which at 250 cards is a wall of colour that
+    // drowns the thing it is supposed to label.
+    const on = PAPER_ON.includes(e.c) ? 'var(--paper)' : 'var(--ink)';
     const title = e.u ? `<a href="${esc(e.u)}" rel="noopener">${esc(e.t)}</a>` : esc(e.t);
-    return `<div class="card">
-      <div class="img" style="background:var(--c-${e.c});color:${ink}">
-        <div class="fb">${esc(CATS[e.c] || e.c)}</div></div>
-      <div class="body">
-        <div class="t">${new Date(e.d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })} ${fmtTime(e.s)}</div>
-        <h3>${title}</h3>
-        <div class="w">${esc(e.vn)}${e.hn ? ' · ' + esc(e.hn) : ''}</div>
+    const when = new Date(e.d + 'T12:00:00')
+      .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+    const t = fmtTime(e.s);
+    return `<div class="card" style="--accent:var(--c-${e.c})">
+      <div class="when">${when}${t ? ` · ${t}` : ' · all day'}</div>
+      <h3>${title}</h3>
+      <div class="w">${esc(e.vn)}${e.hn ? ' · ' + esc(e.hn) : ''}</div>
+      <div class="foot">
+        <span class="tag" style="background:var(--c-${e.c});color:${on}">${esc(CATS[e.c] || e.c)}</span>
       </div></div>`;
+  }
+
+  function activeCount() {
+    return state.bands.size + state.cats.size + state.hoods.size +
+      (state.q ? 1 : 0) + (state.day ? 1 : 0);
   }
 
   function render() {
     const hits = ALL.filter(matches);
-    $('#count').innerHTML = `<b>${hits.length.toLocaleString()}</b> ${hits.length === 1 ? 'thing' : 'things'} to do`;
+    const label = `<b>${hits.length.toLocaleString()}</b> ${hits.length === 1 ? 'thing' : 'things'} to do`;
+    $('#count').innerHTML = label;
+    const dc = $('#dcount');
+    if (dc) dc.innerHTML = label;
+
+    // Filters live behind a button now, so the button has to say how many are
+    // on -- an invisible active filter is how people conclude the data is wrong.
+    const n = activeCount();
+    const badge = $('#fcount');
+    if (badge) {
+      badge.textContent = String(n);
+      badge.classList.toggle('hide', n === 0);
+    }
 
     const shown = hits.slice(0, state.limit);
     const out = $('#results');
@@ -231,7 +251,30 @@ if (root) {
         render();
       });
     }
+    // -- the filter drawer --
+    const drawer = $('#drawer'), scrim = $('#scrim');
+    const setDrawer = (open) => {
+      if (!drawer) return;
+      drawer.classList.toggle('on', open);
+      scrim?.classList.toggle('on', open);
+      drawer.setAttribute('aria-hidden', String(!open));
+      document.body.classList.toggle('drawer-open', open);
+      if (open) $('#q')?.focus();
+    };
+    on('#openfilters', 'click', () => setDrawer(true));
+    on('#closefilters', 'click', () => setDrawer(false));
+    on('#applyfilters', 'click', () => setDrawer(false));
+    on('#scrim', 'click', () => setDrawer(false));
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape') setDrawer(false);
+      // `/` to search is worth keeping; here it opens the drawer as well.
+      if (ev.key === '/' && ev.target.tagName !== 'INPUT') {
+        ev.preventDefault();
+        setDrawer(true);
+      }
+    });
     on('#more', 'click', () => { state.limit += PAGE; render(); });
+
     on('#views', 'click', (ev) => {
       const b = ev.target.closest('button');
       if (!b) return;

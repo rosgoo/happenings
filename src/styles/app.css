@@ -148,21 +148,29 @@ select, input[type="search"] {
 .tag { font-size: 10px; font-weight: 700; letter-spacing: .05em;
        text-transform: uppercase; padding: 1px 6px; border: 1.5px solid var(--ink); }
 
-/* ---------- cards ---------- */
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
-         gap: 14px; margin-top: 4px; }
-.card { border: 2px solid var(--ink); background: var(--paper); display: flex;
-        flex-direction: column; }
-.card .img { aspect-ratio: 4/3; display: flex; align-items: flex-end; padding: 11px;
-             border-bottom: 2px solid var(--ink); }
-.card .img .fb { font-family: var(--display); font-size: 15px; line-height: 1;
-                 letter-spacing: .1em; text-transform: uppercase; }
-.card .body { padding: 10px 11px 12px; }
-.card .body .t { font-size: 11px; font-weight: 700; letter-spacing: .06em;
-                 text-transform: uppercase; color: var(--ink-2); }
-.card .body h3 { margin: 3px 0 5px; font-size: 15px; line-height: 1.22; }
-.card .body h3 a { color: var(--ink); text-decoration: none; }
-.card .body .w { font-size: 12.5px; color: var(--ink-2); }
+/* ---------- event cards ----------
+   Text first. An earlier version gave every card a full-bleed saturated
+   colour block, which at 250 cards is a wall of colour that drowns the one
+   thing anyone is reading -- the name of the event. Colour is now a tag,
+   exactly as in the list, plus a hairline down the edge for scanning. */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+         gap: 12px; margin-top: 4px; }
+.card {
+  border: 2px solid var(--ink); background: var(--paper);
+  border-left-width: 7px; border-left-color: var(--accent, var(--ink));
+  padding: 12px 13px 11px; display: flex; flex-direction: column; gap: 5px;
+  min-height: 118px;
+}
+.card:hover { background: var(--paper-2); }
+.card .when { font-size: 11px; font-weight: 700; letter-spacing: .07em;
+              text-transform: uppercase; color: var(--ink-2);
+              font-variant-numeric: tabular-nums; }
+.card h3 { margin: 0; font-size: 16.5px; line-height: 1.2; letter-spacing: -.005em; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; text-decoration-color: var(--pink);
+                   text-decoration-thickness: 2px; }
+.card .w { font-size: 12.5px; color: var(--ink-2); }
+.card .foot { margin-top: auto; padding-top: 8px; }
 
 /* ---------- listings / grids of links ---------- */
 .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
@@ -218,3 +226,54 @@ footer b { color: var(--ink); }
 .pcard .cred { font-size: 9.5px; color: var(--ink-2); padding: 5px 12px 8px;
                border-top: 1px solid var(--paper-3); line-height: 1.35; }
 .pcard .cred a { color: var(--ink-2); }
+
+
+/* ---------- filter drawer ----------
+   The filter set outgrew the top of the page: category, time band, ~24
+   neighbourhoods and a search box pushed the actual listings below the fold,
+   which is backwards. They live in a drawer now; the day strip stays inline
+   because it is navigation, not filtering. */
+.drawer-open { overflow: hidden; }
+
+#scrim {
+  position: fixed; inset: 0; background: rgba(23, 21, 15, .45);
+  opacity: 0; pointer-events: none; transition: opacity .18s ease; z-index: 40;
+}
+#scrim.on { opacity: 1; pointer-events: auto; }
+
+#drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(360px, 92vw);
+  background: var(--paper); border-left: 3px solid var(--ink);
+  transform: translateX(100%); transition: transform .2s ease;
+  z-index: 41; display: flex; flex-direction: column;
+  background-image: radial-gradient(var(--paper-3) 1px, transparent 1px);
+  background-size: 7px 7px;
+}
+#drawer.on { transform: translateX(0); }
+#drawer .dhead {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px; border-bottom: 2px solid var(--ink); background: var(--paper);
+}
+#drawer .dhead b { font-family: var(--display); font-size: 15px;
+                   letter-spacing: .06em; text-transform: uppercase; }
+#drawer .dbody { overflow-y: auto; padding: 0 16px 16px; flex: 1; }
+#drawer .dfoot {
+  border-top: 2px solid var(--ink); padding: 11px 16px; background: var(--paper);
+  display: flex; align-items: center; gap: 10px;
+}
+#drawer .dfoot b { font-family: var(--display); font-size: 16px; }
+.iconbtn {
+  margin-left: auto; font: inherit; font-size: 18px; line-height: 1; cursor: pointer;
+  background: var(--paper); color: var(--ink); border: 1.5px solid var(--ink);
+  padding: 2px 9px 4px;
+}
+.iconbtn:hover { background: var(--acid); }
+
+.ch.filterbtn { font-weight: 700; }
+.ch.filterbtn .n {
+  background: var(--pink); color: var(--ink); font-size: 10.5px; font-weight: 700;
+  padding: 0 5px; border: 1px solid var(--ink); margin-left: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  #drawer, #scrim { transition: none; }
+}

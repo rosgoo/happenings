@@ -37,12 +37,17 @@ not stall on the clock between different hosts. Budget is ~4 requests per venue.
 robots.txt is honoured, and a disallow is recorded as a result rather than
 skipped silently -- "we are not allowed in" is a finding too.
 
-    python3 census.py                      # every venue with a website
+    python3 census.py --cache-pages        # every venue with a website
     python3 census.py --limit 40           # a taste, to sanity-check first
     python3 census.py --resume             # continue an interrupted run
+    python3 census.py --reparse            # re-detect over cached pages, no network
     python3 census.py --report             # re-print the table, no network
+
+Run it with --cache-pages. The detection below is heuristics that will need
+several corrections, and without the cache each one costs another full crawl.
 """
 import argparse
+import gzip
 import json
 import os
 import re
@@ -240,21 +245,58 @@ def pick_detail(links, listing):
 
 # ---------------------------------------------------------------- the probe
 
-def census_site(v, delay):
-    """Up to four requests: landing, listing, detail, and one endpoint guess."""
-    rec = {"name": v["name"], "url": v["url"], "host": v["host"], "kind": v["kind"],
-           "osm_id": v["osm_id"], "status": None, "final_url": None, "error": None,
-           "listing_url": None, "detail_url": None, "signals": {}}
+def is_blocked(rec):
+    """Refused, as opposed to absent. A venue that blocks us has structure we
+    simply are not being shown, so it belongs in a different bucket from a dead
+    domain -- one is a negotiation, the other is a fact."""
+    return rec.get("status") in (401, 403) or rec.get("error") == "robots-denied"
 
-    r = http.get_full(v["url"], delay=delay)
-    rec["status"], rec["error"], rec["final_url"] = r["status"], r["error"], r["url"]
-    if not r["body"]:
-        return rec
 
-    body, base = r["body"], r["url"]
+PAGES = os.path.join(ROOT, "data", "page-cache")
+ROLES = ("landing", "listing", "detail")
+
+
+def page_path(host, role):
+    safe = re.sub(r"[^A-Za-z0-9_.-]", "_", f"{host}__{role}")
+    return os.path.join(PAGES, f"{safe}.html.gz")
+
+
+def write_page(host, role, body):
+    """Keep the fetched page, gzipped. Same bargain as gearherd's enrich.py.
+
+    A full census is ~2,800 requests across ~800 hosts, and every question asked
+    of it afterwards -- did the Squarespace rule mis-fire, which venues link to
+    Dice, what shape are the ICS URLs -- would otherwise mean crawling all of
+    them again to find out. Keeping the bytes makes `--reparse` free, and the
+    detection rules here are certain to need several passes.
+
+    Local only, gitignored, never published. These are venues' full pages
+    including their listings copy, which the index deliberately does not
+    reproduce. A working file, not a dataset.
+    """
+    os.makedirs(PAGES, exist_ok=True)
+    with gzip.open(page_path(host, role), "wb") as f:
+        f.write(body)
+
+
+def read_page(host, role):
+    try:
+        with gzip.open(page_path(host, role), "rb") as f:
+            return f.read()
+    except Exception:
+        return None
+
+
+def analyse(landing, listing=None, detail=None):
+    """Every signal that is a pure function of bytes already on disk.
+
+    Kept separate from the fetching so `--reparse` can re-run the current rules
+    over the page cache with zero network. The two probes that genuinely need a
+    request -- tribe, squarespace ?format=json -- are added by the caller and
+    carried across a reparse unchanged.
+    """
+    body, base = landing
     text = body.decode("utf-8", "replace")
-    origin = "{0.scheme}://{0.netloc}".format(urllib.parse.urlsplit(base))
-
     ics, rss = feed_links(body, base)
     sig = {
         "ics": ics,
@@ -270,30 +312,77 @@ def census_site(v, delay):
         "squarespace_json": None,
     }
 
-    # Landing -> listing -> detail. The listing page usually carries better
-    # feed links than the homepage does, so re-check feeds there too.
+    if listing:
+        lbody, lurl = listing
+        l_ics, l_rss = feed_links(lbody, lurl)
+        sig["ics"] = sorted(set(sig["ics"]) | set(l_ics))[:5]
+        sig["rss"] = sorted(set(sig["rss"]) | set(l_rss))[:5]
+        # One readable page is enough to call the site readable. A venue whose
+        # homepage is a splash screen still has a perfectly parseable calendar.
+        if sig["js_rendered"] and not looks_client_rendered(lbody):
+            sig["js_rendered"] = False
+        sig["platforms"] = _union(sig["platforms"], lbody, PLATFORMS)
+        sig["cms"] = _union(sig["cms"], lbody, CMS)
+
+    if detail:
+        dbody, _ = detail
+        types = jsonld_types(dbody)
+        sig["jsonld_detail"] = sorted(types)
+        sig["jsonld_event"] = bool(types & EVENT_TYPES)
+        # Ticket links live on the event page, not the homepage. Scanning only
+        # the landing page for platforms was undercounting the single most
+        # useful signal here -- a venue that sells through Dice says so next to
+        # the door time, not in its footer.
+        sig["platforms"] = _union(sig["platforms"], dbody, PLATFORMS)
+
+    return sig
+
+
+def _union(existing, body, table):
+    return sorted(set(existing) | set(match_map(body.decode("utf-8", "replace"), table)))
+
+
+def census_site(v, delay, cache=False):
+    """Up to four requests: landing, listing, detail, and one endpoint guess."""
+    rec = {"name": v["name"], "url": v["url"], "host": v["host"], "kind": v["kind"],
+           "osm_id": v["osm_id"], "status": None, "final_url": None, "error": None,
+           "listing_url": None, "detail_url": None, "signals": {}}
+
+    r = http.get_full(v["url"], delay=delay)
+    rec["status"], rec["error"], rec["final_url"] = r["status"], r["error"], r["url"]
+    if not r["body"] or is_blocked(rec):
+        # A 403 still carries a body -- the block page. Crawling on from it
+        # spends three more requests to read someone's WAF, so stop here and
+        # record the block, which is itself the finding.
+        return rec
+
+    host, body, base = v["host"], r["body"], r["url"]
+    origin = "{0.scheme}://{0.netloc}".format(urllib.parse.urlsplit(base))
+    if cache:
+        write_page(host, "landing", body)
+
+    # Landing -> listing -> detail.
     links = same_host_links(body, base)
+    listing_page = detail_page = None
     listing = pick_listing(links)
-    detail = None
     if listing:
         rec["listing_url"] = listing
         lr = http.get_full(listing, delay=delay)
         if lr["body"]:
-            l_ics, l_rss = feed_links(lr["body"], lr["url"])
-            sig["ics"] = sorted(set(sig["ics"]) | set(l_ics))[:5]
-            sig["rss"] = sorted(set(sig["rss"]) | set(l_rss))[:5]
-            l_links = same_host_links(lr["body"], lr["url"])
-            if sig["js_rendered"] and not looks_client_rendered(lr["body"]):
-                sig["js_rendered"] = False
-            detail = pick_detail(l_links, listing) or pick_detail(links, listing)
+            listing_page = (lr["body"], lr["url"])
+            if cache:
+                write_page(host, "listing", lr["body"])
+            detail = (pick_detail(same_host_links(lr["body"], lr["url"]), listing)
+                      or pick_detail(links, listing))
+            if detail:
+                rec["detail_url"] = detail
+                dr = http.get_full(detail, delay=delay)
+                if dr["body"]:
+                    detail_page = (dr["body"], dr["url"])
+                    if cache:
+                        write_page(host, "detail", dr["body"])
 
-    if detail:
-        rec["detail_url"] = detail
-        dr = http.get_full(detail, delay=delay)
-        if dr["body"]:
-            types = jsonld_types(dr["body"])
-            sig["jsonld_detail"] = sorted(types)
-            sig["jsonld_event"] = bool(types & EVENT_TYPES)
+    sig = analyse((body, base), listing_page, detail_page)
 
     # One endpoint guess, chosen by what the HTML already told us. Guessing
     # blind at every host would quadruple the request count to learn nothing.
@@ -309,13 +398,52 @@ def census_site(v, delay):
     elif "squarespace" in sig["cms"]:
         # Squarespace serves any page as JSON with ?format=json. If that holds
         # it is effectively a free API for a large slice of small venues.
-        target = detail or listing or base
+        target = rec["detail_url"] or rec["listing_url"] or base
         sep = "&" if "?" in target else "?"
         s = http.get_full(f"{target}{sep}format=json", delay=delay)
         sig["squarespace_json"] = bool(s["status"] == 200 and "json" in s["ctype"])
 
     rec["signals"] = sig
     return rec
+
+
+def reparse(city):
+    """Re-run the current detection rules over the page cache. Zero network.
+
+    The reason the cache exists. Detection here is a pile of heuristics that
+    will be wrong in ways only visible once the numbers are in, and without this
+    every correction would cost another two-hour crawl.
+    """
+    records = load_existing(city)
+    if not records:
+        print("no census.json to reparse")
+        return records
+
+    done = skipped = 0
+    for rec in records:
+        host = rec.get("host")
+        landing = read_page(host, "landing")
+        if not landing:
+            skipped += 1
+            continue
+        pages = {}
+        for role, url_key in (("listing", "listing_url"), ("detail", "detail_url")):
+            b = read_page(host, role)
+            if b and rec.get(url_key):
+                pages[role] = (b, rec[url_key])
+        prior = rec.get("signals") or {}
+        sig = analyse((landing, rec.get("final_url") or rec["url"]),
+                      pages.get("listing"), pages.get("detail"))
+        # Network-only probes cannot be redone offline; carry them forward.
+        sig["tribe"] = prior.get("tribe")
+        sig["squarespace_json"] = prior.get("squarespace_json")
+        rec["signals"] = sig
+        done += 1
+
+    save(city, records)
+    print(f"reparsed {done} cached sites, 0 requests"
+          + (f" ({skipped} had no cached page)" if skipped else ""))
+    return records
 
 
 # ---------------------------------------------------------------- inputs
@@ -373,22 +501,29 @@ def report(records):
     if not n:
         print("no records -- run the census first")
         return
-    reached = [r for r in records if r.get("status") == 200]
 
-    def pct(k):
-        return f"{k:5d}  {100.0 * k / n:4.0f}%"
+    # Readable, not 200. A site whose homepage 404s can still serve a perfectly
+    # good /events with an ICS feed on it, and scoring by the landing status
+    # would throw that away. `signals` is only populated when a body came back,
+    # which is the honest test of whether we could read the site at all.
+    reached = [r for r in records if r.get("signals") and not is_blocked(r)]
+    blocked = [r for r in records if is_blocked(r)]
 
-    print(f"\n{n} sites probed, {len(reached)} reachable\n")
-    print("REACHABILITY")
-    print(f"  200                    {pct(len(reached))}")
-    print(f"  dead / error           {pct(sum(1 for r in records if r.get('status') is None))}")
-    print(f"  robots-denied          {pct(sum(1 for r in records if r.get('error') == 'robots-denied'))}")
-    print(f"  4xx / 5xx              {pct(sum(1 for r in records if r.get('status') and r['status'] != 200))}")
+    def pct(k, d=None):
+        d = d or n
+        return f"{k:5d}  {100.0 * k / d:4.0f}%" if d else f"{k:5d}     -"
+
+    print(f"\n{n} sites probed, {len(reached)} readable\n")
+    print("REACHABILITY  (share of all probed)")
+    print(f"  readable               {pct(len(reached))}")
+    print(f"  blocked (401/403/robots){pct(len(blocked))}")
+    print(f"  dead / no response     {pct(sum(1 for r in records if r.get('status') is None and r.get('error') != 'robots-denied'))}")
+    print(f"  other 4xx / 5xx        {pct(sum(1 for r in records if r.get('status') and r['status'] != 200 and r['status'] not in (401, 403)))}")
 
     def sig(r, k):
         return (r.get("signals") or {}).get(k)
 
-    print("\nEXTRACTION CAPABILITY  (share of all probed)")
+    print(f"\nEXTRACTION CAPABILITY  (share of the {len(reached)} readable)")
     rows = [
         ("JSON-LD Event on detail", sum(1 for r in reached if sig(r, "jsonld_event"))),
         ("ICS feed advertised", sum(1 for r in reached if sig(r, "ics"))),
@@ -401,7 +536,7 @@ def report(records):
         ("no event listing page found", sum(1 for r in reached if not r.get("listing_url"))),
     ]
     for label, k in rows:
-        print(f"  {label:<30} {pct(k)}")
+        print(f"  {label:<30} {pct(k, len(reached))}")
 
     for title, table in (("TICKETING PLATFORMS LINKED", "platforms"), ("SITE PLATFORM", "cms")):
         counts = {}
@@ -410,13 +545,13 @@ def report(records):
                 counts[name] = counts.get(name, 0) + 1
         print(f"\n{title}")
         for name, k in sorted(counts.items(), key=lambda kv: -kv[1]):
-            print(f"  {name:<30} {pct(k)}")
+            print(f"  {name:<30} {pct(k, len(reached))}")
 
     covered = [r for r in reached
                if sig(r, "jsonld_event") or sig(r, "ics") or sig(r, "tribe")
                or sig(r, "squarespace_json") or sig(r, "platforms")]
     print(f"\nReachable by at least one generic adapter: {len(covered)} / {n} "
-          f"({100.0 * len(covered) / n:.0f}%)")
+          f"({100.0 * len(covered) / n:.0f}% of all probed)")
     print("Write adapters top-down from the tables above.\n")
 
 
@@ -429,11 +564,18 @@ def main():
     ap.add_argument("--shard", help="i/n -- split the run across machines or nights")
     ap.add_argument("--delay", type=float, default=1.5, help="per-host seconds")
     ap.add_argument("--resume", action="store_true", help="skip hosts already recorded")
+    ap.add_argument("--cache-pages", action="store_true",
+                    help="keep fetched pages in data/page-cache, for --reparse")
+    ap.add_argument("--reparse", action="store_true",
+                    help="re-run detection over cached pages, no network")
     ap.add_argument("--report", action="store_true", help="re-print the table, no network")
     args = ap.parse_args()
 
     if args.report:
         report(load_existing(args.city))
+        return 0
+    if args.reparse:
+        report(reparse(args.city))
         return 0
 
     venues = load_venues(args.city)
@@ -452,7 +594,7 @@ def main():
 
     for i, v in enumerate(todo, 1):
         try:
-            rec = census_site(v, args.delay)
+            rec = census_site(v, args.delay, cache=args.cache_pages)
         except KeyboardInterrupt:
             print("\ninterrupted -- saving what we have")
             break
@@ -473,6 +615,10 @@ def main():
 
     save(args.city, records)
     print(f"\nwrote {len(records)} records -> {out_path(args.city)}")
+    if args.cache_pages and os.path.isdir(PAGES):
+        n = len(os.listdir(PAGES))
+        mb = sum(os.path.getsize(os.path.join(PAGES, f)) for f in os.listdir(PAGES)) / 1e6
+        print(f"cached {n} pages in {PAGES} ({mb:.1f} MB gzipped) -- `--reparse` is now free")
     report(records)
     return 0
 

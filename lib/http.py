@@ -20,6 +20,34 @@ DEFAULT_DELAY = 1.0
 _last_hit = {}
 _robots = {}
 
+class _Redirect308(urllib.request.HTTPRedirectHandler):
+    """Follow 308 Permanent Redirect on Python < 3.11.
+
+    urllib gained 308 support in 3.11. Before that TWO things are missing, and
+    fixing only the obvious one does nothing: the dispatch method
+    `http_error_308`, and `redirect_request`'s allowlist, which raises for any
+    code outside (301, 302, 303, 307). Patch just the first and the second still
+    rejects it, so the redirect is lost either way.
+
+    This matters beyond tidiness: a venue that has moved behind a 308 is
+    indistinguishable from one that is dead, and the census would file it as a
+    negative result. The pipeline is meant to run anywhere, and anywhere
+    includes the 3.9 that ships with macOS.
+
+    308 is mapped to 307 rather than 301 because 307 is the method-preserving
+    redirect, which is exactly 308's semantics.
+    """
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return super().redirect_request(req, fp, 307 if code == 308 else code,
+                                        msg, headers, newurl)
+
+    http_error_308 = urllib.request.HTTPRedirectHandler.http_error_301
+
+
+if not hasattr(urllib.request.HTTPRedirectHandler, "http_error_308"):
+    urllib.request.install_opener(urllib.request.build_opener(_Redirect308()))
+
 
 def _wait(host, delay):
     """One shared clock per host. Concurrency here would defeat the point."""

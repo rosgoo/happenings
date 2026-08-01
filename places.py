@@ -25,9 +25,10 @@ invites programmatic use with a descriptive User-Agent, and essentially every
 Wikidata consumer does exactly this, so the two documents point in different
 directions.
 
-This pipeline honours robots.txt without exception, so the default is to NOT
-call it. `--wikidata-images` turns it on deliberately. That is a judgement for
-whoever runs this, not an assumption the code should make quietly.
+This pipeline honours robots.txt by default, so it does NOT call it unless
+asked. `--wikidata-images` is the repo owner deciding otherwise, explicitly,
+and it is the only place in this codebase that skips the check. It sends the
+descriptive contact User-Agent Wikimedia's API policy asks for.
 
 An image whose author cannot be established is dropped rather than shown
 uncredited.
@@ -307,7 +308,9 @@ def wikidata_images(qids):
             {"action": "wbgetentities", "ids": "|".join(chunk),
              "props": "claims", "format": "json"})
         try:
-            data = http.get_json(url, delay=1.0, timeout=45)
+            # check_robots=False ONLY here: see the module docstring. An
+            # operator opted in via --wikidata-images.
+            data = http.get_json(url, delay=1.2, timeout=45, check_robots=False)
         except Exception as e:
             print(f"  wikidata batch failed: {e}")
             continue
@@ -334,7 +337,7 @@ def commons_credits(filenames):
              "prop": "imageinfo", "iiprop": "extmetadata|url",
              "iiurlwidth": "800", "format": "json"})
         try:
-            data = http.get_json(url, delay=1.0, timeout=45)
+            data = http.get_json(url, delay=1.2, timeout=45, check_robots=False)
         except Exception as e:
             print(f"  commons batch failed: {e}")
             continue
