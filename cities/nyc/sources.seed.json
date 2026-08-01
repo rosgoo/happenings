@@ -1,0 +1,44 @@
+{
+  "_comment": [
+    "Seed roster for NYC — tier 1 (institutions / non-mainstream venues).",
+    "Sourced from a real user's answer to 'which venues do you miss?' on a",
+    "competing aggregator. See Grove: happenings/coverage.md for the thesis.",
+    "",
+    "adapter: null means UNDECIDED, not 'none'. probe records what was actually",
+    "observed on 2026-08-01 — do not upgrade a field without re-probing.",
+    "Nothing here is verified enough to crawl yet; this is the Phase 0 worklist."
+  ],
+  "city": "nyc",
+  "tier": 1,
+  "venues": [
+    { "name": "Pioneer Works",       "slug": "pioneer-works",      "home": "https://pioneerworks.org",      "neighborhood_guess": "red-hook",          "adapter": null, "probe": { "date": "2026-08-01", "platform": "next/sanity", "tribe_rest": 404 } },
+    { "name": "Roulette",            "slug": "roulette",           "home": "https://roulette.org",          "neighborhood_guess": "boerum-hill",       "adapter": null, "probe": { "date": "2026-08-01", "platform": "wordpress", "tribe_rest": 404, "note": "WP without The Events Calendar — try wp-core" } },
+    { "name": "National Sawdust",    "slug": "national-sawdust",   "home": "https://nationalsawdust.org",   "neighborhood_guess": "williamsburg",      "adapter": null, "probe": { "date": "2026-08-01", "platform": "shopify-present", "tribe_rest": 404 } },
+    { "name": "Le Poisson Rouge",    "slug": "le-poisson-rouge",   "home": "https://www.lpr.com",           "neighborhood_guess": "greenwich-village", "adapter": null, "probe": { "date": "2026-08-01", "platform": "unidentified", "tribe_rest": 404 } },
+    { "name": "The Stone",           "slug": "the-stone",          "home": null,                            "neighborhood_guess": "greenwich-village", "adapter": null, "probe": { "date": "2026-08-01", "note": "thestonenyc.com does not resolve; now hosted at The New School — find canonical URL" } },
+    { "name": "IBeam",               "slug": "ibeam",              "home": "https://ibeambrooklyn.com",     "neighborhood_guess": "gowanus",           "adapter": null, "probe": { "date": "2026-08-01", "platform": "unidentified", "tribe_rest": 404 } },
+    { "name": "Knockdown Center",    "slug": "knockdown-center",   "home": "https://knockdown.center",      "neighborhood_guess": "maspeth",           "adapter": null, "probe": { "date": "2026-08-01", "platform": "unidentified", "tribe_rest": 429, "note": "429 is not a no — retry politely" } },
+    { "name": "Issue Project Room",  "slug": "issue-project-room", "home": "https://issueprojectroom.org",  "neighborhood_guess": "downtown-brooklyn", "adapter": null, "probe": { "date": "2026-08-01", "platform": "unidentified", "tribe_rest": 404 } },
+    { "name": "Public Records",      "slug": "public-records",     "home": "https://publicrecords.nyc",     "neighborhood_guess": "gowanus",           "adapter": null, "probe": { "date": "2026-08-01", "platform": "wordpress", "tribe_rest": 404, "note": "WP without The Events Calendar — try wp-core" } },
+    { "name": "IFC Center",          "slug": "ifc-center",         "home": "https://www.ifccenter.com",     "neighborhood_guess": "greenwich-village", "adapter": null, "probe": { "date": "2026-08-01", "platform": "wordpress", "tribe_rest": 404, "note": "WP without The Events Calendar — try wp-core" } },
+    { "name": "Dream House",         "slug": "dream-house",        "home": null,                            "neighborhood_guess": "tribeca",           "adapter": null, "probe": null },
+    { "name": "MoMA Film",           "slug": "moma-film",          "home": null,                            "neighborhood_guess": "midtown",           "adapter": null, "probe": null },
+    { "name": "Whitney Museum",      "slug": "whitney",            "home": null,                            "neighborhood_guess": "meatpacking",       "adapter": null, "probe": null },
+    { "name": "UNRESOLVED: 'fire house'", "slug": null,            "home": null,                            "neighborhood_guess": null,                "adapter": null, "probe": { "note": "Ambiguous in the source thread. Identify before adding." } }
+  ],
+  "institutions": [
+    { "name": "The New School / Parsons", "slug": "the-new-school", "adapter": null, "probe": { "date": "2026-08-01", "note": "events.newschool.edu 404; calendar.newschool.edu no DNS. Endpoint unknown." } },
+    { "name": "Columbia University",      "slug": "columbia",       "adapter": null, "probe": { "date": "2026-08-01", "note": "events.columbia.edu + calendar.columbia.edu both 403 to scripted client. Host exists — check in a browser, may be Localist behind bot protection." } },
+    { "name": "New York University",      "slug": "nyu",            "adapter": null, "probe": { "date": "2026-08-01", "note": "calendar.nyu.edu/api/2/events 302-redirects to HTML. Not a confirmed Localist instance." } },
+    { "name": "CUNY Graduate Center",     "slug": "cuny-gc",        "adapter": null, "probe": { "date": "2026-08-01", "note": "calendar.gc.cuny.edu no DNS; events.cuny.edu/api/2/events 301-redirects to HTML." } },
+    { "name": "Cooper Union",             "slug": "cooper-union",   "adapter": null, "probe": { "date": "2026-08-01", "note": "events.cooper.edu no DNS. Endpoint unknown." } },
+    { "name": "Pace University",          "slug": "pace",           "adapter": null, "probe": { "date": "2026-08-01", "note": "events.pace.edu no DNS. Endpoint unknown." } }
+  ],
+  "_next": [
+    "Re-probe JSON-LD Event on real event DETAIL pages (the first pass wrongly checked homepages).",
+    "Sweep every entry above for .ics / text/calendar endpoints — likely the highest-yield tier-1 adapter.",
+    "Find NYC Localist instances via the Concept3D customer list, not hostname guessing.",
+    "Try /wp-json/wp/v2/ on the three confirmed WordPress venues.",
+    "Retry knockdown.center politely."
+  ]
+}
