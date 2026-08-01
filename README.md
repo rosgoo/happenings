@@ -1,16 +1,35 @@
 # happenings
 
 A friendly, faceted index of what's actually going on in New York — aggregated
-from public event feeds, normalised into one schema, browsable by date, time of
+from public event feeds, normalised into one schema, browsable by day, time of
 day, neighbourhood, category and venue.
 
-The premise: answering "free thing, Greenpoint-ish, Thursday after work"
+The premise: answering "free thing, Park Slope-ish, Thursday after work"
 currently means checking eight walled gardens. That's a faceted query over a
 normalised index, which is a thing software is good at and nobody has built for
 this city.
 
-Sibling project to [gearherd](https://github.com/rosgoo/gearherd), and a
-deliberate inversion of it — same pipeline discipline, much friendlier face.
+Sibling project to gearherd, and a deliberate inversion of it — same pipeline
+discipline, much friendlier face.
+
+**Status: v1 running on city open data.** 6,100 events · 1,120 venues ·
+162 neighbourhoods · 523 static pages. The interesting venues aren't in it yet
+— see *What's next*.
+
+## Run it
+
+```bash
+python3 fetch.py --neighborhoods   # one-off: NTA polygons (changes on the decade)
+python3 fetch.py                   # extract  -> raw/nyc/
+python3 normalize.py               # transform -> data/nyc/
+python3 validate.py                # quality gate; exit 1 blocks the commit
+
+npm install
+npm run dev                        # http://localhost:4321/nyc
+```
+
+`npm run pipeline` runs the three Python stages in order. They are stdlib-only
+and deliberately stay that way — the crawl has to run anywhere.
 
 ## Shape
 
@@ -19,80 +38,100 @@ step is a commit, the commit is the deploy, and git is the database history,
 the backup and the audit log for free. No runtime database.
 
 ```
-sources.json ──> fetch.py ──> raw/<source>/*.json
-                                     │
-                                     ▼
-                              normalize.py ────> data/events.json
-                                     │           data/venues.json
-                                     │           data/series.json
-                                     ▼           data/rejected.json
-                            resolve_venues.py    (entity resolution)
-                                     │
-                                     ▼
-                                 dedupe.py       (cross-source collapse)
-                                     │
-                                     ▼
-                             track_events.py ──> data/event-history.jsonl
-                                     │           data/event-state.json
-                                     ▼
-                              validate.py ────── exit 1 blocks the commit
-                                     │
-                                     ▼
-                               Astro build
+cities/nyc/{city,sources}.json ──> fetch.py ──> raw/nyc/*.json
+                                                     │
+                                                     ▼
+                                              normalize.py ──> data/nyc/events.json
+                                                     │                   venues.json
+                                                     │                   rejected.json
+                                                     ▼                   meta.json
+                                              validate.py ─── exit 1 blocks the commit
+                                                     │
+                                                     ▼
+                                               Astro build
 ```
+
+A **city is a config directory, not a code branch** — `cities/<slug>/` holds the
+config, polygons and source registry; everything in `lib/` is city-agnostic.
+`validate.py` greps for timezone and city-name literals outside `cities/` and
+fails the build on a leak, because that is the drift that turns multi-city into
+a rewrite later. It has already caught one.
 
 ## The entity model
 
-Events are ephemeral, so **there is no page per event**. Five entity types,
-and the persistent four are what get URLs:
+Events are ephemeral, so **there is no page per event**. The persistent
+entities get the URLs:
 
 | Entity | Lifecycle | URL |
 |---|---|---|
-| Event | dead after `end_utc` | none — renders inside the pages below |
-| Venue | years | `/venues/<venue>/` |
-| Series | semi-persistent | `/series/<series>/` |
-| Neighborhood | permanent | `/<neighborhood>/` |
-| Category > sub | permanent, closed vocabulary | `/<category>/<subcategory>/` |
+| Event | dead after it happens | none — renders inside the pages below |
+| Venue | years | `/nyc/venues/<venue>/` |
+| Neighborhood | permanent | `/nyc/<neighborhood>/` |
+| Category | permanent, closed vocabulary | `/nyc/<category>/` |
 
-Crossed pages (`/greenpoint/techno/`) only generate when they earn it — ≥3
-events in the trailing 90 days, ≥1 upcoming, ≥2 distinct venues. Everything
-else redirects to the parent facet. Programmatic cross-products with nothing on
-them are doorway pages, and getting that wrong poisons the domain.
+Neighbourhood editions only generate when they earn it — ≥3 upcoming events from
+≥2 distinct venues. Programmatic pages with nothing on them are doorway pages,
+and getting that wrong poisons the domain.
 
-## Sources (v1)
+## The quality gate
 
-| Adapter | Source |
-|---|---|
-| `socrata` | NYC Open Data — Permitted Events, Parks Events Listing |
-| `ticketmaster` | Discovery API |
-| `tribe` | `/wp-json/tribe/events/v1/events` — The Events Calendar WP plugin |
-| `jsonld` | schema.org `Event` blocks |
-| `ics` | iCalendar feeds |
-| `squarespace` | Squarespace events JSON |
+`validate.py` runs before the commit, because the commit deploys. Its
+**structural** half is inherited from gearherd. Its **regression** half is not:
+gearherd's "count must not fall 25%" assumes a stable entity set, but here the
+set turns over weekly and a Monday always looks catastrophic beside a Saturday.
 
-Meetup and Eventbrite closed their public discovery APIs deliberately; neither
-is scraped. Anything that writes a `raw/`-shaped file slots into Transform
-unchanged.
+It's replaced by a **per-source freshness gate**, because the failure mode is
+different — a broken adapter here produces *nothing*, silently, forever. Any
+enabled source that goes quiet fails the build.
 
-## Status
+## Sources
 
-Design complete, nothing built. Phase 0 is three probes that decide the plan:
-read the Ticketmaster terms, measure Tribe REST hit rate across 40 NYC venues,
-and confirm the NYC Open Data sets are usable as listings.
+| Tier | Adapter | Source | In v1 |
+|---|---|---|---|
+| 2 | `socrata` | NYC Parks Public Events (`w3wp-dpdi`) | **yes** |
+| 2 | `socrata` | NYC Permitted Events (`tvpp-9vvx`) | **yes** |
+| 0 | `predicthq`, `seatgeek` | aggregators — free tiers, need a key | no |
+| 1 | `ics`, `jsonld`, `localist`, `custom` | institutions and arts venues | no |
+| 3 | `ticketmaster` | Discovery API — needs a key, read the terms | no |
 
-Design docs live in Grove under `happenings/` — `design.md` (what it is) and
-`engineering.md` (how it gets built, and in what order).
+`fudw-fgrp` and `6v4b-5gp4` are **dead** (newest rows 2019) and are deliberately
+absent rather than silently returning nothing.
+
+Eventbrite is skipped: `robots.txt` permits event pages, but they closed public
+search deliberately in 2020 and the ToS needs a real read first.
+
+## What the data honestly is
+
+- **20% of events are placed to a neighbourhood.** The parks feed carries
+  coordinates; the permits feed gives a street description and a borough.
+  Geocoding those descriptions is the highest-value next step.
+- **0% state a price**, so there is no price filter and nothing is marked free.
+  Most of these events almost certainly are free — asserting it would be
+  guessing, and an event with no stated price is *unknown*, not free.
+- **26,000 rows are quarantined** in `data/nyc/rejected.json` with their titles,
+  so the classifier is audited by reading a file. Mostly youth/adult league field
+  permits: real permits, but not things you can turn up to.
+
+## What's next
+
+1. **PredictHQ free key** — one signup measures how much of the long tail is
+   already solved before any custom adapter gets written.
+2. **Geocode permitted-event locations** — takes neighbourhood coverage from 20%
+   to most of the way, and the neighbourhood spine is the whole design.
+3. **Tier 1 venues** — Pioneer Works, Roulette, LPR, IFC, the university lecture
+   calendars. They're the reason the project exists and none are in yet.
+4. **Subway filter** — designed, not built. Stations don't move, so it's a
+   one-time static join against GTFS.
+5. **Series detection**, then neighbourhood **reach** (nobody lives inside a
+   polygon).
 
 ## Legal posture
 
-Inherited from gearherd, deliberately:
-
 - Only endpoints published for everyone. No login-gated data, no CAPTCHA
-  solving, no proxy rotation — circumventing a technical barrier is what turns
-  reading public data into a losing position.
+  solving, no proxy rotation.
 - `robots.txt` honoured, requests paced and self-identifying, `Retry-After`
   respected.
-- Facts only — title, time, venue, price, category. No marketing copy
-  reproduced, images referenced at source and never rehosted.
-- Every listing links back to where it came from. happenings is a router, not
-  a destination.
+- Facts only — title, time, place, category. Every listing links back to its
+  source. happenings is a router, not a destination.
+- Nothing is estimated. Missing shows as missing, and `/nyc/about` publishes the
+  coverage numbers.

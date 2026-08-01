@@ -1,0 +1,56 @@
+name: pipeline
+
+# Three times a day, not nightly. A 48-hour-stale events index is broken,
+# whereas a product catalogue can fail for three days unnoticed. Cheap because
+# these are documented open-data APIs designed to be called.
+on:
+  schedule:
+    - cron: '15 9,15,21 * * *'   # 05:15 / 11:15 / 17:15 America/New_York
+  workflow_dispatch:
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+
+      # raw/ is gitignored: it churns every run and git would store a fresh
+      # multi-MB blob each time for no diffing benefit. Cached between runs so a
+      # failed transform can be re-run without re-fetching.
+      - uses: actions/cache@v4
+        with:
+          path: raw
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+
+      - name: Extract
+        env:
+          HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 fetch.py
+
+      - name: Transform
+        run: python3 normalize.py
+
+      # The gate runs BEFORE the commit, because the commit is the deploy.
+      # Exit 1 here is the thing standing between a broken adapter and a live
+      # site that silently lists nothing.
+      - name: Quality gate
+        run: python3 validate.py
+
+      - name: Commit
+        run: |
+          git config user.name  "happenings-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

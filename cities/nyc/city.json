@@ -1,0 +1,26 @@
+{
+  "slug": "nyc",
+  "name": "New York",
+  "short": "NYC",
+  "tz": "America/New_York",
+  "bbox": [-74.26, 40.49, -73.70, 40.92],
+  "boroughs": ["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"],
+
+  "neighborhoods": {
+    "source": "socrata",
+    "host": "data.cityofnewyork.us",
+    "dataset": "9nt8-h7nd",
+    "name_field": "ntaname",
+    "borough_field": "boroname",
+    "geom_field": "the_geom",
+    "_comment": "2020 Neighborhood Tabulation Areas. Fetched once into neighborhoods.geojson; not refetched nightly."
+  },
+
+  "transit": {
+    "_comment": "Not wired in the MVP. GTFS join is designed in engineering.md.",
+    "gtfs": null,
+    "label": "subway"
+  },
+
+  "ticketmaster": { "market_id": "35", "_comment": "Tier 3. Needs a key; not used in the MVP." }
+}

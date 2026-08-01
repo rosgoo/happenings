@@ -1,0 +1,12 @@
+{
+  "nyc-parks-upcoming": {
+    "ok": true,
+    "count": 1825,
+    "fetched_at": "2026-08-01T20:43:26.328693+00:00"
+  },
+  "nyc-permitted-events": {
+    "ok": true,
+    "count": 33052,
+    "fetched_at": "2026-08-01T20:44:00.446175+00:00"
+  }
+}

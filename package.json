@@ -1,0 +1,14 @@
+{
+  "name": "happenings",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "pipeline": "python3 fetch.py && python3 normalize.py && python3 validate.py"
+  },
+  "dependencies": {
+    "astro": "^5.13.0"
+  }
+}

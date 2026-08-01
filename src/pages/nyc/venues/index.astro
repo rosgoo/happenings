@@ -1,0 +1,32 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { venuesWithEvents } from '../../../lib/data.js';
+const vs = venuesWithEvents(2);
+const byBorough = new Map();
+for (const v of vs) {
+  const b = v.borough || 'Elsewhere';
+  if (!byBorough.has(b)) byBorough.set(b, []);
+  byBorough.get(b).push(v);
+}
+---
+<Base title="Venues — happenings" description={`${vs.length} places with upcoming events in New York.`}>
+  <p class="kicker" style="margin-top:26px">New York City</p>
+  <h1 class="page">Places</h1>
+  <p class="lede">{vs.length.toLocaleString()} places with something coming up.
+    Only places with more than one upcoming event get a page — a listing with
+    nothing on it is worse than no listing.</p>
+  {[...byBorough.entries()].sort((a, b) => b[1].length - a[1].length).map(([b, list]) => (
+    <>
+      <h2 class="sec">{b} <span style="color:var(--ink-2)">{list.length}</span></h2>
+      <div class="rule"></div>
+      <div class="tiles">
+        {list.slice(0, 60).map((v) => (
+          <a class="tile" href={`/nyc/venues/${v.id}`}>
+            <div class="n">{v.name}</div>
+            <div class="m">{v.upcoming} upcoming{v.neighborhood_name ? ` · ${v.neighborhood_name}` : ''}</div>
+          </a>
+        ))}
+      </div>
+    </>
+  ))}
+</Base>

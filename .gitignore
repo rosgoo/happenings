@@ -29,3 +29,6 @@ dist/
 
 # Grove project metadata — local tooling config, not part of the build.
 .grove/
+
+# Build output
+dist/

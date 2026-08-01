@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import { meta, upcoming } from '../../lib/data.js';
+const cov = meta.coverage;
+const rejected = Object.entries(meta.stats)
+  .filter(([k]) => k.startsWith('rejected:'))
+  .map(([k, v]) => [k.replace('rejected:', ''), v])
+  .sort((a, b) => b[1] - a[1]);
+---
+<Base title="What's covered — happenings" description="Where happenings gets its data, what it covers, and what it misses.">
+  <p class="kicker" style="margin-top:26px">happenings</p>
+  <h1 class="page">What's covered</h1>
+  <p class="lede">And, more usefully, what isn't. A directory that is
+    confidently wrong is worse than one that admits a gap.</p>
+
+  <h2 class="sec">Where this comes from</h2><div class="rule"></div>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+    <tr>
+      <th style="text-align:left;border-bottom:2px solid var(--ink);padding-bottom:6px">Source</th>
+      <th style="text-align:left;border-bottom:2px solid var(--ink);padding-bottom:6px">Rows fetched</th>
+      <th style="text-align:left;border-bottom:2px solid var(--ink);padding-bottom:6px">Last checked</th>
+    </tr>
+    {meta.sources.map((s) => (
+      <tr>
+        <td style="padding:8px 0;border-bottom:1px solid var(--paper-3)">
+          <b>{s.label}</b><br />
+          <span style="color:var(--ink-2)">{s.attribution}</span>
+        </td>
+        <td style="padding:8px 0;border-bottom:1px solid var(--paper-3);font-variant-numeric:tabular-nums">
+          {s.raw_rows.toLocaleString()}
+        </td>
+        <td style="padding:8px 0;border-bottom:1px solid var(--paper-3);color:var(--ink-2)">
+          {new Date(s.fetched_at).toLocaleString('en-US', { dateStyle: 'medium', timeZone: meta.tz })}
+        </td>
+      </tr>
+    ))}
+  </table>
+
+  <h2 class="sec">Coverage, honestly</h2><div class="rule"></div>
+  <div class="tiles">
+    <div class="tile"><div class="n">{cov.neighborhood}%</div><div class="m">placed to a neighborhood</div></div>
+    <div class="tile"><div class="n">{cov.coordinates}%</div><div class="m">have coordinates</div></div>
+    <div class="tile"><div class="n">{cov.url}%</div><div class="m">link to a detail page</div></div>
+    <div class="tile" style="border-color:var(--pink-deep)"><div class="n">{cov.price}%</div><div class="m">state a price</div></div>
+  </div>
+
+  <p style="margin-top:16px;max-width:70ch">
+    <b>No source in this build states a price</b>, so there is no price filter and
+    nothing is marked free. Many of these events almost certainly are free — city
+    parks programming generally is — but asserting that would be guessing, and
+    guessing is the one thing this index doesn't do. An event with no stated
+    price is <em>unknown</em>, not free.
+  </p>
+  <p style="max-width:70ch">
+    <b>Only {cov.neighborhood}% of events are placed to a neighborhood.</b> The
+    parks feed carries coordinates; the permitted-events feed gives a street
+    description and a borough, so those events can be filtered by borough but not
+    placed on a block. Geocoding those descriptions is the single highest-value
+    next step for this site.
+  </p>
+
+  <h2 class="sec">What gets thrown out, and why</h2><div class="rule"></div>
+  <p style="max-width:70ch">Rejected rows keep their titles so the classifier can
+    be audited by reading a file rather than re-deriving the evidence.</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+    {rejected.map(([reason, n]) => (
+      <tr>
+        <td style="padding:7px 0;border-bottom:1px solid var(--paper-3);font-variant-numeric:tabular-nums;width:90px">
+          <b>{n.toLocaleString()}</b>
+        </td>
+        <td style="padding:7px 0;border-bottom:1px solid var(--paper-3)">{reason}</td>
+      </tr>
+    ))}
+  </table>
+  <p style="max-width:70ch;margin-top:14px">
+    The big one is league field permits. The city's permitted-events feed is
+    mostly youth and adult sports bookings — real permits, but not things you can
+    turn up to, so they are quarantined rather than listed.
+  </p>
+
+  <h2 class="sec">What's missing</h2><div class="rule"></div>
+  <ul style="max-width:70ch;line-height:1.65">
+    <li><b>The interesting venues.</b> This build is city open data only. Pioneer
+      Works, Roulette, Le Poisson Rouge, IFC, the university lecture calendars —
+      none of them are here yet, and they are the whole reason the project
+      exists.</li>
+    <li><b>Prices and ticket links.</b> Needs sources that publish them.</li>
+    <li><b>Subway filtering.</b> Designed, not built. Stations don't move, so
+      it's a one-time static join against GTFS.</li>
+    <li><b>Recurring series.</b> The regular Tuesday thing is the most useful
+      entity in the city and it isn't detected yet.</li>
+    <li><b>Neighborhood "reach".</b> Nobody lives inside a polygon — an edition
+      should show what's nearby, weighted by how hard it is to get there, not
+      just what falls inside an outline.</li>
+  </ul>
+
+  <h2 class="sec">Ground rules</h2><div class="rule"></div>
+  <ul style="max-width:70ch;line-height:1.65">
+    <li>Only endpoints published for everyone. No login-gated data, no CAPTCHA
+      solving, no proxy rotation.</li>
+    <li><code>robots.txt</code> honoured, requests paced and self-identifying,
+      <code>Retry-After</code> respected.</li>
+    <li>Facts only — title, time, place, category. Every listing links back to
+      its source.</li>
+    <li>Nothing is estimated. Missing shows as missing.</li>
+  </ul>
+</Base>

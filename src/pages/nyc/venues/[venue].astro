@@ -1,0 +1,44 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Browse from '../../../components/Browse.astro';
+import { upcoming, venuesWithEvents, categories, CATEGORY_LABELS, catColor, catOn, fmtDay, fmtTime } from '../../../lib/data.js';
+
+export async function getStaticPaths() {
+  const { venuesWithEvents, upcoming } = await import('../../../lib/data.js');
+  // Venues are the durable entity: a venue page is the same URL in three years
+  // while its contents refresh. That is what makes it worth ranking -- and why
+  // there is no page per event.
+  return venuesWithEvents(2).map((v) => ({
+    params: { venue: v.id },
+    props: { venue: v },
+  }));
+}
+
+const { venue } = Astro.props;
+const evs = upcoming.filter((e) => e.venue_id === venue.id);
+const cats = categories()
+  .map((c) => ({ ...c, count: evs.filter((e) => e.category === c.slug).length }))
+  .filter((c) => c.count > 0);
+const accent = cats.length ? catColor(cats[0].slug) : 'var(--acid)';
+const onAccent = cats.length ? catOn(cats[0].slug) : 'var(--ink)';
+---
+<Base
+  title={`${venue.name} — upcoming events | happenings`}
+  description={`${evs.length} upcoming events at ${venue.name}${venue.neighborhood_name ? `, ${venue.neighborhood_name}` : ''}.`}>
+  <div class="edition">
+    <div class="band" style={`background:${accent};color:${onAccent}`}>
+      <div class="k">happenings · venue</div>
+      <h1 class="page" style={`color:${onAccent}`}>{venue.name}</h1>
+    </div>
+    <div class="foot">
+      <span><b>{evs.length}</b> upcoming</span>
+      {venue.neighborhood_name
+        ? <a href={`/nyc/${venue.neighborhood}`}>{venue.neighborhood_name}</a>
+        : venue.borough && <span>{venue.borough}</span>}
+      {venue.lat && <span>{venue.lat.toFixed(4)}, {venue.lon.toFixed(4)}</span>}
+      <span style="color:var(--ink-2)">place from {venue.neighborhood_source || 'source'}</span>
+    </div>
+  </div>
+
+  <Browse scope={{ venue: venue.id }} cats={cats} noJs={evs.slice(0, 40)} />
+</Base>

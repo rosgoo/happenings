@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import Browse from '../../components/Browse.astro';
+import { upcoming, meta, categories, neighborhoods, TODAY } from '../../lib/data.js';
+
+const cats = categories();
+const hoods = neighborhoods(3).slice(0, 24);
+const week = upcoming.filter((e) => e.date_local <= new Date(Date.now() + 6 * 864e5)
+  .toISOString().slice(0, 10));
+const noJs = week.slice(0, 60);
+const free = 0; // no MVP source states a price; see /nyc/about
+---
+<Base
+  title="happenings — what's on in New York"
+  description={`${upcoming.length.toLocaleString()} things to do in New York, from public event feeds. Filter by day, time, neighborhood and category.`}>
+
+  <p class="kicker" style="margin-top:26px">New York City</p>
+  <h1 class="page">What's on</h1>
+  <p class="lede">
+    <em>{week.length.toLocaleString()}</em> things happening in the next seven days,
+    across <em>{meta.counts.neighborhoods_with_events}</em> neighborhoods —
+    pulled from public feeds, normalized into one index, and linked back to the source.
+  </p>
+
+  <Browse cats={cats} hoods={hoods} noJs={noJs} />
+
+  <h2 class="sec">Browse by neighborhood</h2><div class="rule"></div>
+  <div class="tiles">
+    {neighborhoods(3).slice(0, 24).map((h) => (
+      <a class="tile" href={`/nyc/${h.slug}`}>
+        <div class="n">{h.name}</div>
+        <div class="m">{h.count} upcoming · {h.borough}</div>
+      </a>
+    ))}
+  </div>
+  <p style="margin-top:12px"><a href="/nyc/neighborhoods">All neighborhoods →</a></p>
+
+  <h2 class="sec">Browse by category</h2><div class="rule"></div>
+  <div class="tiles">
+    {cats.map((c) => (
+      <a class="tile" href={`/nyc/${c.slug}`}
+         style={`border-left:10px solid var(--c-${c.slug})`}>
+        <div class="n">{c.name}</div>
+        <div class="m">{c.count} upcoming</div>
+      </a>
+    ))}
+  </div>
+</Base>

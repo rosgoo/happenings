@@ -1,0 +1,58 @@
+{
+  "_comment": [
+    "The source registry for NYC. One entry per source, each naming an adapter.",
+    "MVP = tier 2 only (NYC Open Data). Tier 0 aggregators (PredictHQ, SeatGeek)",
+    "and tier 1 venue adapters need keys or bespoke parsers; see coverage.md.",
+    "",
+    "Datasets audited 2026-08-01. fudw-fgrp (Parks Events Listing) and",
+    "6v4b-5gp4 (Parks Special Events) are DEAD -- their newest rows are from",
+    "2019 -- and are deliberately absent rather than silently returning nothing."
+  ],
+  "sources": [
+    {
+      "id": "nyc-parks-upcoming",
+      "tier": 2,
+      "adapter": "socrata",
+      "enabled": true,
+      "host": "data.cityofnewyork.us",
+      "dataset": "w3wp-dpdi",
+      "label": "NYC Parks Public Events - Upcoming 14 Days",
+      "attribution": "NYC Parks / NYC Open Data",
+      "min_expected": 200,
+      "map": {
+        "id": "guid",
+        "title": "title",
+        "description": "description",
+        "start_date": "startdate",
+        "start_time": "starttime",
+        "end_time": "endtime",
+        "location": "location",
+        "coordinates": "coordinates",
+        "categories": "categories",
+        "url": "link"
+      }
+    },
+    {
+      "id": "nyc-permitted-events",
+      "tier": 2,
+      "adapter": "socrata",
+      "enabled": true,
+      "host": "data.cityofnewyork.us",
+      "dataset": "tvpp-9vvx",
+      "label": "NYC Permitted Event Information",
+      "attribution": "NYC Office of Citywide Event Coordination and Management",
+      "min_expected": 500,
+      "where_field": "start_date_time",
+      "map": {
+        "id": "event_id",
+        "title": "event_name",
+        "start_datetime": "start_date_time",
+        "end_datetime": "end_date_time",
+        "location": "event_location",
+        "borough": "event_borough",
+        "event_type": "event_type",
+        "agency": "event_agency"
+      }
+    }
+  ]
+}

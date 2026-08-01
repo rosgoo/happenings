@@ -1,0 +1,119 @@
+---
+import Base from '../../layouts/Base.astro';
+import Browse from '../../components/Browse.astro';
+import {
+  upcoming, categories, neighborhoods, venuesWithEvents,
+  CATEGORY_LABELS, catColor, catOn,
+} from '../../lib/data.js';
+
+// Neighbourhood editions and category pages share this route. They are
+// disambiguated at build time rather than given separate URL prefixes, because
+// /nyc/park-slope and /nyc/music are both things people would type.
+const RESERVED = new Set(['venues', 'neighborhoods', 'about', 'events.json']);
+
+export async function getStaticPaths() {
+  const { upcoming, categories, neighborhoods, CATEGORY_LABELS } =
+    await import('../../lib/data.js');
+  const RESERVED = new Set(['venues', 'neighborhoods', 'about', 'events.json']);
+  const paths = [];
+
+  // The doorway-page guard. A generated page with nothing on it is exactly
+  // what thin-content policy targets, and getting it wrong poisons the domain.
+  // An edition must earn its URL: enough events, from more than one venue.
+  for (const h of neighborhoods(3)) {
+    if (RESERVED.has(h.slug)) continue;
+    const evs = upcoming.filter((e) => e.neighborhood === h.slug);
+    const venueCount = new Set(evs.map((e) => e.venue_id)).size;
+    if (evs.length < 3 || venueCount < 2) continue;
+    paths.push({
+      params: { slug: h.slug },
+      props: { kind: 'hood', name: h.name, borough: h.borough, count: evs.length, venueCount },
+    });
+  }
+
+  for (const c of categories()) {
+    if (RESERVED.has(c.slug)) continue;
+    paths.push({
+      params: { slug: c.slug },
+      props: { kind: 'cat', name: CATEGORY_LABELS[c.slug] || c.slug, count: c.count },
+    });
+  }
+  return paths;
+}
+
+const { slug } = Astro.params;
+const { kind, name, borough, count, venueCount } = Astro.props;
+
+const evs = kind === 'hood'
+  ? upcoming.filter((e) => e.neighborhood === slug)
+  : upcoming.filter((e) => e.category === slug);
+
+const accent = kind === 'cat'
+  ? catColor(slug)
+  // Editions get an accent derived from the slug, so Park Slope is the same
+  // colour forever and it costs nothing to maintain.
+  : `var(--c-${Object.keys(CATEGORY_LABELS)[
+      [...slug].reduce((a, ch) => a + ch.charCodeAt(0), 0) % 8]})`;
+const onAccent = kind === 'cat' ? catOn(slug) : 'var(--ink)';
+
+const topVenues = venuesWithEvents(1)
+  .filter((v) => (kind === 'hood' ? v.neighborhood === slug
+                                  : evs.some((e) => e.venue_id === v.id)))
+  .slice(0, 12);
+
+const subs = [...evs.reduce((m, e) => m.set(e.subcategory, (m.get(e.subcategory) || 0) + 1), new Map())]
+  .sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+const nextUp = evs.slice(0, 50);
+const cats = kind === 'hood'
+  ? categories().filter((c) => evs.some((e) => e.category === c.slug))
+      .map((c) => ({ ...c, count: evs.filter((e) => e.category === c.slug).length }))
+  : [];
+const hoods = kind === 'cat'
+  ? neighborhoods(1).filter((h) => evs.some((e) => e.neighborhood === h.slug))
+      .map((h) => ({ ...h, count: evs.filter((e) => e.neighborhood === h.slug).length }))
+      .sort((a, b) => b.count - a.count).slice(0, 30)
+  : [];
+
+const title = kind === 'hood'
+  ? `${name} — what's on | happenings`
+  : `${name} in New York — what's on | happenings`;
+const desc = kind === 'hood'
+  ? `${count} things to do in ${name}, ${borough}. Filter by day, time and category.`
+  : `${count} ${name.toLowerCase()} events across New York. Filter by day, time and neighborhood.`;
+---
+<Base title={title} description={desc}>
+  <div class="edition">
+    <div class="band" style={`background:${accent};color:${onAccent}`}>
+      <div class="k">happenings{borough ? ` · ${borough}` : ' · New York'}</div>
+      <h1 class="page" style={`color:${onAccent}`}>{name}</h1>
+    </div>
+    <div class="foot">
+      <span><b>{evs.length}</b> upcoming</span>
+      {kind === 'hood' && <span><b>{venueCount}</b> places</span>}
+      {subs.length > 0 && (
+        <span>mostly {subs.slice(0, 3).map((s) => s[0].replace(/-/g, ' ')).join(', ')}</span>
+      )}
+      {kind === 'hood' && <a href="/nyc/neighborhoods">all neighborhoods →</a>}
+    </div>
+  </div>
+
+  <Browse
+    scope={kind === 'hood' ? { hood: slug } : { cat: slug }}
+    cats={cats} hoods={hoods} noJs={nextUp.slice(0, 40)} />
+
+  {topVenues.length > 0 && (
+    <>
+      <h2 class="sec">Places {kind === 'hood' ? 'here' : `for ${name.toLowerCase()}`}</h2>
+      <div class="rule"></div>
+      <div class="tiles">
+        {topVenues.map((v) => (
+          <a class="tile" href={`/nyc/venues/${v.id}`}>
+            <div class="n">{v.name}</div>
+            <div class="m">{v.upcoming} upcoming</div>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+</Base>
