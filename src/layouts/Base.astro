@@ -2,7 +2,7 @@
 import '../styles/app.css';
 import { meta } from '../lib/data.js';
 
-const { title, description, favi = '🗽' } = Astro.props;
+const { title, description } = Astro.props;
 // Vercel serves every build at a *.vercel.app URL as well, so each page has to
 // name the host that owns it -- 345 pages duplicated across two domains is the
 // cheapest way to poison a domain. The trailing slash is stripped so this
@@ -24,12 +24,12 @@ const generated = new Date(meta.generated_at).toLocaleString('en-US', {
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonical} />
-  <link rel="icon" href={`data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">${favi}</text></svg>`} />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <!-- The two faces on every page above the fold. The serif is one paragraph
+       and can swap in late; preloading all four would just make them queue. -->
+  <link rel="preload" href="/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/archivo-black-latin.woff2" as="font" type="font/woff2" crossorigin />
 </head>
 <body>
   <header class="top">
