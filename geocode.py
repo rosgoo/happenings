@@ -184,7 +184,15 @@ BOROUGH_FULL = {"M": "Manhattan", "B": "Brooklyn", "Q": "Queens",
 
 def targets(city):
     """Every location string that arrives without coordinates, with the borough
-    the source stated, and how many events ride on it."""
+    the source stated, and how many events ride on it.
+
+    Two shapes, because two kinds of source need placing. Permits name a place
+    in `event_location` and give no coordinates. Institutional feeds name a
+    building the resolver has never heard of -- "Brooklyn Heights Library" is
+    not a park and is not an address -- so their adapter attaches the street
+    address the source itself publishes, under `address`. Both arrive here as
+    the same question: what are the coordinates of this string.
+    """
     raw_dir = os.path.join(ROOT, "raw", city)
     want = {}
     for fn in sorted(os.listdir(raw_dir)):
@@ -198,9 +206,10 @@ def targets(city):
         if not isinstance(blob, dict) or "rows" not in blob:
             continue
         for r in blob["rows"]:
-            if r.get("coordinates"):
+            if r.get("coordinates") or r.get("lat"):
                 continue
-            loc = (r.get("event_location") or "").split(":")[0].strip()
+            loc = ((r.get("event_location") or r.get("address") or "")
+                   .split(":")[0].strip())
             if not loc:
                 continue
             e = want.setdefault(loc, {"n": 0, "borough": r.get("event_borough")})

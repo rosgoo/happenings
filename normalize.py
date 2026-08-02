@@ -84,6 +84,12 @@ def strip_tags(s):
 
 LUMA_URL = re.compile(r"https://(?:luma\.com|lu\.ma)/[A-Za-z0-9_-]+")
 
+# Brooklyn Public Library files public programming and internal bookkeeping in
+# one table, separated by `field_event_type_parent`. Only these are listings.
+# The other values -- Meeting Room, In-Branch Tabling, Visit, Outreach -- are a
+# room somebody reserved, a table in a lobby, and a school trip.
+BPL_PUBLIC = {"Program"}
+
 
 def to_local_naive(iso, tz):
     """An aware ISO instant -> naive wall-clock in the city's zone.
@@ -624,13 +630,181 @@ class Builder:
                      source_id=src_id, url=url,
                      description=r.get("description"))
 
+    def bpl(self, src_id, rows):
+        """Brooklyn Public Library -- every branch, one open Drupal JSON:API.
+
+        The first library source, and the first where the *operational* record
+        and the *public listing* are the same table. `field_event_type_parent`
+        says which is which: `Program` is a public programme, while
+        `Meeting Room` is a room somebody booked, `In-Branch Tabling` is a
+        table in a lobby, `Visit` is a class trip. Publishing those would repeat
+        the permits mistake exactly -- 4,364 private permits filed as public
+        street fairs, because nobody asked what the record was *for*.
+
+        Virtual events are dropped rather than placed. A Zoom talk has no
+        neighbourhood, and this index is a claim about where.
+
+        Timestamps arrive as local wall-clock already (fetch.py strips the fake
+        UTC offset), so they are parsed naive and handed straight to `add`.
+        """
+        for r in rows:
+            title = clean(r.get("title"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=self._bpl_url(r))
+                continue
+
+            kind = (r.get("kind") or "").strip()
+            if kind and kind not in BPL_PUBLIC:
+                self.reject(src_id, title, f"internal record: {kind}",
+                            url=self._bpl_url(r))
+                continue
+            if r.get("virtual") and not r.get("hybrid"):
+                self.reject(src_id, title, "virtual only, has no place",
+                            url=self._bpl_url(r))
+                continue
+
+            start = parse_naive((r.get("start") or "").replace("+00:00", ""))
+            end = parse_naive((r.get("end") or "").replace("+00:00", ""))
+            if not start:
+                self.reject(src_id, title, "unparseable start time")
+                continue
+
+            # "Brooklyn Heights Library, Gaming Room" is one building and one
+            # room inside it. The room is not a venue -- keeping it would give
+            # every branch a dozen venue pages and split its events across them.
+            where = r.get("location") or (r.get("branches") or [None])[0]
+            if not where:
+                self.reject(src_id, title, "no branch named", url=self._bpl_url(r))
+                continue
+            branch = clean(where.split(",")[0])
+            v = self.venue(branch, borough="Brooklyn", kind="library")
+
+            # The tag vocabulary is the venue's own words -- "author talks",
+            # "arts and crafts", "astronomy". Ground truth beats the title,
+            # which is where a "Chess for Adults" reads as sport.
+            cat = sub = csrc = None
+            for tag in r.get("tags") or []:
+                c, s, _ = taxonomy.from_title(str(tag))
+                if c:
+                    cat, sub, csrc = c, s, "bpl:tags"
+                    break
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                # A library programme with nothing else to go on is a library
+                # programme. This is the one default here, and it is stated
+                # rather than guessed: the source is a library's own calendar.
+                cat, sub, csrc = "learning", "class", "default:bpl"
+
+            flags = []
+            for aud in (r.get("audience") or []) if isinstance(r.get("audience"), list) \
+                    else [r.get("audience")]:
+                if aud:
+                    flags.append(slugify(str(aud)))
+
+            self.add(title=title, start=start, end=end, venue=v,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=self._bpl_url(r),
+                     description=strip_tags(r.get("body")), flags=flags)
+
+    @staticmethod
+    def _bpl_url(r):
+        p = r.get("path")
+        return f"https://www.bklynlibrary.org{p}" if p else None
+
+    def wordpress(self, src_id, rows):
+        """Venue calendars on The Events Calendar, REST or ICS.
+
+        Location is the whole difficulty. Tribe's `venue` object is empty on
+        most of these sites, so the building's OSM coordinates ride in on the
+        registry instead -- which also settles the geography question, because
+        the census swept a bounding box and the roster contains Hoboken, Newark
+        Symphony Hall and the Meadowlands. An event whose venue does not land in
+        an NYC neighbourhood is rejected, the same test Ticketmaster gets.
+
+        Where the feed DOES state its own coordinates they win for that event:
+        a venue that runs a walking tour or a second stage knows better than
+        the building we geocoded.
+        """
+        for r in rows:
+            title = clean(r.get("title"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=r.get("url"))
+                continue
+            if (r.get("status") or "").lower() not in ("", "publish", "confirmed"):
+                self.reject(src_id, title, f"status: {r.get('status')}",
+                            url=r.get("url"))
+                continue
+
+            start = parse_naive(r.get("start")) or to_local_naive(r.get("start"), self.tz)
+            end = parse_naive(r.get("end")) or to_local_naive(r.get("end"), self.tz)
+            if not start:
+                self.reject(src_id, title, "unparseable start time", url=r.get("url"))
+                continue
+
+            lat, lon = r.get("venue_lat"), r.get("venue_lon")
+            try:
+                lat = float(lat) if lat not in (None, "") else None
+                lon = float(lon) if lon not in (None, "") else None
+            except (TypeError, ValueError):
+                lat = lon = None
+            place = None
+            if lat is not None and lon is not None:
+                place = self.resolver.resolve(lat=lat, lon=lon)
+
+            v = self.venue(r.get("venue_name") or r.get("venue_host"),
+                           r.get("lat"), r.get("lon"),
+                           borough=r.get("borough"), kind="venue")
+            if not v:
+                self.reject(src_id, title, "no venue could be resolved",
+                            url=r.get("url"))
+                continue
+            here = place or v
+            hood = here.as_dict()["neighborhood"] if place else v.get("neighborhood")
+            if not hood:
+                self.reject(src_id, title, "outside nyc", url=r.get("url"))
+                continue
+
+            cat = sub = csrc = None
+            for word in (r.get("categories") or []) + (r.get("tags") or []):
+                c, s, _ = taxonomy.from_title(str(word))
+                if c:
+                    cat, sub, csrc = c, s, "wordpress:terms"
+                    break
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                cat, sub, csrc = taxonomy.from_venue(v["name"])
+            if not cat:
+                self.reject(src_id, title, "unclassified wordpress event",
+                            url=r.get("url"))
+                continue
+
+            # `cost` is free text -- "$20", "Free", "$15 – $45", "". Only the
+            # word free is unambiguous enough to act on, and everything else
+            # stays null rather than becoming a parsed guess.
+            is_free = None
+            cost = (r.get("cost") or "").strip().lower()
+            if cost in ("free", "free!", "$0", "0"):
+                is_free = True
+
+            self.add(title=title, start=start, end=end, venue=v,
+                     place=place, category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=r.get("url"),
+                     description=strip_tags(r.get("description")),
+                     is_free=is_free)
+
     # -- run ---------------------------------------------------------------
     def run(self):
         raw_dir = os.path.join(ROOT, "raw", self.city)
         handlers = {"nyc-parks-upcoming": self.parks, "nyc-permitted-events": self.permits,
                     "nyc-squarespace": self.squarespace,
                     "nyc-ticketmaster": self.ticketmaster,
-                    "nyc-luma": self.luma}
+                    "nyc-luma": self.luma,
+                    "nyc-bpl": self.bpl,
+                    "nyc-wordpress": self.wordpress}
         used = []
         for fn in sorted(os.listdir(raw_dir)):
             if not fn.endswith(".json"):

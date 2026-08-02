@@ -1,526 +1,575 @@
 {
- "generated_at": "2026-08-02T19:25:49.833878+00:00",
- "probed": 40,
+ "generated_at": "2026-08-02T20:39:42.599420+00:00",
+ "probed": 668,
  "sites": [
   {
    "host": "www.frauncestavernmuseum.org",
+   "name": "Fraunces Tavern Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Fraunces Tavern Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "bronxmuseum.org",
+   "name": "Bronx Museum of the Arts",
    "wp_types": {
     "exhibition": "exhibition",
     "event": "event"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Bronx Museum of the Arts",
    "open": [
     {
-     "slug": "event",
      "base": "event",
      "total": "239",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Lifelong Studio: Alternative Archives Exhibition Opening Celebration",
-     "sample_link": "https://bronxmuseum.org/event/lifelong-studio-exhibition-opening26/"
+     "sample_link": "https://bronxmuseum.org/event/lifelong-studio-exhibition-opening26/",
+     "slug": "event"
     },
     {
-     "slug": "exhibition",
      "base": "exhibition",
      "total": "139",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Lifelong Studio: Alternative Archives Exhibition",
-     "sample_link": "https://bronxmuseum.org/exhibition/lifelong-studio-alternative-archives/"
+     "sample_link": "https://bronxmuseum.org/exhibition/lifelong-studio-alternative-archives/",
+     "slug": "exhibition"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.yumuseum.org",
+   "name": "Yeshiva University Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Yeshiva University Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.nytransitmuseum.org",
+   "name": "New York Transit Museum",
    "wp_types": {
     "tribe_events": "tribe_events"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "New York Transit Museum",
    "open": [
     {
-     "slug": "tribe_events",
      "base": "tribe_events",
      "total": "50",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Subway Simulator Sunday",
-     "sample_link": "https://www.nytransitmuseum.org/program/subway-simulator-sunday-aug/"
+     "sample_link": "https://www.nytransitmuseum.org/program/subway-simulator-sunday-aug/",
+     "slug": "tribe_events"
     }
-   ]
+   ],
+   "tribe": 51,
+   "ics": {
+    "url": "https://www.nytransitmuseum.org/programs/?ical=1",
+    "vevents": 30
+   }
   },
   {
    "host": "6tocelebrate.org",
+   "name": "Erasmus Hall Museum",
    "wp_types": {},
    "drupal_types": null,
-   "error": null,
-   "name": "Erasmus Hall Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.bartowpellmansionmuseum.org",
+   "name": "Bartow-Pell Mansion Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Bartow-Pell Mansion Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "noblemaritime.org",
+   "name": "Noble Maritime Collection",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Noble Maritime Collection",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "snug-harbor.org",
+   "name": "Newhouse Center for Contemporary Art",
    "wp_types": {
     "event": "event",
     "class": "class"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Newhouse Center for Contemporary Art",
    "open": [
     {
-     "slug": "class",
      "base": "class",
      "total": "122",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Free Outdoor Yoga",
-     "sample_link": "https://snug-harbor.org/class/free-outdoor-yoga/"
+     "sample_link": "https://snug-harbor.org/class/free-outdoor-yoga/",
+     "slug": "class"
     },
     {
-     "slug": "event",
      "base": "event",
      "total": "168",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Richmond County Orchestra: \u201cHeroes and Harmony\u201d concert",
-     "sample_link": "https://snug-harbor.org/event/richmond-county-orchestra-heroes-and-harmony-concert/"
+     "sample_link": "https://snug-harbor.org/event/richmond-county-orchestra-heroes-and-harmony-concert/",
+     "slug": "event"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
    "wp_types": {
     "online-exhibitions": "online-exhibitions",
     "exhibitions": "exhibitions",
     "tribe_events": "tribe_events"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Staten Island Museum",
    "open": [
     {
-     "slug": "exhibitions",
      "base": "exhibitions",
      "total": "18",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Staten Island: Making History",
-     "sample_link": "https://www.statenislandmuseum.org/exhibitions/staten-island-making-history/"
+     "sample_link": "https://www.statenislandmuseum.org/exhibitions/staten-island-making-history/",
+     "slug": "exhibitions"
     },
     {
-     "slug": "online-exhibitions",
      "base": "online-exhibitions",
      "total": "25",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Mixed Media (ceramics, glass, paper, wood, wool, textiles)",
-     "sample_link": "https://www.statenislandmuseum.org/online-exhibitions/statenislandfineartsandcrafts/mixedmedia/"
+     "sample_link": "https://www.statenislandmuseum.org/online-exhibitions/statenislandfineartsandcrafts/mixedmedia/",
+     "slug": "online-exhibitions"
     },
     {
-     "slug": "tribe_events",
      "base": "tribe_events",
      "total": "3",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Bird and Nature Walk: Great Kills Park",
-     "sample_link": "https://www.statenislandmuseum.org/event/bird-and-nature-walk-great-kills-park-9/"
+     "sample_link": "https://www.statenislandmuseum.org/event/bird-and-nature-walk-great-kills-park-9/",
+     "slug": "tribe_events"
     }
-   ]
+   ],
+   "tribe": 4,
+   "ics": {
+    "url": "https://www.statenislandmuseum.org/events?ical=1",
+    "vevents": 3
+   }
   },
   {
    "host": "dyckmanfarmhouse.org",
+   "name": "Dyckman Farmhouse Museum",
    "wp_types": {
     "tribe_events": "tribe_events"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Dyckman Farmhouse Museum",
-   "open": []
+   "open": [],
+   "tribe": 0,
+   "ics": null
   },
   {
    "host": "www.moaf.org",
+   "name": "Museum of American Finance",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Museum of American Finance",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "rubinmuseum.org",
+   "name": "Rubin Museum of Art",
    "wp_types": {
     "exhibitions": "exhibitions"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Rubin Museum of Art",
    "open": [
     {
-     "slug": "exhibitions",
      "base": "exhibitions",
      "total": "101",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Amrit Karki: s\u0101 Ladakh Biennale",
-     "sample_link": "https://rubinmuseum.org/exhibitions/amrit-karki-sa-ladakh-biennale/"
+     "sample_link": "https://rubinmuseum.org/exhibitions/amrit-karki-sa-ladakh-biennale/",
+     "slug": "exhibitions"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.nps.gov",
+   "name": "Ryan Visitor Center",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Ryan Visitor Center",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.nutleyhistoricalsociety.org",
+   "name": "Nutley Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Nutley Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.mlb.com",
+   "name": "The Yankees Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "The Yankees Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "skyscraper.org",
+   "name": "Skyscraper Museum",
    "wp_types": {
     "exhibitions": "exhibitions",
     "programs": "programs"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Skyscraper Museum",
    "open": [
     {
-     "slug": "exhibitions",
      "base": "exhibitions",
      "total": "35",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "The Modern Concrete Skyscraper",
-     "sample_link": "https://skyscraper.org/exhibitions/the-modern-concrete-skyscraper/"
+     "sample_link": "https://skyscraper.org/exhibitions/the-modern-concrete-skyscraper/",
+     "slug": "exhibitions"
     },
     {
-     "slug": "programs",
      "base": "programs",
      "total": "464",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "The World Trade Center Remembered",
-     "sample_link": "https://skyscraper.org/programs/the-world-trade-center-remembered/"
+     "sample_link": "https://skyscraper.org/programs/the-world-trade-center-remembered/",
+     "slug": "programs"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.halldeslumieres.com",
+   "name": "Hall des Lumi\u00e8res",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Hall des Lumi\u00e8res",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "southstreetseaportmuseum.org",
+   "name": "South Street Seaport Museum",
    "wp_types": {},
    "drupal_types": null,
-   "error": null,
-   "name": "South Street Seaport Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.folkartmuseum.org",
+   "name": "American Folk Art Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "American Folk Art Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.sichildrensmuseum.org",
+   "name": "Staten Island Children\u2019s Museum",
    "wp_types": {
     "tribe_events": "tribe_events"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Staten Island Children\u2019s Museum",
    "open": [
     {
-     "slug": "tribe_events",
      "base": "tribe_events",
      "total": "41",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Museum Movers and Shakers",
-     "sample_link": "https://sichildrensmuseum.org/event/museum-movers-and-shakers-9/"
+     "sample_link": "https://sichildrensmuseum.org/event/museum-movers-and-shakers-9/",
+     "slug": "tribe_events"
     }
-   ]
+   ],
+   "tribe": 43,
+   "ics": {
+    "url": "https://sichildrensmuseum.org/calendar/?ical=1",
+    "vevents": 30
+   }
   },
   {
    "host": "www.fitnyc.edu",
+   "name": "The Museum at FIT",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "The Museum at FIT",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.sunymaritime.edu",
+   "name": "Maritime National Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Maritime National Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.govisland.com",
+   "name": "The Trust for Governors Island",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "The Trust for Governors Island",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.museumofsex.com",
+   "name": "Museum of Sex",
    "wp_types": {
     "exhibitions": "exhibitions",
     "events": "events"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Museum of Sex",
    "open": [
     {
-     "slug": "events",
      "base": "events",
      "total": "1",
      "returned": 1,
      "event_date_meta": [],
      "sample_title": "Sacramento: Deep Throat 50th Anniversary Screening",
-     "sample_link": "https://www.museumofsex.com/events/deep-throat-50th-anniversary-screening/"
+     "sample_link": "https://www.museumofsex.com/events/deep-throat-50th-anniversary-screening/",
+     "slug": "events"
     },
     {
-     "slug": "exhibitions",
      "base": "exhibitions",
      "total": "60",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "The Life Force: Portraits from the Amparo &#038; Manuel Foundation",
-     "sample_link": "https://www.museumofsex.com/exhibitions/the-life-force-portraits-from-the-amparo-manuel-foundation/"
+     "sample_link": "https://www.museumofsex.com/exhibitions/the-life-force-portraits-from-the-amparo-manuel-foundation/",
+     "slug": "exhibitions"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "momath.org",
+   "name": "National Museum of Mathematics",
    "wp_types": {},
    "drupal_types": null,
-   "error": null,
-   "name": "National Museum of Mathematics",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "italianamericanmuseum.org",
+   "name": "Italian American Museum",
    "wp_types": {
     "product": "product",
     "tribe_events": "tribe_events"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Italian American Museum",
    "open": [
     {
-     "slug": "product",
      "base": "product",
      "total": "4",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "New membership 2021",
-     "sample_link": "https://www.italianamericanmuseum.org/product/new-membership-2021/"
+     "sample_link": "https://www.italianamericanmuseum.org/product/new-membership-2021/",
+     "slug": "product"
     }
-   ]
+   ],
+   "tribe": 0,
+   "ics": null
   },
   {
    "host": "www.bronxdoc.org",
+   "name": "Bronx Documentary Center",
    "wp_types": {},
    "drupal_types": null,
-   "error": null,
-   "name": "Bronx Documentary Center",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "gagosian.com",
+   "name": "Gagosian",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Gagosian",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "lesbianherstoryarchives.org",
+   "name": "Lesbian Herstory Archives",
    "wp_types": {
     "event": "event",
     "program": "program"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Lesbian Herstory Archives",
    "open": [
     {
-     "slug": "event",
      "base": "event",
      "total": "9",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Black Lesbian Futures",
-     "sample_link": "https://lesbianherstoryarchives.org/calendar/black-lesbian-futures/"
+     "sample_link": "https://lesbianherstoryarchives.org/calendar/black-lesbian-futures/",
+     "slug": "event"
     },
     {
-     "slug": "program",
      "base": "program",
      "total": "7",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Lez Create",
-     "sample_link": "https://lesbianherstoryarchives.org/programs/lez-create/"
+     "sample_link": "https://lesbianherstoryarchives.org/programs/lez-create/",
+     "slug": "program"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "smafathers.org",
+   "name": "African Art Museum at the SMA",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "African Art Museum at the SMA",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "groundzeromuseumworkshop.org",
+   "name": "Ground Zero Museum Workshop",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Ground Zero Museum Workshop",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.sugarhillmuseum.org",
+   "name": "Sugar Hill Children's Museum of Art and Story Telling",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Sugar Hill Children's Museum of Art and Story Telling",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "onderdonkhouse.org",
+   "name": "Greater Ridgewood Historical Society",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Greater Ridgewood Historical Society",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "studiomuseum.org",
+   "name": "The Studio Museum In Harlem",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "The Studio Museum In Harlem",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.rcgrossfoundation.org",
+   "name": "The Renee and Chaim Gross Foundation",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "The Renee and Chaim Gross Foundation",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.mmuseumm.com",
+   "name": "Mmuseumm",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Mmuseumm",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.livingtorahmuseum.com",
+   "name": "Living Torah Museum",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "Living Torah Museum",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.centerforarchitecture.org",
+   "name": "Center for Architecture",
    "wp_types": {
     "exhibition": "exhibition"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Center for Architecture",
    "open": [
     {
-     "slug": "exhibition",
      "base": "exhibition",
      "total": "128",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Dark Matter U: Justice, Pedagogy, Design",
-     "sample_link": "https://www.centerforarchitecture.org/exhibitions/dark-matter-u-justice-pedagogy-design/"
+     "sample_link": "https://www.centerforarchitecture.org/exhibitions/dark-matter-u-justice-pedagogy-design/",
+     "slug": "exhibition"
     }
-   ]
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.thebiggieexperience.com",
+   "name": "The Biggie Experience",
    "wp_types": null,
    "drupal_types": null,
-   "error": null,
-   "name": "The Biggie Experience",
-   "open": []
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "newyork.museumofillusions.us",
+   "name": "Museum of Illusions",
    "wp_types": {
     "exhibit": "exhibit",
     "exhibit-single": "exhibit-single",
@@ -528,69 +577,6996 @@
     "current-event": "current-event"
    },
    "drupal_types": null,
-   "error": null,
-   "name": "Museum of Illusions",
    "open": [
     {
-     "slug": "current-event",
      "base": "current-event",
      "total": "1",
      "returned": 1,
      "event_date_meta": [],
      "sample_title": "Share Your Most Mind-Bending Photo. Win a FREE Family Membership.",
-     "sample_link": "https://newyork.museumofillusions.us/current-event/share-your-most-mind-bending-photo-win-a-free-family-membership/"
+     "sample_link": "https://newyork.museumofillusions.us/current-event/share-your-most-mind-bending-photo-win-a-free-family-membership/",
+     "slug": "current-event"
     },
     {
-     "slug": "exhibit",
      "base": "exhibit",
      "total": "3",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Illusion rooms",
-     "sample_link": "https://newyork.museumofillusions.us/exhibit/illusion-rooms/"
+     "sample_link": "https://newyork.museumofillusions.us/exhibit/illusion-rooms/",
+     "slug": "exhibit"
     }
-   ]
-  }
- ],
- "tribe": [
+   ],
+   "tribe": null,
+   "ics": null
+  },
   {
-   "host": "www.nytransitmuseum.org",
-   "rest": 51,
+   "host": "morusnyc.org",
+   "name": "Museum of Reclaimed Urban Space",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.museumofwomensresistance.org",
+   "name": "Museum of Women's Resistance",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "museumofthedog.org",
+   "name": "The AKC Museum of the Dog",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "societyillustrators.org",
+   "name": "Society of Illustrators",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "1063",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "Copland Dance Symphony by Linda Crockett &#8211; SOI Permanent Collection Postca",
+     "sample_link": "https://societyillustrators.org/shop/si-gear-art-supplies/copland-dance-symphony-by-linda-crockett-soi-permanent-collection-postcard/",
+     "slug": "product"
+    },
+    {
+     "base": "tribe_events",
+     "total": "27",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "Craniacs Book Release Party &#038; Art Exhibition",
+     "sample_link": "https://societyillustrators.org/event/craniacs-book-release-party/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 22,
    "ics": {
-    "url": "https://www.nytransitmuseum.org/events/?ical=1",
+    "url": "https://societyillustrators.org/events/?ical=1",
+    "vevents": 21
+   }
+  },
+  {
+   "host": "www.museumoficecream.com",
+   "name": "Museum of Ice Cream",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gtmuseum.org",
+   "name": "Godwin-Ternbach Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "cityreliquary.org",
+   "name": "The City Reliquary",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theshabazzcenter.org",
+   "name": "Malcolm X & Dr. Betty Shabazz Memorial and Educational Center",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events",
+    "aae_live_event": "aae_live_event"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "11",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "By Any Means Necessary Hoodie",
+     "sample_link": "https://theshabazzcenter.org/product/by-any-means-necessary-hoodie/",
+     "slug": "product"
+    }
+   ],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "www.mofad.org",
+   "name": "Museum of Food and Drink",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "visitnj.org",
+   "name": "Afro-American Historical Society Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.theafricacenter.org",
+   "name": "The Africa Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.mocada.org",
+   "name": "Museum of Contemporary African Diasporan Arts",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.grolierclub.org",
+   "name": "Grolier Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.leslielohman.org",
+   "name": "Leslie-Lohman Museum of Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jackierobinsonmuseum.org",
+   "name": "Jackie Robinson Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.frick.org",
+   "name": "Frick Madison",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "casa-belvedere.org",
+   "name": "Casa Belvedere, The Italian Cultural Foundation",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "19",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "08/31 \u2022 Yoga",
+     "sample_link": "https://casa-belvedere.org/product/08-31-yoga/",
+     "slug": "product"
+    },
+    {
+     "base": "tribe_events",
+     "total": "68",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Casa\u2019s Coffee Club for Seniors: Beginner Bocce",
+     "sample_link": "https://casa-belvedere.org/event/casas-coffee-club-for-seniors-beginner-bocce-5/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 68,
+   "ics": {
+    "url": "https://casa-belvedere.org/events/?ical=1",
+    "vevents": 24
+   }
+  },
+  {
+   "host": "nationalacademy.org",
+   "name": "National Academy of Design",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "jinian64.org",
+   "name": "June 4th Memorial Exhibit",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "museumbanksy.com",
+   "name": "Banksy Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mercerlabs.com",
+   "name": "M\u0112RCER LABS",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.floralparkhistorical.org",
+   "name": "The Floral Park Historical Society Museum & Archives",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.melafoundation.org",
+   "name": "Dream House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynseltzermuseum.org",
+   "name": "Brooklyn Seltzer Museum",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "13",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "A Lover of Soda Water Mug",
+     "sample_link": "https://brooklynseltzermuseum.org/shop/a-lover-of-soda-water-mug/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.newmuseum.org",
+   "name": "New Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lsc.org",
+   "name": "Liberty Science Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.madmuseum.org",
+   "name": "Museum of Arts and Design",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.paleycenter.org",
+   "name": "Paley Center for Media",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.guggenheim.org",
+   "name": "Guggenheim Museum",
+   "wp_types": {
+    "event": "event",
+    "exhibition": "exhibition"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "14",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "A Ceremony for Water",
+     "sample_link": "https://www.guggenheim.org/event/a-ceremony-for-water",
+     "slug": "event"
+    },
+    {
+     "base": "exhibition",
+     "total": "624",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Collection in Focus | Zidane, a 21st century portrait",
+     "sample_link": "https://www.guggenheim.org/exhibition/collection-in-focus-zidane-a-21st-century-portrait",
+     "slug": "exhibition"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.theukrainianmuseum.org",
+   "name": "The Ukrainian Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lighthousemuseum.org",
+   "name": "National Lighthouse Museum",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "5",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "International Lighthouse Point Fest",
+     "sample_link": "https://lighthousemuseum.org/event/international-lighthouse-point-fest-3/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 5,
+   "ics": {
+    "url": "https://lighthousemuseum.org/events/?ical=1",
+    "vevents": 5
+   }
+  },
+  {
+   "host": "www.prospectpark.org",
+   "name": "Lefferts Historic House",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "1407",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Smorgasburg: Festival of Tea",
+     "sample_link": "https://www.prospectpark.org/event/smorgasburg-festival-of-tea/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 845,
+   "ics": {
+    "url": "https://www.prospectpark.org/events/?ical=1",
     "vevents": 30
+   }
+  },
+  {
+   "host": "conferencehouse.org",
+   "name": "The Conference House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "aliceausten.org",
+   "name": "Alice Austen House",
+   "wp_types": {
+    "mec-events": "mec-events",
+    "tribe_events": "tribe_events"
    },
-   "name": "New York Transit Museum"
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "mec-events",
+     "total": "352",
+     "returned": 3,
+     "event_date_meta": [
+      "_EventDateTimeSeparator",
+      "_EventEndDate",
+      "_EventEndDateUTC",
+      "_EventStartDate",
+      "_EventStartDateUTC",
+      "_EventTimeRangeSeparator",
+      "_EventTimezone"
+     ],
+     "sample_title": "Cyanotype Workshop &#038; Gardens Tour",
+     "sample_link": "https://aliceausten.org/events/cyanotype-tour/",
+     "slug": "mec-events"
+    }
+   ],
+   "tribe": 0,
+   "ics": null
   },
   {
-   "host": "www.statenislandmuseum.org",
-   "rest": 4,
-   "ics": {
-    "url": "https://www.statenislandmuseum.org/events/?ical=1",
-    "vevents": 3
+   "host": "www.tibetanmuseum.org",
+   "name": "Jacques Marchais Museum of Tibetan Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "merchantshouse.org",
+   "name": "Merchant's House Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.harbordefensemuseum.com",
+   "name": "Harbor Defense Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "drawingcenter.org",
+   "name": "The Drawing Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nycfiremuseum.org",
+   "name": "New York City Fire Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jcm.museum",
+   "name": "Jewish Childrens Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.eldridgestreet.org",
+   "name": "Museum at Eldridge Street",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.newarkmuseum.org",
+   "name": "Newark Museum",
+   "wp_types": {
+    "event": "event",
+    "program": "program",
+    "exhibition": "exhibition"
    },
-   "name": "Staten Island Museum"
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "622",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Art After Dark: HOUSE at the MUSEUM Vol. 2",
+     "sample_link": "https://newarkmuseumart.org/event/art-after-dark-house-museum-v2/",
+     "slug": "event"
+    },
+    {
+     "base": "exhibition",
+     "total": "87",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "DREAMTIME IN NEWARK        Aljira and the Making of Global Contemporary Art",
+     "sample_link": "https://newarkmuseumart.org/exhibition/dreamtime-in-newark-aljira-and-the-making-of-global-contemporary-art/",
+     "slug": "exhibition"
+    },
+    {
+     "base": "program",
+     "total": "13",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Explorers Teen Program",
+     "sample_link": "https://newarkmuseumart.org/program/explorers-teen-program/",
+     "slug": "program"
+    }
+   ],
+   "tribe": null,
+   "ics": null
   },
   {
-   "host": "dyckmanfarmhouse.org",
-   "rest": 0,
-   "ics": null,
-   "name": "Dyckman Farmhouse Museum"
+   "host": "patersonmuseum.com",
+   "name": "Paterson Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
   },
   {
-   "host": "www.sichildrensmuseum.org",
-   "rest": 43,
+   "host": "www.intrepidmuseum.org",
+   "name": "Intrepid Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "6",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Alice Ireys Quote Tea Towel",
+     "sample_link": "https://mvhm.org/product/alice-ireys-quote-tea-towel/",
+     "slug": "product"
+    },
+    {
+     "base": "tribe_events",
+     "total": "10",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Telling Stories Through Art: New York City History in Prints and Paintings",
+     "sample_link": "https://mvhm.org/event/telling-stories-through-art-new-york-city-history-in-prints-and-paintings-3/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 10,
    "ics": {
-    "url": "https://www.sichildrensmuseum.org/events/?ical=1",
+    "url": "https://mvhm.org/events/?ical=1",
+    "vevents": 10
+   }
+  },
+  {
+   "host": "www.cooperhewitt.org",
+   "name": "Cooper\u2013Hewitt, Smithsonian Design Museum",
+   "wp_types": {
+    "ch_events": "ch_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "ch_events",
+     "total": "1533",
+     "returned": 3,
+     "event_date_meta": [
+      "_ch_exhibition_on_view_date",
+      "_ch_exhibition_to_date"
+     ],
+     "sample_title": "Live Operator Hours: Featuring Devon Turnbull in the Listening Room",
+     "sample_link": "https://www.cooperhewitt.org/event/live-operator-hours-featuring-devon-turnbull-in-the-listening-room-08-15-2026/",
+     "slug": "ch_events"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "isaw.nyu.edu",
+   "name": "Institute for the Study of the Ancient World",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.neuegalerie.org",
+   "name": "Neue Galerie New York",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thejewishmuseum.org",
+   "name": "The Jewish Museum",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cmom.org",
+   "name": "Children's Museum of Manhattan",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.roerich.org",
+   "name": "Nicholas Roerich Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.mcny.org",
+   "name": "Museum of the City of New York",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.morrisjumel.org",
+   "name": "Morris-Jumel Mansion",
+   "wp_types": {
+    "programs": "programs",
+    "events": "events",
+    "exhibitions": "exhibitions",
+    "walkingtours": "walkingtours"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "events",
+     "total": "68",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Virtual Parlor Chat: George Washington&#8217;s Legacy as a Military Commander, f",
+     "sample_link": "https://morrisjumel.org/events/virtual-parlor-chat-george-washingtons-legacy-as-a-military-commander-from-the-morris-jumel-mansion-to-the-present/",
+     "slug": "events"
+    },
+    {
+     "base": "exhibitions",
+     "total": "29",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Don&#8217;t miss this new milestone exhibition",
+     "sample_link": "https://morrisjumel.org/exhibitions/wax-and-plaster-the-illusionistic-encaustic-and-venetian-plaster-paintings-of-mike-mcmath/what-the-house-saw-260-years-of-stories-from-the-morris-jumel-mansion-collection-community/",
+     "slug": "exhibitions"
+    },
+    {
+     "base": "programs",
+     "total": "4",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Uncovering Uptown History: A Guided Walking Tour",
+     "sample_link": "https://morrisjumel.org/programs/uncovering-uptown-history-a-guided-walking-tour/",
+     "slug": "programs"
+    },
+    {
+     "base": "walkingtours",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "NORTHUP",
+     "sample_link": "https://morrisjumel.org/walkingtours/northup/",
+     "slug": "walkingtours"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bronxhistoricalsociety.org",
+   "name": "Poe Cottage",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.911memorial.org",
+   "name": "9/11 Memorial & Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.moma.org",
+   "name": "MoMA",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.kingmanor.org",
+   "name": "King Manor Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bownehouse.org",
+   "name": "John Bowne House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "historichousetrust.org",
+   "name": "Lewis Howard Latimer House Museum",
+   "wp_types": {
+    "tribe_events": "tribe_events",
+    "event": "event"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "6",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Wyckoff From Home",
+     "sample_link": "https://historichousetrust.org/event/wyckoff-from-home/",
+     "slug": "event"
+    },
+    {
+     "base": "tribe_events",
+     "total": "20",
+     "returned": 3,
+     "event_date_meta": [
+      "_EventDateTimeSeparator",
+      "_EventEndDate",
+      "_EventEndDateUTC",
+      "_EventStartDate",
+      "_EventStartDateUTC",
+      "_EventTimeRangeSeparator",
+      "_EventTimezone"
+     ],
+     "sample_title": "USA 250 Public Tours at the Wyckoff House",
+     "sample_link": "https://historichousetrust.org/calendar-event/usa-250-public-tours-at-the-wyckoff-house-5/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 16,
+   "ics": {
+    "url": "https://historichousetrust.org/events/?ical=1",
+    "vevents": 20
+   }
+  },
+  {
+   "host": "queenshistoricalsociety.org",
+   "name": "Kingsland Homestead",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.louisarmstronghouse.org",
+   "name": "Louis Armstrong House Museum",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "8",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Restored &#8220;Ma&#8221; Rainey, Mother of the Blues: Her Life, Career &#03",
+     "sample_link": "https://www.louisarmstronghouse.org/event-details/the-restored-ma-rainey-mother-of-the-blues-her-life-career-the-definitive-new-box-set/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 8,
+   "ics": {
+    "url": "https://www.louisarmstronghouse.org/events/?ical=1",
+    "vevents": 8
+   }
+  },
+  {
+   "host": "sweetgum.nybg.org",
+   "name": "Steere Herbarium",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "queensmuseum.org",
+   "name": "Queens Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nysci.org",
+   "name": "New York Hall of Science",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.whitney.org",
+   "name": "Whitney Museum of American Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "momaps1.org",
+   "name": "MoMA PS1",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "waterfrontmuseum.org",
+   "name": "The Waterfront Museum",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "507",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "OPEN HOURS",
+     "sample_link": "https://waterfrontmuseum.org/event/open-hours-3-2/2026-08-06/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 199,
+   "ics": {
+    "url": "https://waterfrontmuseum.org/event/four-paintings/?ical=1",
+    "vevents": 1
+   }
+  },
+  {
+   "host": "www.noguchi.org",
+   "name": "The Noguchi Museum",
+   "wp_types": {
+    "exhibition": "exhibition"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "exhibition",
+     "total": "129",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Light and Stone: Revisiting Noguchi\u2019s 1986 Venice Biennale",
+     "sample_link": "https://www.noguchi.org/museum/exhibitions/view/light-and-stone-revisiting-noguchis-1986-venice-biennale/",
+     "slug": "exhibition"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "moramuseum.org",
+   "name": "Museum of Russian Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "jerseyhistory.org",
+   "name": "New Jersey Historical Society",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.friendsofrockhall.org",
+   "name": "Rock Hall",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.maywoodstation.com",
+   "name": "Maywood Station Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.smli.org",
+   "name": "Science Museum of Long Island",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "posterhouse.org",
+   "name": "Poster House",
+   "wp_types": {
+    "exhibition": "exhibition",
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "exhibition",
+     "total": "62",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Jacqueline Casey: American Modernist",
+     "sample_link": "https://posterhouse.org/exhibition/jacqueline-casey-american-modernist/",
+     "slug": "exhibition"
+    },
+    {
+     "base": "product",
+     "total": "643",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "In-Person RSVP",
+     "sample_link": "https://posterhouse.org/event/mama-joy-abolitionist-walking-tour/",
+     "slug": "product"
+    },
+    {
+     "base": "tribe_events",
+     "total": "59",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "Mama Joy Abolitionist Walking Tour",
+     "sample_link": "https://posterhouse.org/event/mama-joy-abolitionist-walking-tour/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 60,
+   "ics": null
+  },
+  {
+   "host": "www.statueofliberty.org",
+   "name": "Statue of Liberty Museum",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "34",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Shop Arrival Record",
+     "sample_link": "https://www.statueofliberty.org/product/shop-arrival-record/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "libertyhall.kean.edu",
+   "name": "Liberty Hall Museum",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "469",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Early African Americans at Liberty Hall Marker Unveiling",
+     "sample_link": "https://libertyhall.kean.edu/events-and-performances/early-african-americans-at-liberty-hall-marker-unveiling/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 58,
+   "ics": {
+    "url": "https://libertyhall.kean.edu/events/?ical=1",
     "vevents": 30
-   },
-   "name": "Staten Island Children\u2019s Museum"
+   }
   },
   {
-   "host": "italianamericanmuseum.org",
-   "rest": 0,
-   "ics": null,
-   "name": "Italian American Museum"
+   "host": "www.jerseyexplorers.org",
+   "name": "Jersey Explorer Children's Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.meadowlandsmuseum.com",
+   "name": "Meadowlands Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.vomuseum.org",
+   "name": "The Voelker Orth Museum",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.mocanyc.org",
+   "name": "Museum of Chinese in America",
+   "wp_types": {
+    "eventbrite_events": "eventbrite_events",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "9",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "MOCACREATE: Qixi for You &#038; Me with Teaching Artist Yu Rong",
+     "sample_link": "https://www.mocanyc.org/event/mocacreate-qixi-for-you-me-with-teaching-artist-yu-rong-2/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 7,
+   "ics": {
+    "url": "https://www.mocanyc.org/calendar/?ical=1",
+    "vevents": 9
+   }
+  },
+  {
+   "host": "njahof.org",
+   "name": "Aviation Hall of Fame and Museum of New Jersey",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nyhistory.org",
+   "name": "New-York Historical Society",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "janetbordeninc.com",
+   "name": "Janet Borden",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "artlabsi.com",
+   "name": "Art Lab",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "33",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Art Heals Grief Summer 26, Sat",
+     "sample_link": "https://artlabsi.com/product/art-heals-grief/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "chashama.org",
+   "name": "ChaShaMa",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.eleventhhourart.com",
+   "name": "Eleventh Hour Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brindamourstudios.com",
+   "name": "Brindamour Studios",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "krausegallery.com",
+   "name": "Krause Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lasaladepepe.org",
+   "name": "La Sala de Pepe",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.shin-gallery.com",
+   "name": "Shin Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "magentaplains.com",
+   "name": "Magenta Plains",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bam.org",
+   "name": "The Rudin Family Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.hashimotocontemporary.com",
+   "name": "Hashimoto Contemporary",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.smalleditionsnyc.com",
+   "name": "Small Editions",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gladstonegallery.com",
+   "name": "Gladstone Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sunriseart.net",
+   "name": "Sunrise Art Studio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "voltzclarke.com",
+   "name": "Voltz Clarke Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.morgan-presents.com",
+   "name": "Morgan Presents",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mnafineart.com",
+   "name": "Michael Altman Fine Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sunshinelaundromat.com",
+   "name": "Sunshine Laundromat & Pinball",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.resobox.com",
+   "name": "Resobox",
+   "wp_types": {
+    "product": "product",
+    "class": "class",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "class",
+     "total": "13",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Ikebana: Japanese Flower Arrangement Misho Style Class (Virtual)",
+     "sample_link": "https://resobox.com/class/virtual-ikebana/",
+     "slug": "class"
+    },
+    {
+     "base": "product",
+     "total": "382",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Soy Sauce Glazed Rice Cracker with Sugar Crystals",
+     "sample_link": "https://resobox.com/product/soy-sauce-glazed-rice-cracker-with-sugar-crystals/",
+     "slug": "product"
+    },
+    {
+     "base": "tribe_events",
+     "total": "34",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Kumiko Woodworking: Japanese Joinery \u2013 Flower Vase (Ichirin-zashi)",
+     "sample_link": "https://resobox.com/event/kumiko-woodworking-japanese-joinery-flower-vase-ichirin-zashi-3/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 37,
+   "ics": {
+    "url": "https://resobox.com/events/?ical=1",
+    "vevents": 30
+   }
+  },
+  {
+   "host": "kimberly-klark.com",
+   "name": "Kimberly Klark Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "banana-space.com",
+   "name": "Banana Space",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "440gallery.com",
+   "name": "440 Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "cloversfineart.com",
+   "name": "Clover's",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "collierwest.com",
+   "name": "Collier West Annex",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "metaphorprojects.com",
+   "name": "Metaphor Projects",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "soapboxgallery.org",
+   "name": "Soapbox Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ericfirestonegallery.com",
+   "name": "Eric Firestone Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gloriasprojectspace.com",
+   "name": "Gloria's Project Space",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynwayfarers.org",
+   "name": "Wayfarers",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fisherparrish.com",
+   "name": "Fisher Parrish Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.17frost.com",
+   "name": "17 Frost Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.theresabyrnes.com",
+   "name": "Theresa Byrnes",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sleepcenterny.org",
+   "name": "SLEEPCENTER",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "2",
+     "returned": 2,
+     "event_date_meta": [],
+     "sample_title": "\u674e\u5de8\u5ddd\uff1a\u5177\u4f53\u5efa\u7b51 1994. 5 &#8211; 1996.4",
+     "sample_link": "https://sleepcenterny.org/product/%e6%9d%8e%e5%b7%a8%e5%b7%9d%ef%bc%9a%e5%85%b7%e4%bd%93%e5%bb%ba%e7%ad%91-1994-5-1996-4/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "essexflowers.us",
+   "name": "Essex Flowers Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fierman.nyc",
+   "name": "FIERMAN",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "perrotin.com",
+   "name": "Perrotin New York",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bitforms.art",
+   "name": "bitforms gallery",
+   "wp_types": {
+    "exhibition": "exhibition"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "vectorgallery.com",
+   "name": "Vector Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "jamesfuentes.com",
+   "name": "James Fuentes LLC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.hgcontemporary.com",
+   "name": "HG Contemporary",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "iscp-nyc.org",
+   "name": "International Studio & Curatorial Program",
+   "wp_types": {
+    "event": "event"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "585",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Artists at Work: Saemundur Thor in Conversation with Taylor LeMelle",
+     "sample_link": "https://iscp-nyc.org/event/artists-at-work-saemundur-thor-in-conversation-with-taylor-lemelle",
+     "slug": "event"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lorimoto.com",
+   "name": "Lorimoto",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.newcollectorsgallery.com",
+   "name": "New Collectors Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "false-flag.org",
+   "name": "False Flag",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "chinatownsoup.nyc",
+   "name": "Chinatown Soup",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.amoseno.org",
+   "name": "Amos Eno Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "karmakarma.org",
+   "name": "Karma Gallery",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "489",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Keith Mayerson, My American Dream: Rocky Mountain High",
+     "sample_link": "https://karmakarma.org/publication/keith-mayerson-my-american-dream-rocky-mountain-high/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "factionartprojects.com",
+   "name": "Faction Art Projects",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "32",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "SALVADOR DALI ,lithograph on Japon, signed by hand",
+     "sample_link": "https://factionartprojects.com/product/salvador-dali-lithograph-on-japon-signed-by-hand/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.davidzwirner.com",
+   "name": "David Zwirner",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lamama.org",
+   "name": "La MaMa Galleria",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sculpture-center.org",
+   "name": "Sculpture Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "synesthesia.space",
+   "name": "Synesthesia",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.derekeller.com",
+   "name": "Derek Eller Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "superchiefgallery.com",
+   "name": "Superchief Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "shivagallery.org",
+   "name": "Anya & Andrew Shiva Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.81leonardgallery.com",
+   "name": "81 Leonard Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.303gallery.com",
+   "name": "303 Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lspacegallery.com",
+   "name": "L'Space Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.martosgallery.com",
+   "name": "Martos Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "hb381gallery.com",
+   "name": "HB381",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.space776.com",
+   "name": "Space 776",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.davidlewisgallery.com",
+   "name": "David Lewis Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "miguelabreugallery.com",
+   "name": "Miguel Abreu Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.pacegallery.com",
+   "name": "Pace Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.the4thstreetphotogallery.com",
+   "name": "The 4th Street Photo Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.arsenalcontemporary.com",
+   "name": "Arsenal Contemporary Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theholenyc.com",
+   "name": "The Hole",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "woodwardgallery.net",
+   "name": "Woodward Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fortnight.institute",
+   "name": "Fortnight Institute",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.marchgallery.org",
+   "name": "MARCH",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.pomegranategallery.art",
+   "name": "Pomegranate Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nohrahaimegallery.com",
+   "name": "Nohra Haime Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "rwguildgalleryny.com",
+   "name": "Guild Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.popinternational.com",
+   "name": "Pop International Galleries",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.gallerykooy.com",
+   "name": "310 Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sfaprojects.com",
+   "name": "SFA Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "seedbrklyn.com",
+   "name": "Seed Brklyn Garden",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "490atlantic.com",
+   "name": "490 Atlantic",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ampmgallery.com",
+   "name": "AM:PM Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.drawingrooms.org",
+   "name": "Drawing Rooms (Topps Building)",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "realtycollective.com",
+   "name": "Realty Collective",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "allouchegallery.com",
+   "name": "Allouche Gallery",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "19",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "G.E. Liu, Wings of the Dragon (Original)",
+     "sample_link": "https://www.allouchegallery.com/thestore/g-e-liu-wings-of-the-dragon-original/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.meiselgallery.com",
+   "name": "Louis K.Meisel Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.miandn.com",
+   "name": "Mitchell-Innes & Nash Art Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.rickwesterfineart.com",
+   "name": "Rick Wester Fine Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.galerielelong.com",
+   "name": "Galerie Lelong & Co.",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "berrycampbell.com",
+   "name": "Berry Campbell Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.caelumgallery.com",
+   "name": "Caelum Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fergusmccaffrey.com",
+   "name": "Fergus McCaffrey Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "greenenaftaligallery.com",
+   "name": "Greene Naftali Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.marlboroughnewyork.com",
+   "name": "Marlborough Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cheimread.com",
+   "name": "Cheim & Read",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.galleryhenoch.com",
+   "name": "Gallery Henoch",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.flagartfoundation.org",
+   "name": "The FLAG Art Foundation",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.532gallery.com",
+   "name": "532 Gallery Thomas Jaeckel",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.dobrinkasalzman.com",
+   "name": "Dobrinka Salzman Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.petzel.com",
+   "name": "Petzel Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lehmannmaupin.com",
+   "name": "Lehmann Maupin",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.silverlensgalleries.com",
+   "name": "Silverlens Galleries",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "marianneboeskygallery.com",
+   "name": "Marianne Boesky Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "luhringaugustine.com",
+   "name": "Luhring Augustine Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.printcenternewyork.org",
+   "name": "Print Center New York",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.c24gallery.com",
+   "name": "C24 Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fredericksfreisergallery.com",
+   "name": "Fredericks & Freiser",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.philippelabaune.com",
+   "name": "Philippe Labaune Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.annazorinagallery.com",
+   "name": "Anna Zorina Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cavaliergalleries.com",
+   "name": "Cavalier Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.hunterdunbarprojects.com",
+   "name": "Hunter Dunbar Projects",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.unixgallery.com",
+   "name": "Unix Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.inglettgallery.com",
+   "name": "Susan Inglett Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lissongallery.com",
+   "name": "Lisson Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.asyageisberggallery.com",
+   "name": "Asya Geisberg Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "crossingart.com",
+   "name": "Crossing Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fremingallery.com",
+   "name": "Fremin Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "microscopegallery.com",
+   "name": "Microscope Gallery",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "2",
+     "returned": 2,
+     "event_date_meta": [],
+     "sample_title": "General Online Admission",
+     "sample_link": "https://microscopegallery.com/product/general-online-admission/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "viridianartist.com",
+   "name": "Viridian Artists",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.carterburdengallery.org",
+   "name": "Carter Burden Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bluemountaingallery.org",
+   "name": "Blue Mountain Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "montserrat.us",
+   "name": "Montserrat Contemporary Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bowerygallery.org",
+   "name": "Bowery Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "princestreetgallery.com",
+   "name": "Prince Street Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thepaintingcenter.org",
+   "name": "The Painting Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "rkgallery.com",
+   "name": "Ross + Kramer Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.kasmingallery.com",
+   "name": "Kasmin Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.debuckgallery.com",
+   "name": "De Buck Gallery",
+   "wp_types": {
+    "exhibitions": "exhibitions"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "exhibitions",
+     "total": "130",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Keith Haring Subway Drawings",
+     "sample_link": "https://www.debuckgallery.com/exhibitions/keith-haring-subway-drawings/",
+     "slug": "exhibitions"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.artcapitalgain.com",
+   "name": "The Global Fine Art Contemporary Art Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.templon.com",
+   "name": "Galerie Templon",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nancyhoffmangallery.com",
+   "name": "Nancy Hoffman Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.milesmcenery.com",
+   "name": "Miles McEnery Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sugarlift.com",
+   "name": "Sugarlift Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.davidsongallery.com",
+   "name": "Davidson Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.albertzbenda.com",
+   "name": "Albertz Benda Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.hollistaggart.com",
+   "name": "Hollis Taggart Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "friedmanbenda.com",
+   "name": "Friedman Benda Gallery",
+   "wp_types": {
+    "exhibitions": "exhibitions"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "exhibitions",
+     "total": "334",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "WENDELL CASTLE: LIVING",
+     "sample_link": "https://www.friedmanbenda.com/exhibitions/wendell-castle-living/",
+     "slug": "exhibitions"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ryanleegallery.com",
+   "name": "Ryan Lee Gallery",
+   "wp_types": {
+    "museum_exhibitions": "museum_exhibitions"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thomaserben.com",
+   "name": "Thomas Erben Gallery",
+   "wp_types": {
+    "exhibitions": "exhibitions",
+    "other_exhibitions": "other_exhibitions",
+    "newsevents": "newsevents"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "exhibitions",
+     "total": "216",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Art Basel, Basel 2026: Andrew Ross and Dona Nelson",
+     "sample_link": "https://www.thomaserben.com/exhibitions/art-basel-basel-2026-andrew-ross-and-dona-nelson/",
+     "slug": "exhibitions"
+    },
+    {
+     "base": "newsevents",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "News 4",
+     "sample_link": "https://www.thomaserben.com/newsevents/news-4/",
+     "slug": "newsevents"
+    },
+    {
+     "base": "other_exhibitions",
+     "total": "37",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Hammer Projects: Mike Cloud",
+     "sample_link": "https://www.thomaserben.com/other_exhibitions/hammer-projects-mike-cloud/",
+     "slug": "other_exhibitions"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bravinlee.com",
+   "name": "BravinLee Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.morganlehmangallery.com",
+   "name": "Morgan Lehman Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "hesseflatow.com",
+   "name": "Hesse Flatow Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.deborahbellphotographs.com",
+   "name": "Deborah Bell Photographs",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "alexandergray.com",
+   "name": "Alexander Gray Associates Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.danielcooneyfineart.com",
+   "name": "Daniel Cooney Fine Art Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.yossimilo.com",
+   "name": "Yossi Milo Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.yanceyrichardson.com",
+   "name": "Yancey Richardson Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.dcmooregallery.com",
+   "name": "DC Moore Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "diaart.org",
+   "name": "Dia Chelsea",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.harpersgallery.com",
+   "name": "Harper's Chelsea",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sikkemajenkinsco.com",
+   "name": "Sikkema Jenkins & Co.",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nararoesler.art",
+   "name": "Nara Roesler Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.tinakimgallery.com",
+   "name": "Tina Kim Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.kravetswehbygallery.com",
+   "name": "Kravets Wehby Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.tanyabonakdargallery.com",
+   "name": "Tanya Bonakdar Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "halesgallery.com",
+   "name": "Hales Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.paulacoopergallery.com",
+   "name": "Paula Cooper Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.gladstonegallery.com",
+   "name": "Gladstone Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.galleriacadoro.com",
+   "name": "Galleria Ca' d'Oro",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.praxis-art.com",
+   "name": "Praxis Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "jackshainman.com",
+   "name": "Jack Shainman Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.riccomaresca.com",
+   "name": "Ricco/Maresca Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.markelfinearts.com",
+   "name": "Kathryn Markel Fine Arts",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ehgallery.com",
+   "name": "Elizabeth Harris Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.davidkordanskygallery.com",
+   "name": "David Kordansky Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ulrik.nyc",
+   "name": "Ulrik Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.slaggallery.com",
+   "name": "Slag Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "michaelrosenfeldart.com",
+   "name": "Michael Rosenfield Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.pratt.edu",
+   "name": "Pratt Manhattan Gallery",
+   "wp_types": {
+    "program": "program",
+    "event": "event"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "31",
+     "returned": 3,
+     "event_date_meta": [
+      "_eventorganiser_schedule_start_finish",
+      "_eventorganiser_schedule_start_start"
+     ],
+     "sample_title": "Pratt Sessions: Lucia Allais",
+     "sample_link": "https://www.pratt.edu/events/pratt-sessions-lucia-allais/",
+     "slug": "event"
+    },
+    {
+     "base": "program",
+     "total": "66",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "AOS Game Design and Interactive Media",
+     "sample_link": "https://www.pratt.edu/programs/aos-game-design-and-interactive-media/",
+     "slug": "program"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.the8thfloor.org",
+   "name": "The 8th Floor Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ecfa.com",
+   "name": "Ethan Cohen Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "kentlergallery.org",
+   "name": "Kentler International Drawing Space",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.eden-gallery.com",
+   "name": "Eden Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.deitch.com",
+   "name": "Jeffrey Deitch",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.buckhouse.com",
+   "name": "Buck House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.paceafricanart.com",
+   "name": "Pace African & Oceanic Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "agora-gallery.com",
+   "name": "Agora Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.harkawik.com",
+   "name": "Harkawik",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.smushgallery.com",
+   "name": "SMUSH Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.shootthelobster.com",
+   "name": "Shoot the Lobster",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "principlesbk.nyc",
+   "name": "Principles GI Coffee House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.howlarts.org",
+   "name": "Howl! Happening",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "stand4gallery.org",
+   "name": "Stand4 Gallery and Community Center",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ppowgallery.com",
+   "name": "PPOW",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sargentsdaughters.com",
+   "name": "Sargent's Daughters",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "jjmurphygallery.com",
+   "name": "JJ Murphy Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bureau-inc.com",
+   "name": "Bureau",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.susansheehangallery.com",
+   "name": "Susan Sheehan Gallery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "allstnyc.com",
+   "name": "All Street Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mgagallery.com",
+   "name": "Metropolitan Graphic Art Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "island83.gallery",
+   "name": "island nyc",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.amant.org",
+   "name": "Amant",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ashleylongshore.com",
+   "name": "Ashley Longshore Studio Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "spacegallerystbarth.com",
+   "name": "Space Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.metamorfosiny.org",
+   "name": "MetaMorfosi",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.barskygallery.com",
+   "name": "Barsky Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.kismithgallery.com",
+   "name": "Ki Smith Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "artygoodness.com",
+   "name": "Arty Goodness",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "recessart.org",
+   "name": "Recess",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.holostudios.nyc",
+   "name": "Holographic Studios NYC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "canalprojects.org",
+   "name": "Canal Projects NY",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "125newbury.com",
+   "name": "125 Newbury",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cristintierney.com",
+   "name": "Cristin Tierney",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mocada.org",
+   "name": "MoCADA  Culture Lab II",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "plant486.com",
+   "name": "Plant 486",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.speronewestwater.com",
+   "name": "Sperone Westwater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sjuartgallery.org",
+   "name": "Yeh Art Gallary",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "a83.site",
+   "name": "a83",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.the-living-gallery.com",
+   "name": "The Living Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fivemyles.org",
+   "name": "Five Myles",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "anatebgi.com",
+   "name": "Anat Egbi",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nyaquarium.com",
+   "name": "New York Aquarium",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.unitedpalace.org",
+   "name": "United Palace",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lincolncenter.org",
+   "name": "Clark Studio Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "atlantictheater.org",
+   "name": "Atlantic Theater",
+   "wp_types": {
+    "production": "production"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "production",
+     "total": "119",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Finn",
+     "sample_link": "https://atlantictheater.org/production/finn/",
+     "slug": "production"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.msg.com",
+   "name": "Beacon Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.kaufmanmusiccenter.org",
+   "name": "Merkin Concert Hall",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "puppetworks.org",
+   "name": "Puppetworks",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "littlefieldnyc.com",
+   "name": "Littlefield",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.duaneparknyc.com",
+   "name": "Duane Park",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.classicstage.org",
+   "name": "Classic Stage Company",
+   "wp_types": {
+    "show-archive": "show-archive"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "show-archive",
+     "total": "177",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Greek Festival (2015-2016)",
+     "sample_link": "https://www.classicstage.org/show-archive/greek-festival-2015-2016/",
+     "slug": "show-archive"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lpr.com",
+   "name": "Le Poisson Rouge",
+   "wp_types": {
+    "lpr_exhibits": "lpr_exhibits",
+    "lpr_events": "lpr_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "lpr_events",
+     "total": "6733",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Rewind: 2000s Rave",
+     "sample_link": "https://lpr.com/lpr_events/00srave26nyc/",
+     "slug": "lpr_events"
+    },
+    {
+     "base": "lpr_exhibits",
+     "total": "23",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "&#8220;Cracks In The Shadows&#8221;",
+     "sample_link": "https://lpr.com/lpr_exhibits/cracks-in-the-shadows/",
+     "slug": "lpr_exhibits"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "venue.irvingplaza.com",
+   "name": "Irving Plaza",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "accesstheater.com",
+   "name": "Access Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "wptheater.org",
+   "name": "WP Theater",
+   "wp_types": {
+    "program": "program",
+    "special-event": "special-event",
+    "online-programs": "online-programs"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "online-programs",
+     "total": "1",
+     "returned": 1,
+     "event_date_meta": [],
+     "sample_title": "Weightless 2022 Program",
+     "sample_link": "https://wptheater.org/online-programs/weightless-2022-program/",
+     "slug": "online-programs"
+    },
+    {
+     "base": "program",
+     "total": "4",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Waterfall",
+     "sample_link": "https://wptheater.org/program/the-waterfall/",
+     "slug": "program"
+    },
+    {
+     "base": "special-event",
+     "total": "4",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Waterfall",
+     "sample_link": "https://wptheater.org/special-event/the-waterfall/",
+     "slug": "special-event"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "magnettheater.com",
+   "name": "Magnet Theater",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.westsidetheatre.com",
+   "name": "Westside Theatre",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theaterforthenewcity.net",
+   "name": "Theater for the New City",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.edsullivan.com",
+   "name": "Ed Sullivan Theater",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "13",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Very Best of the Ed Sullivan Show Vol. 2: The Greatest Entertainers",
+     "sample_link": "https://www.edsullivan.com/product/the-very-best-of-the-ed-sullivan-show-vol-2-the-greatest-entertainers/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "secrettheatre.com",
+   "name": "Secret Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.carnegiehall.org",
+   "name": "Stern Auditorium",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "slipperroom.com",
+   "name": "The Slipper Room",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.mckittrickhotel.com",
+   "name": "The McKittrick Hotel",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "14",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Antique Mask Keychain",
+     "sample_link": "https://mckittrickhotel.com/product/mask-keychain/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.carolines.com",
+   "name": "Carolines on Broadway",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nationalsawdust.org",
+   "name": "National Sawdust",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "oceanatheater.com",
+   "name": "Oceana Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.shapeshifterlab.com",
+   "name": "ShapeShifter Lab",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "performancespacenewyork.org",
+   "name": "Performance Space 122",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cherrylanetheatre.org",
+   "name": "Cherry Lane Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thaliatheatre.org",
+   "name": "Thalia Spanish Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nyuskirball.org",
+   "name": "Skirball Center for the Performing Arts",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "jalopytheatre.org",
+   "name": "Jalopy Theater and School of Music",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thebushwickstarr.org",
+   "name": "The Bushwick Starr",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "themusebrooklyn.com",
+   "name": "The Muse",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "companyxiv.com",
+   "name": "Company XIV",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "caveat.nyc",
+   "name": "Caveat",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "loltimessquare.com",
+   "name": "LOL Times Square Comedy Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "roulette.org",
+   "name": "Roulette",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.brooklynmagicshop.com",
+   "name": "Brooklyn Magic Shop",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "pregonesprtt.org",
+   "name": "Pregones Theater",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.theatermitu.org",
+   "name": "Theater Mitu",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thetanknyc.org",
+   "name": "The Tank",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thewildproject.com",
+   "name": "Wild Project",
+   "wp_types": {
+    "performance": "performance",
+    "performancearchive": "performancearchive"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "performance",
+     "total": "292",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Holes",
+     "sample_link": "https://thewildproject.org/performances/the-holes/",
+     "slug": "performance"
+    },
+    {
+     "base": "performancearchive",
+     "total": "354",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "RAMPART",
+     "sample_link": "https://thewildproject.org/performance-archives/rampart/",
+     "slug": "performancearchive"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "dixonplace.org",
+   "name": "Dixon Place",
+   "wp_types": {
+    "event": "event"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.playwrightshorizons.org",
+   "name": "Playwrights Horizons",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "eastvillecomedy.com",
+   "name": "Eastville Comedy Club & Bar",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "heightsplayers.org",
+   "name": "Heights Players",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thecuttingroomnyc.com",
+   "name": "The Cutting Room",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.manhattanmovement.com",
+   "name": "Manhattan Movement & Arts Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thesegalcenter.org",
+   "name": "Martin E. Segal Theatre Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thestandnyc.com",
+   "name": "The Stand",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nublu.net",
+   "name": "Studio 151",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "newyorkcomedyclub.com",
+   "name": "New York Comedy Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bricktheater.com",
+   "name": "The Brick",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "15",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "HOW TO BE NORMAL AND REGULAR",
+     "sample_link": "https://www.bricktheater.com/event/how-to-be-normal-and-regular/2026-08-30/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 17,
+   "ics": {
+    "url": "https://www.bricktheater.com/events?ical=1",
+    "vevents": 19
+   }
+  },
+  {
+   "host": "www.alvinailey.org",
+   "name": "Alvin Ailey American Dance Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "repertorio.nyc",
+   "name": "Repertorio Espa\u00f1ol",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thegreenroom42.venuetix.com",
+   "name": "The Green Room 42",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ibeambrooklyn.com",
+   "name": "Ibeam Brooklyn",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thetinycupboard.com",
+   "name": "The Tiny Cupboard",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.frigid.nyc",
+   "name": "Kraine Theater",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ripleygrier.com",
+   "name": "Ripley-Grier Flexible Spaces",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bowerypoetry.com",
+   "name": "Bowery Poetry",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nypl.org",
+   "name": "Bruno Walter Auditorium",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.blackspectrum.com",
+   "name": "Black Spectrum Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.triadnyc.com",
+   "name": "Triad Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mcctheater.org",
+   "name": "The Robert W. Wilson MCC Theater Space",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "signaturetheatre.org",
+   "name": "Signature Theatre",
+   "wp_types": {
+    "event": "event",
+    "show": "show"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "13",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "SIGSPACE x LAUNCHPAD",
+     "sample_link": "https://signaturetheatre.org/event/sigspace-x-launchpad/",
+     "slug": "event"
+    },
+    {
+     "base": "show",
+     "total": "14",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "ANGELA&#8217;S MIXTAPE",
+     "sample_link": "https://signaturetheatre.org/show/angelas-mixtape/",
+     "slug": "show"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sohoplayhouse.com",
+   "name": "SoHo Playhouse",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.grove34.com",
+   "name": "Grove 34",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thepit-nyc.com",
+   "name": "The PIT",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bkarthaus.com",
+   "name": "Brooklyn Art Haus",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "vineyardtheatre.org",
+   "name": "Vineyard Theatre",
+   "wp_types": {
+    "shows": "shows"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "shows",
+     "total": "38",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "PETRA",
+     "sample_link": "https://vineyardtheatre.org/shows/petra/",
+     "slug": "shows"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.59e59.org",
+   "name": "59E59 Theaters",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "here.org",
+   "name": "HERE Arts Center",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": 0,
+   "ics": {
+    "url": "http://here.org/shows?ical=1",
+    "vevents": 5
+   }
+  },
+  {
+   "host": "asylumnyc.com",
+   "name": "Asylum NYC",
+   "wp_types": {
+    "ia_shows": "ia_shows"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "newyorklivearts.org",
+   "name": "New York Live Arts",
+   "wp_types": {
+    "show-programs": "show-programs",
+    "programs": "programs",
+    "event": "event"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "event",
+     "total": "1487",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "LET&#8217;S. MOVE. NOW. &#8211; Young Professionals Ensemble Concert",
+     "sample_link": "https://newyorklivearts.org/event/lets-move-now-young-professionals-ensemble-concert/",
+     "slug": "event"
+    },
+    {
+     "base": "programs",
+     "total": "20",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Live Artery",
+     "sample_link": "https://newyorklivearts.org/programs/live-artery-2026/",
+     "slug": "programs"
+    },
+    {
+     "base": "show-programs",
+     "total": "22",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Memory Fleet: Beloved, Let\u2019s Cross",
+     "sample_link": "https://newyorklivearts.org/show-programs/memory-fleet-beloved-lets-cross/",
+     "slug": "show-programs"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.roundabouttheatre.org",
+   "name": "Stephen Sondheim Theatre",
+   "wp_types": {
+    "production": "production"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "production",
+     "total": "8",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Stars in Relations",
+     "sample_link": "https://www.roundabouttheatre.org/production/2026-2027-season/stars-in-relations/",
+     "slug": "production"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bpac.baruch.cuny.edu",
+   "name": "Baruch Performing Arts Center",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "irishrep.org",
+   "name": "Irish Repertory Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.irondale.org",
+   "name": "Irondale",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "tisch.nyu.edu",
+   "name": "Iris Cantor Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "chocolatefactorytheater.org",
+   "name": "The Chocolate Factory Theater",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lct.org",
+   "name": "Vivian Beaumont Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "teatrolatea.org",
+   "name": "Teatro LATEA",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "5",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "10% off General Admission before Sept 1",
+     "sample_link": "https://teatrolatea.org/event/dominant-animals-3/",
+     "slug": "product"
+    },
+    {
+     "base": "tribe_events",
+     "total": "18",
+     "returned": 3,
+     "event_date_meta": [
+      "_ticket_end_date",
+      "_ticket_start_date"
+     ],
+     "sample_title": "No Nos Merecemos So\u00f1ar",
+     "sample_link": "https://teatrolatea.org/event/no-nos-merecemos-sonar-3/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 18,
+   "ics": {
+    "url": "https://teatrolatea.org/events/?ical=1",
+    "vevents": 18
+   }
+  },
+  {
+   "host": "54below.org",
+   "name": "54below.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "broadwaymagichour.com",
+   "name": "Broadway Magic Hour: Magic Show",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bushwickcomedy.com",
+   "name": "Bushwick Comedy Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.medievaltimes.com",
+   "name": "Medieval Times Dinner & Tournament",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "shubert.nyc",
+   "name": "Winter Garden Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thebellhouseny.com",
+   "name": "The Bell House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nytw.org",
+   "name": "New York Theatre Workshop",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.comedycellar.com",
+   "name": "Comedy Cellar",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theperforminggarage.org",
+   "name": "The Performing Garage",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lortel.org",
+   "name": "Lucille Lortel Theatre",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "markmorrisdancegroup.org",
+   "name": "Mark Morris Dance Center",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.joyce.org",
+   "name": "The Joyce Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "venue.thegramercytheatre.com",
+   "name": "Gramercy Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nycitycenter.org",
+   "name": "New York City Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "masqueradenyc.com",
+   "name": "Masquerade",
+   "wp_types": {
+    "farlo_event": "farlo_event"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "newworldstages.com",
+   "name": "New World Stages",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "newvictory.org",
+   "name": "New Victory Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lyricbroadway.com",
+   "name": "Lyric Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jujamcyn.com",
+   "name": "St. James Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ambassadortheater.com",
+   "name": "Ambassador Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.august-wilson-theatre.com",
+   "name": "August Wilson Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.apollotheater.org",
+   "name": "Apollo Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.shrinenyc.com",
+   "name": "Shrine World Music Venue",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.centralparknyc.org",
+   "name": "Delacorte Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jamaicapac.org",
+   "name": "Jamaica Performing Arts Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.rockawaytheatrecompany.org",
+   "name": "Rockaway Theatre Company",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "stannswarehouse.org",
+   "name": "St. Ann's Warehouse",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "72",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Saigon",
+     "sample_link": "https://stannswarehouse.org/show/saigon-14/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 72,
+   "ics": {
+    "url": "https://stannswarehouse.org/events/?ical=1",
+    "vevents": 30
+   }
+  },
+  {
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "111",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "It&#8217;s My Park at Olmsted-Beil House Park",
+     "sample_link": "https://cityparksfoundation.org/events/its-my-park-at-olmsted-beil-house-park-5/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 120,
+   "ics": {
+    "url": "https://cityparksfoundation.org/calendar?ical=1",
+    "vevents": 30
+   }
+  },
+  {
+   "host": "www.anthologyfilmarchives.org",
+   "name": "Anthology Film Archives",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.alpinecinemas.com",
+   "name": "Alpine Cinema",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "producersclub.com",
+   "name": "Producers Club Theaters and Bar",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "syndicatedbk.com",
+   "name": "Syndicated Bar Theater Kitchen",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nitehawkcinema.com",
+   "name": "Nitehawk Cinema",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.stuartcinema.com",
+   "name": "Stuart Cinema & Cafe",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "drafthouse.com",
+   "name": "Alamo Drafthouse Cinema",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "quadcinema.com",
+   "name": "Quad Cinema",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.spectacletheater.com",
+   "name": "Spectacle Theater",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lookcinemas.com",
+   "name": "LOOK Dine-in Cinemas",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.northshoretowers.com",
+   "name": "North Shore Towers Cinema",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.filmnoircinema.com",
+   "name": "Film Noir Cinema",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.queensdrivein.com",
+   "name": "Queens Drive-In",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.roxycinemanewyork.com",
+   "name": "Roxy Cinema New York",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "metrograph.com",
+   "name": "The Metrograph",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "90",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Metrograph Zip Hoodie",
+     "sample_link": "https://metrograph.com/product/metrograph-zip-hoodie/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lowcinema.com",
+   "name": "Low Cinema",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.angelikafilmcenter.com",
+   "name": "Village East Cinema",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cinemavillage.com",
+   "name": "Cinema Village",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cinemartcinemas.com",
+   "name": "Cinemart Theatres",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ifccenter.com",
+   "name": "IFC Center",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.kenttheater.com",
+   "name": "Kent Theater",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.svatheatre.com",
+   "name": "SVA Theater",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.paristheaternyc.com",
+   "name": "Paris Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.loewsjersey.org",
+   "name": "Loew's Jersey Theatre",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "44",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "To India with Love &#8211; Big Love Ticket",
+     "sample_link": "https://loewsjersey.org/product/to-india-with-love-big-love-ticket/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.columbiaparkcinemas.com",
+   "name": "Columbia Park Theaters",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.cityplex12.com",
+   "name": "Cityplex 12",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.teaneckcinemas.com",
+   "name": "Teaneck Cinemas",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.abronsartscenter.org",
+   "name": "Abrons Arts Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jcal.org",
+   "name": "Jamaica Center for Arts & Learning",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bronxacademyofartsanddance.org",
+   "name": "BAAD! Bronx Academy of Arts and Dance",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.stilllifecafe.com",
+   "name": "Still Life",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "craftsmanave.com",
+   "name": "Craftsman Ave",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ellencolemanizzo.com",
+   "name": "PrintSpace",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklyncenterstage.com",
+   "name": "Brooklyn Center Stage Dance Studio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bklyncombine.com",
+   "name": "The Bklyn Combine",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sundaytakeout.com",
+   "name": "Sunday Takeout",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.redhookartproject.org",
+   "name": "Red Hook Art Project",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.narsfoundation.org",
+   "name": "NARS Foundation",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.efanyc.org",
+   "name": "The Elizabeth Foundation for the Arts",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.rbpmw-efanyc.org",
+   "name": "The Robert Blackburn Printmaking Workshop (RBPMW)",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.theinvisibledog.org",
+   "name": "Invisible Dog Arts & Events Space",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.92ny.org",
+   "name": "92nd Street Y, New York",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "angelorensanz.com",
+   "name": "Angel Orensanz Foundation",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "dorsky.org",
+   "name": "Dorsky Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "outpostartistsresources.org",
+   "name": "Outpost Artists Resources",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "bax.org",
+   "name": "BAX",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.triangleartsnyc.org",
+   "name": "Triangle Arts Association",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "spokethehub.org",
+   "name": "Spoke the Hub",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "oliphantstudio.com",
+   "name": "Oliphant Studios",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "2754",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "2926",
+     "sample_link": "https://oliphantstudio.com/backdrop-rentals/2926/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "thecanfactory.org",
+   "name": "The Old American Can Factory",
+   "wp_types": {
+    "program": "program"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "program",
+     "total": "114",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Workshop |  The Art of Islamic Illumination with Behnaz Karjoo",
+     "sample_link": "https://thecanfactory.org/program/workshop-the-art-of-islamic-illumination-with-behnaz-karjoo/",
+     "slug": "program"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.oygprojects.com",
+   "name": "Ortega y Gasset Projects",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.litebriteneon.com",
+   "name": "www.litebriteneon.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "eyebeam.org",
+   "name": "Eyebeam",
+   "wp_types": {
+    "program": "program"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "program",
+     "total": "7",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Speculating on Plurality",
+     "sample_link": "https://eyebeam.org/program/speculating-plurality/",
+     "slug": "program"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gasworksnyc.com",
+   "name": "Gasworks",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "urbanglass.org",
+   "name": "Urban Glass",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.parkslopeperformingarts.com",
+   "name": "Park Slope Performing Arts",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gumbobrooklyn.com",
+   "name": "Gumbo Creative Space",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "papertiger.org",
+   "name": "Paper Tiger",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "wendyssubway.com",
+   "name": "Wendy's Subway",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thegreenespace.org",
+   "name": "The Greene Space at WNYC/WQXR",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.clayworksoncolumbia.org",
+   "name": "Clayworks on Columbia",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "amorphicrobotworks.org",
+   "name": "The Robotic Church",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gambazine.com",
+   "name": "GAMBA Forest",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "undercurrent.nyc",
+   "name": "Undercurrent",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.brandonherman.com",
+   "name": "Search Party Studio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.de-construkt.com",
+   "name": "De-construkt",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.markethotel.org",
+   "name": "Market Hotel",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.shoestringpressny.com",
+   "name": "Shoestring Press",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.verysweetlifestudio.com",
+   "name": "Verysweetlife Studio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.artsonsite.org",
+   "name": "Arts on Site",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bklynclay.com",
+   "name": "Bklyn Clay",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynactinglab.org",
+   "name": "Brooklyn Acting Lab",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.swissinstitute.net",
+   "name": "Swiss Institute",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.artshackbrooklyn.org",
+   "name": "Artshack Brooklyn",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.decorusatelier.com",
+   "name": "Decorus Atelier of Figurative Art",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "residencyunlimited.org",
+   "name": "Residency Unlimited",
+   "wp_types": {
+    "programs": "programs",
+    "workshops": "workshops"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "programs",
+     "total": "790",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "RU Program Summary 2026",
+     "sample_link": "https://residencyunlimited.org/programs/ru-program-summary-2026/",
+     "slug": "programs"
+    },
+    {
+     "base": "workshops",
+     "total": "17",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "VoM Workshop: Weeds, Wildflowers and Wanderers",
+     "sample_link": "https://residencyunlimited.org/workshops/vom-workshop-weeds-wildflowers-and-wanderers/",
+     "slug": "workshops"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bondcraftstudio.com",
+   "name": "Bond Craft Studio",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "80",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Learn To Crochet Summer Camp &#8211; July 13th- July 17th",
+     "sample_link": "https://bondcraftstudio.com/product/learn-to-crochet-summer-camp-july-13th-july-17th/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "loopoftheloom.com",
+   "name": "Loop of the Loom",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.e-flux.com",
+   "name": "e-flux",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jackny.org",
+   "name": "Jack",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.gaianomaya.com",
+   "name": "Gaia Nomaya",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ostudiony.com",
+   "name": "Ostudio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thecreativecolorpalette.com",
+   "name": "Creative Color Palette",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.triskelionarts.org",
+   "name": "Triskelion Arts",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "hootenannybrooklyn.com",
+   "name": "Hootenanny",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.culturelablic.org",
+   "name": "Culture Lab LIC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theartcenter.nyc",
+   "name": "The Art Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.paintingonpark.com",
+   "name": "Painting On Park",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynpoets.org",
+   "name": "Brooklyn Poets",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nycdrawingroom.com",
+   "name": "The Drawing Room",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.irl-nyc.com",
+   "name": "IRL Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.lomex.gallery",
+   "name": "Lomex",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.blueroompotterystudio.com",
+   "name": "Blue Room Pottery Studio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.millenniumfilm.org",
+   "name": "Millennium Film Workshop",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.dirtbagarthaus.com",
+   "name": "Dirtbag",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "majorowenscenter.com",
+   "name": "Betty Carter Auditorium for the Arts",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.artfunstudio.com",
+   "name": "Art Fun Studio",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.651arts.org",
+   "name": "651 ARTS",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.njpac.org",
+   "name": "New Jersey Performing Arts Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "mercurystore.com",
+   "name": "Mercury Store",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "pioneerworks.org",
+   "name": "Pioneer Works",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "open-source-gallery.org",
+   "name": "Open Source Gallery",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.theafrikanpoetrytheatre.org",
+   "name": "Afrikan Poetry Theatre",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.solidgoldyogi.com",
+   "name": "Scapegrace",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "levygalleries.com",
+   "name": "Bernard & S Dean Levy Inc.",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.sculpturespacenyc.com",
+   "name": "Sculpture Space NYC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.flushingtownhall.org",
+   "name": "Flushing Town Hall",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.manafinearts.com",
+   "name": "Mana Contemporary",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.koreanculture.org",
+   "name": "Korean Cultural Center NY",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theshed.org",
+   "name": "The Shed",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "newarksymphonyhall.org",
+   "name": "Newark Symphony Hall",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "wmcjazz.com",
+   "name": "Williamsburg Music Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bluenotejazz.com",
+   "name": "Blue Note Jazz Club",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.myssticrooms.com",
+   "name": "Miss Tic Escape Rooms",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "theescapegame.com",
+   "name": "The Escape Game New York City",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.beatthebomb.com",
+   "name": "Beat The Bomb",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "wonderville.nyc",
+   "name": "Wonderville",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "locations.chuckecheese.com",
+   "name": "Chuck E. Cheese",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.os-nyc.com",
+   "name": "OS NYC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.haweedatavern.com",
+   "name": "Ha-Weeda Tavern",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.chuckecheese.com",
+   "name": "Chuck E. Cheese",
+   "wp_types": {
+    "cec_event": "cec_event"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "cec_event",
+     "total": "30",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Gold Members: 500 Bonus Tickets",
+     "sample_link": "https://www.chuckecheese.com/?cec_event=gold-members-500-bonus-tickets",
+     "slug": "cec_event"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.gatcha.us",
+   "name": "Gatcha",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "area53nyc.com",
+   "name": "Area 53 Laser Tag",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "landofun.com",
+   "name": "Land-O-Fun",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "launchfamilyentertainment.com",
+   "name": "Launch",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.daveandbusters.com",
+   "name": "Dave & Buster's",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.oceans8ny.com",
+   "name": "Ocean's 8",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thegutterbrooklyn.com",
+   "name": "The Gutter",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thegutterbarles.com",
+   "name": "The Gutter",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bowlritelanes.com",
+   "name": "Bowl Rite",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lodilanes.com",
+   "name": "Lodi Lanes",
+   "wp_types": {
+    "events": "events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "hamilton.armymwr.com",
+   "name": "Fort Hamilton Bowling Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.melodylanesny.com",
+   "name": "Melody Lanes",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.luckystrikeent.com",
+   "name": "Lucky Strike Queens",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bowl360astoria.com",
+   "name": "Bowl 360 Astoria",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.luckystrikesocial.com",
+   "name": "Lucky Strike Social",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bowlero.com",
+   "name": "Bowlero",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bryantpark.org",
+   "name": "The Rink",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.therinkatbrookfieldplace.net",
+   "name": "The Rink at Brookfield Place with Gregory & Petukhov",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.worldice.com",
+   "name": "World Ice Arena",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "wollmanrinknyc.com",
+   "name": "Wollman Rink",
+   "wp_types": {
+    "class": "class",
+    "event": "event",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "class",
+     "total": "20",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Freestyle Sessions",
+     "sample_link": "https://wollmanrinknyc.com/class/freestyle-sessions/",
+     "slug": "class"
+    },
+    {
+     "base": "event",
+     "total": "6",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Join us on the Overlook for your dose of outdoor summer fun",
+     "sample_link": "/community-calendar",
+     "slug": "event"
+    },
+    {
+     "base": "tribe_events",
+     "total": "20",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Dancing on the Overlook &#8211; Arthur Murray Experience &#8211; Bachata",
+     "sample_link": "https://wollmanrinknyc.com/date/arthur-murray-dance-experience-8/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 20,
+   "ics": {
+    "url": "https://wollmanrinknyc.com/event/dont-miss-this-the-m80s-are-back-on-august-25th-at-730pm/?ical=1",
+    "vevents": 20
+   }
+  },
+  {
+   "host": "www.cityicepavilion.com",
+   "name": "City Ice Pavilion",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sports.chelseapiers.com",
+   "name": "Chelsea Piers Field House",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "zerogbjj.com",
+   "name": "Zero G Brazilian Jiu-jitsu",
+   "wp_types": {
+    "product": "product",
+    "mec-events": "mec-events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "mec-events",
+     "total": "26",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Take Downs | Stand-Up | Grappling",
+     "sample_link": "https://zerogbjj.com/classes/fundamentals-mf-735-802/",
+     "slug": "mec-events"
+    },
+    {
+     "base": "product",
+     "total": "12",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Special Offer",
+     "sample_link": "https://zerogbjj.com/product/special-offer/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.goldfishswimschool.com",
+   "name": "Goldfish Swim School",
+   "wp_types": {
+    "additional-program": "additional-program",
+    "location-event": "location-event",
+    "location-program": "location-program",
+    "single-program": "single-program",
+    "programs": "programs"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "additional-program",
+     "total": "209",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Yorba Linda",
+     "sample_link": "https://goldfishswimschool.com/yorba-linda/pricing/additional-program/",
+     "slug": "additional-program"
+    },
+    {
+     "base": "location-event",
+     "total": "213",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Meadowvale, ON",
+     "sample_link": "https://goldfishswimschool.com/meadowvale/events/",
+     "slug": "location-event"
+    },
+    {
+     "base": "location-program",
+     "total": "220",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Meadowvale, ON",
+     "sample_link": "https://goldfishswimschool.com/meadowvale/programs/",
+     "slug": "location-program"
+    },
+    {
+     "base": "programs",
+     "total": "8",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Swim Team",
+     "sample_link": "https://goldfishswimschool.com/programs/swim-force/",
+     "slug": "programs"
+    },
+    {
+     "base": "single-program",
+     "total": "1279",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "W.A.T.E.R. Safety Presentations",
+     "sample_link": "https://goldfishswimschool.com/west-bloomfield/programs/w-a-t-e-r-safety-presentations/",
+     "slug": "single-program"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ready-gc.com",
+   "name": "Ready Golf Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "southbrooklynfencing.com",
+   "name": "South Brooklyn Fencing",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynmartialarts.com",
+   "name": "Brooklyn Martial Arts",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.homageskateboardacademy.com",
+   "name": "Homage Skateboard Academy",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "yogisandyoginis.com",
+   "name": "Yogis & Yoginis",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "martinezkai.weebly.com",
+   "name": "Martinez-Kai Karate Dojo",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ardonsweetsciencegym.com",
+   "name": "Ardon Sweet Science Gym",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.47bjjcoop.com",
+   "name": "47 BJJ Coop",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.movewithgrace.com",
+   "name": "Move With Grace",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.socceroof.com",
+   "name": "Socceroof",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.shambhalayogadance.com",
+   "name": "Shambhala Yoga & Dance Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.suttoneasttennis.com",
+   "name": "Sutton East Tennis Club",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "goldfishswimschool.com",
+   "name": "Goldfish Swim School",
+   "wp_types": {
+    "additional-program": "additional-program",
+    "location-event": "location-event",
+    "location-program": "location-program",
+    "single-program": "single-program",
+    "programs": "programs"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "additional-program",
+     "total": "209",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Yorba Linda",
+     "sample_link": "https://goldfishswimschool.com/yorba-linda/pricing/additional-program/",
+     "slug": "additional-program"
+    },
+    {
+     "base": "location-event",
+     "total": "213",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Meadowvale, ON",
+     "sample_link": "https://goldfishswimschool.com/meadowvale/events/",
+     "slug": "location-event"
+    },
+    {
+     "base": "location-program",
+     "total": "220",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Meadowvale, ON",
+     "sample_link": "https://goldfishswimschool.com/meadowvale/programs/",
+     "slug": "location-program"
+    },
+    {
+     "base": "programs",
+     "total": "8",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Swim Team",
+     "sample_link": "https://goldfishswimschool.com/programs/swim-force/",
+     "slug": "programs"
+    },
+    {
+     "base": "single-program",
+     "total": "1279",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "W.A.T.E.R. Safety Presentations",
+     "sample_link": "https://goldfishswimschool.com/west-bloomfield/programs/w-a-t-e-r-safety-presentations/",
+     "slug": "single-program"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "loftlinks.com",
+   "name": "LoftLinks",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "harlem.thecliffsclimbing.com",
+   "name": "The Cliffs at Harlem",
+   "wp_types": {
+    "class": "class"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "class",
+     "total": "245",
+     "returned": 10,
+     "event_date_meta": [],
+     "sample_title": "Mobility + Flexibility for Climbers",
+     "sample_link": "https://movementgyms.com/class/mobility-flexibility-for-climbers/",
+     "slug": "class"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "14streety.org",
+   "name": "14th Street Y \u2013 Sports Center",
+   "wp_types": {
+    "tc_events": "tc_events",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "ymcanyc.org",
+   "name": "Park Slope Armory YMCA",
+   "wp_types": null,
+   "drupal_types": [
+    "node--class",
+    "node--event",
+    "node--lb_event",
+    "node--program",
+    "node--program_subcategory"
+   ],
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.studioanya.com",
+   "name": "Studio Anya",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynboulders.com",
+   "name": "Brooklyn Boulders Queensbridge",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.upliftstudios.com",
+   "name": "Uplift Studio",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.bodybysimone.com",
+   "name": "Body by Simone",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynphysicaltherapy.com",
+   "name": "Inspira",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ridgewoodymca.org",
+   "name": "Ridgewood YMCA",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.vitalclimbinggym.com",
+   "name": "VITAL Climbing Gym",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.jukeboxnyc.com",
+   "name": "Jukebox",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.got-archery.com",
+   "name": "Gotham Archery",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "overthrownyc.com",
+   "name": "Overthrow",
+   "wp_types": {
+    "product": "product"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "341",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "DON&#8217;T PUNK OUT SOCK 3-PACK",
+     "sample_link": "https://overthrownyc.com/product/dont-punk-out-sock-3-pack/",
+     "slug": "product"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.studymartialarts.com",
+   "name": "Martial Arts USA",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.studiox.nyc",
+   "name": "Studio X",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.newvibeyoga.com",
+   "name": "New Vibe Yoga",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.atjiujitsunyc.com",
+   "name": "At jiu-jitsu NYC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.thegrapplingclubnyc.com",
+   "name": "The Grappling Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.fastbreakhoops.com",
+   "name": "Fastbreak Basketball Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "methodclimb.com",
+   "name": "Method Climbing Gym",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "centralrockgym.com",
+   "name": "Central Rock Gym",
+   "wp_types": {
+    "private-event": "private-event",
+    "events": "events",
+    "programs": "programs"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "private-event",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Field Trip Test",
+     "sample_link": "https://centralrockgym.com/private-event/field-trip-test/",
+     "slug": "private-event"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynfencing.com",
+   "name": "Brooklyn Fencing Center",
+   "wp_types": {
+    "class": "class"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "class",
+     "total": "5",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Junior Intermediate",
+     "sample_link": "https://brooklynfencing.com/classe/junior-intermediate/",
+     "slug": "class"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.framesnyc.com",
+   "name": "Frames Bowling Lounge NYC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "kspirittkd.com",
+   "name": "K-Spirit Taekwondo",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "glorymacenter.com",
+   "name": "Glory Martial Arts Center",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "johnnykaratenyc.com",
+   "name": "Johnny Karate",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gowanus.thecliffsclimbing.com",
+   "name": "Movement Gowanus",
+   "wp_types": {
+    "class": "class"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "class",
+     "total": "245",
+     "returned": 10,
+     "event_date_meta": [],
+     "sample_title": "Mobility + Flexibility for Climbers",
+     "sample_link": "https://movementgyms.com/class/mobility-flexibility-for-climbers/",
+     "slug": "class"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynbjj.com",
+   "name": "Brooklyn Brazilan Jiu-Jitsu",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "product",
+     "total": "5",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Intro Lesson @ BBJJ Cobble Hill",
+     "sample_link": "https://brooklynbjj.com/product/intro-lesson-bbjj-cobble-hill/",
+     "slug": "product"
+    }
+   ],
+   "tribe": 0,
+   "ics": null
+  },
+  {
+   "host": "craftpilates.com",
+   "name": "Craft Pilates",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nycvingtsun.com",
+   "name": "Ving Tsun Kung Fu",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.safesplash.com",
+   "name": "SafeSplash Swim School",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.brooklynsluggers.com",
+   "name": "Brooklyn Sluggers",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "gracesgymnastics.com",
+   "name": "Grace's Gymnastics",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "unitedtkdcenters.com",
+   "name": "United TaeKwonDo",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.imagineswimming.com",
+   "name": "Imagine Swimming",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "soccerstars.com",
+   "name": "Soccer Stars",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "bogotaswimclub.com",
+   "name": "Bogota Swim Club",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.qbksports.com",
+   "name": "QBK Sports",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.renzograciebayridge.com",
+   "name": "Renzo Gracie",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "brooklynkungfu.com",
+   "name": "Brooklyn Kung Fu",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.brooklyn-basketball.com",
+   "name": "Brooklyn Basketball Training Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "nyctkd.com",
+   "name": "Wan Kam Leung Practical Wing Chun",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.rangebjj.com",
+   "name": "Range Brazilian Jiu Jitsu",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "ahnstkdnyc.com",
+   "name": "Ahn's TawKwonDo",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.penguincityswim.com",
+   "name": "Penguin City Swim",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "parks.ny.gov",
+   "name": "parks.ny.gov",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.heightscasino.com",
+   "name": "Heights Casino",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "evolutionmuaythai.com",
+   "name": "Evolution Muay Thai",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "fencenyfa.com",
+   "name": "New York Fencing Academy - Brooklyn",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.chernomorets.org",
+   "name": "Chrnomorets SC",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "rutgersnewarkathletics.com",
+   "name": "Golden Dome Athletic Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "hhswimclub.com",
+   "name": "Hasbrouck Heights Swim Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.aviatorsports.com",
+   "name": "Aviator Sports & Events Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.soccercoliseum.com",
+   "name": "Soccer Coliseum at Teaneck Armory",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.rpmraceway.com",
+   "name": "RPM Raceway",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.nassaucountyny.gov",
+   "name": "North Woodmere Swimming Pool",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.gnparks.org",
+   "name": "Parkwood Family Aquatic Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "boulderingproject.com",
+   "name": "Bouldering Project",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.ntc.usta.com",
+   "name": "USTA Billie Jean King National Tennis Center",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.gravityvault.com",
+   "name": "The Gravity Vault Hoboken",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "lakeside.prospectpark.org",
+   "name": "LeFrak Center at Lakeside",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "sites.google.com",
+   "name": "North Flushing Pool Club",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "www.reservepadel.com",
+   "name": "Reserve Padel Hudson Yards",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "dumbo.thecliffsclimbing.com",
+   "name": "The Cliffs at DUMBO",
+   "wp_types": {
+    "class": "class"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "class",
+     "total": "245",
+     "returned": 10,
+     "event_date_meta": [],
+     "sample_title": "Mobility + Flexibility for Climbers",
+     "sample_link": "https://movementgyms.com/class/mobility-flexibility-for-climbers/",
+     "slug": "class"
+    }
+   ],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "colonialrpc.com",
+   "name": "Colonial Rifle & Pistol Club",
+   "wp_types": {},
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
+  },
+  {
+   "host": "playmeadowlands.com",
+   "name": "Meadowlands Racing & Entertainment",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Hambo Post Position Draw Luncheon at Chateau Grande",
+     "sample_link": "https://playmeadowlands.com/event/hambo-post-position-draw-luncheon-at-chateau-grande/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 4,
+   "ics": {
+    "url": "https://playmeadowlands.com/event/seafood_fest?ical=1",
+    "vevents": 1
+   }
+  },
+  {
+   "host": "www.chelseapiers.com",
+   "name": "Chelsea Piers",
+   "wp_types": null,
+   "drupal_types": null,
+   "open": [],
+   "tribe": null,
+   "ics": null
   }
  ]
 }

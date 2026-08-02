@@ -57,7 +57,7 @@ import urllib.parse
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib import http  # noqa: E402
+from lib import http, registry  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 FLUSH_EVERY = 25
@@ -317,6 +317,12 @@ def analyse(landing, listing=None, detail=None):
         "jsonld_event": False,
         "tribe": None,
         "squarespace_json": None,
+        # What the CMS says it has, rather than what we guessed it might run.
+        # See lib/registry -- these two turned 78 sites previously scored as
+        # "no feed" into named endpoints, and they are the only signals here
+        # that do not depend on the site advertising anything.
+        "post_types": None,
+        "node_types": None,
     }
 
     if listing:
@@ -350,7 +356,13 @@ def _union(existing, body, table):
 
 
 def census_site(v, delay, cache=False):
-    """Up to four requests: landing, listing, detail, and one endpoint guess."""
+    """Up to six requests: landing, listing, detail, and the CMS registry.
+
+    The registry probe is worth its two requests because it is the only one that
+    cannot come back with a false negative for the wrong reason. Everything else
+    here asks whether the site does a specific thing; `/wp-json/wp/v2/types` and
+    `/jsonapi` ask what the site does at all.
+    """
     rec = {"name": v["name"], "url": v["url"], "host": v["host"], "kind": v["kind"],
            "osm_id": v["osm_id"], "status": None, "final_url": None, "error": None,
            "listing_url": None, "detail_url": None, "signals": {}}
@@ -391,18 +403,23 @@ def census_site(v, delay, cache=False):
 
     sig = analyse((body, base), listing_page, detail_page)
 
-    # One endpoint guess, chosen by what the HTML already told us. Guessing
-    # blind at every host would quadruple the request count to learn nothing.
+    # Ask the CMS what it has. On WordPress that is the post-type registry --
+    # and only THEN the tribe route, which is now a question worth asking
+    # because we know whether the plugin is installed. Probing tribe blind is
+    # how this census concluded "0/10" from ten sites that never ran it.
     if sig["wp"]:
-        t = http.get_full(f"{origin}/wp-json/tribe/events/v1/events?per_page=1", delay=delay)
-        if t["status"] == 200 and "json" in t["ctype"]:
-            try:
-                sig["tribe"] = json.loads(t["body"].decode("utf-8", "replace")).get("total")
-            except Exception:
-                sig["tribe"] = True
+        sig["post_types"] = registry.wp_types(origin, delay)
+        if (sig["post_types"] or {}).get("tribe_events"):
+            sig["tribe"] = registry.tribe_rest(origin, delay)
         else:
             sig["tribe"] = False
-    elif "squarespace" in sig["cms"]:
+    else:
+        # Drupal advertises nothing in its markup, so there is no HTML signal
+        # to gate this on. One request, and it is the difference between
+        # finding Brooklyn Public Library's whole calendar and not.
+        sig["node_types"] = registry.drupal_types(origin, delay)
+
+    if "squarespace" in sig["cms"]:
         # Squarespace serves any page as JSON with ?format=json. If that holds
         # it is effectively a free API for a large slice of small venues.
         target = rec["detail_url"] or rec["listing_url"] or base
@@ -444,6 +461,8 @@ def reparse(city):
         # Network-only probes cannot be redone offline; carry them forward.
         sig["tribe"] = prior.get("tribe")
         sig["squarespace_json"] = prior.get("squarespace_json")
+        sig["post_types"] = prior.get("post_types")
+        sig["node_types"] = prior.get("node_types")
         rec["signals"] = sig
         done += 1
 
@@ -536,7 +555,9 @@ def report(records):
         ("ICS feed advertised", sum(1 for r in reached if sig(r, "ics"))),
         ("RSS / Atom feed", sum(1 for r in reached if sig(r, "rss"))),
         ("WordPress REST", sum(1 for r in reached if sig(r, "wp"))),
+        ("  ...naming an event type", sum(1 for r in reached if sig(r, "post_types"))),
         ("  ...of which Tribe", sum(1 for r in reached if sig(r, "tribe"))),
+        ("Drupal JSON:API node type", sum(1 for r in reached if sig(r, "node_types"))),
         ("Squarespace ?format=json", sum(1 for r in reached if sig(r, "squarespace_json"))),
         ("any JSON-LD at all", sum(1 for r in reached if sig(r, "jsonld_home") or sig(r, "jsonld_detail"))),
         ("client-rendered (unreadable)", sum(1 for r in reached if sig(r, "js_rendered"))),
@@ -544,6 +565,19 @@ def report(records):
     ]
     for label, k in rows:
         print(f"  {label:<30} {pct(k, len(reached))}")
+
+    # What the registry actually named. The point of asking is that the answers
+    # are unguessable, so print them rather than only counting them.
+    named = {}
+    for r in reached:
+        for slug in (sig(r, "post_types") or {}):
+            named[slug] = named.get(slug, 0) + 1
+        for node in (sig(r, "node_types") or []):
+            named[node] = named.get(node, 0) + 1
+    if named:
+        print("\nCONTENT TYPES NAMED BY THE CMS")
+        for slug, k in sorted(named.items(), key=lambda kv: (-kv[1], kv[0]))[:20]:
+            print(f"  {slug:<30} {pct(k, len(reached))}")
 
     for title, table in (("TICKETING PLATFORMS LINKED", "platforms"), ("SITE PLATFORM", "cms")):
         counts = {}
@@ -556,7 +590,8 @@ def report(records):
 
     covered = [r for r in reached
                if sig(r, "jsonld_event") or sig(r, "ics") or sig(r, "tribe")
-               or sig(r, "squarespace_json") or sig(r, "platforms")]
+               or sig(r, "squarespace_json") or sig(r, "platforms")
+               or sig(r, "post_types") or sig(r, "node_types")]
     print(f"\nReachable by at least one generic adapter: {len(covered)} / {n} "
           f"({100.0 * len(covered) / n:.0f}% of all probed)")
     print("Write adapters top-down from the tables above.\n")

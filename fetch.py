@@ -304,8 +304,323 @@ def fetch_luma(src, horizon_days=30):
     return rows
 
 
+def fetch_drupal(src, horizon_days=120):
+    """A Drupal JSON:API resource, filtered forward and paged by cursor.
+
+    Written for Brooklyn Public Library, whose `/jsonapi` is completely open --
+    no key, server-side filtering, cursor pagination, one endpoint for every
+    branch in the borough. Configured from sources.json rather than hard-coded
+    so the next institution running Drupal costs a config block instead of a
+    file, which is not speculative: the census found node--event on other hosts
+    and BPL alone justifies the shape.
+
+    THE TIMEZONE IS A LIE, and it is the one thing here that will silently
+    corrupt every row if taken at face value. `field_date.value` comes back as
+    `2026-08-03T10:00:00+00:00` for an event the site's own URL slug calls
+    `...20260803-1000am`. Drupal is serialising a naive local wall-clock and
+    stamping `+00:00` on it. Honouring that offset shifts every event four or
+    five hours earlier -- a 10am story time lands at 6am, in the wrong time
+    band, on a listing whose entire promise is when. So the offset is dropped
+    here and the value is passed downstream as the local time it actually is.
+
+    Verified rather than assumed: across twelve consecutive events at three
+    distinct times, the hour in `field_date.value` matched the hour in
+    `path.alias` every time. If the site ever starts sending real UTC this
+    breaks loudly at 4am, which is the failure mode to prefer.
+    """
+    host = src["host"]
+    base = f"https://{host}/jsonapi/{src['resource']}"
+    date_field = src.get("date_field", "field_date")
+    floor = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
+    ceil = (datetime.now(timezone.utc)
+            + timedelta(days=min(horizon_days, src.get("horizon_days", 60)))
+            ).strftime("%Y-%m-%d")
+
+    q = {
+        f"filter[lo][condition][path]": f"{date_field}.value",
+        f"filter[lo][condition][operator]": ">",
+        f"filter[lo][condition][value]": floor,
+        f"filter[hi][condition][path]": f"{date_field}.value",
+        f"filter[hi][condition][operator]": "<",
+        f"filter[hi][condition][value]": ceil,
+        "sort": f"{date_field}.value",
+        "page[limit]": str(src.get("page_size", 50)),
+    }
+    if src.get("include"):
+        q["include"] = ",".join(src["include"])
+    url = base + "?" + urllib.parse.urlencode(q)
+
+    max_pages = src.get("max_pages", MAX_PAGES)
+    print(f"    {src['resource']} · {floor} .. {ceil}")
+    rows, terms, pages = [], {}, 0
+    while url and pages < max_pages:
+        # Retry the page, not the fetch. Forty sequential pages against one
+        # host will meet a timeout eventually, and losing 1,400 rows already in
+        # hand because page 28 blinked is a worse answer than asking again.
+        blob = None
+        for attempt in range(3):
+            r = http.get_full(url, delay=0.5 + attempt,
+                              accept="application/vnd.api+json,application/json;q=0.9",
+                              max_bytes=8_000_000)
+            if r["status"] == 200 and r["body"]:
+                blob = json.loads(r["body"].decode("utf-8", "replace"))
+                break
+            print(f"    page {pages}: status {r['status']}, retry {attempt + 1}/3")
+        if blob is None:
+            # Stop, keep what came back, and say so loudly. `min_expected` in
+            # sources.json is the gate that decides whether a short run is
+            # still a usable one -- that judgement belongs to validate.py, not
+            # to a network blip at page 28.
+            print(f"    WARNING truncated at page {pages} after 3 attempts; "
+                  f"keeping {len(rows)} rows")
+            break
+        if blob.get("errors"):
+            raise RuntimeError(f"{src['id']}: {str(blob['errors'])[:200]}")
+
+        # `included` is a flat sidecar of every referenced entity across the
+        # whole page, so it is indexed once and carried across pages -- a
+        # branch named on page 1 is still the branch on page 12.
+        for i in blob.get("included") or []:
+            terms[i["id"]] = {"type": i["type"],
+                              "name": (i["attributes"].get("name")
+                                       or i["attributes"].get("title"))}
+
+        for it in blob.get("data") or []:
+            a = it.get("attributes") or {}
+            rel = it.get("relationships") or {}
+
+            def named(field):
+                d = (rel.get(field) or {}).get("data")
+                if isinstance(d, list):
+                    return [terms.get(x["id"], {}).get("name") for x in d
+                            if terms.get(x["id"], {}).get("name")]
+                if isinstance(d, dict):
+                    return terms.get(d["id"], {}).get("name")
+                return None
+
+            date = a.get(date_field) or {}
+            rows.append({
+                "id": it.get("id"),
+                "title": a.get("title"),
+                "start": date.get("value"),
+                "end": date.get("end_value"),
+                "body": (a.get("body") or {}).get("summary")
+                        or (a.get("body") or {}).get("value"),
+                "path": (a.get("path") or {}).get("alias"),
+                "virtual": bool(a.get("field_event_virtual")),
+                "hybrid": bool(a.get("field_hybrid")),
+                "offsite": bool(a.get("field_event_offsite")),
+                "offsite_address": a.get("field_event_offsite_address"),
+                "location": named("field_location"),
+                "branches": named("field_participating_branches"),
+                "kind": named("field_event_type_parent"),
+                "audience": named("field_age"),
+                "tags": named("field_tags") or [],
+            })
+
+        url = ((blob.get("links") or {}).get("next") or {}).get("href")
+        pages += 1
+        if pages % 10 == 0:
+            print(f"    …{len(rows)}")
+
+    if url and pages >= max_pages:
+        print(f"    WARNING stopped at {max_pages} pages; more remain")
+
+    # A branch name is not a location. "Brooklyn Heights Library" resolves
+    # against neither the parks register nor an address geocoder, so every
+    # library event would land with a borough and nothing finer -- which is the
+    # exact gap geocode.py was written to close for permits. The companion
+    # resource states each branch's street address; attach it and the existing
+    # geocoder does the rest, once, cached forever.
+    if src.get("places"):
+        cfg = src["places"]
+        addresses = _drupal_places(host, cfg)
+        for r in rows:
+            r["address"] = (_match_place(addresses, r.get("location"), cfg)
+                            or _match_place(addresses, (r.get("branches") or [None])[0], cfg))
+        placed = sum(1 for r in rows if r.get("address"))
+        print(f"    {len(addresses)} places with an address · "
+              f"{placed}/{len(rows)} events matched to one")
+
+    print(f"    {len(rows)} events across {pages} pages")
+    return rows
+
+
+def _drupal_places(host, cfg):
+    """name -> street address, from a companion JSON:API resource."""
+    url = (f"https://{host}/jsonapi/{cfg['resource']}"
+           f"?page%5Blimit%5D={cfg.get('page_size', 50)}")
+    field = cfg.get("address_field", "field_address")
+    out = {}
+    for _ in range(MAX_PAGES):
+        r = http.get_full(url, delay=0.5,
+                          accept="application/vnd.api+json,application/json;q=0.9",
+                          max_bytes=8_000_000)
+        if r["status"] != 200 or not r["body"]:
+            break
+        blob = json.loads(r["body"].decode("utf-8", "replace"))
+        for it in blob.get("data") or []:
+            a = it.get("attributes") or {}
+            addr = a.get(field) or {}
+            line = (addr.get("address_line1") or "").strip()
+            if not a.get("title") or not line:
+                continue
+            parts = [line, addr.get("locality"), addr.get("administrative_area"),
+                     addr.get("postal_code")]
+            # Keyed lowercase: the same building is "DeKalb Library" in the
+            # branch list and "Dekalb, Auditorium" in an event.
+            out[a["title"].strip().lower()] = ", ".join(p for p in parts if p)
+        url = ((blob.get("links") or {}).get("next") or {}).get("href")
+        if not url:
+            break
+    return out
+
+
+def _match_place(addresses, name):
+    """Exact, then the part before the comma. No fuzzy matching.
+
+    Event locations are room-qualified -- "Central Library, Info Commons Lab" --
+    and the companion resource carries both room-level and building-level names.
+    Try the full string first so a room with its own address keeps it, then fall
+    back to the building. Anything looser starts inventing locations, which is
+    the line geocode.py already refuses to cross.
+    """
+    if not name:
+        return None
+    name = name.strip()
+    return addresses.get(name) or addresses.get(name.split(",")[0].strip())
+
+
+def fetch_wordpress(src, horizon_days=120):
+    """Venue calendars on WordPress, by whichever route that venue answers on.
+
+    Discovery is `posttypes.py`; this only subscribes. Two routes, because the
+    plugin decides which one exists:
+
+      tribe  /wp-json/tribe/events/v1/events -- structured, paged, and carries
+             a venue object, categories and cost when the venue fills them in.
+      ics    the same plugin's calendar export -- dates and text only.
+
+    Tribe REST wins wherever both work. Where neither does, the venue is not in
+    the registry at all; a source that answers with nothing is what made the
+    earlier ICS sweep look like a 3% format.
+
+    One venue's failure is not the run's. These are ~30 independent small sites,
+    so a dead host is expected and gets counted rather than raised.
+    """
+    city = src.get("_city", "nyc")
+    path = os.path.join(city_dir(city), "wordpress.json")
+    try:
+        with open(path) as f:
+            venues = json.load(f)["venues"]
+    except FileNotFoundError:
+        raise RuntimeError(f"no {path} -- run `python3 posttypes.py` first")
+
+    horizon = min(horizon_days, src.get("horizon_days", 90))
+    print(f"    {len(venues)} venues · "
+          f"{sum(1 for v in venues if v['feed'] == 'tribe')} tribe, "
+          f"{sum(1 for v in venues if v['feed'] == 'ics')} ics")
+
+    rows, failed = [], 0
+    for v in venues:
+        try:
+            got = (_tribe_rows(v, horizon) if v["feed"] == "tribe"
+                   else _ics_rows(v, horizon))
+        except Exception:
+            failed += 1
+            continue
+        if not got:
+            failed += 1
+        rows.extend(got)
+
+    if failed:
+        print(f"    {failed} venues returned nothing this run")
+    print(f"    {len(rows)} events inside the horizon")
+    return rows
+
+
+def _tribe_rows(v, horizon_days):
+    """Page The Events Calendar's own route.
+
+    `start_date`/`end_date` are already local wall-clock strings in the venue's
+    timezone, which the payload states -- no conversion, and none wanted.
+    """
+    ceil = (datetime.now(timezone.utc) + timedelta(days=horizon_days)).strftime("%Y-%m-%d")
+    out, page = [], 1
+    while page <= 10:
+        q = {"per_page": 50, "page": page, "start_date": "now", "end_date": ceil}
+        r = http.get_full(v["url"] + "?" + urllib.parse.urlencode(q),
+                          delay=1.0, accept="application/json", max_bytes=8_000_000)
+        if r["status"] != 200 or "json" not in (r["ctype"] or ""):
+            break
+        blob = json.loads(r["body"].decode("utf-8", "replace"))
+        evs = blob.get("events") or []
+        for e in evs:
+            venue = e.get("venue") or {}
+            out.append({
+                "venue_host": v["host"], "venue_name": v["name"],
+                "lat": v.get("lat"), "lon": v.get("lon"),
+                "borough": v.get("borough"),
+                "feed": "tribe",
+                "id": e.get("global_id") or e.get("id"),
+                "title": e.get("title"),
+                "url": e.get("url"),
+                "start": e.get("start_date"),
+                "end": e.get("end_date"),
+                "all_day": bool(e.get("all_day")),
+                "status": e.get("status"),
+                "cost": e.get("cost") or None,
+                "description": e.get("excerpt") or e.get("description"),
+                "categories": [c.get("name") for c in e.get("categories") or []],
+                "tags": [t.get("name") for t in e.get("tags") or []],
+                # The venue's own address beats the registry's OSM point when
+                # it is there -- a theatre that states a second stage knows
+                # better than the building we geocoded.
+                "venue_address": venue.get("address") if isinstance(venue, dict) else None,
+                "venue_lat": venue.get("geo_lat") if isinstance(venue, dict) else None,
+                "venue_lon": venue.get("geo_lng") if isinstance(venue, dict) else None,
+            })
+        if len(evs) < 50 or page >= (blob.get("total_pages") or 1):
+            break
+        page += 1
+    return out
+
+
+def _ics_rows(v, horizon_days):
+    """The plugin's calendar export, for venues whose REST route is off."""
+    r = http.get_full(v["url"], delay=1.0, accept="text/calendar,*/*;q=0.8",
+                      max_bytes=8_000_000)
+    if not r["body"]:
+        return []
+    items = ics.upcoming(ics.events(r["body"].decode("utf-8", "replace")),
+                         horizon_days=horizon_days)
+    out = []
+    for e in items:
+        start = e["start"]
+        out.append({
+            "venue_host": v["host"], "venue_name": v["name"],
+            "lat": v.get("lat"), "lon": v.get("lon"),
+            "borough": v.get("borough"),
+            "feed": "ics",
+            "id": e["uid"],
+            "title": e["summary"],
+            "url": e["url"],
+            "start": start.isoformat() if start else None,
+            "end": e["end"].isoformat() if e["end"] else None,
+            "all_day": e["all_day"],
+            "status": e["status"],
+            "cost": None,
+            "description": e["description"],
+            "categories": [], "tags": [],
+            "venue_address": e["location"],
+            "venue_lat": e["lat"], "venue_lon": e["lon"],
+        })
+    return out
+
+
 ADAPTERS = {"socrata": fetch_socrata, "squarespace": fetch_squarespace,
-            "ticketmaster": fetch_ticketmaster, "luma": fetch_luma}
+            "ticketmaster": fetch_ticketmaster, "luma": fetch_luma,
+            "drupal": fetch_drupal, "wordpress": fetch_wordpress}
 
 
 def fetch_neighborhoods(city):
