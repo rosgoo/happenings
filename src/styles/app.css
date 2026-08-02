@@ -228,40 +228,54 @@ footer b { color: var(--ink); }
 .pcard .cred a { color: var(--ink-2); }
 
 
-/* ---------- filter drawer ----------
-   The filter set outgrew the top of the page: category, time band, ~24
-   neighbourhoods and a search box pushed the actual listings below the fold,
-   which is backwards. They live in a drawer now; the day strip stays inline
-   because it is navigation, not filtering. */
-.drawer-open { overflow: hidden; }
+/* ---------- filters: a left rail, and a drawer when there is no room ----------
+   The filter set outgrew the top of the page, so it moved off it. On desktop it
+   is a permanent left rail: filters are how this page is used, and a control you
+   have to summon is one people forget exists. Below 900px the same element
+   becomes an off-canvas panel -- one element, one state, so the rail and the
+   drawer can never disagree about what is selected. */
+.browse { display: grid; grid-template-columns: 252px minmax(0, 1fr); gap: 26px;
+          margin-top: 20px; align-items: start; }
+.browse-main { min-width: 0; }
 
+/* The rail carries no heavy frame. A 2px black box around a permanent column of
+   controls competes with the listings, which are the thing on the page; the
+   rule on the right is enough to say where the column ends. */
+.rail {
+  border: 0; border-right: 1px solid var(--paper-3); background: transparent;
+  display: flex; flex-direction: column; position: sticky; top: 14px;
+  max-height: calc(100vh - 28px); padding-right: 12px;
+}
+.rail .dhead {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 2px 9px; border-bottom: 1px solid var(--paper-3); background: transparent;
+}
+.rail .dhead b { font-family: var(--display); font-size: 14px;
+                 letter-spacing: .06em; text-transform: uppercase; }
+.rail .dbody { overflow-y: auto; padding: 0 2px 12px; flex: 1; }
+.rail .dfoot {
+  border-top: 1px solid var(--paper-3); padding: 9px 2px; background: transparent;
+  display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
+}
+.rail .dfoot b { font-family: var(--display); font-size: 15px; }
+/* In the rail the close button and Done are drawer affordances with nothing to
+   close, so they are hidden until the layout actually becomes a drawer. */
+.rail .iconbtn, .rail #applyfilters { display: none; }
+
+.searchbar { display: flex; gap: 8px; align-items: center; }
+.searchbar input[type="search"] {
+  flex: 1; min-width: 0; font-size: 15px; padding: 9px 11px;
+}
+/* The filter button only exists when the rail is hidden. */
+.searchbar .filterbtn { display: none; }
+
+.drawer-open { overflow: hidden; }
 #scrim {
   position: fixed; inset: 0; background: rgba(23, 21, 15, .45);
   opacity: 0; pointer-events: none; transition: opacity .18s ease; z-index: 40;
 }
 #scrim.on { opacity: 1; pointer-events: auto; }
 
-#drawer {
-  position: fixed; top: 0; right: 0; bottom: 0; width: min(360px, 92vw);
-  background: var(--paper); border-left: 3px solid var(--ink);
-  transform: translateX(100%); transition: transform .2s ease;
-  z-index: 41; display: flex; flex-direction: column;
-  background-image: radial-gradient(var(--paper-3) 1px, transparent 1px);
-  background-size: 7px 7px;
-}
-#drawer.on { transform: translateX(0); }
-#drawer .dhead {
-  display: flex; align-items: center; gap: 10px;
-  padding: 14px 16px; border-bottom: 2px solid var(--ink); background: var(--paper);
-}
-#drawer .dhead b { font-family: var(--display); font-size: 15px;
-                   letter-spacing: .06em; text-transform: uppercase; }
-#drawer .dbody { overflow-y: auto; padding: 0 16px 16px; flex: 1; }
-#drawer .dfoot {
-  border-top: 2px solid var(--ink); padding: 11px 16px; background: var(--paper);
-  display: flex; align-items: center; gap: 10px;
-}
-#drawer .dfoot b { font-family: var(--display); font-size: 16px; }
 .iconbtn {
   margin-left: auto; font: inherit; font-size: 18px; line-height: 1; cursor: pointer;
   background: var(--paper); color: var(--ink); border: 1.5px solid var(--ink);
@@ -274,6 +288,149 @@ footer b { color: var(--ink); }
   background: var(--pink); color: var(--ink); font-size: 10.5px; font-weight: 700;
   padding: 0 5px; border: 1px solid var(--ink); margin-left: 2px;
 }
+
+/* ---------- subway ----------
+   Route bullets in the MTA's own colours. A named line is how New Yorkers
+   locate anything, so it reads as the train rather than as a decoration. */
+.bullet {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 17px; height: 17px; border-radius: 50%; font-size: 10.5px;
+  font-weight: 700; line-height: 1; vertical-align: -3px;
+  font-family: var(--display); letter-spacing: 0;
+}
+.bullet.sir { width: auto; border-radius: 9px; padding: 0 5px; }
+.stop { color: var(--ink-2); white-space: nowrap; }
+.stop .bullet { margin-right: 2px; }
+.routes .ch { padding: 3px 7px; }
+
+/* ---------- condensed filter groups ----------
+   Thirty neighbourhood chips and a hundred venues do not belong in a rail as
+   flat lists. Boroughs collapse; long lists scroll and are filtered by a small
+   search of their own. */
+.minisearch { width: 100%; margin: 8px 0 2px; font-size: 13px; padding: 6px 8px; }
+
+/* Boroughs stack. They are section headers, not chips -- inheriting the flex
+   chip layout let two of them share a line, which read as a broken grid. */
+.borolist { display: block; margin: 8px 0 0; }
+.boro { border-bottom: 1px solid var(--paper-3); display: block; }
+.boro:last-child { border-bottom: 0; }
+.boro > summary {
+  cursor: pointer; list-style: none; padding: 6px 2px; font-size: 12.5px;
+  font-weight: 700; display: flex; align-items: center; gap: 6px;
+}
+.boro > summary::-webkit-details-marker { display: none; }
+.boro > summary::before {
+  content: "+"; font-family: var(--display); font-size: 13px; width: 10px;
+  color: var(--ink-2);
+}
+.boro[open] > summary::before { content: "–"; }
+.boro > summary .bn {
+  margin-left: auto; font-weight: 400; color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.boro .chips { margin: 2px 0 9px; }
+/* A borough with an active filter inside it must not be able to hide it. */
+.boro.haspicked > summary { background: var(--acid); }
+
+.ch.hide, .boro.hide { display: none; }
+
+/* ---------- pick lists ----------
+   One row per option instead of a wrapped chip cloud. Manhattan has ~60
+   neighbourhoods and the city has ~300 stations with events; as chips those are
+   paragraphs, and they pushed every other control out of the rail. */
+.picklist { max-height: 190px; overflow-y: auto; margin: 6px 0 4px;
+            border: 1px solid var(--paper-3); }
+.picklist button {
+  display: flex; align-items: baseline; gap: 6px; width: 100%; text-align: left;
+  font: inherit; font-size: 12.5px; line-height: 1.25; padding: 4px 7px;
+  background: transparent; border: 0; border-bottom: 1px solid var(--paper-2);
+  cursor: pointer; color: var(--ink);
+}
+.picklist button:last-child { border-bottom: 0; }
+.picklist button:hover { background: var(--paper-2); }
+.picklist button[aria-pressed="true"] { background: var(--acid); font-weight: 700; }
+.picklist .lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.picklist .n { margin-left: auto; color: var(--ink-2);
+               font-variant-numeric: tabular-nums; flex: none; }
+.picklist button[aria-pressed="true"] .n { color: var(--ink); }
+.picklist button.hide { display: none; }
+.picklist .bullets { flex: none; display: inline-flex; gap: 1px; align-items: center; }
+.picklist .bullet { width: 14px; height: 14px; font-size: 9px; vertical-align: 0; }
+.picklist .more { font-size: 9.5px; color: var(--ink-2); margin-left: 1px; }
+.picklist .empty { padding: 7px; color: var(--ink-2); font-size: 12px; }
+
+/* ---------- detail panel ----------
+   A list row shows a line and a half. Everything else the pipeline knows --
+   the end time, the description, how far the train is, which feed it came
+   from -- lands here, along with the links out. */
+.openable { cursor: pointer; }
+.openable:hover { background: var(--paper-2); }
+.openable:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+.pcard.openable:hover { background: transparent; box-shadow: 3px 3px 0 var(--ink); }
+
+#detail {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(430px, 94vw);
+  background: var(--paper); border-left: 3px solid var(--ink);
+  transform: translateX(100%); transition: transform .2s ease;
+  z-index: 42; display: flex; flex-direction: column;
+}
+#detail.on { transform: translateX(0); }
+#detail .dhead {
+  display: flex; align-items: center; gap: 10px; padding: 13px 16px;
+  border-bottom: 2px solid var(--ink);
+}
+#detail .dhead b { font-family: var(--display); font-size: 13px;
+                   letter-spacing: .14em; text-transform: uppercase; }
+#detail .dbody { overflow-y: auto; padding: 16px; flex: 1; }
+.dtitle { font-family: var(--display); font-size: 23px; line-height: 1.14;
+          margin: 0 0 9px; }
+.dtags { display: flex; gap: 7px; align-items: center; flex-wrap: wrap;
+         margin-bottom: 13px; }
+.dtags .sub { font-size: 12px; color: var(--ink-2); text-transform: capitalize; }
+.ddesc { margin: 0 0 15px; font-size: 14px; line-height: 1.5; }
+.dimg { width: 100%; aspect-ratio: 3 / 2; object-fit: cover;
+        border: 2px solid var(--ink); margin-bottom: 13px; display: block; }
+.drow { display: grid; grid-template-columns: 96px 1fr; gap: 10px;
+        padding: 7px 0; border-top: 1px solid var(--paper-3); font-size: 13.5px; }
+.drow .dk { font-size: 10px; font-weight: 700; letter-spacing: .12em;
+            text-transform: uppercase; color: var(--ink-2); padding-top: 3px; }
+.drow .dv { line-height: 1.45; }
+.drow code { font-size: 12px; background: var(--paper-2); padding: 1px 4px; }
+.dnote { margin: 12px 0 0; font-size: 12px; color: var(--ink-2); }
+.dlinks { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px;
+          padding-top: 14px; border-top: 2px solid var(--ink); }
+.dlinks .ch { text-decoration: none; }
+@media (prefers-reduced-motion: reduce) { #detail { transition: none; } }
+
+/* /nyc/places is a full-width browse surface, so its filters sit above the
+   grid rather than in a rail -- there is no listings column to sit beside. */
+.placefilters { margin-top: 18px; }
+.placefilters input[type="search"] { width: 100%; font-size: 15px; padding: 9px 11px; }
+.placefilters .chips { margin-top: 7px; }
+
+/* The inline places section runs alongside listings rather than being the
+   whole page, so its cards are smaller than the ones on /nyc/places. */
+.pcards.tight { grid-template-columns: repeat(auto-fill, minmax(184px, 1fr)); gap: 12px; }
+.pcards.tight .ph { aspect-ratio: 4 / 3; }
+.pcards.tight h3 { font-size: 14.5px; }
+.pcards.tight .w { font-size: 12px; }
+.pcards.tight .w .stop .bullet { width: 14px; height: 14px; font-size: 9px; }
+.boro .picklist { border: 0; margin: 0 0 7px; max-height: 168px; }
+.hoodtrains { display: flex; flex-wrap: wrap; gap: 5px; align-items: center;
+              margin: 10px 0 0; }
+
+@media (max-width: 900px) {
+  .browse { display: block; }
+  .searchbar .filterbtn { display: inline-flex; }
+  .rail {
+    position: fixed; top: 0; right: 0; bottom: 0; left: auto;
+    width: min(360px, 92vw); max-height: none;
+    border: 0; border-left: 3px solid var(--ink);
+    transform: translateX(100%); transition: transform .2s ease; z-index: 41;
+  }
+  .rail.on { transform: translateX(0); }
+  .rail .iconbtn, .rail #applyfilters { display: inline-flex; }
+}
 @media (prefers-reduced-motion: reduce) {
-  #drawer, #scrim { transition: none; }
+  .rail, #scrim { transition: none; }
 }

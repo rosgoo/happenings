@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Browse from '../../components/Browse.astro';
 import {
   upcoming, categories, neighborhoods, venuesWithEvents,
-  CATEGORY_LABELS, catColor, catOn, placesIn, PLACE_KINDS, placeColor,
+  CATEGORY_LABELS, catColor, catOn, hoodInfo, ROUTE_COLOR, routeOn,
 } from '../../lib/data.js';
 
 // Neighbourhood editions and category pages share this route. They are
@@ -65,10 +65,6 @@ const subs = [...evs.reduce((m, e) => m.set(e.subcategory, (m.get(e.subcategory)
   .sort((a, b) => b[1] - a[1]).slice(0, 10);
 
 const nextUp = evs.slice(0, 50);
-// Things that are OPEN here, as opposed to ON. Only on neighbourhood editions:
-// an edition is meant to answer "what could we do around here", and a listing
-// that only knows about scheduled events answers half the question.
-const localPlaces = kind === 'hood' ? placesIn(slug, 8) : [];
 const cats = kind === 'hood'
   ? categories().filter((c) => evs.some((e) => e.category === c.slug))
       .map((c) => ({ ...c, count: evs.filter((e) => e.category === c.slug).length }))
@@ -76,8 +72,24 @@ const cats = kind === 'hood'
 const hoods = kind === 'cat'
   ? neighborhoods(1).filter((h) => evs.some((e) => e.neighborhood === h.slug))
       .map((h) => ({ ...h, count: evs.filter((e) => e.neighborhood === h.slug).length }))
-      .sort((a, b) => b.count - a.count).slice(0, 30)
+      .sort((a, b) => b.count - a.count)
   : [];
+// Venues that actually have something on inside this scope, so the filter can
+// never offer a choice that returns nothing.
+const railVenues = topVenues.length
+  ? venuesWithEvents(1)
+      .filter((v) => evs.some((e) => e.venue_id === v.id))
+      .map((v) => ({ ...v, upcoming: evs.filter((e) => e.venue_id === v.id).length }))
+      .sort((a, b) => b.upcoming - a.upcoming)
+      .slice(0, 200)
+  : [];
+
+// The trains that run through this neighbourhood, not the ones near its
+// centroid -- see normalize.py. This is the line most New Yorkers would use to
+// describe where they are going.
+const hi = kind === 'hood' ? hoodInfo.get(slug) : null;
+const stations = hi?.stations || [];
+const routes = hi?.routes || [];
 
 const title = kind === 'hood'
   ? `${name} — what's on | happenings`
@@ -102,35 +114,31 @@ const desc = kind === 'hood'
     </div>
   </div>
 
+  {routes.length > 0 && (
+    <div class="hoodtrains">
+      <span style="color:var(--ink-2);font-size:12.5px">Served by</span>
+      {routes.map((r) => (
+        <span class={`bullet${r === 'SIR' ? ' sir' : ''}`}
+              style={`background:${ROUTE_COLOR[r] || '#555'};color:${routeOn(r)}`}
+              title={`${r} train`}>{r}</span>
+      ))}
+      {stations.length > 0 && (
+        <span style="color:var(--ink-2);font-size:12.5px">
+          · {stations.slice(0, 4).map((s) => s.name).join(', ')}
+          {stations.length > 4 && ` +${stations.length - 4} more`}
+        </span>
+      )}
+    </div>
+  )}
+
   <Browse
     scope={kind === 'hood' ? { hood: slug } : { cat: slug }}
-    cats={cats} hoods={hoods} noJs={nextUp.slice(0, 40)} />
+    cats={cats} hoods={hoods} venues={railVenues} noJs={nextUp.slice(0, 40)} />
 
-  {localPlaces.length > 0 && (
-    <>
-      <h2 class="sec">Open around here</h2><div class="rule"></div>
-      <div class="pcards">
-        {localPlaces.map((p) => (
-          <div class="pcard">
-            <div class="ph" style={`background:${placeColor(p.kind)}`}>
-              {p.image_url && <img src={p.image_url} alt={p.name} loading="lazy"
-                                   referrerpolicy="no-referrer" decoding="async" />}
-              <span class="kindtag">{PLACE_KINDS[p.kind] || p.kind}</span>
-              {!p.image_url && <span class="fb">{PLACE_KINDS[p.kind] || p.kind}</span>}
-            </div>
-            <div class="pb">
-              <h3>{p.website ? <a href={p.website} rel="noopener">{p.name}</a> : p.name}</h3>
-            </div>
-            {p.image_credit && (
-              <div class="cred">Photo: {p.image_page
-                ? <a href={p.image_page} rel="noopener">{p.image_credit}</a>
-                : p.image_credit} · Wikimedia Commons</div>
-            )}
-          </div>
-        ))}
-      </div>
-    </>
-  )}
+  <!-- "Open around here" used to be a fixed block of eight places rendered
+       here. Browse now owns that section: it reacts to the category, line and
+       station filters, which a static list could not, and two places sections
+       on one page was one too many. -->
 
   {topVenues.length > 0 && (
     <>

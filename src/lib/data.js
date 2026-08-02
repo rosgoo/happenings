@@ -37,6 +37,26 @@ const PLACE_COLOR = {
   climbing: 'sports',
 };
 export const placeColor = (kind) => `var(--c-${PLACE_COLOR[kind] || 'community'})`;
+// A place's kind maps onto the event category vocabulary, which is what lets
+// one "Art" filter mean both "art events" and "galleries". Exported so the
+// island filters places by the same chips the listings use.
+export const placeCategory = (kind) => PLACE_COLOR[kind] || 'community';
+
+// The client payload for places. Same bargain as `slim`: short keys, nearest
+// station only, and no image credit block -- the section renders names and
+// kinds, and the photo wall lives on /nyc/places.
+export const slimPlaces = (list) => list.map((p) => ({
+  i: p.id, t: p.name, k: p.kind, kl: p.kind_label,
+  h: p.neighborhood, hn: p.neighborhood_name, bo: p.borough,
+  c: placeCategory(p.kind), u: p.website, im: p.image_url || null,
+  la: p.lat, lo: p.lon, oh: p.opening_hours || null,
+  wp: p.wikipedia || null,
+  cr: p.image_credit || null, cp: p.image_page || null,
+  sw: p.subway && p.subway[0]
+    ? { i: p.subway[0].id, n: p.subway[0].name, r: p.subway[0].routes,
+        m: p.subway[0].meters }
+    : null,
+}));
 
 export function placesIn(hoodSlug, limit = 8) {
   return places.filter((p) => p.neighborhood === hoodSlug)
@@ -115,8 +135,57 @@ export function venuesWithEvents(min = 1) {
 
 // The client payload. Short keys because this ships to every visitor: at ~6k
 // events the difference between this and the full record is about a megabyte.
+// Source ids are long and repeat on every record. One-letter codes, expanded
+// to their attribution client-side.
+export const SOURCE_CODE = {
+  'nyc-ticketmaster': 'tm', 'nyc-permitted-events': 'pe',
+  'nyc-parks-upcoming': 'pk', 'nyc-squarespace': 'sq', 'nyc-luma': 'lu',
+};
+
 export const slim = (list) => list.map((e) => ({
   i: e.id, t: e.title, s: e.start_local, d: e.date_local, b: e.time_band,
   v: e.venue_id, vn: e.venue_name, h: e.neighborhood, hn: e.neighborhood_name,
   bo: e.borough, c: e.category, sc: e.subcategory, u: e.url,
+  // Detail-panel fields. Only `de` is expensive -- 14% of events carry a
+  // description averaging 327 characters -- and it is the one thing that
+  // answers "what actually is this", so it earns the ~200 KB.
+  e: e.end_local || null,
+  de: e.description || null,
+  la: e.lat, lo: e.lon,
+  src: SOURCE_CODE[e.source] || e.source,
+  // Nearest station only. The id travels with it because station NAMES are not
+  // unique -- there are several "86 St" and three "23 St" complexes on
+  // different lines, so filtering by name would silently merge stations that
+  // are miles apart.
+  sw: e.subway && e.subway[0]
+    ? { i: e.subway[0].id, n: e.subway[0].name, r: e.subway[0].routes,
+        m: e.subway[0].meters }
+    : null,
 }));
+
+// Neighbourhood records carry the trains that run through them. Optional so a
+// build from an older pipeline still renders.
+export const hoodInfo = (() => {
+  try {
+    const list = read('neighborhoods');
+    return new Map(list.map((h) => [h.slug, h]));
+  } catch { return new Map(); }
+})();
+
+// The MTA's own route colours, so a bullet reads as the train it names rather
+// than as decoration. Grouped by trunk line exactly as the subway map is.
+export const ROUTE_COLOR = {
+  1: '#EE352E', 2: '#EE352E', 3: '#EE352E',
+  4: '#00933C', 5: '#00933C', 6: '#00933C',
+  7: '#B933AD',
+  A: '#0039A6', C: '#0039A6', E: '#0039A6',
+  B: '#FF6319', D: '#FF6319', F: '#FF6319', M: '#FF6319',
+  G: '#6CBE45',
+  J: '#996633', Z: '#996633',
+  L: '#A7A9AC',
+  N: '#FCCC0A', Q: '#FCCC0A', R: '#FCCC0A', W: '#FCCC0A',
+  S: '#808183', SIR: '#0039A6',
+};
+// The yellow and grey bullets need dark type; every other trunk takes white.
+export const routeOn = (r) =>
+  ['N', 'Q', 'R', 'W', 'L', 'S'].includes(r) ? '#000' : '#fff';

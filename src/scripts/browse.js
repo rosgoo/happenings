@@ -3,6 +3,8 @@
    and needs no server; shard by month when it stops being. All filter state
    lives in the URL, so every view is a shareable link. */
 
+import { openEvent, openPlace } from './detail.js';
+
 const CATS = {
   music: 'Music', sports: 'Sports', 'food-drink': 'Food & Drink', art: 'Art',
   performance: 'Performance', learning: 'Learning', community: 'Community',
@@ -11,20 +13,129 @@ const CATS = {
 const PAPER_ON = ['performance', 'learning'];
 const PAGE = 250;
 
+// The MTA's own trunk colours. Mirrored from lib/data.js so the island and the
+// server-rendered half agree; eight trunks is small enough that a shared build
+// artifact would cost more than it saves.
+const ROUTE_COLOR = {
+  1: '#EE352E', 2: '#EE352E', 3: '#EE352E',
+  4: '#00933C', 5: '#00933C', 6: '#00933C',
+  7: '#B933AD',
+  A: '#0039A6', C: '#0039A6', E: '#0039A6',
+  B: '#FF6319', D: '#FF6319', F: '#FF6319', M: '#FF6319',
+  G: '#6CBE45', J: '#996633', Z: '#996633', L: '#A7A9AC',
+  N: '#FCCC0A', Q: '#FCCC0A', R: '#FCCC0A', W: '#FCCC0A',
+  S: '#808183', SIR: '#0039A6',
+};
+const ROUTE_ORDER = ['1', '2', '3', '4', '5', '6', '7', 'A', 'C', 'E', 'B', 'D',
+  'F', 'M', 'G', 'J', 'Z', 'L', 'N', 'Q', 'R', 'W', 'S', 'SIR'];
+const routeOn = (r) => (['N', 'Q', 'R', 'W', 'L', 'S'].includes(r) ? '#000' : '#fff');
+
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const on = (sel, ev, fn) => { const el = $(sel); if (el) el.addEventListener(ev, fn); };
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+// The heading's date belongs to the reader, not to whenever the site was last
+// built. Runs before anything else and outside the island, so it is correct
+// even on a page that has no listings on it.
+const todayEl = $('#todaydate');
+if (todayEl) {
+  todayEl.textContent = new Date().toLocaleDateString('en-US',
+    { weekday: 'long', month: 'long', day: 'numeric' });
+}
+
 const root = $('#browse');
 if (root) {
   const scope = JSON.parse(root.dataset.scope || '{}');
   const state = {
     day: null, days: 7, bands: new Set(), cats: new Set(),
-    hoods: new Set(), q: '', view: 'list', limit: PAGE,
+    hoods: new Set(), routes: new Set(), venues: new Set(),
+    stations: new Set(), q: '', view: 'list', limit: PAGE,
   };
   let ALL = [];
+  let STATIONS = [];
+  let PLACES = [];
+  let placeLimit = 12;
+
+  // Places answer WHAT, WHERE and WHICH TRAIN. They cannot answer WHEN -- a
+  // gallery has no start time -- so day, time band and venue are not applied.
+  // Silently ignoring three filters would make the section look stuck, so the
+  // note under the heading names the ones that are doing the work.
+  const PLACE_FILTERS = [
+    ['cats', 'category'], ['hoods', 'neighborhood'],
+    ['routes', 'line'], ['stations', 'station'],
+  ];
+  function placeMatches(p) {
+    if (state.cats.size && !state.cats.has(p.c)) return false;
+    if (state.hoods.size && !(p.h && state.hoods.has(p.h))) return false;
+    if (state.routes.size &&
+        !(p.sw && p.sw.r.some((r) => state.routes.has(r)))) return false;
+    if (state.stations.size && !(p.sw && state.stations.has(p.sw.i))) return false;
+    if (state.q) {
+      const q = state.q.toLowerCase();
+      if (![p.t, p.kl, p.hn, p.bo, p.sw && p.sw.n]
+        .some((s) => (s || '').toLowerCase().includes(q))) return false;
+    }
+    return true;
+  }
+
+  function placeCardHTML(p) {
+    const title = p.u
+      ? `<a href="${esc(p.u)}" rel="noopener">${esc(p.t)}</a>` : esc(p.t);
+    const where = p.hn
+      ? `<a href="/nyc/${esc(p.h)}">${esc(p.hn)}</a>` : esc(p.bo || '');
+    return `<div class="pcard openable" data-id="${esc(p.i)}" tabindex="0"
+      role="button" aria-label="Details for ${esc(p.t)}">
+      <div class="ph" style="background:var(--c-${p.c})">
+        ${p.im ? `<img src="${esc(p.im)}" alt="${esc(p.t)}" loading="lazy"
+             referrerpolicy="no-referrer" decoding="async" />` : ''}
+        <span class="kindtag">${esc(p.kl || p.k)}</span>
+        ${p.im ? '' : `<span class="fb">${esc(p.kl || p.k)}</span>`}
+      </div>
+      <div class="pb">
+        <h3>${title}</h3>
+        <div class="w">${where}${p.sw ? ' · ' + stopHTML(p.sw) : ''}</div>
+      </div></div>`;
+  }
+
+  function renderPlaces() {
+    const sec = $('#placesec');
+    if (!sec || !PLACES.length) return;
+    const hits = PLACES.filter(placeMatches);
+    const active = PLACE_FILTERS.filter(([k]) => state[k].size).map(([, n]) => n);
+    const note = $('#placenote');
+
+    if (!hits.length) {
+      // A section that vanishes is better than one showing places that
+      // contradict the filters -- but say why, or it reads as a bug.
+      sec.classList.remove('hide');
+      $('#places').innerHTML =
+        `<div class="empty">No places match ${active.length
+          ? 'this ' + active.join(' and ') : 'these filters'}.</div>`;
+      if (note) note.textContent = '';
+      $('#moreplaces').classList.add('hide');
+      return;
+    }
+
+    sec.classList.remove('hide');
+    if (note) {
+      note.textContent = active.length
+        ? `${hits.length.toLocaleString()} open near you by ${active.join(' and ')} — not filtered by date or time.`
+        : `${hits.length.toLocaleString()} museums, galleries, cinemas and more.`;
+    }
+    $('#places').innerHTML = hits.slice(0, placeLimit).map(placeCardHTML).join('');
+    const more = $('#moreplaces');
+    more.classList.toggle('hide', hits.length <= placeLimit);
+    if (hits.length > placeLimit) {
+      more.textContent = `Show ${Math.min(12, hits.length - placeLimit)} more of ${hits.length.toLocaleString()}`;
+    }
+  }
+
+  const bullet = (r) => `<span class="bullet${r === 'SIR' ? ' sir' : ''}" ` +
+    `style="background:${ROUTE_COLOR[r] || '#555'};color:${routeOn(r)}">${esc(r)}</span>`;
+  const stopHTML = (sw) => (sw
+    ? `<span class="stop">${sw.r.map(bullet).join('')} ${esc(sw.n)}</span>` : '');
 
   const todayStr = () => {
     const d = new Date();
@@ -49,24 +160,38 @@ if (root) {
   // ---- URL <-> state ----
   function readURL() {
     const p = new URLSearchParams(location.search);
-    state.day = p.get('day');
+    // Today is the default view: the question this site answers is "what is on
+    // tonight", and opening on a seven-day wall of 2,000 rows answers a
+    // question nobody asked. `day=all` is how a widened range survives a
+    // reload -- an absent parameter means "not chosen yet", not "cleared".
+    const day = p.get('day');
+    state.day = day === 'all' ? null : (day || todayStr());
     state.days = Number(p.get('days') || 7);
     state.q = p.get('q') || '';
     state.view = p.get('view') === 'grid' ? 'grid' : 'list';
-    for (const [key, set] of [['band', state.bands], ['cat', state.cats], ['hood', state.hoods]]) {
+    for (const [key, set] of [['band', state.bands], ['cat', state.cats],
+      ['hood', state.hoods], ['route', state.routes], ['venue', state.venues],
+      ['stop', state.stations]]) {
       set.clear();
       (p.get(key) || '').split(',').filter(Boolean).forEach((v) => set.add(v));
     }
   }
   function writeURL() {
     const p = new URLSearchParams();
-    if (state.day) p.set('day', state.day);
+    if (state.day) {
+      if (state.day !== todayStr()) p.set('day', state.day);
+    } else {
+      p.set('day', 'all');
+    }
     if (state.days !== 7) p.set('days', state.days);
     if (state.q) p.set('q', state.q);
     if (state.view !== 'list') p.set('view', state.view);
     if (state.bands.size) p.set('band', [...state.bands].join(','));
     if (state.cats.size) p.set('cat', [...state.cats].join(','));
     if (state.hoods.size) p.set('hood', [...state.hoods].join(','));
+    if (state.routes.size) p.set('route', [...state.routes].join(','));
+    if (state.venues.size) p.set('venue', [...state.venues].join(','));
+    if (state.stations.size) p.set('stop', [...state.stations].join(','));
     const qs = p.toString();
     history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
   }
@@ -79,9 +204,20 @@ if (root) {
     if (state.bands.size && !state.bands.has(e.b)) return false;
     if (state.cats.size && !state.cats.has(e.c)) return false;
     if (state.hoods.size && !(e.h && state.hoods.has(e.h))) return false;
+    // Line and station are ANDed with each other only in the sense that both
+    // must pass; picking the L and then Bedford Av is the same answer as
+    // Bedford Av alone, which is what someone doing it expects.
+    if (state.routes.size &&
+        !(e.sw && e.sw.r.some((r) => state.routes.has(r)))) return false;
+    if (state.stations.size && !(e.sw && state.stations.has(e.sw.i))) return false;
+    if (state.venues.size && !state.venues.has(e.v)) return false;
     if (state.q) {
       const q = state.q.toLowerCase();
-      if (!(e.t.toLowerCase().includes(q) || (e.vn || '').toLowerCase().includes(q))) return false;
+      // Neighbourhood and station are searchable too. "Bushwick" and "Bedford
+      // Av" are how people describe where they want to be, and searching only
+      // titles and venues made both return nothing.
+      const hay = [e.t, e.vn, e.hn, e.bo, e.sc, e.sw && e.sw.n];
+      if (!hay.some((s) => (s || '').toLowerCase().includes(q))) return false;
     }
     return true;
   }
@@ -92,11 +228,13 @@ if (root) {
     const where = [
       e.u ? `<a href="${esc(e.u)}" rel="noopener">${esc(e.vn)}</a>` : esc(e.vn),
       e.hn ? `<a href="/nyc/${esc(e.h)}">${esc(e.hn)}</a>` : esc(e.bo || ''),
+      stopHTML(e.sw),
     ].filter(Boolean).join(' <span aria-hidden="true">·</span> ');
     const title = e.u
       ? `<a href="${esc(e.u)}" rel="noopener">${esc(e.t)}</a>`
       : esc(e.t);
-    return `<div class="row">
+    return `<div class="row openable" data-id="${esc(e.i)}" tabindex="0"
+      role="button" aria-label="Details for ${esc(e.t)}">
       <div class="t">${time || '<span style="color:var(--ink-2)">all day</span>'}</div>
       <div><div class="title">${title}</div><div class="where">${where}</div></div>
       <div class="right">
@@ -115,18 +253,53 @@ if (root) {
     const when = new Date(e.d + 'T12:00:00')
       .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
     const t = fmtTime(e.s);
-    return `<div class="card" style="--accent:var(--c-${e.c})">
+    return `<div class="card openable" data-id="${esc(e.i)}" tabindex="0"
+      role="button" style="--accent:var(--c-${e.c})">
       <div class="when">${when}${t ? ` · ${t}` : ' · all day'}</div>
       <h3>${title}</h3>
       <div class="w">${esc(e.vn)}${e.hn ? ' · ' + esc(e.hn) : ''}</div>
       <div class="foot">
         <span class="tag" style="background:var(--c-${e.c});color:${on}">${esc(CATS[e.c] || e.c)}</span>
+        ${stopHTML(e.sw)}
       </div></div>`;
   }
 
   function activeCount() {
+    // The day is not counted: today is the default, so counting it would show
+    // "1 filter on" to someone who has touched nothing.
     return state.bands.size + state.cats.size + state.hoods.size +
-      (state.q ? 1 : 0) + (state.day ? 1 : 0);
+      state.routes.size + state.venues.size + state.stations.size +
+      (state.q ? 1 : 0);
+  }
+
+  // Live-filter a chip group by its own little search box. Chips carry
+  // data-name so this never has to read rendered text, which includes the
+  // count and would make "5" match half the list.
+  function wireMiniSearch(inputSel, groupSel) {
+    const input = $(inputSel), group = $(groupSel);
+    if (!input || !group) return;
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      $$(`${groupSel} button[data-v]`).forEach((b) =>
+        b.classList.toggle('hide', !!q && !(b.dataset.name || '').includes(q)));
+      // Boroughs with nothing left are hidden; a search that matches opens the
+      // groups it matched, so results are not buried behind a closed summary.
+      $$(`${groupSel} .boro`).forEach((d) => {
+        const any = [...d.querySelectorAll('.ch')].some((b) => !b.classList.contains('hide'));
+        d.classList.toggle('hide', !any);
+        if (q && any) d.open = true;
+      });
+    });
+  }
+
+  // A collapsed borough must advertise that something inside it is on.
+  function markPickedGroups() {
+    $$('#hoods .boro').forEach((d) => {
+      const picked = [...d.querySelectorAll('button[data-v]')]
+        .some((b) => b.getAttribute('aria-pressed') === 'true');
+      d.classList.toggle('haspicked', picked);
+      if (picked) d.open = true;
+    });
   }
 
   function render() {
@@ -175,6 +348,7 @@ if (root) {
     }
     $$('#views button').forEach((b) =>
       b.setAttribute('aria-pressed', String(b.dataset.view === state.view)));
+    renderPlaces();
     writeURL();
   }
 
@@ -207,22 +381,100 @@ if (root) {
   const syncStrip = () => $$('#strip button').forEach((b) =>
     b.setAttribute('aria-pressed', String(b.dataset.day === state.day)));
 
-  function wireChips(sel, set) {
+  // Only the trains that actually serve something in this scope. A route with
+  // no events behind it is a dead control, and on an edition page most of the
+  // system is exactly that.
+  function buildRoutes() {
+    const el = $('#routes');
+    if (!el) return;
+    const seen = new Set();
+    for (const e of ALL) if (e.sw) for (const r of e.sw.r) seen.add(r);
+    const list = ROUTE_ORDER.filter((r) => seen.has(r));
+    if (!list.length) {
+      el.closest('.dbody')?.querySelectorAll('.filterlabel').forEach((n) => {
+        if (n.textContent === 'Near a train') n.remove();
+      });
+      return;
+    }
+    el.innerHTML = list.map((r) =>
+      `<button class="ch" data-v="${esc(r)}" aria-pressed="false"
+         aria-label="${esc(r)} train">${bullet(r)}</button>`).join('');
+  }
+
+  // Every station with something on, with its event count. Built from the data
+  // rather than from the 445-station register, so the list is only ever places
+  // you could actually go tonight.
+  function buildStations() {
+    const el = $('#stations');
+    if (!el) return;
+    const by = new Map();
+    for (const e of ALL) {
+      if (!e.sw) continue;
+      const cur = by.get(e.sw.i) || { i: e.sw.i, n: e.sw.n, r: e.sw.r, c: 0 };
+      cur.c++;
+      by.set(e.sw.i, cur);
+    }
+    STATIONS = [...by.values()].sort((a, b) => b.c - a.c || a.n.localeCompare(b.n));
+    if (!STATIONS.length) { el.innerHTML = ''; return; }
+    // Times Sq-42 St serves twelve routes. Drawn in full they eat the row and
+    // the station's own name ellipsises to "Ti…", which is the one thing the
+    // row exists to say. Four bullets and a remainder.
+    const MAXB = 4;
+    el.innerHTML = STATIONS.map((s) => {
+      const shown = s.r.slice(0, MAXB).map(bullet).join('');
+      const rest = s.r.length > MAXB ? `<span class="more">+${s.r.length - MAXB}</span>` : '';
+      return `<button data-v="${esc(s.i)}" data-name="${esc(s.n.toLowerCase())}"
+         data-routes="${esc(s.r.join(' '))}" aria-pressed="false"
+         title="${esc(s.n)} — ${esc(s.r.join(' '))}">
+         <span class="bullets">${shown}${rest}</span>
+         <span class="lbl">${esc(s.n)}</span><span class="n">${s.c}</span>
+       </button>`;
+    }).join('');
+  }
+
+  // Picking lines narrows the station list to those lines. Scrolling 300
+  // stations to find one on the G is not filtering, it is a haystack.
+  function syncStationList() {
+    const el = $('#stations');
+    if (!el) return;
+    const q = ($('#stationq')?.value || '').trim().toLowerCase();
+    let shown = 0;
+    $$('#stations button').forEach((b) => {
+      const onRoute = !state.routes.size ||
+        (b.dataset.routes || '').split(' ').some((r) => state.routes.has(r));
+      const onName = !q || (b.dataset.name || '').includes(q);
+      const hide = !(onRoute && onName);
+      b.classList.toggle('hide', hide);
+      if (!hide) shown++;
+    });
+    const note = el.querySelector('.empty');
+    if (!shown && !note) {
+      el.insertAdjacentHTML('beforeend',
+        '<div class="empty">No stations match.</div>');
+    } else if (shown && note) {
+      note.remove();
+    }
+  }
+
+  function wireChips(sel, set, after) {
     // A scoped page renders only the chip groups that make sense for it -- an
     // edition has no neighbourhood filter -- so every group is optional.
+    // `.ch` for chip rows, bare buttons for pick lists.
     const el = $(sel);
     if (!el) return;
     el.addEventListener('click', (ev) => {
-      const b = ev.target.closest('.ch');
-      if (!b) return;
+      const b = ev.target.closest('button');
+      if (!b || !b.dataset.v) return;
       const v = b.dataset.v;
       set.has(v) ? set.delete(v) : set.add(v);
       b.setAttribute('aria-pressed', String(set.has(v)));
       state.limit = PAGE;
+      markPickedGroups();
+      if (after) after();
       render();
     });
   }
-  const syncChips = (sel, set) => $$(`${sel} .ch`).forEach((b) =>
+  const syncChips = (sel, set) => $$(`${sel} button[data-v]`).forEach((b) =>
     b.setAttribute('aria-pressed', String(set.has(b.dataset.v))));
 
   // ---- boot ----
@@ -235,12 +487,25 @@ if (root) {
     readURL();
     buildStrip();
     syncStrip();
+    buildRoutes();
+    buildStations();
+    syncChips('#stations', state.stations);
     syncChips('#cats', state.cats);
     syncChips('#bands', state.bands);
     syncChips('#hoods', state.hoods);
+    syncChips('#routes', state.routes);
+    syncChips('#venues', state.venues);
     wireChips('#cats', state.cats);
     wireChips('#bands', state.bands);
     wireChips('#hoods', state.hoods);
+    wireChips('#routes', state.routes, syncStationList);
+    wireChips('#venues', state.venues);
+    wireChips('#stations', state.stations);
+    wireMiniSearch('#hoodq', '#hoods');
+    wireMiniSearch('#venueq', '#venues');
+    on('#stationq', 'input', syncStationList);
+    syncStationList();
+    markPickedGroups();
 
     const q = $('#q');
     if (q) {
@@ -251,26 +516,33 @@ if (root) {
         render();
       });
     }
-    // -- the filter drawer --
-    const drawer = $('#drawer'), scrim = $('#scrim');
+    // -- the filter rail, which is a drawer only on narrow screens --
+    const drawer = $('#filters'), scrim = $('#scrim');
     const setDrawer = (open) => {
       if (!drawer) return;
       drawer.classList.toggle('on', open);
       scrim?.classList.toggle('on', open);
-      drawer.setAttribute('aria-hidden', String(!open));
       document.body.classList.toggle('drawer-open', open);
-      if (open) $('#q')?.focus();
     };
     on('#openfilters', 'click', () => setDrawer(true));
     on('#closefilters', 'click', () => setDrawer(false));
     on('#applyfilters', 'click', () => setDrawer(false));
     on('#scrim', 'click', () => setDrawer(false));
+    // Keyboard parity: the rows are role=button, so they must answer the keys
+    // a button answers.
     document.addEventListener('keydown', (ev) => {
+      if ((ev.key === 'Enter' || ev.key === ' ') && ev.target.classList?.contains('openable')) {
+        ev.preventDefault();
+        const inPlaces = ev.target.closest('#places');
+        const hit = (inPlaces ? PLACES : ALL).find((x) => x.i === ev.target.dataset.id);
+        if (hit) (inPlaces ? openPlace : openEvent)(hit);
+      }
       if (ev.key === 'Escape') setDrawer(false);
-      // `/` to search is worth keeping; here it opens the drawer as well.
+      // `/` jumps to search. It no longer has to open anything -- the box is
+      // on the page.
       if (ev.key === '/' && ev.target.tagName !== 'INPUT') {
         ev.preventDefault();
-        setDrawer(true);
+        $('#q')?.focus();
       }
     });
     on('#more', 'click', () => { state.limit += PAGE; render(); });
@@ -282,12 +554,21 @@ if (root) {
       render();
     });
     on('#clear', 'click', () => {
-      state.day = null; state.q = ''; state.limit = PAGE;
-      [state.bands, state.cats, state.hoods].forEach((s) => s.clear());
+      // Back to the default view, which is today -- not to an empty date range.
+      // "Clear" should land where the page started, or it reads as a bug.
+      state.day = todayStr(); state.q = ''; state.limit = PAGE;
+      [state.bands, state.cats, state.hoods, state.routes, state.venues,
+        state.stations].forEach((s) => s.clear());
       if (q) q.value = '';
+      ['#hoodq', '#venueq', '#stationq'].forEach((s) => {
+        const el = $(s);
+        if (el) { el.value = ''; el.dispatchEvent(new Event('input')); }
+      });
       syncStrip();
-      ['#cats', '#bands', '#hoods'].forEach((s) =>
-        $$(`${s} .ch`).forEach((b) => b.setAttribute('aria-pressed', 'false')));
+      ['#cats', '#bands', '#hoods', '#routes', '#venues', '#stations'].forEach((s) =>
+        $$(`${s} button[data-v]`).forEach((b) => b.setAttribute('aria-pressed', 'false')));
+      syncStationList();
+      markPickedGroups();
       render();
     });
     // The honest answer to indecision, and about twenty lines.
@@ -302,7 +583,39 @@ if (root) {
       box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 
+    on('#moreplaces', 'click', () => { placeLimit += 12; renderPlaces(); });
+
+    // Open the panel from anywhere on a row or card EXCEPT a real link. The
+    // title and venue are still ordinary anchors that go straight to the
+    // source; the rest of the row is the affordance for "tell me more first".
+    const byId = (list, id) => list.find((x) => x.i === id);
+    on('#results', 'click', (ev) => {
+      if (ev.target.closest('a')) return;
+      const el = ev.target.closest('[data-id]');
+      const hit = el && byId(ALL, el.dataset.id);
+      if (hit) openEvent(hit);
+    });
+    on('#places', 'click', (ev) => {
+      if (ev.target.closest('a')) return;
+      const el = ev.target.closest('[data-id]');
+      const hit = el && byId(PLACES, el.dataset.id);
+      if (hit) openPlace(hit);
+    });
+
     render();
     document.documentElement.dataset.browseReady = '1';
+
+    // Places load after the listings and never block them. A visitor who came
+    // to see what is on tonight should not wait on 1,200 museums.
+    const psrc = root.dataset.places;
+    if (psrc) {
+      fetch(psrc).then((r) => r.json()).then((data) => {
+        PLACES = scope.hood ? data.filter((p) => p.h === scope.hood) : data;
+        // Photographed places first: this section is the one place on the page
+        // where an image is doing the work.
+        PLACES.sort((a, b) => (b.im ? 1 : 0) - (a.im ? 1 : 0));
+        renderPlaces();
+      }).catch(() => {});
+    }
   });
 }

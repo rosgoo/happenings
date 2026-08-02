@@ -1,43 +1,95 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { places, PLACE_KINDS, placeColor } from '../../lib/data.js';
+import {
+  places, PLACE_KINDS, placeColor, placeCategory, ROUTE_COLOR, routeOn,
+} from '../../lib/data.js';
 
+// This page used to be a photo wall showing 240 of 1,204 with no way to narrow
+// it -- which by the doorway-page standard the editions are held to, it would
+// not have passed. It is now the deep "what's open" surface: every place, and
+// the filters that make a list that long usable.
 const kinds = [...places.reduce((m, p) => m.set(p.kind, (m.get(p.kind) || 0) + 1), new Map())]
   .map(([slug, count]) => ({ slug, count, label: PLACE_KINDS[slug] || slug }))
   .sort((a, b) => b.count - a.count);
-const withPhoto = places.filter((p) => p.image_url);
-// Photos first: this page is the one surface where an image is the point.
-const ordered = [...withPhoto, ...places.filter((p) => !p.image_url)];
-const shown = ordered.slice(0, 240);
+
+const BOROUGH_ORDER = ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island'];
+const boroughs = BOROUGH_ORDER
+  .map((b) => ({ b, n: places.filter((p) => p.borough === b).length }))
+  .filter((x) => x.n);
+
+const routes = [...new Set(places.flatMap((p) => (p.subway?.[0]?.routes) || []))]
+  .sort((a, b) => (['1', '2', '3', '4', '5', '6', '7'].includes(a) ? 0 : 1) -
+                  (['1', '2', '3', '4', '5', '6', '7'].includes(b) ? 0 : 1) ||
+                  a.localeCompare(b));
+
+const withPhoto = places.filter((p) => p.image_url).length;
+// Photos first: this is the one surface where the image is the point.
+const ordered = [...places.filter((p) => p.image_url),
+                 ...places.filter((p) => !p.image_url)];
 ---
 <Base title="Places to go — happenings"
-      description="Museums, galleries, cinemas, theatres, arcades, escape rooms and more across New York.">
+      description="Museums, galleries, cinemas, theatres, arcades, escape rooms and more across New York. Filter by kind, borough and subway line.">
   <p class="kicker" style="margin-top:26px">New York City</p>
   <h1 class="page">Places to go</h1>
   <p class="lede">Not what's <em>on</em> — what's <em>open</em>.
     {places.length.toLocaleString()} museums, galleries, cinemas, theatres,
     arcades, escape rooms and rinks, from OpenStreetMap.</p>
 
-  <div class="chips" style="margin-top:16px">
-    {kinds.map((k) => (
-      <a class="ch" href={`#${k.slug}`} style={`border-left:8px solid ${placeColor(k.slug)}`}>
-        {k.label} <span style="color:var(--ink-2)">{k.count}</span>
-      </a>
-    ))}
+  <div id="placebrowse" class="placefilters">
+    <input id="pq" type="search" autocomplete="off"
+           placeholder="Search places, neighborhoods, stations…" />
+
+    <div class="filterlabel">Kind</div>
+    <div id="pkinds" class="chips">
+      {kinds.map((k) => (
+        <button class="ch" data-v={k.slug} aria-pressed="false"
+                style={`border-left:8px solid ${placeColor(k.slug)}`}>
+          {k.label} <span style="color:var(--ink-2)">{k.count}</span>
+        </button>
+      ))}
+    </div>
+
+    <div class="filterlabel">Borough</div>
+    <div id="pboros" class="chips">
+      {boroughs.map((x) => (
+        <button class="ch" data-v={x.b} aria-pressed="false">
+          {x.b} <span style="color:var(--ink-2)">{x.n}</span>
+        </button>
+      ))}
+    </div>
+
+    <div class="filterlabel">Near a train</div>
+    <div id="proutes" class="chips routes">
+      {routes.map((r) => (
+        <button class="ch" data-v={r} aria-pressed="false" aria-label={`${r} train`}>
+          <span class={`bullet${r === 'SIR' ? ' sir' : ''}`}
+                style={`background:${ROUTE_COLOR[r] || '#555'};color:${routeOn(r)}`}>{r}</span>
+        </button>
+      ))}
+    </div>
+
+    <div class="count" style="border-top:1px solid var(--paper-3);padding-top:12px;margin-top:14px">
+      <span id="pcount"><b>{places.length.toLocaleString()}</b> places</span>
+      <button class="ch" id="pphoto" aria-pressed="false">With a photo {withPhoto}</button>
+      <button class="ch" id="pclear" style="margin-left:auto">Clear all</button>
+    </div>
   </div>
 
-  <div class="count" style="border-top:2px solid var(--ink);padding-top:14px;margin-top:18px">
-    <span><b>{withPhoto.length}</b> with a photo</span>
-    <span style="color:var(--ink-2)">
-      Photos come from Wikimedia Commons via OpenStreetMap, hotlinked at source
-      and never rehosted. Places without one get their category block — which is
-      the design, not a missing image.
-    </span>
-  </div>
+  <p style="margin-top:10px;color:var(--ink-2);font-size:12.5px">
+    Photos come from Wikimedia Commons via OpenStreetMap, hotlinked at source and
+    never rehosted. Places without one get their category block — which is the
+    design, not a missing image.
+  </p>
 
-  <div class="pcards" style="margin-top:16px">
-    {shown.map((p) => (
-      <div class="pcard" id={p.id}>
+  <div id="pcards" class="pcards" style="margin-top:16px">
+    {ordered.slice(0, 60).map((p) => (
+      <div class="pcard" id={p.id}
+           data-kind={p.kind} data-cat={placeCategory(p.kind)}
+           data-borough={p.borough || ''}
+           data-routes={(p.subway?.[0]?.routes || []).join(' ')}
+           data-photo={p.image_url ? '1' : '0'}
+           data-name={[p.name, p.kind_label, p.neighborhood_name, p.borough,
+                       p.subway?.[0]?.name].filter(Boolean).join(' ').toLowerCase()}>
         <div class="ph" style={`background:${placeColor(p.kind)}`}>
           {p.image_url && <img src={p.image_url} alt={p.name} loading="lazy"
                                referrerpolicy="no-referrer" decoding="async" />}
@@ -50,6 +102,14 @@ const shown = ordered.slice(0, 240);
             {p.neighborhood_name
               ? <a href={`/nyc/${p.neighborhood}`} style="color:var(--ink-2)">{p.neighborhood_name}</a>
               : (p.borough || '')}
+            {p.subway?.[0] && (
+              <> · <span class="stop">
+                {p.subway[0].routes.map((r) => (
+                  <span class={`bullet${r === 'SIR' ? ' sir' : ''}`}
+                        style={`background:${ROUTE_COLOR[r] || '#555'};color:${routeOn(r)}`}>{r}</span>
+                ))} {p.subway[0].name}
+              </span></>
+            )}
           </div>
         </div>
         {p.image_credit && (
@@ -62,9 +122,9 @@ const shown = ordered.slice(0, 240);
       </div>
     ))}
   </div>
-  {ordered.length > shown.length && (
-    <p style="margin-top:14px;color:var(--ink-2)">
-      Showing {shown.length} of {ordered.length}.
-    </p>
-  )}
+  <p style="margin-top:14px"><button class="ch" id="pmore">Show more</button></p>
+
+  <script>
+    import '../../scripts/places.js';
+  </script>
 </Base>

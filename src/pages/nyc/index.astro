@@ -1,28 +1,41 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Browse from '../../components/Browse.astro';
-import { upcoming, meta, categories, neighborhoods, TODAY } from '../../lib/data.js';
+import {
+  upcoming, meta, categories, neighborhoods, venuesWithEvents, TODAY, fmtDay,
+} from '../../lib/data.js';
 
 const cats = categories();
-const hoods = neighborhoods(3).slice(0, 24);
+// Every neighbourhood with anything on, not a top-24 slice -- the list is
+// grouped by borough and searchable now, so its length costs nothing.
+const hoods = neighborhoods(1);
+const venueList = venuesWithEvents(2).slice(0, 200);
 const week = upcoming.filter((e) => e.date_local <= new Date(Date.now() + 6 * 864e5)
   .toISOString().slice(0, 10));
-const noJs = week.slice(0, 60);
-const free = 0; // no MVP source states a price; see /nyc/about
+// The page opens on today, so the server-rendered fallback has to be today too
+// -- otherwise a no-JS visitor sees a week the heading says is one day.
+const todayEvents = upcoming.filter((e) => e.date_local === TODAY);
+const noJs = todayEvents.slice(0, 60);
 ---
 <Base
   title="happenings — what's on in New York"
   description={`${upcoming.length.toLocaleString()} things to do in New York, from public event feeds. Filter by day, time, neighborhood and category.`}>
 
-  <p class="kicker" style="margin-top:26px">New York City</p>
-  <h1 class="page">What's on</h1>
+  <!-- The date is rendered from the BUILD's idea of today and then corrected by
+       the island to the reader's. Baking it alone coupled correctness to build
+       recency: skip a build and the heading confidently names the wrong day
+       while the list below it shows the right one. The build value stays as the
+       no-JS fallback, because a date one build old is still better than none. -->
+  <p class="kicker" style="margin-top:26px">New York City · <span id="todaydate">{fmtDay(TODAY)}</span></p>
+  <h1 class="page">What's on today</h1>
   <p class="lede">
-    <em>{week.length.toLocaleString()}</em> things happening in the next seven days,
-    across <em>{meta.counts.neighborhoods_with_events}</em> neighborhoods —
-    pulled from public feeds, normalized into one index, and linked back to the source.
+    <em>{upcoming.length.toLocaleString()}</em> things to do across
+    <em>{meta.counts.neighborhoods_with_events}</em> neighborhoods —
+    pulled from public feeds, normalized into one index, and linked back to the
+    source. Today's count is in the list below.
   </p>
 
-  <Browse cats={cats} hoods={hoods} noJs={noJs} />
+  <Browse cats={cats} hoods={hoods} venues={venueList} noJs={noJs} />
 
   <h2 class="sec">Browse by neighborhood</h2><div class="rule"></div>
   <div class="tiles">
