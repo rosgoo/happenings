@@ -102,6 +102,30 @@ def build_query(bbox, pairs):
     return QUERY % "\n".join(lines)
 
 
+def load_overrides(cdir):
+    """Per-city corrections to what OSM says about a place.
+
+    OSM is the name of record here, and it is occasionally wrong -- a business
+    gets tagged off a signboard, or by somebody who misheard it. Hand-editing
+    data/ does not fix that, because the next run of this script overwrites the
+    file; the correction has to live where the data is built.
+
+    Keyed by OSM id, which is the one identifier that survives a rename. `was`
+    records the value being corrected: when OSM stops matching it, either
+    somebody fixed it upstream or the place genuinely changed its name, and
+    both want a human rather than a silent overwrite. It warns instead of
+    failing, so a stale entry can never break a build.
+
+    An entry here is a stopgap. The durable fix is an edit to OSM itself, which
+    then makes the entry redundant -- and the `was` mismatch is what tells you
+    the day that happened.
+    """
+    path = os.path.join(cdir, "place-overrides.json")
+    if not os.path.exists(path):
+        return {}
+    return json.load(open(path))
+
+
 def slugify(s, maxlen=70):
     out = []
     for ch in (s or "").lower():
@@ -382,6 +406,7 @@ def main():
     os.makedirs(ddir, exist_ok=True)
     os.makedirs(rdir, exist_ok=True)
     cfg = json.load(open(os.path.join(cdir, "city.json")))
+    overrides = load_overrides(cdir)
 
     raw_path = os.path.join(rdir, "osm-places.json")
     if args.no_fetch and os.path.exists(raw_path):
@@ -402,7 +427,20 @@ def main():
     stats = Counter()
     for el in els:
         t = el.get("tags") or {}
+        osm_id = f"{el.get('type')}/{el.get('id')}"
         name = (t.get("name") or "").strip()
+
+        ov = overrides.get(osm_id)
+        if ov:
+            was = ov.get("was")
+            if was is not None and was != name:
+                print(f"  ! {osm_id}: OSM now says {name!r}, but the override "
+                      f"was written against {was!r} -- recheck "
+                      f"cities/{args.city}/place-overrides.json; upstream may "
+                      f"already be fixed")
+            name = (ov.get("name") or name).strip()
+            stats["overridden"] += 1
+
         if not name:
             stats["unnamed"] += 1
             continue
@@ -444,7 +482,7 @@ def main():
             "wikipedia": t.get("wikipedia"),
             "image_url": None, "image_credit": None, "image_license": None,
             "image_page": None, "image_source": None,
-            "osm_id": f"{el.get('type')}/{el.get('id')}",
+            "osm_id": osm_id,
             **(p.as_dict() if p else {}),
         })
         stats[f"kind:{kind}"] += 1

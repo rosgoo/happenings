@@ -1,0 +1,7 @@
+{
+  "node/6154012685": {
+    "name": "Myss Tic Rooms",
+    "was": "Miss Tic Escape Rooms",
+    "why": "OSM has the business misnamed. Its own site and signage say Myss Tic Rooms -- myssticrooms.com, 794 Union St, Park Slope. Fix pending upstream in OSM."
+  }
+}
