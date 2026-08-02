@@ -42,9 +42,20 @@ const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
     line. <a href="/nyc/about">See what's covered</a>.
   </p>
 
+  <!-- Filters the page it was given rather than fetching anything: all 767
+       stops are already in the HTML, which is what makes the search instant
+       and what keeps the page whole for a crawler with no JavaScript. -->
+  <div class="stopsearch">
+    <input id="sq" type="search" autocomplete="off"
+           placeholder="Find a stop, a line or a neighborhood…"
+           aria-label="Filter stops" aria-describedby="scount" />
+    <span id="scount" class="scount" aria-live="polite"></span>
+  </div>
+
   <div class="lines">
     {lines.map((ln) => (
-      <section class="linecard">
+      <section class="linecard"
+               data-l={`${ln.route} ${ln.name}`.toLowerCase()}>
         <h2 class="linetitle">
           <span class={`bullet${ln.route === 'SIR' ? ' sir' : ''}`}
                 style={`background:${ROUTE_COLOR[ln.route] || '#555'};color:${routeOn(ln.route)}`}>
@@ -52,10 +63,14 @@ const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
           </span>
           <span class="nm">{ln.name}</span>
         </h2>
-        <p class="linemeta">{ln.stations.length} stops · {ln.on.toLocaleString()} upcoming</p>
+        <p class="linemeta"
+           data-full={`${ln.stations.length} stops · ${ln.on.toLocaleString()} upcoming`}>
+          {ln.stations.length} stops · {ln.on.toLocaleString()} upcoming
+        </p>
         <ol class="stops" style={`--line:${ROUTE_COLOR[ln.route] || '#555'}`}>
           {ln.stops.map((s) => (
-            <li class={s.count ? '' : 'off'}>
+            <li class={s.count ? '' : 'off'} data-i={s.id}
+                data-s={s.name.toLowerCase()} data-h={s.hood_name || ''}>
               {/* day=all rather than the site's default of today: this page
                   counts everything upcoming, and a link that says 20 and opens
                   on an empty Tuesday reads as a broken number. */}
@@ -68,10 +83,29 @@ const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
         </ol>
       </section>
     ))}
+    <p id="noline" class="hide nomatch">No stop, line or neighborhood by that
+      name. The index covers the subway and the Staten Island Railway.</p>
   </div>
 </Base>
 
+<script>
+  import '../../scripts/subwaymap.js';
+</script>
+
 <style>
+  .stopsearch {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    margin-top: 22px;
+  }
+  .stopsearch input { flex: 1 1 320px; max-width: 460px; font-size: 14px;
+                      padding: 8px 10px; }
+  .scount { font-size: 12.5px; color: var(--ink-2);
+            font-variant-numeric: tabular-nums; }
+  /* Spans the grid rather than sitting in the first cell, where a one-line
+     message next to twenty-five empty columns reads as a broken layout. */
+  .nomatch { grid-column: 1 / -1; margin: 0; color: var(--ink-2);
+             font-size: 13px; }
+
   /* A grid, not CSS columns. Columns pack tighter, but they run top-to-bottom
      in the first column before starting the second, and on a page this tall
      that means scrolling five screens down and then all the way back up to
@@ -100,6 +134,14 @@ const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
   }
   .stops li .n { margin-left: auto; color: var(--ink-2); font-size: 11px;
                  font-variant-numeric: tabular-nums; flex: none; }
+  /* Why a stop is in the results when its own name does not say so. Global
+     because the search builds this one on demand, and a scoped rule would
+     never reach an element Astro did not render. */
+  .stops li :global(.via) {
+    font-size: 10px; color: var(--ink-2); font-style: italic;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    flex: 0 1 auto; min-width: 0;
+  }
   /* A stop with nothing on stays on the line and says so. */
   .stops li.off, .stops li.off .n { color: var(--ink-2); opacity: .6; }
   .stops a { text-decoration: none; border-bottom: 1px solid var(--paper-3); }
