@@ -337,12 +337,12 @@ def fetch_drupal(src, horizon_days=120):
             ).strftime("%Y-%m-%d")
 
     q = {
-        f"filter[lo][condition][path]": f"{date_field}.value",
-        f"filter[lo][condition][operator]": ">",
-        f"filter[lo][condition][value]": floor,
-        f"filter[hi][condition][path]": f"{date_field}.value",
-        f"filter[hi][condition][operator]": "<",
-        f"filter[hi][condition][value]": ceil,
+        "filter[lo][condition][path]": f"{date_field}.value",
+        "filter[lo][condition][operator]": ">",
+        "filter[lo][condition][value]": floor,
+        "filter[hi][condition][path]": f"{date_field}.value",
+        "filter[hi][condition][operator]": "<",
+        "filter[hi][condition][value]": ceil,
         "sort": f"{date_field}.value",
         "page[limit]": str(src.get("page_size", 50)),
     }

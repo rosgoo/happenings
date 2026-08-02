@@ -1,7 +1,37 @@
 {
+  "nyc-parks-upcoming": {
+    "ok": true,
+    "count": 1706,
+    "fetched_at": "2026-08-02T22:19:54.678996+00:00"
+  },
+  "nyc-squarespace": {
+    "ok": true,
+    "count": 75,
+    "fetched_at": "2026-08-02T22:20:11.158828+00:00"
+  },
+  "nyc-luma": {
+    "ok": true,
+    "count": 124,
+    "fetched_at": "2026-08-02T22:20:30.828265+00:00"
+  },
+  "nyc-ticketmaster": {
+    "ok": true,
+    "count": 4337,
+    "fetched_at": "2026-08-02T22:20:59.136769+00:00"
+  },
   "nyc-bpl": {
     "ok": true,
     "count": 3536,
-    "fetched_at": "2026-08-02T21:42:01.509159+00:00"
+    "fetched_at": "2026-08-02T22:22:10.873396+00:00"
+  },
+  "nyc-wordpress": {
+    "ok": true,
+    "count": 861,
+    "fetched_at": "2026-08-02T22:22:48.684264+00:00"
+  },
+  "nyc-permitted-events": {
+    "ok": true,
+    "count": 31627,
+    "fetched_at": "2026-08-02T22:24:04.817755+00:00"
   }
 }
