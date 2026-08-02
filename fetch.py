@@ -359,7 +359,12 @@ def fetch_drupal(src, horizon_days=120):
         # hand because page 28 blinked is a worse answer than asking again.
         blob = None
         for attempt in range(3):
-            r = http.get_full(url, delay=0.5 + attempt,
+            # 1s between pages, not 0.5. Sixty sequential pages at half a
+            # second made BPL start timing out around page 45 and stop
+            # answering entirely by 61 -- which then took the companion branch
+            # request down with it and left every event unplaceable. Going
+            # slower is what makes the run complete.
+            r = http.get_full(url, delay=1.0 + attempt,
                               accept="application/vnd.api+json,application/json;q=0.9",
                               max_bytes=8_000_000)
             if r["status"] == 200 and r["body"]:
@@ -476,19 +481,38 @@ def _drupal_places(host, cfg):
     return out
 
 
-def _match_place(addresses, name):
-    """Exact, then the part before the comma. No fuzzy matching.
+def _match_place(addresses, name, cfg=None):
+    """Exact after normalisation, in three tries. Never fuzzy.
 
     Event locations are room-qualified -- "Central Library, Info Commons Lab" --
-    and the companion resource carries both room-level and building-level names.
-    Try the full string first so a room with its own address keeps it, then fall
-    back to the building. Anything looser starts inventing locations, which is
-    the line geocode.py already refuses to cross.
+    while the companion resource carries both room-level and building-level
+    names. Try the full string first so a room with its own address keeps it,
+    then the building.
+
+    The third try is the publisher's own naming convention, and it is config
+    rather than code because it is a fact about one source: BPL writes an event
+    at "Saratoga, Meeting Room" whose branch record is titled "Saratoga
+    Library". Verified against the branch list rather than assumed -- Saratoga,
+    Leonard, Rugby and Cypress Hills all resolve this way, while Greenpoint and
+    Red Hook Interim genuinely have no branch record and stay unplaced, which is
+    the correct answer for them.
+
+    Still exact matching, which is the rule geocode.py sets: case folding and a
+    stated suffix are normalisation, not edit distance. Nothing here guesses
+    which building someone meant.
     """
     if not name:
         return None
-    name = name.strip()
-    return addresses.get(name) or addresses.get(name.split(",")[0].strip())
+    stem = name.strip().split(",")[0].strip()
+    tries = [name.strip(), stem]
+    for suffix in (cfg or {}).get("name_suffixes") or []:
+        if not stem.lower().endswith(suffix.strip().lower()):
+            tries.append(stem + suffix)
+    for t in tries:
+        hit = addresses.get(t.lower())
+        if hit:
+            return hit
+    return None
 
 
 def fetch_wordpress(src, horizon_days=120):
@@ -517,9 +541,19 @@ def fetch_wordpress(src, horizon_days=120):
         raise RuntimeError(f"no {path} -- run `python3 posttypes.py` first")
 
     horizon = min(horizon_days, src.get("horizon_days", 90))
+    # A curated `skip` is a decision, not a failure. cityparksfoundation.org
+    # publishes SummerStage and It's My Park across the whole city with no
+    # per-event location in the feed, so every one of its events would inherit
+    # a single wrong point in Central Park. Losing them is honest; placing them
+    # is not, and that is the same call luma.py makes on an event with no GEO.
+    skipped = [v for v in venues if v.get("skip")]
+    venues = [v for v in venues if not v.get("skip")]
     print(f"    {len(venues)} venues · "
           f"{sum(1 for v in venues if v['feed'] == 'tribe')} tribe, "
-          f"{sum(1 for v in venues if v['feed'] == 'ics')} ics")
+          f"{sum(1 for v in venues if v['feed'] == 'ics')} ics"
+          + (f" · {len(skipped)} skipped by hand" if skipped else ""))
+    for v in skipped:
+        print(f"      skip {v['name']}: {v.get('why') or 'no reason recorded'}")
 
     rows, failed = [], 0
     for v in venues:
@@ -558,7 +592,7 @@ def _tribe_rows(v, horizon_days):
         for e in evs:
             venue = e.get("venue") or {}
             out.append({
-                "venue_host": v["host"], "venue_name": v["name"],
+                "venue_host": v["host"], "venue_name": v.get("venue_name") or v["name"],
                 "lat": v.get("lat"), "lon": v.get("lon"),
                 "borough": v.get("borough"),
                 "feed": "tribe",

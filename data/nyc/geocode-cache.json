@@ -1,4 +1,20 @@
 {
+"10 AVENUE between WEST   57 STREET and WEST   58 STREET": null,
+"10 Grand Army Plaza, Brooklyn, NY, 11238": {
+"confidence": 1.0,
+"lat": 40.67392058959161,
+"lon": -73.96891013392103,
+"matched": "Grand Army Plaza",
+"source": "parks-properties"
+},
+"10 Lafayette Avenue, Second Floor, Brooklyn, NY, 11217": {
+"confidence": 0.8,
+"lat": 40.686172,
+"lon": -73.978456,
+"matched": "10 LAFAYETTE AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"10 STREET between 7 AVENUE and 8 AVENUE": null,
 "100% Playground": {
 "confidence": 1.0,
 "lat": 40.64641082258553,
@@ -6,6 +22,24 @@
 "matched": "100% Playground",
 "source": "parks-properties"
 },
+"1000 Utica Ave., Brooklyn, NY, 11203": {
+"confidence": 0.8,
+"lat": 40.648633,
+"lon": -73.930395,
+"matched": "1000 UTICA AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"101 AVENUE between 115 STREET and 113 STREET": null,
+"1044 Eastern Pkwy. at Schenectady Ave., Brooklyn, NY, 11213": {
+"confidence": 0.8,
+"lat": 40.668467,
+"lon": -73.933629,
+"matched": "1044 EASTERN PARKWAY, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"10612 LIVERPOOL STREET, TUSKEGEE AIRMAN WAY between LIVERPOOL STREET and PRINCETON STREET,  PRINCETON STREET between TUSKEGEE AIRMEN WAY and 106 AVENUE,  PRINCETON STREET between 106 AVENUE and 105 AVENUE,  105 AVENUE between PRINCETON STREET and LIVERPOOL STREET,  105 AVENUE between LIVERPOOL STREET and WALTHAM STREET,  WALTHAM STREET between 105 AVENUE and 106 AVENUE,  106 AVENUE between WALTHAM STREET and LIVERPOOL STREET, 10612 LIVERPOOL STREET": null,
+"107 STREET between SUTTER AVENUE and DEAD END STREET": null,
+"108 STREET between 107 AVENUE and 109 AVENUE": null,
 "109 AVENUE Open Street 2026": {
 "confidence": 0.8,
 "lat": 40.679628,
@@ -13,6 +47,163 @@
 "matched": "109 ST MARKS AVENUE, Brooklyn, NY, USA",
 "source": "geosearch"
 },
+"109 STREET between 107 AVENUE and 109 AVENUE": null,
+"112 ROAD between 221 STREET and 223 STREET": null,
+"113 BAXTER STREET, BAXTER STREET between HESTER STREET and CANAL STREET,  BAXTER STREET between CANAL STREET and BAYARD STREET,  BAYARD STREET between BAXTER STREET and MOTT STREET,  MOTT STREET between BAYARD STREET and PARK ROW,  ST JAMES PLACE between WORTH STREET and MADISON STREET,  MADISON STREET between ST JAMES PLACE and CATHERINE STREET,  WORTH STREET between PARK ROW and MULBERRY STREET,  MULBERRY STREET between WORTH STREET and BROOME STREET,  CANAL STREET between MULBERRY STREET and BAXTER STREET,  JAMES STREET between ST JAMES PLACE and MADISON STREET, 113 BAXTER STREET": null,
+"116 ROAD between NASHVILLE BOULEVARD and SPRINGFIELD BOULEVARD": null,
+"116 STREET between ATLANTIC AVENUE and 95 AVENUE": null,
+"117 STREET between 133 AVENUE and 135 AVENUE": null,
+"1197 Sutter Ave. at Crystal St., Brooklyn, NY, 11208": {
+"confidence": 0.8,
+"lat": 40.67271,
+"lon": -73.874035,
+"matched": "1197 SUTTER AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"12143 Flatlands Ave. at New Jersey Ave., Brooklyn, NY, 11207": {
+"confidence": 0.8,
+"lat": 40.653281,
+"lon": -73.88592,
+"matched": "12143 FLATLANDS AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"122- 02 123 STREET,122 02 123 STREET,111 - 14 101 AVENUE, LIBERTY AVENUE between 123 STREET and 111 STREET,  111 STREET between LIBERTY AVENUE and 101 AVENUE": null,
+"123 STREET between LIBERTY AVENUE and 107 AVENUE": null,
+"123 STREET between ROCKAWAY BOULEVARD and SUTTER AVENUE": null,
+"124 STREET between LINDEN BOULEVARD and 115 AVENUE": null,
+"1265 43rd St. at 13th Ave., Brooklyn, NY, 11219": {
+"confidence": 0.8,
+"lat": 40.638886,
+"lon": -73.989012,
+"matched": "1265 43 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"128 Pierrepont Street, Brooklyn, NY, 11201": {
+"confidence": 0.8,
+"lat": 40.694798,
+"lon": -73.992413,
+"matched": "128 PIERREPONT STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"1305 Cortelyou Rd. at Argyle Rd., Brooklyn, NY, 11226": {
+"confidence": 0.8,
+"lat": 40.640791,
+"lon": -73.965971,
+"matched": "1305 CORTELYOU ROAD, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"133 STREET between FOCH BOULEVARD and 116 AVENUE": null,
+"134 STREET between 115 AVENUE and 116 AVENUE": null,
+"134 STREET between ADAM CLAYTON POWELL JR BOULEVARD and FREDERICK DOUGLASS BLVD,  ADAM CLAYTON POWELL JR BOULEVARD between WEST  134 STREET and WEST  135 STREET,  ADAM CLAYTON POWELL JR BOULEVARD between WEST  135 STREET and WEST  136 STREET,  WEST  136 STREET between ADAM CLAYTON POWELL JR BOULEVARD and MALCOLM X BOULEVARD,  MALCOLM X BOULEVARD between WEST  137 STREET and WEST  138 STREET,  MALCOLM X BOULEVARD between WEST  138 STREET and WEST  139 STREET,  MALCOLM X BOULEVARD between WEST  139 STREET and WEST  140 STREET,  MALCOLM X BOULEVARD between WEST  140 STREET and WEST  141 STREET,  MALCOLM X BOULEVARD between WEST  141 STREET and WEST  142 STREET,  WEST  142 STREET between MALCOLM X BOULEVARD and 5 AVENUE,  MALCOLM X BOULEVARD between WEST  136 STREET and WEST  137 STREET,  WEST  134 STREET between FREDERICK DOUGLASS BOULEVARD and ST NICHOLAS AVENUE": null,
+"134TH STREET between ROCKAWAY BOULEVARD and SUTTER AVE": null,
+"139 STREET between LINDEN BOULEVARD and 115 AVENUE": null,
+"14 AVENUE between 49 STREET and 50 STREET": null,
+"148 ROAD between 241 STREET and EDGEWOOD STREET": null,
+"148 STREET between SUTTER AVENUE and 130 AVENUE": null,
+"15 STREET between 2 AVENUE and 3 AVENUE": null,
+"154 STREET between UNION TURNPIKE and 79 AVENUE": null,
+"155 Brooklyn Ave, Brooklyn, NY, 11213": {
+"confidence": 0.8,
+"lat": 40.674511,
+"lon": -73.943896,
+"matched": "155 BROOKLYN AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"158 STREET between 140 AVENUE and 137 AVENUE": null,
+"1580 Rockaway Pkwy. at Ave. J, Brooklyn, NY, 11236": {
+"confidence": 0.8,
+"lat": 40.6422,
+"lon": -73.89954,
+"matched": "1580 ROCKAWAY PARKWAY, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"16 Brighton First Rd. at Brighton Beach Ave., Brooklyn, NY, 11235": {
+"confidence": 0.8,
+"lat": 40.576165,
+"lon": -73.966742,
+"matched": "16 BRIGHTON FIRST ROAD, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"160 E. 5th St. at Ft. Hamilton Pkwy., Brooklyn, NY, 11218": {
+"confidence": 0.8,
+"lat": 40.648737,
+"lon": -73.976786,
+"matched": "160 EAST 5 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"1664 W. 13th St., Brooklyn, NY, 11223": {
+"confidence": 0.8,
+"lat": 40.6057,
+"lon": -73.986231,
+"matched": "1664 WEST 13 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"1702 60th Street, Brooklyn, NY, 11204": {
+"confidence": 0.8,
+"lat": 40.623068,
+"lon": -73.989428,
+"matched": "1702 60 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"174 STREET between 115 AVENUE and 116 AVENUE": null,
+"1743 86th St. at Bay 17th St., Brooklyn, NY, 11214": {
+"confidence": 0.8,
+"lat": 40.606006,
+"lon": -74.005497,
+"matched": "86 BAY 17 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"178 STREET between 90 AV and JAMAICA AV": null,
+"1901 Mermaid Ave. (Near W. 19th St.), Brooklyn, NY, 11224": {
+"confidence": 0.8,
+"lat": 40.576762,
+"lon": -73.986115,
+"matched": "1901 MERMAID AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"191-24 PINEVILLE LANE, PINEVILLE LANE between ADAIR STREET and 193 STREET,  193 STREET between PINEVILLE LANE and SPRINGFIELD BOULEVARD,  SPRINGFIELD BOULEVARD between 193 STREET and 197 STREET, 131-24 SPRINGFIELD BOULEVARD": null,
+"196 STREET between UNION TURNPIKE and 75 AVENUE": null,
+"2 AVENUE between EAST   32 STREET and EAST   33 STREET": null,
+"203 Arlington Ave. at Warwick St., Brooklyn, NY, 11207": {
+"confidence": 0.8,
+"lat": 40.680694,
+"lon": -73.887234,
+"matched": "203 ARLINGTON AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"2030 BATH AVENUE, BATH AVENUE between BAY   25 STREET and BAY PARKWAY, 2030 BATH AVENUE,2030 BATH AVENUE": null,
+"2035 Nostrand Ave., Brooklyn, NY, 11210": {
+"confidence": 0.8,
+"lat": 40.635752,
+"lon": -73.947612,
+"matched": "2035 NOSTRAND AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"2065 Flatbush Ave. at Ave. P, Brooklyn, NY, 11234": {
+"confidence": 0.8,
+"lat": 40.619782,
+"lon": -73.933226,
+"matched": "2065 FLATBUSH AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"2115 Ocean Ave., Brooklyn, NY, 11229": {
+"confidence": 0.8,
+"lat": 40.61025,
+"lon": -73.953109,
+"matched": "2115 OCEAN AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"215 ST between 104 AVE and HOLLIS AVE": null,
+"219 STREET between 135 AVENUE and 136 AVENUE": null,
+"22 Linden Blvd. at Flatbush Ave., Brooklyn, NY, 11226": {
+"confidence": 0.8,
+"lat": 40.651933,
+"lon": -73.958235,
+"matched": "22 LINDEN BOULEVARD, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"221 STREET between 133 AVENUE and MERRICK BOULEVARD": null,
+"23 STREET between 4 AVENUE and 5 AVENUE": null,
 "232 STREET between 115 ROAD and 116 AVENUE": {
 "confidence": 0.8,
 "lat": 40.693745,
@@ -20,6 +211,69 @@
 "matched": "115-115 232 STREET, Cambria Heights, NY, USA",
 "source": "geosearch"
 },
+"235 WEST   44 STREET between 8 AVENUE and BROADWAY": null,
+"2385 Ralph Ave (near Ave N), Brooklyn, NY, 11234": {
+"confidence": 0.8,
+"lat": 40.619849,
+"lon": -73.916979,
+"matched": "2385 RALPH AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"240 Division Ave. at Marcy Ave., Brooklyn, NY, 11211": {
+"confidence": 0.8,
+"lat": 40.706926,
+"lon": -73.957522,
+"matched": "240 DIVISION AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"246 STREET between 82 AVENUE and 83 AVENUE": null,
+"25 Fourth Ave. at Pacific St., Brooklyn, NY, 11217": {
+"confidence": 0.8,
+"lat": 40.683481,
+"lon": -73.978558,
+"matched": "25 FOURTH AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"252 STREET between 87 AVENUE and 87 ROAD": null,
+"2525 Coney Island Ave. at Ave. V, Brooklyn, NY, 11223": {
+"confidence": 0.8,
+"lat": 40.595246,
+"lon": -73.960607,
+"matched": "2525 CONEY IS AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"2602 Bath Avenue at 26th Ave, Brooklyn, NY, 11214": {
+"confidence": 0.8,
+"lat": 40.562228,
+"lon": -74.132473,
+"matched": "26 D & T DIMARTINIS AVENUE, Staten Island, NY, USA",
+"source": "geosearch"
+},
+"263 MARCY AVENUE,263 MARCY AVENUE, HEWES STREET between MARCY AVENUE and HARRISON AVENUE,  HARRISON AVENUE between HEWES STREET and BARTLETT STREET,  BARTLETT STREET between HARRISON AVENUE and THROOP AVENUE,  THROOP AVENUE between BARTLETT STREET and THORNTON STREET, 115 THROOP AVENUE": null,
+"2636 E. 14th St. at Ave. Z, Brooklyn, NY, 11235": {
+"confidence": 0.8,
+"lat": 40.587009,
+"lon": -73.955431,
+"matched": "2636 EAST 14 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"27 STREET between DITMARS BOULEVARD and 21 AVENUE,  CRESCENT STREET between DITMARS BOULEVARD and 21 AVENUE, 21-21 CRESCENT STREET, 21 AVENUE between 27 STREET and CRESCENT STREET,  DITMARS BOULEVARD between 19 STREET and SHORE BOULEVARD,  19 STREET between 23 AVENUE and DITMARS BOULEVARD": null,
+"27109 80 AVENUE,27109 80 AVENUE, 271 STREET between 79 AVENUE and 80 AVENUE,  79 AVENUE between 271 STREET and 259 STREET, 259-16 79 AVENUE": null,
+"2808 Gerritsen Ave., Brooklyn, NY, 11229": {
+"confidence": 0.8,
+"lat": 40.591418,
+"lon": -73.92401,
+"matched": "2808 GERRITSEN AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"286 Cadman Plaza West, Brooklyn, NY, 11201": {
+"confidence": 0.8,
+"lat": 40.695753,
+"lon": -73.991452,
+"matched": "286 CADMAN PLAZA WEST, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"29 STREET between 4 AVENUE and 5 AVENUE": null,
 "3  AVENUE between MARINE AVENUE and 82 STREET": {
 "confidence": 0.8,
 "lat": 40.620339,
@@ -34,11 +288,30 @@
 "matched": "82-03 ST JAMES AVENUE, Elmhurst, NY, USA",
 "source": "geosearch"
 },
+"303 Ave. X at West. 2nd St., Brooklyn, NY, 11223": {
+"confidence": 0.8,
+"lat": 40.590551,
+"lon": -73.97181,
+"matched": "303 AVENUE X, Brooklyn, NY, USA",
+"source": "geosearch"
+},
 "31 AVENUE Open Street 2026": {
 "confidence": 0.8,
 "lat": 40.680568,
 "lon": -73.976205,
 "matched": "31 ST MARK'S AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"31 STREET between 5 AVENUE and 4 AVENUE": null,
+"32 AVENUE between 146 STREET and 147 PLACE": null,
+"34 AVENUE between 69 STREET and JUNCTION BOULEVARD,  34 AVENUE between 69 STREET and JUNCTION BOULEVARD,  34 AVENUE between 77 STREET and 78 STREET": null,
+"34 AVENUE between 77 STREET and 78 STREET": null,
+"34 AVENUE between 93 STREET and 94 STREET": null,
+"340 Bushwick Avenue, Brooklyn, NY, 11206": {
+"confidence": 0.8,
+"lat": 40.704562,
+"lon": -73.939639,
+"matched": "340 BUSHWICK AVENUE, Brooklyn, NY, USA",
 "source": "geosearch"
 },
 "35 AVENUE between 82 STREET and 81 STREET": {
@@ -48,6 +321,36 @@
 "matched": "82-35 ST JAMES AVENUE, Elmhurst, NY, USA",
 "source": "geosearch"
 },
+"360 Irving Ave. (at Woodbine St.), Brooklyn, NY, 11237": {
+"confidence": 0.8,
+"lat": 40.697485,
+"lon": -73.912216,
+"matched": "360 IRVING AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"361 Lewis Ave. at Macon St., Brooklyn, NY, 11233": {
+"confidence": 0.8,
+"lat": 40.683011,
+"lon": -73.934786,
+"matched": "361 LEWIS AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"3650 Nostrand Ave. (near Ave. W), Brooklyn, NY, 11229": {
+"confidence": 0.8,
+"lat": 40.594878,
+"lon": -73.941175,
+"matched": "3650 NOSTRAND AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"380 Washington Ave., Brooklyn, NY, 11238": {
+"confidence": 0.8,
+"lat": 40.687384,
+"lon": -73.966029,
+"matched": "380 WASHINGTON AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"4 STREET between 5 AVENUE and DEAD END": null,
+"41 AVENUE between 80 STREET and 81 STREET": null,
 "41 STREET between 6 AVENUE and 5 AVENUE": {
 "confidence": 0.8,
 "lat": 40.72431,
@@ -55,11 +358,207 @@
 "matched": "6 ST & AVENUE B COMM GARDEN, New York, NY, USA",
 "source": "geosearch"
 },
+"418 EAST   45 STREET, EAST   45 STREET between CHURCH AVENUE and SNYDER AVENUE,  SNYDER AVENUE between EAST   45 STREET and EAST   38 STREET,  EAST   38 STREET between SNYDER AVENUE and LINDEN BOULEVARD,  LINDEN BOULEVARD between EAST   38 STREET and UTICA AVENUE,  UTICA AVENUE between LINDEN BOULEVARD and CHURCH AVENUE,  CHURCH AVENUE between UTICA AVENUE and EAST   45 STREET": null,
+"4207 18th Avenue, Brooklyn, NY, 11218": {
+"confidence": 0.8,
+"lat": 40.631258,
+"lon": -73.975423,
+"matched": "4207 18 AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"431 6th Ave, Brooklyn, NY, 11215": {
+"confidence": 0.8,
+"lat": 40.668222,
+"lon": -73.98344,
+"matched": "431 6 AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"44 STREET between 8 AVENUE and 7 AVENUE": null,
+"448 COLLEGE AVENUE, COLLEGE AVENUE between EAST  146 STREET and EAST  148 STREET,  EAST  148 STREET between COLLEGE AVENUE and COURTLANDT AVENUE,  COURTLANDT AVENUE between EAST  148 STREET and EAST  149 STREET,  EAST  149 STREET between COURTLANDT AVENUE and MORRIS AVENUE,  MORRIS AVENUE between EAST  149 STREET and EAST  148 STREET,  EAST  148 STREET between MORRIS AVENUE and COLLEGE AVENUE,  COLLEGE AVENUE between EAST  148 STREET and EAST  146 STREET, 448 COLLEGE AVENUE,349 EAST  149 STREET,234 EAST  149 STREET": null,
+"48 STREET between 4 AVENUE and 3 AVENUE": null,
+"49 STREET between 4 AVENUE and 3 AVENUE": null,
+"496 Franklin Avenue, Brooklyn, NY, 11238": {
+"confidence": 0.8,
+"lat": 40.681827,
+"lon": -73.956174,
+"matched": "496 FRANKLIN AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"50 STREET between 4 AVENUE and 3 AVENUE": null,
+"508 WEST   37 STREET, WEST   37 STREET between 10 AVENUE and 11 AVENUE": null,
+"5108 Fourth Avenue, Brooklyn, NY, 11220": {
+"confidence": 0.8,
+"lat": 40.645916,
+"lon": -74.013619,
+"matched": "5108 FOURTH AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"53 STREET between 5 AVENUE and 4 AVENUE": null,
+"54 STREET between 4 AVENUE and 5 AVENUE": null,
+"56 ROAD between 61 STREET and 64 STREET,  61 STREET between 56 ROAD and 56 AVENUE,  56 AVENUE between 61 STREET and 64 STREET,  64 STREET between 56 ROAD and 56 AVENUE,  56 ROAD between 61 STREET and 64 STREET": null,
+"560 New York Ave. at Maple St., Brooklyn, NY, 11225": {
+"confidence": 0.8,
+"lat": 40.661212,
+"lon": -73.948136,
+"matched": "560 NEW YORK AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"564 GRANT AVENUE, GRANT AVENUE between GLENMORE AVENUE and PITKIN AVENUE,  PITKIN AVENUE between GRANT AVENUE and RUBY STREET,  PITKIN AVENUE between RUBY STREET and 78 STREET,  78 STREET between PITKIN AVENUE and 101 AVENUE,  101 AVENUE between 78 STREET and DREW STREET,  101 AVENUE between DREW STREET and LIBERTY AVENUE,  LIBERTY AVENUE between 101 AVENUE and GRANT AVENUE,  GRANT AVENUE between LIBERTY AVENUE and GLENMORE AVENUE, 564 GRANT AVENUE": null,
+"581 Mother Gaston Boulevard, Brooklyn, NY, 11212": {
+"confidence": 0.8,
+"lat": 40.664469,
+"lon": -73.905206,
+"matched": "581 MOTHER GASTON BOULEVARD, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"5902 23rd Ave., Brooklyn, NY, 11204": {
+"confidence": 0.8,
+"lat": 40.61592,
+"lon": -73.976045,
+"matched": "5902 23 AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"6 AVENUE between WEST   34 STREET and WEST   42 STREET": null,
+"60 STREET between 3 AVENUE and 4 AVENUE": null,
+"61 Glenmore Ave. at Watkins St., Brooklyn, NY, 11212": {
+"confidence": 0.8,
+"lat": 40.671541,
+"lon": -73.908605,
+"matched": "61 GLENMORE AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"6101 BROADWAY, BROADWAY between 61 STREET and 62 STREET,  35 AVENUE between 62 STREET and 75 STREET,  75 STREET between 35 AVENUE and 37 ROAD,  37 ROAD between 75 STREET and 74 STREET,  74 STREET between 37 ROAD and 35 AVENUE,  35 AVENUE between 74 STREET and 62 STREET,  BROADWAY between 62 STREET and 61 STREET, 61-01 BROADWAY between 61 STREET and 62 STREET": null,
+"617 DeKalb Ave. at Nostrand Ave., Brooklyn, NY, 11216": {
+"confidence": 0.8,
+"lat": 40.691622,
+"lon": -73.951285,
+"matched": "617 DEKALB AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"62 STREET between 3 AVENUE and 2 AVENUE": null,
+"665 New Lots Avenue at Barbey St., Brooklyn, NY, 11207": {
+"confidence": 0.8,
+"lat": 40.665173,
+"lon": -73.886031,
+"matched": "665 NEW LOTS AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"67 PLACE between OTTO ROAD and 70 AVENUE": null,
+"68 STREET between 16 AVENUE and NEW UTRECHT AVENUE": null,
+"6802 Fort Hamilton Pkwy (at 68th St.), Brooklyn, NY, 11219": {
+"confidence": 0.8,
+"lat": 40.629223,
+"lon": -74.011882,
+"matched": "6802 FORT HAMILTON PARKWAY, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"69 ST between 37 AVE and 35 AVE,  37 AVE between 69 ST and 87 ST,  87 STREET  between 37 AVE and 35 AVE": null,
+"69 STREET between NORTHERN BLVD and 35 AVENUE,  NORTHERN BOULEVARD between 69 STREET and 87 STREET,  87 STREET between NORTHERN BOULEVARD and 32 AVENUE,  NORTHERN BOULEVARD between 85 STREET and 86 STREET": null,
+"69TH ST between 37 AVE and 35 AVE,  37 AVENUE between 69 STREET and 87 STREET,  87 STREET  between 37 AVE and 35 AVE,  37 AVENUE between 86 STREET and 87 STREET": null,
+"7 AVENUE between WEST   49 STREET and WEST   53 STREET,  WEST   49 STREET between 7 AVENUE and 12 AVENUE,  12 AVENUE between WEST   49 STREET and 11 AVENUE,  WEST ST between 12TH and LIBERTY STREET,  LIBERTY ST between WEST ST and S END AVE,  LIBERTY between WEST ST and S END AVE": null,
+"70 STREET between 13 AVENUE and 14 AVENUE": null,
 "71st Avenue Plaza": {
 "confidence": 0.8,
 "lat": 40.635206,
 "lon": -73.96258,
 "matched": "10 NEWKIRK AVENUE PLAZA, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"7223 Ridge Blvd. at 73rd St., Brooklyn, NY, 11209": {
+"confidence": 0.8,
+"lat": 40.633628,
+"lon": -74.029532,
+"matched": "7223 RIDGE BOULEVARD, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"76 STREET between 97 AVENUE and 101 AVENUE": null,
+"78 STREET between MYRTLE AVENUE and 78 AVENUE": null,
+"79 STREET between 78 AVENUE and 77 AVENUE": null,
+"79 STREET between NORTHERN BOULEVARD and 34 AVENUE": null,
+"790 Bushwick Ave. at DeKalb Ave., Brooklyn, NY, 11221": {
+"confidence": 0.8,
+"lat": 40.694826,
+"lon": -73.9284,
+"matched": "790 BUSHWICK AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"8 AVENUE between 66 STREET and 68 STREET,  8 AVENUE between 66 STREET and 43 STREET,  8 AVENUE between 43 STREET and 41 STREET": null,
+"8 AVENUE between WEST  155 STREET and WEST  154 STREET": null,
+"8 Thomas S. Boyland St. at Macon St., Brooklyn, NY, 11233": {
+"confidence": 0.8,
+"lat": 40.684809,
+"lon": -73.91516,
+"matched": "8 THOMAS S BOYLAND STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"80 STREET between SUTTER AVENUE and PITKIN AVENUE": null,
+"81 Devoe St. at Leonard St., Brooklyn, NY, 11211": {
+"confidence": 0.8,
+"lat": 40.713657,
+"lon": -73.947946,
+"matched": "81 DEVOE STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"8202 13th Ave. (@ 82nd St.), Brooklyn, NY, 11228": {
+"confidence": 0.8,
+"lat": 40.616328,
+"lon": -74.012002,
+"matched": "8202 13 AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"825 7 AVENUE, 7 AVENUE between WEST   53 STREET and WEST   54 STREET,  WEST   53 STREET between 7 AVENUE and 6 AVENUE,  6 AVENUE between WEST   53 STREET and WEST   54 STREET,  WEST   54 STREET between 6 AVENUE and 7 AVENUE, 825 7 AVENUE,825 7 AVENUE": null,
+"85 STREET between BAY   16 STREET and 18 AVENUE": null,
+"850 E. 59th St. at Paerdegat Ave. South, Brooklyn, NY, 11234": {
+"confidence": 0.8,
+"lat": 40.632643,
+"lon": -73.919985,
+"matched": "850 EAST 59 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"87 STREET between JAMAICA AVENUE and 85TH ROAD": null,
+"88 STREET between NARROWS AVENUE and COLONIAL ROAD": null,
+"9 Adams Street (between John and Plymouth), Brooklyn, NY, 11201": {
+"confidence": 0.8,
+"lat": 40.69732,
+"lon": -73.97937,
+"matched": "JOHN BARRY PARK AND PLAYGROUND, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"90 STREET between 165 AVENUE and 164 AVENUE": null,
+"93 Saint Edwards Street, Brooklyn, NY, 11205": {
+"confidence": 0.8,
+"lat": 40.69449,
+"lon": -73.977728,
+"matched": "93 ST EDWARD'S STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"9424 Fourth Ave., Brooklyn, NY, 11209": {
+"confidence": 0.8,
+"lat": 40.616417,
+"lon": -74.031393,
+"matched": "9424 FOURTH AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"9612 Church Ave, Brooklyn, NY, 11212": {
+"confidence": 0.8,
+"lat": 40.655713,
+"lon": -73.914943,
+"matched": "9612 CHURCH AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"97 STREET between 3 AVENUE and 4 AVENUE": null,
+"9727 Seaview Ave. at E. 98th St. near Rockaway Pkwy., Brooklyn, NY, 11236": {
+"confidence": 0.8,
+"lat": 40.634499,
+"lon": -73.889331,
+"matched": "9727 SEAVIEW AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"975 East 16th St. at Avenue J, Brooklyn, NY, 11230": {
+"confidence": 0.8,
+"lat": 40.625904,
+"lon": -73.960272,
+"matched": "975 EAST 16 STREET, Brooklyn, NY, USA",
 "source": "geosearch"
 },
 "A Philip Randolph Square": {
@@ -70,6 +569,11 @@
 "source": "parks-properties"
 },
 "A.R.R.O.W. REC CENTER": null,
+"ALBANY AVENUE between FARRAGUT ROAD and FOSTER AVENUE": null,
+"ALLERTON AVENUE between RADCLIFF AVENUE and COLDEN AVENUE,  ALLERTON AVENUE between RADCLIFF AVENUE and LACONIA AVENUE,  ALLERTON AVENUE between LACONIA AVENUE and LURTING AVENUE": null,
+"ARLINGTON AVENUE between CLEVELAND STREET and ELTON STREET": null,
+"AUDUBON AVENUE between WEST  166 STREET and WEST  167 STREET": null,
+"AVENUE OF AMERICAS between CARMINE STREET and WEST    3 STREET": null,
 "Abe Lebewohl Triangle": {
 "confidence": 1.0,
 "lat": 40.73007547516475,
@@ -270,6 +774,11 @@
 "matched": "3 AVENUE C, Brooklyn, NY, USA",
 "source": "geosearch"
 },
+"BABBAGE ST between JAMAICA AVE and HILLSIDE AVE": null,
+"BARBEY STREET between PITKIN AVENUE and BELMONT AVENUE": null,
+"BARKER AVENUE between BRITTON STREET and ALLERTON AVENUE": null,
+"BEACH   56 STREET between BEACH CHANNEL DRIVE and ARVERNE BOULEVARD": null,
+"BEACH  122 STREET between BEACH CHANNEL DRIVE and NEWPORT AVENUE": null,
 "BEACH  123 STREET between ROCKAWAY BEACH BOULEVARD and OCEAN PROMENADE": {
 "confidence": 0.8,
 "lat": 40.59555,
@@ -284,6 +793,23 @@
 "matched": "Haven Avenue",
 "source": "parks-properties"
 },
+"BEAVER STREET between FAYETTE STREET and ELLERY STREET": null,
+"BEDFORD AVENUE between UNION STREET and PRESIDENT STREET": null,
+"BELMONT AVENUE between ASHFORD STREET and CLEVELAND STREET": null,
+"BERGEN STREET between BEDFORD AVENUE and FRANKLIN AVENUE": null,
+"BERGEN STREET between FRANKLIN AVENUE and CLASSON AVENUE": null,
+"BERGEN STREET between THOMAS BOYLAND STREET and ROCKAWAY AVENUE": null,
+"BEVY COURT between EVERETT AVENUE and DEVON AVENUE": null,
+"BLAINE COURT between BEMENT AVENUE and NORTH BURGHER AVENUE": null,
+"BLAKE AVENUE between THOMAS S BOYLAND STREET and BRISTOL STREET": null,
+"BLAKE AVENUE between UNION STREET and TAPSCOTT STREET": null,
+"BLEECKER STREET between CHRISTOPHER STREET and BANK STREET": null,
+"BLEECKER STREET between LEROY STREET and CARMINE STREET": null,
+"BOGOTA STREET between TRAVIS AVENUE and DEAD END": null,
+"BOND STREET between LAFAYETTE STREET and BOWERY": null,
+"BOWNE STREET between POPLAR AVENUE and QUINCE AVENUE": null,
+"BRISTOL STREET between LIVONIA AVENUE and RIVERDALE AVENUE": null,
+"BRISTOL STREET between SUTTER AVENUE and PITKIN AVENUE": null,
 "BROADWAY between 72 STREET and 74 STREET,  BROADWAY between 72 STREET and 74 STREET,  BROADWAY between 73 STREET and 74 STREET": {
 "confidence": 0.8,
 "lat": 40.687772,
@@ -291,6 +817,13 @@
 "matched": "72 ST OF ARTS AND CULTURE, Brooklyn, NY, USA",
 "source": "geosearch"
 },
+"BROADWAY between BLEECKER STREET and EAST HOUSTON STREET": null,
+"BROADWAY between DYCKMAN STREET and CUMMING STREET": null,
+"BROADWAY between PRINCE STREET and EAST HOUSTON STREET": null,
+"BROADWAY between WEST  113 STREET and WEST  116 STREET": null,
+"BROADWAY between WEST  120 STREET and WEST  116 STREET,  WEST  121 STREET between BROADWAY and AMSTERDAM AVENUE,  AMSTERDAM AVENUE between WEST  120 STREET and WEST  121 STREET,  WEST  116 STREET between BROADWAY and RIVERSIDE DRIVE,  MANHATTAN AVENUE between WEST  110 STREET and WEST  109 STREET,  CLAREMONT AVENUE between WEST  119 STREET and WEST  116 STREET": null,
+"BROOK AVENUE between EAST  142 STREET and EAST  143 STREET": null,
+"BUFFALO AVENUE between STERLING PLACE and PARK PLACE": null,
 "Bailey Playground": {
 "confidence": 1.0,
 "lat": 40.88342863514099,
@@ -574,6 +1107,7 @@
 "matched": "Bushwick Playground",
 "source": "parks-properties"
 },
+"CARROLL STREET between SMITH STREET and COURT STREET": null,
 "CC Moore Homestead Playground": {
 "confidence": 1.0,
 "lat": 40.742113758194556,
@@ -581,6 +1115,15 @@
 "matched": "Moore Homestead Playground",
 "source": "parks-properties"
 },
+"CHESTER STREET between LIVONIA AVENUE and DUMONT AVENUE": null,
+"CLARKSON AVENUE between EAST   37 STREET and EAST   38 STREET": null,
+"CLEVELAND STREET between SUTTER AVENUE and BLAKE AVENUE": null,
+"COMMONWEALTH AVENUE between LAFAYETTE AVENUE and SEWARD AVENUE": null,
+"CORTELYOU ROAD between RUGBY ROAD and ARGYLE ROAD": null,
+"COURTLANDT AVENUE between EAST  149 STREET and EAST  150 STREET": null,
+"COURTLANDT AVENUE between EAST  162 STREET and EAST  161 STREET": null,
+"COVERT STREET between KNICKERBOCKER AVENUE and WILSON AVENUE": null,
+"CROSS BRONX EXPRESSWAY between DEWEY AVENUE and EAST TREMONT AVENUE": null,
 "Cadman Plaza Park": {
 "confidence": 1.0,
 "lat": 40.69864803921748,
@@ -952,6 +1495,14 @@
 "matched": "Cypress Hills Playground",
 "source": "parks-properties"
 },
+"DECATUR STREET between EVERGREEN AVENUE and CENTRAL AVENUE": null,
+"DECATUR STREET between PATCHEN AVENUE and RALPH AVENUE": null,
+"DECATUR STREET between THROOP AVENUE and ALBANY AVENUE": null,
+"DECATUR STREET between THROOP AVENUE and TOMPKINS AVENUE": null,
+"DESBROSSES STREET between HUDSON STREET and GREENWICH STREET": null,
+"DILLON STREET between CLAUDE AVENUE and MATHIAS AVENUE": null,
+"DITMAS AVENUE between EAST   21 STREET and OCEAN AVENUE": null,
+"DUPONT STREET between MANHATTAN AVENUE and MCGUINESS BOULEVARD": null,
 "Dag Hammarskjold Plaza": {
 "confidence": 1.0,
 "lat": 40.75230752380733,
@@ -1100,6 +1651,10 @@
 "matched": "Dyker Beach Park",
 "source": "parks-properties"
 },
+"EAST    4 STREET between BOWERY and SECOND AVENUE": null,
+"EAST    6 STREET between FDR DRIVE and AVENUE D": null,
+"EAST    8 STREET between AVENUE C and AVENUE D": null,
+"EAST   10 STREET between FIRST AVENUE and SECOND AVENUE": null,
 "EAST   17 STREET between BROADWAY and PARK AVENUE SOUTH": {
 "confidence": 0.8,
 "lat": 40.737597,
@@ -1107,6 +1662,56 @@
 "matched": "17 EAST 17 STREET, New York, NY, USA",
 "source": "geosearch"
 },
+"EAST   19 STREET between CHURCH AVENUE and DEAD END": null,
+"EAST   31 STREET between CHURCH AVENUE and SNYDER AVENUE": null,
+"EAST   31 STREET between MADISON AVENUE and FIFTH AVENUE": null,
+"EAST   32 STREET between CLARENDON ROAD and AVENUE D": null,
+"EAST   32 STREET between SNYDER AVENUE and TILDEN AVENUE": null,
+"EAST   34 STREET between AVENUE D and CLARENDON ROAD": null,
+"EAST   37 STREET between AVENUE D and CLARENDON ROAD": null,
+"EAST   37 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST   38 STREET between 5 AVENUE and PARK AVENUE,  MADISON AVENUE between EAST   38 STREET and EAST   27 STREET,  EAST   27 STREET between MADISON AVENUE and 5 AVENUE,  EAST   37 STREET between 5 AVENUE and MADISON AVENUE,  EAST   27 STREET between MADISON AVENUE and PARK AVENUE SOUTH,  MADISON AVENUE between EAST   28 STREET and EAST   29 STREET": null,
+"EAST   38 STREET between CORTELYOU ROAD and CLARENDON ROAD": null,
+"EAST   38 STREET between GLENWOOD ROAD and AVENUE H": null,
+"EAST   40 STREET between CORTELYOU ROAD and CLARENDON ROAD": null,
+"EAST   42 STREET between LEXINGTON AVENUE and PARK AVENUE": null,
+"EAST   42 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST   43 STREET between CLARENDON ROAD and CORTELYOU ROAD": null,
+"EAST   45 STREET between AVENUE H and AVENUE I": null,
+"EAST   46 STREET between AVENUE D and CLARENDON ROAD": null,
+"EAST   48 STREET between FARRAGUT ROAD and FOSTER AVENUE": null,
+"EAST   48 STREET between GLENWOOD ROAD and AVENUE H": null,
+"EAST   51 STREET between TILDEN AVENUE and BEVERLY ROAD": null,
+"EAST   52 STREET between 5 AVENUE and AVENUE OF THE AMERICAS": null,
+"EAST   52 STREET between AVENUE K and AVENUE L": null,
+"EAST   55 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST   58 STREET between AVENUE T and AVENUE U": null,
+"EAST   59 STREET between CHURCH AVENUE and SNYDER AVENUE": null,
+"EAST   70 STREET between AVENUE T and AVENUE N": null,
+"EAST   70 STREET between AVENUE V and AVENUE W": null,
+"EAST   74 STREET between AVENUE U and AVENUE T": null,
+"EAST   82 STREET between 1 AVENUE and YORK AVENUE": null,
+"EAST   84 STREET between FIFTH AVENUE and MADISON AVENUE": null,
+"EAST   86 STREET between RALPH AVENUE and AVENUE B": null,
+"EAST   88 STREET between AVENUE J and FLATLANDS AVENUE": null,
+"EAST   93 STREET between WILLMOHR STREET and KINGS HIGHWAY": null,
+"EAST   99 STREET between FOSTER AVENUE and FARRAGUT ROAD": null,
+"EAST  104 STREET between THIRD AVENUE and SECOND AVENUE": null,
+"EAST  105 STREET between FIRST AVENUE and FDR DRIVE": null,
+"EAST  112 STREET between PARK AVENUE and MADISON AVENUE": null,
+"EAST  115 STREET between SECOND AVENUE and THIRD AVENUE": null,
+"EAST  117 STREET between PLEASANT AVENUE and FIRST AVENUE": null,
+"EAST  121 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST  123 STREET between 2 AVENUE and 3 AVENUE": null,
+"EAST  124 STREET between MADISON AVENUE and PARK AVENUE": null,
+"EAST  124 STREET between PARK AVENUE and MADISON AVENUE": null,
+"EAST  125 STREET between PARK AVENUE and LEXINGTON AVENUE": null,
+"EAST  149 STREET between MORRIS AVENUE and PARK AVENUE": null,
+"EAST  179 STREET between MAPES AVENUE and PROSPECT AVENUE": null,
+"EAST  181 STREET between MORRIS AVENUE and WALTON AVENUE": null,
+"EAST  183 STREET between PROSPECT AVENUE and SOUTHERN BOULEVARD": null,
+"EAST  192 STREET between GRAND CONCOURSE and VALENTINE AVENUE": null,
+"EAST  218 STREET between BRONXWOOD AVENUE and BARNES AVENUE": null,
 "EAST 115 STREET Open Street 2026": {
 "confidence": 0.8,
 "lat": 40.58004,
@@ -1114,6 +1719,13 @@
 "matched": "115 JAFFREY STREET, Brooklyn, NY, USA",
 "source": "geosearch"
 },
+"EAST BURNSIDE AVENUE between MORRIS AVENUE and WALTON AVENUE": null,
+"EAST FORDHAM ROAD between JEROME AVENUE and WASHINGTON AVENUE": null,
+"EDGECOMBE AVENUE between WEST  135 STREET and WEST  136 STREET,  WEST  136 STREET between EDGECOMBE AVENUE and FREDERICK DOUGLASS BOULEVARD,  WEST  135 STREET between EDGECOMB AVENUE and FREDERICK DOUGLAS BOULEVARD,  EDGECOMBE AVENUE between WEST  136 STREET and WEST  139 STREET,  WEST  139 STREET between EDGECOMBE AVENUE and ST NICHOLAS AVENUE,  ST NICHOLAS AVENUE between WEST  135 STREET and WEST  155 STREET,  WEST  141 STREET between ST NICHOLAS AVENUE and CONVENT AVENUE,  CONVENT AVENUE between WEST  141 STREET and WEST  135 STREET,  WEST  135 STREET between ST NICHOLAS TERRACE and CONVENT AVENUE,  WEST  127 STREET between ST NICHOLAS TERRACE and ST NICHOLAS AVENUE,  ST NICHOLAS AVENUE between WEST  127 STREET and WEST  138 STREET,  ST NICHOLAS TERRACE between WEST  135 STREET and WEST  127 STREET,  ST NICHOLAS AVENUE between WEST  138 STREET and WEST  139 STREET": null,
+"ELLINGTON STREET between TARGEE STREET and VANDERBILT AVENUE": null,
+"ELTINGVILLE BOULEVARD between BARLOW AVENUE and LEVERETT AVENUE": null,
+"ELY AVENUE between DOWNES AVENUE and TENAFLY PLACE": null,
+"EMERALD STREET between LINDEN BOULEVARD and LORING AVENUE": null,
 "East River Esplanade 36th-38th": {
 "confidence": 1.0,
 "lat": 40.74504161004454,
@@ -1209,6 +1821,11 @@
 "matched": "Eugene McCabe Field",
 "source": "parks-properties"
 },
+"FATHER CAPODANNO BOULEVARD between GREELEY AVENUE and SAND LANE,  FATHER CAPODANNO BOULEVARD between GREELEY AVENUE and SAND LANE,  FATHER CAPODANNO BOULEVARD between GREELEY AVENUE and SAND LANE": null,
+"FENIMORE STREET between ROGERS AVENUE and NOSTRAND AVENUE": null,
+"FLATBUSH AVENUE between CHURCH AVENUE and MARTENSE STREET,  FLATBUSH AVENUE between MARTENSE STREET and EMPIRE BOULEVARD,  EMPIRE BOULEVARD between FLATBUSH AVENUE and WASHINGTON AVENUE,  WASHINGTON AVENUE between EMPIRE BOULEVARD and MONTGOMERY STREET,  WASHINGTON AVENUE between MONTGOMERY STREET and PRESIDENT STREET,  MONTGOMERY STREET between WASHINGTON AVENUE and FRANKLIN AVENUE": null,
+"FORSYTH STREET between DIVISION STREET and EAST BROADWAY": null,
+"FRANKLIN AVENUE between MAIN STREET and SAULL STREET,  MAIN STREET between FRANKLIN AVENUE and ELDER AVENUE,  ELDER AVENUE between MAIN STREET and COLDEN STREET,  COLDEN STREET between ELDER AVENUE and JUNIPER AVENUE": null,
 "FREDERICK DOUGLASS BOULEVARD between WEST  123 STREET and WEST  126 STREET,  WEST  125 STREET between FREDERICK DOUGLASS BOULEVARD and MALCOLM X BOULEVARD,  MALCOLM X BOULEVARD between WEST  125 STREET and CENTRAL PARK NORTH,  CENTRAL PARK NORTH between MALCOLM X BOULEVARD and ADAM CLAYTON POWELL BOULEVARD,  ADAM CLAYTON POWELL JR BOULEVARD between CENTRAL PARK NORTH and WEST  116 STREET,  ST NICHOLAS AVENUE between WEST  116 STREET and FREDERICK DOUGLASS BOULEVARD,  FREDERICK DOUGLASS BOULEVARD between WEST  121 STREET and WEST  124 STREET, 2320 FREDERICK DOUGLASS BOULEVARD,2320 FREDERICK DOUGLASS BOULEVARD": {
 "confidence": 1.0,
 "lat": 40.78515285136863,
@@ -1216,6 +1833,7 @@
 "matched": "Central Park",
 "source": "parks-properties"
 },
+"FT WASHINGTON AVENUE between WEST  168 STREET and WEST  169 STREET": null,
 "Faber Park": null,
 "Faber Pool and Park": {
 "confidence": 1.0,
@@ -1414,6 +2032,7 @@
 "matched": "Fulton Park",
 "source": "parks-properties"
 },
+"GEORGE STREET between KNICKERBOCKER AVENUE and WILSON AVENUE": null,
 "GLEBE AVENUE between WESTCHESTER AVENUE and LYON AVENUE": {
 "confidence": 0.8,
 "lat": 40.83506,
@@ -1421,6 +2040,10 @@
 "matched": "GLEBE AV WESTCHESTER AV PROJECTS, Bronx, NY, USA",
 "source": "geosearch"
 },
+"GOODALL STREET between HYLAN BOULEVARD and TENNYSON DRIVE": null,
+"GREEN VALLEY ROAD between MANCHESTER DRIVE and MANCHESTER DRIVE": null,
+"GREENE AVENUE between LEWIS AVENUE and STUYVESANT AVENUE": null,
+"Garment District (Broadway Boulevard) Plaza": null,
 "Gen. Douglas MacArthur Park": {
 "confidence": 1.0,
 "lat": 40.58695960374274,
@@ -1533,6 +2156,16 @@
 "matched": "Gun Hill Playground",
 "source": "parks-properties"
 },
+"HANCOCK STREET between WILSON AVENUE and CENTRAL AVENUE": null,
+"HARROD PLACE between WESTCHESTER AVENUE and MORRISON AVENUE": null,
+"HART STREET between LEWIS AVENUE and MARCUS GARVEY AVENUE": null,
+"HART STREET between ONDERDONK AVENUE and WOODWARD AVENUE": null,
+"HAWTHORNE STREET between BEDFORD AVENUE and ROGERS AVENUE": null,
+"HEGEMAN AVENUE between POWELL STREET and CHRISTOPHER AVENUE": null,
+"HENDRICKSON STREET between AVENUE P and QUENTIN ROAD": null,
+"HENDRIX STREET between HEGEMAN AVENUE and LINDEN BOULEVARD": null,
+"HINSDALE STREET between LINDEN BOULEVARD and DEWITT AVENUE": null,
+"HOLLAND AVENUE between EAST GUN HILL ROAD and MAGENTA STREET": null,
 "Haffen Park": {
 "confidence": 1.0,
 "lat": 40.873609936164385,
@@ -1754,6 +2387,9 @@
 "matched": "I-Am-Park",
 "source": "parks-properties"
 },
+"INWOOD STREET between 123 AVENUE and ROCKAWAY BOULEVARD": null,
+"INWOOD STREET between SUTTER AVENUE and 130 AVENUE": null,
+"ISHAM STREET between SEAMAN AVENUE and COOPER STREET": null,
 "Idlewild Park": {
 "confidence": 1.0,
 "lat": 40.65420661667671,
@@ -1789,6 +2425,8 @@
 "matched": "J. Hood Wright Park",
 "source": "parks-properties"
 },
+"JAMAICA AVENUE between PARSONS BOULEVARD and 170 STREET": null,
+"JEFFERSON AVENUE between MARCUS GARVEY AVENUE and LEWIS AVENUE": null,
 "JHS 51 JOP": null,
 "Jackie Robinson Park": {
 "confidence": 1.0,
@@ -1944,6 +2582,16 @@
 "matched": "Juniper Valley Park",
 "source": "parks-properties"
 },
+"KATONAH AVENUE between EAST  240 STREET and EAST  239 STREET": null,
+"KENMORE STREET between WOODROW ROAD and DIERAUF STREET": null,
+"KENT AVENUE between DIVISION AVENUE and SOUTH   10 STREET,  KENT AVENUE between SOUTH  10 ST and NORTH 9 ST,  KENT AVENUE between NORTH    9 STREET and NORTH   11 STREET": null,
+"KENT AVENUE between SOUTH   10 STREET and DIVISION AVENUE,  KENT AVENUE between SOUTH   10 STREET and NORTH    9 STREET,  KENT AVENUE between NORTH    9 STREET and NORTH   11 STREET": null,
+"KNAPP STREET between DRAPER PLACE and FREEDOM AVENUE": null,
+"KNICKERBOCKER AVENUE between STARR STREET and SUYDAM STREET": null,
+"KNICKERBOCKER AVENUE between STARR STREET and SUYDAM STREET,  KNICKERBOCKER AVENUE between WEIRFIELD STREET and HALSEY STREET": null,
+"KOSCIUSZKO STREET between LEWIS AVENUE and STUYVESANT AVENUE": null,
+"KOSCIUSZKO STREET between MARCUS GARVEY BOULEVARD and LEWIS AVENUE": null,
+"KOSCIUSZKO STREET between STUYVESANT AVENUE and MALCOM X BOULEVARD": null,
 "Kaiser Park": {
 "confidence": 1.0,
 "lat": 40.579358383046035,
@@ -1995,6 +2643,13 @@
 "matched": "Kwame Ture Recreation Center",
 "source": "parks-properties"
 },
+"LAFAYETTE AVENUE between TOMPKINS AVENUE and THROOP AVENUE": null,
+"LAKE STREET between AVENUE W and VILLAGE ROAD SOUTH": null,
+"LAMOKA AVENUE between WAINWRIGHT AVENUE and POMPEY AVENUE": null,
+"LEFFERTS PLACE between CLASSON AVENUE and GRAND AVENUE": null,
+"LENOX AVENUE between WEST  117 STREET and WEST  118 STREET": null,
+"LENOX AVENUE between WEST  136 STREET and WEST  137 STREET": null,
+"LIBERTY AVENUE between LEFFERTS BOULEVARD and 120 STREET": null,
 "LIBERTY AVENUE between LEFFERTS BOULEVARD and 126 STREET,  126 STREET between LIBERTY AVENUE and 95 AVENUE, Phil \"Scooter\" Rizzuto Park / Smokey Oval": {
 "confidence": 1.0,
 "lat": 40.69456031395587,
@@ -2002,6 +2657,10 @@
 "matched": "Phil \"Scooter\" Rizzuto Park",
 "source": "parks-properties"
 },
+"LIBERTY AVENUE between NEW JERSEY AVENUE and VERMONT STREET": null,
+"LINCOLN PLACE between 7 AVENUE and 6 AVENUE": null,
+"LONGFELLOW AVENUE between EAST  173 STREET and EAST  174 STREET": null,
+"LYNDALE AVENUE between SYCAMORE STREET and KOCH BOULEVARD": null,
 "LaTourette Park & Golf Course": {
 "confidence": 1.0,
 "lat": 40.57007654749868,
@@ -2121,6 +2780,23 @@
 "matched": "Lyons Square Playground",
 "source": "parks-properties"
 },
+"MACDONOUGH STREET between PATCHEN AVENUE and MALCOLM X BOULEVARD": null,
+"MACDONOUGH STREET between RALPH AVENUE and HOWARD AVENUE": null,
+"MACON STREET between THROOP AVENUE and MARCUS GARVEY BOULEVARD": null,
+"MADISON AVENUE between EAST   98 STREET and EAST   99 STREET": null,
+"MAJOR DEEGAN between CITY LIMITS and MANHATTAN,  MAJOR DEEGAN EXWY between CITY LIMITS and W FORDHAM RD,  UNIVERSITY HIGHT BR (207ST BRIDGE) between MAJOR DEEGAN EXWY and 10 AV,  10 AVENUE between WEST  207 STREET and DYCKMAN STREET,  HARLEM RIVER DRIVE between DYCKMAN STREET and FDR,  FDR between HARLEM RIVER DR and BATTERY PARK UNDERPASS,  WEST STREET between BATTERY PLACE and LIBERTY STREET,  SOUTH END AVENUE between LIBERTY STREET and WEST THAMES STREET,  LIBERTY STREET between WEST STREET and SOUTH END AVENUE,  FDR NORTH between SOUTH ST and HARLEM RIVER DR TO GWB,  G WASHINGTON BRIDGE between HARLEM RIVER DR and PALISDES PARKWAY": null,
+"MAPLE AVENUE between FRAME PLACE and MAIN STREET,  MAPLE AVENUE between FRAME PLACE and MAIN STREET,  MAIN STREET between MAPLE AVENUE and ROOSEVELT AVENUE, 136-20 ROOSEVELT AVENUE,136-20 ROOSEVELT AVENUE": null,
+"MENAHAN STREET between WILSON AVENUE and KNICKERBOCKER AVENUE": null,
+"MICKLE AVENUE between GIVAN AVENUE and BURKE AVENUE": null,
+"MIDWOOD STREET between ALBANY AVENUE and KINGSTON AVENUE": null,
+"MONTGOMERY STREET between CLOVE ROAD and NEW YORK AVENUE": null,
+"MOORE STREET between BUSHWICK AVENUE and HUMBOLDT STREET": null,
+"MORRIS AVENUE between EAST  182 STREET and EAST  183 STREET": null,
+"MORRISON AVENUE between WATSON AVENUE and HARROD PLACE": null,
+"MOSCO STREET between MOTT STREET and MULBERRY STREET": null,
+"MOTT STREET between PELL STREET and WORTH STREET,  MOTT STREET between PELL STREET and WORTH STREET,  CHATHAM SQUARE between MOTT STREET and EAST BROADWAY,  EAST BROADWAY between CHATHAM SQUARE and RUTGERS STREET,  RUTGERS STREET between EAST BROADWAY and MADISON STREET,  MADISON STREET between RUTGERS STREET and JAMES STREET,  JAMES STREET between SAINT JAMES PLACE and MADISON STREET,  SAINT JAMES PLACE between OLIVER STREET and JAMES STREET,  OLIVER STREET  between CHATHAM SQUARE and SAINT JAMES PLACE,  MOTT STREET between PELL STREET and WORTH STREET, 25 MOTT STREET": null,
+"MOUNT CARMEL PLACE between EAST   26 STREET and EAST   28 STREET": null,
+"MURDOCK AVENUE between EAST  233 STREET and STRANG AVENUE": null,
 "MacArthur Park": {
 "confidence": 1.0,
 "lat": 40.58695960374274,
@@ -2460,6 +3136,9 @@
 "matched": "Murray Playground",
 "source": "parks-properties"
 },
+"NORMAN AVENUE between DOBBIN STREET and BANKER STREET,  NORMAN AVENUE between DOBBIN STREET and BANKER STREET,  BANKER STREET between NORMAN AVENUE and MESEROLE AVENUE,  BANKER STREET between NORMAN AVENUE and MESEROLE AVENUE": null,
+"NORTH ELLIOTT PLACE between FLUSHING AVENUE and PARK AVENUE": null,
+"NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD": null,
 "Newtown Barge Playground": {
 "confidence": 1.0,
 "lat": 40.735817044495526,
@@ -2502,6 +3181,7 @@
 "matched": "Nostrand Playground",
 "source": "parks-properties"
 },
+"OLD BROADWAY between WEST  125 STREET and WEST  126 STREET": null,
 "OLINVILLE AVENUE between THWAITES PLACE and PELHAM PARKWAY NORTH": {
 "confidence": 1.0,
 "lat": 40.856860386021886,
@@ -2509,6 +3189,7 @@
 "matched": "Pelham Parkway",
 "source": "parks-properties"
 },
+"ONDERDONK AVENUE between STOCKHOLM STREET and STANHOPE STREET,  ONDERDONK AVENUE between STOCKHOLM STREET and MENAHAN STREET,  MENAHAN STREET between ONDERDONK AVENUE and WOODWARD AVENUE,  WOODWARD AVENUE between MENAHAN STREET and HART STREET,  HART STREET between WOODWARD AVENUE and ONDERDONK AVENUE,  ONDERDONK AVENUE between HART STREET and STANHOPE STREET,  ONDERDONK AVENUE between STOCKHOLM STREET and STANHOPE STREET": null,
 "Ocean Parkway Malls": {
 "confidence": 1.0,
 "lat": 40.64966646337701,
@@ -2538,6 +3219,10 @@
 "source": "parks-properties"
 },
 "P.S. 29 Ball Field": null,
+"PARK PLACE between BROOKLYN AVENUE and KINGSTON AVENUE": null,
+"PARK PLACE between NEW YORK AVENUE and BROOKLYN AVENUE": null,
+"PARKSIDE AVENUE between BEDFORD AVENUE and ROGERS AVENUE": null,
+"PATCHEN AVENUE between PUTNAM AVENUE and MADISON STREET": null,
 "PELHAM PARKWAY SOUTH between WILSON AVENUE and EASTCHESTER ROAD": {
 "confidence": 1.0,
 "lat": 40.856860386021886,
@@ -2545,6 +3230,15 @@
 "matched": "Pelham Parkway",
 "source": "parks-properties"
 },
+"PLATTWOOD AVENUE between CROSSBAY BOULEVARD and 96 STREET": null,
+"PLEASANT AVENUE between EAST  114 STREET and EAST  115 STREET,  EAST  115 STREET between PLEASANT AVENUE and 1 AVENUE,  1 AVENUE between EAST  115 STREET and EAST  116 STREET,  EAST  116 STREET between 1 AVENUE and 2 AVENUE,  2 AVENUE between EAST  116 STREET and EAST  106 STREET,  EAST  106 STREET between 2 AVENUE and 1 AVENUE,  1 AVENUE between EAST  106 STREET and EAST  109 STREET,  EAST  109 STREET between 2 AVENUE and 1 AVENUE,  2 AVENUE between EAST  109 STREET and EAST  108 STREET,  EAST  108 STREET between 2 AVENUE and 1 AVENUE,  1 AVENUE between EAST  108 STREET and EAST  114 STREET,  EAST  114 STREET between 1 AVENUE and PLEASANT AVENUE,  PLEASANT AVENUE between EAST  114 STREET and EAST  115 STREET": null,
+"POPLAR STREET between LURTING AVENUE and WILLIAMSBRIDGE ROAD": null,
+"PRESCOTT AVENUE between SOUTH RAILROAD AVENUE and EDISON STREET": null,
+"PRESIDENT STREET between ROGERS AVENUE and BEDFORD AVENUE": null,
+"PRINCE STREET between MULBERRY STREET and MOTT STREET": null,
+"PRINCETON AVENUE between CLAWSON STREET and HYLAN BOULEVARD": null,
+"PROSPECT PLACE between CLASSON AVENUE and GRAND AVENUE": null,
+"PUTNAM AVENUE between NOSTRAND AVENUE and MARCY AVENUE": null,
 "Paerdegat Park": {
 "confidence": 1.0,
 "lat": 40.63785356676207,
@@ -2767,6 +3461,8 @@
 "matched": "69-000 QUEENS BOULEVARD, Rego Park, NY, USA",
 "source": "geosearch"
 },
+"QUINCY STREET between FRANKLIN AVENUE and CLASSON AVENUE": null,
+"QUINCY STREET between NOSTRAND AVENUE and MARCY AVENUE": null,
 "Quarry Ballfields": {
 "confidence": 1.0,
 "lat": 40.8509155719022,
@@ -2788,6 +3484,12 @@
 "matched": "Queensbridge Park",
 "source": "parks-properties"
 },
+"RADCLIFF AVENUE between MAGENTA STREET and DUNCAN STREET": null,
+"RALEIGH STREET between ECKFORD AVENUE and ALBERT ROAD": null,
+"RAMBLEWOOD AVENUE between OCEANVIEW PLACE and SYCAMORE STREET": null,
+"REV RICARDO TANON AVENUE between WESTCHESTER AVENUE and EAST  161 STREET,  REV RICARDO TANON AVENUE between WESTCHESTER AVENUE and LONGWOOD AVENUE,  LONGWOOD AVENUE between REV RICARDO TANON AVENUE and SOUTHERN BOULEVARD,  SOUTHERN BOULEVARD between LONGWOOD AVENUE and INTERVALE AVENUE,  INTERVALE AVENUE between SOUTHERN BOULEVARD and EAST  163 STREET,  EAST  163 STREET between INTERVALE AVENUE and WESTCHESTER AVENUE,  WESTCHESTER AVENUE between EAST  163 STREET and EAST  161 STREET,  WESTCHESTER AVENUE between REV RICARDO TANON AVENUE and EAST  161 STREET": null,
+"RIDGEWOOD AVENUE between KATAN AVENUE and GENESEE AVENUE": null,
+"RIVERDALE AVE between W 259TH ST and W 260TH ST": null,
 "ROCKAWAY BEACH BOULEVARD between BEACH   52 STREET and BEACH   53 STREET": {
 "confidence": 1.0,
 "lat": 40.57747709879809,
@@ -2795,6 +3497,9 @@
 "matched": "Rockaway Beach",
 "source": "parks-properties"
 },
+"ROCKWOOD STREET Open Street 2026": null,
+"ROGERS AVENUE between MONTGOMERY STREET and SULLIVAN PLACE": null,
+"ROOSEVELT AVENUE between 103 STREET and 104 STREET": null,
 "Railroad Playground": {
 "confidence": 1.0,
 "lat": 40.649715832615314,
@@ -3002,6 +3707,9 @@
 "matched": "Russell Sage Playground",
 "source": "parks-properties"
 },
+"SACKETT STREET between VAN BRUNT STREET and DEAD  END": null,
+"SARATOGA AVENUE between BLAKE AVENUE and DUMONT AVENUE": null,
+"SCHENCK AVENUE between NEW LOTS AVENUE and LIVONIA AVENUE": null,
 "SCHENECTADY AVENUE between AVENUE D and FOSTER AVENUE": {
 "confidence": 0.8,
 "lat": 40.562228,
@@ -3009,6 +3717,13 @@
 "matched": "26 D & T DIMARTINIS AVENUE, Staten Island, NY, USA",
 "source": "geosearch"
 },
+"SECOND AVENUE between EAST   97 STREET and EAST   99 STREET": null,
+"SEVENTH AVENUE between WEST   47 STREET and WEST   57 STREET": null,
+"SHEFFIELD AVENUE between BELMONT AVENUE and PITKIN AVENUE": null,
+"SHEPHERD AVENUE between SUTTER AVENUE and BELMONT AVENUE": null,
+"SHERIF S BYRD PLACE between JESUP AVENUE and SHAKESPEARE AVENUE": null,
+"SHERMAN AVENUE between ACADEMY STREET and WEST  204 STREET": null,
+"SIXTH AVENUE between WEST   37 STREET and WEST   38 STREET,  WEST   36 STREET between 5 AVENUE and BROADWAY,  WEST   37 STREET between 7 AVENUE and 5 AVENUE,  WEST   38 STREET between 7 AVENUE and 5 AVENUE,  SIXTH AVENUE between WEST   36 STREET and WEST   55 STREET,  WEST   55 STREET between SIXTH AVENUE and FIFTH AVENUE,  WEST   55 STREET between 7 AVENUE and 6 AVENUE": null,
 "SOMERS STREET between EASTERN PARKWAY and MOTHER GASTON BOULEVARD": {
 "confidence": 1.0,
 "lat": 40.67264010577558,
@@ -3016,6 +3731,18 @@
 "matched": "Eastern Parkway",
 "source": "parks-properties"
 },
+"SOUTH STREET between FULTON STREET and JOHN STREET": null,
+"SOUTHERN BOULEVARD between BARRETTO STREET and TIFFANY STREET": null,
+"SPENCER COURT between DEKALB AVENUE and KOSCIUSZKO STREET": null,
+"ST ANNS AVENUE between EAST  137 STREET and EAST  135 STREET": null,
+"ST MARKS AVENUE between ALBANY AVENUE and KINGSTON AVENUE": null,
+"STERLING PLACE between NEW YORK AVENUE and NOSTRAND AVENUE": null,
+"STERLING STREET between ROGERS AVENUE and BEDFORD AVENUE": null,
+"STICKBALL BOULEVARD between RANDALL AVENUE and SEWARD AVENUE": null,
+"STRAUSS STREET between LIVONIA AVENUE and DUMONT AVENUE": null,
+"STUYVESANT AVENUE between MONROE STREET and GATES AVENUE": null,
+"SULLIVAN PLACE between NOSTRAND AVENUE and ROGERS AVENUE": null,
+"SYCAMORE STREET between WOODS OF ARDEN ROAD and PRESTON AVENUE": null,
 "Sakura Park": {
 "confidence": 1.0,
 "lat": 40.81306678361815,
@@ -3373,6 +4100,11 @@
 "matched": "Sutton Place Park",
 "source": "parks-properties"
 },
+"TENTH AVENUE between WEST   16 STREET and WEST   15 STREET": null,
+"THOMAS S BOYLAND STREET between SUMPTER STREET and MACDOUGAL STREET": null,
+"TOMPKINS AVENUE between PUTNAM AVENUE and JEFFERSON AVENUE": null,
+"TROY AVENUE between AVENUE H and AVENUE I": null,
+"TROY AVENUE between CHURCH AVENUE and LINDEN BOULEVARD": null,
 "Taaffe Playground": {
 "confidence": 1.0,
 "lat": 40.69498017672824,
@@ -3486,6 +4218,9 @@
 "matched": "Twenty-Four Sycamores Park",
 "source": "parks-properties"
 },
+"UNION STREET between FRANKLIN AVENUE and BEDFORD AVENUE": null,
+"UNIVERSITY AVENUE between WEST 165 ST and WEST 166 ST": null,
+"UTICA AVENUE between LINDEN BOULEVARD and CHURCH AVENUE": null,
 "Underhill Avenue Plaza": {
 "confidence": 0.8,
 "lat": 40.680951,
@@ -3507,6 +4242,9 @@
 "matched": "Utopia Playground",
 "source": "parks-properties"
 },
+"VANDERBILT AVENUE Open Street 2026": null,
+"VARICK STREET between WATTS STREET and CANAL STREET": null,
+"VERMONT STREET between HEGEMAN AVENUE and NEW LOTS AVENUE": null,
 "VERNON AVENUE between MARCY AVENUE and NOSTRAND AVENUE": {
 "confidence": 0.8,
 "lat": 40.6952,
@@ -3563,6 +4301,13 @@
 "matched": "Vito Locascio Field",
 "source": "parks-properties"
 },
+"WARWICK STREET between SUTTER AVENUE and BLAKE AVENUE": null,
+"WASHINGTON AVENUE between EAST TREMONT AVENUE and EAST  176 STREET": null,
+"WASHINGTON AVENUE between EMPIRE BOULEVARD and FLATBUSH AVENUE": null,
+"WASHINGTON STREET between WEST   13 STREET and LITTLE WEST   12 STREET": null,
+"WATKINS STREET between NEWPORT STREET and LOTT AVENUE": null,
+"WATSON AVENUE between SHELLY AVENUE and RAWSON PLACE": null,
+"WEIRFIELD STREET between IRVING AVENUE and KNICKERBOCKER AVENUE": null,
 "WEST    2 STREET between 65 STREET and AVENUE P": {
 "confidence": 0.8,
 "lat": 40.77163,
@@ -3570,6 +4315,22 @@
 "matched": "2 WEST 65 STREET, New York, NY, USA",
 "source": "geosearch"
 },
+"WEST    3 STREET between AVENUE S and HIGHLAWN AVENUE": null,
+"WEST    4 STREET between CORNELIA STREET and GROVE STREET": null,
+"WEST    8 STREET between HIGHLAWN AVENUE and AVENUE S": null,
+"WEST   11 ROAD between CROSSBAY BOULEVARD and DEAD END": null,
+"WEST   15 ROAD between CROSSBAY BOULEVARD and DEAD END": null,
+"WEST   16 STREET between MERMAID AVENUE and SURF AVENUE": null,
+"WEST   23 STREET between 8 AVENUE and 9 AVENUE": null,
+"WEST   25 STREET between 11 AVENUE and 10 AVENUE": null,
+"WEST   27 STREET between 7 AVENUE and 8 AVENUE": null,
+"WEST   43 STREET between 7 AVENUE and 6 AVENUE": null,
+"WEST   49 STREET between 11 AVENUE and 12 AVENUE": null,
+"WEST   53 STREET between 6 AVENUE and 7 AVENUE,  WEST   53 STREET between 7 AVENUE and BROADWAY,  WEST   52 STREET between 6 AVENUE and 7 AVENUE,  7 AVENUE between WEST   51 STREET and WEST   52 STREET,  WEST   51 STREET between 6 AVENUE and 7 AVENUE": null,
+"WEST   60 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE": null,
+"WEST   62 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE": null,
+"WEST   97 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE": null,
+"WEST  106 STREET between WEST END AVENUE and RIVERSIDE DRIVE EAST": null,
 "WEST  107 STREET between CENTRAL PARK WEST and MANHATTAN AVENUE": {
 "confidence": 1.0,
 "lat": 40.78515285136863,
@@ -3577,6 +4338,13 @@
 "matched": "Central Park",
 "source": "parks-properties"
 },
+"WEST  117 STREET between LENOX AVENUE and 5 AVENUE": null,
+"WEST  118 STREET between LENOX AVENUE and ADAM CLAYTON POWELL BOULEVARD": null,
+"WEST  123 STREET between 7 AVENUE and LENOX AVENUE": null,
+"WEST  124 STREET between 7 AVENUE and FREDRICK DOUGLASS BOULEVARD": null,
+"WEST  124 STREET between MOUNT MORRIS PARK WEST and MALCOLM X BOULEVARD": null,
+"WEST  129 STREET between 7 AVENUE and 8 AVENUE": null,
+"WEST  135 STREET between 7 AVENUE and LENOX AVENUE": null,
 "WEST  137 STREET between BROADWAY and RIVERSIDE DRIVE": {
 "confidence": 0.8,
 "lat": 40.816333,
@@ -3584,6 +4352,7 @@
 "matched": "137 WEST 137 STREET, New York, NY, USA",
 "source": "geosearch"
 },
+"WEST  154 STREET between AMSTERDAM AVENUE and ST NICHOLAS AVENUE": null,
 "WEST  175 STREET between BROADWAY and WADSWORTH AVENUE": {
 "confidence": 0.8,
 "lat": 40.845053,
@@ -3591,6 +4360,10 @@
 "matched": "576 WEST 175 STREET, New York, NY, USA",
 "source": "geosearch"
 },
+"WEST  187 STREET between AMSTERDAM AVENUE and LAUREL HILL TERRACE": null,
+"WEST HOUSTON STREET between THOMPSON STREET and MACDOUGAL STREET": null,
+"WESTMINSTER ROAD between CATON AVENUE and CHURCH AVENUE": null,
+"WILLIS AVE between BRUCKNER BLVD and EAST 132TH ST": null,
 "WILLOUGHBY AVENUE between THROOP AVENUE and MARCUS GARVEY BOULEVARD": {
 "confidence": 0.8,
 "lat": 40.6952,
@@ -3605,6 +4378,7 @@
 "matched": "WNYC Transmitter Park",
 "source": "parks-properties"
 },
+"WORTMAN AVENUE between VERMONT STREET and VAN SICLEN AVENUE": null,
 "Wagner Playground": {
 "confidence": 1.0,
 "lat": 40.79966285369566,
@@ -3654,6 +4428,7 @@
 "matched": "Walton Park",
 "source": "parks-properties"
 },
+"Washington Empire Plaza": null,
 "Washington Hall Park": {
 "confidence": 1.0,
 "lat": 40.69525518456335,

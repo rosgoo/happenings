@@ -191,6 +191,61 @@ def rejected_title(title):
     return None
 
 
+# ---------------------------------------------------------------- libraries
+
+# A library calendar is two things in one table: programmes you would go to, and
+# services you would use. "Free Summer Meals" runs at 123 branches, the Period
+# Pantry at 56, and neither is something anybody browses for -- they are a
+# window during which a counter is staffed. Recurring adult instruction is the
+# same shape from the other side: Free English Class is 123 rows and is
+# genuinely valuable, but nobody picks it off a listings site on a Thursday
+# night. It is a course you enrol in, and this index answers "what is on".
+#
+# Denied by the library's OWN tags rather than by title, because the tags are
+# ground truth and titles vary ("Storyplay", "Story Play"). Every tag here was
+# measured first: the number is how many of that tag's events fall in the
+# bucket, and only tags at 88% or better are listed. `adult learning` (66%) and
+# `techknowledge` (61%) are deliberately absent -- broad enough that denying
+# them would take real programmes with them.
+LIBRARY_REJECT_TAGS = {
+    # standing services -- a counter, not a programme
+    "summer meals": "meal service, not a programme",              # 195/196
+    "free summer meals": "meal service, not a programme",         # 195/198
+    "grab and go kits": "take-home kit, not a programme",         # 43/44
+    "book sale": "ongoing shop, not a programme",                 # 22/22
+    "Cycle Alliance": "supply pantry, not a programme",           # 88/95
+    "legal resources": "advice service, not a programme",         # 24/25
+    "Immigrant Services": "advice service, not a programme",      # 262/295
+    # recurring adult instruction -- a course, not a listing
+    "ESOL": "recurring language course",                          # 168/171
+    "Welcome ESOL": "recurring language course",                  # 41/41
+    "WeSpeakNYC": "recurring language course",                    # 123/123
+    "english conversation group": "recurring language course",    # 87/93
+    "citizenship": "recurring civics course",                     # 33/33
+    "computer basics": "recurring computer course",               # 136/154
+    "resume": "job-help service, not a programme",                # 88/105
+}
+
+# The services that carry no distinguishing tag. Deliberately narrow and
+# anchored: these are named things, not a keyword sweep.
+LIBRARY_REJECT_TITLE = _re.compile(
+    r"\bnotary\b|\bask a tech\b|\bneighborhood tech help\b|\bfood pantry\b|"
+    r"\bperiod pantry\b|\bblood drive\b|\bpassport (day|appointment|service)|"
+    r"\btax (help|prep|assistance)\b|\bsnap (enrol|benefit|application)|"
+    r"\bhealth insurance\b|\bgrab (and|&) go\b|\bbook sale\b", _re.I)
+
+
+def rejected_library(title, tags):
+    """A library record that is a service or a course, not an event to attend."""
+    for tag in tags or []:
+        reason = LIBRARY_REJECT_TAGS.get(str(tag).strip())
+        if reason:
+            return reason
+    if LIBRARY_REJECT_TITLE.search(title or ""):
+        return "standing service, not a programme"
+    return None
+
+
 # Last resort only, on titles that arrived with no usable source label.
 TITLE_KEYWORDS = [
     (("farmers market", "greenmarket", "flea", "bazaar"), "community", "market"),
@@ -233,6 +288,17 @@ TITLE_KEYWORDS = [
       "archive"), "learning", "history"),
     (("residency", "seminar", "symposium", "class", "course"), "learning", "class"),
     (("storytelling", "storytime", "story time"), "performance", "storytelling"),
+    # Added from the WordPress venue calendars, where 189 of 861 events were
+    # rejected as unclassified. Park and nature programming had no vocabulary
+    # here at all, which is odd for a city whose largest event publisher is its
+    # parks department -- these are generic terms, not one venue's jargon.
+    (("nature", "audubon", "wildlife", "birding", "bird walk", "foraging",
+      "stargazing"), "outdoors", "nature"),
+    (("garden", "planting", "compost"), "outdoors", "gardening"),
+    (("performing arts", "cabaret", "vaudeville", "burlesque",
+      "improv"), "performance", "theatre"),
+    (("smorgasburg", "night market", "food truck"), "food-drink", "market"),
+    (("open mic",), "music", "open-mic"),
 ]
 
 

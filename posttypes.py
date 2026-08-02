@@ -154,12 +154,41 @@ def registry_path(city):
     return os.path.join(ROOT, "cities", city, "wordpress.json")
 
 
+# Keys a human sets by hand, which a re-run must not clobber. Discovery finds
+# endpoints; it cannot tell that prospectpark.org's OSM match is one building
+# inside the park it publishes for. That judgement is made once, written down,
+# and kept -- the same merge bargain luma.py makes with its calendar roster.
+CURATED = ("venue_name", "skip", "why")
+
+
 def save_registry(city, venues):
+    """Merge over the committed registry rather than replacing it."""
+    try:
+        with open(registry_path(city)) as f:
+            prior = {v["host"]: v for v in json.load(f)["venues"]}
+    except (FileNotFoundError, KeyError, ValueError):
+        prior = {}
+
+    kept = 0
+    for v in venues:
+        old = prior.get(v["host"]) or {}
+        for key in CURATED:
+            if key in old:
+                v[key] = old[key]
+                kept += 1
+    # A curated skip survives even if the venue stops answering -- otherwise a
+    # bad host silently rejoins the roster the first time it has an outage.
+    for host, old in prior.items():
+        if old.get("skip") and not any(v["host"] == host for v in venues):
+            venues.append(old)
+
     payload = {"generated_at": datetime.now(timezone.utc).isoformat(),
                "city": city, "venues": venues}
     with open(registry_path(city), "w") as f:
         json.dump(payload, f, indent=1)
         f.write("\n")
+    if kept:
+        print(f"  carried {kept} curated field(s) across the rebuild")
     located = sum(1 for v in venues if v["lat"] is not None)
     print(f"\nregistry: {len(venues)} venues -> {registry_path(city)}")
     print(f"  {sum(1 for v in venues if v['feed'] == 'tribe')} tribe REST · "

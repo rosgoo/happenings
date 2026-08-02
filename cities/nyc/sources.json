@@ -102,14 +102,16 @@
       "label": "Brooklyn Public Library",
       "attribution": "Brooklyn Public Library",
       "min_expected": 300,
-      "horizon_days": 60,
+      "horizon_days": 30,
       "page_size": 50,
+      "max_pages": 120,
       "include": ["field_location", "field_participating_branches",
                   "field_event_type_parent", "field_age", "field_tags"],
       "places": {
         "resource": "node/branch",
         "address_field": "field_address",
-        "page_size": 50
+        "page_size": 50,
+        "name_suffixes": [" Library"]
       },
       "_comment": [
         "A completely open Drupal JSON:API -- no key, server-side date",

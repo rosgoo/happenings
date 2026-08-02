@@ -148,13 +148,24 @@ STREETY = re.compile(
 
 
 def street_query(raw):
-    """Turn a permit location into something a geocoder can answer.
+    """Turn a source's location string into something a geocoder can answer.
 
     'A between B and C' is not an address; the intersection 'A and B' is.
+
+    '<number> Street at <cross street>' is an address with a landmark hint
+    stapled on -- Brooklyn Public Library publishes every branch that way,
+    '1197 Sutter Ave. at Crystal St., Brooklyn, NY, 11208'. GeoSearch cannot
+    parse it and returns nothing for all 60-odd branches. The house number
+    already pins the building, so the cross street is redundant and gets
+    dropped. This is not a guess: it removes information the address does not
+    need, rather than supplying any.
     """
     m = re.match(r"^(.*?)\s+between\s+(.+?)\s+and\s+(.+)$", raw, re.I)
     if m:
         return f"{m.group(1).strip()} and {m.group(2).strip()}"
+    m = re.match(r"^(\d+[^,]*?)\s+at\s+[^,]+(,.*)?$", raw, re.I)
+    if m:
+        return (m.group(1).strip() + (m.group(2) or "")).strip()
     if STREETY.search(raw):
         return raw
     return None

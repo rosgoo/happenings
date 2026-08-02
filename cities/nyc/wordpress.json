@@ -11,7 +11,9 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://www.prospectpark.org/wp-json/tribe/events/v1/events",
-   "events": 845
+   "events": 845,
+   "venue_name": "Prospect Park",
+   "why": "Prospect Park Alliance publishes for the whole park; OSM matched its website to Lefferts Historic House, one building inside it. Every event is genuinely in the park, so the park is the venue."
   },
   {
    "host": "waterfrontmuseum.org",
@@ -33,7 +35,9 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://cityparksfoundation.org/wp-json/tribe/events/v1/events",
-   "events": 120
+   "events": 120,
+   "skip": true,
+   "why": "City Parks Foundation programmes citywide -- SummerStage and It's My Park at McKinley, Fort Washington, Sunset, Highbridge, Alley Pond, Hunter's Point. The feed carries no per-event location, so all 113 would inherit one point at Rumsey Playfield in Central Park. Losing them is honest; placing them there is not."
   },
   {
    "host": "stannswarehouse.org",

@@ -659,6 +659,15 @@ class Builder:
                 self.reject(src_id, title, f"internal record: {kind}",
                             url=self._bpl_url(r))
                 continue
+
+            # A library calendar carries services and courses alongside
+            # programmes, and only the programmes are things you go to. The
+            # meal window and the English class are both real and both useful;
+            # neither is what somebody browsing tonight is looking for.
+            service = taxonomy.rejected_library(title, r.get("tags"))
+            if service:
+                self.reject(src_id, title, service, url=self._bpl_url(r))
+                continue
             if r.get("virtual") and not r.get("hybrid"):
                 self.reject(src_id, title, "virtual only, has no place",
                             url=self._bpl_url(r))
@@ -678,7 +687,19 @@ class Builder:
                 self.reject(src_id, title, "no branch named", url=self._bpl_url(r))
                 continue
             branch = clean(where.split(",")[0])
-            v = self.venue(branch, borough="Brooklyn", kind="library")
+
+            # The branch NAME places nothing -- it is in no park register and
+            # no geocoder answers it. The branch ADDRESS does, and fetch.py
+            # attached it from the library's own branch records, so geocode.py
+            # has already resolved it into the gazetteer. Look the coordinates
+            # up here and hand them to `venue`, which otherwise files every
+            # library under a borough and nothing finer.
+            lat = lon = None
+            if r.get("address"):
+                p = self.resolver.resolve(name=r["address"], borough="Brooklyn")
+                if p:
+                    lat, lon = p.lat, p.lon
+            v = self.venue(branch, lat, lon, borough="Brooklyn", kind="library")
 
             # The tag vocabulary is the venue's own words -- "author talks",
             # "arts and crafts", "astronomy". Ground truth beats the title,
