@@ -54,7 +54,11 @@ if (root) {
     stations: new Set(), q: '', view: 'list', limit: PAGE,
   };
   let ALL = [];
-  let STATIONS = [];
+  // The line index, and every station on it. Seeded from the events so the rail
+  // works before the index lands, then replaced by the real thing -- the events
+  // know the stations they are near, just not what order they come in.
+  let LINES = [];
+  let STOPS = {};
   let PLACES = [];
   let placeLimit = 12;
 
@@ -401,59 +405,70 @@ if (root) {
          aria-label="${esc(r)} train">${bullet(r)}</button>`).join('');
   }
 
-  // Every station with something on, with its event count. Built from the data
-  // rather than from the 445-station register, so the list is only ever places
-  // you could actually go tonight.
-  function buildStations() {
-    const el = $('#stations');
-    if (!el) return;
+  // How many events name each station as their nearest. The filter means "what
+  // is nearest this stop", so this is the count that belongs on the row.
+  function stationCounts() {
     const by = new Map();
-    for (const e of ALL) {
-      if (!e.sw) continue;
-      const cur = by.get(e.sw.i) || { i: e.sw.i, n: e.sw.n, r: e.sw.r, c: 0 };
-      cur.c++;
-      by.set(e.sw.i, cur);
-    }
-    STATIONS = [...by.values()].sort((a, b) => b.c - a.c || a.n.localeCompare(b.n));
-    if (!STATIONS.length) { el.innerHTML = ''; return; }
-    // Times Sq-42 St serves twelve routes. Drawn in full they eat the row and
-    // the station's own name ellipsises to "Ti…", which is the one thing the
-    // row exists to say. Four bullets and a remainder.
-    const MAXB = 4;
-    el.innerHTML = STATIONS.map((s) => {
-      const shown = s.r.slice(0, MAXB).map(bullet).join('');
-      const rest = s.r.length > MAXB ? `<span class="more">+${s.r.length - MAXB}</span>` : '';
-      return `<button data-v="${esc(s.i)}" data-name="${esc(s.n.toLowerCase())}"
-         data-routes="${esc(s.r.join(' '))}" aria-pressed="false"
-         title="${esc(s.n)} — ${esc(s.r.join(' '))}">
-         <span class="bullets">${shown}${rest}</span>
-         <span class="lbl">${esc(s.n)}</span><span class="n">${s.c}</span>
-       </button>`;
-    }).join('');
+    for (const e of ALL) if (e.sw) by.set(e.sw.i, (by.get(e.sw.i) || 0) + 1);
+    return by;
   }
 
-  // Picking lines narrows the station list to those lines. Scrolling 300
-  // stations to find one on the G is not filtering, it is a haystack.
-  function syncStationList() {
+  // Times Sq-42 St serves twelve routes. Drawn in full they eat the row and the
+  // station's own name ellipsises to "Ti…", which is the one thing the row
+  // exists to say. Four bullets and a remainder.
+  const MAXB = 4;
+  function stationRow(id, name, routes, count) {
+    const shown = routes.slice(0, MAXB).map(bullet).join('');
+    const rest = routes.length > MAXB
+      ? `<span class="more">+${routes.length - MAXB}</span>` : '';
+    // A stop with nothing on is shown but not offered: picking it could only
+    // ever return an empty page, and a control that does nothing is worse than
+    // one that is visibly unavailable.
+    const off = count ? '' : ' disabled class="off"';
+    return `<button data-v="${esc(id)}" data-name="${esc(name.toLowerCase())}"
+       aria-pressed="false"${off}
+       title="${esc(name)} — ${esc(routes.join(' '))}">
+       <span class="bullets">${shown}${rest}</span>
+       <span class="lbl">${esc(name)}</span>
+       <span class="n">${count || 'none'}</span>
+     </button>`;
+  }
+
+  // With no line picked: the stations that have something on, busiest first.
+  // With a line picked: that line, in riding order, every stop on it.
+  //
+  // The old list was only ever the former, which is why it read as arbitrary --
+  // sorted by a number the reader cannot see the whole of, and silently missing
+  // the two thirds of the system where nothing happens to be on. Order comes
+  // from the schedule at build time; the browser only slices it.
+  function renderStations() {
     const el = $('#stations');
     if (!el) return;
+    const counts = stationCounts();
     const q = ($('#stationq')?.value || '').trim().toLowerCase();
-    let shown = 0;
-    $$('#stations button').forEach((b) => {
-      const onRoute = !state.routes.size ||
-        (b.dataset.routes || '').split(' ').some((r) => state.routes.has(r));
-      const onName = !q || (b.dataset.name || '').includes(q);
-      const hide = !(onRoute && onName);
-      b.classList.toggle('hide', hide);
-      if (!hide) shown++;
-    });
-    const note = el.querySelector('.empty');
-    if (!shown && !note) {
-      el.insertAdjacentHTML('beforeend',
-        '<div class="empty">No stations match.</div>');
-    } else if (shown && note) {
-      note.remove();
+    const hit = (name) => !q || name.toLowerCase().includes(q);
+
+    let html = '';
+    if (state.routes.size) {
+      for (const ln of LINES.filter((l) => state.routes.has(l.r))) {
+        const rows = ln.s
+          .filter((id) => STOPS[id] && hit(STOPS[id][0]))
+          .map((id) => stationRow(id, STOPS[id][0], STOPS[id][1], counts.get(id) || 0));
+        if (!rows.length) continue;
+        // Which line these stops belong to, because two lines can share a
+        // bullet and a name: three different shuttles are all called S.
+        html += `<div class="linehead">${bullet(ln.r)}<span>${esc(ln.n)}</span>
+                 <span class="n">${ln.s.length} stops</span></div>` + rows.join('');
+      }
+    } else {
+      html = [...counts.entries()]
+        .filter(([id]) => STOPS[id] && hit(STOPS[id][0]))
+        .sort((a, b) => b[1] - a[1] || STOPS[a[0]][0].localeCompare(STOPS[b[0]][0]))
+        .map(([id, c]) => stationRow(id, STOPS[id][0], STOPS[id][1], c))
+        .join('');
     }
+    el.innerHTML = html || '<div class="empty">No stations match.</div>';
+    syncChips('#stations', state.stations);
   }
 
   function wireChips(sel, set, after) {
@@ -484,12 +499,13 @@ if (root) {
       : scope.venue ? data.filter((e) => e.v === scope.venue) : data;
     ALL.sort((a, b) => (a.s < b.s ? -1 : a.s > b.s ? 1 : 0));
 
+    for (const e of ALL) if (e.sw && !STOPS[e.sw.i]) STOPS[e.sw.i] = [e.sw.n, e.sw.r];
+
     readURL();
     buildStrip();
     syncStrip();
     buildRoutes();
-    buildStations();
-    syncChips('#stations', state.stations);
+    renderStations();
     syncChips('#cats', state.cats);
     syncChips('#bands', state.bands);
     syncChips('#hoods', state.hoods);
@@ -498,14 +514,24 @@ if (root) {
     wireChips('#cats', state.cats);
     wireChips('#bands', state.bands);
     wireChips('#hoods', state.hoods);
-    wireChips('#routes', state.routes, syncStationList);
+    wireChips('#routes', state.routes, renderStations);
     wireChips('#venues', state.venues);
     wireChips('#stations', state.stations);
     wireMiniSearch('#hoodq', '#hoods');
     wireMiniSearch('#venueq', '#venues');
-    on('#stationq', 'input', syncStationList);
-    syncStationList();
+    on('#stationq', 'input', renderStations);
     markPickedGroups();
+
+    // The order the stops come in is a property of the subway, not of tonight,
+    // so it is fetched alongside rather than folded into the listings payload.
+    // A failure here costs the line view and nothing else.
+    if (root.dataset.lines) {
+      fetch(root.dataset.lines).then((r) => r.json()).then((ix) => {
+        LINES = ix.l || [];
+        STOPS = { ...STOPS, ...(ix.s || {}) };
+        renderStations();
+      }).catch(() => {});
+    }
 
     const q = $('#q');
     if (q) {
@@ -567,7 +593,7 @@ if (root) {
       syncStrip();
       ['#cats', '#bands', '#hoods', '#routes', '#venues', '#stations'].forEach((s) =>
         $$(`${s} button[data-v]`).forEach((b) => b.setAttribute('aria-pressed', 'false')));
-      syncStationList();
+      renderStations();
       markPickedGroups();
       render();
     });

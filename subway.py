@@ -69,6 +69,11 @@ GTFS_URL = "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_subway.zip"
 # is what turns a set of stops into a sequence. 1 is the railroad's "south",
 # which for the crosstown lines means the direction the map is drawn in: the L
 # from 8 Av out to Canarsie, the 7 from Flushing in to Hudson Yards.
+#
+# Northbound trips are read too, reversed. Not for redundancy: a few stops are
+# only ever scheduled one way. Aqueduct Racetrack is served northbound and never
+# southbound, so southbound trips alone leave it on no line at all -- present in
+# the register, unreachable from the index.
 SOUTH = "1"
 
 # Express variants are not separate lines to a rider -- the 6X is a 6 that skips
@@ -171,42 +176,56 @@ def linearise(patterns):
     So every pattern contributes edges to a graph of what-follows-what, and the
     line is that graph flattened.
 
-    Kahn's algorithm, taking whichever available stop sits earliest along the
-    line by its average position across the patterns that contain it. That
-    tie-break is what decides where a branch goes: without it the order is
-    arbitrary among stops that never share a trip, and Lefferts Blvd could land
-    in the middle of the Rockaways.
+    Depth-first, emitted in reverse post-order. Any topological sort satisfies
+    the schedule, but most of them read as nonsense: expanding the frontier
+    stop-by-stop interleaves branches that never share a train, and puts 104 St
+    on the Lefferts branch between two Beach stops in the Rockaways. Following
+    one branch to its terminal before starting the next is what keeps each of
+    them contiguous, which is how the line is actually drawn and ridden.
+
+    The walk starts only at terminals -- stops nothing runs into -- so it
+    descends the line from one end rather than starting partway down and
+    stitching fragments together. Everything is taken in descending order of
+    average position, because reverse post-order flips it: whatever is
+    descended into first is what comes out last.
     """
     nxt = collections.defaultdict(set)
-    indeg = collections.Counter()
     where = collections.defaultdict(list)
+    into = collections.Counter()
     for stops in patterns:
         span = max(1, len(stops) - 1)
         for i, s in enumerate(stops):
             where[s].append(i / span)
-            indeg.setdefault(s, 0)
         for a, b in zip(stops, stops[1:]):
             if b not in nxt[a]:
                 nxt[a].add(b)
-                indeg[b] += 1
+                into[b] += 1
 
     rank = {s: sum(v) / len(v) for s, v in where.items()}
-    ready = sorted([s for s in indeg if not indeg[s]], key=lambda s: rank[s])
-    out = []
-    while ready:
-        s = ready.pop(0)
-        out.append(s)
-        for b in sorted(nxt[s], key=lambda b: rank[b]):
-            indeg[b] -= 1
-            if not indeg[b]:
-                ready.append(b)
-        ready.sort(key=lambda s: rank[s])
-    # A cycle would mean the schedule says A precedes B and B precedes A, which
-    # southbound it cannot. Appending the remainder keeps every stop rather than
-    # dropping it, and the count in --report is what would show it.
-    if len(out) < len(indeg):
-        out += [s for s in sorted(indeg, key=lambda s: rank[s]) if s not in set(out)]
-    return out
+    order, state, forced = [], {}, 0
+
+    def visit(s):
+        nonlocal forced
+        state[s] = 1
+        for b in sorted(nxt[s], key=lambda b: -rank[b]):
+            seen = state.get(b, 0)
+            if not seen:
+                visit(b)
+            elif seen == 1:
+                # A cycle: the schedule says b precedes s AND s precedes b in
+                # the same direction. Dropping the edge is the only way out;
+                # counted so it shows up rather than reordering the line
+                # silently.
+                forced += 1
+        state[s] = 2
+        order.append(s)
+
+    by_rank = sorted(where, key=lambda s: -rank[s])
+    for s in [s for s in by_rank if not into[s]] + by_rank:
+        if not state.get(s):
+            visit(s)
+    order.reverse()
+    return order, forced
 
 
 def gtfs_lines(delay=1.0):
@@ -234,8 +253,8 @@ def gtfs_lines(delay=1.0):
         meta.setdefault(rid, {"name": r["route_long_name"],
                               "route": r["route_short_name"]})
     for r in rows("trips.txt"):
-        if r["direction_id"] == SOUTH:
-            keep[r["trip_id"]] = FOLD.get(r["route_id"], r["route_id"])
+        keep[r["trip_id"]] = (FOLD.get(r["route_id"], r["route_id"]),
+                              r["direction_id"] == SOUTH)
 
     # stop_times is 36 MB and the rows of a trip are contiguous, so it is read
     # as a stream and reduced to distinct patterns -- there are a few thousand
@@ -245,19 +264,24 @@ def gtfs_lines(delay=1.0):
 
     def flush():
         if trip in keep and seq:
-            pats[keep[trip]].add(tuple(seq))
+            rid, southbound = keep[trip]
+            pats[rid].add(tuple(seq if southbound else reversed(seq)))
 
     for r in rows("stop_times.txt"):
         if r["trip_id"] != trip:
             flush()
             trip, seq = r["trip_id"], []
-        if trip in keep:
-            sid = r["stop_id"]
-            seq.append(parent.get(sid, sid))
+        sid = r["stop_id"]
+        seq.append(parent.get(sid, sid))
     flush()
 
-    return {rid: dict(meta.get(rid, {"name": rid, "route": rid}),
-                      stops=linearise(p)) for rid, p in pats.items()}
+    out = {}
+    for rid, p in pats.items():
+        stops, forced = linearise(p)
+        if forced:
+            print(f"  {rid}: {forced} stops placed by position, not by schedule")
+        out[rid] = dict(meta.get(rid, {"name": rid, "route": rid}), stops=stops)
+    return out
 
 
 def attach_lines(stations, gtfs):
@@ -293,8 +317,9 @@ def attach_lines(stations, gtfs):
 class Stations:
     """Nearest-station lookup over the register."""
 
-    def __init__(self, stations):
+    def __init__(self, stations, lines=()):
         self.stations = stations
+        self.lines = list(lines)
 
     def __len__(self):
         return len(self.stations)
@@ -322,7 +347,8 @@ def load(city):
     path = os.path.join(ROOT, "cities", city, "subway.json")
     try:
         with open(path) as f:
-            return Stations(json.load(f)["stations"])
+            d = json.load(f)
+        return Stations(d["stations"], d.get("lines") or [])
     except Exception:
         return Stations([])
 

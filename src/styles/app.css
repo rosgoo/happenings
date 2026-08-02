@@ -391,6 +391,26 @@ footer b { color: var(--ink); }
                font-variant-numeric: tabular-nums; flex: none; }
 .picklist button[aria-pressed="true"] .n { color: var(--ink); }
 .picklist button.hide { display: none; }
+/* Taller than the other pick lists: this is the one meant to be read in
+   sequence rather than searched, and a line is up to forty-five stops. */
+#stations { max-height: 320px; }
+/* A stop with nothing on. Still listed -- a line you can read end to end is
+   the point -- but visibly not a control, so nobody clicks into an empty
+   result and concludes the filter is broken. */
+.picklist button.off { color: var(--ink-2); cursor: default; }
+.picklist button.off:hover { background: transparent; }
+.picklist button.off .bullet { opacity: .45; }
+.picklist button.off .n { font-style: italic; font-size: 11px; }
+/* Which line the stops beneath belong to. Sticky because the whole point is
+   reading a line in order, and forty-five stops outruns the box. */
+.picklist .linehead {
+  position: sticky; top: 0; z-index: 1; display: flex; align-items: center;
+  gap: 6px; padding: 5px 7px; background: var(--paper-2);
+  border-bottom: 1px solid var(--paper-3); font-size: 11px;
+  font-family: var(--display); letter-spacing: .04em;
+}
+.picklist .linehead .n { margin-left: auto; color: var(--ink-2);
+                        font-variant-numeric: tabular-nums; }
 .picklist .bullets { flex: none; display: inline-flex; gap: 1px; align-items: center; }
 .picklist .bullet { width: 14px; height: 14px; font-size: 9px; vertical-align: 0; }
 .picklist .more { font-size: 9.5px; color: var(--ink-2); margin-left: 1px; }

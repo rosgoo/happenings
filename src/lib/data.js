@@ -64,6 +64,22 @@ export function placesIn(hoodSlug, limit = 8) {
     .slice(0, limit);
 }
 
+// The system's own shape: every line, its stops in the order you ride them,
+// and every station whether or not anything is on there tonight. Optional so a
+// build from a pipeline that predates the line index still renders.
+export const subway = (() => {
+  try { return read('subway'); } catch { return { lines: [], stations: {} }; }
+})();
+
+// The client payload for the line index. Two-element arrays rather than named
+// keys: this is 445 records of two fields each, and the field names would cost
+// more than the data.
+export const slimLines = () => ({
+  l: subway.lines.map((ln) => ({ r: ln.route, n: ln.name, s: ln.stations })),
+  s: Object.fromEntries(Object.entries(subway.stations)
+    .map(([id, s]) => [id, [s.name, s.routes]])),
+});
+
 export const CATEGORY_LABELS = {
   music: 'Music', sports: 'Sports', 'food-drink': 'Food & Drink', art: 'Art',
   performance: 'Performance', learning: 'Learning', community: 'Community',
@@ -189,3 +205,9 @@ export const ROUTE_COLOR = {
 // The yellow and grey bullets need dark type; every other trunk takes white.
 export const routeOn = (r) =>
   ['N', 'Q', 'R', 'W', 'L', 'S'].includes(r) ? '#000' : '#fff';
+
+// Trunk order, as the map draws it and as the filter rail lists it -- numbered
+// lines, then each lettered trunk in colour order. Alphabetical would split the
+// 8 Avenue trains across the list and put the L between the J and the M.
+export const ROUTE_ORDER = ['1', '2', '3', '4', '5', '6', '7', 'A', 'C', 'E',
+  'B', 'D', 'F', 'M', 'G', 'J', 'Z', 'L', 'N', 'Q', 'R', 'W', 'S', 'SIR'];

@@ -918,10 +918,37 @@ class Builder:
                              sorted(stations, key=lambda s: s["name"] or "")],
             })
 
+        # The line index: every stop on every line, in the order you ride them.
+        # Unlike everything else written here it does not depend on the events
+        # at all -- it is the shape of the system, and a station with nothing on
+        # is still a station. That is the point: a filter built only from where
+        # the events are cannot show you the four stops on the G where nothing
+        # is happening tonight, so it reads as an arbitrary list rather than as
+        # a line.
+        station_hood = {}
+        for slug, sts in hood_stations.items():
+            for s in sts:
+                station_hood[s["id"]] = slug
+        hood_named = {h["slug"]: h["name"] for h in hoods_out}
+        on_a_line = {k for ln in self.subway.lines for k in ln["stations"]}
+        subway_out = {
+            "lines": self.subway.lines,
+            "stations": {
+                s["id"]: {
+                    "name": s["name"], "routes": s["routes"],
+                    "borough": s["borough"], "ada": s["ada"],
+                    "lat": s["lat"], "lon": s["lon"],
+                    "hood": station_hood.get(s["id"]),
+                    "hood_name": hood_named.get(station_hood.get(s["id"])),
+                }
+                for s in self.subway.stations if s["id"] in on_a_line
+            },
+        }
+
         out = os.path.join(ROOT, "data", self.city)
         os.makedirs(out, exist_ok=True)
         for name, payload in (("events", self.events), ("venues", venues),
-                              ("rejected", self.rejected),
+                              ("rejected", self.rejected), ("subway", subway_out),
                               ("neighborhoods", hoods_out), ("meta", meta)):
             with open(os.path.join(out, f"{name}.json"), "w") as f:
                 json.dump(payload, f, separators=(",", ":") if name != "meta" else None,

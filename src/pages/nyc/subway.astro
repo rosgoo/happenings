@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import {
+  subway, upcoming, ROUTE_COLOR, ROUTE_ORDER, routeOn,
+} from '../../lib/data.js';
+
+// The whole system, every line end to end. The rail can only ever show one line
+// at a time and hides the stops with nothing on until you ask for them; this is
+// the page that does not have to choose. It is also the honest picture of the
+// coverage -- a line of greyed stops says where the feeds do not reach, which a
+// list built only from events cannot say at all.
+const counts = new Map();
+for (const e of upcoming) {
+  if (e.subway && e.subway[0]) {
+    counts.set(e.subway[0].id, (counts.get(e.subway[0].id) || 0) + 1);
+  }
+}
+
+const lines = subway.lines.map((ln) => {
+  const stops = ln.stations.map((id) => ({
+    id, ...subway.stations[id], count: counts.get(id) || 0,
+  }));
+  return { ...ln, stops, on: stops.reduce((n, s) => n + s.count, 0) };
+}).sort((a, b) => ROUTE_ORDER.indexOf(a.route) - ROUTE_ORDER.indexOf(b.route) ||
+                  b.stations.length - a.stations.length);
+
+const served = [...counts.keys()].filter((id) => subway.stations[id]).length;
+const total = Object.keys(subway.stations).length;
+const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
+---
+<Base title="The subway — happenings"
+      description="Every New York subway line, every stop in order, and what's on near each one.">
+  <p class="kicker" style="margin-top:26px">New York City</p>
+  <h1 class="page">The subway</h1>
+  <p class="lede">Every line, every stop, in the order you ride them. Pick a
+    stop to see what's on nearest to it.</p>
+  <p style="color:var(--ink-2);font-size:13px;max-width:70ch">
+    {served} of {total} stations have something upcoming within a mile
+    — {Math.round(100 * placed / upcoming.length)}% of events are placed to a
+    station. Order comes from the MTA's published schedule; the stops with
+    nothing on are left in, because a line with holes cut out of it is not a
+    line. <a href="/nyc/about">See what's covered</a>.
+  </p>
+
+  <div class="lines">
+    {lines.map((ln) => (
+      <section class="linecard">
+        <h2 class="linetitle">
+          <span class={`bullet${ln.route === 'SIR' ? ' sir' : ''}`}
+                style={`background:${ROUTE_COLOR[ln.route] || '#555'};color:${routeOn(ln.route)}`}>
+            {ln.route}
+          </span>
+          <span class="nm">{ln.name}</span>
+        </h2>
+        <p class="linemeta">{ln.stations.length} stops · {ln.on.toLocaleString()} upcoming</p>
+        <ol class="stops" style={`--line:${ROUTE_COLOR[ln.route] || '#555'}`}>
+          {ln.stops.map((s) => (
+            <li class={s.count ? '' : 'off'}>
+              {/* day=all rather than the site's default of today: this page
+                  counts everything upcoming, and a link that says 20 and opens
+                  on an empty Tuesday reads as a broken number. */}
+              {s.count ? (
+                <a href={`/nyc/?day=all&stop=${encodeURIComponent(s.id)}`}>{s.name}</a>
+              ) : <span>{s.name}</span>}
+              <span class="n">{s.count || '—'}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  /* A grid, not CSS columns. Columns pack tighter, but they run top-to-bottom
+     in the first column before starting the second, and on a page this tall
+     that means scrolling five screens down and then all the way back up to
+     reach the 6. Rows keep the trunk order readable left to right; the ragged
+     bottoms are the cost, and the cheaper one. */
+  .lines {
+    margin-top: 26px; display: grid; gap: 22px; align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+  }
+  .linecard { border: 2px solid var(--ink); padding: 10px 11px 8px; }
+  .linetitle {
+    display: flex; align-items: center; gap: 7px; margin: 0;
+    font-family: var(--display); font-size: 14px; line-height: 1.2;
+  }
+  .linetitle .nm { font-weight: 400; }
+  .linemeta { margin: 5px 0 8px; font-size: 11.5px; color: var(--ink-2);
+              font-variant-numeric: tabular-nums; }
+  /* The spine, in the line's own colour -- the stops are a route, not a list. */
+  .stops {
+    list-style: none; margin: 0; padding: 0 0 0 13px;
+    border-left: 3px solid var(--line);
+  }
+  .stops li {
+    display: flex; align-items: baseline; gap: 6px; font-size: 12.5px;
+    line-height: 1.35; padding: 1.5px 0;
+  }
+  .stops li .n { margin-left: auto; color: var(--ink-2); font-size: 11px;
+                 font-variant-numeric: tabular-nums; flex: none; }
+  /* A stop with nothing on stays on the line and says so. */
+  .stops li.off, .stops li.off .n { color: var(--ink-2); opacity: .6; }
+  .stops a { text-decoration: none; border-bottom: 1px solid var(--paper-3); }
+  .stops a:hover { background: var(--acid); }
+</style>

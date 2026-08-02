@@ -26,6 +26,7 @@ if (otherHoods.length) byBorough.push({ borough: 'Elsewhere', list: otherHoods }
 ---
 <div id="browse" class="browse" data-src="/nyc/events.json"
      data-places={places ? '/nyc/places.json' : ''}
+     data-lines="/nyc/subway.json"
      data-scope={JSON.stringify(scope)}>
 
   <!-- Filters are a permanent left rail on desktop. Below 900px the same
@@ -62,8 +63,14 @@ if (otherHoods.length) byBorough.push({ borough: 'Elsewhere', list: otherHoods }
       <div id="routes" class="chips routes"></div>
       <!-- Lines narrow the station list; stations are the actual filter. "Near
            the L" is a neighbourhood-sized answer, but "at Bedford Av" is where
-           somebody is standing. Both are built by the island from the events
-           in scope, so neither can offer a choice that returns nothing. -->
+           somebody is standing.
+
+           With no line picked the list is the stations that have something on,
+           busiest first -- there are 445 of them and an alphabetical wall is
+           not a starting point. Pick a line and it becomes that line's stops in
+           riding order, the empty ones included and greyed: a line you can read
+           end to end is the thing a rider recognises, and "nothing at Sutter Av
+           tonight" is an answer, where an absence from a list is just a gap. -->
       <input id="stationq" class="minisearch" type="search" autocomplete="off"
              placeholder="Find a station…" />
       <div id="stations" class="picklist"></div>
