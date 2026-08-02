@@ -459,14 +459,36 @@ footer b { color: var(--ink); }
 @media (max-width: 900px) {
   .browse { display: block; }
   .searchbar .filterbtn { display: inline-flex; }
+  /* Enters from the LEFT, because that is the edge it lives on at every wider
+     size. A control that is a left rail on a laptop and a right drawer on a
+     phone is two different controls to learn. The detail panel keeps the right
+     edge to itself, which also means the two can never slide over each other.
+
+     The rail is transparent by design -- it is a column on the page, not a box
+     on top of it. A drawer IS a box on top of the page, so it has to bring its
+     own background, or the listings show straight through it. */
   .rail {
-    position: fixed; top: 0; right: 0; bottom: 0; left: auto;
+    position: fixed; top: 0; left: 0; bottom: 0; right: auto;
     width: min(360px, 92vw); max-height: none;
-    border: 0; border-left: 3px solid var(--ink);
-    transform: translateX(100%); transition: transform .2s ease; z-index: 41;
+    background: var(--paper);
+    border: 0; border-right: 3px solid var(--ink);
+    padding-right: 0;
+    transform: translateX(-100%); transition: transform .2s ease; z-index: 41;
   }
   .rail.on { transform: translateX(0); }
   .rail .iconbtn, .rail #applyfilters { display: inline-flex; }
+  /* Rail padding is tuned to sit flush against a page margin. Floating over the
+     page it needs real gutters, and hard rules rather than hairlines, to read
+     as one surface -- the same treatment #detail gets. */
+  .rail .dhead {
+    padding: 13px 16px; border-bottom: 2px solid var(--ink);
+    background: var(--paper);
+  }
+  .rail .dbody { padding: 14px 16px; }
+  .rail .dfoot {
+    padding: 11px 16px; border-top: 2px solid var(--ink);
+    background: var(--paper);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .rail, #scrim { transition: none; }
