@@ -78,5 +78,10 @@ jobs:
             echo "no change"
           else
             git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ)"
+            # discover.yml pushes to the same branch, and its monthly CMS sweep
+            # runs for the better part of an hour -- long enough to overlap one
+            # of these three daily runs. Without the rebase whichever finishes
+            # second is rejected and discards a complete, validated build.
+            git pull --rebase --autostash
             git push
           fi

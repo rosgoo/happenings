@@ -12,10 +12,24 @@ name: discover
 # MERGES rather than replaces. Every run is a chance at calendars the roster
 # has not seen, so weekly is the floor rather than the ceiling -- twice a week
 # would be defensible.
+#
+# Two clocks, because the jobs below are not the same size. Luma, Squarespace
+# and the subway register are tens of requests against a handful of hosts.
+# `posttypes.py` asks all 668 census sites what their CMS publishes, which is
+# a couple of thousand requests at a second apiece -- roughly forty minutes,
+# and forty minutes of somebody else's bandwidth. That answer changes when a
+# venue redesigns, so it runs monthly. Spending it twice a week to re-learn a
+# committed registry is exactly the waste this split exists to avoid.
 on:
   schedule:
     - cron: '40 8 * * 1,4'       # Mon & Thu, 04:40 America/New_York
+    - cron: '10 7 1 * *'         # 1st of the month, 02:10 -- the full sweep
   workflow_dispatch:
+    inputs:
+      sweep:
+        description: 'Also re-sweep every census site for CMS registries (~40 min)'
+        type: boolean
+        default: false
 
 concurrency:
   group: discover
@@ -46,14 +60,39 @@ jobs:
       - name: Subway register
         run: python3 subway.py
 
+      # The monthly one. Writes cities/<city>/wordpress.json, which fetch.py
+      # reads, and data/<city>/posttypes.json, which is the evidence behind it
+      # -- three grades of answer per site, so a later claim about coverage can
+      # be checked rather than believed.
+      #
+      # Curated fields in the registry survive this: posttypes.py merges rather
+      # than replaces, so the hand-set `venue_name` on Prospect Park and the
+      # `skip` on City Parks Foundation are not undone by a rebuild.
+      - name: CMS registries (monthly)
+        if: github.event.schedule == '10 7 1 * *' || inputs.sweep
+        env:
+          HAPPENINGS_CONTACT: https://happenings.town
+        run: python3 posttypes.py
+
       - name: Commit registries
         run: |
           git config user.name  "happenings-bot"
           git config user.email "bot@users.noreply.github.com"
+          # Only posttypes.json out of data/ -- `git add data/` would sweep up
+          # whatever events.json the pipeline left in the working tree and
+          # commit it from a job that never regenerated it. The `|| true` is
+          # for a city that has never been swept, where the glob matches
+          # nothing and git treats that as an error.
           git add cities/
+          git add data/*/posttypes.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "no change"
           else
             git commit -m "discover: $(date -u +%Y-%m-%dT%H:%MZ)"
+            # pipeline.yml pushes to the same branch three times a day, and a
+            # forty-minute sweep is very likely to straddle one. Without this
+            # the push is rejected and the whole run's work is thrown away for
+            # a reason that has nothing to do with the data.
+            git pull --rebase --autostash
             git push
           fi
