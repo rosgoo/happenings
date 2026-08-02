@@ -31,7 +31,7 @@ jobs:
 
       - name: Extract
         env:
-          HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+          HAPPENINGS_CONTACT: https://happenings.town
           # Ticketmaster is the only keyed source. Without this the adapter
           # raises, fetch.py counts a failure and the whole job exits 1 --
           # which is the correct behaviour, but it means the secret is not

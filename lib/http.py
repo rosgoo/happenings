@@ -13,7 +13,7 @@ import urllib.parse
 import urllib.request
 from urllib.robotparser import RobotFileParser
 
-CONTACT = os.environ.get("HAPPENINGS_CONTACT", "https://github.com/rosgoo/happenings")
+CONTACT = os.environ.get("HAPPENINGS_CONTACT", "https://happenings.town")
 UA = f"happenings/0.1 (+{CONTACT})"
 
 DEFAULT_DELAY = 1.0

@@ -31,14 +31,14 @@ jobs:
 
       - name: Luma calendars
         env:
-          HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+          HAPPENINGS_CONTACT: https://happenings.town
         run: python3 luma.py
 
       # Slugs change when a venue redesigns. Cheap enough weekly, and a venue
       # that moved /events to /whats-on is otherwise silently lost.
       - name: Squarespace collections
         env:
-          HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+          HAPPENINGS_CONTACT: https://happenings.town
         run: python3 squarespace.py
 
       # These two are near-static -- stations and parks do not move -- but a

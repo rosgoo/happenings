@@ -3,7 +3,7 @@
 // expires accumulates nothing.
 import { neighborhoods, categories, venuesWithEvents, upcoming } from '../lib/data.js';
 
-const SITE = 'https://happenings.nyc';
+const SITE = import.meta.env.SITE;
 
 export const GET = () => {
   const urls = [

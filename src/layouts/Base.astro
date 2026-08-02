@@ -3,6 +3,11 @@ import '../styles/app.css';
 import { meta } from '../lib/data.js';
 
 const { title, description, favi = '🗽' } = Astro.props;
+// Vercel serves every build at a *.vercel.app URL as well, so each page has to
+// name the host that owns it -- 345 pages duplicated across two domains is the
+// cheapest way to poison a domain. The trailing slash is stripped so this
+// agrees with sitemap.xml; if the two disagree about /x vs /x/, they argue.
+const canonical = new URL(Astro.url.pathname.replace(/\/+$/, '') || '/', Astro.site);
 const generated = new Date(meta.generated_at).toLocaleString('en-US', {
   dateStyle: 'medium', timeStyle: 'short', timeZone: meta.tz,
 });
@@ -14,9 +19,11 @@ const generated = new Date(meta.generated_at).toLocaleString('en-US', {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
   <link rel="icon" href={`data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">${favi}</text></svg>`} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
