@@ -1,5 +1,22 @@
 ---
 // One city today, but the city segment ships from day one: retrofitting one
 // later means redirecting every URL on the site.
+//
+// In production this page is never reached. Vercel checks vercel.json's
+// `redirects` BEFORE it looks at the filesystem, so `/` is answered with a real
+// 307 and the browser is at /nyc before it has painted anything.
+//
+// This file is the dev-server equivalent. A static build cannot emit an HTTP
+// status -- there is no server to send one -- so `Astro.redirect` compiles down
+// to a `<meta http-equiv="refresh" content="2;...">` holding page, which is the
+// two-second "Redirecting from / to /nyc" screen. `astro dev` does serve a real
+// 302 from this, which is why it stays: without it `/` 404s in development.
+//
+// So the redirect is declared twice, once per environment. The pair to keep in
+// step is this line and the `redirects` entry in vercel.json.
+//
+// Temporary (307/302) rather than permanent on purpose: `/` becomes a city
+// picker the day a second city lands, and a 308 would sit in browser caches
+// long after that.
 return Astro.redirect('/nyc', 302);
 ---
