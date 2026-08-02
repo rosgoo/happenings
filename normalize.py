@@ -25,6 +25,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import taxonomy  # noqa: E402
 from lib.geo import Neighborhoods  # noqa: E402
 from lib.places import Resolver, norm as pnorm  # noqa: E402
+from geocode import Parks  # noqa: E402
+import subway  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -62,6 +64,59 @@ def parse_naive(s):
         except ValueError:
             continue
     return None
+
+
+TAG = re.compile(r"<[^>]+>")
+
+
+def strip_tags(s):
+    """Squarespace excerpts are HTML fragments, not text.
+
+    `clean` decodes entities but leaves `<p style="...">` in place, which would
+    be stored and then escaped at render into visible markup. Tags go first,
+    entities second -- the other order turns an encoded `&lt;b&gt;` into a tag
+    and then eats it.
+    """
+    if not s:
+        return None
+    return clean(TAG.sub(" ", str(s))) or None
+
+
+LUMA_URL = re.compile(r"https://(?:luma\.com|lu\.ma)/[A-Za-z0-9_-]+")
+
+
+def to_local_naive(iso, tz):
+    """An aware ISO instant -> naive wall-clock in the city's zone.
+
+    `add` stamps the city timezone itself, so anything handed to it must
+    already be local and naive. A date-only value (an all-day event) becomes
+    midnight, which is the only reading available once a time is required.
+    """
+    if not iso:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(iso))
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        return dt
+    return dt.astimezone(tz).replace(tzinfo=None)
+
+
+def from_epoch_ms(ms, tz):
+    """Epoch milliseconds -> naive datetime in the city's zone.
+
+    Squarespace stores an instant; `add` wants a local wall-clock time it can
+    stamp with the city timezone. Going through UTC and converting is the only
+    way that survives a source publishing from another zone.
+    """
+    if not isinstance(ms, (int, float)):
+        return None
+    try:
+        return (datetime.fromtimestamp(ms / 1000.0, timezone.utc)
+                .astimezone(tz).replace(tzinfo=None))
+    except (ValueError, OSError, OverflowError):
+        return None
 
 
 def band(dt):
@@ -105,12 +160,47 @@ class Builder:
                     if hit:
                         gaz[pnorm(loc)] = {"lat": hit["lat"], "lon": hit["lon"],
                                            "name": hit.get("matched")}
-        self.resolver = Resolver(self.hoods, gazetteer=gaz)
-        print(f"  gazetteer: {len(gaz)} located names")
+        # The city's own park register, as a strategy rather than only as an
+        # input to geocode.py. `places.Resolver` has always documented a
+        # `register` tier above the gazetteer, but nothing was passing one, so
+        # the chain was really coords -> gazetteer -> nothing. Any park not
+        # already in the cache fell through -- Washington Square Park among
+        # them. This is a lookup against ground truth, needs no network, and
+        # makes the resolver correct on a cold cache.
+        register = {}
+        ppath = os.path.join(cdir, "parks.geojson")
+        if os.path.exists(ppath):
+            for name, rec in Parks(ppath).by_name.items():
+                register[name] = {"lat": rec["lat"], "lon": rec["lon"],
+                                  "name": rec["name"]}
+
+        self.resolver = Resolver(self.hoods, register=register, gazetteer=gaz)
+        print(f"  register: {len(register)} park names · "
+              f"gazetteer: {len(gaz)} located names")
+
+        # Nearest subway. New Yorkers do not navigate by NTA name -- they say
+        # "off the Jefferson St L". Resolved here so it is consistent with
+        # however the venue got placed, and memoised on a ~11 m grid because
+        # 4,600 events against 445 stations is two million distance checks and
+        # events cluster hard on the same few venues.
+        self.subway = subway.load(city)
+        self._near_cache = {}
+        print(f"  subway: {len(self.subway)} stations")
         self.events, self.rejected = [], []
         self.venues = {}
         self.seen = set()
         self.stats = Counter()
+
+    def near_subway(self, lat, lon, limit=2):
+        """Closest stations, or [] when there is no honest answer."""
+        if lat is None or lon is None or not len(self.subway):
+            return []
+        key = (round(lat, 4), round(lon, 4), limit)
+        hit = self._near_cache.get(key)
+        if hit is None:
+            hit = self.subway.nearest(lat, lon, limit=limit)
+            self._near_cache[key] = hit
+        return hit
 
     # -- venues ------------------------------------------------------------
     def venue(self, name, lat=None, lon=None, borough=None, kind="venue"):
@@ -145,7 +235,17 @@ class Builder:
     # -- emit --------------------------------------------------------------
     def add(self, *, title, start, end, venue, category, subcategory, cat_source,
             source_id, url=None, description=None, flags=None, price_min=None,
-            is_free=None):
+            is_free=None, place=None):
+        """`place` overrides the venue's location for THIS event.
+
+        Venues keep exactly one canonical neighbourhood -- URLs and dedup depend
+        on it -- and for a building that is simply true. It is not true of a
+        touring host: Reading Rhythms runs the same night in Harlem, Bushwick,
+        Williamsburg and Staten Island, and inheriting the venue's first-seen
+        location filed all of them under The Battery. Where a source states
+        where THIS event is, that wins for the event while the venue's own
+        canonical location is left alone.
+        """
         if not title or not start or venue is None:
             self.stats["dropped_incomplete"] += 1
             return
@@ -156,6 +256,9 @@ class Builder:
         self.seen.add(eid)
 
         start_aware = start.replace(tzinfo=self.tz)
+        loc = dict(venue)
+        if place is not None:
+            loc.update(place.as_dict())
         self.events.append({
             "id": eid,
             "title": clean(title),
@@ -168,11 +271,12 @@ class Builder:
             "tz": self.cfg["tz"],
             "venue_id": venue["id"],
             "venue_name": venue["name"],
-            "neighborhood": venue["neighborhood"],
-            "neighborhood_name": venue["neighborhood_name"],
-            "borough": venue["borough"],
-            "lat": venue["lat"], "lon": venue["lon"],
-            "location_source": venue.get("location_source"),
+            "neighborhood": loc["neighborhood"],
+            "neighborhood_name": loc["neighborhood_name"],
+            "borough": loc["borough"],
+            "lat": loc["lat"], "lon": loc["lon"],
+            "location_source": loc.get("location_source"),
+            "subway": self.near_subway(loc["lat"], loc["lon"]),
             "category": category,
             "subcategory": subcategory,
             "category_source": cat_source,
@@ -280,10 +384,253 @@ class Builder:
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id)
 
+    def squarespace(self, src_id, rows):
+        """Venue-published events from Squarespace collections.
+
+        The richest source wired so far: it carries coordinates and a real event
+        URL, which are the two fields the index is thinnest on. Timestamps are
+        epoch milliseconds in UTC and are converted to city-local naive, because
+        that is what `add` expects and what every other adapter hands it.
+
+        Price is still null. Squarespace models an event as a blog post with
+        dates; the ticket price lives in prose in the excerpt when it exists at
+        all, and guessing it is exactly the estimate this pipeline refuses to
+        make.
+        """
+        for r in rows:
+            title = clean(r.get("title"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=r.get("fullUrl"))
+                continue
+
+            start = from_epoch_ms(r.get("startDate"), self.tz)
+            end = from_epoch_ms(r.get("endDate"), self.tz)
+            if not start:
+                self.reject(src_id, title, "unparseable start time")
+                continue
+            # An all-day event is exported as midnight-to-midnight, which would
+            # render as "12:00 AM" and sort into the late-night band. Treat a
+            # same-day midnight pair as dateless rather than as a 00:00 start.
+            if end and end < start:
+                end = None
+
+            loc = r.get("location") or {}
+            lat, lon = loc.get("mapLat"), loc.get("mapLng")
+            try:
+                lat = float(lat) if lat is not None else None
+                lon = float(lon) if lon is not None else None
+            except (TypeError, ValueError):
+                lat = lon = None
+            v = self.venue(r.get("venue_name") or r.get("venue_host"),
+                           lat, lon, kind="venue")
+
+            # The venue's own tags are ground truth where they exist; the title
+            # is the fallback. Neither is trusted to invent a category.
+            cat = sub = csrc = None
+            for word in (r.get("categories") or []) + (r.get("tags") or []):
+                c, s, _ = taxonomy.from_title(str(word))
+                if c:
+                    cat, sub, csrc = c, s, "squarespace:tags"
+                    break
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                self.reject(src_id, title, "unclassified squarespace event",
+                            url=r.get("fullUrl"))
+                continue
+
+            url = r.get("fullUrl") or ""
+            if url.startswith("/"):
+                url = (r.get("origin") or "").rstrip("/") + url
+            self.add(title=title, start=start, end=end, venue=v,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=url or None,
+                     description=strip_tags(r.get("excerpt")))
+
+    def ticketmaster(self, src_id, rows):
+        """Discovery API events. The first source here that states a price.
+
+        Geography is the constraint that matters. The NYC DMA is a media market,
+        not a city -- it reaches Newark, Long Island and lower Connecticut, and
+        the sample that proved this adapter works was a Monster Jam at the
+        Prudential Center. So an event is kept only if its venue's coordinates
+        land inside an actual NYC neighbourhood polygon. The NTA file is already
+        the arbiter of "where is this" everywhere else in the pipeline; here it
+        doubles as the arbiter of "is this even our city".
+        """
+        # A standing exhibition sold as timed entry is one event per day, not
+        # one per slot. The Balloon Museum alone ships 1,038 rows in a 30-day
+        # window -- 34 admission times a day -- which would make a single
+        # attraction 12% of the whole index and bury everything else. Collapse
+        # to the first slot of each day; the listing answers "is this on today",
+        # which is the question the index exists to answer.
+        slots = Counter()
+        for e in rows:
+            st = ((e.get("dates") or {}).get("start") or {})
+            slots[(clean(e.get("name")), st.get("localDate"))] += 1
+        kept_day = set()
+
+        for e in rows:
+            title = clean(e.get("name"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=e.get("url"))
+                continue
+
+            dates = e.get("dates") or {}
+            day_key = (title, (dates.get("start") or {}).get("localDate"))
+            if slots[day_key] > 2:
+                if day_key in kept_day:
+                    self.stats["tm_timed_entry_collapsed"] += 1
+                    continue
+                kept_day.add(day_key)
+
+            st = dates.get("start") or {}
+            # TBA/TBD events have no time to sort or filter by. A listings index
+            # is a promise about when -- an event that cannot answer that is not
+            # a listing yet.
+            if st.get("dateTBA") or st.get("dateTBD") or st.get("noSpecificTime"):
+                self.reject(src_id, title, "date TBA/TBD", url=e.get("url"))
+                continue
+            status = ((dates.get("status") or {}).get("code") or "").lower()
+            if status in ("cancelled", "canceled", "postponed"):
+                self.reject(src_id, title, f"status: {status}", url=e.get("url"))
+                continue
+
+            start = parse_naive(f"{st.get('localDate')} {st.get('localTime') or '00:00:00'}")
+            if not start:
+                self.reject(src_id, title, "unparseable start time", url=e.get("url"))
+                continue
+
+            venues = (e.get("_embedded") or {}).get("venues") or []
+            v0 = venues[0] if venues else {}
+            loc = v0.get("location") or {}
+            try:
+                lat = float(loc["latitude"])
+                lon = float(loc["longitude"])
+            except (KeyError, TypeError, ValueError):
+                self.reject(src_id, title, "venue has no coordinates", url=e.get("url"))
+                continue
+
+            v = self.venue(v0.get("name") or "Unknown venue", lat, lon, kind="venue")
+            if not v or not v.get("neighborhood"):
+                self.reject(src_id, title, "outside nyc", url=e.get("url"))
+                continue
+
+            cat, sub, csrc = taxonomy.from_ticketmaster(e.get("classifications"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                # The building, when the listing will not say. Broadway arrives
+                # from Ticketmaster with segment `Undefined` and no genre.
+                cat, sub, csrc = taxonomy.from_venue(v["name"])
+            if not cat:
+                self.reject(src_id, title, "unclassified ticketmaster event",
+                            url=e.get("url"))
+                continue
+
+            # priceRanges is present on a minority of events and is the only
+            # stated price anywhere in this pipeline. Absent stays null.
+            price_min = is_free = None
+            pr = e.get("priceRanges") or []
+            if pr:
+                mins = [p.get("min") for p in pr if isinstance(p.get("min"), (int, float))]
+                if mins:
+                    price_min = min(mins)
+                    is_free = price_min == 0
+
+            self.add(title=title, start=start, end=None, venue=v,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=e.get("url"),
+                     price_min=price_min, is_free=is_free)
+
+    def luma(self, src_id, rows):
+        """Luma calendars -- meetups, run clubs, reading groups, craft circles.
+
+        The only source here covering organiser-led community programming, which
+        is invisible to Open Data and unsellable through Ticketmaster. It also
+        arrives with GEO coordinates on nearly every event, so it places well.
+
+        The calendar name is the fallback classifier. An event called "Session 4"
+        says nothing; "NYC Backgammon Club" says it is games. That is the same
+        move as reading Broadway off the theatre's name -- context that the
+        source states as fact, not a guess about the title.
+        """
+        for r in rows:
+            title = clean(r.get("summary"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad)
+                continue
+            if (r.get("status") or "").upper() == "CANCELLED":
+                self.reject(src_id, title, "status: cancelled")
+                continue
+
+            start = to_local_naive(r.get("start"), self.tz)
+            end = to_local_naive(r.get("end"), self.tz)
+            if not start:
+                self.reject(src_id, title, "unparseable start time")
+                continue
+
+            # A Luma calendar is a publisher, not a place. "Claude Community
+            # Events" is one calendar carrying meetups in Medellín, Singapore,
+            # Adelaide and Bengaluru, and subscribing to it as an NYC source put
+            # a Medellín workshop on the page. Coordinates are the only thing
+            # that says where an event is, so no coordinates means no listing.
+            lat, lon = r.get("lat"), r.get("lon")
+            if lat is None or lon is None:
+                self.reject(src_id, title, "no coordinates, cannot place")
+                continue
+
+            # Test THIS event's coordinates, not the venue's. Venues are cached
+            # by name and keep the first location they were seen at, which is
+            # the right call for a building and the wrong one for a host that
+            # runs meetups on four continents -- a cached NYC organiser would
+            # otherwise wave through every foreign event that followed it.
+            here = self.resolver.resolve(lat=lat, lon=lon)
+            if not here or not here.as_dict().get("neighborhood"):
+                self.reject(src_id, title, "outside nyc")
+                continue
+
+            # Hosts are the venue here. A run club is not a building, but it is
+            # the stable name this event belongs to, and GEO does the placing.
+            v = self.venue(r.get("organizer") or r.get("calendar_name") or "Luma",
+                           lat, lon, kind="organizer")
+            if not v:
+                self.reject(src_id, title, "no venue could be resolved")
+                continue
+
+            cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                cat, sub, _ = taxonomy.from_title(r.get("calendar_name") or "")
+                csrc = "luma:calendar-name" if cat else None
+            if not cat:
+                self.reject(src_id, title, "unclassified luma event")
+                continue
+
+            # The canonical link is inside the DESCRIPTION prose, not a URL
+            # property -- Luma puts "Find more information on https://luma.com/x"
+            # there and leaves URL unset.
+            url = None
+            m = LUMA_URL.search(r.get("description") or "")
+            if m:
+                url = m.group(0)
+            elif (r.get("location") or "").startswith("http"):
+                url = r["location"]
+
+            self.add(title=title, start=start, end=end, venue=v, place=here,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=url,
+                     description=r.get("description"))
+
     # -- run ---------------------------------------------------------------
     def run(self):
         raw_dir = os.path.join(ROOT, "raw", self.city)
-        handlers = {"nyc-parks-upcoming": self.parks, "nyc-permitted-events": self.permits}
+        handlers = {"nyc-parks-upcoming": self.parks, "nyc-permitted-events": self.permits,
+                    "nyc-squarespace": self.squarespace,
+                    "nyc-ticketmaster": self.ticketmaster,
+                    "nyc-luma": self.luma}
         used = []
         for fn in sorted(os.listdir(raw_dir)):
             if not fn.endswith(".json"):
@@ -304,7 +651,19 @@ class Builder:
 
         self.events.sort(key=lambda e: (e["start_utc"], e["title"]))
         venues = [v for v in self.venues.values() if v["count"] > 0]
+        for v in venues:
+            v["subway"] = self.near_subway(v["lat"], v["lon"])
         venues.sort(key=lambda v: (-v["count"], v["name"]))
+
+        # Which stations stand INSIDE each neighbourhood, rather than which are
+        # nearest to it. A neighbourhood is an area, and "the L runs through
+        # here" is the claim worth making; nearest-station to a centroid would
+        # put a train in a neighbourhood it only passes beside.
+        hood_stations = defaultdict(list)
+        for s in self.subway.stations:
+            area = self.hoods.locate(s["lon"], s["lat"])
+            if area:
+                hood_stations[area["slug"]].append(s)
 
         hood_counts = Counter(e["neighborhood"] for e in self.events if e["neighborhood"])
         cat_counts = Counter(e["category"] for e in self.events)
@@ -337,13 +696,38 @@ class Builder:
             "by_location_source": dict(Counter(
                 e.get("location_source") or "unresolved" for e in self.events).most_common()),
             "sources": used,
+            "subway_stations": len(self.subway),
+            "coverage_subway": round(
+                100 * sum(1 for e in self.events if e.get("subway")) /
+                max(1, len(self.events)), 1),
             "stats": dict(self.stats.most_common()),
         }
+
+        # One record per neighbourhood that has something on, carrying the
+        # trains that serve it. Written as its own file rather than folded into
+        # meta: the UI reads it per edition page, and meta is already the
+        # build's own report card.
+        hoods_out = []
+        for slug, n in hood_counts.most_common():
+            sample = next((e for e in self.events if e["neighborhood"] == slug), None)
+            stations = hood_stations.get(slug) or []
+            routes = sorted({r for s in stations for r in s["routes"]})
+            hoods_out.append({
+                "slug": slug,
+                "name": sample["neighborhood_name"] if sample else slug,
+                "borough": sample["borough"] if sample else None,
+                "count": n,
+                "routes": routes,
+                "stations": [{"name": s["name"], "routes": s["routes"],
+                              "ada": s["ada"]} for s in
+                             sorted(stations, key=lambda s: s["name"] or "")],
+            })
 
         out = os.path.join(ROOT, "data", self.city)
         os.makedirs(out, exist_ok=True)
         for name, payload in (("events", self.events), ("venues", venues),
-                              ("rejected", self.rejected), ("meta", meta)):
+                              ("rejected", self.rejected),
+                              ("neighborhoods", hoods_out), ("meta", meta)):
             with open(os.path.join(out, f"{name}.json"), "w") as f:
                 json.dump(payload, f, separators=(",", ":") if name != "meta" else None,
                           indent=None if name != "meta" else 2)

@@ -1,0 +1,596 @@
+{
+ "generated_at": "2026-08-02T19:25:49.833878+00:00",
+ "probed": 40,
+ "sites": [
+  {
+   "host": "www.frauncestavernmuseum.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Fraunces Tavern Museum",
+   "open": []
+  },
+  {
+   "host": "bronxmuseum.org",
+   "wp_types": {
+    "exhibition": "exhibition",
+    "event": "event"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Bronx Museum of the Arts",
+   "open": [
+    {
+     "slug": "event",
+     "base": "event",
+     "total": "239",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Lifelong Studio: Alternative Archives Exhibition Opening Celebration",
+     "sample_link": "https://bronxmuseum.org/event/lifelong-studio-exhibition-opening26/"
+    },
+    {
+     "slug": "exhibition",
+     "base": "exhibition",
+     "total": "139",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Lifelong Studio: Alternative Archives Exhibition",
+     "sample_link": "https://bronxmuseum.org/exhibition/lifelong-studio-alternative-archives/"
+    }
+   ]
+  },
+  {
+   "host": "www.yumuseum.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Yeshiva University Museum",
+   "open": []
+  },
+  {
+   "host": "www.nytransitmuseum.org",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "New York Transit Museum",
+   "open": [
+    {
+     "slug": "tribe_events",
+     "base": "tribe_events",
+     "total": "50",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Subway Simulator Sunday",
+     "sample_link": "https://www.nytransitmuseum.org/program/subway-simulator-sunday-aug/"
+    }
+   ]
+  },
+  {
+   "host": "6tocelebrate.org",
+   "wp_types": {},
+   "drupal_types": null,
+   "error": null,
+   "name": "Erasmus Hall Museum",
+   "open": []
+  },
+  {
+   "host": "www.bartowpellmansionmuseum.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Bartow-Pell Mansion Museum",
+   "open": []
+  },
+  {
+   "host": "noblemaritime.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Noble Maritime Collection",
+   "open": []
+  },
+  {
+   "host": "snug-harbor.org",
+   "wp_types": {
+    "event": "event",
+    "class": "class"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Newhouse Center for Contemporary Art",
+   "open": [
+    {
+     "slug": "class",
+     "base": "class",
+     "total": "122",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Free Outdoor Yoga",
+     "sample_link": "https://snug-harbor.org/class/free-outdoor-yoga/"
+    },
+    {
+     "slug": "event",
+     "base": "event",
+     "total": "168",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Richmond County Orchestra: \u201cHeroes and Harmony\u201d concert",
+     "sample_link": "https://snug-harbor.org/event/richmond-county-orchestra-heroes-and-harmony-concert/"
+    }
+   ]
+  },
+  {
+   "host": "www.statenislandmuseum.org",
+   "wp_types": {
+    "online-exhibitions": "online-exhibitions",
+    "exhibitions": "exhibitions",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Staten Island Museum",
+   "open": [
+    {
+     "slug": "exhibitions",
+     "base": "exhibitions",
+     "total": "18",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Staten Island: Making History",
+     "sample_link": "https://www.statenislandmuseum.org/exhibitions/staten-island-making-history/"
+    },
+    {
+     "slug": "online-exhibitions",
+     "base": "online-exhibitions",
+     "total": "25",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Mixed Media (ceramics, glass, paper, wood, wool, textiles)",
+     "sample_link": "https://www.statenislandmuseum.org/online-exhibitions/statenislandfineartsandcrafts/mixedmedia/"
+    },
+    {
+     "slug": "tribe_events",
+     "base": "tribe_events",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Bird and Nature Walk: Great Kills Park",
+     "sample_link": "https://www.statenislandmuseum.org/event/bird-and-nature-walk-great-kills-park-9/"
+    }
+   ]
+  },
+  {
+   "host": "dyckmanfarmhouse.org",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Dyckman Farmhouse Museum",
+   "open": []
+  },
+  {
+   "host": "www.moaf.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Museum of American Finance",
+   "open": []
+  },
+  {
+   "host": "rubinmuseum.org",
+   "wp_types": {
+    "exhibitions": "exhibitions"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Rubin Museum of Art",
+   "open": [
+    {
+     "slug": "exhibitions",
+     "base": "exhibitions",
+     "total": "101",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Amrit Karki: s\u0101 Ladakh Biennale",
+     "sample_link": "https://rubinmuseum.org/exhibitions/amrit-karki-sa-ladakh-biennale/"
+    }
+   ]
+  },
+  {
+   "host": "www.nps.gov",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Ryan Visitor Center",
+   "open": []
+  },
+  {
+   "host": "www.nutleyhistoricalsociety.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Nutley Museum",
+   "open": []
+  },
+  {
+   "host": "www.mlb.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "The Yankees Museum",
+   "open": []
+  },
+  {
+   "host": "skyscraper.org",
+   "wp_types": {
+    "exhibitions": "exhibitions",
+    "programs": "programs"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Skyscraper Museum",
+   "open": [
+    {
+     "slug": "exhibitions",
+     "base": "exhibitions",
+     "total": "35",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Modern Concrete Skyscraper",
+     "sample_link": "https://skyscraper.org/exhibitions/the-modern-concrete-skyscraper/"
+    },
+    {
+     "slug": "programs",
+     "base": "programs",
+     "total": "464",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The World Trade Center Remembered",
+     "sample_link": "https://skyscraper.org/programs/the-world-trade-center-remembered/"
+    }
+   ]
+  },
+  {
+   "host": "www.halldeslumieres.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Hall des Lumi\u00e8res",
+   "open": []
+  },
+  {
+   "host": "southstreetseaportmuseum.org",
+   "wp_types": {},
+   "drupal_types": null,
+   "error": null,
+   "name": "South Street Seaport Museum",
+   "open": []
+  },
+  {
+   "host": "www.folkartmuseum.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "American Folk Art Museum",
+   "open": []
+  },
+  {
+   "host": "www.sichildrensmuseum.org",
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Staten Island Children\u2019s Museum",
+   "open": [
+    {
+     "slug": "tribe_events",
+     "base": "tribe_events",
+     "total": "41",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Museum Movers and Shakers",
+     "sample_link": "https://sichildrensmuseum.org/event/museum-movers-and-shakers-9/"
+    }
+   ]
+  },
+  {
+   "host": "www.fitnyc.edu",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "The Museum at FIT",
+   "open": []
+  },
+  {
+   "host": "www.sunymaritime.edu",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Maritime National Museum",
+   "open": []
+  },
+  {
+   "host": "www.govisland.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "The Trust for Governors Island",
+   "open": []
+  },
+  {
+   "host": "www.museumofsex.com",
+   "wp_types": {
+    "exhibitions": "exhibitions",
+    "events": "events"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Museum of Sex",
+   "open": [
+    {
+     "slug": "events",
+     "base": "events",
+     "total": "1",
+     "returned": 1,
+     "event_date_meta": [],
+     "sample_title": "Sacramento: Deep Throat 50th Anniversary Screening",
+     "sample_link": "https://www.museumofsex.com/events/deep-throat-50th-anniversary-screening/"
+    },
+    {
+     "slug": "exhibitions",
+     "base": "exhibitions",
+     "total": "60",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "The Life Force: Portraits from the Amparo &#038; Manuel Foundation",
+     "sample_link": "https://www.museumofsex.com/exhibitions/the-life-force-portraits-from-the-amparo-manuel-foundation/"
+    }
+   ]
+  },
+  {
+   "host": "momath.org",
+   "wp_types": {},
+   "drupal_types": null,
+   "error": null,
+   "name": "National Museum of Mathematics",
+   "open": []
+  },
+  {
+   "host": "italianamericanmuseum.org",
+   "wp_types": {
+    "product": "product",
+    "tribe_events": "tribe_events"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Italian American Museum",
+   "open": [
+    {
+     "slug": "product",
+     "base": "product",
+     "total": "4",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "New membership 2021",
+     "sample_link": "https://www.italianamericanmuseum.org/product/new-membership-2021/"
+    }
+   ]
+  },
+  {
+   "host": "www.bronxdoc.org",
+   "wp_types": {},
+   "drupal_types": null,
+   "error": null,
+   "name": "Bronx Documentary Center",
+   "open": []
+  },
+  {
+   "host": "gagosian.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Gagosian",
+   "open": []
+  },
+  {
+   "host": "lesbianherstoryarchives.org",
+   "wp_types": {
+    "event": "event",
+    "program": "program"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Lesbian Herstory Archives",
+   "open": [
+    {
+     "slug": "event",
+     "base": "event",
+     "total": "9",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Black Lesbian Futures",
+     "sample_link": "https://lesbianherstoryarchives.org/calendar/black-lesbian-futures/"
+    },
+    {
+     "slug": "program",
+     "base": "program",
+     "total": "7",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Lez Create",
+     "sample_link": "https://lesbianherstoryarchives.org/programs/lez-create/"
+    }
+   ]
+  },
+  {
+   "host": "smafathers.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "African Art Museum at the SMA",
+   "open": []
+  },
+  {
+   "host": "groundzeromuseumworkshop.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Ground Zero Museum Workshop",
+   "open": []
+  },
+  {
+   "host": "www.sugarhillmuseum.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Sugar Hill Children's Museum of Art and Story Telling",
+   "open": []
+  },
+  {
+   "host": "onderdonkhouse.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Greater Ridgewood Historical Society",
+   "open": []
+  },
+  {
+   "host": "studiomuseum.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "The Studio Museum In Harlem",
+   "open": []
+  },
+  {
+   "host": "www.rcgrossfoundation.org",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "The Renee and Chaim Gross Foundation",
+   "open": []
+  },
+  {
+   "host": "www.mmuseumm.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Mmuseumm",
+   "open": []
+  },
+  {
+   "host": "www.livingtorahmuseum.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "Living Torah Museum",
+   "open": []
+  },
+  {
+   "host": "www.centerforarchitecture.org",
+   "wp_types": {
+    "exhibition": "exhibition"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Center for Architecture",
+   "open": [
+    {
+     "slug": "exhibition",
+     "base": "exhibition",
+     "total": "128",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Dark Matter U: Justice, Pedagogy, Design",
+     "sample_link": "https://www.centerforarchitecture.org/exhibitions/dark-matter-u-justice-pedagogy-design/"
+    }
+   ]
+  },
+  {
+   "host": "www.thebiggieexperience.com",
+   "wp_types": null,
+   "drupal_types": null,
+   "error": null,
+   "name": "The Biggie Experience",
+   "open": []
+  },
+  {
+   "host": "newyork.museumofillusions.us",
+   "wp_types": {
+    "exhibit": "exhibit",
+    "exhibit-single": "exhibit-single",
+    "event": "event",
+    "current-event": "current-event"
+   },
+   "drupal_types": null,
+   "error": null,
+   "name": "Museum of Illusions",
+   "open": [
+    {
+     "slug": "current-event",
+     "base": "current-event",
+     "total": "1",
+     "returned": 1,
+     "event_date_meta": [],
+     "sample_title": "Share Your Most Mind-Bending Photo. Win a FREE Family Membership.",
+     "sample_link": "https://newyork.museumofillusions.us/current-event/share-your-most-mind-bending-photo-win-a-free-family-membership/"
+    },
+    {
+     "slug": "exhibit",
+     "base": "exhibit",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Illusion rooms",
+     "sample_link": "https://newyork.museumofillusions.us/exhibit/illusion-rooms/"
+    }
+   ]
+  }
+ ],
+ "tribe": [
+  {
+   "host": "www.nytransitmuseum.org",
+   "rest": 51,
+   "ics": {
+    "url": "https://www.nytransitmuseum.org/events/?ical=1",
+    "vevents": 30
+   },
+   "name": "New York Transit Museum"
+  },
+  {
+   "host": "www.statenislandmuseum.org",
+   "rest": 4,
+   "ics": {
+    "url": "https://www.statenislandmuseum.org/events/?ical=1",
+    "vevents": 3
+   },
+   "name": "Staten Island Museum"
+  },
+  {
+   "host": "dyckmanfarmhouse.org",
+   "rest": 0,
+   "ics": null,
+   "name": "Dyckman Farmhouse Museum"
+  },
+  {
+   "host": "www.sichildrensmuseum.org",
+   "rest": 43,
+   "ics": {
+    "url": "https://www.sichildrensmuseum.org/events/?ical=1",
+    "vevents": 30
+   },
+   "name": "Staten Island Children\u2019s Museum"
+  },
+  {
+   "host": "italianamericanmuseum.org",
+   "rest": 0,
+   "ics": null,
+   "name": "Italian American Museum"
+  }
+ ]
+}

@@ -48,6 +48,7 @@ several corrections, and without the cache each one costs another full crawl.
 """
 import argparse
 import gzip
+import html
 import json
 import os
 import re
@@ -167,21 +168,27 @@ def jsonld_types(body):
 
 
 def feed_links(body, base):
-    """ICS and RSS advertised in <link rel=alternate>, plus bare .ics hrefs."""
+    """ICS and RSS advertised in <link rel=alternate>, plus bare .ics hrefs.
+
+    Hrefs are HTML-unescaped before use. WordPress writes `&` as `&#038;` in
+    attributes, so Tribe's own export URL is stored as
+    `?post_type=tribe_events&#038;ical=1` -- which fetches a plain HTML page and
+    looks for all the world like a feed that does not work.
+    """
     ics, rss = [], []
     for m in LINK_TAG.finditer(body):
         tag = m.group(0).decode("utf-8", "replace")
         href = re.search(r"""href=["']([^"']+)["']""", tag, re.I)
         if not href:
             continue
-        url = urllib.parse.urljoin(base, href.group(1))
+        url = urllib.parse.urljoin(base, html.unescape(href.group(1)))
         low = tag.lower()
         if "text/calendar" in low or url.lower().endswith(".ics"):
             ics.append(url)
         elif "application/rss+xml" in low or "application/atom+xml" in low:
             rss.append(url)
     for m in ANCHOR.finditer(body):
-        href = m.group(1).decode("utf-8", "replace")
+        href = html.unescape(m.group(1).decode("utf-8", "replace"))
         if href.lower().endswith(".ics") or href.lower().startswith("webcal:"):
             ics.append(urllib.parse.urljoin(base, href))
     return sorted(set(ics))[:5], sorted(set(rss))[:5]

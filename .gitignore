@@ -7,6 +7,16 @@ raw/
 # Run logs
 data/*.out
 
+# The dead-letter queue. Regenerated in full by every normalize.py run, ~4 MB,
+# and read by nothing -- not the site, not validate.py. Committing it three
+# times a day was doubling the repo's growth to store a file no page has ever
+# served. The counts that matter survive in meta.json (`stats`), which is
+# committed, so the trend line stays in git history; only the 26,000 individual
+# rejected titles are dropped. CI keeps them as a build artifact, which is the
+# right retention for something you read when auditing the classifier and never
+# otherwise. Regenerate locally any time with `python3 normalize.py`.
+data/*/rejected.json
+
 # This run's changed events, handed to the alert matcher. Not a durable
 # artifact — event-history.jsonl is the ledger.
 data/event-changes.json

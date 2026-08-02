@@ -1,0 +1,4270 @@
+{
+ "generated_at": "2026-08-02T15:25:32.024410+00:00",
+ "scope": "wp",
+ "reached": 698,
+ "advertised": 30,
+ "requests": 30,
+ "probed": [
+  {
+   "host": "bronxmuseum.org",
+   "name": "Bronx Museum of the Arts",
+   "tried": [
+    {
+     "url": "https://bronxmuseum.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bronxmuseum.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.nytransitmuseum.org",
+   "name": "New York Transit Museum",
+   "tried": [
+    {
+     "url": "https://www.nytransitmuseum.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://www.nytransitmuseum.org/programs/?ical=1",
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261018",
+    "live": true
+   },
+   "error": null
+  },
+  {
+   "host": "6tocelebrate.org",
+   "name": "Erasmus Hall Museum",
+   "tried": [
+    {
+     "url": "https://6tocelebrate.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://6tocelebrate.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.bartowpellmansionmuseum.org",
+   "name": "Bartow-Pell Mansion Museum",
+   "tried": [
+    {
+     "url": "https://www.bartowpellmansionmuseum.org/visit/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://www.bartowpellmansionmuseum.org/visit/exhibitions/?ical=1",
+   "feed": {
+    "events": 362,
+    "future": 8,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261107",
+    "live": true
+   },
+   "error": null
+  },
+  {
+   "host": "snug-harbor.org",
+   "name": "Newhouse Center for Contemporary Art",
+   "tried": [
+    {
+     "url": "https://snug-harbor.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://snug-harbor.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "skyscraper.org",
+   "name": "Skyscraper Museum",
+   "tried": [
+    {
+     "url": "https://skyscraper.org/programs?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://skyscraper.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://skyscraper.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.museumofsex.com",
+   "name": "Museum of Sex",
+   "tried": [
+    {
+     "url": "https://www.museumofsex.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.museumofsex.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "momath.org",
+   "name": "National Museum of Mathematics",
+   "tried": [
+    {
+     "url": "https://momath.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://momath.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://momath.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.bronxdoc.org",
+   "name": "Bronx Documentary Center",
+   "tried": [
+    {
+     "url": "https://www.bronxdoc.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.bronxdoc.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.brooklynkids.org",
+   "name": "Spark Brooklyn Children's Museum Annex",
+   "tried": [
+    {
+     "url": "https://www.brooklynkids.org/calendar?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://www.brooklynkids.org/calendar?ical=1",
+   "feed": {
+    "events": 50,
+    "future": 0,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20230518",
+    "live": false
+   },
+   "error": null
+  },
+  {
+   "host": "lesbianherstoryarchives.org",
+   "name": "Lesbian Herstory Archives",
+   "tried": [
+    {
+     "url": "https://lesbianherstoryarchives.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lesbianherstoryarchives.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lesbianherstoryarchives.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "newyork.museumofillusions.us",
+   "name": "Museum of Illusions",
+   "tried": [
+    {
+     "url": "https://newyork.museumofillusions.us/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://newyork.museumofillusions.us/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "morusnyc.org",
+   "name": "Museum of Reclaimed Urban Space",
+   "tried": [
+    {
+     "url": "https://morusnyc.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://morusnyc.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "museumofthedog.org",
+   "name": "The AKC Museum of the Dog",
+   "tried": [
+    {
+     "url": "https://museumofthedog.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://museumofthedog.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://museumofthedog.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.museumoficecream.com",
+   "name": "Museum of Ice Cream",
+   "tried": [
+    {
+     "url": "https://www.museumoficecream.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.museumoficecream.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "gtmuseum.org",
+   "name": "Godwin-Ternbach Museum",
+   "tried": [
+    {
+     "url": "https://gtmuseum.org/programs/workshops/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://gtmuseum.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://gtmuseum.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "cityreliquary.org",
+   "name": "The City Reliquary",
+   "tried": [
+    {
+     "url": "https://www.cityreliquary.org/category/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.cityreliquary.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.cityreliquary.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.mocada.org",
+   "name": "Museum of Contemporary African Diasporan Arts",
+   "tried": [
+    {
+     "url": "http://mocada.org/events/word-to-mommy-a-comedy-tribute/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://mocada.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://mocada.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.jackierobinsonmuseum.org",
+   "name": "Jackie Robinson Museum",
+   "tried": [
+    {
+     "url": "https://www.jackierobinsonmuseum.org/visit/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.jackierobinsonmuseum.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.jackierobinsonmuseum.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "jinian64.org",
+   "name": "June 4th Memorial Exhibit",
+   "tried": [
+    {
+     "url": "https://jinian64.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://jinian64.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "museumbanksy.com",
+   "name": "Banksy Museum",
+   "tried": [
+    {
+     "url": "https://museumbanksy.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://museumbanksy.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "brooklynseltzermuseum.org",
+   "name": "Brooklyn Seltzer Museum",
+   "tried": [
+    {
+     "url": "https://brooklynseltzermuseum.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynseltzermuseum.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.guggenheim.org",
+   "name": "Guggenheim Museum",
+   "tried": [
+    {
+     "url": "https://www.guggenheim.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.guggenheim.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.theukrainianmuseum.org",
+   "name": "The Ukrainian Museum",
+   "tried": [
+    {
+     "url": "https://www.theukrainianmuseum.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.theukrainianmuseum.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "conferencehouse.org",
+   "name": "The Conference House",
+   "tried": [
+    {
+     "url": "https://conferencehouse.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://conferencehouse.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "merchantshouse.org",
+   "name": "Merchant's House Museum",
+   "tried": [
+    {
+     "url": "https://merchantshouse.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://merchantshouse.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://merchantshouse.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.jcm.museum",
+   "name": "Jewish Childrens Museum",
+   "tried": [
+    {
+     "url": "https://www.jcm.museum/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.jcm.museum/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.brooklynbridgepark.org",
+   "name": "Brooklyn Bridge Park Environmental Education Center",
+   "tried": [
+    {
+     "url": "https://brooklynbridgepark.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynbridgepark.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.newarkmuseum.org",
+   "name": "Newark Museum",
+   "tried": [
+    {
+     "url": "https://newarkmuseumart.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://newarkmuseumart.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "patersonmuseum.com",
+   "name": "Paterson Museum",
+   "tried": [
+    {
+     "url": "https://patersonmuseum.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://patersonmuseum.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.cooperhewitt.org",
+   "name": "Cooper\u2013Hewitt, Smithsonian Design Museum",
+   "tried": [
+    {
+     "url": "https://www.cooperhewitt.org/events?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.cooperhewitt.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.cooperhewitt.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.cmom.org",
+   "name": "Children's Museum of Manhattan",
+   "tried": [
+    {
+     "url": "https://cmom.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://cmom.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "queenshistoricalsociety.org",
+   "name": "Kingsland Homestead",
+   "tried": [
+    {
+     "url": "https://queenshistoricalsociety.org/visit/events?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://queenshistoricalsociety.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://queenshistoricalsociety.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "sweetgum.nybg.org",
+   "name": "Steere Herbarium",
+   "tried": [
+    {
+     "url": "https://sweetgum.nybg.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://sweetgum.nybg.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "queensmuseum.org",
+   "name": "Queens Museum",
+   "tried": [
+    {
+     "url": "https://queensmuseum.org/whats-on?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://queensmuseum.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://queensmuseum.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "jerseyhistory.org",
+   "name": "New Jersey Historical Society",
+   "tried": [
+    {
+     "url": "https://jerseyhistory.org/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://jerseyhistory.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://jerseyhistory.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.statueofliberty.org",
+   "name": "Statue of Liberty Museum",
+   "tried": [
+    {
+     "url": "https://www.statueofliberty.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.statueofliberty.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.mocanyc.org",
+   "name": "Museum of Chinese in America",
+   "tried": [
+    {
+     "url": "https://www.mocanyc.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://www.mocanyc.org/calendar/?ical=1",
+   "feed": {
+    "events": 9,
+    "future": 7,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260926",
+    "live": true
+   },
+   "error": null
+  },
+  {
+   "host": "njahof.org",
+   "name": "Aviation Hall of Fame and Museum of New Jersey",
+   "tried": [
+    {
+     "url": "https://njahof.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://njahof.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "janetbordeninc.com",
+   "name": "Janet Borden",
+   "tried": [
+    {
+     "url": "https://janetbordeninc.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://janetbordeninc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "artlabsi.com",
+   "name": "Art Lab",
+   "tried": [
+    {
+     "url": "https://artlabsi.com/category/show/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://artlabsi.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://artlabsi.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "fisherparrish.com",
+   "name": "Fisher Parrish Gallery",
+   "tried": [
+    {
+     "url": "https://www.fisherparrish.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.fisherparrish.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "sleepcenterny.org",
+   "name": "SLEEPCENTER",
+   "tried": [
+    {
+     "url": "https://sleepcenterny.org/tag/screening/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://sleepcenterny.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://sleepcenterny.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "factionartprojects.com",
+   "name": "Faction Art Projects",
+   "tried": [
+    {
+     "url": "https://factionartprojects.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://factionartprojects.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "lamama.org",
+   "name": "La MaMa Galleria",
+   "tried": [
+    {
+     "url": "https://lamama.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lamama.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "shivagallery.org",
+   "name": "Anya & Andrew Shiva Gallery",
+   "tried": [
+    {
+     "url": "https://shivagallery.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://shivagallery.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.81leonardgallery.com",
+   "name": "81 Leonard Gallery",
+   "tried": [
+    {
+     "url": "https://81leonardgallery.com/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://81leonardgallery.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://81leonardgallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "woodwardgallery.net",
+   "name": "Woodward Gallery",
+   "tried": [
+    {
+     "url": "https://woodwardgallery.net/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://woodwardgallery.net/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "fortnight.institute",
+   "name": "Fortnight Institute",
+   "tried": [
+    {
+     "url": "https://calixa.io/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://calixa.io/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.marchgallery.org",
+   "name": "MARCH",
+   "tried": [
+    {
+     "url": "https://www.marchgallery.org/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.marchgallery.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.marchgallery.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "sfaprojects.com",
+   "name": "SFA Gallery",
+   "tried": [
+    {
+     "url": "https://sfaprojects.com/category/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://sfaprojects.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://sfaprojects.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "seedbrklyn.com",
+   "name": "Seed Brklyn Garden",
+   "tried": [
+    {
+     "url": "https://www.seedbrklyn.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.seedbrklyn.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "realtycollective.com",
+   "name": "Realty Collective",
+   "tried": [
+    {
+     "url": "https://realtycollective.com/listings/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://realtycollective.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://realtycollective.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "allouchegallery.com",
+   "name": "Allouche Gallery",
+   "tried": [
+    {
+     "url": "https://www.allouchegallery.com/exhibitions?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.allouchegallery.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.allouchegallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.meiselgallery.com",
+   "name": "Louis K.Meisel Gallery",
+   "tried": [
+    {
+     "url": "https://www.meiselgallery.com/exhibitions?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.meiselgallery.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.meiselgallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "fergusmccaffrey.com",
+   "name": "Fergus McCaffrey Gallery",
+   "tried": [
+    {
+     "url": "https://fergusmccaffrey.com/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://fergusmccaffrey.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://fergusmccaffrey.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "microscopegallery.com",
+   "name": "Microscope Gallery",
+   "tried": [
+    {
+     "url": "https://microscopegallery.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://microscopegallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "princestreetgallery.com",
+   "name": "Prince Street Gallery",
+   "tried": [
+    {
+     "url": "https://princestreetgallery.com/exhibitions/archive/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://princestreetgallery.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://princestreetgallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.debuckgallery.com",
+   "name": "De Buck Gallery",
+   "tried": [
+    {
+     "url": "https://www.debuckgallery.com/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.debuckgallery.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.debuckgallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "friedmanbenda.com",
+   "name": "Friedman Benda Gallery",
+   "tried": [
+    {
+     "url": "https://www.friedmanbenda.com/exhibitions/joris-laarman-symbio/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.friedmanbenda.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.friedmanbenda.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "ryanleegallery.com",
+   "name": "Ryan Lee Gallery",
+   "tried": [
+    {
+     "url": "https://ryanleegallery.com/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://ryanleegallery.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://ryanleegallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.thomaserben.com",
+   "name": "Thomas Erben Gallery",
+   "tried": [
+    {
+     "url": "https://www.thomaserben.com/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.thomaserben.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.thomaserben.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "stand4gallery.org",
+   "name": "Stand4 Gallery and Community Center",
+   "tried": [
+    {
+     "url": "https://stand4gallery.org/exhibition/ouroborus/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://stand4gallery.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://stand4gallery.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.susansheehangallery.com",
+   "name": "Susan Sheehan Gallery",
+   "tried": [
+    {
+     "url": "https://www.susansheehangallery.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.susansheehangallery.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "mocada.org",
+   "name": "MoCADA  Culture Lab II",
+   "tried": [
+    {
+     "url": "http://mocada.org/events/word-to-mommy-a-comedy-tribute/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://mocada.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://mocada.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "anatebgi.com",
+   "name": "Anat Egbi",
+   "tried": [
+    {
+     "url": "https://anatebgi.com/exhibitions/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://anatebgi.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://anatebgi.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.unitedpalace.org",
+   "name": "United Palace",
+   "tried": [
+    {
+     "url": "https://unitedpalace.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://unitedpalace.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "atlantictheater.org",
+   "name": "Atlantic Theater",
+   "tried": [
+    {
+     "url": "https://atlantictheater.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://atlantictheater.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "littlefieldnyc.com",
+   "name": "Littlefield",
+   "tried": [
+    {
+     "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1995939851826&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://littlefieldnyc.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://littlefieldnyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.classicstage.org",
+   "name": "Classic Stage Company",
+   "tried": [
+    {
+     "url": "https://www.classicstage.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.classicstage.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "lpr.com",
+   "name": "Le Poisson Rouge",
+   "tried": [
+    {
+     "url": "https://lpr.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lpr.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "wptheater.org",
+   "name": "WP Theater",
+   "tried": [
+    {
+     "url": "https://wptheater.org/show/fish/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://wptheater.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://wptheater.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "magnettheater.com",
+   "name": "Magnet Theater",
+   "tried": [
+    {
+     "url": "https://magnettheater.com/calendar?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://magnettheater.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://magnettheater.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.westsidetheatre.com",
+   "name": "Westside Theatre",
+   "tried": [
+    {
+     "url": "https://westsidetheatre.com/events/?ical=1",
+     "status": null,
+     "ctype": null,
+     "error": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+     "url": "https://westsidetheatre.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "theaterforthenewcity.net",
+   "name": "Theater for the New City",
+   "tried": [
+    {
+     "url": "https://theaterforthenewcity.net/about/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://theaterforthenewcity.net/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://theaterforthenewcity.net/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.edsullivan.com",
+   "name": "Ed Sullivan Theater",
+   "tried": [
+    {
+     "url": "https://www.edsullivan.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.edsullivan.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.carolines.com",
+   "name": "Carolines on Broadway",
+   "tried": [
+    {
+     "url": "https://www.carolines.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.carolines.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "oceanatheater.com",
+   "name": "Oceana Theater",
+   "tried": [
+    {
+     "url": "https://oceanatheater.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://oceanatheater.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "performancespacenewyork.org",
+   "name": "Performance Space 122",
+   "tried": [
+    {
+     "url": "https://performancespacenewyork.org/shows/sim-b/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://performancespacenewyork.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://performancespacenewyork.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.thaliatheatre.org",
+   "name": "Thalia Spanish Theatre",
+   "tried": [
+    {
+     "url": "https://thaliatheatre.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thaliatheatre.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "companyxiv.com",
+   "name": "Company XIV",
+   "tried": [
+    {
+     "url": "https://companyxiv.com/about/shows/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://companyxiv.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://companyxiv.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "roulette.org",
+   "name": "Roulette",
+   "tried": [
+    {
+     "url": "https://roulette.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://roulette.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://roulette.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "pregonesprtt.org",
+   "name": "Pregones Theater",
+   "tried": [
+    {
+     "url": "https://pregonesprtt.org/about/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://pregonesprtt.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://pregonesprtt.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.theatermitu.org",
+   "name": "Theater Mitu",
+   "tried": [
+    {
+     "url": "https://theatermitu.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://theatermitu.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://theatermitu.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "thewildproject.com",
+   "name": "Wild Project",
+   "tried": [
+    {
+     "url": "https://thewildproject.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thewildproject.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thewildproject.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "dixonplace.org",
+   "name": "Dixon Place",
+   "tried": [
+    {
+     "url": "https://dixonplace.org/performances/me-wes-playhouse/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://dixonplace.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://dixonplace.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "thecuttingroomnyc.com",
+   "name": "The Cutting Room",
+   "tried": [
+    {
+     "url": "https://thecuttingroomnyc.com/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thecuttingroomnyc.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thecuttingroomnyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.frigid.nyc",
+   "name": "Kraine Theater",
+   "tried": [
+    {
+     "url": "https://frigid.nyc/programming?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://frigid.nyc/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://frigid.nyc/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "signaturetheatre.org",
+   "name": "Signature Theatre",
+   "tried": [
+    {
+     "url": "https://signaturetheatre.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://signaturetheatre.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://signaturetheatre.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "thepit-nyc.com",
+   "name": "The PIT",
+   "tried": [
+    {
+     "url": "https://thepit-nyc.com/events?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thepit-nyc.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thepit-nyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "vineyardtheatre.org",
+   "name": "Vineyard Theatre",
+   "tried": [
+    {
+     "url": "https://vineyardtheatre.org/shows/petra/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://vineyardtheatre.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://vineyardtheatre.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "asylumnyc.com",
+   "name": "Asylum NYC",
+   "tried": [
+    {
+     "url": "https://asylumnyc.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://asylumnyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "newyorklivearts.org",
+   "name": "New York Live Arts",
+   "tried": [
+    {
+     "url": "https://newyorklivearts.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://newyorklivearts.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://newyorklivearts.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "bpac.baruch.cuny.edu",
+   "name": "Baruch Performing Arts Center",
+   "tried": [
+    {
+     "url": "https://bpac.baruch.cuny.edu/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bpac.baruch.cuny.edu/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "chocolatefactorytheater.org",
+   "name": "The Chocolate Factory Theater",
+   "tried": [
+    {
+     "url": "https://chocolatefactorytheater.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://chocolatefactorytheater.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "54below.org",
+   "name": "54below.org",
+   "tried": [
+    {
+     "url": "https://54below.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://54below.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://54below.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.nytw.org",
+   "name": "New York Theatre Workshop",
+   "tried": [
+    {
+     "url": "https://www.nytw.org/show/basquiat/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.nytw.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.nytw.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.comedycellar.com",
+   "name": "Comedy Cellar",
+   "tried": [
+    {
+     "url": "https://www.comedycellar.com/events/?ical=1",
+     "status": 403,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.comedycellar.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "theperforminggarage.org",
+   "name": "The Performing Garage",
+   "tried": [
+    {
+     "url": "https://thewoostergroup.org/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thewoostergroup.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thewoostergroup.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "lortel.org",
+   "name": "Lucille Lortel Theatre",
+   "tried": [
+    {
+     "url": "https://lortel.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lortel.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "markmorrisdancegroup.org",
+   "name": "Mark Morris Dance Center",
+   "tried": [
+    {
+     "url": "https://markmorrisdancegroup.org/the-dance-group/performances?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://markmorrisdancegroup.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://markmorrisdancegroup.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "stannswarehouse.org",
+   "name": "St. Ann's Warehouse",
+   "tried": [
+    {
+     "url": "https://stannswarehouse.org/calendar?ical=1",
+     "status": 403,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://stannswarehouse.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://stannswarehouse.org/events/?ical=1",
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261023",
+    "live": true
+   },
+   "error": null
+  },
+  {
+   "host": "producersclub.com",
+   "name": "Producers Club Theaters and Bar",
+   "tried": [
+    {
+     "url": "https://producersclub.com/shows/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://producersclub.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://producersclub.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "syndicatedbk.com",
+   "name": "Syndicated Bar Theater Kitchen",
+   "tried": [
+    {
+     "url": "https://syndicatedbk.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://syndicatedbk.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "nitehawkcinema.com",
+   "name": "Nitehawk Cinema",
+   "tried": [
+    {
+     "url": "https://nitehawkcinema.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://nitehawkcinema.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.spectacletheater.com",
+   "name": "Spectacle Theater",
+   "tried": [
+    {
+     "url": "https://www.spectacletheater.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.spectacletheater.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "metrograph.com",
+   "name": "The Metrograph",
+   "tried": [
+    {
+     "url": "http://metrograph.com/events?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://metrograph.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://metrograph.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.ifccenter.com",
+   "name": "IFC Center",
+   "tried": [
+    {
+     "url": "https://www.ifccenter.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.ifccenter.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.svatheatre.com",
+   "name": "SVA Theater",
+   "tried": [
+    {
+     "url": "https://svatheatre.com/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://svatheatre.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://svatheatre.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.loewsjersey.org",
+   "name": "Loew's Jersey Theatre",
+   "tried": [
+    {
+     "url": "https://loewsjersey.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://loewsjersey.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.cityplex12.com",
+   "name": "Cityplex 12",
+   "tried": [
+    {
+     "url": "https://www.cityplex12.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.cityplex12.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "craftsmanave.com",
+   "name": "Craftsman Ave",
+   "tried": [
+    {
+     "url": "https://craftsmanave.com/classes/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://craftsmanave.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://craftsmanave.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "angelorensanz.com",
+   "name": "Angel Orensanz Foundation",
+   "tried": [
+    {
+     "url": "https://angelorensanz.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://angelorensanz.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "bax.org",
+   "name": "BAX",
+   "tried": [
+    {
+     "url": "https://www.bax.org/classes/youth/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.bax.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.bax.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "oliphantstudio.com",
+   "name": "Oliphant Studios",
+   "tried": [
+    {
+     "url": "https://oliphantstudio.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://oliphantstudio.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "thecanfactory.org",
+   "name": "The Old American Can Factory",
+   "tried": [
+    {
+     "url": "https://thecanfactory.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thecanfactory.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://thecanfactory.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "papertiger.org",
+   "name": "Paper Tiger",
+   "tried": [
+    {
+     "url": "https://papertiger.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://papertiger.org/events/?ical=1",
+   "feed": {
+    "events": 0,
+    "future": 0,
+    "recurring": 0,
+    "undated": 0,
+    "latest": null,
+    "live": false
+   },
+   "error": null
+  },
+  {
+   "host": "residencyunlimited.org",
+   "name": "Residency Unlimited",
+   "tried": [
+    {
+     "url": "https://residencyunlimited.org/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://residencyunlimited.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://residencyunlimited.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "bondcraftstudio.com",
+   "name": "Bond Craft Studio",
+   "tried": [
+    {
+     "url": "https://bondcraftstudio.com/workshops?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bondcraftstudio.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bondcraftstudio.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.artfunstudio.com",
+   "name": "Art Fun Studio",
+   "tried": [
+    {
+     "url": "https://www.artfunstudio.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.artfunstudio.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "levygalleries.com",
+   "name": "Bernard & S Dean Levy Inc.",
+   "tried": [
+    {
+     "url": "https://www.levygalleries.com/shows/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.levygalleries.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.levygalleries.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.bluenotejazz.com",
+   "name": "Blue Note Jazz Club",
+   "tried": [
+    {
+     "url": "https://www.bluenotejazz.com/nyc/shows/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.bluenotejazz.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.bluenotejazz.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.myssticrooms.com",
+   "name": "Miss Tic Escape Rooms",
+   "tried": [
+    {
+     "url": "https://www.myssticrooms.com/events/?ical=1",
+     "status": null,
+     "ctype": null,
+     "error": "timeout: The read operation timed out"
+    },
+    {
+     "url": "https://www.myssticrooms.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "locations.chuckecheese.com",
+   "name": "Chuck E. Cheese",
+   "tried": [
+    {
+     "url": "https://www.chuckecheese.com/long-island-city-ny/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.chuckecheese.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.chuckecheese.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.chuckecheese.com",
+   "name": "Chuck E. Cheese",
+   "tried": [
+    {
+     "url": "https://www.chuckecheese.com/howard-beach-ny/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.chuckecheese.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.chuckecheese.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "area53nyc.com",
+   "name": "Area 53 Laser Tag",
+   "tried": [
+    {
+     "url": "https://area53nyc.com/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://area53nyc.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://area53nyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.oceans8ny.com",
+   "name": "Ocean's 8",
+   "tried": [
+    {
+     "url": "https://www.oceans8ny.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.oceans8ny.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "bowlritelanes.com",
+   "name": "Bowl Rite",
+   "tried": [
+    {
+     "url": "https://bowlritelanes.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bowlritelanes.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "lodilanes.com",
+   "name": "Lodi Lanes",
+   "tried": [
+    {
+     "url": "https://lodilanes.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lodilanes.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "bowl360astoria.com",
+   "name": "Bowl 360 Astoria",
+   "tried": [
+    {
+     "url": "https://bowl360astoria.com/events?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bowl360astoria.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bowl360astoria.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.worldice.com",
+   "name": "World Ice Arena",
+   "tried": [
+    {
+     "url": "https://www.worldice.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.worldice.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.cityicepavilion.com",
+   "name": "City Ice Pavilion",
+   "tried": [
+    {
+     "url": "https://www.cityicepavilion.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.cityicepavilion.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "zerogbjj.com",
+   "name": "Zero G Brazilian Jiu-jitsu",
+   "tried": [
+    {
+     "url": "https://zerogbjj.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://zerogbjj.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.goldfishswimschool.com",
+   "name": "Goldfish Swim School",
+   "tried": [
+    {
+     "url": "https://goldfishswimschool.com/gowanus/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://goldfishswimschool.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://goldfishswimschool.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "brooklynmartialarts.com",
+   "name": "Brooklyn Martial Arts",
+   "tried": [
+    {
+     "url": "https://brooklynmartialarts.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynmartialarts.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.homageskateboardacademy.com",
+   "name": "Homage Skateboard Academy",
+   "tried": [
+    {
+     "url": "https://homageskateboardacademy.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://homageskateboardacademy.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "yogisandyoginis.com",
+   "name": "Yogis & Yoginis",
+   "tried": [
+    {
+     "url": "https://yogisandyoginis.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://yogisandyoginis.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "goldfishswimschool.com",
+   "name": "Goldfish Swim School",
+   "tried": [
+    {
+     "url": "https://goldfishswimschool.com/ues-e-80th-street/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://goldfishswimschool.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://goldfishswimschool.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "loftlinks.com",
+   "name": "LoftLinks",
+   "tried": [
+    {
+     "url": "https://loftlinks.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://loftlinks.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "harlem.thecliffsclimbing.com",
+   "name": "The Cliffs at Harlem",
+   "tried": [
+    {
+     "url": "https://movementgyms.com/harlem/calendar?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://movementgyms.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://movementgyms.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "14streety.org",
+   "name": "14th Street Y \u2013 Sports Center",
+   "tried": [
+    {
+     "url": "https://www.14streety.org/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.14streety.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.studioanya.com",
+   "name": "Studio Anya",
+   "tried": [
+    {
+     "url": "https://studioanya.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://studioanya.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "brooklynphysicaltherapy.com",
+   "name": "Inspira",
+   "tried": [
+    {
+     "url": "https://brooklynphysicaltherapy.com/workshops?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynphysicaltherapy.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynphysicaltherapy.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.ridgewoodymca.org",
+   "name": "Ridgewood YMCA",
+   "tried": [
+    {
+     "url": "https://www.ridgewoodymca.org/classes/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.ridgewoodymca.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.ridgewoodymca.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "overthrownyc.com",
+   "name": "Overthrow",
+   "tried": [
+    {
+     "url": "https://overthrownyc.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://overthrownyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "methodclimb.com",
+   "name": "Method Climbing Gym",
+   "tried": [
+    {
+     "url": "https://methodclimb.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://methodclimb.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "centralrockgym.com",
+   "name": "Central Rock Gym",
+   "tried": [
+    {
+     "url": "https://centralrockgym.com/events?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://centralrockgym.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://centralrockgym.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "brooklynfencing.com",
+   "name": "Brooklyn Fencing Center",
+   "tried": [
+    {
+     "url": "https://brooklynfencing.com/classes?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynfencing.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://brooklynfencing.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "johnnykaratenyc.com",
+   "name": "Johnny Karate",
+   "tried": [
+    {
+     "url": "https://johnnykaratenyc.com/programs/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://johnnykaratenyc.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://johnnykaratenyc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "gowanus.thecliffsclimbing.com",
+   "name": "Movement Gowanus",
+   "tried": [
+    {
+     "url": "https://movementgyms.com/gowanus/calendar?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://movementgyms.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://movementgyms.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "gracesgymnastics.com",
+   "name": "Grace's Gymnastics",
+   "tried": [
+    {
+     "url": "https://gracesgymnastics.com/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://gracesgymnastics.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://gracesgymnastics.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "soccerstars.com",
+   "name": "Soccer Stars",
+   "tried": [
+    {
+     "url": "https://www.soccerstars.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.soccerstars.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "bogotaswimclub.com",
+   "name": "Bogota Swim Club",
+   "tried": [
+    {
+     "url": "https://bogotaswimclub.com/calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bogotaswimclub.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://bogotaswimclub.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "evolutionmuaythai.com",
+   "name": "Evolution Muay Thai",
+   "tried": [
+    {
+     "url": "https://evolutionmuaythai.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://evolutionmuaythai.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "fencenyfa.com",
+   "name": "New York Fencing Academy - Brooklyn",
+   "tried": [
+    {
+     "url": "https://fencenyfa.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://fencenyfa.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "www.aviatorsports.com",
+   "name": "Aviator Sports & Events Center",
+   "tried": [
+    {
+     "url": "https://www.aviatorsports.com/events/events-calendar/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.aviatorsports.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://www.aviatorsports.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "boulderingproject.com",
+   "name": "Bouldering Project",
+   "tried": [
+    {
+     "url": "https://boulderingproject.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://boulderingproject.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "lakeside.prospectpark.org",
+   "name": "LeFrak Center at Lakeside",
+   "tried": [
+    {
+     "url": "https://lakeside.prospectpark.org/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://lakeside.prospectpark.org/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "dumbo.thecliffsclimbing.com",
+   "name": "The Cliffs at DUMBO",
+   "tried": [
+    {
+     "url": "https://movementgyms.com/events/?ical=1",
+     "status": 404,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://movementgyms.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "colonialrpc.com",
+   "name": "Colonial Rifle & Pistol Club",
+   "tried": [
+    {
+     "url": "https://colonialrpc.com/events/?ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    },
+    {
+     "url": "https://colonialrpc.com/?post_type=tribe_events&ical=1",
+     "status": 200,
+     "ctype": "text/html",
+     "error": null
+    }
+   ],
+   "hit": null,
+   "feed": null,
+   "error": null
+  },
+  {
+   "host": "playmeadowlands.com",
+   "name": "Meadowlands Racing & Entertainment",
+   "tried": [
+    {
+     "url": "https://playmeadowlands.com/event/seafood_fest?ical=1",
+     "status": 200,
+     "ctype": "text/calendar",
+     "error": null
+    }
+   ],
+   "hit": "https://playmeadowlands.com/event/seafood_fest/?ical=1",
+   "feed": {
+    "events": 1,
+    "future": 0,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260801",
+    "live": false
+   },
+   "error": null
+  }
+ ],
+ "verified": [
+  {
+   "host": "www.hobokenmuseum.org",
+   "name": "Hoboken Fire Department Museum",
+   "url": "https://hobokenmuseum.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 34925,
+   "feed": {
+    "events": 16,
+    "future": 16,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261213",
+    "live": true
+   }
+  },
+  {
+   "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
+   "url": "https://www.statenislandmuseum.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 4592,
+   "feed": {
+    "events": 3,
+    "future": 3,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260926",
+    "live": true
+   }
+  },
+  {
+   "host": "dyckmanfarmhouse.org",
+   "name": "Dyckman Farmhouse Museum",
+   "url": "https://dyckmanfarmhouse.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "www.sichildrensmuseum.org",
+   "name": "Staten Island Children\u2019s Museum",
+   "url": "https://sichildrensmuseum.org/calendar/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 60499,
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260826",
+    "live": true
+   }
+  },
+  {
+   "host": "italianamericanmuseum.org",
+   "name": "Italian American Museum",
+   "url": "https://www.italianamericanmuseum.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "societyillustrators.org",
+   "name": "Society of Illustrators",
+   "url": "https://societyillustrators.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 62006,
+   "feed": {
+    "events": 21,
+    "future": 21,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260930",
+    "live": true
+   }
+  },
+  {
+   "host": "theshabazzcenter.org",
+   "name": "Malcolm X & Dr. Betty Shabazz Memorial and Educational Center",
+   "url": "https://theshabazzcenter.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "www.centralpark.com",
+   "name": "Henry Luce Nature Observatory",
+   "url": "https://www.centralpark.com/search/event/upcoming-events/calendar.ics",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 14515,
+   "feed": {
+    "events": 23,
+    "future": 1,
+    "recurring": 22,
+    "undated": 0,
+    "latest": "20260804",
+    "live": true
+   }
+  },
+  {
+   "host": "lighthousemuseum.org",
+   "name": "National Lighthouse Museum",
+   "url": "https://lighthousemuseum.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 6320,
+   "feed": {
+    "events": 5,
+    "future": 5,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261004",
+    "live": true
+   }
+  },
+  {
+   "host": "www.prospectpark.org",
+   "name": "Lefferts Historic House",
+   "url": "https://www.prospectpark.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 43694,
+   "feed": {
+    "events": 30,
+    "future": 29,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260805",
+    "live": true
+   }
+  },
+  {
+   "host": "aliceausten.org",
+   "name": "Alice Austen House",
+   "url": "https://aliceausten.org/calendar-events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 19391,
+   "feed": {
+    "events": 10,
+    "future": 10,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261110",
+    "live": true
+   }
+  },
+  {
+   "host": "historichousetrust.org",
+   "name": "Lewis Howard Latimer House Museum",
+   "url": "https://historichousetrust.org/?post_type=tribe_events&ical=1&eventDisplay=list",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 33319,
+   "feed": {
+    "events": 21,
+    "future": 15,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261016",
+    "live": true
+   }
+  },
+  {
+   "host": "www.louisarmstronghouse.org",
+   "name": "Louis Armstrong House Museum",
+   "url": "https://www.louisarmstronghouse.org/?post_type=tribe_events&ical=1&eventDisplay=list",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 13909,
+   "feed": {
+    "events": 8,
+    "future": 8,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261001",
+    "live": true
+   }
+  },
+  {
+   "host": "waterfrontmuseum.org",
+   "name": "The Waterfront Museum",
+   "url": "https://waterfrontmuseum.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 2699,
+   "feed": {
+    "events": 2,
+    "future": 1,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260806",
+    "live": true
+   }
+  },
+  {
+   "host": "libertyhall.kean.edu",
+   "name": "Liberty Hall Museum",
+   "url": "https://libertyhall.kean.edu/events-and-performances/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 35391,
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260825",
+    "live": true
+   }
+  },
+  {
+   "host": "sunshinelaundromat.com",
+   "name": "Sunshine Laundromat & Pinball",
+   "url": "https://sunshinelaundromat.com/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "www.resobox.com",
+   "name": "Resobox",
+   "url": "https://resobox.com/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 47055,
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20261008",
+    "live": true
+   }
+  },
+  {
+   "host": "www.howlarts.org",
+   "name": "Howl! Happening",
+   "url": "https://www.howlarts.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "bricktheater.com",
+   "name": "The Brick",
+   "url": "https://www.bricktheater.com/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 33856,
+   "feed": {
+    "events": 19,
+    "future": 15,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260830",
+    "live": true
+   }
+  },
+  {
+   "host": "here.org",
+   "name": "HERE Arts Center",
+   "url": "https://here.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 208,
+   "feed": {
+    "events": 0,
+    "future": 0,
+    "recurring": 0,
+    "undated": 0,
+    "latest": null,
+    "live": false
+   }
+  },
+  {
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "url": "https://cityparksfoundation.org/calendar/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 42228,
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260812",
+    "live": true
+   }
+  },
+  {
+   "host": "littleisland.org",
+   "name": "The Amph",
+   "url": "https://littleisland.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 44439,
+   "feed": {
+    "events": 30,
+    "future": 30,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260820",
+    "live": true
+   }
+  },
+  {
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "url": "https://lucidbody.com/events/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 5307,
+   "feed": {
+    "events": 3,
+    "future": 3,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260920",
+    "live": true
+   }
+  },
+  {
+   "host": "outpostartistsresources.org",
+   "name": "Outpost Artists Resources",
+   "url": "https://www.outpostartistsresources.org/http-www-outpostartistsresources-org-calendar/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "spokethehub.org",
+   "name": "Spoke the Hub",
+   "url": "https://spokethehub.org/upcoming-events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "www.651arts.org",
+   "name": "651 ARTS",
+   "url": "https://651arts.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "newarksymphonyhall.org",
+   "name": "Newark Symphony Hall",
+   "url": "https://newarksymphonyhall.org/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 0,
+   "feed": null
+  },
+  {
+   "host": "wollmanrinknyc.com",
+   "name": "Wollman Rink",
+   "url": "https://wollmanrinknyc.com/dates/?ical=1",
+   "status": 200,
+   "ctype": "text/calendar",
+   "bytes": 21365,
+   "feed": {
+    "events": 20,
+    "future": 20,
+    "recurring": 0,
+    "undated": 0,
+    "latest": "20260928",
+    "live": true
+   }
+  },
+  {
+   "host": "brooklynbjj.com",
+   "name": "Brooklyn Brazilan Jiu-Jitsu",
+   "url": "https://brooklynbjj.com/events/?ical=1",
+   "status": 200,
+   "ctype": "text/html",
+   "bytes": 1,
+   "feed": null
+  }
+ ]
+}

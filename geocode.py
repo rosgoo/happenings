@@ -117,7 +117,29 @@ class Parks:
             hit = self.by_name.get(norm(c))
             if hit:
                 return hit
-        return None
+        return self.contains(raw)
+
+    def contains(self, raw):
+        """Unique-substring fallback, in either direction.
+
+        Permits use the name on the sign; the register uses the name on the
+        deed. "East River Park" is filed as "John V. Lindsay East River Park",
+        and "East River Esplanade 36th-38th" is a stretch of "East River
+        Esplanade". Exact matching misses both.
+
+        Only ever returns a UNIQUE match, and only on a multi-word query. Two
+        candidates means the name is genuinely ambiguous and the honest answer
+        is nothing -- "Marine Park" must never quietly become "Marine Park
+        Playground". This is the one inference in the chain, so it is bounded
+        as tightly as it can be and still be useful.
+        """
+        q = norm(raw)
+        if len(q.split()) < 2:
+            return None
+        hits = [rec for key, rec in self.by_name.items()
+                if (q in key or key in q) and len(key.split()) >= 2]
+        uniq = {(round(r["lat"], 6), round(r["lon"], 6)): r for r in hits}
+        return next(iter(uniq.values())) if len(uniq) == 1 else None
 
 
 STREETY = re.compile(
@@ -170,6 +192,11 @@ def targets(city):
             continue
         with open(os.path.join(raw_dir, fn)) as f:
             blob = json.load(f)
+        # raw/ also holds inputs that are not source pulls -- osm-places.json is
+        # an OSM dump keyed by `elements`. Anything without `rows` is not an
+        # event feed and has no locations to place.
+        if not isinstance(blob, dict) or "rows" not in blob:
+            continue
         for r in blob["rows"]:
             if r.get("coordinates"):
                 continue
@@ -187,6 +214,9 @@ def main():
     ap.add_argument("--no-street", action="store_true",
                     help="parks only; makes zero network requests")
     ap.add_argument("--refresh", action="store_true", help="ignore the cache")
+    ap.add_argument("--retry-unresolved", action="store_true",
+                    help="re-ask only the locations cached as null, keeping every "
+                         "hit already paid for")
     ap.add_argument("--limit", type=int, default=1200,
                     help="cap geocoder requests in one run (it is resumable)")
     args = ap.parse_args()
@@ -201,6 +231,13 @@ def main():
     cache_path = os.path.join(ddir, "geocode-cache.json")
     cache = {} if args.refresh else (
         json.load(open(cache_path)) if os.path.exists(cache_path) else {})
+    if args.retry_unresolved:
+        # A cached null means "asked, no confident answer" -- which becomes
+        # wrong the moment the matching rules improve. Drop only those.
+        dropped = [k for k, v in cache.items() if not v]
+        for k in dropped:
+            del cache[k]
+        print(f"  retrying {len(dropped)} previously unresolved locations")
 
     todo = targets(args.city)
     print(f"  {len(todo)} distinct unplaced locations "

@@ -1,0 +1,1099 @@
+{
+ "generated_at": "2026-08-02T16:09:01.763512+00:00",
+ "city": "nyc",
+ "probed": 120,
+ "requests": 538,
+ "venues": [
+  {
+   "host": "www.frauncestavernmuseum.org",
+   "name": "Fraunces Tavern Museum",
+   "origin": "https://www.frauncestavernmuseum.org",
+   "collections": [
+    {
+     "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
+     "title": "Calendar of Events",
+     "collection_id": "58da88e615d5db908fcda484",
+     "upcoming": 13,
+     "past": 30
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "noblemaritime.org",
+   "name": "Noble Maritime Collection",
+   "origin": "https://noblemaritime.org",
+   "collections": [
+    {
+     "url": "https://noblemaritime.org/events?format=json",
+     "title": "Events",
+     "collection_id": "56c3845840261db04aaa8260",
+     "upcoming": 6,
+     "past": 30
+    }
+   ],
+   "tried": 3
+  },
+  {
+   "host": "www.sugarhillmuseum.org",
+   "name": "Sugar Hill Children's Museum of Art and Story Telling",
+   "origin": "https://www.sugarhillmuseum.org",
+   "collections": [
+    {
+     "url": "https://www.sugarhillmuseum.org/calendar?format=json",
+     "title": "Daily Calendar",
+     "collection_id": "54417b8ce4b07716b5f9fc2d",
+     "upcoming": 0,
+     "past": 30
+    }
+   ],
+   "tried": 3
+  },
+  {
+   "host": "onderdonkhouse.org",
+   "name": "Greater Ridgewood Historical Society",
+   "origin": "https://onderdonkhouse.org",
+   "collections": [
+    {
+     "url": "https://onderdonkhouse.org/events-list?format=json",
+     "title": "Events",
+     "collection_id": "5d8d052558fca978aa0cbaf9",
+     "upcoming": 0,
+     "past": 30
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "www.mmuseumm.com",
+   "name": "Mmuseumm",
+   "origin": "https://www.mmuseumm.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.thebiggieexperience.com",
+   "name": "The Biggie Experience",
+   "origin": "https://www.thebiggieexperience.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "bronxhistoricalsociety.org",
+   "name": "Poe Cottage",
+   "origin": "https://bronxhistoricalsociety.org",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.kingmanor.org",
+   "name": "King Manor Museum",
+   "origin": "https://www.kingmanor.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.bownehouse.org",
+   "name": "John Bowne House",
+   "origin": "https://www.bownehouse.org",
+   "collections": [
+    {
+     "url": "https://www.bownehouse.org/events?format=json",
+     "title": "Events",
+     "collection_id": "5e2a09271c8a125886405f41",
+     "upcoming": 2,
+     "past": 30
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "www.friendsofrockhall.org",
+   "name": "Rock Hall",
+   "origin": "https://www.friendsofrockhall.org",
+   "collections": [
+    {
+     "url": "https://www.friendsofrockhall.org/events?format=json",
+     "title": "Events & Programs",
+     "collection_id": "52939018e4b00ad10e758d83",
+     "upcoming": 0,
+     "past": 0
+    },
+    {
+     "url": "https://www.friendsofrockhall.org/tours?format=json",
+     "title": "Tours",
+     "collection_id": "681cd293ca745928d2e6a50a",
+     "upcoming": 0,
+     "past": 1
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "www.jerseyexplorers.org",
+   "name": "Jersey Explorer Children's Museum",
+   "origin": "https://www.jerseyexplorers.org",
+   "collections": [
+    {
+     "url": "https://www.jerseyexplorers.org/new-events?format=json",
+     "title": "SCHEDULE & SPECIAL EVENTS",
+     "collection_id": "5c59cbefee6eb0529564d58c",
+     "upcoming": 0,
+     "past": 0
+    }
+   ],
+   "tried": 6
+  },
+  {
+   "host": "www.vomuseum.org",
+   "name": "The Voelker Orth Museum",
+   "origin": "https://www.vomuseum.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.eleventhhourart.com",
+   "name": "Eleventh Hour Art",
+   "origin": "https://www.eleventhhourart.com",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "brindamourstudios.com",
+   "name": "Brindamour Studios",
+   "origin": "https://brindamourstudios.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.lasaladepepe.org",
+   "name": "La Sala de Pepe",
+   "origin": "https://www.lasaladepepe.org",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "voltzclarke.com",
+   "name": "Voltz Clarke Gallery",
+   "origin": "https://voltzclarke.com",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "www.shrine.nyc",
+   "name": "Shrine",
+   "origin": "https://www.shrine.nyc",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "440gallery.com",
+   "name": "440 Gallery",
+   "origin": "https://440gallery.com",
+   "collections": [
+    {
+     "url": "https://440gallery.com/new-events?format=json",
+     "title": "Events",
+     "collection_id": "554d4368e4b09c38677f8e44",
+     "upcoming": 1,
+     "past": 30
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "soapboxgallery.org",
+   "name": "Soapbox Gallery",
+   "origin": "https://www.soapboxgallery.org",
+   "collections": [
+    {
+     "url": "https://www.soapboxgallery.org/events?format=json",
+     "title": "events",
+     "collection_id": "5d23f0d1aa03990001fdc420",
+     "upcoming": 0,
+     "past": 0
+    }
+   ],
+   "tried": 3
+  },
+  {
+   "host": "gloriasprojectspace.com",
+   "name": "Gloria's Project Space",
+   "origin": "https://www.gloriasprojectspace.com",
+   "collections": [
+    {
+     "url": "https://www.gloriasprojectspace.com/events?format=json",
+     "title": "Events",
+     "collection_id": "5bdf5cf070a6addc772793db",
+     "upcoming": 0,
+     "past": 30
+    }
+   ],
+   "tried": 2
+  },
+  {
+   "host": "brooklynwayfarers.org",
+   "name": "Wayfarers",
+   "origin": "https://www.brooklynwayfarers.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.theresabyrnes.com",
+   "name": "Theresa Byrnes",
+   "origin": "http://www.theresabyrnes.com",
+   "collections": [
+    {
+     "url": "http://www.theresabyrnes.com/new-events?format=json",
+     "title": "New Events",
+     "collection_id": "56f9f88fcf80a16c6f755724",
+     "upcoming": 0,
+     "past": 15
+    },
+    {
+     "url": "http://www.theresabyrnes.com/glimpse-aperformance?format=json",
+     "title": "GLIMPSE a performance & exhibition.",
+     "collection_id": "6014b02c49c8cb642307ea58",
+     "upcoming": 0,
+     "past": 2
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "fierman.nyc",
+   "name": "FIERMAN",
+   "origin": "https://fierman.nyc",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.lorimoto.com",
+   "name": "Lorimoto",
+   "origin": "https://www.lorimoto.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "false-flag.org",
+   "name": "False Flag",
+   "origin": "https://false-flag.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "chinatownsoup.nyc",
+   "name": "Chinatown Soup",
+   "origin": "https://www.chinatownsoup.nyc",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "empiricalnonsense.today",
+   "name": "Empirical Nonsense",
+   "origin": "https://empiricalnonsense.today",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.amoseno.org",
+   "name": "Amos Eno Gallery",
+   "origin": "https://www.amoseno.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "synesthesia.space",
+   "name": "Synesthesia",
+   "origin": "https://synesthesia.space",
+   "collections": [
+    {
+     "url": "https://synesthesia.space/events?format=json",
+     "title": "Events",
+     "collection_id": "5cc5481ab208fcfb579e4b15",
+     "upcoming": 0,
+     "past": 30
+    },
+    {
+     "url": "https://synesthesia.space/exhibitions?format=json",
+     "title": "Exhibitions",
+     "collection_id": "5cb138766e9a7f103498f049",
+     "upcoming": 1,
+     "past": 14
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "www.artraynyc.com",
+   "name": "Art+Ray",
+   "origin": "https://www.artraynyc.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.arsenalcontemporary.com",
+   "name": "Arsenal Contemporary Art",
+   "origin": "https://www.arsenalcontemporary.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.pomegranategallery.art",
+   "name": "Pomegranate Gallery",
+   "origin": "https://www.pomegranategallery.art",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "nohrahaimegallery.com",
+   "name": "Nohra Haime Gallery",
+   "origin": "https://www.nohrahaimegallery.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.gallerykooy.com",
+   "name": "310 Art",
+   "origin": "https://www.gallerykooy.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "ampmgallery.com",
+   "name": "AM:PM Gallery",
+   "origin": "https://ampmgallery.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "www.rickwesterfineart.com",
+   "name": "Rick Wester Fine Art",
+   "origin": "https://www.rickwesterfineart.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.flagartfoundation.org",
+   "name": "The FLAG Art Foundation",
+   "origin": "https://www.flagartfoundation.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.printcenternewyork.org",
+   "name": "Print Center New York",
+   "origin": "https://www.printcenternewyork.org",
+   "collections": [
+    {
+     "url": "https://www.printcenternewyork.org/public-programs?format=json",
+     "title": "Programs",
+     "collection_id": "62f5191254684c274c1be9c9",
+     "upcoming": 6,
+     "past": 30
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "www.unixgallery.com",
+   "name": "Unix Gallery",
+   "origin": "https://www.unixgallery.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "crossingart.com",
+   "name": "Crossing Art",
+   "origin": "https://crossingart.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "viridianartist.com",
+   "name": "Viridian Artists",
+   "origin": "https://www.viridianartists.com",
+   "collections": [
+    {
+     "url": "https://www.viridianartists.com/calendar?format=json",
+     "title": "Calendar",
+     "collection_id": "57f3c800d2b857168febb5b2",
+     "upcoming": 0,
+     "past": 30
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "www.carterburdengallery.org",
+   "name": "Carter Burden Gallery",
+   "origin": "https://www.carterburdengallery.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "bowerygallery.org",
+   "name": "Bowery Gallery",
+   "origin": "https://bowerygallery.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.thepaintingcenter.org",
+   "name": "The Painting Center",
+   "origin": "https://www.thepaintingcenter.org",
+   "collections": [
+    {
+     "url": "https://www.thepaintingcenter.org/new-events-1?format=json",
+     "title": "New Events",
+     "collection_id": "63ee8e245c21c533a4d31f6e",
+     "upcoming": 1,
+     "past": 30
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "www.nancyhoffmangallery.com",
+   "name": "Nancy Hoffman Gallery",
+   "origin": "https://www.nancyhoffmangallery.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.bravinlee.com",
+   "name": "BravinLee Gallery",
+   "origin": "https://www.bravinlee.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.sikkemajenkinsco.com",
+   "name": "Sikkema Jenkins & Co.",
+   "origin": "https://www.smjny.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.ehgallery.com",
+   "name": "Elizabeth Harris Gallery",
+   "origin": "https://www.ehgallery.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.the8thfloor.org",
+   "name": "The 8th Floor Gallery",
+   "origin": "https://www.the8thfloor.org",
+   "collections": [
+    {
+     "url": "https://www.the8thfloor.org/newevents?format=json",
+     "title": "Events",
+     "collection_id": "659d84552cb6dd6728f437c7",
+     "upcoming": 0,
+     "past": 30
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "www.buckhouse.com",
+   "name": "Buck House",
+   "origin": "https://www.buckhouse.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.smushgallery.com",
+   "name": "SMUSH Gallery",
+   "origin": "https://www.smushgallery.com",
+   "collections": [
+    {
+     "url": "https://www.smushgallery.com/calendar?format=json",
+     "title": "Calendar",
+     "collection_id": "62f676504a05270d48a93255",
+     "upcoming": 14,
+     "past": 30
+    }
+   ],
+   "tried": 6
+  },
+  {
+   "host": "www.shootthelobster.com",
+   "name": "Shoot the Lobster",
+   "origin": "https://www.shootthelobster.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.sargentsdaughters.com",
+   "name": "Sargent's Daughters",
+   "origin": "https://www.sargentsdaughters.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.metamorfosiny.org",
+   "name": "MetaMorfosi",
+   "origin": "https://www.metamorfosiny.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.barskygallery.com",
+   "name": "Barsky Gallery",
+   "origin": "https://www.barskygallery.com",
+   "collections": [
+    {
+     "url": "https://www.barskygallery.com/exhibition-and-events?format=json",
+     "title": "Public Art Events in Hoboken NJ",
+     "collection_id": "5aca92fa562fa799827fbdeb",
+     "upcoming": 0,
+     "past": 10
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "artygoodness.com",
+   "name": "Arty Goodness",
+   "origin": "https://artygoodness.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "a83.site",
+   "name": "a83",
+   "origin": "https://www.a83.site",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "fivemyles.org",
+   "name": "Five Myles",
+   "origin": "https://fivemyles.org",
+   "collections": [
+    {
+     "url": "https://fivemyles.org/calendar?format=json",
+     "title": "Calendar",
+     "collection_id": "548b471ae4b0a90d5ce10eef",
+     "upcoming": 0,
+     "past": 0
+    }
+   ],
+   "tried": 2
+  },
+  {
+   "host": "www.bedstuyaquarium.com",
+   "name": "Bed-Stuy Aquarium",
+   "origin": "https://www.bedstuyaquarium.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.duaneparknyc.com",
+   "name": "Duane Park",
+   "origin": "https://www.duaneparknyc.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "accesstheater.com",
+   "name": "Access Theater",
+   "origin": "https://www.accesstheater.com",
+   "collections": [
+    {
+     "url": "https://www.accesstheater.com/calendar-1?format=json",
+     "title": "Calendar",
+     "collection_id": "5ec29f2951aa9c66d7f8a60a",
+     "upcoming": 0,
+     "past": 0
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "secrettheatre.com",
+   "name": "Secret Theatre",
+   "origin": "https://www.secrettheatre.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "jalopytheatre.org",
+   "name": "Jalopy Theater and School of Music",
+   "origin": "https://jalopytheatre.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.thebushwickstarr.org",
+   "name": "The Bushwick Starr",
+   "origin": "https://www.thebushwickstarr.org",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "themusebrooklyn.com",
+   "name": "The Muse",
+   "origin": "https://www.abcirque.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.thetanknyc.org",
+   "name": "The Tank",
+   "origin": "https://thetanknyc.org",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "subculturenewyork.com",
+   "name": "SubCulture",
+   "origin": "https://subculturenewyork.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.ibeambrooklyn.com",
+   "name": "Ibeam Brooklyn",
+   "origin": "https://www.ibeambrooklyn.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.bowerypoetry.com",
+   "name": "Bowery Poetry",
+   "origin": "https://www.bowerypoetry.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.blackspectrum.com",
+   "name": "Black Spectrum Theatre",
+   "origin": "https://www.blackspectrum.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.sohoplayhouse.com",
+   "name": "SoHo Playhouse",
+   "origin": "https://www.sohoplayhouse.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "www.rockawaytheatrecompany.org",
+   "name": "Rockaway Theatre Company",
+   "origin": "https://www.rockawaytheatrecompany.org",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.filmnoircinema.com",
+   "name": "Film Noir Cinema",
+   "origin": "https://www.filmnoircinema.com",
+   "collections": [
+    {
+     "url": "https://www.filmnoircinema.com/program?format=json",
+     "title": "Program",
+     "collection_id": "58dc341f2e69cf921e5f1b56",
+     "upcoming": 13,
+     "past": 30
+    }
+   ],
+   "tried": 2
+  },
+  {
+   "host": "www.jcal.org",
+   "name": "Jamaica Center for Arts & Learning",
+   "origin": "https://jcal.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.bronxacademyofartsanddance.org",
+   "name": "BAAD! Bronx Academy of Arts and Dance",
+   "origin": "https://www.baadbronx.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.koartstudiofoundation.com",
+   "name": "Ko Art Studio",
+   "origin": "https://www.koartstudiofoundation.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.bklyncombine.com",
+   "name": "The Bklyn Combine",
+   "origin": "https://www.bklyncombine.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "www.redhookartproject.org",
+   "name": "Red Hook Art Project",
+   "origin": "https://www.redhookartproject.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.efanyc.org",
+   "name": "The Elizabeth Foundation for the Arts",
+   "origin": "https://www.efanyc.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.rbpmw-efanyc.org",
+   "name": "The Robert Blackburn Printmaking Workshop (RBPMW)",
+   "origin": "https://www.rbpmw-efanyc.org",
+   "collections": [
+    {
+     "url": "https://www.rbpmw-efanyc.org/mokprogramming?format=json",
+     "title": "Programming",
+     "collection_id": "69b06e3c4ec6ef4398c86ce9",
+     "upcoming": 0,
+     "past": 16
+    },
+    {
+     "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
+     "title": "Events",
+     "collection_id": "6a4d328f92d09a34082e15b6",
+     "upcoming": 1,
+     "past": 3
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "www.theinvisibledog.org",
+   "name": "Invisible Dog Arts & Events Space",
+   "origin": "https://www.theinvisibledog.org",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.triangleartsnyc.org",
+   "name": "Triangle Arts Association",
+   "origin": "https://www.triangleartsnyc.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.oygprojects.com",
+   "name": "Ortega y Gasset Projects",
+   "origin": "https://www.oygprojects.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.parkslopeperformingarts.com",
+   "name": "Park Slope Performing Arts",
+   "origin": "https://www.parkslopeperformingarts.com",
+   "collections": [
+    {
+     "url": "https://www.parkslopeperformingarts.com/special-events?format=json",
+     "title": "Recess Camps",
+     "collection_id": "62d5d34d50d90f1de96b9fcf",
+     "upcoming": 0,
+     "past": 9
+    }
+   ],
+   "tried": 5
+  },
+  {
+   "host": "www.clayworksoncolumbia.org",
+   "name": "Clayworks on Columbia",
+   "origin": "https://www.clayworksoncolumbia.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "amorphicrobotworks.org",
+   "name": "The Robotic Church",
+   "origin": "https://www.amorphicrobotworks.org",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "gambazine.com",
+   "name": "GAMBA Forest",
+   "origin": "https://gambazine.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "undercurrent.nyc",
+   "name": "Undercurrent",
+   "origin": "https://undercurrent.nyc",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.markethotel.org",
+   "name": "Market Hotel",
+   "origin": "https://www.markethotel.org",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "www.shoestringpressny.com",
+   "name": "Shoestring Press",
+   "origin": "https://www.shoestring.press",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.verysweetlifestudio.com",
+   "name": "Verysweetlife Studio",
+   "origin": "https://www.verysweetlifestudio.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.bklynclay.com",
+   "name": "Bklyn Clay",
+   "origin": "https://bklynclay.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.jackny.org",
+   "name": "Jack",
+   "origin": "https://www.jackny.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.ostudiony.com",
+   "name": "Ostudio",
+   "origin": "https://www.ostudiony.com",
+   "collections": [
+    {
+     "url": "https://www.ostudiony.com/event?format=json",
+     "title": "Pop ups",
+     "collection_id": "6272bf9931dd206222cc7ad0",
+     "upcoming": 0,
+     "past": 30
+    },
+    {
+     "url": "https://www.ostudiony.com/new-events?format=json",
+     "title": "Guest Chefs",
+     "collection_id": "63d8967f59cf9b2a00b8fdb8",
+     "upcoming": 0,
+     "past": 0
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "www.triskelionarts.org",
+   "name": "Triskelion Arts",
+   "origin": "https://www.triskelionarts.org",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "hootenannybrooklyn.com",
+   "name": "Hootenanny",
+   "origin": "https://hootenannybrooklyn.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.paintingonpark.com",
+   "name": "Painting On Park",
+   "origin": "https://www.paintingonpark.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "brooklynpoets.org",
+   "name": "Brooklyn Poets",
+   "origin": "https://brooklynpoets.org",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.nycdrawingroom.com",
+   "name": "The Drawing Room",
+   "origin": "https://www.nycdrawingroom.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.dirtbagarthaus.com",
+   "name": "Dirtbag",
+   "origin": "https://www.dirtbagarthaus.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "mercurystore.com",
+   "name": "Mercury Store",
+   "origin": "https://www.mercurystore.com",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "www.solidgoldyogi.com",
+   "name": "Scapegrace",
+   "origin": "https://www.solidgoldyogi.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.sculpturespacenyc.com",
+   "name": "Sculpture Space NYC",
+   "origin": "https://www.sculpturespacenyc.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.manafinearts.com",
+   "name": "Mana Contemporary",
+   "origin": "https://www.manafinearts.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.koreanculture.org",
+   "name": "Korean Cultural Center NY",
+   "origin": "https://www.koreanculture.org",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "wonderville.nyc",
+   "name": "Wonderville",
+   "origin": "https://www.wonderville.nyc",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "www.os-nyc.com",
+   "name": "OS NYC",
+   "origin": "https://www.os-nyc.com",
+   "collections": [
+    {
+     "url": "https://www.os-nyc.com/events?format=json",
+     "title": "EVENTS",
+     "collection_id": "6220ef3adf8c823174cf8c63",
+     "upcoming": 20,
+     "past": 30
+    }
+   ],
+   "tried": 2
+  },
+  {
+   "host": "www.gatcha.us",
+   "name": "Gatcha",
+   "origin": "https://www.gatcha.us",
+   "collections": [],
+   "tried": 2
+  },
+  {
+   "host": "www.thegutterbrooklyn.com",
+   "name": "The Gutter",
+   "origin": "https://gutterbarbowl.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.thegutterbarles.com",
+   "name": "The Gutter",
+   "origin": "https://gutterbarbowl.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "southbrooklynfencing.com",
+   "name": "South Brooklyn Fencing",
+   "origin": "https://southbrooklynfencing.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.47bjjcoop.com",
+   "name": "47 BJJ Coop",
+   "origin": "https://www.47bjjcoop.com",
+   "collections": [],
+   "tried": 3
+  },
+  {
+   "host": "www.shambhalayogadance.com",
+   "name": "Shambhala Yoga & Dance Center",
+   "origin": "https://www.shambhalayogadance.com",
+   "collections": [],
+   "tried": 4
+  },
+  {
+   "host": "www.vitalclimbinggym.com",
+   "name": "VITAL Climbing Gym",
+   "origin": "https://www.vitalclimbinggym.com",
+   "collections": [
+    {
+     "url": "https://www.vitalclimbinggym.com/bellingham-calendar?format=json",
+     "title": "Bellingham Calendar",
+     "collection_id": "68b732084c543f13be50068b",
+     "upcoming": 0,
+     "past": 0
+    }
+   ],
+   "tried": 4
+  },
+  {
+   "host": "www.metrorock.com",
+   "name": "MetroRock Brooklyn",
+   "origin": "https://metrorock.com",
+   "collections": [],
+   "tried": 5
+  },
+  {
+   "host": "www.studiox.nyc",
+   "name": "Studio X",
+   "origin": "https://www.studiox.nyc",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.newvibeyoga.com",
+   "name": "New Vibe Yoga",
+   "origin": "https://www.newvibeyoga.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.brooklynsluggers.com",
+   "name": "Brooklyn Sluggers",
+   "origin": "https://www.brooklynsluggers.com",
+   "collections": [
+    {
+     "url": "https://www.brooklynsluggers.com/calendar-cms?format=json",
+     "title": "Events-upload",
+     "collection_id": "5b05dc44562fa754fe1b37fb",
+     "upcoming": 0,
+     "past": 30
+    }
+   ],
+   "tried": 3
+  },
+  {
+   "host": "www.renzograciebayridge.com",
+   "name": "Renzo Gracie",
+   "origin": "https://www.renzograciebayridge.com",
+   "collections": [],
+   "tried": 6
+  },
+  {
+   "host": "www.chernomorets.org",
+   "name": "Chrnomorets SC",
+   "origin": "https://www.chernomorets.org",
+   "collections": [],
+   "tried": 6
+  }
+ ]
+}

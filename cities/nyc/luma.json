@@ -1,0 +1,167 @@
+{
+ "city": "nyc",
+ "place": "nyc",
+ "generated_at": "2026-08-02T16:38:57.971480+00:00",
+ "calendars": [
+  {
+   "id": "cal-TOpA5LAFfuDeFpu",
+   "name": "Claude Community Events",
+   "ok": true,
+   "total": 281,
+   "upcoming": 46,
+   "checked_at": "2026-08-02T16:38:46.335449+00:00"
+  },
+  {
+   "id": "cal-Q8l315UsVMWb6h6",
+   "name": "Reading Rhythms NYC",
+   "ok": true,
+   "total": 258,
+   "upcoming": 16,
+   "checked_at": "2026-08-02T16:38:34.176688+00:00"
+  },
+  {
+   "id": "cal-UdquJphJgtqyZ4F",
+   "name": "GoSadi & Stitch Up Events",
+   "ok": true,
+   "total": 75,
+   "upcoming": 15,
+   "checked_at": "2026-08-02T16:38:32.442447+00:00"
+  },
+  {
+   "id": "cal-dGP82mVkrg1FRmr",
+   "name": "The New York Philosophy Club",
+   "ok": true,
+   "total": 139,
+   "upcoming": 12,
+   "checked_at": "2026-08-02T16:38:50.940546+00:00"
+  },
+  {
+   "id": "cal-mmnYmrfNgxGdvQb",
+   "name": "Mistral AI Events",
+   "ok": true,
+   "total": 23,
+   "upcoming": 6,
+   "checked_at": "2026-08-02T16:38:38.401191+00:00"
+  },
+  {
+   "id": "cal-2r1Wr2Q80EWW9aM",
+   "name": "NYC Running Events Calendar",
+   "ok": true,
+   "total": 257,
+   "upcoming": 5,
+   "checked_at": "2026-08-02T16:38:29.556555+00:00"
+  },
+  {
+   "id": "cal-wGlwnmMsVzQQ8tr",
+   "name": "NYC Backgammon Club",
+   "ok": true,
+   "total": 230,
+   "upcoming": 5,
+   "checked_at": "2026-08-02T16:38:56.710284+00:00"
+  },
+  {
+   "id": "cal-H1FY60pnZtchaf4",
+   "name": "Corgi NYC",
+   "ok": true,
+   "total": 15,
+   "upcoming": 4,
+   "checked_at": "2026-08-02T16:38:39.894277+00:00"
+  },
+  {
+   "id": "cal-dTkKDhuPFba9zmb",
+   "name": "SideQuest",
+   "ok": true,
+   "total": 56,
+   "upcoming": 3,
+   "checked_at": "2026-08-02T16:38:35.700714+00:00"
+  },
+  {
+   "id": "cal-F2CeglUFoUOGIrt",
+   "name": "EliseAI",
+   "ok": true,
+   "total": 11,
+   "upcoming": 3,
+   "checked_at": "2026-08-02T16:38:49.022693+00:00"
+  },
+  {
+   "id": "cal-8x55tE86VtAD07z",
+   "name": "Supabase Community Events",
+   "ok": true,
+   "total": 252,
+   "upcoming": 2,
+   "checked_at": "2026-08-02T16:38:44.078927+00:00"
+  },
+  {
+   "id": "cal-ZGCxlwslp1K0wqD",
+   "name": "Freedom Lab NYC",
+   "ok": true,
+   "total": 28,
+   "upcoming": 2,
+   "checked_at": "2026-08-02T16:38:47.506074+00:00"
+  },
+  {
+   "id": "cal-EpqkMBrIPXa045L",
+   "name": "Personal",
+   "ok": true,
+   "total": 25,
+   "upcoming": 2,
+   "checked_at": "2026-08-02T16:38:53.599018+00:00"
+  },
+  {
+   "id": "cal-7vvbL2BqUXZ74hj",
+   "name": "NYC Craft Club",
+   "ok": true,
+   "total": 13,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:30.905388+00:00"
+  },
+  {
+   "id": "cal-5kUdxGnb4TqWDNk",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:36.874632+00:00"
+  },
+  {
+   "id": "cal-042729IopxZFVjX",
+   "name": "Mercury",
+   "ok": true,
+   "total": 39,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:41.814090+00:00"
+  },
+  {
+   "id": "cal-UZIuBOcNkFlk3KM",
+   "name": "Ramp Design",
+   "ok": true,
+   "total": 7,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:44.444340+00:00"
+  },
+  {
+   "id": "cal-J4Xf2ENpGLHZFsc",
+   "name": "Bagel Entrepreneurs",
+   "ok": true,
+   "total": 15,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:51.971169+00:00"
+  },
+  {
+   "id": "cal-vM3Ah8WdcKPnC60",
+   "name": "A Chief of Staff New York Events",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:54.980194+00:00"
+  },
+  {
+   "id": "cal-DC8dv9i3x92tHVf",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-08-02T16:38:57.971470+00:00"
+  }
+ ]
+}

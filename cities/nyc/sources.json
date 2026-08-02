@@ -33,6 +33,65 @@
       }
     },
     {
+      "id": "nyc-squarespace",
+      "tier": 1,
+      "adapter": "squarespace",
+      "enabled": true,
+      "label": "Squarespace venue calendars",
+      "attribution": "Individual venues",
+      "min_expected": 25,
+      "registry": "squarespace.json",
+      "_comment": [
+        "Venue-published events, one collection per venue. The registry of",
+        "venue -> collection URL is discovered by squarespace.py and committed;",
+        "this adapter only fetches. Re-run discovery when venues redesign, not",
+        "on every run. Events live in the response's `upcoming` array -- for an",
+        "events collection `items` comes back empty, which is the whole trick."
+      ]
+    },
+    {
+      "id": "nyc-luma",
+      "tier": 0,
+      "adapter": "luma",
+      "enabled": true,
+      "label": "Luma community calendars",
+      "attribution": "Luma / individual organisers",
+      "min_expected": 10,
+      "horizon_days": 30,
+      "registry": "luma.json",
+      "_comment": [
+        "Organiser-led programming -- meetups, run clubs, reading and craft",
+        "groups -- which appears in no other source here. Each calendar",
+        "publishes a real ICS feed at api.lu.ma/ics/get, the Subscribe",
+        "button's own endpoint; this is a feed used as a feed, not a scrape.",
+        "Discovery is the limit, not access: there is no city-wide feed and",
+        "the /nyc page yields 20 calendars per load, so luma.py MERGES its",
+        "registry on each run and the roster grows over time."
+      ]
+    },
+    {
+      "id": "nyc-ticketmaster",
+      "tier": 3,
+      "adapter": "ticketmaster",
+      "enabled": true,
+      "label": "Ticketmaster Discovery",
+      "attribution": "Ticketmaster",
+      "min_expected": 300,
+      "dma_id": 345,
+      "state_code": "NY",
+      "horizon_days": 30,
+      "_comment": [
+        "DMA 345 is the New York media market, which reaches Newark, Long",
+        "Island and lower Connecticut. state_code trims the other states at",
+        "the API; normalize.py then drops anything whose venue coordinates",
+        "fall outside an NYC neighbourhood polygon, which is the real test.",
+        "Sharded one day per request: deep paging caps at 1000 items and the",
+        "market holds ~4,600 events per month, so a single broad query would",
+        "silently see only a fifth of them.",
+        "Key lives in .env as TICKETMASTER_API_KEY (gitignored)."
+      ]
+    },
+    {
       "id": "nyc-permitted-events",
       "tier": 2,
       "adapter": "socrata",

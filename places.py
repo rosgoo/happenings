@@ -53,6 +53,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import http  # noqa: E402
 from lib.geo import Neighborhoods  # noqa: E402
 from lib.places import Resolver  # noqa: E402
+import subway  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 # Overpass instances, in preference order. overpass-api.de publishes
@@ -393,6 +394,8 @@ def main():
 
     hoods = Neighborhoods(json.load(open(os.path.join(cdir, "neighborhoods.geojson"))))
     resolver = Resolver(hoods)
+    stations = subway.load(args.city)
+    print(f"  subway: {len(stations)} stations")
 
     # -- shape the OSM elements -------------------------------------------
     seen, places = set(), []
@@ -430,6 +433,10 @@ def main():
         p = resolver.resolve(lat=lat, lon=lon)
         places.append({
             "id": slug, "name": name, "kind": kind, "kind_label": kind_label,
+            # Same nearest-station treatment events get. A museum you cannot
+            # work out how to reach is not a place you are going to go, and
+            # without this a place could not answer the station filter at all.
+            "subway": stations.nearest(lat, lon, limit=1),
             "website": t.get("website") or t.get("contact:website"),
             "opening_hours": t.get("opening_hours"),
             "wikidata": t.get("wikidata"),

@@ -169,18 +169,23 @@ def get_full(url, delay=DEFAULT_DELAY, timeout=25, check_robots=True,
     finding: a 404 on /wp-json is an answer, not an error, and a good share of
     the hosts this visits are expected to be dead or hostile.
 
-    Always returns a dict -- {status, ctype, url, body, error}. `status` is None
-    when nothing was reached at all, and `url` is the final URL after redirects,
-    which is itself a signal (a venue calendar that 302s to Eventbrite has told
-    you where its events live).
+    Always returns a dict -- {status, ctype, url, headers, body, error}.
+    `status` is None when nothing was reached at all, and `url` is the final URL
+    after redirects, which is itself a signal (a venue calendar that 302s to
+    Eventbrite has told you where its events live).
+
+    `headers` is there for the same reason as `status`: some answers only live
+    up there. WordPress reports the size of a collection in `X-WP-Total`, so one
+    request tells you whether a feed holds 5 events or 5,000 -- paging to find
+    that out would be several hundred needless requests across a census.
 
     Does not advertise gzip. The body is read to a cap, and a truncated gzip
     stream is undecompressable -- costing a little bandwidth to keep every
     response readable is the right trade for a one-off census.
     """
     if check_robots and not allowed(url):
-        return {"status": None, "ctype": "", "url": url, "body": b"",
-                "error": "robots-denied"}
+        return {"status": None, "ctype": "", "url": url, "headers": {},
+                "body": b"", "error": "robots-denied"}
 
     host = urllib.parse.urlsplit(url).netloc
     _wait(host, delay)
@@ -188,14 +193,17 @@ def get_full(url, delay=DEFAULT_DELAY, timeout=25, check_robots=True,
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return {"status": r.status, "ctype": (r.headers.get("Content-Type") or "").lower(),
-                    "url": r.geturl(), "body": r.read(max_bytes), "error": None}
+                    "url": r.geturl(), "headers": dict(r.headers),
+                    "body": r.read(max_bytes), "error": None}
     except urllib.error.HTTPError as e:
         try:
             body = e.read(max_bytes)
         except Exception:
             body = b""
         return {"status": e.code, "ctype": (e.headers.get("Content-Type") or "").lower() if e.headers else "",
-                "url": e.geturl() if hasattr(e, "geturl") else url, "body": body, "error": None}
+                "url": e.geturl() if hasattr(e, "geturl") else url,
+                "headers": dict(e.headers) if e.headers else {},
+                "body": body, "error": None}
     except Exception as e:
-        return {"status": None, "ctype": "", "url": url, "body": b"",
-                "error": f"{type(e).__name__}: {e}"}
+        return {"status": None, "ctype": "", "url": url, "headers": {},
+                "body": b"", "error": f"{type(e).__name__}: {e}"}

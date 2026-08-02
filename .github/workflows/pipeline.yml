@@ -32,7 +32,20 @@ jobs:
       - name: Extract
         env:
           HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+          # Ticketmaster is the only keyed source. Without this the adapter
+          # raises, fetch.py counts a failure and the whole job exits 1 --
+          # which is the correct behaviour, but it means the secret is not
+          # optional. Set it at Settings > Secrets > Actions.
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
         run: python3 fetch.py
+
+      # Placing new locations belongs in the regular run, not in a human's
+      # hands. Permit rows arrive with street strings rather than coordinates,
+      # and every run brings names the gazetteer has never seen -- left out of
+      # CI, neighbourhood coverage decays quietly from its current 86%.
+      # Resumable and cached, so a normal run is a handful of requests.
+      - name: Geocode new locations
+        run: python3 geocode.py
 
       - name: Transform
         run: python3 normalize.py
@@ -42,6 +55,19 @@ jobs:
       # site that silently lists nothing.
       - name: Quality gate
         run: python3 validate.py
+
+      # rejected.json is gitignored -- 4 MB regenerated every run, served to
+      # nobody. It is still the only way to audit what the classifier threw
+      # away, so it is kept here instead: retained, downloadable, and outside
+      # git history where it was doubling the repo's growth.
+      - name: Keep the dead-letter queue as an artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-${{ github.run_id }}
+          path: data/*/rejected.json
+          retention-days: 14
+          if-no-files-found: warn
 
       - name: Commit
         run: |

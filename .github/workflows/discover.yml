@@ -1,0 +1,59 @@
+name: discover
+
+# Discovery is a different job from fetching, on a different clock.
+#
+# `pipeline.yml` asks known sources what is on, three times a day. This asks
+# which sources exist at all -- and that answer moves on the scale of a site
+# redesign, not a day. Running it hourly would spend hundreds of requests
+# re-learning a registry that is already committed.
+#
+# It matters most for Luma, where discovery IS the growth mechanism: there is
+# no city-wide feed, the /nyc page yields 20 calendars per load, and luma.py
+# MERGES rather than replaces. Every run is a chance at calendars the roster
+# has not seen, so weekly is the floor rather than the ceiling -- twice a week
+# would be defensible.
+on:
+  schedule:
+    - cron: '40 8 * * 1,4'       # Mon & Thu, 04:40 America/New_York
+  workflow_dispatch:
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+
+      - name: Luma calendars
+        env:
+          HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 luma.py
+
+      # Slugs change when a venue redesigns. Cheap enough weekly, and a venue
+      # that moved /events to /whats-on is otherwise silently lost.
+      - name: Squarespace collections
+        env:
+          HAPPENINGS_CONTACT: https://github.com/${{ github.repository }}
+        run: python3 squarespace.py
+
+      # These two are near-static -- stations and parks do not move -- but a
+      # cheap re-check catches a renamed park or a new station opening.
+      - name: Subway register
+        run: python3 subway.py
+
+      - name: Commit registries
+        run: |
+          git config user.name  "happenings-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add cities/
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "discover: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

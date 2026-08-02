@@ -122,7 +122,13 @@ PERMIT_MAP = {
     "religious event":          ("community", "religious"),
     "athletic race / tour":     ("sports", "running"),
     "open culture":             ("music", "concert"),
-    "special event":            ("community", "street-fair"),
+    # "Special Event" is deliberately absent. It is 5,988 of 33,052 permit rows
+    # and says nothing: a Union Square greenmarket, a Classical Theatre of
+    # Harlem performance and someone's birthday barbecue all arrive under it.
+    # Mapping it to street-fair tagged 4,364 private permits as public street
+    # fairs and made "community" 58% of the whole index. With no entry here it
+    # must earn a category from its title, and is rejected if it cannot --
+    # which is the same bargain every other unlabelled source gets.
 }
 
 # Quarantined, with the reason recorded. These are permits, not things you can
@@ -156,6 +162,21 @@ TITLE_REJECT = [
      "logistics, not an event"),
     (_re.compile(r"\bfilming\b|\bfilm shoot\b|\bphoto shoot\b", _re.I),
      "film/TV production"),
+    # A permit for a private gathering is not a listing. These five words are
+    # the entire title on 1,793 permit rows -- "Celebration" 533 times,
+    # "Miscellaneous" 523, "Picnic" 308, "Barbecue" 236, "Party" 181. Nobody
+    # browsing tonight's events is looking for the 236th barbecue, and the
+    # permit says nothing about it being open to anyone.
+    (_re.compile(r"^\s*(celebration|miscellaneous|picnic|barbecue|bbq|party|"
+                 r"gathering|reunion|gathering of friends|family gathering|"
+                 r"birthday(\s+party)?|wedding|baby shower|memorial service)"
+                 r"\s*$", _re.I),
+     "generic private permit, not a public event"),
+    (_re.compile(r"\bsummer camp\b|\bday camp\b|\bafter[- ]?school\b|"
+                 r"\bteam practice\b|\btraining\b|\bclinic\b", _re.I),
+     "camp or training programme, not a public event"),
+    (_re.compile(r"\bpermit\b", _re.I),
+     "permit record, not an event"),
 ]
 
 
@@ -190,6 +211,28 @@ TITLE_KEYWORDS = [
     (("lecture", "talk", "panel", "reading"), "learning", "talk"),
     (("volunteer", "cleanup", "clean-up"), "community", "volunteer"),
     (("festival", "fair", "fest"), "community", "street-fair"),
+    # The good half of "Special Event". Now that it no longer defaults to
+    # street-fair, these are what let a real permit keep its place.
+    (("greenmarket", "farm stand", "food market"), "community", "market"),
+    (("circus", "performance", "performances"), "performance", "theatre"),
+    (("fitness", "workout", "bootcamp", "zumba"), "sports", "fitness"),
+    (("rowing", "kayak", "canoe", "sail"), "outdoors", "waterfront"),
+    (("skate", "skateboard", "roller"), "sports", "sports-general"),
+    (("health", "wellness", "vaccination", "screening clinic"), "community", "health"),
+    # Added from the Squarespace venue calendars, where museum and gallery
+    # programming was falling through entirely -- 53 of 75 events were rejected
+    # as unclassified before these existed.
+    (("opening reception", "opening of", "vernissage", "exhibition", "exhibit",
+      "installation", "art auction"), "art", "exhibition"),
+    (("crafting", "knit", "quilt", "carving", "ceramics", "printmaking",
+      "collage", "zine"), "art", "arts-crafts"),
+    (("shanty", "singalong", "sing-along", "recital", "chorus"), "music", "concert"),
+    (("tasting", "whiskey", "wine", "beer", "cocktail", "bar crawl",
+      "dinner", "brunch"), "food-drink", "tasting"),
+    (("commemoration", "anniversary", "memorial", "history", "historian",
+      "archive"), "learning", "history"),
+    (("residency", "seminar", "symposium", "class", "course"), "learning", "class"),
+    (("storytelling", "storytime", "story time"), "performance", "storytelling"),
 ]
 
 
@@ -224,6 +267,92 @@ def from_permit(event_type):
     hit = PERMIT_MAP.get(key)
     if hit:
         return hit[0], hit[1], "permit:event_type"
+    return None, None, None
+
+
+# ---------------------------------------------------------------------------
+# Ground truth: Ticketmaster `classifications`, a segment/genre/subGenre triple.
+# Genre is checked before segment because it is the specific one -- a segment of
+# "Music" with a genre of "Jazz" should land on jazz, not the generic concert.
+# ---------------------------------------------------------------------------
+TM_GENRE = {
+    "jazz":                ("music", "jazz"),
+    "classical":           ("music", "classical"),
+    "opera":               ("music", "classical"),
+    "electronic":          ("music", "dj-set"),
+    "dance/electronic":    ("music", "dj-set"),
+    "theatre":             ("performance", "theatre"),
+    "theater":             ("performance", "theatre"),
+    "comedy":              ("performance", "comedy"),
+    "dance":               ("performance", "dance"),
+    "performance art":     ("performance", "theatre"),
+    "circus & specialty acts": ("performance", "theatre"),
+    "magic & illusion":    ("performance", "theatre"),
+    "children's theatre":  ("performance", "theatre"),
+    "fine art":            ("art", "exhibition"),
+    "basketball":          ("sports", "basketball"),
+    "tennis":              ("sports", "sports-general"),
+    "boxing":              ("sports", "martial-arts"),
+    "wrestling":           ("sports", "martial-arts"),
+    "mixed martial arts":  ("sports", "martial-arts"),
+    "cycling":             ("sports", "cycling"),
+    "swimming":            ("sports", "swimming"),
+    "running":             ("sports", "running"),
+}
+
+TM_SEGMENT = {
+    "music":          ("music", "concert"),
+    "sports":         ("sports", "sports-general"),
+    "arts & theatre": ("performance", "theatre"),
+    "film":           ("art", "film-screening"),
+}
+
+
+# A venue can classify an event its own listing refuses to. Ticketmaster files
+# all of Broadway and Off-Broadway under the segment `Undefined` with no genre,
+# so 627 shows at the Nederlander, the Lunt-Fontanne, Cherry Lane and New World
+# Stages arrive with no category at all. The building is the evidence: a show at
+# a theatre is theatre. This is inference from ground truth, not from a guess
+# about the title.
+VENUE_KIND = [
+    (("theatre", "theater", "playhouse", "stage", "opera house"),
+     ("performance", "theatre")),
+    (("museum", "gallery"), ("art", "exhibition")),
+    (("comedy cellar", "comedy club"), ("performance", "comedy")),
+    (("stadium", "arena", "ballpark", "field house"), ("sports", "sports-general")),
+]
+
+
+def from_venue(venue_name):
+    """Last-resort classification from the venue's own name. Returns (cat, sub, source)."""
+    v = (venue_name or "").lower()
+    for words, (cat, sub) in VENUE_KIND:
+        if any(w in v for w in words):
+            return cat, sub, "venue-name"
+    return None, None, None
+
+
+def from_ticketmaster(classifications):
+    """Map a Ticketmaster classifications array. Returns (cat, sub, source).
+
+    `Miscellaneous` and `Undefined` are deliberately not mapped here.
+    `Miscellaneous` is Ticketmaster's bucket for everything from fan conventions
+    to parking passes, and `Undefined` is where Broadway lives. Forcing either
+    into a category from the segment alone would put noise on the page under a
+    confident-looking tag, so both fall through to the venue and then the title.
+    """
+    for c in classifications or []:
+        if not isinstance(c, dict):
+            continue
+        for key in ("subGenre", "genre"):
+            name = ((c.get(key) or {}).get("name") or "").strip().lower()
+            hit = TM_GENRE.get(name)
+            if hit and valid(hit[0], hit[1]):
+                return hit[0], hit[1], f"ticketmaster:{key}"
+        seg = ((c.get("segment") or {}).get("name") or "").strip().lower()
+        hit = TM_SEGMENT.get(seg)
+        if hit and valid(hit[0], hit[1]):
+            return hit[0], hit[1], "ticketmaster:segment"
     return None, None, None
 
 
