@@ -132,6 +132,27 @@ def parse_naive(s):
     return None
 
 
+def parts_to_naive(date_field, time_field):
+    """Combine a date-bearing field with a time-bearing one.
+
+    NYC Parks splits an event across two timestamps and each is only half
+    right: `startdate` is the correct day at 00:00, `starttime` the correct
+    clock time on a fixed placeholder day. Neither alone is the event. Taking
+    the day from the first and the time from the second is the only reading
+    that survives contact with the data, and it is checkable rather than
+    inferred -- `starttime` held one distinct date across the whole feed.
+
+    Degrades rather than guesses: with no usable time this returns the date at
+    midnight, which is how every other adapter here represents an all-day
+    event, and with no date it returns nothing.
+    """
+    d = parse_naive(date_field)
+    t = parse_naive(time_field)
+    if d and t:
+        return d.replace(hour=t.hour, minute=t.minute, second=0, microsecond=0)
+    return d or None
+
+
 TAG = re.compile(r"<[^>]+>")
 
 
@@ -391,8 +412,20 @@ class Builder:
             if bad:
                 self.reject(src_id, title, bad)
                 continue
-            start = parse_naive(r.get("starttime")) or parse_naive(r.get("startdate"))
-            end = parse_naive(r.get("endtime"))
+            # The date and the time come from DIFFERENT fields, and only half of
+            # each is true. `startdate` is the real day at midnight; `starttime`
+            # is the real time on a date that is not this event's -- across
+            # 1,669 rows it carried exactly ONE date, a constant stamp of
+            # roughly when the dataset was built. Preferring `starttime`, which
+            # is what this did, gave every event in the feed the right hour on
+            # the same wrong day; because that day is always in the past, all
+            # 549 parks events were filed as already over and the site rendered
+            # none of them. A source that is fetched, parsed, counted and
+            # published while showing nobody anything is the worst shape of
+            # failure here, and the freshness gate cannot see it -- the rows
+            # arrive, they simply arrive dead.
+            start = parts_to_naive(r.get("startdate"), r.get("starttime"))
+            end = parts_to_naive(r.get("enddate"), r.get("endtime"))
             if end and start and end < start:
                 end += timedelta(days=1)
             if not start:
