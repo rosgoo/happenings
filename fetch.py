@@ -717,6 +717,24 @@ def _dice_event(body):
     return None
 
 
+def _ld_image(ev):
+    """The event's own artwork URL, or None.
+
+    schema.org `image` is single-or-many like everything else here, and it also
+    admits an `ImageObject` where most sites write a bare string -- so all three
+    shapes arrive in practice and only the URL is wanted. Hotlinked rather than
+    mirrored, so this is the address of somebody else's file and not a copy of
+    it; see `add`.
+    """
+    img = ev.get("image")
+    if isinstance(img, list):
+        img = next((i for i in img if i), None)
+    if isinstance(img, dict):
+        img = img.get("url") or img.get("contentUrl")
+    img = str(img or "").strip()
+    return img if img.startswith("http") else None
+
+
 def _ld_walk(node, out):
     """Collect every schema.org Event in a document, however deeply nested.
 
@@ -870,6 +888,7 @@ def _dice_row(ev, entry, url, floor, cutoff):
         "lat": geo.get("latitude"),
         "lon": geo.get("longitude"),
         "organizer": _one(ev.get("organizer")).get("name"),
+        "image": _ld_image(ev),
     }
 
 
@@ -1077,6 +1096,7 @@ def _ld_row(ev, v, floor, cutoff, page_url=None):
         "description": ev.get("description"),
         "price_min": price_min,
         "is_free": is_free,
+        "image": _ld_image(ev),
         # Only when the markup states them. Absent here means geocode.py places
         # the address instead, which is why this must stay null rather than
         # borrowing the host's point.

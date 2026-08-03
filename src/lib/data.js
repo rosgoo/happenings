@@ -188,6 +188,12 @@ export const slim = (list) => list.map((e) => ({
   // answers "what actually is this", so it earns the ~200 KB.
   e: e.end_local || null,
   de: e.description || null,
+  // Hotlinked to the source's own CDN -- nothing is stored or re-served here,
+  // so this is a URL and never a file. 35% of events carry one. The card CSS
+  // reserves the space up front so a late-arriving image does not reflow the
+  // grid, and browse.js removes the block outright if the file 404s, which is
+  // the failure these will actually have.
+  im: e.image || null,
   la: e.lat, lo: e.lon,
   src: SOURCE_CODE[e.source] || e.source,
   // Nearest station only. The id travels with it because station NAMES are not

@@ -336,8 +336,16 @@ if (root) {
     const when = new Date(e.d + 'T12:00:00')
       .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
     const t = fmtTime(e.s);
+    // 35% of events carry one, hotlinked from the source's own CDN. `alt` is
+    // empty on purpose: the title sits directly beneath it in the same card,
+    // so describing the picture would make a screen reader read the event
+    // twice. If it fails to load the whole block is removed rather than left
+    // as a hole -- see the delegated error handler in render().
+    const pic = e.im ? `<div class="img"><img src="${esc(e.im)}" alt=""
+        loading="lazy" decoding="async"></div>` : '';
     return `<div class="card openable" data-id="${esc(e.i)}" tabindex="0"
       role="button" style="--accent:var(--c-${e.c})">
+      ${pic}
       <div class="when">${when}${t ? ` · ${t}` : ' · all day'}</div>
       <h3>${title}</h3>
       <div class="w">${esc(e.vn)}${e.hn ? ' · ' + esc(e.hn) : ''}</div>
@@ -403,6 +411,18 @@ if (root) {
 
     const shown = hits.slice(0, state.limit);
     const out = $('#results');
+    // Hotlinked images rot -- a reorganised CDN, a hotlink block, a venue that
+    // deleted the file. Whatever the reason, a broken image is worse than no
+    // image, so the block removes itself and the card closes up as though it
+    // never had one. Registered once, in the capture phase, because `error`
+    // does not bubble and the cards are rebuilt on every filter change.
+    if (!out.dataset.imgGuard) {
+      out.dataset.imgGuard = '1';
+      out.addEventListener('error', (ev) => {
+        const t = ev.target;
+        if (t && t.tagName === 'IMG') t.closest('.img')?.remove();
+      }, true);
+    }
 
     if (!hits.length) {
       out.innerHTML = `<div class="empty"><b>Nothing here.</b>

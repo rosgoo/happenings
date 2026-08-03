@@ -199,6 +199,16 @@ select, input[type="search"] {
   min-height: 118px;
 }
 .card:hover { background: var(--paper-2); }
+/* Full-bleed inside the border: negative margins cancel the card's padding so
+   the picture meets the rule on three sides, which is what makes it read as
+   part of the card rather than as a thing sitting in it. `aspect-ratio`
+   reserves the space before the file arrives -- without it every image that
+   loads reflows the whole grid underneath it. Only 35% of events have one, so
+   this must look deliberate by its absence too: the rest keep the text-first
+   card exactly as it was. */
+.card .img { margin: -12px -13px 3px; border-bottom: 2px solid var(--ink);
+             aspect-ratio: 16 / 9; overflow: hidden; background: var(--paper-2); }
+.card .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card .when { font-size: 11px; font-weight: 700; letter-spacing: .07em;
               text-transform: uppercase; color: var(--ink-2);
               font-variant-numeric: tabular-nums; }

@@ -13,8 +13,9 @@ Sibling project to gearherd, and a deliberate inversion of it — same pipeline
 discipline, much friendlier face.
 
 **Status: v1, city open data plus the ticketed tier.** 9,315 events ·
-1,215 venues · 199 neighbourhoods · 1,200 places · 737 static pages. 92% of
-events are placed to a neighbourhood; 176 places carry a credited photo. DICE
+1,215 venues · 199 neighbourhoods · 1,416 places · 737 static pages. 92% of
+events are placed to a neighbourhood; 186 places carry a credited photo, and
+450 state their opening hours, of which 381 parse into time bands. DICE
 covers the independent music and nightlife rooms — Elsewhere, Union Pool, Saint
 Vitus, House of Yes, Public Records — which is the tier that sells through
 neither Ticketmaster nor its own calendar. The rest of *What's next* stands.
@@ -203,15 +204,29 @@ the durable fix is an edit to OSM, and the build says so the day one lands.
 
 ## Images
 
-`places.py` is the only source here that carries photographs. OpenStreetMap
-supplies the places; a linked Wikipedia article's infobox supplies the photo;
-the Commons REST API supplies the author. **An image whose author cannot be
-established is dropped rather than shown uncredited.**
+Two kinds, on deliberately different terms.
+
+**Place photographs** come from `places.py`. OpenStreetMap supplies the places;
+a linked Wikipedia article's infobox supplies the photo; the Commons REST API
+supplies the author. **An image whose author cannot be established is dropped
+rather than shown uncredited** — these are licensed works and the licence names
+a condition, so meeting it is the price of using them.
+
+**Event artwork** comes from the feeds themselves: 35% of events carry one, from
+DICE (100%), Ticketmaster (76%), Squarespace (100%) and NYC Parks (45%). No
+credit block, because there is nothing to credit *to* — this is the venue's own
+promotional image for its own event, published to be seen, shown on a card that
+links straight back to the source. Ticketmaster's `fallback` renditions are
+skipped: they are generic category art rather than a picture of the show, and a
+grid of identical stock photos reads worse than the honest gap.
 
 Everything is hotlinked at source and never rehosted — simultaneously the
-correct rights position and the cheapest possible bandwidth policy. Places
-without a photo get their flat category block, which is the design rather than
-an apology.
+correct rights position and the cheapest possible bandwidth policy. Nothing is
+stored, resized or re-served, so a venue that pulls its artwork has changed what
+the index shows the same day. The corollary is that these rot, so a broken image
+removes itself and the card closes up; the listing is the product and the
+picture is decoration. Places without a photo get their flat category block,
+which is the design rather than an apology.
 
 Two things worth knowing:
 

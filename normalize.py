@@ -31,6 +31,72 @@ import subway  # noqa: E402
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
+def https_only(url):
+    """An absolute https image URL, or None.
+
+    The site is served over https, so an http image is a mixed-content warning
+    the browser blocks anyway -- upgrading it silently would be a guess about
+    somebody else's TLS, so it is dropped instead. Protocol-relative `//host/x`
+    is a real and common shape and resolves correctly, so it is kept.
+    """
+    u = str(url or "").strip()
+    if u.startswith("//"):
+        u = "https:" + u
+    return u if u.startswith("https://") else None
+
+
+# NYC Parks publishes its event photos as `http://` in the Socrata payload, and
+# `https_only` is right to drop that -- the browser blocks mixed content, so an
+# unchecked upgrade would trade a missing image for a broken one. This host is
+# the exception because it was checked rather than assumed: the same path over
+# https returns HTTP/2 200 image/jpeg. Scoped to the one host that was tested,
+# so the next source with http images gets tested too instead of inheriting a
+# guess.
+PARKS_IMG = re.compile(r"^http://(www\.)?nycgovparks\.org/", re.I)
+
+
+def parks_image(v):
+    """The parks photo URL, upgraded to https. Socrata nests it as {"url": ...}."""
+    u = v.get("url") if isinstance(v, dict) else v
+    u = str(u or "").strip()
+    if PARKS_IMG.match(u):
+        u = "https://" + u.split("://", 1)[1]
+    return https_only(u)
+
+
+def tm_image(images):
+    """The Ticketmaster rendition worth showing.
+
+    Discovery returns ten per event and they are not interchangeable: several
+    are 16:9 crops at different widths, and some are marked `fallback`, which
+    is Ticketmaster's word for generic category art rather than a picture of
+    this show. Preferring a real image over a fallback matters more than the
+    size does -- the fallbacks are all the same handful of stock shots, and a
+    page of identical placeholders reads worse than no image at all.
+
+    Among real ones, the widest 16:9 under 1200px: wide enough for a card on a
+    retina screen, small enough not to ship a poster to a phone.
+    """
+    best = None
+    for im in images or []:
+        if not isinstance(im, dict) or im.get("fallback"):
+            continue
+        u = https_only(im.get("url"))
+        if not u:
+            continue
+        w = im.get("width") or 0
+        try:
+            w = int(w)
+        except (TypeError, ValueError):
+            w = 0
+        if w > 1200:
+            continue
+        score = (im.get("ratio") == "16_9", w)
+        if best is None or score > best[0]:
+            best = (score, u)
+    return best[1] if best else None
+
+
 def clean(s):
     """Sources hand back HTML-encoded text (`Zumba Gold&#174;`, `Lim&#243;n`).
     Decode ONCE here so the stored value is the real string -- escaping happens
@@ -241,7 +307,7 @@ class Builder:
     # -- emit --------------------------------------------------------------
     def add(self, *, title, start, end, venue, category, subcategory, cat_source,
             source_id, url=None, description=None, flags=None, price_min=None,
-            is_free=None, place=None):
+            is_free=None, place=None, image=None):
         """`place` overrides the venue's location for THIS event.
 
         Venues keep exactly one canonical neighbourhood -- URLs and dedup depend
@@ -292,6 +358,19 @@ class Builder:
             "price_min": price_min,
             "is_free": is_free,
             "url": url,
+            # HOTLINKED, NEVER COPIED. This is the address of the source's own
+            # file on the source's own CDN, so nothing here is stored, resized
+            # or re-served, and a venue that pulls or changes its artwork has
+            # changed what the index shows the same day. That is deliberate:
+            # mirroring promotional artwork would mean holding a copy of
+            # somebody else's copyrighted work, which is a different act from
+            # linking to the one they published to be seen.
+            #
+            # The consequence is that these rot -- a reorganised CDN, a hotlink
+            # block, an expired signed URL -- so the page must render perfectly
+            # without them and hide any that fail. An image is decoration here;
+            # the listing is the product.
+            "image": https_only(image),
             "source": source_id,
         })
         venue["count"] += 1
@@ -348,7 +427,8 @@ class Builder:
             self.add(title=title, start=start, end=end, venue=v,
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id, url=url,
-                     description=r.get("description"), flags=flags)
+                     description=r.get("description"), flags=flags,
+                     image=parks_image(r.get("image")))
 
     def permits(self, src_id, rows):
         for r in rows:
@@ -452,7 +532,8 @@ class Builder:
             self.add(title=title, start=start, end=end, venue=v,
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id, url=url or None,
-                     description=strip_tags(r.get("excerpt")))
+                     description=strip_tags(r.get("excerpt")),
+                     image=r.get("assetUrl"))
 
     def ticketmaster(self, src_id, rows):
         """Discovery API events. The first source here that states a price.
@@ -549,7 +630,8 @@ class Builder:
             self.add(title=title, start=start, end=None, venue=v,
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id, url=e.get("url"),
-                     price_min=price_min, is_free=is_free)
+                     price_min=price_min, is_free=is_free,
+                     image=tm_image(e.get("images")))
 
     def luma(self, src_id, rows):
         """Luma calendars -- meetups, run clubs, reading groups, craft circles.
@@ -737,7 +819,7 @@ class Builder:
             self.add(title=title, start=start, end=end, venue=v,
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id, url=r.get("url"),
-                     description=blurb)
+                     description=blurb, image=r.get("image"))
 
     def jsonld(self, src_id, rows):
         """Venue calendars read from the schema.org markup on their listing page.
@@ -805,7 +887,8 @@ class Builder:
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id, url=r.get("url"),
                      description=r.get("description"),
-                     price_min=r.get("price_min"), is_free=r.get("is_free"))
+                     price_min=r.get("price_min"), is_free=r.get("is_free"),
+                     image=r.get("image"))
 
     def bpl(self, src_id, rows):
         """Brooklyn Public Library -- every branch, one open Drupal JSON:API.

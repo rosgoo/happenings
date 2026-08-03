@@ -2,7 +2,7 @@
   "city": "nyc",
   "city_name": "New York",
   "tz": "America/New_York",
-  "generated_at": "2026-08-03T04:21:11.327189+00:00",
+  "generated_at": "2026-08-03T04:36:49.115115+00:00",
   "counts": {
     "events": 9310,
     "venues": 1210,
@@ -245,14 +245,14 @@
       "id": "nyc-dice",
       "label": "DICE",
       "attribution": "DICE",
-      "fetched_at": "2026-08-03T04:16:49.548393+00:00",
+      "fetched_at": "2026-08-03T04:35:31.429911+00:00",
       "raw_rows": 1226
     },
     {
       "id": "nyc-jsonld",
       "label": "Venue calendars (schema.org)",
       "attribution": "Individual venues",
-      "fetched_at": "2026-08-03T04:20:51.418974+00:00",
+      "fetched_at": "2026-08-03T04:35:40.118012+00:00",
       "raw_rows": 450
     },
     {
