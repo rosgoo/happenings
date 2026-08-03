@@ -300,8 +300,28 @@ Low priority independent of access.
 
 ## What to do
 
-1. **Facet the existing Ticketmaster pull on `source`.** One request. May show
-   TicketWeb and Universe are already in the index.
+1. ~~**Facet the existing Ticketmaster pull on `source`.**~~ **Done, and it
+   cost nothing** — `source` is absent from every Discovery event, but the
+   `url` names the ticketing host, and the last pull was still in `raw/`. Of
+   4,337 events: **ticketmaster.com 3,184 · universe.com 1,120 · axs.com 11 ·
+   ticketweb.com 10 · gofevo.com 9**.
+
+   **Universe is answered: it needs no adapter.** A quarter of the Ticketmaster
+   feed already is Universe. It reaches the index as 82 events rather than
+   1,120 because 1,049 of those rows are one show — the Balloon Museum's
+   timed-entry slots — which `tm_timed_entry_collapsed` already folds to one
+   per day. That is the correct answer and it was already being got right; a
+   museum's half-hourly admission windows are not 1,049 things to do tonight.
+
+   **TicketWeb is not.** Ten events is a rounding error, not coverage, and
+   being a Ticketmaster subsidiary is evidently no guarantee of syndication.
+   So the audit's premise holds for Universe and fails for TicketWeb: if that
+   inventory is wanted it still needs its own route, and the trickle in the
+   feed is what a *partial* syndication looks like rather than a complete one.
+
+   AXS and Fevo turned up unlooked-for on the same evidence — neither is
+   audited above, both are in the index in single digits, and the same
+   partial-syndication question applies to both.
 2. ~~**Build the DICE adapter.**~~ **Done** — `dice.py` for discovery,
    `fetch_dice` and `Builder.dice` for the rest. 1,539 NYC events, with
    coordinates, from a site that publishes a sitemap and says `Allow: /`.
@@ -313,5 +333,5 @@ Low priority independent of access.
 4. **Ask Viewcy.** It is the one refusal here worth a conversation rather than
    a workaround: small NYC rooms, programming the index genuinely lacks, and a
    business model that wants listings to travel.
-4. **Leave Meetup and Songkick** until the gap they'd fill is still visible
+5. **Leave Meetup and Songkick** until the gap they'd fill is still visible
    after 1 and 2.
