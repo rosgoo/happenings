@@ -633,7 +633,10 @@ def _ics_rows(v, horizon_days):
     for e in items:
         start = e["start"]
         out.append({
-            "venue_host": v["host"], "venue_name": v["name"],
+            # `venue_name` overrides the OSM match, same as the tribe path --
+            # it was missing here, so a curated name set for a venue that
+            # happened to publish ICS rather than REST was silently ignored.
+            "venue_host": v["host"], "venue_name": v.get("venue_name") or v["name"],
             "lat": v.get("lat"), "lon": v.get("lon"),
             "borough": v.get("borough"),
             "feed": "ics",
@@ -646,7 +649,11 @@ def _ics_rows(v, horizon_days):
             "status": e["status"],
             "cost": None,
             "description": e["description"],
-            "categories": [], "tags": [],
+            # CATEGORIES is the one classification ICS carries, and it is the
+            # source's own word rather than ours. Mapped by the same
+            # `wordpress:terms` tier that reads Tribe's category objects, so
+            # both feeds of this adapter classify from what the venue said.
+            "categories": e["categories"], "tags": [],
             "venue_address": e["location"],
             "venue_lat": e["lat"], "venue_lon": e["lon"],
         })

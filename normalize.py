@@ -897,11 +897,19 @@ class Builder:
                 self.reject(src_id, title, "outside nyc", url=r.get("url"))
                 continue
 
+            # The venue's own terms, read as terms first and only then as free
+            # text. `from_term` matches the whole word against the same
+            # vocabulary Ticketmaster's segments use; `from_title` is the
+            # substring pass that catches a term like "Live Jazz" that names no
+            # segment but says plenty.
             cat = sub = csrc = None
             for word in (r.get("categories") or []) + (r.get("tags") or []):
-                c, s, _ = taxonomy.from_title(str(word))
+                c, s, src = taxonomy.from_term(str(word))
+                if not c:
+                    c, s, _ = taxonomy.from_title(str(word))
+                    src = "wordpress:terms"
                 if c:
-                    cat, sub, csrc = c, s, "wordpress:terms"
+                    cat, sub, csrc = c, s, f"wordpress:{src}" if src.startswith("term:") else src
                     break
             if not cat:
                 cat, sub, csrc = taxonomy.from_title(title)

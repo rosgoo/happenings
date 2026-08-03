@@ -467,6 +467,54 @@ def from_schema_default(type_):
     return None, None, None
 
 
+# A term a venue tagged its own event with -- an ICS `CATEGORIES` value or a
+# Tribe category object. These are the same broad genre words Ticketmaster
+# calls segments, so the mappings are lifted from the vocabularies above rather
+# than invented next to them: a source saying "Music" and one saying
+# `MusicEvent` or `segment: Music` are making the identical claim, and they
+# should not classify three different ways.
+#
+# `from_title` cannot do this job. It is a SUBSTRING matcher over titles, and
+# it only fires on a bare term when the term happens to name a subcategory --
+# "Dance" resolves and "Music" does not, which is why 12 of Little Island's 30
+# nights were tagged `CATEGORIES:Music` by the venue and thrown away by us.
+#
+# Deliberately absent: "event", which means nothing, and "food" and "art",
+# which name a category whose subcategories are genuinely different things --
+# food-drink is market, tasting, pop-up or class, and picking one from the bare
+# word would be the estimate this pipeline refuses to make. They stay in the
+# dead-letter queue where they can be read.
+TERM = {
+    "music":       ("music", "concert"),
+    "concert":     ("music", "concert"),
+    "sports":      ("sports", "sports-general"),
+    "film":        ("art", "film-screening"),
+    "screening":   ("art", "film-screening"),
+    "exhibition":  ("art", "exhibition"),
+    "theatre":     ("performance", "theatre"),
+    "theater":     ("performance", "theatre"),
+    "dance":       ("performance", "dance"),
+    "comedy":      ("performance", "comedy"),
+    "talk":        ("learning", "talk"),
+    "lecture":     ("learning", "talk"),
+    "workshop":    ("learning", "workshop"),
+}
+
+
+def from_term(word):
+    """A venue's own category term -> (cat, sub, source), or None.
+
+    Matched whole rather than as a substring. A term IS the classification,
+    unlike a title that merely contains a word, so "Music Hall" is not a music
+    term and must not be read as one.
+    """
+    t = (word or "").strip().lower()
+    hit = TERM.get(t)
+    if hit and valid(hit[0], hit[1]):
+        return hit[0], hit[1], f"term:{t}"
+    return None, None, None
+
+
 def from_title(title):
     """Fallback only. Returns (cat, sub, source)."""
     t = (title or "").lower()

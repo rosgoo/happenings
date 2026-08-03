@@ -104,7 +104,8 @@ def events(text, default_tz=None):
         chunk = chunk.split("END:VEVENT")[0]
         e = {"uid": None, "summary": None, "description": None, "location": None,
              "url": None, "status": None, "organizer": None, "rrule": None,
-             "start": None, "end": None, "all_day": False, "lat": None, "lon": None}
+             "start": None, "end": None, "all_day": False, "lat": None, "lon": None,
+             "categories": []}
         for line in chunk.splitlines():
             m = PROP.match(line.strip())
             if not m:
@@ -135,6 +136,17 @@ def events(text, default_tz=None):
                 e["organizer"] = cn.group(1).strip() if cn else None
             elif name == "RRULE":
                 e["rrule"] = value.strip()
+            elif name == "CATEGORIES":
+                # A comma-separated TEXT list, and the only per-event
+                # classification ICS models at all. Worth having because the
+                # alternative for a venue that bills its nights under the
+                # performer's name is no signal whatsoever -- "Anthony Roth
+                # Costanzo" is a person, and CATEGORIES:Music is the feed
+                # answering the question directly. A literal comma inside one
+                # value is escaped as `\,`, so the split has to come first and
+                # the unescaping after it.
+                e["categories"].extend(
+                    c for c in (untext(p) for p in re.split(r"(?<!\\),", value)) if c)
         if e["start"] is not None:
             out.append(e)
     return out
