@@ -1,47 +1,47 @@
 {
   "nyc-parks-upcoming": {
     "ok": true,
-    "count": 1706,
-    "fetched_at": "2026-08-02T22:19:54.678996+00:00"
+    "count": 1669,
+    "fetched_at": "2026-08-03T04:15:47.428373+00:00"
   },
   "nyc-squarespace": {
     "ok": true,
     "count": 75,
-    "fetched_at": "2026-08-02T22:20:11.158828+00:00"
+    "fetched_at": "2026-08-03T04:16:06.501384+00:00"
   },
   "nyc-luma": {
     "ok": true,
-    "count": 124,
-    "fetched_at": "2026-08-02T22:20:30.828265+00:00"
+    "count": 122,
+    "fetched_at": "2026-08-03T04:16:26.107571+00:00"
   },
   "nyc-ticketmaster": {
     "ok": true,
-    "count": 4337,
-    "fetched_at": "2026-08-02T22:20:59.136769+00:00"
-  },
-  "nyc-bpl": {
-    "ok": true,
-    "count": 3536,
-    "fetched_at": "2026-08-02T22:22:10.873396+00:00"
-  },
-  "nyc-wordpress": {
-    "ok": true,
-    "count": 859,
-    "fetched_at": "2026-08-03T01:41:26.845383+00:00"
-  },
-  "nyc-permitted-events": {
-    "ok": true,
-    "count": 31627,
-    "fetched_at": "2026-08-02T22:24:04.817755+00:00"
+    "count": 4369,
+    "fetched_at": "2026-08-03T04:16:49.407179+00:00"
   },
   "nyc-dice": {
     "ok": true,
     "count": 1226,
-    "fetched_at": "2026-08-03T01:02:19.285719+00:00"
+    "fetched_at": "2026-08-03T04:16:49.577265+00:00"
+  },
+  "nyc-bpl": {
+    "ok": true,
+    "count": 3522,
+    "fetched_at": "2026-08-03T04:19:02.181112+00:00"
+  },
+  "nyc-wordpress": {
+    "ok": true,
+    "count": 881,
+    "fetched_at": "2026-08-03T04:20:10.844517+00:00"
+  },
+  "nyc-permitted-events": {
+    "ok": true,
+    "count": 31622,
+    "fetched_at": "2026-08-03T04:20:42.696822+00:00"
   },
   "nyc-jsonld": {
     "ok": true,
     "count": 450,
-    "fetched_at": "2026-08-03T04:12:20.543590+00:00"
+    "fetched_at": "2026-08-03T04:20:51.428977+00:00"
   }
 }
