@@ -98,7 +98,7 @@
       "enabled": true,
       "label": "DICE",
       "attribution": "DICE",
-      "min_expected": 150,
+      "min_expected": 400,
       "horizon_days": 60,
       "registry": "dice.json",
       "city_slugs": ["new-york-city", "new-york", "brooklyn"],

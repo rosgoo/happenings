@@ -644,14 +644,30 @@ class Builder:
         landing outside a real neighbourhood polygon is dropped. A slug is a
         label someone typed, a coordinate is a claim about the world.
 
-        CLASSIFICATION ORDER IS THE INTERESTING PART, and it is not the obvious
-        one. DICE marks specific things specifically -- ScreeningEvent,
-        ComedyEvent -- and those beat the title, because a screening called
-        "THE HUMAN OPERA" is not classical music and the title alone says it is.
-        But its default is MusicEvent, covering 22 of 25 sampled listings, so
-        that has to LOSE to the title or a trivia night at a music venue becomes
-        a concert. Specific type, then title, then the generic type, then the
-        building. Each step is a claim of decreasing confidence.
+        CLASSIFICATION ORDER IS THE INTERESTING PART, and it was got wrong
+        first. The markup is trusted ahead of the title, both for the specific
+        types and for MusicEvent, and the reason is measured rather than
+        assumed.
+
+        The specific types are easy: a `ScreeningEvent` called "THE HUMAN
+        OPERA" is not classical music, and only the markup knows that.
+
+        `MusicEvent` looked like the opposite case -- a platform default
+        covering 91% of listings, which ought to lose to a title that says
+        something concrete. It does not. Ranked below the title it fires 93
+        overrides across a 1,282-event run, and about two thirds of them are
+        wrong, because `from_title` is a SUBSTRING matcher built as a last
+        resort for sources with no other signal: "Alan Walker" and
+        "Pinkshift: Anniversary Tour" become walking tours, "Boris Classics"
+        becomes a class, "THE BLACK PARADE: EMO RAVE" becomes a parade.
+        Against that, the cost of trusting MusicEvent is that a trivia night
+        at a music venue reads as a concert -- mildly wrong, and rarer.
+
+        So: markup, then title, then the building. The same shape as
+        `ticketmaster`, which also trusts the source's own classification
+        first. Genuinely non-musical listings mostly arrive typed plain
+        `Event` -- video game clubs, clothing swaps, sound baths -- and those
+        still reach the title, which is where that decision belongs.
 
         Price is null. DICE states one on the page but not in the markup, and
         the markup is the part it publishes to be read. Reading the price out of
@@ -692,9 +708,9 @@ class Builder:
 
             cat, sub, csrc = taxonomy.from_schema(r.get("type"))
             if not cat:
-                cat, sub, csrc = taxonomy.from_title(title)
-            if not cat:
                 cat, sub, csrc = taxonomy.from_schema_default(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
             if not cat:
                 cat, sub, csrc = taxonomy.from_venue(v["name"])
             if not cat:
