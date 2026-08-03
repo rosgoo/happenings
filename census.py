@@ -109,6 +109,11 @@ PLATFORMS = {
 # Site platforms. Some of these have their own documented event API (localist,
 # trumba, 25live, libcal); some embed the page's data as JSON in the HTML
 # (next, nuxt, squarespace), which is a source in its own right.
+#
+# `spacecraft` is neither -- it server-renders the listing into the venue's own
+# markup, so it is read from the HTML or not at all. Matched on the CDN host
+# rather than the bare word, which on a music venue's calendar is as likely to
+# be a band as a platform.
 CMS = {
     "localist": r"localist\.com|/api/2/events",
     "trumba": r"trumba\.com",
@@ -121,6 +126,7 @@ CMS = {
     "nuxt": r"__NUXT__",
     "cargo": r"cargocollective|cargo\.site",
     "drupal": r"/sites/default/files|Drupal\.settings",
+    "spacecraft": r"static\.spacecrafted\.com|spacecrafted\.com",
 }
 
 SOCIAL_ONLY = re.compile(r"^https?://(www\.)?(facebook|instagram|twitter|x|linktr)\.", re.I)
