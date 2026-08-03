@@ -1,5 +1,6 @@
 ---
 import '../styles/app.css';
+import Analytics from '@vercel/analytics/astro';
 import { meta } from '../lib/data.js';
 
 const { title, description } = Astro.props;
@@ -30,6 +31,10 @@ const generated = new Date(meta.generated_at).toLocaleString('en-US', {
        and can swap in late; preloading all four would just make them queue. -->
   <link rel="preload" href="/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/archivo-black-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- Pageviews. The script is served by Vercel at /_vercel/insights/ and only
+       exists once Web Analytics is enabled on the project, so this is inert
+       locally and on any other host. -->
+  <Analytics />
 </head>
 <body>
   <header class="top">
@@ -59,15 +64,18 @@ const generated = new Date(meta.generated_at).toLocaleString('en-US', {
       </div>
       <div>
         Sources: {meta.sources.map((s) => s.attribution).filter(Boolean).join(' · ')}.
-        Every listing links back to where it came from — happenings is a router,
-        not a destination.
       </div>
       <div>
-        Facts only: title, time, place, category. Nothing is estimated — a value
-        we could not establish shows as missing rather than guessed.
-        <a href="/nyc/about">What's covered, and what isn't →</a>
+        <a href="/nyc/about">About happenings →</a>
       </div>
     </div>
   </footer>
+
+  <!-- Outbound clicks. Here rather than in the listings island because the
+       about, venue and neighborhood pages link off-site too and ship no other
+       JavaScript. -->
+  <script>
+    import '../scripts/analytics.js';
+  </script>
 </body>
 </html>

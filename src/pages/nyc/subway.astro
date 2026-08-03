@@ -26,7 +26,6 @@ const lines = subway.lines.map((ln) => {
 
 const served = [...counts.keys()].filter((id) => subway.stations[id]).length;
 const total = Object.keys(subway.stations).length;
-const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
 ---
 <Base title="The subway — happenings"
       description="Every New York subway line, every stop in order, and what's on near each one.">
@@ -35,11 +34,7 @@ const placed = upcoming.filter((e) => e.subway && e.subway[0]).length;
   <p class="lede">Every line, every stop, in the order you ride them. Pick a
     stop to see what's on nearest to it.</p>
   <p style="color:var(--ink-2);font-size:13px;max-width:70ch">
-    {served} of {total} stations have something upcoming within a mile
-    — {Math.round(100 * placed / upcoming.length)}% of events are placed to a
-    station. Order comes from the MTA's published schedule; the stops with
-    nothing on are left in, because a line with holes cut out of it is not a
-    line. <a href="/nyc/about">See what's covered</a>.
+    {served} of {total} stations have something upcoming within a mile.
   </p>
 
   <!-- Filters the page it was given rather than fetching anything: all 767

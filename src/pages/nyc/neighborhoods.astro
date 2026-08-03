@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { neighborhoods, upcoming, meta } from '../../lib/data.js';
+import { neighborhoods } from '../../lib/data.js';
 const hoods = neighborhoods(1);
 const byBorough = new Map();
 for (const h of hoods) {
@@ -8,19 +8,11 @@ for (const h of hoods) {
   if (!byBorough.has(b)) byBorough.set(b, []);
   byBorough.get(b).push(h);
 }
-const placed = upcoming.filter((e) => e.neighborhood).length;
 ---
 <Base title="Neighborhoods — happenings" description="Every New York neighborhood with upcoming events.">
   <p class="kicker" style="margin-top:26px">New York City</p>
   <h1 class="page">Neighborhoods</h1>
-  <p class="lede">{hoods.length} neighborhoods with something on. Each is its own
-    edition — the only scale at which a listing can be read end to end.</p>
-  <p style="color:var(--ink-2);font-size:13px;max-width:70ch">
-    {Math.round(100 * placed / upcoming.length)}% of events are placed to a
-    neighborhood. The rest carry only a borough, because the permitted-events
-    feed gives a street description and no coordinates —
-    <a href="/nyc/about">see what's covered</a>.
-  </p>
+  <p class="lede">{hoods.length} neighborhoods with something on.</p>
   {[...byBorough.entries()].sort((a, b) => b[1].length - a[1].length).map(([b, list]) => (
     <>
       <h2 class="sec">{b} <span style="color:var(--ink-2)">{list.length}</span></h2>

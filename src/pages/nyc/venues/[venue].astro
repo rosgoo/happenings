@@ -21,6 +21,9 @@ const cats = categories()
   .filter((c) => c.count > 0);
 const accent = cats.length ? catColor(cats[0].slug) : 'var(--acid)';
 const onAccent = cats.length ? catOn(cats[0].slug) : 'var(--ink)';
+// What this venue mostly puts on, by count -- `cats` is in category order, not
+// event order, so the accent colour's category is not necessarily the busiest.
+const top = [...cats].sort((a, b) => b.count - a.count)[0];
 ---
 <Base
   title={`${venue.name} — upcoming events | happenings`}
@@ -35,8 +38,7 @@ const onAccent = cats.length ? catOn(cats[0].slug) : 'var(--ink)';
       {venue.neighborhood_name
         ? <a href={`/nyc/${venue.neighborhood}`}>{venue.neighborhood_name}</a>
         : venue.borough && <span>{venue.borough}</span>}
-      {venue.lat && <span>{venue.lat.toFixed(4)}, {venue.lon.toFixed(4)}</span>}
-      <span style="color:var(--ink-2)">place from {venue.neighborhood_source || 'source'}</span>
+      {top && <span>mostly {top.name.toLowerCase()}</span>}
     </div>
   </div>
 

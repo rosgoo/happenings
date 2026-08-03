@@ -30,9 +30,8 @@ const noJs = todayEvents.slice(0, 60);
   <h1 class="page">What's on today</h1>
   <p class="lede">
     <em>{upcoming.length.toLocaleString()}</em> things to do across
-    <em>{meta.counts.neighborhoods_with_events}</em> neighborhoods —
-    pulled from public feeds, normalized into one index, and linked back to the
-    source. Today's count is in the list below.
+    <em>{meta.counts.neighborhoods_with_events}</em> neighborhoods.
+    Every listing links straight to the source.
   </p>
 
   <Browse cats={cats} hoods={hoods} venues={venueList} noJs={noJs} />
