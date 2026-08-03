@@ -24,6 +24,7 @@ differently from a residential address; that is noted where it matters.
 | Songkick | Yes — 50/page | UA fingerprinting, 406s | Fragile |
 | Resident Advisor | Yes — open GraphQL, 598/30d | Terms forbid reproduction | **Out** |
 | Partiful | Barely — 5 NYC events | Terms forbid scraping | **Out** |
+| Viewcy | Only via framework internals | Terms forbid automated collection | **Out** |
 | Posh | No — Cloudflare 403 | — | Out |
 | Shotgun | No — 429 on everything | robots permissive | Out |
 | AXS / See Tickets / Etix / Tixr | No | Organizer-scoped APIs only | Out |
@@ -209,6 +210,59 @@ This is also true to the product. Partiful events are invitations; the public
 "events you can crash" set is small on purpose. The thing that makes Partiful
 worth wanting is the thing that keeps it out of an index.
 
+## Viewcy — the exact inverse of DICE
+
+Worth its own section because it is the most *wanted* platform in this audit
+and still a no. Viewcy ticket the small-room jazz and global-music tier that
+almost nothing else here reaches: Barbès in Park Slope, Drom in the East
+Village, Brooklyn Maqam, Brooklyn Raga Massive. That programming is close to
+invisible in the shipped index.
+
+`robots.txt` is the friendliest of any platform audited — only `/auth`,
+`/register`, `/manage` and `/tickets` are disallowed, which is to say the
+checkout, and nothing else. No content signal, no AI-crawler blocks.
+
+Then every surface underneath it turns out not to exist:
+
+* **The advertised sitemap is not there.** `robots.txt` points at
+  `https://viewcy.com/sitemap.xml.gz`; that URL returns 59 KB of HTML — the
+  app shell — with a 200. So does `/sitemap.xml`, and so does
+  `/sitemap-0.xml`, and so does any other path. The app answers 200 to
+  everything, which means **a status code carries no information here** and
+  `ical.py`'s lesson applies exactly: a 200 is not a feed. (Routes under
+  `/api/` do 404 honestly, which is how you can tell the difference.)
+
+* **There is no structured data at all.** Not on the home page, not on a venue
+  page, not on an event page. No `ld+json`, no microdata, no dates in the
+  OpenGraph tags.
+
+* **The data exists, but only inside the framework.** An event page carries
+  everything worth having — `startsAt`, `timezone`, `address`, `latitude`,
+  `longitude` — escaped inside Next.js RSC flight chunks
+  (`self.__next_f.push`). That is a React server-components wire format, not a
+  publication. It is versioned to the framework rather than to Viewcy, so it
+  changes when they upgrade a dependency, with no notice and no reason to give
+  any.
+
+Discovery is thin on top of that: the home page links 99 organiser slugs and
+81 events, behind `load more` pagination, and there is no city index — so
+reaching a full picture means crawling organiser by organiser.
+
+And the terms close it regardless:
+
+> scrape or collect content from the Service via automated means
+
+So: the most permissive robots.txt in the audit, sitting over a site that
+publishes nothing to read and forbids reading it anyway. DICE says `Allow: /`
+and then hands you a sitemap and schema.org markup; Viewcy says `Allow: /` and
+hands you a single-page app. **The permission and the surface are different
+questions, and Viewcy is the clearest case of one without the other.**
+
+The honest route here is not a scraper. It is an email — Viewcy's venues are
+small rooms who benefit from being listed, and the platform's business is
+getting people to the event, which is the alignment test the README already
+uses to pick partners.
+
 ## Posh and Shotgun — walls
 
 **Posh** returned **403 to every path** including `/explore` — Cloudflare bot
@@ -253,8 +307,11 @@ Low priority independent of access.
    coordinates, from a site that publishes a sitemap and says `Allow: /`.
    `lastmod` on every sitemap entry means a second run re-reads only what
    changed.
-3. **Write RA and Partiful down as refused**, next to Eventbrite, with the
-   queries that work — so the finding is that they were checked and declined,
-   not that nobody looked.
+3. **Write RA, Partiful and Viewcy down as refused**, next to Eventbrite, with
+   the queries that work — so the finding is that they were checked and
+   declined, not that nobody looked.
+4. **Ask Viewcy.** It is the one refusal here worth a conversation rather than
+   a workaround: small NYC rooms, programming the index genuinely lacks, and a
+   business model that wants listings to travel.
 4. **Leave Meetup and Songkick** until the gap they'd fill is still visible
    after 1 and 2.
