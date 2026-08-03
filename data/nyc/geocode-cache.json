@@ -1,5 +1,12 @@
 {
 "10 AVENUE between WEST   57 STREET and WEST   58 STREET": null,
+"10 Cooper St., Brooklyn, NY": {
+"confidence": 0.8,
+"lat": 40.683572,
+"lon": -73.911181,
+"matched": "10 COOPER STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
 "10 Grand Army Plaza, Brooklyn, NY, 11238": {
 "confidence": 1.0,
 "lat": 40.67392058959161,
@@ -222,6 +229,13 @@
 "source": "geosearch"
 },
 "235 WEST   44 STREET between 8 AVENUE and BROADWAY": null,
+"236 W 78th Street, New York, NY": {
+"confidence": 0.8,
+"lat": 40.782823,
+"lon": -73.980169,
+"matched": "236 WEST 78 STREET, New York, NY, USA",
+"source": "geosearch"
+},
 "2385 Ralph Ave (near Ave N), Brooklyn, NY, 11234": {
 "confidence": 0.8,
 "lat": 40.619849,
@@ -234,6 +248,13 @@
 "lat": 40.706926,
 "lon": -73.957522,
 "matched": "240 DIVISION AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"241 East 24th Street, New York, NY": {
+"confidence": 0.8,
+"lat": 40.73896,
+"lon": -73.980785,
+"matched": "241 EAST 24 STREET, New York, NY, USA",
 "source": "geosearch"
 },
 "246 STREET between 82 AVENUE and 83 AVENUE": null,
@@ -390,6 +411,13 @@
 "44 STREET between 8 AVENUE and 7 AVENUE": null,
 "448 COLLEGE AVENUE, COLLEGE AVENUE between EAST  146 STREET and EAST  148 STREET,  EAST  148 STREET between COLLEGE AVENUE and COURTLANDT AVENUE,  COURTLANDT AVENUE between EAST  148 STREET and EAST  149 STREET,  EAST  149 STREET between COURTLANDT AVENUE and MORRIS AVENUE,  MORRIS AVENUE between EAST  149 STREET and EAST  148 STREET,  EAST  148 STREET between MORRIS AVENUE and COLLEGE AVENUE,  COLLEGE AVENUE between EAST  148 STREET and EAST  146 STREET, 448 COLLEGE AVENUE,349 EAST  149 STREET,234 EAST  149 STREET": null,
 "48 STREET between 4 AVENUE and 3 AVENUE": null,
+"487 Atlantic Ave, Brooklyn, NY": {
+"confidence": 0.8,
+"lat": 40.685915,
+"lon": -73.981622,
+"matched": "487 ATLANTIC AVENUE, Brooklyn, NY, USA",
+"source": "geosearch"
+},
 "49 STREET between 4 AVENUE and 3 AVENUE": null,
 "496 Franklin Avenue, Brooklyn, NY, 11238": {
 "confidence": 0.8,
@@ -528,6 +556,13 @@
 "source": "geosearch"
 },
 "825 7 AVENUE, 7 AVENUE between WEST   53 STREET and WEST   54 STREET,  WEST   53 STREET between 7 AVENUE and 6 AVENUE,  6 AVENUE between WEST   53 STREET and WEST   54 STREET,  WEST   54 STREET between 6 AVENUE and 7 AVENUE, 825 7 AVENUE,825 7 AVENUE": null,
+"85 East 4th Street, New York, NY": {
+"confidence": 0.8,
+"lat": 40.726592,
+"lon": -73.989808,
+"matched": "85 EAST 4 STREET, New York, NY, USA",
+"source": "geosearch"
+},
 "85 STREET between BAY   16 STREET and 18 AVENUE": null,
 "850 E. 59th St. at Paerdegat Ave. South, Brooklyn, NY, 11234": {
 "confidence": 0.8,
