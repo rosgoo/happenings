@@ -101,7 +101,10 @@ KINDS = {
     ("amenity", "music_venue"): ("music-venue", "Music venue"),
     ("amenity", "casino"): ("casino", "Casino"),
     ("amenity", "karaoke_box"): ("karaoke", "Karaoke"),
-    ("amenity", "dojo"): ("martial-arts", "Martial arts"),
+    # `amenity=dojo` is deliberately absent, and it is 159 rows in New York.
+    # A dojo is a term you sign up for, like the dance studios above and the
+    # gyms below -- the test is whether you can turn up, not whether the
+    # activity sounds like fun.
     ("leisure", "escape_game"): ("escape-room", "Escape room"),
     ("leisure", "amusement_arcade"): ("arcade", "Arcade"),
     ("leisure", "adult_gaming_centre"): ("casino", "Casino"),
@@ -144,7 +147,7 @@ SPORTS = {
 }
 # Only these get to be rewritten by their sport. A museum with `sport=chess`
 # is a museum.
-SPORT_HOSTS = {"climbing", "nightclub", "martial-arts", "dance", "arcade"}
+SPORT_HOSTS = {"climbing", "nightclub", "dance", "arcade"}
 
 # A comedy club is tagged `amenity=theatre` and is not a theatre in the sense
 # anybody means -- it is the thing that is open at eleven on a Wednesday when
@@ -324,12 +327,19 @@ def fetch_osm(city, bbox):
     for (k, v) in KINDS:
         q = urllib.parse.urlencode({"data": build_query(bbox, [(k, v)])})
         got = None
-        for base in mirrors:
+        # An overloaded Overpass answers 200 with an empty element list rather
+        # than erroring, so a zero is more often a failure than a fact -- the
+        # aquariums vanished exactly this way. Ask a second instance before
+        # believing one; two mirrors agreeing on nothing is a real nothing.
+        for attempt, base in enumerate(mirrors):
             try:
                 got = http.get_json(f"{base}?{q}", delay=1.5, timeout=180, retries=1)
-                break
             except Exception:
                 continue
+            if got.get("elements") or attempt == len(mirrors) - 1:
+                break
+            print(f"    {k}={v}: 0 from "
+                  f"{urllib.parse.urlsplit(base).netloc}, asking another")
         if got is None:
             failed.append(f"{k}={v}")
             continue
@@ -595,8 +605,16 @@ def main():
         # nightlife in it. Zero rows for a pair that had rows last time is a
         # broken fetch, not a city that closed its nightclubs.
         prev = cached.get("counts") or {}
-        lost = sorted(p for p, n in prev.items() if n and not counts.get(p))
+        # Only pairs this run actually ASKED about. A pair deleted from KINDS
+        # has no rows because nobody looked, which is a decision rather than a
+        # failure -- the gate flagged its own author removing `amenity=dojo`
+        # before it learned the difference.
+        lost = sorted(p for p, n in prev.items() if n and p in counts and not counts[p])
+        dropped = sorted(p for p in prev if p not in counts)
         empty = sorted(p for p, n in counts.items() if not n and not prev.get(p))
+        if dropped:
+            print(f"  note: {', '.join(dropped)} is no longer in the "
+                  f"vocabulary and was not requested")
         if empty:
             print(f"  note: {', '.join(empty)} returned nothing, and had "
                   f"nothing last run either")
@@ -733,6 +751,25 @@ def main():
         stats["curated"] += 1
 
     # -- attach images -----------------------------------------------------
+    if args.no_images:
+        # `--no-images` means "don't go and fetch them", not "throw away the
+        # ones we have". Rebuilding without this dropped all 176 photographs
+        # from the committed index, which looked exactly like a working run.
+        # Keyed on the OSM id, the one identifier that survives a rename.
+        old = os.path.join(ddir, "places.json")
+        if os.path.exists(old):
+            was = {p.get("osm_id") or p["id"]: p for p in json.load(open(old))}
+            kept = 0
+            for p in places:
+                prior = was.get(p.get("osm_id") or p["id"])
+                if prior and prior.get("image_url"):
+                    for k in ("image_url", "image_credit", "image_license",
+                              "image_page", "image_source"):
+                        p[k] = prior.get(k)
+                    kept += 1
+            print(f"  --no-images: carried {kept} photographs forward "
+                  f"from the last run")
+
     if not args.no_images:
         # Default path: only images OSM itself names. Precise, robots-clean,
         # and small.

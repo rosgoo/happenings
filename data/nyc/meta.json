@@ -2,10 +2,10 @@
   "city": "nyc",
   "city_name": "New York",
   "tz": "America/New_York",
-  "generated_at": "2026-08-03T03:26:11.478555+00:00",
+  "generated_at": "2026-08-03T04:12:30.221692+00:00",
   "counts": {
-    "events": 9315,
-    "venues": 1215,
+    "events": 9322,
+    "venues": 1217,
     "neighborhoods_with_events": 199,
     "rejected": 32063
   },
@@ -17,13 +17,13 @@
     "price": 7.6
   },
   "by_category": {
-    "performance": 2962,
+    "performance": 2960,
     "learning": 1674,
     "music": 1533,
     "community": 1278,
     "sports": 729,
-    "art": 651,
-    "outdoors": 465,
+    "art": 654,
+    "outdoors": 471,
     "food-drink": 23
   },
   "by_neighborhood": {
@@ -33,13 +33,13 @@
     "bushwick-west": 335,
     "east-williamsburg": 255,
     "park-slope": 231,
-    "bushwick-east": 226,
+    "bushwick-east": 225,
     "chelsea-hudson-yards": 205,
     "williamsburg": 175,
     "sheepshead-bay-manhattan-beach-gerritsen-beach": 167,
     "brooklyn-heights": 163,
     "upper-west-side-central": 149,
-    "murray-hill-kips-bay": 139,
+    "murray-hill-kips-bay": 138,
     "dyker-heights": 136,
     "east-village": 134,
     "bedford-stuyvesant-west": 130,
@@ -49,8 +49,8 @@
     "midtown-south-flatiron-union-square": 107,
     "fort-greene": 97,
     "bedford-stuyvesant-east": 88,
+    "west-village": 87,
     "coney-island-sea-gate": 83,
-    "west-village": 82,
     "hamilton-heights-sugar-hill": 78,
     "central-park": 77,
     "upper-west-side-lincoln-square": 77,
@@ -58,9 +58,9 @@
     "bath-beach": 71,
     "east-new-york-city-line": 71,
     "yankee-stadium-macombs-dam-park": 67,
+    "financial-district-battery-park-city": 67,
     "flatbush-west-ditmas-park-parkville": 65,
     "clinton-hill": 65,
-    "financial-district-battery-park-city": 63,
     "flatlands": 62,
     "sunset-park-west": 61,
     "gravesend-east-homecrest": 61,
@@ -228,7 +228,7 @@
     "inwood": 1
   },
   "by_location_source": {
-    "coordinates": 7139,
+    "coordinates": 7146,
     "register": 1249,
     "unresolved": 724,
     "gazetteer": 203
@@ -252,8 +252,8 @@
       "id": "nyc-jsonld",
       "label": "Venue calendars (schema.org)",
       "attribution": "Individual venues",
-      "fetched_at": "2026-08-03T03:26:04.728602+00:00",
-      "raw_rows": 443
+      "fetched_at": "2026-08-03T04:12:20.535873+00:00",
+      "raw_rows": 450
     },
     {
       "id": "nyc-luma",
@@ -312,7 +312,7 @@
     "deduped": 1175,
     "kept:nyc-wordpress": 675,
     "kept:nyc-parks-upcoming": 567,
-    "kept:nyc-jsonld": 443,
+    "kept:nyc-jsonld": 450,
     "rejected:outside nyc": 401,
     "rejected:camp or training programme, not a public event": 360,
     "rejected:recurring language course": 299,

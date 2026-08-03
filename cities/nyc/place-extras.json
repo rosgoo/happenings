@@ -1,5 +1,13 @@
 [
   {
+    "name": "Ferox Ninja Park",
+    "kind": "obstacle",
+    "lat": 40.7281153,
+    "lon": -73.9578051,
+    "website": "https://www.feroxninjapark.com/",
+    "why": "Trampolines, a ninja gym and a parkour course on the Williamsburg/Greenpoint line, open to walk-ins, and absent from OpenStreetMap under any spelling -- a search for `ninja` across north Brooklyn returns nothing at all. The point is its own place record rather than an address lookup; the NTA polygon then files it under Greenpoint, which is where the boundary puts it whatever the neighbourhood is called locally."
+  },
+  {
     "name": "Brooklyn Ninja Academy",
     "kind": "obstacle",
     "address": "340 4th Avenue, Brooklyn",

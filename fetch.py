@@ -769,6 +769,56 @@ def _ld_events(body):
     return uniq
 
 
+HREF = re.compile(r'href=["\']([^"\'#]+)', re.I)
+
+
+def _reg_domain(netloc):
+    """Host without `www.`, for comparing a link to the page that carried it.
+
+    Deliberately not a public-suffix implementation. The question here is only
+    "is this link still on the venue's own site", and the case that matters is
+    a gallery whose listing lives on michaelrosenfeldart.com and whose event
+    pages live on michaelrosenfeld.com -- which this does NOT treat as the same
+    host, and should not. That venue is handled by pointing the registry at the
+    domain its events are actually on.
+    """
+    return (netloc or "").lower().split(":")[0].removeprefix("www.")
+
+
+def _ld_links(body, base, prefix):
+    """Event detail URLs on a listing page, in document order.
+
+    `prefix` comes from the detail URL the census already found, so this is
+    reading a known-good path shape rather than guessing at one. A venue whose
+    events live under /shows/ and whose listing is /whats-on is handled without
+    a rule, because the census went and looked.
+
+    Same-host only, and the prefix root itself is excluded -- /events links back
+    to the listing from every card on it, and following that is a request spent
+    to re-read the page you are already holding.
+    """
+    seen, out = set(), []
+    base_host = _reg_domain(urllib.parse.urlsplit(base).netloc)
+    for href in HREF.findall(body):
+        try:
+            u = urllib.parse.urlsplit(urllib.parse.urljoin(base, href))
+        except ValueError:
+            continue
+        if u.scheme not in ("http", "https"):
+            continue
+        if _reg_domain(u.netloc) != base_host:
+            continue
+        path = u.path.rstrip("/")
+        if not path.startswith(prefix + "/"):
+            continue
+        clean = f"{u.scheme}://{u.netloc}{path}"
+        if clean in seen:
+            continue
+        seen.add(clean)
+        out.append(clean)
+    return out
+
+
 def _event_type(ev):
     """The event subtype as a plain string, or None.
 
@@ -968,7 +1018,7 @@ def _ld_price(ev):
     return best, (best == 0 if best is not None else None)
 
 
-def _ld_row(ev, v, floor, cutoff):
+def _ld_row(ev, v, floor, cutoff, page_url=None):
     """One schema.org Event from a listing page -> a raw row, or None."""
     start = ev.get("startDate")
     when = _ld_when(start)
@@ -997,18 +1047,32 @@ def _ld_row(ev, v, floor, cutoff):
 
     return {
         "venue_host": v["host"],
-        # The event's own room beats the registry's name for the site. A comedy
-        # club with three rooms says which one on every listing, and inheriting
-        # one name for all three would file the Upper West Side in the East
-        # Village -- four miles, and both are real.
-        "venue_name": clean_ws(loc.get("name")) or v.get("venue_name") or v["name"],
+        # Which name wins depends on the mode, because the two modes are
+        # different claims. A LISTING page describes many rooms and says which
+        # on every card, so the event's own room wins -- New York Comedy Club
+        # runs three, four miles apart, and one name for all of them would file
+        # the Upper West Side in the East Village. A DETAIL crawl is scoped by
+        # `_ld_links` to one venue's own host, so every page is about that
+        # venue, and there the per-page name is not extra information but
+        # drift: the Skyscraper Museum calls itself "The Skyscraper Museum" on
+        # three pages and "Skyscraper Museum" on a fourth, which is one museum
+        # and was becoming two venue records with two URLs.
+        "venue_name": (v.get("venue_name") or v["name"]
+                       if v.get("mode") == "detail"
+                       else clean_ws(loc.get("name")) or v.get("venue_name") or v["name"]),
         "address": address or None,
         "borough": BOROUGHS.get(locality) or v.get("borough"),
         "title": clean_ws(ev.get("name")),
         "type": _event_type(ev),
-        "url": ev.get("url") or v["url"],
-        "start": start,
-        "end": ev.get("endDate"),
+        "url": ev.get("url") or page_url or v["url"],
+        # Emitted as ISO rather than as the source wrote it. The adapter has
+        # already had to parse this to apply the horizon, and handing normalize
+        # the raw `Apr 26, 2026` would make it solve the same problem again with
+        # a different parser -- which is how a date ends up accepted here and
+        # dropped there.
+        "start": when.isoformat(),
+        "end": (_ld_when(ev.get("endDate")) or "").isoformat()
+               if _ld_when(ev.get("endDate")) else None,
         "status": ev.get("eventStatus"),
         "description": ev.get("description"),
         "price_min": price_min,
@@ -1020,12 +1084,65 @@ def _ld_row(ev, v, floor, cutoff):
     }
 
 
+def _ld_stale(hit, floor, refresh_days=3, empty_days=14):
+    """Should this cached detail page be read again?
+
+    There is no `lastmod` here -- that is the whole difference from DICE -- so
+    staleness is decided from the event itself rather than from what the server
+    said, and the rule is asymmetric on purpose:
+
+      * An event that has already happened is **never** re-read. Its page may
+        change forever and it will still be over.
+      * An event still ahead is re-read every few days, because the thing worth
+        catching is a moved time or a cancellation, and it is a small set.
+      * A page that yielded no Event is re-read rarely. Usually it is not an
+        event page at all -- a season index that lives under /events/ -- and
+        spending a request a day to re-learn that is the waste this exists to
+        avoid.
+    """
+    at = hit.get("fetched_at")
+    try:
+        age = datetime.now(timezone.utc) - datetime.fromisoformat(str(at))
+    except (TypeError, ValueError):
+        return True
+
+    ev = hit.get("event")
+    if not ev:
+        return age > timedelta(days=empty_days)
+    when = _ld_when(ev.get("startDate"))
+    if when and when < floor:
+        return False
+    return age > timedelta(days=refresh_days)
+
+
+# schema.org says startDate is ISO 8601. Real sites disagree, and they disagree
+# silently: the Apollo publishes `Apr 26, 2026` and bitforms `01/23/2020`, both
+# of which `fromisoformat` refuses, so the event was dropped with no error to
+# notice. Ambiguity is the reason this list is short -- `01/02/2026` is January
+# in the US and February most other places, and this index is a US city, so
+# month-first is the reading. Anything not on this list stays unparsed rather
+# than being guessed at.
+_LD_FORMATS = ("%b %d, %Y", "%B %d, %Y", "%m/%d/%Y", "%Y/%m/%d",
+               "%b %d, %Y %I:%M %p", "%B %d, %Y %I:%M %p", "%m/%d/%Y %H:%M")
+
+
 def _ld_when(value):
     """A schema.org date or date-time as an aware datetime, or None."""
-    try:
-        d = datetime.fromisoformat(str(value))
-    except (TypeError, ValueError):
+    v = str(value or "").strip()
+    if not v:
         return None
+    try:
+        d = datetime.fromisoformat(v)
+    except (TypeError, ValueError):
+        d = None
+        for fmt in _LD_FORMATS:
+            try:
+                d = datetime.strptime(v, fmt)
+                break
+            except ValueError:
+                continue
+        if d is None:
+            return None
     return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
 
 
@@ -1058,38 +1175,137 @@ def fetch_jsonld(src, horizon_days=60):
     floor = datetime.now(timezone.utc) - timedelta(days=1)
     floor_n = min(registry.get("min_events", 2), 2)
 
-    venues = [v for v in registry.get("venues") or []
-              if not v.get("skip") and v.get("events", 0) >= floor_n]
-    skipped = [v for v in registry.get("venues") or [] if v.get("skip")]
-    print(f"    {len(venues)} venues, horizon {horizon}d "
-          f"({len(skipped)} skipped by hand)")
+    def readable(v):
+        """A venue this adapter can actually get events out of.
 
-    rows, failed = [], 0
+        Listing venues need markup on the page. Detail venues need links to
+        follow -- a site with Event markup and no reachable anchors is usually
+        rendering its listing in JavaScript, and is recorded by the discovery
+        script precisely so it is not silently retried every run.
+        """
+        if v.get("skip"):
+            return False
+        if v.get("mode") == "detail":
+            return (v.get("links") or 0) > 0
+        return v.get("events", 0) >= floor_n
+
+    venues = [v for v in registry.get("venues") or [] if readable(v)]
+    skipped = [v for v in registry.get("venues") or [] if v.get("skip")]
+    n_det = sum(1 for v in venues if v.get("mode") == "detail")
+    print(f"    {len(venues)} venues ({n_det} crawled per event), horizon "
+          f"{horizon}d ({len(skipped)} skipped by hand)")
+
+    cache_path = os.path.join(ROOT, "data", city, "jsonld-cache.json")
+    try:
+        with open(cache_path) as f:
+            cache = json.load(f)
+    except Exception:
+        cache = {}
+
+    max_detail = src.get("max_detail_per_venue", 25)
+    rows, failed, fresh = [], 0, {}
+    hits = fetched = 0
+
+    def keep_cached(host):
+        """Carry a venue's existing cache across when we could not re-read it.
+
+        Eviction-by-omission is right for a venue whose listing we DID read: a
+        page that has left it has passed or been cancelled. It is badly wrong
+        for a venue whose listing simply failed this run, and the failure is
+        not hypothetical -- The PIT stopped answering right after 60 sequential
+        page reads, which dropped 60 cached pages and 17 live events, and would
+        have re-crawled all of them next run to learn nothing new. A source
+        being briefly unreachable is not evidence about its events.
+        """
+        want = _reg_domain(host)
+        for url, hit in cache.items():
+            if _reg_domain(urllib.parse.urlsplit(url).netloc) == want:
+                fresh.setdefault(url, hit)
+
     for v in venues:
         try:
             r = http.get_full(v["url"], delay=1.0, accept=http.HTML_ACCEPT,
                               max_bytes=2_000_000)
             if r["status"] != 200 or not r["body"]:
                 failed += 1
+                keep_cached(v["host"])
                 continue
-            evs = _ld_events(r["body"].decode("utf-8", "replace"))
+            body = r["body"].decode("utf-8", "replace")
         except Exception:
             failed += 1
+            keep_cached(v["host"])
             continue
 
         got = 0
-        for ev in evs:
-            # One event must never cost the venue, and one venue must never
-            # cost the run. schema.org is a vocabulary, not a schema.
-            try:
-                row = _ld_row(ev, v, floor, cutoff)
-            except Exception:
-                continue
-            if row and row["title"]:
-                rows.append(row)
-                got += 1
+        if v.get("mode") == "detail":
+            links = _ld_links(body, r["url"] or v["url"], v.get("prefix") or "")
+            budget = max_detail
+            for url in links:
+                hit = cache.get(url)
+                if hit is not None and not _ld_stale(hit, floor):
+                    ev = hit.get("event")
+                    hits += 1
+                    # Carried across whole, timestamp included. Re-stamping it
+                    # on a cache hit would push the age back to zero every run
+                    # and the refresh window would never open, so an event that
+                    # moved or was cancelled would be served from cache until
+                    # it left the listing.
+                    fresh[url] = hit
+                else:
+                    if budget <= 0:
+                        # Out of budget for this venue this run. The link is
+                        # simply not carried into `fresh`, so the next run sees
+                        # it as new and picks it up -- a first crawl spreads
+                        # over a few runs instead of costing hundreds at once.
+                        continue
+                    budget -= 1
+                    fetched += 1
+                    try:
+                        # Slower than the one-request-per-venue adapters on
+                        # purpose. This is the only place here that asks a
+                        # single small venue for dozens of pages in a row, and
+                        # The PIT started refusing after 60 of them at a second
+                        # apart. A gallery's web host is not Ticketmaster's.
+                        d = http.get_full(url, delay=1.5, accept=http.HTML_ACCEPT,
+                                          max_bytes=1_000_000)
+                        ev = (_ld_events(d["body"].decode("utf-8", "replace"))
+                              or [None])[0] if d["body"] else None
+                    except Exception:
+                        ev = None
+                    fresh[url] = {"fetched_at": datetime.now(timezone.utc).isoformat(),
+                                  "event": ev}
+                if not ev:
+                    continue
+                try:
+                    row = _ld_row(ev, v, floor, cutoff, page_url=url)
+                except Exception:
+                    continue
+                if row and row["title"]:
+                    rows.append(row)
+                    got += 1
+        else:
+            for ev in _ld_events(body):
+                # One event must never cost the venue, and one venue must never
+                # cost the run. schema.org is a vocabulary, not a schema.
+                try:
+                    row = _ld_row(ev, v, floor, cutoff)
+                except Exception:
+                    continue
+                if row and row["title"]:
+                    rows.append(row)
+                    got += 1
         if not got:
             failed += 1
+
+    # Rebuilt rather than updated, so a page that has left its listing is
+    # evicted by not being copied across. A cache that only grows keeps
+    # cancelled shows alive, which is the DICE lesson without DICE's lastmod
+    # to make it cheap.
+    if fresh:
+        os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+        with open(cache_path, "w") as f:
+            json.dump(fresh, f, indent=0, sort_keys=True)
+        print(f"    detail pages: {hits} from cache, {fetched} fetched")
 
     if failed:
         print(f"    {failed} venues returned nothing this run")

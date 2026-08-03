@@ -384,6 +384,13 @@
 "matched": "380 WASHINGTON AVENUE, Brooklyn, NY, USA",
 "source": "geosearch"
 },
+"39 Battery Place, New York, NY": {
+"confidence": 0.8,
+"lat": 40.705711,
+"lon": -74.017478,
+"matched": "39 BATTERY PLACE, New York, NY, USA",
+"source": "geosearch"
+},
 "4 STREET between 5 AVENUE and DEAD END": null,
 "41 AVENUE between 80 STREET and 81 STREET": null,
 "41 STREET between 6 AVENUE and 5 AVENUE": {
@@ -616,6 +623,13 @@
 "lat": 40.625904,
 "lon": -73.960272,
 "matched": "975 EAST 16 STREET, Brooklyn, NY, USA",
+"source": "geosearch"
+},
+"99 Gansevoort St, New York, NY": {
+"confidence": 0.8,
+"lat": 40.739636,
+"lon": -74.008938,
+"matched": "99 GANSEVOORT STREET, New York, NY, USA",
 "source": "geosearch"
 },
 "A Philip Randolph Square": {

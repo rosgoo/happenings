@@ -1,0 +1,770 @@
+{
+"https://grove34.com/shows/abbas-wahab-friends-dec12": {
+"event": null,
+"fetched_at": "2026-08-03T04:02:09.083035+00:00"
+},
+"https://grove34.com/shows/adrienne-iapalucci": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/68eec17a7df6bcba77cdd184_Untitled-2.png",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "SPECIAL EVENT: Adrienne Iapalucci - Special Taping",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2025-12-07T00:00:00.000Z"
+},
+"fetched_at": "2026-08-03T04:02:09.870329+00:00"
+},
+"https://grove34.com/shows/improv-night-aug02": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "No scripts, no safety nets\u2014just pure comedy created in the moment. Come see why Grove 34 is THE place for improv comedy in Queens. Follow @improvnight and @grove34nyc for cast announcements and show-specific details!",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2c93463acc0ba878ee97d4_Host%20Team%20Web%20Poster%2001A.jpg",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Improv Night",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-02T23:00:00.000Z"
+},
+"fetched_at": "2026-08-03T04:02:10.872308+00:00"
+},
+"https://grove34.com/shows/monday-improv-jam-aug03": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "An improv jam is an open, low-pressure playground where performers of all experience levels jump on stage, get mixed into teams, and create scenes on the spot. Whether it\u2019s your first time or your hundredth show, you\u2019ll get a chance to play, experiment, and connect with other improvisers in a supportive, fun environment. ",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2cbfaa810063a43359948c_Improv%20Jam%20Web%20Poster%20V1A.jpg",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Monday Improv Jam",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-04T01:00:00.000Z"
+},
+"fetched_at": "2026-08-03T04:02:12.876011+00:00"
+},
+"https://grove34.com/shows/raanan-hershberg2": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/68eec2de48fb122b53ad3c58_Untitled-3.png",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Raanan Hershberg",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2025-12-06T00:30:00.000Z"
+},
+"fetched_at": "2026-08-03T04:02:07.866424+00:00"
+},
+"https://grove34.com/shows/the-great-improv-experiment-aug03": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Your headliners are the multi-dimensional talents of HELL YEAH! - A Musical Improv Group as they forge deep into unknown territories of genres both theatricomedic and musicool. With two additional supporting acts. Follow @improvnight and @grove34nyc for more show details!",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2d91764b1c2550e503028b_Clown%20Lab%20-%20Hell%20Yeah.png",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "The Great Improv Experiment",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-03T23:00:00.000Z"
+},
+"fetched_at": "2026-08-03T04:02:11.894908+00:00"
+},
+"https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "<div class=\"entry-summary\">\nThe North Neighborhood tour of the Museum\u2019s three thematic walking tours of Battery Park City, on Thursday, July 17 at 4pm, will cover the north residential neighborhood, which was developed in several phases, beginning with Stuyvesant High School at the northeast edge and the esplanade and Rockefeller Park along...",
+"endDate": "2026-08-06T17:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://skyscraper.org/wordpress/wp-content/uploads/2022/03/BPCWT03-1-scaled.jpg"
+],
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10280",
+"streetAddress": "39 Battery Place"
+},
+"name": "The Skyscraper Museum"
+},
+"name": "Battery Park City Tour: The North Neighborhood",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"price": "0",
+"priceCurrency": "USD",
+"url": "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026/",
+"validFrom": "July 21, 2026"
+},
+"organizer": {
+"@type": "Organization",
+"name": "The Skyscraper Museum",
+"url": "https://skyscraper.org"
+},
+"performer": {
+"@type": null,
+"name": null
+},
+"startDate": "2026-08-06T16:00:00-04:00"
+},
+"fetched_at": "2026-08-03T03:44:56.054559+00:00"
+},
+"https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "<div class=\"entry-summary\">\nThe North Neighborhood tour of the Museum\u2019s three thematic walking tours of Battery Park City, on Thursday, August 14 at 4pm, will cover the north residential neighborhood, which was developed in several phases, beginning with Stuyvesant High School at the northeast edge and the esplanade and Rockefeller Park along...",
+"endDate": "2026-08-14T17:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://skyscraper.org/wordpress/wp-content/uploads/2022/03/BPCWT03-1-scaled.jpg"
+],
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10280",
+"streetAddress": "39 Battery Place"
+},
+"name": "The Skyscraper Museum"
+},
+"name": "Battery Park City Tour: The North Neighborhood &#8211; REPEAT",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"price": "0",
+"priceCurrency": "USD",
+"url": "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat/",
+"validFrom": "July 21, 2026"
+},
+"organizer": {
+"@type": "Organization",
+"name": "The Skyscraper Museum",
+"url": "https://skyscraper.org"
+},
+"performer": {
+"@type": null,
+"name": null
+},
+"startDate": "2026-08-14T16:00:00-04:00"
+},
+"fetched_at": "2026-08-03T03:44:59.767522+00:00"
+},
+"https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue-new": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "<div class=\"entry-summary\">\nThe Museum's director, Carol Willis, will offer a gallery tour of The Invention of Park Avenue, which examines how the creation of Grand Central and an avenue out of thin air, was the catalytic connection of rail and real estate that gave Park Avenue its extraordinary, evolving New York...",
+"endDate": "2026-08-12T17:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://skyscraper.org/wordpress/wp-content/uploads/2026/02/Curators-Tour-of-Park-Avenue-new-scaled.jpeg"
+],
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10280",
+"streetAddress": "39 Battery Place"
+},
+"name": "The Skyscraper Museum"
+},
+"name": "Curator\u2019s Tour of The Invention of Park Avenue",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"price": "0",
+"priceCurrency": "USD",
+"url": "https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue-new/",
+"validFrom": "July 25, 2026"
+},
+"organizer": {
+"@type": "Organization",
+"name": "The Skyscraper Museum",
+"url": "https://skyscraper.org"
+},
+"performer": {
+"@type": "Person",
+"name": "Carol Willis"
+},
+"startDate": "2026-08-12T16:00:00-04:00"
+},
+"fetched_at": "2026-08-03T03:44:57.875091+00:00"
+},
+"https://skyscraper.org/programs/the-world-trade-center-remembered": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "<div class=\"entry-summary\">\nFor nearly thirty years, professional photographer Stan Ries captured sweeping views of the World Trade Center, often from the sky, as he shot the Twin Towers and lower Manhattan skyline for clients such as the PANYNJ and the Battery Park City Authority, as well as for private developers. In...",
+"endDate": "2026-08-25T19:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://skyscraper.org/wordpress/wp-content/uploads/2026/07/WTC-Stan-Ries.jpg"
+],
+"location": {
+"@type": "VirtualLocation",
+"url": ""
+},
+"name": "The World Trade Center Remembered",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"price": "0",
+"priceCurrency": "USD",
+"url": "https://skyscraper.org/programs/the-world-trade-center-remembered/",
+"validFrom": "July 27, 2026"
+},
+"organizer": {
+"@type": "Organization",
+"name": "The Skyscraper Museum",
+"url": "https://skyscraper.org"
+},
+"performer": {
+"@type": null,
+"name": null
+},
+"startDate": "2026-08-25T18:00:00-04:00"
+},
+"fetched_at": "2026-08-03T03:45:02.280439+00:00"
+},
+"https://whitney.org/events/biennial-26-mapping": {
+"event": {
+"@context": "http://schema.org",
+"@id": "https://whitney.org/events/biennial-26-mapping",
+"@type": "Event",
+"description": "Wednesday, May 20, 6 pm\u00a0 Tuesday, July 14, 12 pm\u2014rescheduled from June 30 Monday, August 3, 6 pm What does &quot;American art&quot; mean today? This member talk with Senior Teaching Fellow Patryk Tomaszewski traces how the Whitney Biennial has answered this question since 1932, from early Annuals to this year&#39;s global roster of fifty-six artists and collectives working across painting, sculpture, sound, ceramics, and video games. Drawing from one of the themes in Whitney Biennial 2026, this talk will examine infrastructure\u2014the systems, networks, and material exchanges that shape everyday life\u2014through the lens of this year&#39;s artists. Explore how works presented in this survey bring ordinarily invisible structures to light, and expand the boundaries of American art. Patryk P. Tomaszewski is a Senior Teaching Fellow at the Whitney Museum of American Art. A historian of twentieth-century art and visual culture, he has written and presented on topics ranging from realisms in Eastern Europe and the United States to the transnational circulation of art between East and West during the Cold War. Patryk&#39;s writing has appeared in Curator: The Museum Journal, MoMA&#39;s post: Notes on Art in a Global Context, and ARTMargins Online, among other publications. He holds a Ph.D. from the CUNY Graduate Center and an M.A. from the Institute of Fine Arts, NYU, and is an adjunct instructor in art history at Fordham University.",
+"endDate": "2026-08-03T18:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833597/Image%201_Hyundai%20Terrace%20Commission%20Kelly%20Akashi%2C%202026_Photo%20Timothy%20Schenck.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Mapping the 2026 Biennial: Structures and Networks in American Art\u00a0",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-03T18:00:00-04:00",
+"url": "https://whitney.org/events/biennial-26-mapping"
+},
+"fetched_at": "2026-08-03T04:02:33.577963+00:00"
+},
+"https://whitney.org/events/closer-look-untitled-america": {
+"event": {
+"@context": "http://schema.org",
+"@id": "https://whitney.org/events/closer-look-untitled-america",
+"@type": "Event",
+"description": "Mondays, 12 pm Saturdays, Sundays, 3 pm Slow down and discover how much there is to see when we take the time to look closely at highlights from \u201cUntitled\u201d (America). Guided by a Museum docent, participants are encouraged to think through and discuss works together. Each forty-five-minute session focuses on a single work of art or explores a connection between two works.\u00a0",
+"endDate": "2026-08-03T12:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/824516/Jasper_Johns_Racing_Thoughts.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "A Closer Look: Guided Close-Looking Through Dialogue",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-03T12:00:00-04:00",
+"url": "https://whitney.org/events/closer-look-untitled-america"
+},
+"fetched_at": "2026-08-03T04:02:29.595347+00:00"
+},
+"https://whitney.org/events/tour-whitney-biennial-2026-floor5": {
+"event": {
+"@context": "http://schema.org",
+"@id": "https://whitney.org/events/tour-whitney-biennial-2026-floor5",
+"@type": "Event",
+"description": "Gallery tours through the Whitney\u2019s current exhibitions are offered each day. Join a museum docent for insight into the works on view. See events calendar for timings.\u00a0 Tours are free with Museum admission. No reservations are necessary, but capacity is limited to twenty-five people on a first-come, first-served basis. Tours meet in the galleries.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-03T14:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833316/WMAA98806_Aram_K_01_web.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Exhibition Tour: Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-03T14:00:00-04:00",
+"url": "https://whitney.org/events/tour-whitney-biennial-2026-floor5"
+},
+"fetched_at": "2026-08-03T04:02:31.627771+00:00"
+},
+"https://whitney.org/events/tour-whitney-biennial-2026-floor6": {
+"event": {
+"@context": "http://schema.org",
+"@id": "https://whitney.org/events/tour-whitney-biennial-2026-floor6",
+"@type": "Event",
+"description": "Gallery tours through the Whitney\u2019s current exhibitions are offered each day. Join a museum docent for insight into the works on view. See events calendar for timings.\u00a0 Tours are free with Museum admission. No reservations are necessary, but capacity is limited to twenty-five people on a first-come, first-served basis. Tours meet in the galleries.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-03T13:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833358/Tsouhlarakis_A_02.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Exhibition Tour: Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-03T13:00:00-04:00",
+"url": "https://whitney.org/events/tour-whitney-biennial-2026-floor6"
+},
+"fetched_at": "2026-08-03T04:02:30.609959+00:00"
+},
+"https://whitney.org/events/untitled-america-exb-tour": {
+"event": {
+"@context": "http://schema.org",
+"@id": "https://whitney.org/events/untitled-america-exb-tour",
+"@type": "Event",
+"description": "Gallery tours through the Whitney\u2019s current exhibitions are offered each day. Join a museum docent for insight into the works on view. See events calendar for timings.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-03T15:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/artwork/3043/72_58_cropped.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Exhibition Tour: \u201cUntitled\u201d (America)\u00a0",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-03T15:00:00-04:00",
+"url": "https://whitney.org/events/untitled-america-exb-tour"
+},
+"fetched_at": "2026-08-03T04:02:32.617694+00:00"
+},
+"https://www.apollotheater.org/event/best-of-the-apollo": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Celebrate legendary talent at Best of the Apollo, a thrilling showcase of standout performers from Amateur Night, honoring rising stars and Apollo\u2019s iconic legacy.",
+"doorTime": "6:00 PM ",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/66149f879619e045e04cf32a/69a85b06fe3e46d9c6ace3f5_BOTA_Web.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10027",
+"streetAddress": ""
+},
+"name": "The Howard Theatre, Washington, D.C."
+},
+"name": "Best of The Apollo",
+"offers": {
+"@type": "Offer",
+"name": "Admission",
+"price": "Starting at $100",
+"priceCurrency": "USD",
+"url": "https://www.unionstagepresents.com/shows/the-apollo-x-the-howard-theatre-present-best-of-the-apollo-26-apr-a73c0",
+"validFrom": "Apr 26, 2026"
+},
+"startDate": "Apr 26, 2026"
+},
+"fetched_at": "2026-08-03T04:02:00.557421+00:00"
+},
+"https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok": {
+"event": {
+"@id": "https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok/",
+"@type": "Event",
+"description": "Join us at Bar Laika on Wednesday, July 8 from 7pm for the thirty-fourth edition of Playback with Lesley Mok.",
+"image": "https://images.e-flux.com/test/2d55fb0d-7c68-48cb-b59b-a56335523a16?width=1200&height=630",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "USA",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11238",
+"streetAddress": "224 Greene Avenue"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "40.6870032",
+"longitude": "-73.9620883"
+},
+"name": "Bar Laika by e-flux"
+},
+"name": "Bar Laika presents Playback 0034 with Lesley Mok",
+"organizer": {
+"@type": "Organization",
+"name": "e-flux",
+"url": "https://www.e-flux.com/"
+},
+"startDate": "2026-07-08T19:00:00",
+"url": "https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok/"
+},
+"fetched_at": "2026-08-03T04:02:06.468181+00:00"
+},
+"https://www.e-flux.com/events/6783371/leap-of-faith-nbsp-ii-the-absolute-demand": {
+"event": {
+"@id": "https://www.e-flux.com/events/6783371/leap-of-faith-nbsp-ii-the-absolute-demand/",
+"@type": "Event",
+"description": "Part Two of Leap of Faith, a four-part summer screening series on e-flux rooftop.",
+"image": "https://images.e-flux.com/test/994be7cb-4f32-4368-b648-ce2a78c8a8c0?width=1200&height=630",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "USA",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11205",
+"streetAddress": "172 Classon Avenue"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "40.6945365",
+"longitude": "-73.9613927"
+},
+"name": "e-flux Screening Room"
+},
+"name": "Leap of Faith. II. The Absolute Demand",
+"offers": {
+"@type": "Offer",
+"url": "https://www.eventbrite.com/e/leap-of-faith-ii-the-absolute-demand-tickets-1992889635547?aff=oddtdtcreator"
+},
+"organizer": {
+"@type": "Organization",
+"name": "e-flux",
+"url": "https://www.e-flux.com/"
+},
+"performer": [
+{
+"@type": "Person",
+"name": "The Dardenne Brothers"
+},
+{
+"@type": "Person",
+"name": "Jonathas de Andrade"
+}
+],
+"startDate": "2026-07-14T20:30:00",
+"url": "https://www.e-flux.com/events/6783371/leap-of-faith-nbsp-ii-the-absolute-demand/"
+},
+"fetched_at": "2026-08-03T04:02:05.496092+00:00"
+},
+"https://www.e-flux.com/events/6783372/leap-of-faith-nbsp-iii-the-unfinished-passage": {
+"event": {
+"@id": "https://www.e-flux.com/events/6783372/leap-of-faith-nbsp-iii-the-unfinished-passage/",
+"@type": "Event",
+"description": "Part Four of Leap of Faith, four-part summer screening series on e-flux rooftop.",
+"image": "https://images.e-flux.com/test/55fef8d5-2ba8-4fc5-ad47-13ada146190d?width=1200&height=630",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "USA",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11205",
+"streetAddress": "172 Classon Avenue"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "40.6945365",
+"longitude": "-73.9613927"
+},
+"name": "e-flux Screening Room"
+},
+"name": "Leap of Faith. III. The Unfinished Passage",
+"offers": {
+"@type": "Offer",
+"url": "https://www.eventbrite.com/e/leap-of-faith-iii-the-unfinished-passage-tickets-1992889694724?aff=oddtdtcreator"
+},
+"organizer": {
+"@type": "Organization",
+"name": "e-flux",
+"url": "https://www.e-flux.com/"
+},
+"performer": [
+{
+"@type": "Person",
+"name": "Lois Pati\u00f1o"
+},
+{
+"@type": "Person",
+"name": "Tr\u01b0\u01a1ng Minh Qu\u00fd"
+}
+],
+"startDate": "2026-07-21T20:30:00",
+"url": "https://www.e-flux.com/events/6783372/leap-of-faith-nbsp-iii-the-unfinished-passage/"
+},
+"fetched_at": "2026-08-03T04:02:04.348753+00:00"
+},
+"https://www.e-flux.com/events/6783373/leap-of-faith-nbsp-iv-afterlife-in-images-nbsp": {
+"event": {
+"@id": "https://www.e-flux.com/events/6783373/leap-of-faith-nbsp-iv-afterlife-in-images-nbsp/",
+"@type": "Event",
+"description": "The last part of Leap of Faith, a four-part summer screening series on e-flux rooftop.",
+"image": "https://images.e-flux.com/test/8e6496e4-6ad8-41f3-9167-e77c7740a048?width=1200&height=630",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "USA",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11205",
+"streetAddress": "172 Classon Avenue"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "40.6945365",
+"longitude": "-73.9613927"
+},
+"name": "e-flux Screening Room"
+},
+"name": "Leap of Faith. IV. Afterlife in Images",
+"offers": {
+"@type": "Offer",
+"url": "https://www.eventbrite.com/e/leap-of-faith-iv-afterlife-in-images-tickets-1992889755907?aff=oddtdtcreator"
+},
+"organizer": {
+"@type": "Organization",
+"name": "e-flux",
+"url": "https://www.e-flux.com/"
+},
+"performer": [
+{
+"@type": "Person",
+"name": "Coleman Collins"
+},
+{
+"@type": "Person",
+"name": "Hirokazu Kore-eda"
+}
+],
+"startDate": "2026-07-28T20:30:00",
+"url": "https://www.e-flux.com/events/6783373/leap-of-faith-nbsp-iv-afterlife-in-images-nbsp/"
+},
+"fetched_at": "2026-08-03T04:02:02.975632+00:00"
+}
+}

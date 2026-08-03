@@ -32,7 +32,7 @@ export const PLACE_KINDS = {
   obstacle: 'Ninja & obstacle', trampoline: 'Trampoline park',
   'mini-golf': 'Mini golf', 'laser-tag': 'Laser tag',
   'axe-throwing': 'Axe throwing', karting: 'Go-karting',
-  'pool-hall': 'Pool hall', surfing: 'Surfing', 'martial-arts': 'Martial arts',
+  'pool-hall': 'Pool hall', surfing: 'Surfing',
   'theme-park': 'Theme park', 'water-park': 'Water park', casino: 'Casino',
   makerspace: 'Maker space',
 };
@@ -49,7 +49,7 @@ const PLACE_COLOR = {
   'roller-rink': 'sports', obstacle: 'sports', trampoline: 'sports',
   'mini-golf': 'sports', 'laser-tag': 'sports', 'axe-throwing': 'sports',
   karting: 'sports', 'pool-hall': 'community', surfing: 'outdoors',
-  'martial-arts': 'sports', 'theme-park': 'outdoors', 'water-park': 'outdoors',
+  'theme-park': 'outdoors', 'water-park': 'outdoors',
   casino: 'community', makerspace: 'learning',
 };
 export const placeColor = (kind) => `var(--c-${PLACE_COLOR[kind] || 'community'})`;

@@ -34,6 +34,7 @@ import argparse
 import json
 import os
 import sys
+import urllib.parse
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -88,17 +89,38 @@ def candidates(sites):
     return out
 
 
+def detail_prefix(rec):
+    """The path shape this site's event pages live under, from the census.
+
+    `/event/best-of-the-apollo` -> `/event`. Read off a detail URL the census
+    already followed, rather than guessed, which is what lets a venue whose
+    listing is /whats-on and whose events are /shows/ work with no rule: the
+    two are simply different questions and the census answered the second.
+    """
+    det = rec.get("detail_url") or ""
+    seg = urllib.parse.urlsplit(det).path.strip("/").split("/")[0]
+    return "/" + seg if seg else None
+
+
 def probe(rec, delay):
-    """Read one listing page and report the events its markup already carries."""
+    """Read one listing page and report the events its markup already carries.
+
+    Two outcomes, and the split is what the whole registry turns on. A listing
+    whose markup already holds the calendar is `mode: listing` and costs one
+    request forever. Anything else is `mode: detail` -- the events exist, one
+    per page, and reaching them means following links -- so this measures how
+    many candidate links the listing offers and lets the fetch decide whether
+    that is affordable.
+    """
     # Imported here rather than at module scope: fetch.py imports this module's
     # siblings, and the extractor is the one piece that must not drift between
     # discovery and the fetch that follows it.
-    from fetch import _ld_events, _one, _event_type
+    from fetch import _ld_events, _ld_links, _one, _event_type
 
     url = rec["listing_url"]
     out = {"host": rec["host"], "name": rec["name"], "url": url,
            "events": 0, "locations": [], "types": [], "status": None,
-           "error": None}
+           "error": None, "mode": None, "prefix": None, "links": 0}
     try:
         r = http.get_full(url, delay=delay, accept=http.HTML_ACCEPT,
                           max_bytes=2_000_000)
@@ -111,11 +133,27 @@ def probe(rec, delay):
     if not r["body"]:
         return out
 
-    evs = _ld_events(r["body"].decode("utf-8", "replace"))
+    body = r["body"].decode("utf-8", "replace")
+    evs = _ld_events(body)
     out["events"] = len(evs)
     out["locations"] = sorted({str(_one(e.get("location")).get("name"))
                                for e in evs if _one(e.get("location")).get("name")})
     out["types"] = sorted({_event_type(e) for e in evs if _event_type(e)})
+
+    if out["events"] >= MIN_EVENTS:
+        out["mode"] = "listing"
+        return out
+
+    prefix = detail_prefix(rec)
+    out["prefix"] = prefix
+    if prefix:
+        out["links"] = len(_ld_links(body, r["url"] or url, prefix))
+    # A site with Event markup on its detail page and no reachable links to it
+    # is not readable by this adapter. Usually the listing is rendered by
+    # JavaScript, so the anchors exist for a browser and not for us. Recorded
+    # as `detail` with zero links rather than dropped, because the finding is
+    # that it was checked.
+    out["mode"] = "detail"
     return out
 
 

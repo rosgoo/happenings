@@ -110,17 +110,26 @@ def week_mask(spec):
     days = [0] * 7
     touched = False
     for rule in spec.split(";"):
+        holiday = bool(HOLIDAY.search(rule))
         rule = HOLIDAY.sub(" ", rule).strip().strip(",").strip()
         if not rule:
             continue
 
         m = DAY_SELECTOR.match(rule)
+        if holiday and not m:
+            # `PH off` is about Thanksgiving, not about Tuesdays. Reading the
+            # remainder as a bare all-week rule would have closed the place
+            # for the entire week, which is how a holiday note turns into a
+            # permanently shut venue.
+            continue
+
         if m:
             try:
                 which = _parse_days(m.group(1))
             except KeyError:
                 return None
-            rest = rule[m.end():].strip()
+            # "Su,PH 10:00-18:00" leaves a dangling comma once PH is gone.
+            rest = rule[m.end():].strip(" ,").strip()
         else:
             # A bare time range applies to the whole week: "07:00-22:00".
             which, rest = set(range(7)), rule
@@ -180,6 +189,10 @@ def _selftest():
         ("Th, Fr 19:00-24:00; Sa, Su 16:00-24:00", "000ccee"),
         ("09:00-12:00,13:00-18:00", "7777777"),
         ("Mo-Su 20:30-04:00", "ddddddd"),
+        # A holiday rule must not close the week, and must not eat its day.
+        ("Mo-Fr 09:00-17:00; PH off", "3333300"),
+        ("Su,PH 10:00-18:00", "0000007"),   # 18:00 reaches into the evening
+        ("Mo-Su 12:00-4:00", "fffffff"),      # single-digit hour, past midnight
         # Refusals.
         ("Nov-Mar 10:00-22:00", None),
         ("sunset-23:00", None),

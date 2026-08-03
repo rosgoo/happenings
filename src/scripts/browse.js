@@ -73,9 +73,18 @@ if (root) {
   ];
   // The band bits lib/hours.py packs into each hex digit. Monday is digit 0.
   const BAND_BIT = { morning: 1, afternoon: 2, evening: 4, late: 8 };
-  const BAND_WORD = {
+  // The same four bands, said three ways, because "open in the evening today"
+  // is not how anybody asks for it.
+  const BAND_TODAY = {
+    morning: 'this morning', afternoon: 'this afternoon',
+    evening: 'this evening', late: 'late tonight',
+  };
+  const BAND_ON = {
+    morning: 'morning', afternoon: 'afternoon', evening: 'evening', late: 'night',
+  };
+  const BAND_ANY = {
     morning: 'in the morning', afternoon: 'in the afternoon',
-    evening: 'in the evening', late: 'late',
+    evening: 'in the evening', late: 'at night',
   };
 
   function placeMatches(p) {
@@ -134,15 +143,21 @@ if (root) {
       </div></div>`;
   }
 
-  // "Thursday evening", "on Sunday", "in the evening" -- whichever of the two
-  // time questions is actually being asked.
+  // "this evening", "Thursday evening", "at night", "on Sunday" -- whichever
+  // of the two time questions is actually being asked.
   function whenPhrase() {
-    const bands = [...state.bands].map((b) => BAND_WORD[b] || b);
-    const day = state.day && state.day !== todayStr()
-      ? ` on ${fmtDay(state.day).replace(/,.*$/, '')}`
-      : (state.day ? ' today' : '');
-    if (!bands.length) return day.trim();
-    return `${bands.join(' or ')}${day}`;
+    const bands = [...state.bands];
+    const today = state.day && state.day === todayStr();
+    const dayName = state.day && !today
+      ? fmtDay(state.day).replace(/,.*$/, '') : '';
+    if (!bands.length) {
+      if (!state.day) return '';
+      return today ? 'today' : `on ${dayName}`;
+    }
+    const say = today ? (b) => BAND_TODAY[b]
+      : dayName ? (b) => `${dayName} ${BAND_ON[b]}`
+        : (b) => BAND_ANY[b];
+    return bands.map((b) => say(b) || b).join(' or ');
   }
 
   function renderPlaces() {
@@ -183,7 +198,7 @@ if (root) {
 
     sec.classList.remove('hide');
     if (note) {
-      const where = active.length ? ` by ${active.join(' and ')}` : '';
+      const where = active.length ? ` in this ${active.join(' and ')}` : '';
       note.textContent = asked
         ? `${open.length.toLocaleString()} open ${whenPhrase()}${where}` +
           (unknown.length
