@@ -190,10 +190,15 @@ if (otherHoods.length) byBorough.push({ borough: 'Elsewhere', list: otherHoods }
 
     <!-- Places are OPEN rather than ON, so they get their own section instead
          of being mixed into a list grouped by day. They answer the filters
-         that apply to them -- what, where, which train -- and deliberately
-         ignore the ones that cannot mean anything for a museum: the day, the
-         time of day, and the venue. The header says which, so a section that
-         did not move when you picked a Tuesday does not read as broken. -->
+         that apply to them -- what, where, which train, and now when, because
+         `opening_hours` is parsed into the same four bands the listings use.
+         Venue is the only filter left that cannot mean anything here.
+
+         This section is the reason the page still has an answer when the
+         listings have none: an empty Tuesday in Bushwick is not an empty
+         Bushwick, and the comedy club and the roller rink were open the whole
+         time. The note under the heading says what is doing the filtering, so
+         a section that did not move does not read as broken. -->
     {places && (
       <section id="placesec" class="hide" style="margin-top:34px">
         <h2 class="sec">Places to go</h2><div class="rule"></div>

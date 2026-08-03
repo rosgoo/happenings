@@ -19,12 +19,22 @@ export const places = (() => {
   try { return read('places'); } catch { return []; }
 })();
 
+// Mirrors the vocabulary in places.py. The second half is the escape-room
+// tier: places you go DO something at, which is what "Bushwick, Saturday
+// night" is asking for and what no events feed lists.
 export const PLACE_KINDS = {
   museum: 'Museum', gallery: 'Gallery', aquarium: 'Aquarium', zoo: 'Zoo',
   theatre: 'Theatre', cinema: 'Cinema', 'arts-centre': 'Arts centre',
   nightclub: 'Nightclub', 'music-venue': 'Music venue',
+  'comedy-club': 'Comedy club', dance: 'Dancing', karaoke: 'Karaoke',
   'escape-room': 'Escape room', arcade: 'Arcade', bowling: 'Bowling',
-  'ice-rink': 'Ice rink', climbing: 'Climbing',
+  'ice-rink': 'Ice rink', 'roller-rink': 'Roller rink', climbing: 'Climbing',
+  obstacle: 'Ninja & obstacle', trampoline: 'Trampoline park',
+  'mini-golf': 'Mini golf', 'laser-tag': 'Laser tag',
+  'axe-throwing': 'Axe throwing', karting: 'Go-karting',
+  'pool-hall': 'Pool hall', surfing: 'Surfing', 'martial-arts': 'Martial arts',
+  'theme-park': 'Theme park', 'water-park': 'Water park', casino: 'Casino',
+  makerspace: 'Maker space',
 };
 
 // Places reuse the event category palette rather than inventing a second one --
@@ -35,6 +45,12 @@ const PLACE_COLOR = {
   nightclub: 'music', 'music-venue': 'music', 'escape-room': 'learning',
   arcade: 'community', bowling: 'sports', 'ice-rink': 'sports',
   climbing: 'sports',
+  'comedy-club': 'performance', dance: 'music', karaoke: 'music',
+  'roller-rink': 'sports', obstacle: 'sports', trampoline: 'sports',
+  'mini-golf': 'sports', 'laser-tag': 'sports', 'axe-throwing': 'sports',
+  karting: 'sports', 'pool-hall': 'community', surfing: 'outdoors',
+  'martial-arts': 'sports', 'theme-park': 'outdoors', 'water-park': 'outdoors',
+  casino: 'community', makerspace: 'learning',
 };
 export const placeColor = (kind) => `var(--c-${PLACE_COLOR[kind] || 'community'})`;
 // A place's kind maps onto the event category vocabulary, which is what lets
@@ -50,6 +66,11 @@ export const slimPlaces = (list) => list.map((p) => ({
   h: p.neighborhood, hn: p.neighborhood_name, bo: p.borough,
   c: placeCategory(p.kind), u: p.website, im: p.image_url || null,
   la: p.lat, lo: p.lon, oh: p.opening_hours || null,
+  // Seven hex digits, Monday first, four band bits each -- see lib/hours.py.
+  // Null is UNKNOWN, and the island renders it as unknown rather than
+  // assuming either way. `nb` orders the twelve that fit on screen.
+  hm: p.hours_mask || null, nb: p.notability || 0,
+  lb: p.listed_by || 'osm',
   wp: p.wikipedia || null,
   cr: p.image_credit || null, cp: p.image_page || null,
   sw: p.subway && p.subway[0]

@@ -28,12 +28,12 @@ const ordered = [...places.filter((p) => p.image_url),
                  ...places.filter((p) => !p.image_url)];
 ---
 <Base title="Places to go — happenings"
-      description="Museums, galleries, cinemas, theatres, arcades, escape rooms and more across New York. Filter by kind, borough and subway line.">
+      description="Museums, galleries, cinemas, comedy clubs, arcades, escape rooms, karaoke and rinks across New York. Filter by kind, borough, subway line and what's open tonight.">
   <p class="kicker" style="margin-top:26px">New York City</p>
   <h1 class="page">Places to go</h1>
   <p class="lede">Not what's <em>on</em> — what's <em>open</em>.
-    {places.length.toLocaleString()} museums, galleries, cinemas, theatres,
-    arcades, escape rooms and rinks, from OpenStreetMap.</p>
+    {places.length.toLocaleString()} museums, galleries, cinemas, comedy clubs,
+    arcades, escape rooms, karaoke rooms and rinks, from OpenStreetMap.</p>
 
   <div id="placebrowse" class="placefilters">
     <input id="pq" type="search" autocomplete="off"
@@ -46,6 +46,19 @@ const ordered = [...places.filter((p) => p.image_url),
                 style={`border-left:8px solid ${placeColor(k.slug)}`}>
           {k.label} <span style="color:var(--ink-2)">{k.count}</span>
         </button>
+      ))}
+    </div>
+
+    <!-- Open TODAY at this hour, from the `opening_hours` OSM records, parsed
+         into the same bands the listings use. It is the filter that turns a
+         directory into an answer: "escape room, Bushwick, tonight". Only the
+         third of places that state their hours can answer it, and the count
+         line says so rather than quietly shrinking. -->
+    <div class="filterlabel">Open today</div>
+    <div id="pbands" class="chips">
+      {[['morning', 'Morning'], ['afternoon', 'Afternoon'],
+        ['evening', 'Evening 5–9'], ['late', 'Late 9+']].map(([v, label]) => (
+        <button class="ch" data-v={v} aria-pressed="false">{label}</button>
       ))}
     </div>
 

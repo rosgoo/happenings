@@ -62,14 +62,22 @@ if (root) {
   let PLACES = [];
   let placeLimit = 12;
 
-  // Places answer WHAT, WHERE and WHICH TRAIN. They cannot answer WHEN -- a
-  // gallery has no start time -- so day, time band and venue are not applied.
-  // Silently ignoring three filters would make the section look stuck, so the
-  // note under the heading names the ones that are doing the work.
+  // Places answer WHAT, WHERE and WHICH TRAIN, and -- where OSM records the
+  // opening hours -- WHEN. A place has no start time, but it does have a
+  // closing time, and "evening near Washington Square" means the comedy club
+  // that opens at seven rather than the museum that shut at five. Venue is
+  // the one filter that still cannot mean anything here.
   const PLACE_FILTERS = [
     ['cats', 'category'], ['hoods', 'neighborhood'],
     ['routes', 'line'], ['stations', 'station'],
   ];
+  // The band bits lib/hours.py packs into each hex digit. Monday is digit 0.
+  const BAND_BIT = { morning: 1, afternoon: 2, evening: 4, late: 8 };
+  const BAND_WORD = {
+    morning: 'in the morning', afternoon: 'in the afternoon',
+    evening: 'in the evening', late: 'late',
+  };
+
   function placeMatches(p) {
     if (state.cats.size && !state.cats.has(p.c)) return false;
     if (state.hoods.size && !(p.h && state.hoods.has(p.h))) return false;
@@ -84,11 +92,33 @@ if (root) {
     return true;
   }
 
-  function placeCardHTML(p) {
+  // true / false / null, and the null is the point: two thirds of places state
+  // no hours at all, and dropping them because OSM is quiet would hide most of
+  // the city to look decisive. Unknown stays in the list, marked as unknown.
+  function placeOpen(p) {
+    if (!state.bands.size && !state.day) return true;   // nothing asked
+    if (!p.hm) return null;
+    // Monday-first, because that is how the mask is packed; getDay() is
+    // Sunday-first, which is the classic off-by-one in this file's history.
+    const digits = state.day
+      ? [p.hm[(new Date(`${state.day}T12:00:00`).getDay() + 6) % 7]]
+      : [...p.hm];
+    let bits = 0;
+    for (const ch of digits) bits |= parseInt(ch, 16);
+    if (!bits) return false;                            // shut that day
+    if (!state.bands.size) return true;
+    return [...state.bands].some((b) => bits & BAND_BIT[b]);
+  }
+
+  function placeCardHTML(p, unknownHours) {
     const title = p.u
       ? `<a href="${esc(p.u)}" rel="noopener">${esc(p.t)}</a>` : esc(p.t);
     const where = p.hn
       ? `<a href="/nyc/${esc(p.h)}">${esc(p.hn)}</a>` : esc(p.bo || '');
+    // Only says it when a time was actually asked about. On the default view
+    // it would be a caveat attached to nothing.
+    const hours = unknownHours
+      ? '<div class="w" style="font-style:italic;opacity:.75">hours not listed</div>' : '';
     return `<div class="pcard openable" data-id="${esc(p.i)}" tabindex="0"
       role="button" aria-label="Details for ${esc(p.t)}">
       <div class="ph" style="background:var(--c-${p.c})">
@@ -100,13 +130,40 @@ if (root) {
       <div class="pb">
         <h3>${title}</h3>
         <div class="w">${where}${p.sw ? ' · ' + stopHTML(p.sw) : ''}</div>
+        ${hours}
       </div></div>`;
+  }
+
+  // "Thursday evening", "on Sunday", "in the evening" -- whichever of the two
+  // time questions is actually being asked.
+  function whenPhrase() {
+    const bands = [...state.bands].map((b) => BAND_WORD[b] || b);
+    const day = state.day && state.day !== todayStr()
+      ? ` on ${fmtDay(state.day).replace(/,.*$/, '')}`
+      : (state.day ? ' today' : '');
+    if (!bands.length) return day.trim();
+    return `${bands.join(' or ')}${day}`;
   }
 
   function renderPlaces() {
     const sec = $('#placesec');
     if (!sec || !PLACES.length) return;
-    const hits = PLACES.filter(placeMatches);
+    const open = [], unknown = [];
+    for (const p of PLACES.filter(placeMatches)) {
+      const o = placeOpen(p);
+      if (o === true) open.push(p);
+      else if (o === null) unknown.push(p);
+    }
+    // Known-open sorts ABOVE an equally notable place that states no hours --
+    // a tie-break, deliberately not a partition. Sorting every hours-bearing
+    // place above every other one would have put the Comedy Cellar, which
+    // OpenStreetMap records no hours for, behind three hundred rows nobody
+    // asked about. Certainty is worth one point here, not the whole ranking.
+    const hits = [...open.map((p) => [p, (p.nb || 0) + 1]),
+                  ...unknown.map((p) => [p, p.nb || 0])]
+      .sort((a, b) => b[1] - a[1] || a[0].t.localeCompare(b[0].t))
+      .map(([p]) => p);
+    const asked = Boolean(state.bands.size || state.day);
     const active = PLACE_FILTERS.filter(([k]) => state[k].size).map(([, n]) => n);
     const note = $('#placenote');
 
@@ -114,9 +171,11 @@ if (root) {
       // A section that vanishes is better than one showing places that
       // contradict the filters -- but say why, or it reads as a bug.
       sec.classList.remove('hide');
-      $('#places').innerHTML =
-        `<div class="empty">No places match ${active.length
-          ? 'this ' + active.join(' and ') : 'these filters'}.</div>`;
+      const where = active.length ? ` in this ${active.join(' and ')}` : '';
+      $('#places').innerHTML = `<div class="empty">${asked
+        ? `Nothing open ${whenPhrase()}${where}`
+        : `No places match ${active.length
+          ? `this ${active.join(' and ')}` : 'these filters'}`}.</div>`;
       if (note) note.textContent = '';
       $('#moreplaces').classList.add('hide');
       return;
@@ -124,11 +183,16 @@ if (root) {
 
     sec.classList.remove('hide');
     if (note) {
-      note.textContent = active.length
-        ? `${hits.length.toLocaleString()} open near you by ${active.join(' and ')} — not filtered by date or time.`
-        : `${hits.length.toLocaleString()} museums, galleries, cinemas and more.`;
+      const where = active.length ? ` by ${active.join(' and ')}` : '';
+      note.textContent = asked
+        ? `${open.length.toLocaleString()} open ${whenPhrase()}${where}` +
+          (unknown.length
+            ? `, and ${unknown.length.toLocaleString()} more OpenStreetMap has no hours for.`
+            : '.')
+        : `${hits.length.toLocaleString()} museums, galleries, comedy clubs, rinks and more${where}.`;
     }
-    $('#places').innerHTML = hits.slice(0, placeLimit).map(placeCardHTML).join('');
+    $('#places').innerHTML = hits.slice(0, placeLimit)
+      .map((p) => placeCardHTML(p, asked && !p.hm)).join('');
     const more = $('#moreplaces');
     more.classList.toggle('hide', hits.length <= placeLimit);
     if (hits.length > placeLimit) {
@@ -636,10 +700,13 @@ if (root) {
     const psrc = root.dataset.places;
     if (psrc) {
       fetch(psrc).then((r) => r.json()).then((data) => {
+        // Order is renderPlaces()'s job, because it depends on what is being
+        // asked. Twelve of thirteen hundred fit on the page, so it is the
+        // whole design: notability, scored in places.py from what OSM already
+        // knows -- an encyclopaedia article, a photograph, a website. Sorting
+        // on the photograph alone, as this used to, put an unnamed gallery
+        // above the Comedy Cellar.
         PLACES = scope.hood ? data.filter((p) => p.h === scope.hood) : data;
-        // Photographed places first: this section is the one place on the page
-        // where an image is doing the work.
-        PLACES.sort((a, b) => (b.im ? 1 : 0) - (a.im ? 1 : 0));
         renderPlaces();
       }).catch(() => {});
     }

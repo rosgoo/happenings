@@ -159,9 +159,11 @@ export function openPlace(p) {
     ${row('Where', [p.hn ? `<a href="/nyc/${esc(p.h)}">${esc(p.hn)}</a>` : '', esc(p.bo || '')].filter(Boolean).join(' · '))}
     ${row('Nearest stop', p.sw ? `${p.sw.r.map(bullet).join('')} ${esc(p.sw.n)}
         <span style="color:var(--ink-2)">· ${walk(p.sw.m)}</span>` : '')}
-    ${row('Opening hours', p.oh ? `<code>${esc(p.oh)}</code>` : '')}
+    ${row('Opening hours', p.oh ? `<code>${esc(p.oh)}</code>` : 'not listed')}
     ${row('Map', mapLink(p.la, p.lo, p.t))}
-    ${row('Listed by', '<a href="https://www.openstreetmap.org/" rel="noopener">OpenStreetMap</a>')}
+    ${row('Listed by', p.lb === 'curated'
+      ? 'happenings — this place is not in OpenStreetMap yet'
+      : '<a href="https://www.openstreetmap.org/" rel="noopener">OpenStreetMap</a>')}
     ${p.cr ? row('Photo', `${p.cp ? `<a href="${esc(p.cp)}" rel="noopener">${esc(p.cr)}</a>` : esc(p.cr)} · Wikimedia Commons`) : ''}
     ${p.oh ? '<p class="dnote">Hours are as recorded in OpenStreetMap and are not checked against the venue.</p>' : ''}
     <div class="dlinks">${links}</div>

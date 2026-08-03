@@ -159,6 +159,48 @@ polygon work means appending one strategy, not touching callers.
   so the classifier is audited by reading a file. Mostly youth/adult league field
   permits: real permits, but not things you can turn up to.
 
+## Places — the things that are open
+
+An empty Tuesday in Bushwick is not an empty Bushwick. `places.py` reads
+OpenStreetMap for the places that are **open** rather than the things that are
+**on**, and they are what the page has to say when the listings have nothing:
+the comedy club, the roller rink and the escape room were open the whole time.
+
+Three rules make that list an answer rather than a directory.
+
+**The activity decides the kind, not the building.** A comedy club is tagged
+`amenity=theatre` and is not a theatre in the sense anyone means, so
+`theatre:genre` — or, for the two thirds that don't carry it, the name —
+files the Comedy Cellar under *Comedy club* instead of burying it among 291
+theatres. Xanadu Roller Arts is `amenity=nightclub sport=roller_skating`, and
+comes out a *Roller rink*. The same mechanism keeps 89 `leisure=dance` dance
+*studios* out while letting the dance *bars* in, and admits a
+`leisure=sports_centre` only when its `sport` names something you turn up to,
+which is what stops 384 New York gyms from arriving.
+
+**Hours are parsed into the same four bands events use.** `lib/hours.py` turns
+`Mo-Th 16:00-04:00; Fr 14:00-04:00` into seven hex digits, one per weekday, so
+"evening, near Washington Square" prefers the room that opens at seven over the
+museum that shut at five — and a bar open till 4am is open *late* on the night
+you would actually go. It reads the everyday subset of the grammar and
+**refuses the rest**: a seasonal `Nov-Mar`, a `sunset-23:00`, anything with a
+date in it returns unknown. Two thirds of places state no hours at all, and
+those show as *hours not listed* rather than being dropped or assumed.
+
+**A tag pair that goes quiet fails the run.** The same per-source freshness gate
+the event feeds get, because this stage failed exactly that way and shipped:
+`amenity=nightclub` and `tourism=zoo` both came back empty, nothing said so, and
+the index quietly had no nightlife in it. Row counts per tag pair are stored
+beside the raw response, and zero-where-there-were-rows now refuses to write —
+the last good index stays up until someone looks.
+
+`cities/nyc/place-extras.json` is the acknowledgement that a volunteer map has
+holes: a handful of real places OSM has no node for, each with the argument for
+its own existence in a `why` field, geocoded **by address through GeoSearch** so
+the coordinates come from the city's address register rather than from whoever
+typed the file. Cards say which of the two listed them. An entry is a stopgap —
+the durable fix is an edit to OSM, and the build says so the day one lands.
+
 ## Images
 
 `places.py` is the only source here that carries photographs. OpenStreetMap

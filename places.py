@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 """Places -- the things that are OPEN, as opposed to the things that are ON.
 
-Museums, galleries, cinemas, theatres, music venues, arcades, escape rooms,
-bowling, climbing, ice rinks. A scheduled event answers "what's on tonight"; a
-place answers "what could we do", which is a different question people ask just
-as often and which no events feed covers.
+Museums, galleries, cinemas, theatres, music venues, comedy clubs, arcades,
+escape rooms, bowling, karaoke, roller and ice rinks, mini golf, climbing and
+obstacle gyms. A scheduled event answers "what's on tonight"; a place answers
+"what could we do", which is a different question people ask just as often and
+which no events feed covers.
+
+Two things make that answer useful rather than merely present. The kind comes
+from what HAPPENS in a building and not from what the building is, so a comedy
+club stops being one of 291 theatres. And `opening_hours` is parsed into the
+same four time bands the listings use, so "evening, near Washington Square"
+can prefer the room that opens at seven over the museum that shut at five.
+Where the hours are unstated or unparseable the place says hours unknown --
+never a guess.
 
 It is also the only source in this build that carries PHOTOGRAPHS.
 
@@ -51,8 +60,10 @@ from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import http  # noqa: E402
+from lib import hours  # noqa: E402
 from lib.geo import Neighborhoods  # noqa: E402
 from lib.places import Resolver  # noqa: E402
+import geocode  # noqa: E402
 import subway  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -71,22 +82,76 @@ COMMONS = "https://commons.wikimedia.org/w/api.php"
 
 # OSM tag -> our kind. A closed vocabulary, same discipline as the event
 # taxonomy: the facet has to stay governable.
+#
+# The list started at the cultural tier -- museums, galleries, theatres -- and
+# that tier answers "what could we do" only for a certain kind of afternoon.
+# The second half of it is the escape-room tier: the places you GO DO A THING
+# at, which are exactly what somebody asking "Bushwick, Saturday night" wants
+# and which no events feed lists because nothing about them is scheduled.
 KINDS = {
     ("tourism", "museum"): ("museum", "Museum"),
     ("tourism", "gallery"): ("gallery", "Gallery"),
     ("tourism", "aquarium"): ("aquarium", "Aquarium"),
     ("tourism", "zoo"): ("zoo", "Zoo"),
+    ("tourism", "theme_park"): ("theme-park", "Theme park"),
     ("amenity", "theatre"): ("theatre", "Theatre"),
     ("amenity", "cinema"): ("cinema", "Cinema"),
     ("amenity", "arts_centre"): ("arts-centre", "Arts centre"),
     ("amenity", "nightclub"): ("nightclub", "Nightclub"),
     ("amenity", "music_venue"): ("music-venue", "Music venue"),
+    ("amenity", "casino"): ("casino", "Casino"),
+    ("amenity", "karaoke_box"): ("karaoke", "Karaoke"),
+    ("amenity", "dojo"): ("martial-arts", "Martial arts"),
     ("leisure", "escape_game"): ("escape-room", "Escape room"),
     ("leisure", "amusement_arcade"): ("arcade", "Arcade"),
+    ("leisure", "adult_gaming_centre"): ("casino", "Casino"),
     ("leisure", "bowling_alley"): ("bowling", "Bowling"),
     ("leisure", "ice_rink"): ("ice-rink", "Ice rink"),
+    ("leisure", "miniature_golf"): ("mini-golf", "Mini golf"),
+    ("leisure", "trampoline_park"): ("trampoline", "Trampoline park"),
+    ("leisure", "water_park"): ("water-park", "Water park"),
+    ("leisure", "dance"): ("dance", "Dancing"),
+    ("leisure", "hackerspace"): ("makerspace", "Maker space"),
     ("leisure", "sports_centre"): ("climbing", "Climbing / sports"),
 }
+
+# `leisure=sports_centre` is 384 rows in New York and most of them are a gym.
+# A gym is somewhere you have a membership, not somewhere you go on a Friday,
+# so the tag only earns a place when its `sport` says which activity it is --
+# and the activity, not the building, decides the kind. Same mechanism reads
+# `amenity=nightclub sport=roller_skating`, which is how a roller disco is
+# tagged and why it used to come out labelled "Nightclub".
+SPORTS = {
+    "climbing": ("climbing", "Climbing"),
+    "bouldering": ("climbing", "Climbing"),
+    "ninja": ("obstacle", "Ninja & obstacle"),
+    "parkour": ("obstacle", "Ninja & obstacle"),
+    "obstacle_course": ("obstacle", "Ninja & obstacle"),
+    "trampolining": ("trampoline", "Trampoline park"),
+    "roller_skating": ("roller-rink", "Roller rink"),
+    "skating": ("roller-rink", "Roller rink"),
+    "ice_skating": ("ice-rink", "Ice rink"),
+    "laser_tag": ("laser-tag", "Laser tag"),
+    "paintball": ("laser-tag", "Laser tag"),
+    "axe_throwing": ("axe-throwing", "Axe throwing"),
+    "archery": ("axe-throwing", "Axe throwing"),
+    "karting": ("karting", "Go-karting"),
+    "billiards": ("pool-hall", "Pool hall"),
+    "darts": ("pool-hall", "Pool hall"),
+    "shuffleboard": ("pool-hall", "Pool hall"),
+    "table_tennis": ("pool-hall", "Pool hall"),
+    "surfing": ("surfing", "Surfing"),
+}
+# Only these get to be rewritten by their sport. A museum with `sport=chess`
+# is a museum.
+SPORT_HOSTS = {"climbing", "nightclub", "martial-arts", "dance", "arcade"}
+
+# A comedy club is tagged `amenity=theatre` and is not a theatre in the sense
+# anybody means -- it is the thing that is open at eleven on a Wednesday when
+# the theatres are dark. `theatre:genre` says so on the third of them that
+# carry it; for the rest the name does, and "Comedy Cellar" is not ambiguous.
+COMEDY_GENRE = re.compile(r"comedy|stand.?up", re.I)
+COMEDY_NAME = re.compile(r"\bcomedy\b|\bimprov\b", re.I)
 
 QUERY = """[out:json][timeout:180];
 (
@@ -126,6 +191,109 @@ def load_overrides(cdir):
     return json.load(open(path))
 
 
+def classify(tags, name):
+    """OSM tags -> (kind, label), or None for something we do not list.
+
+    Two passes on purpose. The tag says what kind of BUILDING it is; `sport`
+    and `theatre:genre` say what actually happens inside, and when those
+    disagree the activity wins -- which is the difference between filing
+    Xanadu Roller Arts under "Nightclub" and under "Roller rink", and between
+    burying the Comedy Cellar among 291 theatres and putting it where somebody
+    looking for a Tuesday night would find it.
+    """
+    kind = label = None
+    for (k, v), (slug, lbl) in KINDS.items():
+        if tags.get(k) == v:
+            kind, label = slug, lbl
+            break
+    if not kind:
+        return None
+
+    if kind == "theatre":
+        genre = tags.get("theatre:genre") or ""
+        if COMEDY_GENRE.search(genre) or (not genre and COMEDY_NAME.search(name)):
+            return ("comedy-club", "Comedy club")
+
+    if kind == "dance" and tags.get("amenity") not in ("bar", "nightclub", "pub"):
+        # 89 rows carry `leisure=dance` and most are a studio teaching a class
+        # on Tuesdays -- Fancy Feet, Rod Rogers Dance Company. Somewhere you
+        # enrol is not somewhere you turn up. The tag only means a night out
+        # when it is on a bar or a club, which is how Bembe and 3 Dollar Bill
+        # are tagged and how the studios stay out.
+        return None
+
+    if kind in SPORT_HOSTS:
+        # `sport=weightlifting;crossfit` is a list, and the first entry we
+        # recognise is the one that describes the visit.
+        for sport in re.split(r"[;,]", tags.get("sport") or ""):
+            hit = SPORTS.get(sport.strip().lower())
+            if hit:
+                return hit
+        if kind == "climbing":
+            # A sports centre that named no sport we list is a gym.
+            return None
+    return (kind, label)
+
+
+def notability(p):
+    """How likely this is a place somebody would recognise, from what OSM
+    already knows about it -- nothing inferred and nothing hand-ranked.
+
+    Twelve places fit in the section under the listings, and the honest way to
+    pick twelve out of thirteen hundred is to ask which ones the world has
+    already written down. An encyclopaedia article is the strongest such
+    signal there is; a photograph and a website are weaker ones in the same
+    direction. It orders a list -- it never drops anything.
+    """
+    return (3 * bool(p.get("wikipedia")) + 2 * bool(p.get("wikidata"))
+            + 2 * bool(p.get("image_url")) + bool(p.get("website"))
+            + bool(p.get("opening_hours")))
+
+
+# Every kind this build can emit, for validating the curated file below.
+KIND_LABELS = dict(KINDS.values())
+KIND_LABELS.update(SPORTS.values())
+KIND_LABELS["comedy-club"] = "Comedy club"
+
+
+def load_extras(cdir):
+    """Places that are real, open, and simply not in OpenStreetMap.
+
+    OSM is the source and stays the source; this is the acknowledgement that a
+    map maintained by volunteers has holes, and that a hole shaped like the
+    obstacle gym everyone in the neighbourhood knows is worse than a listing
+    somebody typed. Each entry carries `why`, which is the argument for its
+    own existence and the thing to re-read when deciding whether it still
+    belongs.
+
+    An entry is a stopgap, exactly like place-overrides.json. The durable fix
+    is adding the place to OSM -- and when somebody does, this file notices
+    the collision and says to delete the entry rather than shipping it twice.
+
+    An entry gives an `address`, not coordinates. The address goes through the
+    same GeoSearch the events use, so the point comes from the city's own
+    address register rather than from whoever typed the file -- and an address
+    that does not resolve drops the entry instead of putting a hand-guessed
+    pin on the map. `lat`/`lon` are accepted for a place with no street
+    address, and are the exception.
+    """
+    path = os.path.join(cdir, "place-extras.json")
+    if not os.path.exists(path):
+        return []
+    out = []
+    for x in json.load(open(path)):
+        if x.get("kind") not in KIND_LABELS:
+            print(f"  ! place-extras: {x.get('name')!r} has kind "
+                  f"{x.get('kind')!r}, which is not in the vocabulary -- skipped")
+            continue
+        if not x.get("address") and (x.get("lat") is None or x.get("lon") is None):
+            print(f"  ! place-extras: {x.get('name')!r} has neither an address "
+                  f"nor coordinates -- skipped")
+            continue
+        out.append(x)
+    return out
+
+
 def slugify(s, maxlen=70):
     out = []
     for ch in (s or "").lower():
@@ -152,7 +320,7 @@ def fetch_osm(city, bbox):
         raise RuntimeError("every known Overpass instance disallows this in robots.txt")
 
     print(f"overpass: {len(KINDS)} tag pairs over {city}, one request each")
-    els, failed = [], []
+    els, failed, counts = [], [], {}
     for (k, v) in KINDS:
         q = urllib.parse.urlencode({"data": build_query(bbox, [(k, v)])})
         got = None
@@ -167,13 +335,14 @@ def fetch_osm(city, bbox):
             continue
         n = got.get("elements", [])
         els.extend(n)
+        counts[f"{k}={v}"] = len(n)
         print(f"    {k}={v}: {len(n)}")
     if failed:
         # Never silently. A category that failed to fetch is a coverage hole,
         # and a hole nobody is told about reads as "there is nothing there".
         print(f"  WARNING: {len(failed)} tag pairs failed: {', '.join(failed)}")
     print(f"  {len(els)} elements total")
-    return els
+    return els, counts
 
 
 WM_REST = "https://api.wikimedia.org/core/v1/commons/file/"
@@ -388,6 +557,10 @@ def main():
     ap.add_argument("--city", default="nyc")
     ap.add_argument("--no-fetch", action="store_true")
     ap.add_argument("--no-images", action="store_true")
+    ap.add_argument("--allow-empty", action="store_true",
+                    help="write the index even though a tag pair that had rows "
+                         "last run came back with none. Say this when the loss "
+                         "is real; the default assumes it is a broken fetch.")
     ap.add_argument("--verify-delay", type=float, default=0.7,
                     help="pause between image HEAD checks; too fast reads as "
                          "a burst and gets throttled, which looks like a "
@@ -409,13 +582,32 @@ def main():
     overrides = load_overrides(cdir)
 
     raw_path = os.path.join(rdir, "osm-places.json")
-    if args.no_fetch and os.path.exists(raw_path):
-        els = json.load(open(raw_path))["elements"]
+    cached = json.load(open(raw_path)) if os.path.exists(raw_path) else {}
+    if args.no_fetch and cached:
+        els = cached["elements"]
         print(f"places: {len(els)} elements from cache")
     else:
-        els = fetch_osm(args.city, cfg["bbox"])
+        els, counts = fetch_osm(args.city, cfg["bbox"])
+        # The per-source freshness gate validate.py applies to event feeds,
+        # applied to tag pairs -- because this stage failed exactly that way
+        # once and shipped: `amenity=nightclub` and `tourism=zoo` both came
+        # back empty, nobody was told, and for a week the index simply had no
+        # nightlife in it. Zero rows for a pair that had rows last time is a
+        # broken fetch, not a city that closed its nightclubs.
+        prev = cached.get("counts") or {}
+        lost = sorted(p for p, n in prev.items() if n and not counts.get(p))
+        empty = sorted(p for p, n in counts.items() if not n and not prev.get(p))
+        if empty:
+            print(f"  note: {', '.join(empty)} returned nothing, and had "
+                  f"nothing last run either")
+        if lost and not args.allow_empty:
+            print(f"\n  FAILED: {len(lost)} tag pair(s) went from rows to "
+                  f"nothing: {', '.join(f'{p} ({prev[p]} last run)' for p in lost)}")
+            print("  Not writing places.json -- the last good index stays up. "
+                  "Re-run, or pass --allow-empty if the loss is real.")
+            return 1
         with open(raw_path, "w") as f:
-            json.dump({"elements": els}, f)
+            json.dump({"counts": counts, "elements": els}, f)
 
     hoods = Neighborhoods(json.load(open(os.path.join(cdir, "neighborhoods.geojson"))))
     resolver = Resolver(hoods)
@@ -423,7 +615,7 @@ def main():
     print(f"  subway: {len(stations)} stations")
 
     # -- shape the OSM elements -------------------------------------------
-    seen, places = set(), []
+    seen, ids, places = set(), set(), []
     stats = Counter()
     for el in els:
         t = el.get("tags") or {}
@@ -444,16 +636,10 @@ def main():
         if not name:
             stats["unnamed"] += 1
             continue
-        kind = kind_label = None
-        for (k, v), (slug, label) in KINDS.items():
-            if t.get(k) == v:
-                kind, kind_label = slug, label
-                break
-        if not kind:
+        got = classify(t, name)
+        if not got:
             continue
-        # sports_centre is only interesting when it is actually climbing
-        if kind == "climbing" and "climbing" not in json.dumps(t).lower():
-            continue
+        kind, kind_label = got
 
         lat = el.get("lat") or (el.get("center") or {}).get("lat")
         lon = el.get("lon") or (el.get("center") or {}).get("lon")
@@ -467,8 +653,18 @@ def main():
             stats["dupe"] += 1
             continue
         seen.add(key)
-
+        # A chain has one name and several addresses -- there are two New York
+        # Comedy Clubs and three Alamo Drafthouses -- and the id is what the
+        # detail panel looks a place up by, so a shared one opens the wrong
+        # branch. Disambiguate by neighbourhood, which is also how a New Yorker
+        # would say which one they meant.
         p = resolver.resolve(lat=lat, lon=lon)
+        if slug in ids:
+            slug = slugify(f"{name}-{(p.neighborhood if p else None) or len(places)}")
+            while slug in ids:
+                slug = f"{slug}-2"
+        ids.add(slug)
+
         places.append({
             "id": slug, "name": name, "kind": kind, "kind_label": kind_label,
             # Same nearest-station treatment events get. A museum you cannot
@@ -477,15 +673,64 @@ def main():
             "subway": stations.nearest(lat, lon, limit=1),
             "website": t.get("website") or t.get("contact:website"),
             "opening_hours": t.get("opening_hours"),
+            # The week as four bands a day, so a place can answer the same
+            # time-of-day filter the listings do. None means OSM either said
+            # nothing or said something this does not parse -- see lib/hours.
+            "hours_mask": hours.week_mask(t.get("opening_hours")),
             "wikidata": t.get("wikidata"),
             "osm_image": osm_image_ref(t),
             "wikipedia": t.get("wikipedia"),
             "image_url": None, "image_credit": None, "image_license": None,
             "image_page": None, "image_source": None,
             "osm_id": osm_id,
+            "listed_by": "osm",
             **(p.as_dict() if p else {}),
         })
         stats[f"kind:{kind}"] += 1
+
+    # -- the curated tail --------------------------------------------------
+    by_name = {slugify(p["name"]) for p in places}
+    for x in load_extras(cdir):
+        slug = slugify(x["name"])
+        if slug in by_name:
+            print(f"  ! place-extras: {x['name']!r} is in OpenStreetMap now -- "
+                  f"delete the entry from cities/{args.city}/place-extras.json")
+            stats["extra-superseded"] += 1
+            continue
+
+        lat, lon = x.get("lat"), x.get("lon")
+        if lat is None or lon is None:
+            g = geocode.geosearch(cfg["geocoder"], x["address"])
+            if not g:
+                print(f"  ! place-extras: {x['name']!r} -- GeoSearch does not "
+                      f"recognise {x['address']!r}, so it is not listed")
+                stats["extra-unlocatable"] += 1
+                continue
+            lat, lon = g["lat"], g["lon"]
+
+        while slug in ids:
+            slug = f"{slug}-2"
+        ids.add(slug)
+        p = resolver.resolve(lat=lat, lon=lon)
+        places.append({
+            "id": slug, "name": x["name"], "kind": x["kind"],
+            "kind_label": KIND_LABELS[x["kind"]],
+            "subway": stations.nearest(lat, lon, limit=1),
+            "website": x.get("website"),
+            "opening_hours": x.get("opening_hours"),
+            "hours_mask": hours.week_mask(x.get("opening_hours")),
+            "wikidata": x.get("wikidata"), "osm_image": None,
+            "wikipedia": x.get("wikipedia"),
+            "image_url": None, "image_credit": None, "image_license": None,
+            "image_page": None, "image_source": None,
+            "osm_id": None,
+            # The card says so, because a hand-typed row and a mapped one are
+            # not the same claim and the reader is entitled to know which.
+            "listed_by": "curated",
+            **(p.as_dict() if p else {}),
+        })
+        stats[f"kind:{x['kind']}"] += 1
+        stats["curated"] += 1
 
     # -- attach images -----------------------------------------------------
     if not args.no_images:
@@ -567,16 +812,25 @@ def main():
     if not args.no_images:
         verify_images(places, delay=args.verify_delay)
 
+    # Scored after the image pass, because a photograph is one of the signals.
+    for p in places:
+        p["notability"] = notability(p)
+
     places.sort(key=lambda p: (p["kind"], p["name"]))
     with open(os.path.join(ddir, "places.json"), "w") as f:
         json.dump(places, f, separators=(",", ":"))
 
     withimg = sum(1 for p in places if p["image_url"])
     withhood = sum(1 for p in places if p.get("neighborhood"))
+    withhours = sum(1 for p in places if p.get("hours_mask"))
+    stated = sum(1 for p in places if p.get("opening_hours"))
     print(f"\n  {len(places)} places · {withimg} with a credited photo "
           f"({100 * withimg // max(1, len(places))}%) · "
           f"{withhood} placed to a neighbourhood "
           f"({100 * withhood // max(1, len(places))}%)")
+    print(f"  {stated} state their hours; {withhours} of those parse into "
+          f"time bands ({100 * withhours // max(1, stated)}%). The rest are "
+          f"shown as hours unknown, which is what they are.")
     for k, v in stats.most_common(18):
         print(f"    {v:>5}  {k}")
     return 0

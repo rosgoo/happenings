@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Brooklyn Ninja Academy",
+    "kind": "obstacle",
+    "address": "340 4th Avenue, Brooklyn",
+    "website": "https://ninjabrooklyn.com/",
+    "why": "The city's dedicated American-Ninja-Warrior-style obstacle gym, open to adults, and not in OpenStreetMap at all -- no node, no way, under any spelling. It is exactly the shape of thing this section exists to answer with, and the map simply has a hole where it is. Delete this entry the day somebody adds it upstream."
+  }
+]

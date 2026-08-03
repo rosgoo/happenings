@@ -29,19 +29,24 @@ const bullet = (r) => `<span class="bullet${r === 'SIR' ? ' sir' : ''}" ` +
 const PAGE = 60;
 const root = $('#placebrowse');
 
+// The band bits lib/hours.py packs into each hex digit of the week mask, one
+// digit per day from Monday.
+const BAND_BIT = { morning: 1, afternoon: 2, evening: 4, late: 8 };
+
 if (root) {
   const state = {
-    kinds: new Set(), boros: new Set(), routes: new Set(),
+    kinds: new Set(), boros: new Set(), routes: new Set(), bands: new Set(),
     photo: false, q: '', limit: PAGE,
   };
   let ALL = [];
+  const todayIdx = (new Date().getDay() + 6) % 7;   // getDay() is Sunday-first
 
   function readURL() {
     const p = new URLSearchParams(location.search);
     state.q = p.get('q') || '';
     state.photo = p.get('photo') === '1';
     for (const [key, set] of [['kind', state.kinds], ['boro', state.boros],
-      ['route', state.routes]]) {
+      ['route', state.routes], ['band', state.bands]]) {
       set.clear();
       (p.get(key) || '').split(',').filter(Boolean).forEach((v) => set.add(v));
     }
@@ -53,6 +58,7 @@ if (root) {
     if (state.kinds.size) p.set('kind', [...state.kinds].join(','));
     if (state.boros.size) p.set('boro', [...state.boros].join(','));
     if (state.routes.size) p.set('route', [...state.routes].join(','));
+    if (state.bands.size) p.set('band', [...state.bands].join(','));
     const qs = p.toString();
     history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
   }
@@ -63,6 +69,16 @@ if (root) {
     if (state.routes.size &&
         !(p.sw && p.sw.r.some((r) => state.routes.has(r)))) return false;
     if (state.photo && !p.im) return false;
+    // Open TODAY in the chosen band. Unlike the section under the listings,
+    // this one drops the places whose hours nobody has recorded: the chip
+    // there is context on a browse, and here it is the question being asked,
+    // and "open this evening" cannot honestly include a place that does not
+    // say. The count line says how many that leaves out.
+    if (state.bands.size) {
+      if (!p.hm) return false;
+      const bits = parseInt(p.hm[todayIdx], 16);
+      if (![...state.bands].some((b) => bits & BAND_BIT[b])) return false;
+    }
     if (state.q) {
       const q = state.q.toLowerCase();
       if (![p.t, p.kl, p.hn, p.bo, p.sw && p.sw.n]
@@ -92,8 +108,11 @@ if (root) {
 
   function render() {
     const hits = ALL.filter(matches);
+    const quiet = state.bands.size ? ALL.filter((p) => !p.hm).length : 0;
     $('#pcount').innerHTML =
-      `<b>${hits.length.toLocaleString()}</b> ${hits.length === 1 ? 'place' : 'places'}`;
+      `<b>${hits.length.toLocaleString()}</b> ${hits.length === 1 ? 'place' : 'places'}`
+      + (quiet ? ` <span style="color:var(--ink-2)">· ${quiet.toLocaleString()}
+         more list no hours and are not counted</span>` : '');
     const box = $('#pcards');
     box.innerHTML = hits.length
       ? hits.slice(0, state.limit).map(cardHTML).join('')
@@ -128,11 +147,12 @@ if (root) {
     // not visibly reshuffle the page.
     ALL = data.sort((a, b) => (b.im ? 1 : 0) - (a.im ? 1 : 0));
     readURL();
-    ['#pkinds', '#pboros', '#proutes'].forEach((s, i) =>
-      sync(s, [state.kinds, state.boros, state.routes][i]));
+    ['#pkinds', '#pboros', '#proutes', '#pbands'].forEach((s, i) =>
+      sync(s, [state.kinds, state.boros, state.routes, state.bands][i]));
     wire('#pkinds', state.kinds);
     wire('#pboros', state.boros);
     wire('#proutes', state.routes);
+    wire('#pbands', state.bands);
 
     const q = $('#pq');
     q.value = state.q;
@@ -166,10 +186,10 @@ if (root) {
     });
     $('#pclear').addEventListener('click', () => {
       state.q = ''; state.photo = false; state.limit = PAGE;
-      [state.kinds, state.boros, state.routes].forEach((s) => s.clear());
+      [state.kinds, state.boros, state.routes, state.bands].forEach((s) => s.clear());
       q.value = '';
       photo.setAttribute('aria-pressed', 'false');
-      ['#pkinds', '#pboros', '#proutes'].forEach((s) =>
+      ['#pkinds', '#pboros', '#proutes', '#pbands'].forEach((s) =>
         $$(`${s} .ch`).forEach((b) => b.setAttribute('aria-pressed', 'false')));
       render();
     });
