@@ -1,9 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="happenings">
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-label="happenings">
   <!-- The wordmark reduced to one letter. Flat saturated fill with ink line
-       work on top, no shadow, nothing rounded -- the same four rules as the
+       work on top, no shadow, nothing rounded — the same four rules as the
        rest of the site. The 'h' is a path rather than text because a favicon
        gets no webfont, and a system-font 'h' would be somebody else's letter.
-       Uniform 18-unit stroke, which is what makes it read as Archivo Black. -->
+       Uniform 18-unit stroke, which is what makes it read as Archivo Black.
+       Em dash above, not the doubled hyphen used everywhere else in this repo:
+       this file is XML, where a double hyphen inside a comment is a parse
+       error. Chrome drops the whole icon on the floor when it hits one. -->
   <rect width="100" height="100" fill="#C8E94C"/>
   <path d="M24 16 H42 V46 H76 V84 H58 V64 H42 V84 H24 Z" fill="#17150F"/>
 </svg>
