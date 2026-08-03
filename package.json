@@ -9,6 +9,7 @@
     "pipeline": "python3 dice.py && python3 fetch.py && python3 normalize.py && python3 validate.py"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "astro": "^5.13.0"
   }
 }
