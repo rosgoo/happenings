@@ -24,6 +24,7 @@ import subprocess
 import sys
 from collections import Counter
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import taxonomy  # noqa: E402
@@ -74,22 +75,59 @@ def check_structure(g, events):
         g.err(f"{n} events outside the closed vocabulary: {k}")
 
 
+def city_today(city):
+    """Today's date in the city's own zone -- the same test the site applies.
+
+    The site renders `date_local >= TODAY`, so a gate asking whether a source is
+    visible has to ask it in those terms. Read from city.json rather than
+    written here, which is the same rule `check_city_literals` enforces on
+    everything else.
+    """
+    with open(os.path.join(ROOT, "cities", city, "city.json")) as f:
+        tz = ZoneInfo(json.load(f)["tz"])
+    return datetime.now(tz).date().isoformat()
+
+
 def check_freshness(g, city, events, meta):
     """The replacement for the regression gate. A source that goes quiet fails
-    the build -- silence is the failure mode here, not wrongness."""
+    the build -- silence is the failure mode here, not wrongness.
+
+    Counted on UPCOMING events, not on rows. That distinction is the whole
+    lesson of the parks bug: `starttime` carried a placeholder date, so all 549
+    parks events were stamped with a day already past, and the source was
+    fetched, parsed, counted and published while putting nothing on the page.
+    A row that arrives dead satisfies every check that asks "did anything
+    arrive", which is why this one asks "is any of it still ahead" instead.
+    """
     with open(os.path.join(ROOT, "cities", city, "sources.json")) as f:
         sources = json.load(f)["sources"]
+    today = city_today(city)
     per_source = Counter(e["source"] for e in events)
+    upcoming = Counter(e["source"] for e in events if e["date_local"] >= today)
+
     for s in sources:
         if not s.get("enabled"):
             continue
         n = per_source.get(s["id"], 0)
+        up = upcoming.get(s["id"], 0)
         floor = s.get("min_expected", 1)
         if n == 0:
             g.err(f"source '{s['id']}' produced NOTHING -- adapter has rotted or "
                   f"the upstream shape changed")
-        elif n < floor:
-            g.err(f"source '{s['id']}' produced {n}, below its floor of {floor}")
+        elif up == 0:
+            g.err(f"source '{s['id']}' produced {n} events and NOT ONE is upcoming "
+                  f"-- it is being fetched and published while showing nobody "
+                  f"anything. Check the date field the adapter reads.")
+        elif up < floor:
+            g.err(f"source '{s['id']}' has {up} upcoming, below its floor of "
+                  f"{floor}" + (f" (it produced {n} in total, so most of what it "
+                                f"returned is already past)" if n >= floor else ""))
+        # Healthy sources run 96-100% upcoming, because normalize already drops
+        # most of the past. A source well under that is half-mis-dated rather
+        # than dead, which the floor above would not catch on a big feed.
+        elif n and up / n < 0.75:
+            g.warn(f"source '{s['id']}': only {up} of {n} events are upcoming "
+                   f"({100 * up / n:.0f}%) -- check the date field")
 
     now = datetime.now(timezone.utc)
     soon = sum(1 for e in events
