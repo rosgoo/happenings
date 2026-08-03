@@ -1,0 +1,29 @@
+{
+ "counts": {
+  "amenity=arts_centre": 167,
+  "amenity=casino": 2,
+  "amenity=cinema": 96,
+  "amenity=karaoke_box": 18,
+  "amenity=music_venue": 8,
+  "amenity=nightclub": 121,
+  "amenity=theatre": 317,
+  "leisure=adult_gaming_centre": 2,
+  "leisure=amusement_arcade": 37,
+  "leisure=bowling_alley": 21,
+  "leisure=dance": 89,
+  "leisure=escape_game": 10,
+  "leisure=hackerspace": 9,
+  "leisure=ice_rink": 26,
+  "leisure=miniature_golf": 21,
+  "leisure=sports_centre": 384,
+  "leisure=trampoline_park": 3,
+  "leisure=water_park": 9,
+  "tourism=aquarium": 5,
+  "tourism=gallery": 349,
+  "tourism=museum": 207,
+  "tourism=theme_park": 11,
+  "tourism=zoo": 8
+ },
+ "fetched_at": "2026-08-03T04:26:00+00:00",
+ "stale": []
+}

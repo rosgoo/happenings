@@ -57,6 +57,7 @@ import sys
 import urllib.parse
 import urllib.request
 from collections import Counter
+from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import http  # noqa: E402
@@ -593,6 +594,14 @@ def main():
 
     raw_path = os.path.join(rdir, "osm-places.json")
     cached = json.load(open(raw_path)) if os.path.exists(raw_path) else {}
+    # The freshness baseline lives in data/, not beside the raw response,
+    # because `raw/` is gitignored -- so a CI run checks out a tree with no
+    # history to compare against and the gate silently never fires. The row
+    # counts are three lines of JSON and belong with the index they describe.
+    # CI cannot carry rows forward (it has no cached elements), and correctly
+    # fails instead: a blank pair on a build server is not a blip to absorb.
+    meta_path = os.path.join(ddir, "places-meta.json")
+    baseline = json.load(open(meta_path)) if os.path.exists(meta_path) else cached
     if args.no_fetch and cached:
         els = cached["elements"]
         print(f"places: {len(els)} elements from cache")
@@ -604,7 +613,7 @@ def main():
         # back empty, nobody was told, and for a week the index simply had no
         # nightlife in it. Zero rows for a pair that had rows last time is a
         # broken fetch, not a city that closed its nightclubs.
-        prev = cached.get("counts") or {}
+        prev = baseline.get("counts") or {}
         # Only pairs this run actually ASKED about. A pair deleted from KINDS
         # has no rows because nobody looked, which is a decision rather than a
         # failure -- the gate flagged its own author removing `amenity=dojo`
@@ -618,14 +627,50 @@ def main():
         if empty:
             print(f"  note: {', '.join(empty)} returned nothing, and had "
                   f"nothing last run either")
-        if lost and not args.allow_empty:
-            print(f"\n  FAILED: {len(lost)} tag pair(s) went from rows to "
-                  f"nothing: {', '.join(f'{p} ({prev[p]} last run)' for p in lost)}")
-            print("  Not writing places.json -- the last good index stays up. "
-                  "Re-run, or pass --allow-empty if the loss is real.")
+        # A pair that went quiet gets its rows CARRIED FORWARD from the last
+        # fetch rather than costing the whole run. Overpass hands back an
+        # empty 200 often enough that failing outright made the pipeline a
+        # lottery -- three consecutive runs, three different pairs blank, and
+        # the fourth would have been another. The cached elements are still on
+        # disk and still true; re-deriving which of them belong to the pair is
+        # just the tag condition that fetched them.
+        #
+        # It escalates rather than papering over: a pair carried forward twice
+        # running is not a blip, and that fails.
+        was_stale = set(baseline.get("stale") or [])
+        stale, hard = [], []
+        for pair in lost:
+            if pair in was_stale:
+                hard.append(pair)
+                continue
+            k, v = pair.split("=", 1)
+            carried = [e for e in (cached.get("elements") or [])
+                       if (e.get("tags") or {}).get(k) == v]
+            if not carried:
+                hard.append(pair)
+                continue
+            els.extend(carried)
+            counts[pair] = len(carried)
+            stale.append(pair)
+        if stale:
+            print(f"\n  WARNING: {', '.join(stale)} returned nothing this run. "
+                  f"Carried {sum(counts[p] for p in stale)} rows forward from "
+                  f"the last fetch -- they are as of then, not as of now.")
+        if hard and not args.allow_empty:
+            print(f"\n  FAILED: {len(hard)} tag pair(s) went from rows to "
+                  f"nothing: {', '.join(f'{p} ({prev[p]} last run)' for p in hard)}")
+            print("  " + ("Already carried forward once, so this is a real "
+                          "loss rather than a blip. "
+                          if any(p in was_stale for p in hard) else "")
+                  + "Not writing places.json -- the last good index stays up. "
+                    "Re-run, or pass --allow-empty if the loss is real.")
             return 1
         with open(raw_path, "w") as f:
-            json.dump({"counts": counts, "elements": els}, f)
+            json.dump({"counts": counts, "stale": stale, "elements": els}, f)
+        with open(meta_path, "w") as f:
+            json.dump({"counts": counts, "stale": stale,
+                       "fetched_at": datetime.now(timezone.utc).isoformat()},
+                      f, indent=1, sort_keys=True)
 
     hoods = Neighborhoods(json.load(open(os.path.join(cdir, "neighborhoods.geojson"))))
     resolver = Resolver(hoods)

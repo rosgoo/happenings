@@ -1,11 +1,17 @@
 name: pipeline
 
-# Three times a day, not nightly. A 48-hour-stale events index is broken,
-# whereas a product catalogue can fail for three days unnoticed. Cheap because
-# these are documented open-data APIs designed to be called.
+# Once a day, before the morning. A 48-hour-stale events index is broken, but
+# the three-a-day schedule this replaced was answering a question nobody asked:
+# the sources are read in full each run rather than incrementally, so a midday
+# pass re-fetched 40,000 rows to learn that tonight's listings were the same
+# listings. Daily is the honest floor -- it is what "what's on today" needs,
+# and no more of somebody else's bandwidth than that.
+#
+# `workflow_dispatch` is the escape hatch when a source lands something worth
+# publishing before tomorrow.
 on:
   schedule:
-    - cron: '15 9,15,21 * * *'   # 05:15 / 11:15 / 17:15 America/New_York
+    - cron: '15 9 * * *'         # 05:15 America/New_York
   workflow_dispatch:
 
 concurrency:

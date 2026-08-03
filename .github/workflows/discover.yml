@@ -2,10 +2,10 @@ name: discover
 
 # Discovery is a different job from fetching, on a different clock.
 #
-# `pipeline.yml` asks known sources what is on, three times a day. This asks
-# which sources exist at all -- and that answer moves on the scale of a site
-# redesign, not a day. Running it hourly would spend hundreds of requests
-# re-learning a registry that is already committed.
+# `pipeline.yml` asks known sources what is on, daily. This asks which sources
+# exist at all, and what is simply OPEN -- answers that move on the scale of a
+# site redesign or a venue opening, not a day. Running it hourly would spend
+# hundreds of requests re-learning a registry that is already committed.
 #
 # It matters most for Luma, where discovery IS the growth mechanism: there is
 # no city-wide feed, the /nyc page yields 20 calendars per load, and luma.py
@@ -13,16 +13,24 @@ name: discover
 # has not seen, so weekly is the floor rather than the ceiling -- twice a week
 # would be defensible.
 #
-# Two clocks, because the jobs below are not the same size. Luma, Squarespace
-# and the subway register are tens of requests against a handful of hosts.
-# `posttypes.py` asks all 668 census sites what their CMS publishes, which is
-# a couple of thousand requests at a second apiece -- roughly forty minutes,
-# and forty minutes of somebody else's bandwidth. That answer changes when a
-# venue redesigns, so it runs monthly. Spending it twice a week to re-learn a
-# committed registry is exactly the waste this split exists to avoid.
+# Three clocks, because the jobs below are not the same size. Luma, Squarespace
+# and the subway register are tens of requests against a handful of hosts, and
+# run twice a week. `places.py` is ~20 minutes of Overpass -- a full spatial
+# scan of the city per tag pair, on donated hardware -- for an answer that
+# changes when a venue opens, so it runs on the Monday only. `posttypes.py`
+# asks all 668 census sites what their CMS publishes, which is a couple of
+# thousand requests at a second apiece -- roughly forty minutes, and forty
+# minutes of somebody else's bandwidth. That answer changes when a venue
+# redesigns, so it runs monthly. Spending either of them twice a week to
+# re-learn a committed registry is exactly the waste this split exists to
+# avoid.
 on:
   schedule:
-    - cron: '40 8 * * 1,4'       # Mon & Thu, 04:40 America/New_York
+    # Mon and Thu are two entries rather than `1,4`, because a step that wants
+    # to run on only one of them has nothing else to match on: the expression
+    # context gets the cron STRING that fired, not the day it fired.
+    - cron: '40 8 * * 1'         # Mon, 04:40 America/New_York -- plus places
+    - cron: '40 8 * * 4'         # Thu, 04:40 -- registries only
     - cron: '10 7 1 * *'         # 1st of the month, 02:10 -- the full sweep
   workflow_dispatch:
     inputs:
@@ -84,6 +92,26 @@ jobs:
           HAPPENINGS_CONTACT: https://happenings.town
         run: python3 posttypes.py
 
+      # Places are OPEN rather than ON, and they belong on this clock for the
+      # reason this whole workflow exists: a museum does not open on a Tuesday.
+      # Monday only, not both crons -- it is ~20 minutes of Overpass, which is
+      # donated hardware answering a full spatial scan of the city per tag
+      # pair, and twice a week would double that bill to re-learn an answer
+      # that changes when a venue opens or closes.
+      #
+      # It ran nowhere at all before this, which is how the index sat three
+      # weeks stale with every nightclub in New York missing from it and
+      # nobody the wiser. `continue-on-error` because a blank Overpass night
+      # must not take the registries down with it: places.py refuses to write
+      # a damaged index, so the failure mode is "last week's places", and the
+      # commit step below still has the rest of the run's work to publish.
+      - name: Places that are open (Mondays)
+        if: github.event.schedule == '40 8 * * 1' || inputs.sweep
+        continue-on-error: true
+        env:
+          HAPPENINGS_CONTACT: https://happenings.town
+        run: python3 places.py
+
       - name: Commit registries
         run: |
           git config user.name  "happenings-bot"
@@ -95,12 +123,16 @@ jobs:
           # nothing and git treats that as an error.
           git add cities/
           git add data/*/posttypes.json 2>/dev/null || true
+          # places.json and its freshness baseline, for the same reason and
+          # with the same care: named explicitly so a job that did not run
+          # places.py cannot commit a stale index it never regenerated.
+          git add data/*/places.json data/*/places-meta.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "no change"
           else
             git commit -m "discover: $(date -u +%Y-%m-%dT%H:%MZ)"
-            # pipeline.yml pushes to the same branch three times a day, and a
-            # forty-minute sweep is very likely to straddle one. Without this
+            # pipeline.yml pushes to the same branch daily, and a sweep that
+            # runs for the best part of an hour can straddle it. Without this
             # the push is rejected and the whole run's work is thrown away for
             # a reason that has nothing to do with the data.
             git pull --rebase --autostash
