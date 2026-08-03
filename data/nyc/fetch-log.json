@@ -26,8 +26,8 @@
   },
   "nyc-wordpress": {
     "ok": true,
-    "count": 861,
-    "fetched_at": "2026-08-02T22:22:48.684264+00:00"
+    "count": 859,
+    "fetched_at": "2026-08-03T01:41:26.845383+00:00"
   },
   "nyc-permitted-events": {
     "ok": true,
