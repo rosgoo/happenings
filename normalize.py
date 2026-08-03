@@ -739,6 +739,74 @@ class Builder:
                      source_id=src_id, url=r.get("url"),
                      description=blurb)
 
+    def jsonld(self, src_id, rows):
+        """Venue calendars read from the schema.org markup on their listing page.
+
+        The same vocabulary DICE publishes, arriving from the venue itself, so
+        classification is the same chain and in the same order: the specific
+        type, then the generic one, then the title, then the building. A
+        `ComedyEvent` is comedy because the club said so, and that beats a
+        title matcher every time.
+
+        Placement is the part that differs. DICE states coordinates; these
+        state a `PostalAddress` and nothing else, so the address is resolved
+        through the gazetteer geocode.py fills -- the same route the library
+        and the permits feed take. That is deliberate rather than a shortcut:
+        New York Comedy Club runs three rooms and names the room on every
+        listing, so placing each address separately is what keeps the Upper
+        West Side out of the East Village. A room whose address has not been
+        geocoded yet is rejected rather than parked at the venue's other
+        branch, and the next geocode run picks it up.
+        """
+        for r in rows:
+            title = clean(r.get("title"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=r.get("url"))
+                continue
+
+            status = str(r.get("status") or "").rsplit("/", 1)[-1].lower()
+            if status in ("eventcancelled", "eventpostponed"):
+                self.reject(src_id, title, f"status: {status}", url=r.get("url"))
+                continue
+
+            start = to_local_naive(r.get("start"), self.tz) or parse_naive(r.get("start"))
+            end = to_local_naive(r.get("end"), self.tz) or parse_naive(r.get("end"))
+            if not start:
+                self.reject(src_id, title, "unparseable start time", url=r.get("url"))
+                continue
+
+            lat, lon = r.get("lat"), r.get("lon")
+            if lat is None and r.get("address"):
+                p = self.resolver.resolve(name=r["address"], borough=r.get("borough"))
+                if p:
+                    lat, lon = p.lat, p.lon
+            v = self.venue(clean(r.get("venue_name")) or r.get("venue_host"),
+                           lat, lon, borough=r.get("borough"), kind="venue")
+            if not v or not v.get("neighborhood"):
+                self.reject(src_id, title, "no coordinates, cannot place"
+                            if not (v and v.get("lat")) else "outside nyc",
+                            url=r.get("url"))
+                continue
+
+            cat, sub, csrc = taxonomy.from_schema(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_schema_default(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                cat, sub, csrc = taxonomy.from_venue(v["name"])
+            if not cat:
+                self.reject(src_id, title, "unclassified jsonld event",
+                            url=r.get("url"))
+                continue
+
+            self.add(title=title, start=start, end=end, venue=v,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=r.get("url"),
+                     description=r.get("description"),
+                     price_min=r.get("price_min"), is_free=r.get("is_free"))
+
     def bpl(self, src_id, rows):
         """Brooklyn Public Library -- every branch, one open Drupal JSON:API.
 
@@ -943,7 +1011,8 @@ class Builder:
                     "nyc-luma": self.luma,
                     "nyc-dice": self.dice,
                     "nyc-bpl": self.bpl,
-                    "nyc-wordpress": self.wordpress}
+                    "nyc-wordpress": self.wordpress,
+                    "nyc-jsonld": self.jsonld}
         used = []
         for fn in sorted(os.listdir(raw_dir)):
             if not fn.endswith(".json"):

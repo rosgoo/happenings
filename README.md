@@ -12,8 +12,8 @@ this city.
 Sibling project to gearherd, and a deliberate inversion of it — same pipeline
 discipline, much friendlier face.
 
-**Status: v1, city open data plus the ticketed tier.** 8,874 events ·
-1,208 venues · 199 neighbourhoods · 1,200 places · 731 static pages. 91% of
+**Status: v1, city open data plus the ticketed tier.** 9,315 events ·
+1,215 venues · 199 neighbourhoods · 1,200 places · 737 static pages. 92% of
 events are placed to a neighbourhood; 176 places carry a credited photo. DICE
 covers the independent music and nightlife rooms — Elsewhere, Union Pool, Saint
 Vitus, House of Yes, Public Records — which is the tier that sells through
@@ -25,6 +25,7 @@ neither Ticketmaster nor its own calendar. The rest of *What's next* stands.
 python3 fetch.py --neighborhoods   # one-off: NTA polygons (changes on the decade)
 python3 fetch.py --parks           # one-off: park polygons (parks don't move)
 python3 dice.py                    # discover  -> cities/nyc/dice.json (before every fetch)
+python3 jsonld.py                  # discover  -> cities/nyc/jsonld.json (weekly)
 python3 fetch.py                   # extract   -> raw/nyc/
 python3 geocode.py                 # place it  -> data/nyc/geocode-cache.json
 python3 normalize.py               # transform -> data/nyc/
@@ -40,12 +41,14 @@ because its registry is replaced rather than merged and a stale one both misses
 tonight's shows and keeps listing cancelled ones. They are stdlib-only and
 deliberately stay that way — the crawl has to run anywhere.
 
-The **discovery** scripts — `squarespace.py`, `luma.py`, `dice.py` — write
-committed registries that `fetch.py` then reads, so finding a source is
+The **discovery** scripts — `squarespace.py`, `luma.py`, `jsonld.py`, `dice.py`
+— write committed registries that `fetch.py` then reads, so finding a source is
 separated from reading it. Only `dice.py` belongs in the regular run: a
-Squarespace slug changes when a site is redesigned and a Luma roster only
-grows, but DICE events are born and die daily, so its registry is rebuilt each
-time rather than merged. It costs four requests.
+Squarespace slug changes when a site is redesigned, a Luma roster only grows,
+and `jsonld.py` re-learns which venues publish a whole calendar in their markup
+— all answers that move when a site is rebuilt. DICE events are born and die
+daily, so its registry is rebuilt each time rather than merged. It costs four
+requests.
 
 ## Shape
 
@@ -106,9 +109,13 @@ enabled source that goes quiet fails the build.
 |---|---|---|---|
 | 2 | `socrata` | NYC Parks Public Events (`w3wp-dpdi`) | **yes** |
 | 2 | `socrata` | NYC Permitted Events (`tvpp-9vvx`) | **yes** |
-| 0 | `ticketmaster`, `seatgeek` | ticketing APIs — free keys, aligned incentives | no |
+| 0 | `ticketmaster` | Ticketmaster Discovery — free key, aligned incentives | **yes** |
+| 0 | ~~`seatgeek`~~ | sitemaps are 180,000 URLs and not segmented by city | no |
 | 0 | `dice` | DICE — sitemap + schema.org, independent music and nightlife | **yes** |
-| 1 | `ics`, `jsonld`, `localist`, `custom` | institutions and arts venues | no |
+| 1 | `wordpress` | venue calendars on The Events Calendar, REST or ICS | **yes** |
+| 1 | `jsonld` | venues publishing their calendar as schema.org markup | **yes** |
+| 1 | `drupal` | Brooklyn Public Library, every branch | **yes** |
+| 1 | `localist`, `custom` | university and institutional calendars | no |
 | — | ~~`predicthq`~~ | great coverage, but its licence restricts public display | no |
 
 `fudw-fgrp` and `6v4b-5gp4` are **dead** (newest rows 2019) and are deliberately

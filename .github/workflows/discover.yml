@@ -55,6 +55,16 @@ jobs:
           HAPPENINGS_CONTACT: https://happenings.town
         run: python3 squarespace.py
 
+      # ~50 requests, one per site the census saw an Event on. It belongs here
+      # rather than on the pipeline clock, unlike dice.py: what it re-learns is
+      # which venues publish a whole calendar in their markup, and that changes
+      # when a site is rebuilt. The events themselves are read three times a
+      # day by fetch.py from the registry this writes.
+      - name: Venue schema.org calendars
+        env:
+          HAPPENINGS_CONTACT: https://happenings.town
+        run: python3 jsonld.py
+
       # These two are near-static -- stations and parks do not move -- but a
       # cheap re-check catches a renamed park or a new station opening.
       - name: Subway register

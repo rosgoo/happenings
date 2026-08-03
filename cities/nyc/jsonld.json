@@ -1,0 +1,829 @@
+{
+ "_comment": [
+  "Venues whose LISTING page carries their calendar as schema.org markup,",
+  "so the whole roster costs one request. Discovered by jsonld.py from the",
+  "census's `jsonld_event` signal, which is narrower than `jsonld_detail`:",
+  "54% of sites carry JSON-LD and 7% carry an Event, and the difference is",
+  "Organization/WebSite boilerplate that describes the site rather than",
+  "anything on at it.",
+  "REPLACED each run except for hand-set `skip`, `why` and `venue_name`.",
+  "An events count is a fact about today; a skip is a judgement about the",
+  "site and must not be undone by a re-probe.",
+  "`locations` is every distinct location.name seen, and it is the field to",
+  "read before trusting a site: a venue calendar names its own rooms, while",
+  "an aggregator names other people's. Events carry a PostalAddress and no",
+  "coordinates, so each location is geocoded from its street address rather",
+  "than inheriting one point per host -- which is what lets a club with",
+  "three rooms place all three correctly."
+ ],
+ "generated_at": "2026-08-03T03:25:42.831733+00:00",
+ "city": "nyc",
+ "source": "jsonld.py",
+ "min_events": 2,
+ "venues": [
+  {
+   "host": "newyorkcomedyclub.com",
+   "name": "New York Comedy Club",
+   "url": "https://newyorkcomedyclub.com/calendar",
+   "events": 229,
+   "locations": [
+    "New York Comedy Club",
+    "New York Comedy Club Upper West Side",
+    "New York Comedy Club on 4th Street"
+   ],
+   "types": [
+    "ComedyEvent"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7388641,
+   "lon": -73.9808406,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "thetinycupboard.com",
+   "name": "The Tiny Cupboard",
+   "url": "https://www.thetinycupboard.com/calendar",
+   "events": 176,
+   "locations": [
+    "The Tiny Cupboard"
+   ],
+   "types": [
+    "ComedyEvent"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6836915,
+   "lon": -73.9112136,
+   "borough": "Brooklyn"
+  },
+  {
+   "host": "eastvillecomedy.com",
+   "name": "Eastville Comedy Club & Bar",
+   "url": "https://www.eastvillecomedy.com/calendar",
+   "events": 48,
+   "locations": [
+    "Eastville Comedy Club"
+   ],
+   "types": [
+    "ComedyEvent"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6858601,
+   "lon": -73.9816535,
+   "borough": "Brooklyn"
+  },
+  {
+   "host": "littleisland.org",
+   "name": "The Amph",
+   "url": "https://littleisland.org/events/",
+   "events": 25,
+   "locations": [
+    "The Amph",
+    "The Glade",
+    "The Play Ground"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7423062,
+   "lon": -74.0108945,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.nytransitmuseum.org",
+   "name": "New York Transit Museum",
+   "url": "https://www.nytransitmuseum.org/programs/",
+   "events": 16,
+   "locations": [
+    "New York Transit Museum, Brooklyn",
+    "Off-Site",
+    "Virtual"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6905176,
+   "lon": -73.9899802,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "historichousetrust.org",
+   "name": "Lewis Howard Latimer House Museum",
+   "url": "https://historichousetrust.org/events/",
+   "events": 12,
+   "locations": [
+    "Bowne House",
+    "Historic Richmond Town",
+    "King Manor Museum",
+    "Lefferts Historic House",
+    "Old Stone House &#038; Washington Park",
+    "Van Cortlandt House Museum",
+    "Wyckoff House"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7660962,
+   "lon": -73.829377,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.prospectpark.org",
+   "name": "Lefferts Historic House",
+   "url": "https://www.prospectpark.org/events/",
+   "events": 12,
+   "locations": [],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.664375,
+   "lon": -73.9637979,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.resobox.com",
+   "name": "Resobox",
+   "url": "https://resobox.com/events/",
+   "events": 12,
+   "locations": [
+    "RESOBOX"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7512687,
+   "lon": -73.9390234,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.sichildrensmuseum.org",
+   "name": "Staten Island Children\u2019s Museum",
+   "url": "https://sichildrensmuseum.org/calendar/",
+   "events": 12,
+   "locations": [
+    "Staten Island Children&#8217;s Museum"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6427113,
+   "lon": -74.1018927,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "url": "https://cityparksfoundation.org/calendar",
+   "events": 10,
+   "locations": [
+    "Brooklyn",
+    "Manhattan",
+    "Queens",
+    "Staten Island"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7725851,
+   "lon": -73.9702129,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/",
+   "events": 10,
+   "locations": [
+    "Mount Vernon Hotel Museum &amp; Garden"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7605217,
+   "lon": -73.9597128,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "aliceausten.org",
+   "name": "Alice Austen House",
+   "url": "https://aliceausten.org/events/",
+   "events": 9,
+   "locations": [
+    "Alice Austen House Waterfront Lawn"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6151272,
+   "lon": -74.0630286,
+   "borough": "Staten Island"
+  },
+  {
+   "host": "societyillustrators.org",
+   "name": "Society of Illustrators",
+   "url": "https://societyillustrators.org/events/",
+   "events": 6,
+   "locations": [
+    "At the Society"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7648187,
+   "lon": -73.966827,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.august-wilson-theatre.com",
+   "name": "August Wilson Theatre",
+   "url": "https://www.newyorkcitytheatre.com/shows",
+   "events": 6,
+   "locations": [
+    "Al Hirschfeld Theater",
+    "August Wilson Theater",
+    "Hudson Theatre",
+    "Nederlander Theater",
+    "Palace Theater",
+    "Richard Rodgers Theater"
+   ],
+   "types": [
+    "TheaterEvent"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.763373,
+   "lon": -73.9841933,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Not a venue calendar. Every event names another room -- Palace Theater, Beacon Theater -- and links to newyorkcitytheatre.com, so this is an aggregator republishing other people's listings under a theatre's domain. Good markup is not evidence that a page is about the site serving it."
+  },
+  {
+   "host": "www.hobokenmuseum.org",
+   "name": "Hoboken Fire Department Museum",
+   "url": "https://hobokenmuseum.org/events/",
+   "events": 6,
+   "locations": [
+    "Hoboken Historical Museum"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.739273,
+   "lon": -74.0309564,
+   "borough": null,
+   "skip": true,
+   "why": "Hoboken, New Jersey. The census swept a bounding box; normalize would reject every row as outside nyc, so the honest place to stop is before the request."
+  },
+  {
+   "host": "lighthousemuseum.org",
+   "name": "National Lighthouse Museum",
+   "url": "https://lighthousemuseum.org/events/",
+   "events": 5,
+   "locations": [
+    "ABOVE Hilton Garden Inn",
+    "Leaves from Fast Ferry Dock in St. George on the New York Water Taxi",
+    "Leaves from Pier1 (National Lighthouse Museum Site) on the Nautical Princess",
+    "National Lighthouse Museum",
+    "The National Lighthouse Museum"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6407356,
+   "lon": -74.0734107,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "url": "https://lucidbody.com/events",
+   "events": 3,
+   "locations": [
+    "Lambertville Arts and Movement",
+    "St. Michael&#8217;s Church"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.7461254,
+   "lon": -73.9801056,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
+   "url": "https://www.statenislandmuseum.org/events",
+   "events": 3,
+   "locations": [
+    "Great Kills Park"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6445211,
+   "lon": -74.1027489,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "waterfrontmuseum.org",
+   "name": "The Waterfront Museum",
+   "url": "https://waterfrontmuseum.org/event/four-paintings/",
+   "events": 1,
+   "locations": [
+    "Waterfront Museum"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "lat": 40.6752349,
+   "lon": -74.018312,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "ampmgallery.com",
+   "name": "AM:PM Gallery",
+   "url": "https://ampmgallery.com/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7107596,
+   "lon": -73.9565553,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "bitforms.art",
+   "name": "bitforms gallery",
+   "url": "https://www.bitforms.art/exhibitions",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7200826,
+   "lon": -73.990232,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "chashama.org",
+   "name": "ChaShaMa",
+   "url": "https://chashama.org/events/",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7925409,
+   "lon": -73.9711668,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "gloriasprojectspace.com",
+   "name": "Gloria's Project Space",
+   "url": "https://www.gloriasprojectspace.com/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7060783,
+   "lon": -73.913545,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "michaelrosenfeldart.com",
+   "name": "Michael Rosenfield Art",
+   "url": "https://michaelrosenfeld.com/exhibitions",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7461924,
+   "lon": -74.0077206,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "noblemaritime.org",
+   "name": "Noble Maritime Collection",
+   "url": "https://noblemaritime.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6443066,
+   "lon": -74.1017627,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "skyscraper.org",
+   "name": "Skyscraper Museum",
+   "url": "https://skyscraper.org/programs",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.70575,
+   "lon": -74.017691,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "soapboxgallery.org",
+   "name": "Soapbox Gallery",
+   "url": "https://www.soapboxgallery.org/calendar",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6803238,
+   "lon": -73.9692441,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "stannswarehouse.org",
+   "name": "St. Ann's Warehouse",
+   "url": "https://stannswarehouse.org/calendar",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 403,
+   "error": null,
+   "lat": 40.7036538,
+   "lon": -73.9928126,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "synesthesia.space",
+   "name": "Synesthesia",
+   "url": "https://synesthesia.space/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7052139,
+   "lon": -73.9308973,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "thepit-nyc.com",
+   "name": "The PIT",
+   "url": "https://thepit-nyc.com/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7473981,
+   "lon": -73.9922667,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "voltzclarke.com",
+   "name": "Voltz Clarke Gallery",
+   "url": "https://voltzclarke.com/exhibitions",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7220357,
+   "lon": -73.9920403,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "wonderville.nyc",
+   "name": "Wonderville",
+   "url": "https://www.wonderville.nyc/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6924111,
+   "lon": -73.9275164,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.amoseno.org",
+   "name": "Amos Eno Gallery",
+   "url": "https://www.amoseno.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7057978,
+   "lon": -73.9332632,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.apollotheater.org",
+   "name": "Apollo Theater",
+   "url": "https://www.apollotheater.org/programs",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.810129,
+   "lon": -73.9498627,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "www.bownehouse.org",
+   "name": "John Bowne House",
+   "url": "https://www.bownehouse.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7628819,
+   "lon": -73.8248834,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.cherrylanetheatre.org",
+   "name": "Cherry Lane Theatre",
+   "url": "https://cherrylanetheatre.org/shows",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7312452,
+   "lon": -74.0052802,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "www.e-flux.com",
+   "name": "e-flux",
+   "url": "https://www.e-flux.com/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6947588,
+   "lon": -73.9614259,
+   "borough": "Brooklyn"
+  },
+  {
+   "host": "www.filmnoircinema.com",
+   "name": "Film Noir Cinema",
+   "url": "https://www.filmnoircinema.com/program",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7273136,
+   "lon": -73.951608,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.friendsofrockhall.org",
+   "name": "Rock Hall",
+   "url": "https://www.friendsofrockhall.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6089555,
+   "lon": -73.7339552,
+   "borough": null,
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.grove34.com",
+   "name": "Grove 34",
+   "url": "https://grove34.com/workshops",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7610844,
+   "lon": -73.9226348,
+   "borough": "Queens"
+  },
+  {
+   "host": "www.kingmanor.org",
+   "name": "King Manor Museum",
+   "url": "https://www.kingmanor.org/Events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7031161,
+   "lon": -73.803768,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.mckittrickhotel.com",
+   "name": "The McKittrick Hotel",
+   "url": "https://mckittrickhotel.com/events/",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7506815,
+   "lon": -74.0038103,
+   "borough": "Manhattan"
+  },
+  {
+   "host": "www.metamorfosiny.org",
+   "name": "MetaMorfosi",
+   "url": "https://www.metamorfosiny.org/exhibitions",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7178117,
+   "lon": -74.0030315,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.os-nyc.com",
+   "name": "OS NYC",
+   "url": "https://www.os-nyc.com/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7159355,
+   "lon": -73.9964993,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.ostudiony.com",
+   "name": "Ostudio",
+   "url": "https://www.ostudiony.com/event",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6974063,
+   "lon": -73.9371828,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.redhookartproject.org",
+   "name": "Red Hook Art Project",
+   "url": "https://www.redhookartproject.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.6787705,
+   "lon": -74.011033,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.shambhalayogadance.com",
+   "name": "Shambhala Yoga & Dance Center",
+   "url": "https://www.shambhalayogadance.com/workshops",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": null,
+   "lon": null,
+   "borough": null,
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.vomuseum.org",
+   "name": "The Voelker Orth Museum",
+   "url": "https://www.vomuseum.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.7647162,
+   "lon": -73.8161927,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already fetched as a Squarespace collection. One venue, one adapter."
+  },
+  {
+   "host": "www.whitney.org",
+   "name": "Whitney Museum of American Art",
+   "url": "https://whitney.org/events",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "lat": 40.739633,
+   "lon": -74.0089385,
+   "borough": "Manhattan"
+  }
+ ]
+}

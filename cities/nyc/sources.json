@@ -101,7 +101,11 @@
       "min_expected": 400,
       "horizon_days": 60,
       "registry": "dice.json",
-      "city_slugs": ["new-york-city", "new-york", "brooklyn"],
+      "city_slugs": [
+        "new-york-city",
+        "new-york",
+        "brooklyn"
+      ],
       "_comment": [
         "Independent music and nightlife -- the venue tier that sells through",
         "neither Ticketmaster nor a Squarespace calendar, and which the index",
@@ -136,13 +140,20 @@
       "horizon_days": 30,
       "page_size": 50,
       "max_pages": 120,
-      "include": ["field_location", "field_participating_branches",
-                  "field_event_type_parent", "field_age", "field_tags"],
+      "include": [
+        "field_location",
+        "field_participating_branches",
+        "field_event_type_parent",
+        "field_age",
+        "field_tags"
+      ],
       "places": {
         "resource": "node/branch",
         "address_field": "field_address",
         "page_size": 50,
-        "name_suffixes": [" Library"]
+        "name_suffixes": [
+          " Library"
+        ]
       },
       "_comment": [
         "A completely open Drupal JSON:API -- no key, server-side date",
@@ -214,6 +225,33 @@
         "event_type": "event_type",
         "agency": "event_agency"
       }
+    },
+    {
+      "id": "nyc-jsonld",
+      "tier": 1,
+      "adapter": "jsonld",
+      "enabled": true,
+      "label": "Venue calendars (schema.org)",
+      "attribution": "Individual venues",
+      "min_expected": 150,
+      "horizon_days": 60,
+      "registry": "jsonld.json",
+      "_comment": [
+        "Venues whose listing page publishes its own calendar as schema.org Event",
+        "markup. Discovery is jsonld.py; this reads its registry and costs one",
+        "request per venue, because the calendar arrives whole on the page.",
+        "The census's lesson is baked into the selection: 54% of readable sites",
+        "carry JSON-LD and 7% carry an Event, so the signal is `jsonld_event` and",
+        "not the presence of markup. Sites already fetched by the wordpress or",
+        "squarespace adapters are skipped in the registry -- one venue, one adapter,",
+        "because two sources for one room become two venue records the moment their",
+        "names differ by a word.",
+        "Events state a PostalAddress and no coordinates, so each named room is",
+        "geocoded from its own street address. New York Comedy Club runs three,",
+        "four miles apart, and one point per host would be wrong for two of them.",
+        "min_expected is 150 against a measured 462: comedy clubs publish a rolling",
+        "few weeks, so the count moves with how far ahead they have booked."
+      ]
     }
   ]
 }

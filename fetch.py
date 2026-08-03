@@ -11,6 +11,7 @@ zero network. Never trust the source to still be there tomorrow.
     python3 fetch.py --neighborhoods # one-off: fetch NTA polygons
 """
 import argparse
+import html
 import json
 import os
 import re
@@ -669,6 +670,18 @@ LD_JSON = re.compile(
 DICE_BYTES = 500_000
 
 
+def clean_ws(s):
+    """Collapse whitespace and unescape entities in a markup-derived string.
+
+    JSON-LD embedded in HTML routinely carries newlines and `&amp;` from the
+    template that produced it, and a venue name that differs from itself by a
+    line break is two venues by the time it reaches a slug.
+    """
+    if s is None:
+        return None
+    return re.sub(r"\s+", " ", html.unescape(str(s))).strip() or None
+
+
 def _one(v):
     """schema.org properties are single-or-many; this takes the one.
 
@@ -702,6 +715,58 @@ def _dice_event(body):
         if isinstance(d, dict) and _event_type(d):
             return d
     return None
+
+
+def _ld_walk(node, out):
+    """Collect every schema.org Event in a document, however deeply nested.
+
+    `_dice_event` can look at top-level blocks only because a DICE event page is
+    one event and puts it there. A venue's *listing* page is the opposite shape:
+    the events arrive inside `@graph`, or as the `item` of an `ItemList`, or as
+    a bare array, and which one is a function of the plugin rather than of
+    anything meaningful. Walking the whole document is the only version of this
+    that does not need a rule per CMS.
+
+    A dict counts as an event when its `@type` ends in Event AND it states a
+    `startDate`. The second half matters: an `EventSeries` describing a run of
+    shows, or an Event stub carrying only a name and a link, is markup about
+    events rather than an event, and admitting it would put undated rows into a
+    pipeline whose first question is always when.
+    """
+    if isinstance(node, dict):
+        if _event_type(node) and node.get("startDate"):
+            out.append(node)
+        for v in node.values():
+            _ld_walk(v, out)
+    elif isinstance(node, list):
+        for v in node:
+            _ld_walk(v, out)
+    return out
+
+
+def _ld_events(body):
+    """Every dated schema.org Event on a page, de-duplicated.
+
+    Sites routinely emit the same event twice -- once in a page-level `@graph`
+    and once in a per-card block -- and a `subEvent` reachable from two parents
+    arrives twice from the walk itself. Keyed on name+start+url rather than on
+    object identity, because the two copies are usually equal in content and
+    distinct in memory.
+    """
+    out = []
+    for block in LD_JSON.findall(body):
+        try:
+            _ld_walk(json.loads(block.strip()), out)
+        except ValueError:
+            continue
+    seen, uniq = set(), []
+    for e in out:
+        key = (str(e.get("name")), str(e.get("startDate")), str(e.get("url")))
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(e)
+    return uniq
 
 
 def _event_type(ev):
@@ -859,10 +924,183 @@ def fetch_dice(src, horizon_days=60):
     return rows
 
 
+BOROUGHS = {"brooklyn": "Brooklyn", "bronx": "Bronx", "the bronx": "Bronx",
+            "queens": "Queens", "staten island": "Staten Island",
+            "manhattan": "Manhattan"}
+
+
+def _ld_address(loc):
+    """A postal address as one string, for geocode.py to place.
+
+    These events state a `PostalAddress` and no coordinates, which is the shape
+    geocode.py already handles for the permits feed and the library. Composed
+    here rather than there because only the adapter knows which of the many
+    address-ish fields a source actually filled in.
+    """
+    addr = loc.get("address")
+    if isinstance(addr, str):
+        return clean_ws(addr)
+    addr = _one(addr)
+    parts = [addr.get("streetAddress"), addr.get("addressLocality"),
+             addr.get("addressRegion")]
+    return clean_ws(", ".join(str(p).strip() for p in parts if p and str(p).strip()))
+
+
+def _ld_price(ev):
+    """The lowest stated offer price, and whether it is free.
+
+    Only what the markup says. An event with no `offers` is unknown rather than
+    free -- the same rule every other adapter here follows -- but a stated 0 is
+    a real claim and is kept as one.
+    """
+    best = None
+    offers = ev.get("offers")
+    for o in (offers if isinstance(offers, list) else [offers]):
+        if not isinstance(o, dict):
+            continue
+        for key in ("lowPrice", "price"):
+            try:
+                p = float(str(o.get(key)).replace("$", "").replace(",", ""))
+            except (TypeError, ValueError):
+                continue
+            if best is None or p < best:
+                best = p
+    return best, (best == 0 if best is not None else None)
+
+
+def _ld_row(ev, v, floor, cutoff):
+    """One schema.org Event from a listing page -> a raw row, or None."""
+    start = ev.get("startDate")
+    when = _ld_when(start)
+    if not when or not (floor <= when <= cutoff):
+        return None
+
+    loc = _one(ev.get("location"))
+    geo = _one(loc.get("geo"))
+    locality = str((_one(loc.get("address")) or {}).get("addressLocality") or "").strip().lower()
+    price_min, is_free = _ld_price(ev)
+    try:
+        lat = float(geo["latitude"])
+        lon = float(geo["longitude"])
+    except (KeyError, TypeError, ValueError):
+        lat = lon = None
+
+    address = _ld_address(loc)
+    # The building's own point, and ONLY where the calendar names a single
+    # room. Alice Austen House marks its events up with a place name and no
+    # PostalAddress, so there is nothing to geocode and nine real events would
+    # be dropped for a gap in someone's template. New York Comedy Club names
+    # three rooms four miles apart, and for it this fallback would be a
+    # confident wrong answer -- so the rule is the count, not the venue.
+    if lat is None and not address and len(v.get("locations") or []) <= 1:
+        lat, lon = v.get("lat"), v.get("lon")
+
+    return {
+        "venue_host": v["host"],
+        # The event's own room beats the registry's name for the site. A comedy
+        # club with three rooms says which one on every listing, and inheriting
+        # one name for all three would file the Upper West Side in the East
+        # Village -- four miles, and both are real.
+        "venue_name": clean_ws(loc.get("name")) or v.get("venue_name") or v["name"],
+        "address": address or None,
+        "borough": BOROUGHS.get(locality) or v.get("borough"),
+        "title": clean_ws(ev.get("name")),
+        "type": _event_type(ev),
+        "url": ev.get("url") or v["url"],
+        "start": start,
+        "end": ev.get("endDate"),
+        "status": ev.get("eventStatus"),
+        "description": ev.get("description"),
+        "price_min": price_min,
+        "is_free": is_free,
+        # Only when the markup states them. Absent here means geocode.py places
+        # the address instead, which is why this must stay null rather than
+        # borrowing the host's point.
+        "lat": lat, "lon": lon,
+    }
+
+
+def _ld_when(value):
+    """A schema.org date or date-time as an aware datetime, or None."""
+    try:
+        d = datetime.fromisoformat(str(value))
+    except (TypeError, ValueError):
+        return None
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def fetch_jsonld(src, horizon_days=60):
+    """Venue calendars published as schema.org markup on the listing page.
+
+    Discovery lives in `jsonld.py`; this reads its registry and fetches one page
+    per venue. That is the entire cost -- these are sites whose listing markup
+    already contains the calendar, which is why they were selected. A venue that
+    puts one event per detail page is recorded by the discovery script and not
+    fetched here, because harvesting it means link discovery plus a request per
+    event and that is a different bargain.
+
+    Nothing is guessed about location. Every event states a `PostalAddress`, so
+    the address rides through to geocode.py the way the permits feed's street
+    strings do, and each room a venue names is placed on its own. The
+    alternative -- one point per host -- is what would put all three New York
+    Comedy Club rooms at whichever one OSM happened to record.
+    """
+    city = src.get("_city", "nyc")
+    path = os.path.join(city_dir(city), "jsonld.json")
+    try:
+        with open(path) as f:
+            registry = json.load(f)
+    except FileNotFoundError:
+        raise RuntimeError(f"no {path} -- run `python3 jsonld.py` first")
+
+    horizon = min(horizon_days, src.get("horizon_days", 60))
+    cutoff = datetime.now(timezone.utc) + timedelta(days=horizon)
+    floor = datetime.now(timezone.utc) - timedelta(days=1)
+    floor_n = min(registry.get("min_events", 2), 2)
+
+    venues = [v for v in registry.get("venues") or []
+              if not v.get("skip") and v.get("events", 0) >= floor_n]
+    skipped = [v for v in registry.get("venues") or [] if v.get("skip")]
+    print(f"    {len(venues)} venues, horizon {horizon}d "
+          f"({len(skipped)} skipped by hand)")
+
+    rows, failed = [], 0
+    for v in venues:
+        try:
+            r = http.get_full(v["url"], delay=1.0, accept=http.HTML_ACCEPT,
+                              max_bytes=2_000_000)
+            if r["status"] != 200 or not r["body"]:
+                failed += 1
+                continue
+            evs = _ld_events(r["body"].decode("utf-8", "replace"))
+        except Exception:
+            failed += 1
+            continue
+
+        got = 0
+        for ev in evs:
+            # One event must never cost the venue, and one venue must never
+            # cost the run. schema.org is a vocabulary, not a schema.
+            try:
+                row = _ld_row(ev, v, floor, cutoff)
+            except Exception:
+                continue
+            if row and row["title"]:
+                rows.append(row)
+                got += 1
+        if not got:
+            failed += 1
+
+    if failed:
+        print(f"    {failed} venues returned nothing this run")
+    print(f"    {len(rows)} events inside the horizon")
+    return rows
+
+
 ADAPTERS = {"socrata": fetch_socrata, "squarespace": fetch_squarespace,
             "ticketmaster": fetch_ticketmaster, "luma": fetch_luma,
             "drupal": fetch_drupal, "wordpress": fetch_wordpress,
-            "dice": fetch_dice}
+            "dice": fetch_dice, "jsonld": fetch_jsonld}
 
 
 def fetch_neighborhoods(city):
