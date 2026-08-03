@@ -673,6 +673,18 @@ class Builder:
         the markup is the part it publishes to be read. Reading the price out of
         the surrounding HTML would be scraping the page rather than using what
         the page offers, which is a different bargain from the one taken here.
+
+        The description is cut to its first paragraph, which is the only
+        source-specific rule of its kind here. DICE's content signal is
+        `search=yes,ai-train=no,use=reference`: it permits being indexed and
+        referenced, and republishing a promoter's copy whole is the mirroring
+        that `reference` asks us not to do. `add` caps every description at 400
+        characters, but that is a layout rule and applies to sources that stated
+        no preference -- this one is a term, so it is applied where the source's
+        own bargain is expressed rather than left to a generic truncation that
+        happens to be short. What survives is the opening sentence, which is
+        what a listing needs; the rest is door policy and set times, and the
+        link goes to DICE for it.
         """
         for r in rows:
             title = clean(r.get("name"))
@@ -718,10 +730,14 @@ class Builder:
                             url=r.get("url"))
                 continue
 
+            blurb = next((ln.strip() for ln in
+                          str(r.get("description") or "").splitlines()
+                          if ln.strip()), None)
+
             self.add(title=title, start=start, end=end, venue=v,
                      category=cat, subcategory=sub, cat_source=csrc,
                      source_id=src_id, url=r.get("url"),
-                     description=r.get("description"))
+                     description=blurb)
 
     def bpl(self, src_id, rows):
         """Brooklyn Public Library -- every branch, one open Drupal JSON:API.

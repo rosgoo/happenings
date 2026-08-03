@@ -29,6 +29,19 @@ jobs:
           key: raw-${{ github.run_id }}
           restore-keys: raw-
 
+      # The one registry that belongs on the fetch clock rather than
+      # discover.yml's. Every other one is expensive and near-static, so it is
+      # re-learned twice a week; this is four requests for the whole city -- a
+      # sitemap index and three member sitemaps -- and the answer changes daily,
+      # because events are born and cancelled constantly. Left on the discovery
+      # clock it would be up to three days stale, which for this source means
+      # missing the new shows and still listing the cancelled ones. It also has
+      # to run BEFORE Extract, because fetch.py reads the registry it writes.
+      - name: DICE registry
+        env:
+          HAPPENINGS_CONTACT: https://happenings.town
+        run: python3 dice.py
+
       - name: Extract
         env:
           HAPPENINGS_CONTACT: https://happenings.town
@@ -74,6 +87,11 @@ jobs:
           git config user.name  "happenings-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/
+          # And the DICE registry, which this job regenerates and so is
+          # entitled to commit. Named specifically rather than `git add
+          # cities/`, which would sweep up a hand-edited source registry or a
+          # discover.yml run's roster that this job never touched.
+          git add cities/*/dice.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "no change"
           else

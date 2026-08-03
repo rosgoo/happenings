@@ -12,10 +12,12 @@ this city.
 Sibling project to gearherd, and a deliberate inversion of it — same pipeline
 discipline, much friendlier face.
 
-**Status: v1 running on city open data.** 6,100 events · 1,120 venues ·
-196 neighbourhoods · 1,200 places · 577 static pages. 70% of events are placed
-to a neighbourhood; 176 places carry a credited photo. The ticketed venues
-aren't in it yet — see *What's next*.
+**Status: v1, city open data plus the ticketed tier.** 8,874 events ·
+1,208 venues · 199 neighbourhoods · 1,200 places · 731 static pages. 91% of
+events are placed to a neighbourhood; 176 places carry a credited photo. DICE
+covers the independent music and nightlife rooms — Elsewhere, Union Pool, Saint
+Vitus, House of Yes, Public Records — which is the tier that sells through
+neither Ticketmaster nor its own calendar. The rest of *What's next* stands.
 
 ## Run it
 
@@ -33,8 +35,10 @@ npm install
 npm run dev                        # http://localhost:4321/nyc
 ```
 
-`npm run pipeline` runs the three Python stages in order. They are stdlib-only
-and deliberately stay that way — the crawl has to run anywhere.
+`npm run pipeline` runs the four Python stages in order — `dice.py` included,
+because its registry is replaced rather than merged and a stale one both misses
+tonight's shows and keeps listing cancelled ones. They are stdlib-only and
+deliberately stay that way — the crawl has to run anywhere.
 
 The **discovery** scripts — `squarespace.py`, `luma.py`, `dice.py` — write
 committed registries that `fetch.py` then reads, so finding a source is
