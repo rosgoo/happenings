@@ -18,7 +18,7 @@ differently from a residential address; that is noted where it matters.
 
 | Platform | Enumerable? | Permitted? | Verdict |
 |---|---|---|---|
-| **DICE** | Yes — sitemap, ~722 NYC events | robots `Allow: /`, sitemaps published | **Build this** |
+| **DICE** | Yes — sitemap, 1,539 NYC events | robots `Allow: /`, sitemaps published | **Built** |
 | TicketWeb / Universe / Front Gate | Already ours | Ticketmaster subsidiaries | **Audit, don't build** |
 | Meetup | Yes — 12/page | robots allows the find page | Possible, low yield |
 | Songkick | Yes — 50/page | UA fingerprinting, 406s | Fragile |
@@ -52,8 +52,19 @@ Three sitemaps, **21,211 event URLs**, `lastmod` refreshed daily. The city is
 in the slug, so the NYC subset is a substring match on a file we already have —
 no fetching to find out what to fetch:
 
+    817  *-new-york-city-tickets
     647  *-new-york-tickets
      75  *-brooklyn-tickets
+
+**1,539 NYC events**, 7.3% of DICE's global catalogue. An earlier draft of this
+audit said ~722, because it grepped for `-new-york-tickets` and never asked
+what else was there — `-new-york-city-tickets` is the larger bucket and was
+invisible to the question as posed. Counting the whole `-<city>-tickets` suffix
+instead of a guessed one found it.
+
+The tokens are also why the filter is configured rather than derived.
+`-york-tickets` looks like a harmless generalisation and is not: 53 of those
+are a venue in York, England.
 
 Every event page then carries a schema.org `MusicEvent` block, and it is the
 richest shape in the audit:
@@ -237,9 +248,11 @@ Low priority independent of access.
 
 1. **Facet the existing Ticketmaster pull on `source`.** One request. May show
    TicketWeb and Universe are already in the index.
-2. **Build the DICE adapter.** Sitemap → NYC slug filter → event pages →
-   `MusicEvent` markup. ~722 events, with coordinates, from a site that
-   publishes a sitemap and says `Allow: /`.
+2. ~~**Build the DICE adapter.**~~ **Done** — `dice.py` for discovery,
+   `fetch_dice` and `Builder.dice` for the rest. 1,539 NYC events, with
+   coordinates, from a site that publishes a sitemap and says `Allow: /`.
+   `lastmod` on every sitemap entry means a second run re-reads only what
+   changed.
 3. **Write RA and Partiful down as refused**, next to Eventbrite, with the
    queries that work — so the finding is that they were checked and declined,
    not that nobody looked.

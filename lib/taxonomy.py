@@ -356,6 +356,55 @@ def from_ticketmaster(classifications):
     return None, None, None
 
 
+# schema.org event subtypes -> our vocabulary. A page that marks itself up as a
+# ScreeningEvent has stated what it is, and that outranks reading the title.
+#
+# MusicEvent is deliberately ABSENT. It is not a claim, it is a ticketing
+# platform's default: across a sample of 25 DICE listings it covered 22,
+# including a rooftop day party and a cigar night. Treating it as evidence
+# would file everything a music venue sells as a concert. It is handled by
+# SCHEMA_DEFAULT instead, which callers apply only after the title has had its
+# turn -- so `Trivia Thursdays` at a music venue stays a quiz.
+SCHEMA_EVENT = {
+    "screeningevent": ("art", "film-screening"),
+    "exhibitionevent": ("art", "exhibition"),
+    "comedyevent": ("performance", "comedy"),
+    "theaterevent": ("performance", "theatre"),
+    "danceevent": ("performance", "dance"),
+    "sportsevent": ("sports", "sports-general"),
+    "educationevent": ("learning", "talk"),
+    "literaryevent": ("learning", "talk"),
+    "foodevent": ("food-drink", "tasting"),
+}
+
+# The generic types, worth something only where the SOURCE is specific. On a
+# music ticketer the base rate really is music, which is what makes this
+# defensible here and would not make it defensible on a general listings feed.
+SCHEMA_DEFAULT = {"musicevent": ("music", "concert")}
+
+
+def from_schema(type_):
+    """A specific schema.org event subtype -> (cat, sub, source), or None.
+
+    Generic types get nothing back. Ask `from_schema_default` for those, and
+    only once the more specific signals have been tried.
+    """
+    t = (type_ or "").strip().lower()
+    hit = SCHEMA_EVENT.get(t)
+    if hit and valid(hit[0], hit[1]):
+        return hit[0], hit[1], f"schema:{t}"
+    return None, None, None
+
+
+def from_schema_default(type_):
+    """A generic schema.org event type -> (cat, sub, source), or None."""
+    t = (type_ or "").strip().lower()
+    hit = SCHEMA_DEFAULT.get(t)
+    if hit and valid(hit[0], hit[1]):
+        return hit[0], hit[1], f"schema-default:{t}"
+    return None, None, None
+
+
 def from_title(title):
     """Fallback only. Returns (cat, sub, source)."""
     t = (title or "").lower()

@@ -13,6 +13,7 @@ zero network. Never trust the source to still be there tomorrow.
 import argparse
 import json
 import os
+import re
 import sys
 import urllib.parse
 from datetime import datetime, timedelta, timezone
@@ -618,9 +619,209 @@ def _ics_rows(v, horizon_days):
     return out
 
 
+LD_JSON = re.compile(
+    r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</script>', re.I | re.S)
+
+# Measured, not guessed: the event block sits ~180 KB into a ~350-395 KB page,
+# so anything under ~250 KB truncates it away and the event vanishes with no
+# error to notice. The headroom is the point.
+DICE_BYTES = 500_000
+
+
+def _one(v):
+    """schema.org properties are single-or-many; this takes the one.
+
+    `location`, `organizer` and `geo` are all documented as accepting either an
+    object or an array, and DICE uses both -- a co-promoted show carries two
+    organizers. Assuming the object shape works on a sample and then dies on
+    whichever event happens to be co-promoted, which is exactly how a 1,539-page
+    run turns into one AttributeError and no output at all.
+    """
+    if isinstance(v, dict):
+        return v
+    if isinstance(v, list):
+        return next((x for x in v if isinstance(x, dict)), {})
+    return {}
+
+
+def _dice_event(body):
+    """The schema.org Event block from a DICE event page, or None.
+
+    A page carries four ld+json blocks -- Brand, WebSite, and the event -- so
+    this selects on @type rather than taking the first. Anything ending in
+    "Event" counts: DICE emits MusicEvent for most listings and plain Event for
+    the rest, and a comedy or theatre night should not be dropped for being
+    marked up more precisely.
+    """
+    for block in LD_JSON.findall(body):
+        try:
+            d = json.loads(block)
+        except ValueError:
+            continue
+        if isinstance(d, dict) and _event_type(d):
+            return d
+    return None
+
+
+def _event_type(ev):
+    """The event subtype as a plain string, or None.
+
+    `@type` may be a list, and the classifier downstream wants one word it can
+    look up. Taking the most specific -- anything but bare `Event` -- keeps
+    `["ComedyEvent", "Event"]` classifying as comedy rather than as nothing.
+    """
+    t = ev.get("@type")
+    types = [x for x in (t if isinstance(t, list) else [t])
+             if isinstance(x, str) and x.endswith("Event")]
+    if not types:
+        return None
+    return next((x for x in types if x != "Event"), types[0])
+
+
+def _dice_row(ev, entry, url, floor, cutoff):
+    """One schema.org event -> a raw row, or None if it is outside the horizon.
+
+    The horizon is applied here rather than in normalize so that it tests the
+    same field the cache is keyed on. The sitemap carries past events too;
+    their pages are fetched once and then served from cache forever.
+    """
+    start = ev.get("startDate")
+    try:
+        when = datetime.fromisoformat(str(start))
+    except (TypeError, ValueError):
+        return None
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=timezone.utc)
+    if not (floor <= when <= cutoff):
+        return None
+
+    loc = _one(ev.get("location"))
+    geo = _one(loc.get("geo"))
+    addr = loc.get("address")
+    return {
+        "url": ev.get("url") or url,
+        "city_slug": entry.get("city_slug"),
+        "name": ev.get("name"),
+        "type": _event_type(ev),
+        "startDate": start,
+        "endDate": ev.get("endDate"),
+        "eventStatus": ev.get("eventStatus"),
+        "description": ev.get("description"),
+        "venue_name": loc.get("name"),
+        # A PostalAddress object where most events carry a plain string. Kept
+        # for the record either way; placement uses the coordinates.
+        "venue_address": addr if isinstance(addr, str) else _one(addr) or None,
+        "lat": geo.get("latitude"),
+        "lon": geo.get("longitude"),
+        "organizer": _one(ev.get("organizer")).get("name"),
+    }
+
+
+def fetch_dice(src, horizon_days=60):
+    """DICE events, read from the markup each page publishes for indexing.
+
+    Discovery lives in `dice.py`; this reads its registry. Unlike the other
+    registries here that one is cheap and short-lived, so it is meant to be
+    re-run alongside this rather than once a season -- an event that has left
+    the sitemap has passed or been cancelled.
+
+    The cache is what makes this affordable. Every sitemap entry carries a
+    `lastmod`, so an event whose timestamp has not moved since the last run is
+    served from `data/<city>/dice-cache.json` without a request. A first run
+    costs ~1,500 requests; a second costs however many events actually changed,
+    which is usually a few dozen. Re-reading 1,500 unchanged pages a day
+    because it was easier to write is the kind of thing the politeness in
+    lib/http exists to prevent.
+
+    Entries with no lastmod are re-read every run. That is the honest reading:
+    absent is not unchanged, and there are few enough of them to be cheap.
+
+    One venue's failure is not the run's, same as Squarespace -- but here a
+    rising failure count means DICE has changed its markup, so it is reported
+    rather than swallowed.
+    """
+    city = src.get("_city", "nyc")
+    path = os.path.join(city_dir(city), "dice.json")
+    try:
+        with open(path) as f:
+            registry = json.load(f)
+    except FileNotFoundError:
+        raise RuntimeError(f"no {path} -- run `python3 dice.py` first")
+
+    cache_path = os.path.join(ROOT, "data", city, "dice-cache.json")
+    try:
+        with open(cache_path) as f:
+            cache = json.load(f)
+    except Exception:
+        cache = {}
+
+    horizon = min(horizon_days, src.get("horizon_days", 60))
+    cutoff = datetime.now(timezone.utc) + timedelta(days=horizon)
+    floor = datetime.now(timezone.utc) - timedelta(days=1)
+
+    events = registry.get("events") or []
+    print(f"    {len(events)} events in the registry, horizon {horizon}d")
+
+    rows, failed, malformed, hits, fetched = [], 0, 0, 0, 0
+    fresh = {}
+    for e in events:
+        url, mod = e["url"], e.get("lastmod")
+        hit = cache.get(url)
+        if hit and mod and hit.get("lastmod") == mod:
+            ev = hit.get("event")
+            hits += 1
+        else:
+            fetched += 1
+            try:
+                r = http.get_full(url, delay=1.0, accept=http.HTML_ACCEPT,
+                                  max_bytes=DICE_BYTES)
+                if r["status"] != 200 or not r["body"]:
+                    failed += 1
+                    continue
+                ev = _dice_event(r["body"].decode("utf-8", "replace"))
+            except Exception:
+                failed += 1
+                continue
+            if not ev:
+                failed += 1
+                continue
+        if not ev:
+            continue
+        fresh[url] = {"lastmod": mod, "event": ev}
+
+        # Wrapped because one event must never cost the run. The first version
+        # of this was not, and a single listing with two organizers -- `.get` on
+        # a list -- took down all 1,539 and wrote no output at all. Schema.org
+        # is a vocabulary, not a schema: any property can arrive in a shape the
+        # last thousand did not use.
+        try:
+            row = _dice_row(ev, e, url, floor, cutoff)
+        except Exception:
+            malformed += 1
+            continue
+        if row:
+            rows.append(row)
+
+    # `fresh` is built up rather than written back over `cache`, so an event
+    # that has left the registry is evicted by simply not being copied across.
+    # A cache that only ever grows would keep cancelled events alive forever.
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_path, "w") as f:
+        json.dump(fresh, f, indent=0, sort_keys=True)
+
+    print(f"    {hits} from cache, {fetched} fetched, {failed} unreadable"
+          + (f", {malformed} malformed" if malformed else ""))
+    if fetched and failed > fetched * 0.2:
+        print(f"    WARNING: {100.0 * failed / fetched:.0f}% of fetches yielded no "
+              f"event block -- check whether the page markup has changed")
+    print(f"    {len(rows)} events inside the horizon")
+    return rows
+
+
 ADAPTERS = {"socrata": fetch_socrata, "squarespace": fetch_squarespace,
             "ticketmaster": fetch_ticketmaster, "luma": fetch_luma,
-            "drupal": fetch_drupal, "wordpress": fetch_wordpress}
+            "drupal": fetch_drupal, "wordpress": fetch_wordpress,
+            "dice": fetch_dice}
 
 
 def fetch_neighborhoods(city):

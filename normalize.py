@@ -630,6 +630,83 @@ class Builder:
                      source_id=src_id, url=url,
                      description=r.get("description"))
 
+    def dice(self, src_id, rows):
+        """DICE -- independent music and nightlife, read from schema.org markup.
+
+        The venue tier that sells through neither Ticketmaster nor its own site:
+        Elsewhere, Union Pool, Saint Vitus, House of Yes, Public Records. Every
+        event arrives with a street address AND coordinates, which makes this
+        the best-placed source in the pipeline after Squarespace.
+
+        Geography is settled the Ticketmaster way. The city filter in `dice.py`
+        is a string match on a URL slug and is allowed to be generous; the
+        coordinates in each event's own markup are the arbiter, and anything
+        landing outside a real neighbourhood polygon is dropped. A slug is a
+        label someone typed, a coordinate is a claim about the world.
+
+        CLASSIFICATION ORDER IS THE INTERESTING PART, and it is not the obvious
+        one. DICE marks specific things specifically -- ScreeningEvent,
+        ComedyEvent -- and those beat the title, because a screening called
+        "THE HUMAN OPERA" is not classical music and the title alone says it is.
+        But its default is MusicEvent, covering 22 of 25 sampled listings, so
+        that has to LOSE to the title or a trivia night at a music venue becomes
+        a concert. Specific type, then title, then the generic type, then the
+        building. Each step is a claim of decreasing confidence.
+
+        Price is null. DICE states one on the page but not in the markup, and
+        the markup is the part it publishes to be read. Reading the price out of
+        the surrounding HTML would be scraping the page rather than using what
+        the page offers, which is a different bargain from the one taken here.
+        """
+        for r in rows:
+            title = clean(r.get("name"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=r.get("url"))
+                continue
+
+            status = str(r.get("eventStatus") or "").rsplit("/", 1)[-1].lower()
+            if status in ("eventcancelled", "eventpostponed"):
+                self.reject(src_id, title, f"status: {status}", url=r.get("url"))
+                continue
+
+            start = to_local_naive(r.get("startDate"), self.tz)
+            end = to_local_naive(r.get("endDate"), self.tz)
+            if not start:
+                self.reject(src_id, title, "unparseable start time", url=r.get("url"))
+                continue
+
+            try:
+                lat = float(r["lat"])
+                lon = float(r["lon"])
+            except (KeyError, TypeError, ValueError):
+                self.reject(src_id, title, "no coordinates, cannot place",
+                            url=r.get("url"))
+                continue
+
+            v = self.venue(clean(r.get("venue_name")) or "DICE", lat, lon,
+                           kind="venue")
+            if not v or not v.get("neighborhood"):
+                self.reject(src_id, title, "outside nyc", url=r.get("url"))
+                continue
+
+            cat, sub, csrc = taxonomy.from_schema(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                cat, sub, csrc = taxonomy.from_schema_default(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_venue(v["name"])
+            if not cat:
+                self.reject(src_id, title, "unclassified dice event",
+                            url=r.get("url"))
+                continue
+
+            self.add(title=title, start=start, end=end, venue=v,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=r.get("url"),
+                     description=r.get("description"))
+
     def bpl(self, src_id, rows):
         """Brooklyn Public Library -- every branch, one open Drupal JSON:API.
 
@@ -803,6 +880,7 @@ class Builder:
                     "nyc-squarespace": self.squarespace,
                     "nyc-ticketmaster": self.ticketmaster,
                     "nyc-luma": self.luma,
+                    "nyc-dice": self.dice,
                     "nyc-bpl": self.bpl,
                     "nyc-wordpress": self.wordpress}
         used = []
