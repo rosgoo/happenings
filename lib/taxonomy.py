@@ -422,6 +422,51 @@ def from_ticketmaster(classifications):
     return None, None, None
 
 
+# schema.org event subtypes -> our vocabulary. A page that marks itself up as a
+# ScreeningEvent has stated what it is, and that outranks reading the title.
+#
+# MusicEvent is separated out because it is the weak signal -- a music
+# ticketer's default rather than a statement -- and callers may want to rank it
+# differently from the specific types. On DICE it covers 91% of listings.
+SCHEMA_EVENT = {
+    "screeningevent": ("art", "film-screening"),
+    "exhibitionevent": ("art", "exhibition"),
+    "comedyevent": ("performance", "comedy"),
+    "theaterevent": ("performance", "theatre"),
+    "danceevent": ("performance", "dance"),
+    "sportsevent": ("sports", "sports-general"),
+    "educationevent": ("learning", "talk"),
+    "literaryevent": ("learning", "talk"),
+    "foodevent": ("food-drink", "tasting"),
+}
+
+# The weak type, worth something only where the SOURCE is specific. On a music
+# ticketer the base rate really is music; on a general listings feed this would
+# be worthless and callers should not reach for it.
+SCHEMA_DEFAULT = {"musicevent": ("music", "concert")}
+
+
+def from_schema(type_):
+    """A specific schema.org event subtype -> (cat, sub, source), or None.
+
+    Generic types get nothing back; ask `from_schema_default` for those.
+    """
+    t = (type_ or "").strip().lower()
+    hit = SCHEMA_EVENT.get(t)
+    if hit and valid(hit[0], hit[1]):
+        return hit[0], hit[1], f"schema:{t}"
+    return None, None, None
+
+
+def from_schema_default(type_):
+    """A generic schema.org event type -> (cat, sub, source), or None."""
+    t = (type_ or "").strip().lower()
+    hit = SCHEMA_DEFAULT.get(t)
+    if hit and valid(hit[0], hit[1]):
+        return hit[0], hit[1], f"schema-default:{t}"
+    return None, None, None
+
+
 def from_title(title):
     """Fallback only. Returns (cat, sub, source)."""
     t = (title or "").lower()

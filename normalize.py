@@ -630,6 +630,99 @@ class Builder:
                      source_id=src_id, url=url,
                      description=r.get("description"))
 
+    def dice(self, src_id, rows):
+        """DICE -- independent music and nightlife, read from schema.org markup.
+
+        The venue tier that sells through neither Ticketmaster nor its own site:
+        Elsewhere, Union Pool, Saint Vitus, House of Yes, Public Records. Every
+        event arrives with a street address AND coordinates, which makes this
+        the best-placed source in the pipeline after Squarespace.
+
+        Geography is settled the Ticketmaster way. The city filter in `dice.py`
+        is a string match on a URL slug and is allowed to be generous; the
+        coordinates in each event's own markup are the arbiter, and anything
+        landing outside a real neighbourhood polygon is dropped. A slug is a
+        label someone typed, a coordinate is a claim about the world.
+
+        CLASSIFICATION ORDER IS THE INTERESTING PART, and it was got wrong
+        first. The markup is trusted ahead of the title, both for the specific
+        types and for MusicEvent, and the reason is measured rather than
+        assumed.
+
+        The specific types are easy: a `ScreeningEvent` called "THE HUMAN
+        OPERA" is not classical music, and only the markup knows that.
+
+        `MusicEvent` looked like the opposite case -- a platform default
+        covering 91% of listings, which ought to lose to a title that says
+        something concrete. It does not. Ranked below the title it fires 93
+        overrides across a 1,282-event run, and about two thirds of them are
+        wrong, because `from_title` is a SUBSTRING matcher built as a last
+        resort for sources with no other signal: "Alan Walker" and
+        "Pinkshift: Anniversary Tour" become walking tours, "Boris Classics"
+        becomes a class, "THE BLACK PARADE: EMO RAVE" becomes a parade.
+        Against that, the cost of trusting MusicEvent is that a trivia night
+        at a music venue reads as a concert -- mildly wrong, and rarer.
+
+        So: markup, then title, then the building. The same shape as
+        `ticketmaster`, which also trusts the source's own classification
+        first. Genuinely non-musical listings mostly arrive typed plain
+        `Event` -- video game clubs, clothing swaps, sound baths -- and those
+        still reach the title, which is where that decision belongs.
+
+        Price is null. DICE states one on the page but not in the markup, and
+        the markup is the part it publishes to be read. Reading the price out of
+        the surrounding HTML would be scraping the page rather than using what
+        the page offers, which is a different bargain from the one taken here.
+        """
+        for r in rows:
+            title = clean(r.get("name"))
+            bad = taxonomy.rejected_title(title)
+            if bad:
+                self.reject(src_id, title, bad, url=r.get("url"))
+                continue
+
+            status = str(r.get("eventStatus") or "").rsplit("/", 1)[-1].lower()
+            if status in ("eventcancelled", "eventpostponed"):
+                self.reject(src_id, title, f"status: {status}", url=r.get("url"))
+                continue
+
+            start = to_local_naive(r.get("startDate"), self.tz)
+            end = to_local_naive(r.get("endDate"), self.tz)
+            if not start:
+                self.reject(src_id, title, "unparseable start time", url=r.get("url"))
+                continue
+
+            try:
+                lat = float(r["lat"])
+                lon = float(r["lon"])
+            except (KeyError, TypeError, ValueError):
+                self.reject(src_id, title, "no coordinates, cannot place",
+                            url=r.get("url"))
+                continue
+
+            v = self.venue(clean(r.get("venue_name")) or "DICE", lat, lon,
+                           kind="venue")
+            if not v or not v.get("neighborhood"):
+                self.reject(src_id, title, "outside nyc", url=r.get("url"))
+                continue
+
+            cat, sub, csrc = taxonomy.from_schema(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_schema_default(r.get("type"))
+            if not cat:
+                cat, sub, csrc = taxonomy.from_title(title)
+            if not cat:
+                cat, sub, csrc = taxonomy.from_venue(v["name"])
+            if not cat:
+                self.reject(src_id, title, "unclassified dice event",
+                            url=r.get("url"))
+                continue
+
+            self.add(title=title, start=start, end=end, venue=v,
+                     category=cat, subcategory=sub, cat_source=csrc,
+                     source_id=src_id, url=r.get("url"),
+                     description=r.get("description"))
+
     def bpl(self, src_id, rows):
         """Brooklyn Public Library -- every branch, one open Drupal JSON:API.
 
@@ -824,6 +917,7 @@ class Builder:
                     "nyc-squarespace": self.squarespace,
                     "nyc-ticketmaster": self.ticketmaster,
                     "nyc-luma": self.luma,
+                    "nyc-dice": self.dice,
                     "nyc-bpl": self.bpl,
                     "nyc-wordpress": self.wordpress}
         used = []

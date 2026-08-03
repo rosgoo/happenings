@@ -92,6 +92,37 @@
       ]
     },
     {
+      "id": "nyc-dice",
+      "tier": 0,
+      "adapter": "dice",
+      "enabled": true,
+      "label": "DICE",
+      "attribution": "DICE",
+      "min_expected": 400,
+      "horizon_days": 60,
+      "registry": "dice.json",
+      "city_slugs": ["new-york-city", "new-york", "brooklyn"],
+      "_comment": [
+        "Independent music and nightlife -- the venue tier that sells through",
+        "neither Ticketmaster nor a Squarespace calendar, and which the index",
+        "was missing entirely. DICE publishes sitemaps, marks every event page",
+        "up as schema.org, and its robots.txt says `Allow: /`. This reads the",
+        "surfaces a site provides in order to be indexed.",
+        "Its content signal is `search=yes,ai-train=no,use=reference`, so the",
+        "adapter keeps a short listing and links back to DICE rather than",
+        "mirroring the page -- that is why normalize.py cuts the description",
+        "to a single line, and not merely for tidiness.",
+        "city_slugs are the `-<city>-tickets` slug suffixes that mean this",
+        "city. new-york and brooklyn are separate because DICE labels them",
+        "separately; bare `york` is deliberately absent, because 53 of those",
+        "are a venue in York, England. The suffix is only a prefilter -- each",
+        "event's own coordinates decide whether it is really in the city.",
+        "horizon_days is 60 rather than Ticketmaster's 30. The sitemap is",
+        "fetched whole either way, and lastmod means a wider window costs",
+        "almost nothing on a second run."
+      ]
+    },
+    {
       "id": "nyc-bpl",
       "tier": 2,
       "adapter": "drupal",

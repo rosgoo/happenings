@@ -22,6 +22,7 @@ aren't in it yet — see *What's next*.
 ```bash
 python3 fetch.py --neighborhoods   # one-off: NTA polygons (changes on the decade)
 python3 fetch.py --parks           # one-off: park polygons (parks don't move)
+python3 dice.py                    # discover  -> cities/nyc/dice.json (before every fetch)
 python3 fetch.py                   # extract   -> raw/nyc/
 python3 geocode.py                 # place it  -> data/nyc/geocode-cache.json
 python3 normalize.py               # transform -> data/nyc/
@@ -34,6 +35,13 @@ npm run dev                        # http://localhost:4321/nyc
 
 `npm run pipeline` runs the three Python stages in order. They are stdlib-only
 and deliberately stay that way — the crawl has to run anywhere.
+
+The **discovery** scripts — `squarespace.py`, `luma.py`, `dice.py` — write
+committed registries that `fetch.py` then reads, so finding a source is
+separated from reading it. Only `dice.py` belongs in the regular run: a
+Squarespace slug changes when a site is redesigned and a Luma roster only
+grows, but DICE events are born and die daily, so its registry is rebuilt each
+time rather than merged. It costs four requests.
 
 ## Shape
 
@@ -95,6 +103,7 @@ enabled source that goes quiet fails the build.
 | 2 | `socrata` | NYC Parks Public Events (`w3wp-dpdi`) | **yes** |
 | 2 | `socrata` | NYC Permitted Events (`tvpp-9vvx`) | **yes** |
 | 0 | `ticketmaster`, `seatgeek` | ticketing APIs — free keys, aligned incentives | no |
+| 0 | `dice` | DICE — sitemap + schema.org, independent music and nightlife | **yes** |
 | 1 | `ics`, `jsonld`, `localist`, `custom` | institutions and arts venues | no |
 | — | ~~`predicthq`~~ | great coverage, but its licence restricts public display | no |
 
@@ -103,6 +112,12 @@ absent rather than silently returning nothing.
 
 Eventbrite is skipped: `robots.txt` permits event pages, but they closed public
 search deliberately in 2020 and the ToS needs a real read first.
+
+The rest of the consumer ticketing layer is audited in
+[`docs/ticketing-platforms.md`](docs/ticketing-platforms.md) — which of them can
+be enumerated, and which of them permit it. Resident Advisor and Partiful are
+written down there as **refused rather than unexamined**: both are technically
+readable, and both forbid it.
 
 ## Placing things on a map
 
@@ -194,6 +209,11 @@ shape for a public index.
   solving, no proxy rotation.
 - `robots.txt` honoured, requests paced and self-identifying, `Retry-After`
   respected.
+- **Content signals honoured too.** DICE publishes
+  `search=yes,ai-train=no,use=reference`; happenings indexes and links back, and
+  the description is cut to one line so a listing stays a reference rather than
+  a mirror. A site that answers a question it was never asked is still entitled
+  to say what the answer may be used for.
 - Facts only — title, time, place, category. Every listing links back to its
   source. happenings is a router, not a destination.
 - Nothing is estimated. Missing shows as missing, and `/nyc/about` publishes the
