@@ -9,6 +9,11 @@
    It injects its own markup so both entry points get the same panel without a
    shared component, and it reuses #scrim when the page already has one. */
 
+// Opening the panel is counted here rather than at the two click handlers that
+// call it, so the keyboard path and the places page are covered by the same
+// line as the listings.
+import { trackEvent, trackPlace } from './analytics.js';
+
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -78,6 +83,15 @@ function ensure() {
     scrim.id = 'scrim';
     document.body.appendChild(scrim);
   }
+  // Hotlinked artwork rots, and in here a broken image is a grey box directly
+  // above the title rather than a small gap in a grid. Capture phase because
+  // `error` does not bubble, and registered on the panel once because the body
+  // is replaced on every open.
+  panel.addEventListener('error', (ev) => {
+    const t = ev.target;
+    if (t && t.tagName === 'IMG' && t.classList.contains('dimg')) t.remove();
+  }, true);
+
   panel.querySelector('#detailclose').addEventListener('click', close);
   scrim.addEventListener('click', close);
   document.addEventListener('keydown', (ev) => {
@@ -93,10 +107,14 @@ export function close() {
   document.body.classList.remove('drawer-open');
 }
 
-function open(kindLabel, html) {
+function open(kindLabel, html, subject) {
   ensure();
   panel.querySelector('#detailkind').textContent = kindLabel;
   panel.querySelector('#detailbody').innerHTML = html;
+  // What the panel is currently about, for the outbound listener in
+  // analytics.js -- the links in here are labelled by function rather than by
+  // subject, so their text cannot say which event was being read.
+  panel.dataset.label = subject || '';
   panel.classList.add('on');
   panel.setAttribute('aria-hidden', 'false');
   scrim.classList.add('on');
@@ -126,6 +144,7 @@ export function openEvent(e) {
   ].filter(Boolean).join(' ');
 
   open('Event', `
+    ${e.im ? `<img class="dimg" src="${esc(e.im)}" alt="" decoding="async" />` : ''}
     <h3 class="dtitle">${esc(e.t)}</h3>
     <div class="dtags">
       <span class="tag" style="background:var(--c-${e.c});color:${['performance', 'learning'].includes(e.c) ? 'var(--paper)' : 'var(--ink)'}">${esc(CATS[e.c] || e.c)}</span>
@@ -140,7 +159,8 @@ export function openEvent(e) {
     ${row('Listed by', srcUrl ? `<a href="${srcUrl}" rel="noopener">${esc(srcName)}</a>` : esc(srcName))}
     ${e.u ? '' : '<p class="dnote">This source doesn’t publish a link for the individual event.</p>'}
     <div class="dlinks">${links}</div>
-  `);
+  `, e.t);
+  trackEvent(e);
 }
 
 export function openPlace(p) {
@@ -167,5 +187,6 @@ export function openPlace(p) {
     ${p.cr ? row('Photo', `${p.cp ? `<a href="${esc(p.cp)}" rel="noopener">${esc(p.cr)}</a>` : esc(p.cr)} · Wikimedia Commons`) : ''}
     ${p.oh ? '<p class="dnote">Hours are as recorded in OpenStreetMap and are not checked against the venue.</p>' : ''}
     <div class="dlinks">${links}</div>
-  `);
+  `, p.t);
+  trackPlace(p);
 }

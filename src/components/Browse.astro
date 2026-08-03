@@ -17,11 +17,17 @@ const BANDS = [
 // linearly; nobody browsing NYC wants "everywhere" -- they want Brooklyn, and
 // then a place in it. Boroughs are collapsed by default so the rail stays
 // short, and the count on each summary is what makes them worth opening.
+// Alphabetical WITHIN a borough, not by event count. `neighborhoods()` sorts by
+// count because the front page wants the busiest few, but this is a find-it
+// list: you already know you want Greenpoint, and hunting for it in popularity
+// order means reading all sixty. The count stays on each row, so the busy ones
+// are still visible -- it is only the ordering that stops being a ranking.
+const byName = (a, b) => a.name.localeCompare(b.name);
 const BOROUGH_ORDER = ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island'];
 const byBorough = BOROUGH_ORDER
-  .map((b) => ({ borough: b, list: hoods.filter((h) => h.borough === b) }))
+  .map((b) => ({ borough: b, list: hoods.filter((h) => h.borough === b).sort(byName) }))
   .filter((g) => g.list.length);
-const otherHoods = hoods.filter((h) => !BOROUGH_ORDER.includes(h.borough));
+const otherHoods = hoods.filter((h) => !BOROUGH_ORDER.includes(h.borough)).sort(byName);
 if (otherHoods.length) byBorough.push({ borough: 'Elsewhere', list: otherHoods });
 ---
 <div id="browse" class="browse" data-src="/nyc/events.json"
