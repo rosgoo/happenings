@@ -67,6 +67,12 @@ const generated = new Date(meta.generated_at).toLocaleString('en-US', {
       </div>
       <div>
         <a href="/nyc/about">About happenings →</a>
+        <!-- On every page rather than only the about page: the venue that
+             wants a listing corrected has landed on its own venue page, and
+             asking it to go hunting for the way to say so is how a takedown
+             request becomes a complaint somewhere else instead. -->
+        <span style="color:var(--ink-2)"> · </span>
+        <a href="mailto:hello@happenings.town">Something wrong? hello@happenings.town</a>
       </div>
     </div>
   </footer>

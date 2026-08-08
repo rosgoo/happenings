@@ -42,6 +42,23 @@ descriptive contact User-Agent Wikimedia's API policy asks for.
 An image whose author cannot be established is dropped rather than shown
 uncredited.
 
+ON PHOTO LICENCES, and why they are opt-in too:
+
+Crediting an author is most of attribution but not all of it: CC asks for the
+licence to be named alongside them. The licence lives in `extmetadata`, and
+`extmetadata` is served by exactly one endpoint -- commons.wikimedia.org's
+action API, whose robots.txt is the same document as wikidata.org's, down to
+the `Disallow: /w/`. api.wikimedia.org publishes neither the licence nor the
+author: its `latest.user` is whoever uploaded the most recent revision, which
+is why the credit on the default path can name a bot that reuploaded a crop
+rather than the photographer who took the picture.
+
+So the same trade appears twice, and gets the same answer both times.
+`--commons-licences` is the repo owner deciding explicitly; without it the
+licence reads "see Commons file page" and the file page, which every photo
+links to, states it. The flag is what makes the credit line complete and the
+author right.
+
 Images are referenced at source and never rehosted -- the same rule as
 everything else here, and simultaneously the correct rights position and the
 cheapest bandwidth policy.
@@ -504,6 +521,23 @@ def commons_file(filename):
             "credit": author, "page": d.get("file_description_url")}
 
 
+def commons_filename(page_url):
+    """The Commons filename back out of a file description URL.
+
+    Underscores become spaces, because that is the form MediaWiki echoes in
+    `title` and therefore the key commons_credits() returns. A URL says
+    File:Bed_Stuy.jpg and the API answers File:Bed Stuy.jpg; look the first up
+    against the second and every single lookup misses, silently, leaving the
+    licences unnamed for a reason that looks like a network failure.
+    """
+    if not page_url:
+        return None
+    m = re.search(r"/wiki/File:(.+)$", page_url)
+    if not m:
+        return None
+    return urllib.parse.unquote(m.group(1)).replace("_", " ")
+
+
 def wikidata_images(qids):
     """Batch P18 lookups. 50 ids per call is the API's documented limit."""
     out = {}
@@ -582,6 +616,11 @@ def main():
                     help="also resolve photos via Wikidata P18. See the module "
                          "docstring: wikidata.org/robots.txt disallows /w/, so "
                          "this is a deliberate choice, not a default.")
+    ap.add_argument("--commons-licences", action="store_true",
+                    help="name each photo's licence and its real author, via "
+                         "the Commons action API. Same robots trade as "
+                         "--wikidata-images and off for the same reason; see "
+                         "ON PHOTO LICENCES in the module docstring.")
     args = ap.parse_args()
 
     cdir = os.path.join(ROOT, "cities", args.city)
@@ -890,6 +929,38 @@ def main():
             p["image_license"] = cr["license"]
             p["image_source"] = "wikidata:P18/commons"
             stats["with-image"] += 1
+
+    # Name the licence, and replace the last-uploader stand-in with the actual
+    # author. Both paths above set the credit from the REST endpoint's
+    # `latest.user`, which is whoever uploaded the most recent revision -- often
+    # the photographer, but just as often a bot or someone who uploaded a crop.
+    # `Artist` is the field that means author, and neither it nor the licence
+    # name is exposed anywhere on api.wikimedia.org, so this is the only way to
+    # get either. Opt-in for the same reason --wikidata-images is.
+    if args.commons_licences and not args.no_images:
+        want = {}
+        for p in places:
+            fn = commons_filename(p.get("image_page"))
+            if fn and not (p.get("image_license") or "").startswith("see "):
+                continue
+            if fn:
+                want.setdefault(fn, []).append(p)
+        print(f"  {len(want)} photographs need a licence named")
+        credits = commons_credits(sorted(want))
+        named = 0
+        for fn, ps in want.items():
+            cr = credits.get(fn)
+            if not cr:
+                continue
+            for p in ps:
+                p["image_license"] = cr["license"]
+                # Only when Commons actually states one. An empty Artist field
+                # is not a reason to discard the uploader we already have.
+                if cr.get("credit"):
+                    p["image_credit"] = cr["credit"]
+                named += 1
+        print(f"  named the licence on {named} of {sum(len(v) for v in want.values())}")
+        stats["image-licence-unnamed"] += sum(len(v) for v in want.values()) - named
 
     if not args.no_images:
         verify_images(places, delay=args.verify_delay)

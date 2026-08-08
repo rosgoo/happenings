@@ -125,11 +125,20 @@ const ordered = [...places.filter((p) => p.image_url),
             )}
           </div>
         </div>
+        {/* Author, source and licence -- the three things CC asks be kept
+            with a photograph. The licence is only named once places.py has
+            been run with --commons-licences; without it the field holds the
+            "see Commons file page" stand-in, which is a sentence rather than a
+            licence and so is rendered as the link it is telling you to follow. */}
         {p.image_credit && (
           <div class="cred">
             Photo: {p.image_page
               ? <a href={p.image_page} rel="noopener">{p.image_credit}</a>
-              : p.image_credit} · Wikimedia Commons
+              : p.image_credit} · Wikimedia Commons{p.image_license && (
+              <> · {p.image_license.startsWith('see ')
+                ? <a href={p.image_page} rel="noopener">licence</a>
+                : p.image_license}</>
+            )}
           </div>
         )}
       </div>
