@@ -45,7 +45,49 @@
 },
 "fetched_at": "2026-08-03T04:02:09.870329+00:00"
 },
-"https://grove34.com/shows/improv-night-aug02": {
+"https://grove34.com/shows/brown-noise": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Brown Noise Comedy is a touring comedy show featuring the best brown comedians in America. We bring together desi, South Asian, Arab, and Persian comics for nights of comedy that feel like home. ",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/69da815bf896587b44e3723b_Brown%20noise%20square%20(1).png",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Brown Noise",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-09T01:30:00.000Z"
+},
+"fetched_at": "2026-08-08T15:13:14.658624+00:00"
+},
+"https://grove34.com/shows/improv-night-aug09": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
@@ -83,51 +125,9 @@
 ],
 "url": "https://www.grove34.com"
 },
-"startDate": "2026-08-02T23:00:00.000Z"
+"startDate": "2026-08-09T23:00:00.000Z"
 },
-"fetched_at": "2026-08-03T04:02:10.872308+00:00"
-},
-"https://grove34.com/shows/monday-improv-jam-aug03": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "An improv jam is an open, low-pressure playground where performers of all experience levels jump on stage, get mixed into teams, and create scenes on the spot. Whether it\u2019s your first time or your hundredth show, you\u2019ll get a chance to play, experiment, and connect with other improvisers in a supportive, fun environment. ",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2cbfaa810063a43359948c_Improv%20Jam%20Web%20Poster%20V1A.jpg",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "Monday Improv Jam",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-04T01:00:00.000Z"
-},
-"fetched_at": "2026-08-03T04:02:12.876011+00:00"
+"fetched_at": "2026-08-08T15:13:16.250691+00:00"
 },
 "https://grove34.com/shows/raanan-hershberg2": {
 "event": {
@@ -171,14 +171,14 @@
 },
 "fetched_at": "2026-08-03T04:02:07.866424+00:00"
 },
-"https://grove34.com/shows/the-great-improv-experiment-aug03": {
+"https://grove34.com/shows/sounds-funny-aug08": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
-"description": "Your headliners are the multi-dimensional talents of HELL YEAH! - A Musical Improv Group as they forge deep into unknown territories of genres both theatricomedic and musicool. With two additional supporting acts. Follow @improvnight and @grove34nyc for more show details!",
+"description": "Sounds Funny Presents a lineup of New York City&#39;s best comedians including performers from Comedy Central, Just for Laughs, Late Night, and more. Hosted by Ankara Martinez &amp; Raul Maghiar. Follow @soundsfunny and @grove34nyc for lineup announcements. ",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2d91764b1c2550e503028b_Clown%20Lab%20-%20Hell%20Yeah.png",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a25b1dff9cbac0dbf0395f0_Raul%20Ankara%20V1.jpg",
 "inLanguage": "en-US",
 "location": {
 "@type": "Place",
@@ -192,7 +192,7 @@
 },
 "name": "Grove34"
 },
-"name": "The Great Improv Experiment",
+"name": "Sounds Funny Presents: Stand-Up Showcase",
 "offers": {
 "@type": "Offer",
 "availability": "https://schema.org/InStock",
@@ -209,54 +209,9 @@
 ],
 "url": "https://www.grove34.com"
 },
-"startDate": "2026-08-03T23:00:00.000Z"
+"startDate": "2026-08-08T23:30:00.000Z"
 },
-"fetched_at": "2026-08-03T04:02:11.894908+00:00"
-},
-"https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "<div class=\"entry-summary\">\nThe North Neighborhood tour of the Museum\u2019s three thematic walking tours of Battery Park City, on Thursday, July 17 at 4pm, will cover the north residential neighborhood, which was developed in several phases, beginning with Stuyvesant High School at the northeast edge and the esplanade and Rockefeller Park along...",
-"endDate": "2026-08-06T17:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://skyscraper.org/wordpress/wp-content/uploads/2022/03/BPCWT03-1-scaled.jpg"
-],
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10280",
-"streetAddress": "39 Battery Place"
-},
-"name": "The Skyscraper Museum"
-},
-"name": "Battery Park City Tour: The North Neighborhood",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"price": "0",
-"priceCurrency": "USD",
-"url": "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026/",
-"validFrom": "July 21, 2026"
-},
-"organizer": {
-"@type": "Organization",
-"name": "The Skyscraper Museum",
-"url": "https://skyscraper.org"
-},
-"performer": {
-"@type": null,
-"name": null
-},
-"startDate": "2026-08-06T16:00:00-04:00"
-},
-"fetched_at": "2026-08-03T03:44:56.054559+00:00"
+"fetched_at": "2026-08-08T15:13:13.175878+00:00"
 },
 "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat": {
 "event": {
@@ -301,14 +256,14 @@
 },
 "startDate": "2026-08-14T16:00:00-04:00"
 },
-"fetched_at": "2026-08-03T03:44:59.767522+00:00"
+"fetched_at": "2026-08-08T15:13:07.446168+00:00"
 },
-"https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue-new": {
+"https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
 "description": "<div class=\"entry-summary\">\nThe Museum's director, Carol Willis, will offer a gallery tour of The Invention of Park Avenue, which examines how the creation of Grand Central and an avenue out of thin air, was the catalytic connection of rail and real estate that gave Park Avenue its extraordinary, evolving New York...",
-"endDate": "2026-08-12T17:00:00-04:00",
+"endDate": "2026-08-26T16:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
@@ -332,8 +287,8 @@
 "availability": "https://schema.org/InStock",
 "price": "0",
 "priceCurrency": "USD",
-"url": "https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue-new/",
-"validFrom": "July 25, 2026"
+"url": "https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue/",
+"validFrom": "February 17, 2026"
 },
 "organizer": {
 "@type": "Organization",
@@ -344,9 +299,9 @@
 "@type": "Person",
 "name": "Carol Willis"
 },
-"startDate": "2026-08-12T16:00:00-04:00"
+"startDate": "2026-08-26T15:00:00-04:00"
 },
-"fetched_at": "2026-08-03T03:44:57.875091+00:00"
+"fetched_at": "2026-08-08T15:13:10.524560+00:00"
 },
 "https://skyscraper.org/programs/the-world-trade-center-remembered": {
 "event": {
@@ -383,41 +338,7 @@
 },
 "startDate": "2026-08-25T18:00:00-04:00"
 },
-"fetched_at": "2026-08-03T03:45:02.280439+00:00"
-},
-"https://whitney.org/events/biennial-26-mapping": {
-"event": {
-"@context": "http://schema.org",
-"@id": "https://whitney.org/events/biennial-26-mapping",
-"@type": "Event",
-"description": "Wednesday, May 20, 6 pm\u00a0 Tuesday, July 14, 12 pm\u2014rescheduled from June 30 Monday, August 3, 6 pm What does &quot;American art&quot; mean today? This member talk with Senior Teaching Fellow Patryk Tomaszewski traces how the Whitney Biennial has answered this question since 1932, from early Annuals to this year&#39;s global roster of fifty-six artists and collectives working across painting, sculpture, sound, ceramics, and video games. Drawing from one of the themes in Whitney Biennial 2026, this talk will examine infrastructure\u2014the systems, networks, and material exchanges that shape everyday life\u2014through the lens of this year&#39;s artists. Explore how works presented in this survey bring ordinarily invisible structures to light, and expand the boundaries of American art. Patryk P. Tomaszewski is a Senior Teaching Fellow at the Whitney Museum of American Art. A historian of twentieth-century art and visual culture, he has written and presented on topics ranging from realisms in Eastern Europe and the United States to the transnational circulation of art between East and West during the Cold War. Patryk&#39;s writing has appeared in Curator: The Museum Journal, MoMA&#39;s post: Notes on Art in a Global Context, and ARTMargins Online, among other publications. He holds a Ph.D. from the CUNY Graduate Center and an M.A. from the Institute of Fine Arts, NYU, and is an adjunct instructor in art history at Fordham University.",
-"endDate": "2026-08-03T18:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833597/Image%201_Hyundai%20Terrace%20Commission%20Kelly%20Akashi%2C%202026_Photo%20Timothy%20Schenck.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "Mapping the 2026 Biennial: Structures and Networks in American Art\u00a0",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-03T18:00:00-04:00",
-"url": "https://whitney.org/events/biennial-26-mapping"
-},
-"fetched_at": "2026-08-03T04:02:33.577963+00:00"
+"fetched_at": "2026-08-08T15:13:08.929660+00:00"
 },
 "https://whitney.org/events/closer-look-untitled-america": {
 "event": {
@@ -452,6 +373,278 @@
 "url": "https://whitney.org/events/closer-look-untitled-america"
 },
 "fetched_at": "2026-08-03T04:02:29.595347+00:00"
+},
+"https://whitney.org/events/double-take-intergen-dialogue": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/double-take-intergen-dialogue",
+"@type": "Event",
+"description": "Slow down and discover how much there is to see when we take the time to look closely. Guided jointly by a teen Youth Insights Leader and a Museum docent, participants are encouraged to think through and discuss works together. Each session focuses on a single work or explores a connection between two works of art. This session will focus on Malcolm Peacock\u2019s\u00a0Whitney Biennial 2026 installation on the 5th floor.",
+"endDate": "2026-08-09T13:45:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833488/2026_BIENNIAL_030.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Double Take: Intergenerational Dialogue",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T13:00:00-04:00",
+"url": "https://whitney.org/events/double-take-intergen-dialogue"
+},
+"fetched_at": "2026-08-08T15:13:31.609253+00:00"
+},
+"https://whitney.org/events/drawing-what-matters-most": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/drawing-what-matters-most",
+"@type": "Event",
+"description": "Join Whitney Educators in the Museum&#39;s lobby to create a drawing inspired by Biennial artist Kelly Akashi&#39;s Monument (Altadena). Draw the people, places, objects, and ideas that matter most to you. Monument (Altadena) stands as a symbol of the widespread losses suffered in Altadena, California, during the wildfires of January 2025. After Kelly Akashi\u2019s home and studio burned down, the chimney was the only structure left standing. The artist worked with a mason to rebuild it piece by piece, alongside a reconstruction of her home\u2019s walkway, in luminous glass brick.\u00a0 Explaining her decision to create this work Akashi said, \u201cI&#39;ve just gotten very interested in the idea that if this recreation of my chimney is a kind of monument for what&#39;s happened, that it shouldn&#39;t be made of a singular mass material, that it should be reconstructed with the same labor that the original chimney was constructed in with brick laying. Because I really love this idea that not only is that labor going back into the reconstruction of the chimney, but that it&#39;s also a monument made of many parts, many bricks, and many pieces.\u201d",
+"endDate": "2026-08-09T16:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833850/SecondSundays-Dec2025_byFilipWolak_0844_1628.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "All Ages Artmaking: Drawing what matters most",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T12:00:00-04:00",
+"url": "https://whitney.org/events/drawing-what-matters-most"
+},
+"fetched_at": "2026-08-08T15:13:23.970022+00:00"
+},
+"https://whitney.org/events/end-of-days": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/end-of-days",
+"@type": "Event",
+"description": "March 19, 5 pm March 28, 12 pm March 29, 12 pm April 3, 12 pm April 15, 2 pm April 23, 4 pm May 1, 12 pm May 9, 4 pm May 17, 12 pm May 20, 8 pm May 27, 4 pm June 4, 5 pm June 12, 2 pm June 20, 4 pm June 27, 4 pm June 28, 12 pm July 8, 2 pm July 16, 5 pm July 24, 12 pm August 1, 4 pm August 8, 4 pm August 12, 5 pm August 20, 5 pm August 22, 4 pm August 23, 12 pm Presented as part of the 2026 Whitney Biennial, Nile Harris and his collaborator Dyer Rhoads expand on the sculpture \u2018Dark Brown Birkin Bag\u2019, featured in the fifth floor gallery, through the uncrating of a second work of art on the exhibition floor. Collaborators Cast: Andrei Kouznetsov, Vadim Kroll Translation: Bela Shayevich &amp;amp; Igor Gulin in collaboration with the performers\u00a0 Casting: Casting Double (Geraldine Baron &amp;amp; Salome Oggenfuss) Supertitles: Irina Chelidze, Ekaterina Gladkaia\u00a0 Produced by Social Security End of Days was commissioned by the Whitney Museum of American Art as part of the 2026 Whitney Biennial. Duration: Approximately 30 minutes",
+"endDate": "2026-08-08T16:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833328/END_OF_DAYS_lead_image.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "End of Days: \u200bNile Harris &amp;amp; Dyer Rhoads\u200b",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-08T16:00:00-04:00",
+"url": "https://whitney.org/events/end-of-days"
+},
+"fetched_at": "2026-08-08T15:13:18.083987+00:00"
+},
+"https://whitney.org/events/member-morning-2026": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/member-morning-2026",
+"@type": "Event",
+"description": "Sundays: April 12, May 10, June 14, August 9 Get a head start in the galleries with special morning access to Whitney Biennial 2026. Then, stick around for all-ages activities as a part of Free Second Sunday.",
+"endDate": "2026-08-09T10:30:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833110/WMAA98084_Gatica_I_10_web.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Member Morning",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T09:30:00-04:00",
+"url": "https://whitney.org/events/member-morning-2026"
+},
+"fetched_at": "2026-08-08T15:13:19.521306+00:00"
+},
+"https://whitney.org/events/printmaking-mabel-dwight": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/printmaking-mabel-dwight",
+"@type": "Event",
+"description": "Join Whitney Educators to explore the art of printmaking inspired by the exhibition Mabel Dwight: Cool Head, Warm Heart. Mabel Dwight found inspiration by observing the people and places of New York City. Create your own print inspired by your unique perspective on the city. Think about a place, person, object, or everyday moment that represents New York to you, then transform your idea into a print. Dwight believed that making art required \u201ca cool head and a warm heart\u201d so it could become a \u201cliving influence on the world.\u201d She found her voice in lithography, a printmaking method known for its swooping lines and seamless gradients. This democratic medium became her main way of portraying her constant subject: the people and places of New York. Dwight\u2019s vision centered on dignity across social and economic divides. Her crowd scenes show individuals drawn with gently curving lines, dramatic lighting, and delicate highlights. Her portraits feature expressive faces, while her more political images can feel theatrical. Whether showing people selling balloons, strolling home, or waiting for the day to pass, her subjects share an inner glow she called \u201cthe stuff of life.\u201d Dwight gathered these moments by roaming the city, sketching what she saw, then turning them into prints that could be widely shared.",
+"endDate": "2026-08-09T15:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/artwork/10567/96_68_86_cropped.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "All Ages Printmaking: Inspired by Mabel Dwight",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T12:00:00-04:00",
+"url": "https://whitney.org/events/printmaking-mabel-dwight"
+},
+"fetched_at": "2026-08-08T15:13:25.607578+00:00"
+},
+"https://whitney.org/events/recorridos-bienal26": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/recorridos-bienal26",
+"@type": "Event",
+"description": "\u00danase\u00a0a\u00a0una\u00a0visita\u00a0guiada\u00a0y a\u00a0una\u00a0conversaci\u00f3n\u00a0breve,\u00a0sobre\u00a0las\u00a0obras\u00a0de\u00a0arte\u00a0de la expo,\u00a0dirigida\u00a0en\u00a0espa\u00f1ol\u00a0por\u00a0un\u00a0educador\u00a0del Whitney. Los recorridos son gratuitos con tu boleto de entrada al museo. Los grupos se limitar\u00e1n a 25 personas y se podr\u00e1n integrar por orden de llegada, los recorridos inician en las galer\u00edas de cada exposici\u00f3n, los horarios y lugares est\u00e1n sujetos a cambios o suspensiones. Consulta el calendario de eventos para horarios Join us for a brief guided tour and conversation of select works from the museum\u2019s collection, led in Spanish by a Whitney Educator. Tours are free with Museum admission but will be limited to 25 people or fewer, first come first served. Tours meet in the galleries; times and locations are subject to change or cancellation. See events calendar for timings.\u00a0",
+"endDate": "2026-08-09T12:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833349/MartinezPoppe_E_07.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Recorridos de la Exposici\u00f3n: La Bienal del Whitney",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T12:00:00-04:00",
+"url": "https://whitney.org/events/recorridos-bienal26"
+},
+"fetched_at": "2026-08-08T15:13:28.548982+00:00"
+},
+"https://whitney.org/events/skyline-sketches-aug9": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/skyline-sketches-aug9",
+"@type": "Event",
+"description": "Artists of all ages are invited to join Whitney Educators on the Museum&#39;s fifth floor terrace to spend time observing and sketching the New York City skyline. Grab some drawing materials and settle in for some close looking. See what buildings, shapes, and details catch your eye. While you draw, take in the outdoor setting, including Kelly Akashi\u2019s sculpture, Monument (Altadena) (2026).",
+"endDate": "2026-08-09T14:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833721/2026_BIENNIAL_108.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "All Ages Artmaking: Skyline Sketches",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T11:00:00-04:00",
+"url": "https://whitney.org/events/skyline-sketches-aug9"
+},
+"fetched_at": "2026-08-08T15:13:22.938850+00:00"
+},
+"https://whitney.org/events/storytime": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/storytime",
+"@type": "Event",
+"description": "The Whitney Free Second Sundays Storytime series continues strong, teaming up with independent bookstores to showcase diverse voices and fresh perspectives that will captivate our youngest visitors. We&#39;re excited to launch a fantastic four-month partnership with Librer\u00eda Comunitaria Barco de Papel and Centro Cultural, a vibrant community-run bookstore and cultural center. Their mission is to bring the magic of the Spanish language and bilingual literature to the heart of Flushing and Elmhurst, Queens\u2014and now, right here at the Whitney! Join us for Storytime with the incredible Paula Ortiz, co-founder of Barco de Papel, along with our passionate volunteer readers. They&#39;ll be bringing to life stunning art-inspired books that celebrate the beauty of storytelling in both Spanish and English. Don\u2019t miss out on this unforgettable experience\u2014be a part of a celebration that honors the future of storytelling with us! En espa\u00f1ol La serie Hora del Cuento, parte del Segundo domingo gratuito del Whitney, sigue creciendo, en colaboraci\u00f3n con librer\u00edas independientes para destacar voces diversas y nuevas perspectivas que cautivar\u00e1n a nuestros visitantes m\u00e1s j\u00f3venes. Nos entusiasma dar inicio a una fant\u00e1stica colaboraci\u00f3n de cuatro meses con Barco de Papel, una vibrante librer\u00eda y centro cultural gestionada por la comunidad. Su misi\u00f3n es llevar la magia del idioma espa\u00f1ol y la literatura biling\u00fce al coraz\u00f3n de Flushing y Elmhurst, Queens, \u00a1y ahora tambi\u00e9n aqu\u00ed, en el Whitney! Acomp\u00e1\u00f1anos en la Hora del Cuento con la incre\u00edble Paula Ortiz, cofundadora de Barco de Papel, junto con nuestros apasionados lectores voluntarios. Dar\u00e1n vida a maravillosos libros inspirados en arte, que celebran la belleza de la narraci\u00f3n tanto en espa\u00f1ol como en ingl\u00e9s. No te pierdas esta inolvidable experiencia: \u00a1s\u00e9 parte de una celebraci\u00f3n que honra el futuro de la narraci\u00f3n de cuentos!",
+"endDate": "2026-08-09T12:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833768/Barco_de_Papel_III.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Storytime",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T11:00:00-04:00",
+"url": "https://whitney.org/events/storytime"
+},
+"fetched_at": "2026-08-08T15:13:21.040848+00:00"
 },
 "https://whitney.org/events/tour-whitney-biennial-2026-floor5": {
 "event": {
@@ -554,6 +747,74 @@
 "url": "https://whitney.org/events/untitled-america-exb-tour"
 },
 "fetched_at": "2026-08-03T04:02:32.617694+00:00"
+},
+"https://whitney.org/events/untitled-america-exb-tour-fss": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/untitled-america-exb-tour-fss",
+"@type": "Event",
+"description": "Gallery tours through the Whitney\u2019s current exhibitions are offered each day. Join a museum docent for insight into the works on view. See events calendar for timings.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-09T12:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/artwork/3043/72_58_cropped.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Exhibition Tour: \u201cUntitled\u201d (America)\u00a0",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T12:00:00-04:00",
+"url": "https://whitney.org/events/untitled-america-exb-tour-fss"
+},
+"fetched_at": "2026-08-08T15:13:27.033957+00:00"
+},
+"https://whitney.org/events/whitney-biennial-15-min-fss-floor6": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/whitney-biennial-15-min-fss-floor6",
+"@type": "Event",
+"description": "Free Second Sundays, 1 pm, 1:30 pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-09T13:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833353/CamachoLien_08.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T13:00:00-04:00",
+"url": "https://whitney.org/events/whitney-biennial-15-min-fss-floor6"
+},
+"fetched_at": "2026-08-08T15:13:30.061949+00:00"
 },
 "https://www.apollotheater.org/event/best-of-the-apollo": {
 "event": {
