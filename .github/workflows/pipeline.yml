@@ -14,6 +14,15 @@ on:
     - cron: '15 9 * * *'         # 05:15 America/New_York
   workflow_dispatch:
 
+# The repo default for GITHUB_TOKEN is read-only, which is the right default
+# and the wrong one for the single job whose whole point is that the commit is
+# the deploy. Without this the run does every expensive thing correctly and
+# then 403s on the push -- a failure mode that looks like a healthy pipeline
+# from the inside, because the quality gate passes before it. Elevated here
+# rather than repo-wide so it is this workflow that can write, not every one.
+permissions:
+  contents: write
+
 concurrency:
   group: pipeline
   cancel-in-progress: false

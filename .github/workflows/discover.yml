@@ -39,6 +39,11 @@ on:
         type: boolean
         default: false
 
+# Same reason as pipeline.yml: this job commits the registries it re-learns,
+# and the repo default token cannot push.
+permissions:
+  contents: write
+
 concurrency:
   group: discover
   cancel-in-progress: false
