@@ -340,13 +340,47 @@
 },
 "fetched_at": "2026-08-08T15:13:08.929660+00:00"
 },
-"https://whitney.org/events/closer-look-untitled-america": {
+"https://whitney.org/events/black-artists-20th-century": {
 "event": {
-"@context": "http://schema.org",
-"@id": "https://whitney.org/events/closer-look-untitled-america",
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/black-artists-20th-century",
+"@type": "Event",
+"description": "Aug 9, 4 pm Sept 9, 4 pm This guided tour, led by Joan Tisch Teaching Fellow Katherine Cheairs, takes visitors on a journey through the work of 20th-century Black artists featured in the permanent collection exhibition \u201cUntitled\u201d (America). Featured artists include Barkley L. Hendricks, Richmond Barth\u00e9, Eldzier Cortor, Jean-Michel Basquiat, and Alma Thomas. Viewing the work through the lens of movement, we consider how these artists explore history, identity, and personhood in geographic, political, and aesthetic terms.\u00a0 Katherine \u201cKat\u201d Cheairs, MFA, is a Joan Tisch Teaching Fellow at the Whitney and an interdisciplinary artist, curator, educator, and researcher. Cheairs holds a BA in Political Science from Tufts University and an MFA in Film from the Dodge College of Film and Media Arts at Chapman University and is currently pursuing a doctorate in art and art education at Teachers College, Columbia University, where their research focuses on arts-based research, Black feminist theory, Black studies, queer theory, and affect studies. They are also a frequent collaborator on archival and video-based projects at the intersection of AIDS, art, and activism and currently serve on the board of Visual AIDS.",
+"endDate": "2026-08-09T16:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833806/2015_101_cropped.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Movement and Meaning: Black Artists in the 20th Century",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T16:00:00-04:00",
+"url": "https://whitney.org/events/black-artists-20th-century"
+},
+"fetched_at": "2026-08-09T10:01:44.667625+00:00"
+},
+"https://whitney.org/events/closer-look-untitled-america-fss": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/closer-look-untitled-america-fss",
 "@type": "Event",
 "description": "Mondays, 12 pm Saturdays, Sundays, 3 pm Slow down and discover how much there is to see when we take the time to look closely at highlights from \u201cUntitled\u201d (America). Guided by a Museum docent, participants are encouraged to think through and discuss works together. Each forty-five-minute session focuses on a single work of art or explores a connection between two works.\u00a0",
-"endDate": "2026-08-03T12:00:00-04:00",
+"endDate": "2026-08-09T15:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": "https://whitneymedia.org/assets/image/824516/Jasper_Johns_Racing_Thoughts.jpg",
@@ -369,10 +403,10 @@
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"startDate": "2026-08-03T12:00:00-04:00",
-"url": "https://whitney.org/events/closer-look-untitled-america"
+"startDate": "2026-08-09T15:00:00-04:00",
+"url": "https://whitney.org/events/closer-look-untitled-america-fss"
 },
-"fetched_at": "2026-08-03T04:02:29.595347+00:00"
+"fetched_at": "2026-08-09T10:01:43.274680+00:00"
 },
 "https://whitney.org/events/double-take-intergen-dialogue": {
 "event": {
@@ -441,40 +475,6 @@
 "url": "https://whitney.org/events/drawing-what-matters-most"
 },
 "fetched_at": "2026-08-08T15:13:23.970022+00:00"
-},
-"https://whitney.org/events/end-of-days": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/end-of-days",
-"@type": "Event",
-"description": "March 19, 5 pm March 28, 12 pm March 29, 12 pm April 3, 12 pm April 15, 2 pm April 23, 4 pm May 1, 12 pm May 9, 4 pm May 17, 12 pm May 20, 8 pm May 27, 4 pm June 4, 5 pm June 12, 2 pm June 20, 4 pm June 27, 4 pm June 28, 12 pm July 8, 2 pm July 16, 5 pm July 24, 12 pm August 1, 4 pm August 8, 4 pm August 12, 5 pm August 20, 5 pm August 22, 4 pm August 23, 12 pm Presented as part of the 2026 Whitney Biennial, Nile Harris and his collaborator Dyer Rhoads expand on the sculpture \u2018Dark Brown Birkin Bag\u2019, featured in the fifth floor gallery, through the uncrating of a second work of art on the exhibition floor. Collaborators Cast: Andrei Kouznetsov, Vadim Kroll Translation: Bela Shayevich &amp;amp; Igor Gulin in collaboration with the performers\u00a0 Casting: Casting Double (Geraldine Baron &amp;amp; Salome Oggenfuss) Supertitles: Irina Chelidze, Ekaterina Gladkaia\u00a0 Produced by Social Security End of Days was commissioned by the Whitney Museum of American Art as part of the 2026 Whitney Biennial. Duration: Approximately 30 minutes",
-"endDate": "2026-08-08T16:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833328/END_OF_DAYS_lead_image.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "End of Days: \u200bNile Harris &amp;amp; Dyer Rhoads\u200b",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-08T16:00:00-04:00",
-"url": "https://whitney.org/events/end-of-days"
-},
-"fetched_at": "2026-08-08T15:13:18.083987+00:00"
 },
 "https://whitney.org/events/member-morning-2026": {
 "event": {
@@ -680,74 +680,6 @@
 },
 "fetched_at": "2026-08-03T04:02:31.627771+00:00"
 },
-"https://whitney.org/events/tour-whitney-biennial-2026-floor6": {
-"event": {
-"@context": "http://schema.org",
-"@id": "https://whitney.org/events/tour-whitney-biennial-2026-floor6",
-"@type": "Event",
-"description": "Gallery tours through the Whitney\u2019s current exhibitions are offered each day. Join a museum docent for insight into the works on view. See events calendar for timings.\u00a0 Tours are free with Museum admission. No reservations are necessary, but capacity is limited to twenty-five people on a first-come, first-served basis. Tours meet in the galleries.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
-"endDate": "2026-08-03T13:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833358/Tsouhlarakis_A_02.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "Exhibition Tour: Whitney Biennial 2026",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-03T13:00:00-04:00",
-"url": "https://whitney.org/events/tour-whitney-biennial-2026-floor6"
-},
-"fetched_at": "2026-08-03T04:02:30.609959+00:00"
-},
-"https://whitney.org/events/untitled-america-exb-tour": {
-"event": {
-"@context": "http://schema.org",
-"@id": "https://whitney.org/events/untitled-america-exb-tour",
-"@type": "Event",
-"description": "Gallery tours through the Whitney\u2019s current exhibitions are offered each day. Join a museum docent for insight into the works on view. See events calendar for timings.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
-"endDate": "2026-08-03T15:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/artwork/3043/72_58_cropped.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "Exhibition Tour: \u201cUntitled\u201d (America)\u00a0",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-03T15:00:00-04:00",
-"url": "https://whitney.org/events/untitled-america-exb-tour"
-},
-"fetched_at": "2026-08-03T04:02:32.617694+00:00"
-},
 "https://whitney.org/events/untitled-america-exb-tour-fss": {
 "event": {
 "@context": "https://schema.org",
@@ -781,6 +713,40 @@
 "url": "https://whitney.org/events/untitled-america-exb-tour-fss"
 },
 "fetched_at": "2026-08-08T15:13:27.033957+00:00"
+},
+"https://whitney.org/events/whitney-biennial-15-min-fss-floor5": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/whitney-biennial-15-min-fss-floor5",
+"@type": "Event",
+"description": "Free Second Sundays, 2 pm and 2:30 pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-09T14:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833199/deMonteflores_C_02.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-09T14:00:00-04:00",
+"url": "https://whitney.org/events/whitney-biennial-15-min-fss-floor5"
+},
+"fetched_at": "2026-08-09T10:01:41.547725+00:00"
 },
 "https://whitney.org/events/whitney-biennial-15-min-fss-floor6": {
 "event": {
