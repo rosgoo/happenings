@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-02T16:09:01.763512+00:00",
+ "generated_at": "2026-08-10T10:00:14.554056+00:00",
  "city": "nyc",
  "probed": 120,
- "requests": 538,
+ "requests": 533,
  "venues": [
   {
    "host": "www.frauncestavernmuseum.org",
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 13,
+     "upcoming": 12,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 6,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -38,16 +38,8 @@
    "host": "www.sugarhillmuseum.org",
    "name": "Sugar Hill Children's Museum of Art and Story Telling",
    "origin": "https://www.sugarhillmuseum.org",
-   "collections": [
-    {
-     "url": "https://www.sugarhillmuseum.org/calendar?format=json",
-     "title": "Daily Calendar",
-     "collection_id": "54417b8ce4b07716b5f9fc2d",
-     "upcoming": 0,
-     "past": 30
-    }
-   ],
-   "tried": 3
+   "collections": [],
+   "tried": 6
   },
   {
    "host": "onderdonkhouse.org",
@@ -58,11 +50,11 @@
      "url": "https://onderdonkhouse.org/events-list?format=json",
      "title": "Events",
      "collection_id": "5d8d052558fca978aa0cbaf9",
-     "upcoming": 0,
+     "upcoming": 1,
      "past": 30
     }
    ],
-   "tried": 5
+   "tried": 3
   },
   {
    "host": "www.mmuseumm.com",
@@ -105,7 +97,7 @@
      "past": 30
     }
    ],
-   "tried": 4
+   "tried": 2
   },
   {
    "host": "www.friendsofrockhall.org",
@@ -195,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 1,
+     "upcoming": 3,
      "past": 30
     }
    ],
@@ -389,11 +381,11 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 6,
+     "upcoming": 5,
      "past": 30
     }
    ],
-   "tried": 5
+   "tried": 3
   },
   {
    "host": "www.unixgallery.com",
@@ -422,7 +414,7 @@
      "past": 30
     }
    ],
-   "tried": 4
+   "tried": 6
   },
   {
    "host": "www.carterburdengallery.org",
@@ -447,11 +439,11 @@
      "url": "https://www.thepaintingcenter.org/new-events-1?format=json",
      "title": "New Events",
      "collection_id": "63ee8e245c21c533a4d31f6e",
-     "upcoming": 1,
-     "past": 30
+     "upcoming": 6,
+     "past": 7
     }
    ],
-   "tried": 5
+   "tried": 3
   },
   {
    "host": "www.nancyhoffmangallery.com",
@@ -472,7 +464,7 @@
    "name": "Sikkema Jenkins & Co.",
    "origin": "https://www.smjny.com",
    "collections": [],
-   "tried": 4
+   "tried": 6
   },
   {
    "host": "www.ehgallery.com",
@@ -490,7 +482,7 @@
      "url": "https://www.the8thfloor.org/newevents?format=json",
      "title": "Events",
      "collection_id": "659d84552cb6dd6728f437c7",
-     "upcoming": 0,
+     "upcoming": 1,
      "past": 30
     }
    ],
@@ -512,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 14,
+     "upcoming": 12,
      "past": 30
     }
    ],
@@ -698,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 13,
+     "upcoming": 12,
      "past": 30
     }
    ],
@@ -802,7 +794,7 @@
      "past": 9
     }
    ],
-   "tried": 5
+   "tried": 3
   },
   {
    "host": "www.clayworksoncolumbia.org",
@@ -858,7 +850,7 @@
    "name": "Bklyn Clay",
    "origin": "https://bklynclay.com",
    "collections": [],
-   "tried": 5
+   "tried": 4
   },
   {
    "host": "www.jackny.org",
@@ -982,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 20,
+     "upcoming": 16,
      "past": 30
     }
    ],
@@ -1014,7 +1006,7 @@
    "name": "South Brooklyn Fencing",
    "origin": "https://southbrooklynfencing.com",
    "collections": [],
-   "tried": 4
+   "tried": 3
   },
   {
    "host": "www.47bjjcoop.com",

@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-08-02T16:38:57.971480+00:00",
+ "generated_at": "2026-08-10T10:00:14.455594+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -36,12 +36,52 @@
    "checked_at": "2026-08-02T16:38:50.940546+00:00"
   },
   {
+   "id": "cal-qbsfYMOG654KgPf",
+   "name": "RevGenius",
+   "ok": true,
+   "total": 253,
+   "upcoming": 9,
+   "checked_at": "2026-08-10T10:00:03.657311+00:00"
+  },
+  {
    "id": "cal-mmnYmrfNgxGdvQb",
    "name": "Mistral AI Events",
    "ok": true,
    "total": 23,
    "upcoming": 6,
    "checked_at": "2026-08-02T16:38:38.401191+00:00"
+  },
+  {
+   "id": "cal-W5OAThppwsCAxK3",
+   "name": "New York Coworking Friends",
+   "ok": true,
+   "total": 121,
+   "upcoming": 6,
+   "checked_at": "2026-08-10T09:59:57.532628+00:00"
+  },
+  {
+   "id": "cal-XqmKRMW2PburSPX",
+   "name": "The Lighthouse",
+   "ok": true,
+   "total": 52,
+   "upcoming": 6,
+   "checked_at": "2026-08-10T10:00:02.214797+00:00"
+  },
+  {
+   "id": "cal-fHHfS2rChIZ1IWx",
+   "name": "Kanso: Phone-Free Experiences",
+   "ok": true,
+   "total": 62,
+   "upcoming": 6,
+   "checked_at": "2026-08-10T10:00:06.522826+00:00"
+  },
+  {
+   "id": "cal-gjg4MScImZK316q",
+   "name": "New Edition Events",
+   "ok": true,
+   "total": 71,
+   "upcoming": 6,
+   "checked_at": "2026-08-10T10:00:09.553315+00:00"
   },
   {
    "id": "cal-2r1Wr2Q80EWW9aM",
@@ -66,6 +106,14 @@
    "total": 15,
    "upcoming": 4,
    "checked_at": "2026-08-02T16:38:39.894277+00:00"
+  },
+  {
+   "id": "cal-3ZBgSOMsO1cFUJb",
+   "name": "Scientist to Founder Series",
+   "ok": true,
+   "total": 21,
+   "upcoming": 4,
+   "checked_at": "2026-08-10T10:00:12.399898+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -106,6 +154,30 @@
    "total": 25,
    "upcoming": 2,
    "checked_at": "2026-08-02T16:38:53.599018+00:00"
+  },
+  {
+   "id": "cal-JlOALijZDpFzzAn",
+   "name": "Personal",
+   "ok": true,
+   "total": 222,
+   "upcoming": 2,
+   "checked_at": "2026-08-10T09:59:53.403749+00:00"
+  },
+  {
+   "id": "cal-dJW8pHtgKfG2HK8",
+   "name": "Six-5 Society",
+   "ok": true,
+   "total": 18,
+   "upcoming": 2,
+   "checked_at": "2026-08-10T10:00:08.136316+00:00"
+  },
+  {
+   "id": "cal-negPDTV8xaNDttZ",
+   "name": "Personal",
+   "ok": true,
+   "total": 95,
+   "upcoming": 2,
+   "checked_at": "2026-08-10T10:00:14.455570+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -162,6 +234,62 @@
    "total": 1,
    "upcoming": 1,
    "checked_at": "2026-08-02T16:38:57.971470+00:00"
+  },
+  {
+   "id": "cal-SubA6tcEQTPmlPY",
+   "name": "Personal",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T09:59:51.825350+00:00"
+  },
+  {
+   "id": "cal-pWeGZEWOXh8cHsF",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T09:59:54.394443+00:00"
+  },
+  {
+   "id": "cal-2gq91FFbSC80OFP",
+   "name": "Cursor New York, US",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T09:59:56.044652+00:00"
+  },
+  {
+   "id": "cal-EEttjkqkETnbFtJ",
+   "name": "Cooperman Business Center",
+   "ok": true,
+   "total": 7,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T09:59:58.890340+00:00"
+  },
+  {
+   "id": "cal-TKAbHVZ3l1V3eFN",
+   "name": "Builder Live Events",
+   "ok": true,
+   "total": 12,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T10:00:00.393785+00:00"
+  },
+  {
+   "id": "cal-YouloxbsniFXszg",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T10:00:04.890448+00:00"
+  },
+  {
+   "id": "cal-f7wSIGiALYlPF6d",
+   "name": "Fluidstack",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-08-10T10:00:10.876038+00:00"
   }
  ]
 }

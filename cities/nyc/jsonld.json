@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-08-03T03:42:16.901900+00:00",
+ "generated_at": "2026-08-10T10:13:25.544746+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 229,
+   "events": 227,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 176,
+   "events": 182,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 48,
+   "events": 40,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -138,12 +138,12 @@
    "events": 12,
    "locations": [
     "Bowne House",
+    "Conference House",
     "Historic Richmond Town",
     "King Manor Museum",
     "Lefferts Historic House",
     "Old Stone House &#038; Washington Park",
-    "Van Cortlandt House Museum",
-    "Wyckoff House"
+    "Van Cortlandt House Museum"
    ],
    "types": [
     "Event"
@@ -230,9 +230,7 @@
    "events": 10,
    "locations": [
     "Brooklyn",
-    "Manhattan",
-    "Queens",
-    "Staten Island"
+    "Manhattan"
    ],
    "types": [
     "Event"
@@ -252,7 +250,7 @@
    "host": "mvhm.org",
    "name": "Mount Vernon Hotel Museum",
    "url": "https://mvhm.org/events/",
-   "events": 10,
+   "events": 9,
    "locations": [
     "Mount Vernon Hotel Museum &amp; Garden"
    ],
@@ -274,7 +272,7 @@
    "host": "aliceausten.org",
    "name": "Alice Austen House",
    "url": "https://aliceausten.org/events/",
-   "events": 9,
+   "events": 7,
    "locations": [
     "Alice Austen House Waterfront Lawn"
    ],
@@ -296,7 +294,8 @@
    "url": "https://societyillustrators.org/events/",
    "events": 6,
    "locations": [
-    "At the Society"
+    "At the Society",
+    "Zoom"
    ],
    "types": [
     "Event"
@@ -318,15 +317,10 @@
    "url": "https://www.newyorkcitytheatre.com/shows",
    "events": 6,
    "locations": [
-    "Al Hirschfeld Theater",
-    "August Wilson Theater",
-    "Hudson Theatre",
-    "Nederlander Theater",
-    "Palace Theater",
-    "Richard Rodgers Theater"
+    "Isaac Stern Auditorium"
    ],
    "types": [
-    "TheaterEvent"
+    "MusicEvent"
    ],
    "status": 200,
    "error": null,
@@ -362,32 +356,6 @@
    "why": "Hoboken, New Jersey. The census swept a bounding box; normalize would reject every row as outside nyc, so the honest place to stop is before the request."
   },
   {
-   "host": "lighthousemuseum.org",
-   "name": "National Lighthouse Museum",
-   "url": "https://lighthousemuseum.org/events/",
-   "events": 5,
-   "locations": [
-    "ABOVE Hilton Garden Inn",
-    "Leaves from Fast Ferry Dock in St. George on the New York Water Taxi",
-    "Leaves from Pier1 (National Lighthouse Museum Site) on the Nautical Princess",
-    "National Lighthouse Museum",
-    "The National Lighthouse Museum"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.6407356,
-   "lon": -74.0734107,
-   "borough": "Staten Island",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "lucidbody.com",
    "name": "Lucid Body House",
    "url": "https://lucidbody.com/events",
@@ -411,10 +379,33 @@
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "lighthousemuseum.org",
+   "name": "National Lighthouse Museum",
+   "url": "https://lighthousemuseum.org/events/",
+   "events": 2,
+   "locations": [
+    "Leaves from Fast Ferry Dock in St. George on the New York Water Taxi",
+    "The National Lighthouse Museum"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.6407356,
+   "lon": -74.0734107,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "www.statenislandmuseum.org",
    "name": "Staten Island Museum",
    "url": "https://www.statenislandmuseum.org/events",
-   "events": 3,
+   "events": 2,
    "locations": [
     "Great Kills Park"
    ],
@@ -483,7 +474,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibition",
-   "links": 156,
+   "links": 157,
    "lat": 40.7200826,
    "lon": -73.990232,
    "borough": "Manhattan",
@@ -501,7 +492,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/event",
-   "links": 52,
+   "links": 51,
    "lat": 40.7925409,
    "lon": -73.9711668,
    "borough": "Manhattan",
@@ -553,7 +544,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 36,
+   "links": 37,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -571,7 +562,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 4,
+   "links": 3,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -587,7 +578,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 4,
+   "links": 5,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -641,7 +632,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 93,
+   "links": 88,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -677,7 +668,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 144,
+   "links": 141,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -779,7 +770,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 43,
+   "links": 42,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -831,7 +822,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/calendar",
-   "links": 35,
+   "links": 36,
    "lat": 40.7031161,
    "lon": -73.803768,
    "borough": "Queens",
@@ -885,7 +876,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 50,
+   "links": 46,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -939,7 +930,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 48,
+   "links": 41,
    "lat": null,
    "lon": null,
    "borough": null,
