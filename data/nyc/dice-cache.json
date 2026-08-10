@@ -31,38 +31,6 @@
 },
 "lastmod": "2026-07-14T15:06:39.220974Z"
 },
-"https://dice.fm/event/2w3keo-the-nursery-diva-diva-w-grace-sands-the-carry-nation-saia-sevyn-love-keith-lawrence-viola-9th-aug-public-records-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Public Records aims to provide a safer space. We reject all forms of discrimination, including racism, misogyny, transphobia, homophobia, sexism, and other aggressive behavior. Consent is paramount. Please exist with respect for yourself and those around you. Anyone found in violation of our rules or safer space policy will be removed from the venue.\n\nTo share feedback about an incident, please email hello@publicrecords.nyc or alert a member of our team.\n\nTickets may be available at the door based on capacity. A ticket does not guarantee entry; Public Records reserves the right to deny entry to guests that appear intoxicated or do not meet the dress code. All large bags and coats must be checked. Doors close one hour before end time.",
-"endDate": "2026-08-09T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-09/49492c0f-d693-47e4-ab6d-65131bfc5ca7.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "233 Butler St, Brooklyn, NY 11217, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.68226050000001,
-"longitude": -73.9863775
-},
-"name": "Public Records"
-},
-"name": "The Nursery: Diva Diva w/ Grace Sands, The Carry Nation, Saia & Sevyn Love, Keith Lawrence [Viola]",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Public Records"
-},
-"startDate": "2026-08-09T15:00:00-04:00",
-"url": "https://dice.fm/event/2w3keo-the-nursery-diva-diva-w-grace-sands-the-carry-nation-saia-sevyn-love-keith-lawrence-viola-9th-aug-public-records-new-york-tickets"
-},
-"lastmod": "2026-08-06T19:59:41.941434Z"
-},
 "https://dice.fm/event/2w3l86-nils-hoffmann-friends-in-high-places-18th-sep-westlight-rooftop-at-the-william-vale-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -282,10 +250,10 @@
 "@type": "Organization",
 "name": "Seventh Heaven Bar & Karaoke"
 },
-"startDate": "2026-08-09T22:00:00-04:00",
+"startDate": "2026-08-09T19:00:00-04:00",
 "url": "https://dice.fm/event/2w55lp--karaoke-sunday-night-9th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets"
 },
-"lastmod": "2026-08-03T22:00:14.620858Z"
+"lastmod": "2026-08-09T23:05:42.707575Z"
 },
 "https://dice.fm/event/2w5696-miles-hewitt-jana-horn-domestic-drafts-sophie-strand-reading-30th-aug-the-sultan-room-new-york-tickets": {
 "event": {
@@ -1439,38 +1407,6 @@
 },
 "lastmod": "2026-07-31T08:09:16.056343Z"
 },
-"https://dice.fm/event/2wqkbo-art-of-tabla-immersive-hand-finger-drumming-experience-9th-aug-surya-sound-temple-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "Tabla is considered to be one of the most expressive melodic percussion instruments known to man.\n\nTabla is considered to be one of the most expressive melodic percussion instruments known to man. Its tonal qualities range from an array of subtle micro-tonal textures, melodic water-like resonance and pulsating walking bass lines.\n\nThis experience is geared towards the exploration of mnemonic syllables as a musical language, observation of movement by developing left/right brain independence, hand/finger touch sensitivity, relaxation by melodic and rhythmic entrainment.\n\nArt of Tabla is located inside Surya Sound Temple, a space designed to produce, study and experience sound, music, art, yoga & meditation. Our mission is promote wellness and healing through music and sound vibration while preserving the teachings and practices of Shabd & N\u0101da Yoga.\n\nhttps://www.artoftabla.org",
-"endDate": "2026-08-09T16:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-03-26/fc09f57b-4f8a-47a8-bf19-e19ddfbc892e.jpg?rect=0%2C0%2C2560%2C2560"
-],
-"location": {
-"@type": "Place",
-"address": "101 Wyckoff Avenue Unit 1H, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.704752,
-"longitude": -73.919601
-},
-"name": "Surya Sound Temple"
-},
-"name": "Art of Tabla - Immersive Hand & Finger Drumming Experience",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Surya Sound Temple"
-},
-"startDate": "2026-08-09T15:00:00-04:00",
-"url": "https://dice.fm/event/2wqkbo-art-of-tabla-immersive-hand-finger-drumming-experience-9th-aug-surya-sound-temple-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T13:15:21.838767Z"
-},
 "https://dice.fm/event/2wql8a-the-devil-i-knew-album-release-modern-songbook-society-scholarship-fundraiser-reception-30th-sep-drom-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -1566,38 +1502,6 @@
 "url": "https://dice.fm/event/2wqo8a-flamenco-jazz-jam-1-year-anniversary-16th-aug-drom-new-york-tickets"
 },
 "lastmod": "2026-07-22T23:53:17.990193Z"
-},
-"https://dice.fm/event/2wqob6-buckaroo-9th-aug-desert-5-spot-ny-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Ever come to a BABY BUCK wednesday and been like, \"this is NOT baby at all!\" \"how do they know all this!\" \"wtf is a coaster step?!\" and maybe even left Baby Buck feeling a little discouraged?\n\nWE GOT Y'ALL! introducing...BUCKAROO!\n\nLine dance foundations for the absolute beginner. in addition to learning beginners' line dances, you'll also learn some of the foundational moves that make up a majority of line dancing choreo!",
-"endDate": "2026-08-09T18:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-07/af24dfb8-d061-4095-b054-fb4428687f7f.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "94 Wythe Avenue, Brooklyn, New York 11249, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.721667,
-"longitude": -73.958402
-},
-"name": "Desert 5 Spot NY"
-},
-"name": "BUCKAROO",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Desert 5 Spot NY"
-},
-"startDate": "2026-08-09T17:00:00-04:00",
-"url": "https://dice.fm/event/2wqob6-buckaroo-9th-aug-desert-5-spot-ny-new-york-city-tickets"
-},
-"lastmod": "2026-07-21T08:08:11.587856Z"
 },
 "https://dice.fm/event/2wqox6-buck-wild-6th-sep-desert-5-spot-ny-new-york-city-tickets": {
 "event": {
@@ -1789,7 +1693,7 @@
 "startDate": "2026-09-07T18:30:00-04:00",
 "url": "https://dice.fm/event/2wqvlo-yard-sale-comedy-open-mic-7th-sep-alphaville-new-york-tickets"
 },
-"lastmod": "2026-07-27T18:33:29.245000Z"
+"lastmod": "2026-08-09T08:05:59.725602Z"
 },
 "https://dice.fm/event/2wqvro-bone-head-stew-sir-richard-newton-not-proud-to-be-here-cronz-14th-aug-sleepwalk-new-york-city-tickets": {
 "event": {
@@ -2271,38 +2175,6 @@
 },
 "lastmod": "2026-07-24T13:43:59.929478Z"
 },
-"https://dice.fm/event/3o6yk8-saturday-midnight-on-the-hudson-0808-8th-aug-skyport-marina-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Get ready to set sail on the ultimate party experience with Blue Booze Cruise 2026, hosted by HAUS ON HUDSON. This two-floor NYC party boat will be rocking with top DJ beats, flowing drinks, and unbeatable skyline views. Dance under the stars on the open-air rooftop deck or vibe out in the stylish indoor lounge. Whether you\u2019re celebrating with friends or just living it up, this cruise delivers nonstop energy and unforgettable moments. Don\u2019t miss your chance to be part of NYC\u2019s most iconic boat party of the year!\n\nWhat Does Your Ticket to the Haus on Hudson Cruise 2026 Boat Party Include?\n\n\ud83c\udf0aIconic NYC Views \u2013 Cruise past the city\u2019s most famous sights like the Statue of Liberty, Freedom Tower, Ellis Island, and Brooklyn Bridge with front-row views.\n\n\ud83c\udf0aLive DJs Across Two Levels \u2013 Move to the rhythm of Reggaeton, Hip-Hop, R&B, Afrobeats, Latin, House and more, spun by top DJs across two lively floors.\n\n\ud83c\udf0aIndoor & Outdoor Vibes \u2013 Choose between open-air decks for fresh breezes or a climate-controlled cabin with panoramic harbor views.\n\n\ud83c\udf0aCelebrate Life\u2019s Big Moments \u2013 Ideal for birthdays, bachelorettes, anniversaries, or graduations. Feel free to bring balloons and cakes (note: outside food is not permitted). Check the ticket section for personalized event flyers.\n\n\ud83c\udf0aOnboard Food & Drinks for Purchase \u2013 Treat yourself to expertly crafted cocktails and delicious bites from our menu. We have a different menu each week ranging from amazing hearty meat options to vegetarian friendly eats.\n\n\ud83c\udf0aProfessional Party Photos \u2013 Keep the memories alive with an event photographer capturing your best moments (details available in ticket add-ons).\n\n\ud83c\udf0aConvenient Access & Parking Options \u2013 Free street parking near the dock or nearby garage options (around $40). We recommend using Uber or Lyft for ease.\n\n\ud83d\udc83Dress Code:\n\nWe embrace individual style while keeping a chic vibe. Please follow the guidelines below to ensure smooth entry:\n\nDON\u2019T: wear anything with offensive text, athletic shorts, swim trunks, slides, sweatpants, Timberlands, sandals, or flip flops.\n\nDO: opt for trendy and put-together looks. Jeans (with minimal rips), smart casual outfits for men (think collared shirts, stylish tees, and jeans), clean sneakers or dress shoes, and forward-facing hats that complement your outfit are welcome.\n\n\u23f1\ufe0fHow long will the party last?\n\nThe event lasts approximately 3 hours as we sail through New York City's iconic harbor.\n\n\ud83d\uddfdWill I Get a Good View of the Statue of Liberty?\n\nYes! You\u2019ll have a perfect photo opportunity with sweeping, 360-degree views of Lady Liberty and the NYC skyline right from the boat\u2014so bring your camera and get ready to snap some unforgettable shots!\n\n\ud83d\uddfdWhat is the location of the boat and when do we need to arrive by?\n\nWe have multiple boats going out all weekend with different themes. The location is Skyport Marina and all other information will be emailed to you.",
-"endDate": "2026-08-09T02:30:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-03-22/2c57950c-678a-474c-a5cd-3fd2a976db9a.jpg?rect=0%2C135%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "2430 FDR Dr, New York, NY 10010, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.73554809999999,
-"longitude": -73.97441909999999
-},
-"name": "Skyport Marina"
-},
-"name": "SATURDAY MIDNIGHT ON THE HUDSON 08/08",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "AIM Hospitality"
-},
-"startDate": "2026-08-08T22:30:00-04:00",
-"url": "https://dice.fm/event/3o6yk8-saturday-midnight-on-the-hudson-0808-8th-aug-skyport-marina-new-york-tickets"
-},
-"lastmod": "2026-07-14T14:55:14.763235Z"
-},
 "https://dice.fm/event/3o725g-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-19th-sep-lost-in-paradise-rooftop-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -2559,38 +2431,6 @@
 },
 "lastmod": "2026-07-07T15:26:07.591671Z"
 },
-"https://dice.fm/event/3o7g5v-liu-8th-aug-nebula-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Dress code strongly advised. For men NO sports attire shorts tank tops sleeveless shirts & sweat pants. For ladies no sandals flip flops sneakers or any kind of open toe shoes. Dresses and heels strongly suggested. DOORMAN DISCRETION",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-02/53858a8a-0162-4b26-bbfe-4b57c9f3971a.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "135 W 41st St, New York, NY 10036, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7549214,
-"longitude": -73.9858076
-},
-"name": "Nebula"
-},
-"name": "Liu",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Nebula New York"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/3o7g5v-liu-8th-aug-nebula-new-york-tickets"
-},
-"lastmod": "2026-07-30T20:41:42.044849Z"
-},
 "https://dice.fm/event/3o7meg-russian-circles-pelican-3rd-oct-ruins-at-knockdown-center-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -2750,38 +2590,6 @@
 "url": "https://dice.fm/event/3o7x28-layton-giordani-29th-aug-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets"
 },
 "lastmod": "2026-07-31T08:07:27.486102Z"
-},
-"https://dice.fm/event/3o7yel-bae-bae-sevyn-spiorita-tara-seeps-8th-aug-public-records-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "BAE BAE and Sevyn share an inclination for Black femme artistry, prioritizing sensuality and spirituality over genre adherence. Spi\u00f1orita\u2019s own multi-genre and generational love of music goes just as far, as does Tara\u2019s. For her, DJing exists beyond the booth; it\u2019s the building of trust and connection between audience and music. Bronx-born, LA based SEEPS is grounded by her Nuyorican heritage. She brings New York City's golden era of dance music UPSTAIRS.\n\n\\-\n\nPublic Records aims to provide a safer space. We reject all forms of discrimination, including racism, misogyny, transphobia, homophobia, sexism, and other aggressive behavior. Consent is paramount. Please exist with respect for yourself and those around you. Anyone found in violation of our rules or safer space policy will be removed from the venue.\n\nTo share feedback about an incident, please email hello@publicrecords.nyc or alert a member of our team.\n\nTickets may be available at the door based on capacity. A ticket does not guarantee entry; Public Records reserves the right to deny entry to guests that appear intoxicated or do not meet the dress code. All large bags and coats must be checked. Doors close one hour before end time.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-30/0d75ed0d-ee75-4adc-94e3-0ee46c160e61.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "233 Butler St, Brooklyn, NY 11217, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.68226050000001,
-"longitude": -73.9863775
-},
-"name": "Public Records"
-},
-"name": "BAE BAE, Sevyn / Spi\u00f1orita, Tara / SEEPS",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Public Records"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/3o7yel-bae-bae-sevyn-spiorita-tara-seeps-8th-aug-public-records-new-york-tickets"
-},
-"lastmod": "2026-08-06T19:55:14.582573Z"
 },
 "https://dice.fm/event/3oaon8-lyra-rooftop-party-0905-5th-sep-magic-hour-rooftop-new-york-city-tickets": {
 "event": {
@@ -3166,38 +2974,6 @@
 "url": "https://dice.fm/event/3ordx8-simone-de-kunovich-luke-hess-michelle-kay-emsho-11th-sep-public-records-new-york-tickets"
 },
 "lastmod": "2026-08-05T13:47:00.324510Z"
-},
-"https://dice.fm/event/3oreb8-casa-del-soul-8th-aug-altheas-hideaway-nyc-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Tables: altheahideaway@gmail.com",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-02/c52c4885-cdc8-4f40-b3e7-2026d1119da4.jpg?rect=0%2C234%2C2000%2C2000"
-],
-"location": {
-"@type": "Place",
-"address": "634 West 52nd Street, New York City, New York 10019, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.767757,
-"longitude": -73.995683
-},
-"name": "Althea's Hideaway NYC"
-},
-"name": "Casa Del Soul",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Althea's Rooftop"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/3oreb8-casa-del-soul-8th-aug-altheas-hideaway-nyc-new-york-city-tickets"
-},
-"lastmod": "2026-08-02T18:15:15.584641Z"
 },
 "https://dice.fm/event/3oreel-blair-maassai-marcel-allen-al-dayra-ad-hakim-22nd-aug-los-depressos-new-york-city-tickets": {
 "event": {
@@ -4511,38 +4287,6 @@
 },
 "lastmod": "2026-08-07T15:34:30.036269Z"
 },
-"https://dice.fm/event/53loay-vesper-the-sunset-gathering-8th-aug-smnw-rooftop-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "As the sun disappears behind the skyline, Vesper begins.\n\nA Saturday ritual suspended between daylight and night, where golden hour fades into something darker, deeper, and more magnetic.\n\nSet high above the city at Somewhere Nowhere, Vesper brings together a curated crowd, refined energy, and a soundtrack built for movement.\n\nThis is not a day party.\n\nThis is not the night party.\n\nIt\u2019s the in-between, where the city softens, the lights come alive, and everything feels possible.\n\nExpect elevated sound, intentional ambiance, and an atmosphere designed for those who move differently.\n\nSaturdays. Limited capacity. Table reservations recommended. Contact us 3472601950 for reservations\n\n@vesper.social",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-04-01/f4b07c8e-2c86-4e81-8885-6cc2ae3e6156.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "112 West 25th Street, Floor 39, New York City, New York 10001, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.744333,
-"longitude": -73.992707
-},
-"name": "SMNW Rooftop"
-},
-"name": "VESPER: The Sunset Gathering ",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "NINE & UP GROUP"
-},
-"startDate": "2026-08-08T16:00:00-04:00",
-"url": "https://dice.fm/event/53loay-vesper-the-sunset-gathering-8th-aug-smnw-rooftop-new-york-city-tickets"
-},
-"lastmod": "2026-07-14T14:55:16.151663Z"
-},
 "https://dice.fm/event/53m3ew-paige-menneci-single-release-show-with-angelica-gianna-jane-hobson-21st-aug-pianos-showroom-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -4638,6 +4382,38 @@
 "url": "https://dice.fm/event/53m7nl-pianos-free-entry-before-11pm-w-rsvp-15th-aug-pianos-main-bar-new-york-city-tickets"
 },
 "lastmod": "2026-08-08T19:27:27.586320Z"
+},
+"https://dice.fm/event/53m7rw-open-decks-w-cevich-22nd-sep-silo-brooklyn-brooklyn-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Hosted by DJ and musician Steen, Open Decks is a creative and fun space where DJs can hang and share their house and techno music live. Hear your favorite or original tracks on SILO's front room sound system, a custom 15,000 watt Danley powerhouse. This week Cevich\u00e9 is filling in for Steen while he's on vacation.\n\nIf you want to play, talk to Cevich\u00e9 to sign up. Sign-up is in person at the event only, slots are 12 minutes.\n\nThe first 3 DJ's play first-come-first-spin. Then we'll select names randomly from the sign-up list throughout the night, with extra weighting for DJs who arrive earlier. You'll get a half hour notice before your set time. This is to ensure that DJ's who can't make the initial sign up right at 8pm still get a chance to play.\n\nFree with advance RSVP.\n\nIn SILO's front room. Limited capacity.",
+"endDate": "2026-09-23T02:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/3d0ad42b-eac0-44e3-9e84-ffdc735718bd.jpg?rect=0%2C0%2C1500%2C1500"
+],
+"location": {
+"@type": "Place",
+"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7105086,
+"longitude": -73.922873
+},
+"name": "SILO Brooklyn "
+},
+"name": "Open Decks w/ Cevich\u00e9",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "SILO Brooklyn"
+},
+"startDate": "2026-09-22T19:00:00-04:00",
+"url": "https://dice.fm/event/53m7rw-open-decks-w-cevich-22nd-sep-silo-brooklyn-brooklyn-tickets"
+},
+"lastmod": "2026-08-09T02:42:06.721132Z"
 },
 "https://dice.fm/event/53m7yl-open-decks-w-steen-club-massive-8th-sep-silo-brooklyn-brooklyn-tickets": {
 "event": {
@@ -5343,16 +5119,16 @@
 },
 "lastmod": "2026-07-29T15:59:31.697555Z"
 },
-"https://dice.fm/event/53mvqw-the-ant-ang-band-more-12th-sep-brooklyn-music-kitchen-new-york-city-tickets": {
+"https://dice.fm/event/53mvqw-the-ant-ang-band-mandys-dreaming-more-12th-sep-brooklyn-music-kitchen-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
 "@type": "MusicEvent",
-"description": "Join The Ant & Ang Band + MORE on September 12 for a fun night of live music, delicious food, refreshing drinks, and great Brooklyn vibes at Brooklyn Music Kitchen.",
+"description": "Join The Ant & Ang Band, Mandy's Dreaming + MORE on September 12 for a fun night of live music, delicious food, refreshing drinks, and great Brooklyn vibes at Brooklyn Music Kitchen.",
 "endDate": "2026-09-12T23:45:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
-"https://dice-media.imgix.net/attachments/2026-07-28/d8fc7e2e-46a1-4404-98ff-45d8edd9ceef.jpg?rect=0%2C228%2C1545%2C1545"
+"https://dice-media.imgix.net/attachments/2026-08-09/7b41b4da-1edb-43b4-b041-ecc7ac7ffa08.jpg?rect=0%2C228%2C1545%2C1545"
 ],
 "location": {
 "@type": "Place",
@@ -5364,16 +5140,16 @@
 },
 "name": "Brooklyn Music Kitchen"
 },
-"name": "The Ant & Ang Band + MORE!",
+"name": "The Ant & Ang Band, Mandy's Dreaming + MORE!",
 "offers": [],
 "organizer": {
 "@type": "Organization",
 "name": "Brooklyn Music Kitchen"
 },
 "startDate": "2026-09-12T19:00:00-04:00",
-"url": "https://dice.fm/event/53mvqw-the-ant-ang-band-more-12th-sep-brooklyn-music-kitchen-new-york-city-tickets"
+"url": "https://dice.fm/event/53mvqw-the-ant-ang-band-mandys-dreaming-more-12th-sep-brooklyn-music-kitchen-new-york-city-tickets"
 },
-"lastmod": "2026-07-28T10:13:23.525812Z"
+"lastmod": "2026-08-09T16:16:24.179053Z"
 },
 "https://dice.fm/event/53mw3k-r3hab-22nd-aug-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets": {
 "event": {
@@ -6281,39 +6057,7 @@
 "startDate": "2026-08-09T21:00:00-04:00",
 "url": "https://dice.fm/event/6d8873-adam-amram-family-band-kailey-rocker-josephine-network-solo-9th-aug-cassette-new-york-city-tickets"
 },
-"lastmod": "2026-07-13T14:25:12.387567Z"
-},
-"https://dice.fm/event/6d88o8-tristan-allen-gideon-broshy-music-puppets-fantasy-8th-aug-cassette-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "TheaterEvent",
-"description": "MUSIC, PUPPETS & FANTASY",
-"endDate": "2026-08-08T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-10/4163bce0-e949-418b-90ac-c39a9ce7edb1.jpg?rect=0%2C0%2C1999%2C1999"
-],
-"location": {
-"@type": "Place",
-"address": "68-38 Forest Avenue, Storefront B, Ridgewood, New York 11385, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70256,
-"longitude": -73.901176
-},
-"name": "Cassette"
-},
-"name": "TRISTAN ALLEN, GIDEON BROSHY: MUSIC, PUPPETS & FANTASY",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Cassette"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/6d88o8-tristan-allen-gideon-broshy-music-puppets-fantasy-8th-aug-cassette-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T22:00:07.470455Z"
+"lastmod": "2026-08-10T00:01:25.057295Z"
 },
 "https://dice.fm/event/6d8978-turf-club-sunset-sounds-3rd-sep-westlight-rooftop-at-the-william-vale-new-york-city-tickets": {
 "event": {
@@ -6410,38 +6154,6 @@
 "url": "https://dice.fm/event/6d8d92-arcana-skyline-series-082126-21st-aug-the-highlight-room-new-york-city-tickets"
 },
 "lastmod": "2026-07-31T18:38:16.477917Z"
-},
-"https://dice.fm/event/6d8g38-popola-party-8th-aug-the-sultan-room-rooftop-brooklyn-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "***Popola Party is home for the queer Afro-Caribbean & Latinx diaspora in NYC (and those that love us, obvio). A place where all our identities meet at once: donde perreamos sin pena, where we fall into romantic bachata, dip mid-reggaet\u00f3n, and let hand performance & catwalk live freely on the dance floor. A space where we celebrate all the facetas de la popola. \ud83e\udee6\u2728***",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-13/4e5c2e3d-5352-4e83-acd4-c9176af8d26a.jpg?rect=0%2C0%2C1200%2C1200"
-],
-"location": {
-"@type": "Place",
-"address": "234 Starr St, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70558609999999,
-"longitude": -73.9223421
-},
-"name": "The Sultan Room Rooftop"
-},
-"name": "Popola Party",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "The Sultan Room"
-},
-"startDate": "2026-08-08T17:00:00-04:00",
-"url": "https://dice.fm/event/6d8g38-popola-party-8th-aug-the-sultan-room-rooftop-brooklyn-tickets"
-},
-"lastmod": "2026-08-05T20:19:57.977034Z"
 },
 "https://dice.fm/event/6d8g98-karachi-community-radio-9-years-w-bianca-oblivion-asad-khan-yas-meen-selectress-28th-aug-elsewhere-brooklyn-new-york-tickets": {
 "event": {
@@ -6571,38 +6283,6 @@
 },
 "lastmod": "2026-08-04T08:06:10.452732Z"
 },
-"https://dice.fm/event/6d8km7-couvo-stephen-babcock-hey-again-8th-aug-union-pool-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Couvo \u2022 Stephen Babcock \u2022 Hey Again\n\nThis is a 21+ event (Physical ID required. Photos of ID + NYC City ID are not accepted)",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-07/62ccc672-5a3b-4d32-9e83-625a3e1c9940.jpg?rect=0%2C76%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "484 Union Ave, Brooklyn, NY 11211, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7149875,
-"longitude": -73.9516407
-},
-"name": "Union Pool"
-},
-"name": "Couvo \u2022 Stephen Babcock \u2022 Hey Again",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Union Pool"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/6d8km7-couvo-stephen-babcock-hey-again-8th-aug-union-pool-new-york-tickets"
-},
-"lastmod": "2026-08-08T22:09:12.629522Z"
-},
 "https://dice.fm/event/6d8kxb-quinn-belice-listening-session-16th-oct-ernest-records-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -6730,38 +6410,6 @@
 "url": "https://dice.fm/event/6d8p68-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-24th-oct-lost-in-paradise-rooftop-new-york-city-tickets"
 },
 "lastmod": "2026-07-14T14:55:35.597109Z"
-},
-"https://dice.fm/event/6d8q58-monstera-x-sea-wolf-reggaeton-saturday-8th-aug-sea-wolf-bushwick-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Every SATURDAY!\n\n$1.99 Tickets Available While Supplies Last!\n\nAges\n\n21+ w/ valid physical ID\n\nPictures of IDs will not be accepted\n\nThe only IDs that are accepted for entrance are the following in physical form only:\n\n\u2022 USA STATE government issued drivers license and identification cards\n\n\u2022 ANY government issued passport\n\n\u2022 USA military ID\n\nDress Code:\n\nDRESS CODE WILL BE ENFORCED!\n\nUpscale and Stylish Nightlife attire.\n\nLADIES NO JEANS\n\nLadies aim for elegance and style. High heels are a classic, but stylish flats work too. Avoid overly casual wear like gym attire. Prioritize looking fabulous.\n\nMEN NO HATS\n\nMEN NO SHORTS\n\nMEN NO HOODIES\n\nMEN NO DIRTY SHOES\n\nMEN NO SWEAT PANTS\n\nMEN PANTS MUST BE WORN AT THE WAIST\n\nGentlemen aim for sophistication and charm. Classic dress shoes are a staple, but stylish sneakers can work as well. Avoid overly casual attire like workout clothes. Maintain a polished appearance.\n\nNO REFUNDS IF YOU ARE OUT OF DRESS CODE.\n\nManagement reserves all rights\n\nTickets are non-refundable under any circumstances. Refunds will solely be processed in the event of an event cancellation. Alternatively, you have the option to acquire insurance at the point of purchase for added protection.\n\nDoors\n\n11 PM - 4 AM\n\nWhere\n\nSEA WOLF BUSHWICK\n\n19 WYCKOFF AVE, Brooklyn, NY 11237\n\nMusic\n\nLatin hits and POP all night! Bad Bunny, Rauw Alejandro, Cris MJ, Feid, KAROL G, FloyyMenor, Ryan Castro, El Alfa, Young Miko, PIT BULL, + More!",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-23/94aef752-476c-4f55-a440-d07913c05079.jpg?rect=0%2C0%2C1920%2C1920"
-],
-"location": {
-"@type": "Place",
-"address": "19 Wyckoff Avenue, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.706794,
-"longitude": -73.922844
-},
-"name": "SEA WOLF BUSHWICK"
-},
-"name": "MONSTERA x SEA WOLF REGGAETON | SATURDAY",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Monstera Nightlife"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/6d8q58-monstera-x-sea-wolf-reggaeton-saturday-8th-aug-sea-wolf-bushwick-new-york-city-tickets"
-},
-"lastmod": "2026-07-10T08:07:28.468659Z"
 },
 "https://dice.fm/event/6d8qq2-croz-boyce-29th-sep-public-records-new-york-tickets": {
 "event": {
@@ -7371,38 +7019,6 @@
 },
 "lastmod": "2026-07-24T14:10:33.905357Z"
 },
-"https://dice.fm/event/6dkvk3-riva-sunset-gathering-aug-8-8th-aug-rooftop-at-arlo-williamsburg-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Riva Sunset is a weekly Saturday ritual set above Brooklyn at the Arlo Williamsburg rooftop, where the sun goes down behind the most iconic skyline in the world and the music takes over. Curated by Azure - the brand known for elevated production, thoughtful curation, and an uncompromising standard for atmosphere - this is not just a party. It's a moment, built for people who live the culture.\n\nRIVA has made Williamsburg its home for a reason. The energy here is unmatched. And from this rooftop, with unobstructed views stretching across the East River, every week becomes something worth experiencing.\n\nExpect the hottest names in dance music alongside artists pushing the genre into its next chapter. Expect warm light, good energy, and a room that feels exactly like it should.\n\nNew York and house music are inseparable. Both are built to last. Riva Sunset carries that spirit every Saturday \u2014 welcoming a community defined by music, movement, and atmosphere.\n\n21+ ONLY\n\nRAIN OR SHINE\n\nALL SALES FINAL | NO REFUNDS OR EXCHANGES\n\nINFO/Questions: RIVA@AZUREPRESENTS.COM",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-10/48166069-539c-4374-9d8d-c2f88e6eaa36.jpg?rect=0%2C0%2C1254%2C1254"
-],
-"location": {
-"@type": "Place",
-"address": "96 Wythe Avenue, Brooklyn, New York 11249, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.721534,
-"longitude": -73.95877
-},
-"name": "Rooftop at Arlo Williamsburg "
-},
-"name": "RIVA Sunset Gathering - Aug 8",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Azure Day Party"
-},
-"startDate": "2026-08-08T17:00:00-04:00",
-"url": "https://dice.fm/event/6dkvk3-riva-sunset-gathering-aug-8-8th-aug-rooftop-at-arlo-williamsburg-new-york-city-tickets"
-},
-"lastmod": "2026-08-06T21:36:19.401932Z"
-},
 "https://dice.fm/event/6dkyd2-minyo-crusaders-the-mariposas-galcticas-22nd-sep-the-sultan-room-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -7530,50 +7146,6 @@
 "url": "https://dice.fm/event/6dldm8-chris-luno-friends-in-high-places-4th-sep-westlight-rooftop-at-the-william-vale-new-york-city-tickets"
 },
 "lastmod": "2026-08-06T08:05:14.598124Z"
-},
-"https://dice.fm/event/6dlgq3-josh-baker-day-and-night-8th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "DAY: Josh Baker, Cole Terrazas, Rana Iravani  \nNIGHT: Josh Baker, Laidlaw, Natalia Roth\n\nJosh Baker leads a day-into-night takeover on August 8, headlining both The Ruins and Main Hall alongside Laidlaw, Natalia Roth, Cole Terrazas and Rana Iravani.\n\nThe UK artist has seen a meteoric rise as a DJ and producer. As head of both You&Me Records and the renowned Hide&Seek Festival, his versatility embodies the creative essence of a new wave of electronic artists, of which he sits at the forefront.\n\nA co-founder of the Beeyou series, Laidlaw has cultivated a movement in his hometown's club culture, marked by both experimentation and his unique fluid, expansive approach. The rest of the lineup invites three exciting names from across North America. Roth, Terrazas and Iravani each bring a perfectly-matched take on sprawling, tech-y minimalism and billowy, immersive groove.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-22/01dad699-2b72-4612-a568-fec6ff7645c3.jpg?rect=0%2C2%2C1024%2C1024"
-],
-"location": [
-{
-"@type": "Place",
-"address": "52-19 Flushing Ave, Maspeth, NY 11378, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.71496339999999,
-"longitude": -73.9134793
-},
-"name": "Knockdown Center"
-},
-{
-"@type": "Place",
-"address": "52-19 Flushing Ave, Queens, NY 11378, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7156792,
-"longitude": -73.9143788
-},
-"name": "Ruins at Knockdown Center"
-}
-],
-"name": "JOSH BAKER: DAY AND NIGHT",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Knockdown Center"
-},
-"startDate": "2026-08-08T15:00:00-04:00",
-"url": "https://dice.fm/event/6dlgq3-josh-baker-day-and-night-8th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets"
-},
-"lastmod": "2026-08-08T17:52:09.676518Z"
 },
 "https://dice.fm/event/6dlnxb-ritual-day-into-night-lovie-jenifa-mayanja-leonce-blkshine-6th-sep-public-records-new-york-tickets": {
 "event": {
@@ -7797,7 +7369,7 @@
 "startDate": "2026-09-07T14:00:00-04:00",
 "url": "https://dice.fm/event/6do6g7-boris-classics-open-x-close-7th-sep-the-roof-at-superior-ingredients-new-york-tickets"
 },
-"lastmod": "2026-07-31T23:33:49.013640Z"
+"lastmod": "2026-08-09T08:06:06.882123Z"
 },
 "https://dice.fm/event/6do7m8-genesi-guests-11th-oct-knockdown-center-new-york-tickets": {
 "event": {
@@ -7862,38 +7434,6 @@
 "url": "https://dice.fm/event/6do7ob-mamacita-a-latinhip-hop-party-15th-aug-deluxx-fluxx-new-york-city-tickets"
 },
 "lastmod": "2026-08-07T00:43:11.372657Z"
-},
-"https://dice.fm/event/6do7oq-gyalhattan-a-dancehallhip-hop-party-8th-aug-deluxx-fluxx-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "See you on the dance floor, New York!\n\nFor bottle service email NYVIP@DELUXXFLUXX.COM\n\n21+ for Entry (Everyone MUST provide a physical Government issued ID (no pictures will be accepted)\n\nDeluxx Fluxx was designed to create an environment where you can express yourself freely and have your personal boundaries respected. We have a zero-tolerance policy for harassment, unwanted touch, discrimination, and aggressive behavior. Your entry into our home is a promise to respect and protect it.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-30/42c38142-4310-4e14-96d5-4192b9d41c0b.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "125 East 11th Street, BSMNT, New York City, New York 10003, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.73166,
-"longitude": -73.98917
-},
-"name": "Deluxx Fluxx"
-},
-"name": "Gyalhattan : A Dancehall/Hip-Hop Party",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Deluxx Fluxx NYC"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/6do7oq-gyalhattan-a-dancehallhip-hop-party-8th-aug-deluxx-fluxx-new-york-city-tickets"
-},
-"lastmod": "2026-07-30T17:20:03.731518Z"
 },
 "https://dice.fm/event/6do7r3-time-warp-nyc-20th-nov-duggal-greenhouse-brooklyn-navy-yard-new-york-city-tickets": {
 "event": {
@@ -8021,7 +7561,7 @@
 "startDate": "2026-08-14T22:00:00-04:00",
 "url": "https://dice.fm/event/6dobk3-rema-land-14th-aug-99-scott-main-room-new-york-tickets"
 },
-"lastmod": "2026-08-08T13:51:33.484997Z"
+"lastmod": "2026-08-09T14:38:06.403641Z"
 },
 "https://dice.fm/event/6dobqb-model-living-admin-funsucker-18th-sep-alphaville-new-york-tickets": {
 "event": {
@@ -8470,38 +8010,6 @@
 "url": "https://dice.fm/event/6dopkq-all2gthr-16th-aug-deluxx-fluxx-new-york-city-tickets"
 },
 "lastmod": "2026-08-04T22:05:31.622930Z"
-},
-"https://dice.fm/event/6dopm8-rhythm-blades-skate-club-8th-aug-xanadu-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "***Rhythm & Blades (skate + dance)***\n\n***r&b, 90's hip hop, house, soul***\n\n***RHYTHM & BLADES PRESENTS***\n\n***R&B RODEO - SB Sounds official birthday skate party \ud83c\udf89 Season 2 Vol 8 \ud83e\udd29***\n\n***Saturday August 8th, 2026***\n\n***7pm-2am***\n\n***Skating 7-11pm \ud83d\udefc***\n\n***Party 11-2am \ud83d\udc83\ud83c\udffe***\n\n***Prize for best Western Wear \ud83e\udd20***\n\n***THE BEST RNB + LINE DANCING HITS + SPECIAL GUESTS & GIVEAWAYS***\n\n***MUSIC By***\n\n***NYC\u2019s Best DJs***\n\n***Hosted By***\n\n***Honey The RnB Party .***\n\n***Booth reservations are available for parties 7+ via form: https://www.xanadu.nyc/booking***\n\n***General Admission tickets are included in all booth reservations.***\n\n\ud83d\udea8Important Info\ud83d\udea8\n\n\u00b7 Ticket does \\*NOT\\* include Skate Rental.\n\n\u00b7 Skates & safety gear are available to rent \\*\\*first come, first served\\*\\*\n\n\u00b7 All sales are final. No refunds.\n\n\u00b7 You must sign the Xanadu waiver in advance here: https://shorturl.at/AJbHn\n\n\u00b7 Valid Government ID required for entry. Photos of IDs are not accepted\n\n\u00b7 Gum, outside food and drink is not allowed.\n\n\u00b7 All bags are subject to search at the venue entrance.\n\n\u00b7 Xanadu is wheelchair accessible and includes entry ramps and ADA bathrooms. Write to info@xanadu.nyc if you require extra assistance.\n\n\u00b7 Xanadu is an inclusive, safe space. We do not tolerate harassment, aggression, racism, bigotry, or hatred of any kind.\n\nSkating is FUN. Skating is RISKY!\n\nTogether we will create a skate experience that is fun and safe for everyone on the rink!\n\n\u00b7 Be mindful of yourself, your limits and others around you.\n\n\u00b7 Our Skate Guards are always here to help! Please alert them to any hazards or unsafe behavior on the rink so that they can help.\n\n\u00b7 Rink capacity fluctuates throughout each session- if you are ever feeling overwhelmed, take a quick break and get back into the flow when you\u2019re ready.\n\n\u00b7 Keep each other safe & happy! Less friction, more FLOW.\n\nMore questions? Find answers here: xanadu.nyc/FAQ\n\n\u2728By purchasing a ticket, you agree to and are bound by Xanadu's Terms and Conditions: https://tinyurl.com/XanaduTermsConditions",
-"endDate": "2026-08-09T02:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-28/6fc41017-b9aa-4559-b321-ce529f54089c.jpg?rect=0%2C0%2C1200%2C1200"
-],
-"location": {
-"@type": "Place",
-"address": "262 Starr Street, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.706478,
-"longitude": -73.921529
-},
-"name": "Xanadu"
-},
-"name": "Rhythm & Blades (skate + club)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Xanadu Presents"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/6dopm8-rhythm-blades-skate-club-8th-aug-xanadu-new-york-city-tickets"
-},
-"lastmod": "2026-08-07T15:52:18.385490Z"
 },
 "https://dice.fm/event/6dopyb-terror-king-nine-whispers-love-sick-11th-sep-saint-vitus-new-york-city-tickets": {
 "event": {
@@ -9047,70 +8555,6 @@
 },
 "lastmod": "2026-07-14T15:06:42.559131Z"
 },
-"https://dice.fm/event/7dbov6-the-black-parade-invades-qxts-nj-8th-aug-qxts-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "EMO & POP PUNK NITE\n\nThe Black Parade Returns to the main room of QXT's in Newark, New Jersey\n\nJoin us in the main room of QXT's for a night of Emo & Pop Punk as DJs Jet, Swabby & Katastrophiee play the jams you love by artists such as:\n\nFall Out Boy \\* Yellowcard, Jimmy Eat World \\* My Chemical Romance \\* All Time Low \\* New Found Glory \\* Blink 182 \\* AFI, Panic! At The Disco \\* Good Charlotte \\* Falling in Reverse \\* A Day To Remember \\* Paramore & much more!\n\nRequests Welcome!\n\n\\-----------\n\nMeanwhile, downstairs...\n\nThe Crypt: DJs: TBA\n\nArea 51: DJs: TBA\n\n\\-----------\n\nQXT's: 248 Mulberry St. Newark, NJ. Doors 10pm-3am. 21+",
-"endDate": "2026-08-09T03:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2025-11-24/3db4f12f-159b-4a55-a590-b2d9820f86f8.jpg?rect=1%2C0%2C801%2C801"
-],
-"location": {
-"@type": "Place",
-"address": "248 Mulberry St, Newark, NJ 07102, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7303686,
-"longitude": -74.1714748
-},
-"name": "QXT's"
-},
-"name": "THE BLACK PARADE INVADES QXT's NJ ",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Vampire Freaks & Cheeky Entertainment"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/7dbov6-the-black-parade-invades-qxts-nj-8th-aug-qxts-new-york-tickets"
-},
-"lastmod": "2026-07-10T08:06:26.285399Z"
-},
-"https://dice.fm/event/7dg229-mercer-day-party-august-8-8th-aug-hotel-50-bowery-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "mercer day party is the latest addition to NYC\u2019s expanding house music scene, brought to you by the teams behind azure day party and amber sunset party. set in the heart of lower manhattan on the rooftop of hotel 50 bowery, this weekly saturday event delivers a full day of house music starting at 3pm, featuring special guest DJs and the city\u2019s top local talent. with its prime lower manhattan location, mercer embodies the energy, culture, and sound of NYC\u2019s vibrant house music scene \u2014 every saturday, all summer long. doors open at 3pm through sunset and into the evening. house music all day & night.\n\ncurated by azure day party and rose gold presents\n\nquestions or table inquiries: hello@mercerdayparty.com or text (917) 923-0629\n\nfollow along on instagram: @mercerdayparty\n\n21+ ONLY\n\nRAIN OR SHINE\n\nALL SALES FINAL | NO REFUNDS OR EXCHANGES\n\n\\--\n\nThis is a LIVE MUSIC EVENT. This event features live musical arts performance by a House Music/EDM DJ.",
-"endDate": "2026-08-09T02:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-04-17/011a50ee-23d4-4ecd-855e-305e1c19409d.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "50 Bowery, New York City, New York 10013, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.715931,
-"longitude": -73.996732
-},
-"name": "Hotel 50 Bowery"
-},
-"name": "MERCER DAY PARTY - August 8",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "mercer day party"
-},
-"startDate": "2026-08-08T15:00:00-04:00",
-"url": "https://dice.fm/event/7dg229-mercer-day-party-august-8-8th-aug-hotel-50-bowery-new-york-city-tickets"
-},
-"lastmod": "2026-07-10T08:06:02.921839Z"
-},
 "https://dice.fm/event/7dg586-aboveten-after-dark-at-1-hotel-12th-sep-harriets-lounge-1-hotel-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -9271,38 +8715,6 @@
 },
 "lastmod": "2026-08-07T19:24:21.349849Z"
 },
-"https://dice.fm/event/7dmr79-aboveten-1-hotel-rooftop-ft-hoax-be-8th-aug-1-hotel-brooklyn-bridge-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Welcome to **ABOVE(TEN)**,\n\nNYC\u2019s newest premier **rooftop experience** popping up at **1 Hotel Brooklyn Bridge**.\n\nEscape the noise of New York City for the sounds of house music all summer long with 360 skyline views of Manhattan.\n\nFollow our journey on Instagram and TikTok @aboveten to stay connected for updates, announcements and giveaways.\n\nBe the first to experience ABOVE(TEN) - Launching March 2026.\n\n**Thursday's 5pm-10pm**\n\n**Saturday\u2019s 2PM - 10PM**\n\n21+ event | No ticket, no entry | Tickets are non-refundable.\n\nTable service available \u2013 Take your experience to new heights with top-tier hospitality.\n\nFor further inquiries, please contact **Nikki@tmmlpresents.com**\n\nArrive Early for expedited entry\n\nEntry/Exit to and from 1 Hotel Rooftop is exclusively via the elevator, and wait times may increase during peak hours. We strongly recommend arriving before 3:00pm to ensure timely entry and make the most of your day at Above(Ten).",
-"endDate": "2026-08-08T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-09/a0f88412-f287-4857-a338-1435823b8b33.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "60 Furman Street, Brooklyn, New York 11201, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70232,
-"longitude": -73.995534
-},
-"name": "1 Hotel Brooklyn Bridge"
-},
-"name": "Above(Ten) 1 Hotel Rooftop ft. Hoax (Be)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Above(Ten)"
-},
-"startDate": "2026-08-08T14:00:00-04:00",
-"url": "https://dice.fm/event/7dmr79-aboveten-1-hotel-rooftop-ft-hoax-be-8th-aug-1-hotel-brooklyn-bridge-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T22:14:10.811940Z"
-},
 "https://dice.fm/event/7dmydp-kein-klub-intergalactic-gary-soundstream-amelia-holt-17th-oct-h0l0-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -9365,7 +8777,7 @@
 "startDate": "2026-08-22T15:00:00-04:00",
 "url": "https://dice.fm/event/7dp5bp-alesso-presented-by-project-91-22nd-aug-brooklyn-army-terminal-pier-4-new-york-city-tickets"
 },
-"lastmod": "2026-08-08T00:24:25.186143Z"
+"lastmod": "2026-08-09T14:09:18.488225Z"
 },
 "https://dice.fm/event/7dw2l6-monstera-x-sea-wolf-reggaeton-saturday-26th-sep-sea-wolf-bushwick-new-york-city-tickets": {
 "event": {
@@ -9941,7 +9353,7 @@
 "startDate": "2026-10-11T14:00:00-04:00",
 "url": "https://dice.fm/event/7dx62v-hi-lo-with-rebke-11th-oct-creekside-under-the-k-bridge-new-york-city-tickets"
 },
-"lastmod": "2026-08-07T17:44:12.702130Z"
+"lastmod": "2026-08-09T22:51:27.926580Z"
 },
 "https://dice.fm/event/7dx877-baby-buck-2nd-sep-desert-5-spot-ny-new-york-city-tickets": {
 "event": {
@@ -10422,6 +9834,70 @@
 "url": "https://dice.fm/event/7dxo69-alan-walker-4th-sep-marquee-new-york-new-york-city-tickets"
 },
 "lastmod": "2026-08-06T08:07:15.277845Z"
+},
+"https://dice.fm/event/7dxpg6-downstairs-y2kunt-20th-aug-purgatory-new-york-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "DJs EMSEA and AGX present Y2Kunt: a free, sapphic-centered dance party to show that gay summer never ends. Spinning classics all night for moving and grooving. Y2K attire encouraged.",
+"endDate": "2026-08-21T00:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/c875d90c-4d7b-45e4-99ff-f4b071aad63c.jpg?rect=0%2C250%2C2000%2C2000"
+],
+"location": {
+"@type": "Place",
+"address": "675 Central Ave, Brooklyn, NY 11207, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.6872368,
+"longitude": -73.9057271
+},
+"name": "Purgatory"
+},
+"name": "DOWNSTAIRS: Y2Kunt",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "Purgatory"
+},
+"startDate": "2026-08-20T21:00:00-04:00",
+"url": "https://dice.fm/event/7dxpg6-downstairs-y2kunt-20th-aug-purgatory-new-york-tickets"
+},
+"lastmod": "2026-08-09T17:24:28.163576Z"
+},
+"https://dice.fm/event/7dxpm6-open-decks-w-village-hidden-in-sound-23rd-sep-silo-brooklyn-brooklyn-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Hosted by DJ and musician Steen, Open Decks is a creative and fun space where DJs can hang and share their house and techno music live. Hear your favorite or original tracks on SILO's front room sound system, a custom 15,000 watt Danley powerhouse. This week Cevich\u00e9 is filling in for Steen while he's on vacation.\n\nIf you want to play, talk to Cevich\u00e9 to sign up. Sign-up is in person at the event only, slots are 12 minutes.\n\nThe first 3 DJ's play first-come-first-spin. Then we'll select names randomly from the sign-up list throughout the night, with extra weighting for DJs who arrive earlier. You'll get a half hour notice before your set time. This is to ensure that DJ's who can't make the initial sign up right at 8pm still get a chance to play.\n\nFree with advance RSVP.\n\nThis week's co-host is Village Hidden in Sound.\n\nIn SILO's front room. Limited capacity.",
+"endDate": "2026-09-24T02:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/822f429b-b8b7-443b-bb2c-d651f8f1858a.jpg?rect=0%2C0%2C1500%2C1500"
+],
+"location": {
+"@type": "Place",
+"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7105086,
+"longitude": -73.922873
+},
+"name": "SILO Brooklyn "
+},
+"name": "Open Decks w/ Village Hidden in Sound",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "SILO Brooklyn"
+},
+"startDate": "2026-09-23T19:00:00-04:00",
+"url": "https://dice.fm/event/7dxpm6-open-decks-w-village-hidden-in-sound-23rd-sep-silo-brooklyn-brooklyn-tickets"
+},
+"lastmod": "2026-08-09T02:45:25.395893Z"
 },
 "https://dice.fm/event/7dxrb7-juzu-maul-couple-rachel-alice-ad-11th-aug-gold-sounds-new-york-tickets": {
 "event": {
@@ -11031,38 +10507,6 @@
 },
 "lastmod": "2026-08-07T08:08:32.860304Z"
 },
-"https://dice.fm/event/8e9365--festival-dominicano-mundo-brian-cid-presents-ladob-8th-aug-house-of-yes-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "The night before the NYC Dominican Day Parade, House of Yes celebrates the music, artistry, and creative spirit of the Dominican diaspora with \\*\\*FESTIVAL DOMINICANO\\*\\*\n\nOne ticket. Two worlds.\n\nIn the Main Room, MUNDO brings its unmistakable energy from the Bronx to Brooklyn. Led by Dos Flakos and DJ Guari, MUNDO is known for their secret bodega raves ;) Expect infectious sounds, vibrant dance floors, and an electrifying celebration of Dominican culture from one of NYC's most exciting cultural movements.\n\nIn The Onyx Room, Brian Cid presents: Ladob\u00e9, an immersive journey through melodic house and progressive sounds from one of the Dominican Republic's most celebrated electronic artists. Deep grooves, hypnotic rhythms, and a dance floor built for losing yourself until sunrise.\n\n**No Phones / No Photos on the Dancefloor. Please mind the vibe and keep your phones tucked away while dancing.**\n\n\u2af8 MUSIC\n\nMUNDO\n\nDos Flakos\n\nUltra Violet\n\nBrian Cid\n\n\u2af8 EXPERIENCES\n\nPerformances and activations that may involve fresh fruit, feelings, mild confusion, time-dilation, and enthusiastic consent. We can\u2019t tell you what\u2019s happening yet \u2014 only that it will be weird, wild, and wonderful.\n\n\u2af8 GROUPS & RESERVED TABLES\n\nReservations@houseofyes.org\n\n\u2af8 GET ON THE LIST\n\nSubscribe for first access to tix & special perks: houseofyes.org/subscribe\n\n\u25c6 SAFER SPACES POLICY \u25c6\n\nHouse of Yes is a space for everyone to feel welcome. We have zero tolerance for harassment, unwanted touch, and discrimination. Always ASK before touching anyone. If someone is making you uncomfortable, speak to a security guard or ask for a manager - we will help you. All restrooms in our venue are gender neutral. Find out more at houseofyes.org/safer\n\n\u25c6 INFO & FAQ \u25c6\n\n21+ | No Re-Entry | No Refunds",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-04/5d5a0efc-4087-468e-b3d3-6f184ef06e73.jpg?rect=0%2C135%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "2 Wyckoff Avenue, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70684,
-"longitude": -73.92352
-},
-"name": "House of Yes"
-},
-"name": " Festival Dominicano: MUNDO + Brian Cid Presents Ladob\u00e9",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "House of Yes"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/8e9365--festival-dominicano-mundo-brian-cid-presents-ladob-8th-aug-house-of-yes-new-york-city-tickets"
-},
-"lastmod": "2026-08-05T17:53:07.255421Z"
-},
 "https://dice.fm/event/8e93l7-the-hands-free-becca-stevens-28th-aug-public-records-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -11328,7 +10772,7 @@
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
-"https://dice-media.imgix.net/attachments/2026-07-22/96d26710-8c3a-4a76-9d4f-91cb81308cdf.jpg?rect=0%2C0%2C3000%2C3000"
+"https://dice-media.imgix.net/attachments/2026-08-09/33dc2da3-1414-4313-9d4a-03d1d1e53078.jpg?rect=0%2C0%2C3000%2C3000"
 ],
 "location": {
 "@type": "Place",
@@ -11349,7 +10793,7 @@
 "startDate": "2026-09-04T19:00:00-04:00",
 "url": "https://dice.fm/event/8e9ekr-downstairs-structure-4th-sep-purgatory-new-york-tickets"
 },
-"lastmod": "2026-08-06T08:07:04.235967Z"
+"lastmod": "2026-08-09T17:08:59.424087Z"
 },
 "https://dice.fm/event/8e9enr-eli-winter-trio-ski-team-3rd-oct-public-records-new-york-tickets": {
 "event": {
@@ -12183,38 +11627,6 @@
 },
 "lastmod": "2026-07-16T08:05:55.019486Z"
 },
-"https://dice.fm/event/8el5yr-resolute-shonky-gabbs-daytime-rooftop-8th-aug-314-scholes-street-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Summer rooftops with the dons of techy bops. Flying in from France and Italy... this day party is going to be proper.",
-"endDate": "2026-08-09T00:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-30/85f3ba75-3d34-4fc8-b9d5-cd5cea39f946.jpg?rect=0%2C250%2C1499%2C1499"
-],
-"location": {
-"@type": "Place",
-"address": "314 Scholes Street, Brooklyn, New York 11206, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.709363,
-"longitude": -73.935397
-},
-"name": "314 Scholes Street"
-},
-"name": "ReSolute: Shonky + Gabbs SOLD OUT",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "ReSolute"
-},
-"startDate": "2026-08-08T16:00:00-04:00",
-"url": "https://dice.fm/event/8el5yr-resolute-shonky-gabbs-sold-out-8th-aug-314-scholes-street-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T09:19:50.634602Z"
-},
 "https://dice.fm/event/8el79v-avello-17th-oct-the-chocolate-factory-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -12983,38 +12395,6 @@
 },
 "lastmod": "2026-07-24T21:20:47.511873Z"
 },
-"https://dice.fm/event/8eqqv2--karaoke-saturday-night-8th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "**Let\u2019s meet at Seventh Heaven!** While walk-ins are always accepted, we love to know that you\u2019re coming! We offer a no-fee, complimentary rsvp for our communal karaoke nights. Get ready to make new friends!\n\n- Designed by karaoke lovers and professional sound engineers, Seventh Heaven boasts a club-quality sound system, multiple big screen TVs (plus a few vintage ones), and up to two microphones so you can sing solo or a duet. We have songs available in over 20 languages!\n- In between songs? Our main bar room and outdoor space are ideal for conversation. Our menu features a curated selection of signature cocktails, sommelier-selected wines and unique Japanese drafts. Enjoy our selection of rare books and games. We have board games, a selection of rare books, and even a free-to-play arcade machine!\n- With one of the largest karaoke rooms in New York City, Seventh Heaven can accommodate reservations of all sizes. Invite your closest friends or everyone you\u2019ve ever met!\n- If you would like to reserve Seventh Heaven for 50+ guests or would like to book a fully private event, please email our booking team at reservations@seventhheaven.bar and we\u2019ll get back to you regarding availability and pricing.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-01-23/614f5f25-c7b2-45ea-ac4f-45c3b070f064.jpg?rect=751%2C0%2C5304%2C5304"
-],
-"location": {
-"@type": "Place",
-"address": "4 Irving Avenue, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.705498,
-"longitude": -73.925999
-},
-"name": "Seventh Heaven Bar & Karaoke"
-},
-"name": "\u02d6 \u0741\u266c\u22c6.\u02da\ud834\udd1e. Karaoke Saturday Night \u02d6 \u0741\u266c\u22c6.\u02da\ud834\udd1e.",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Seventh Heaven Bar & Karaoke"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/8eqqv2--karaoke-saturday-night-8th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets"
-},
-"lastmod": "2026-08-03T22:00:15.468199Z"
-},
 "https://dice.fm/event/8eqrer-hieroglyphic-being-30000ad-physical-therapy-maenad-scott-zacharias-22nd-aug-public-records-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -13238,38 +12618,6 @@
 "url": "https://dice.fm/event/9236k7-breaking-sound-nyc-at-brooklyn-music-kitchen-0908-8th-sep-brooklyn-music-kitchen-new-york-city-tickets"
 },
 "lastmod": "2026-08-06T23:00:16.428005Z"
-},
-"https://dice.fm/event/9238g7-disgonuts-omer-mil-armii1n-michael-magnan-more-8th-aug-dead-letter-no9-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "On Saturday, August 8th, Dead Letter No. 9 comes alive across two rooms with a heavy lineup of selectors: **Disgonuts, Omer Mil, Armii1n, Michael Magnan, and Borb\u00f3n.**\n\nOpening CARGO from 10PM\u201312AM is Tehran-born, NYC-based Armii1n. Shaped by dance floors across Asia, Miami, and New York, his journey includes residencies at Kuala Lumpur\u2019s Kyo Club, Elysium, and The Iron Fairies, plus Miami\u2019s Do Not Sit on the Furniture. He now runs NYC event series Pregame.\n\nFrom 12AM\u20133:30AM, Disgonuts and Omer Mil take over together. Brooklyn and Mexico City-based Disgonuts blends soulful house, obscure disco, electro, boogie, Afro-Latin rhythms, and psychedelic sounds. He is Label Manager and A&R at Razor-N-Tape and co-founder of Funky Seshwa and Discoteca. NYC DJ and producer Omer Mil is a Golden Record resident and co-founder of An.Art Records and Vin.yl, known for deep house, disco, funk, and globally influenced club sounds.\n\nIn the Foyer, NYC nightlife mainstay Michael Magnan brings fearless, genre-fluid selections from 9PM\u201312AM before Borb\u00f3n takes over with disco, house, and global club sounds from 12AM\u20133AM.\n\nVenue opens at 5PM | Happy Hour 5PM\u20137PM | 21+\n\nKitchen open late",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-27/65575c37-7c43-415e-b680-f6b5c203ed94.jpg?rect=0%2C135%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "63 Grand Street, Brooklyn, New York 11249, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.71598,
-"longitude": -73.964902
-},
-"name": "Dead Letter No.9"
-},
-"name": "Disgonuts, Omer Mil, Armii1n, Michael Magnan +more",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Dead Letter No. 9"
-},
-"startDate": "2026-08-08T21:00:00-04:00",
-"url": "https://dice.fm/event/9238g7-disgonuts-omer-mil-armii1n-michael-magnan-more-8th-aug-dead-letter-no9-new-york-city-tickets"
-},
-"lastmod": "2026-07-27T22:55:14.125275Z"
 },
 "https://dice.fm/event/9239gn-buck-wild-27th-sep-desert-5-spot-ny-new-york-city-tickets": {
 "event": {
@@ -13687,11 +13035,11 @@
 },
 "lastmod": "2026-08-07T08:08:08.090628Z"
 },
-"https://dice.fm/event/923o2o-siliver-lining-august-15-15th-aug-silver-lining-lounge-new-york-city-tickets": {
+"https://dice.fm/event/923o2o-meet-in-new-york-15th-aug-silver-lining-lounge-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
 "@type": "MusicEvent",
-"description": "Join us Friday as Congregation takes over Silver Lining!\n\nDress Code: Trendy & Upscale\n\nEvent Time: 10 pm-Late",
+"description": "Join us Saturday as Congregation takes over Silver Lining!\n\nDress Code: Trendy & Upscale\n\nEvent Time: 10 pm-Late",
 "endDate": "2026-08-16T03:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
@@ -13717,7 +13065,7 @@
 "startDate": "2026-08-15T22:00:00-04:00",
 "url": "https://dice.fm/event/923o2o-meet-in-new-york-15th-aug-silver-lining-lounge-new-york-city-tickets"
 },
-"lastmod": "2026-08-08T19:43:30.002896Z"
+"lastmod": "2026-08-09T04:13:17.491382Z"
 },
 "https://dice.fm/event/923o67-sam-collins-mona-matsuoka-17th-sep-elsewhere-rooftop-new-york-tickets": {
 "event": {
@@ -14550,38 +13898,6 @@
 "url": "https://dice.fm/event/92krb7-house-of-grooves-eli-escobar-all-night-sissies-of-mercy-4th-dec-house-of-yes-new-york-city-tickets"
 },
 "lastmod": "2026-08-05T19:30:14.108937Z"
-},
-"https://dice.fm/event/92kvgn-sunday-afterglow-skate-9th-aug-xanadu-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "**\ud83d\udefc About Sunday Afterglow: (skate)\ud83d\udefc**\n\n**Ease into the end of the weekend with a mellow, magical skating session designed for everyone \u2014 kids, teens, adults, families, and first-time skaters. Sunday Afterglow blends chill music, soft lights, and easygoing energy to help you unwind, connect, and roll into a brand-new week feeling refreshed.**\n\n**Vibe and skate to the music of disco, house, pop**\n\n**Booth reservations are available for parties 7+ via form: https://www.xanadu.nyc/booking**\n\n**General Admission tickets are included in all booth reservations.**\n\n**\ud83d\udea8Important Info\ud83d\udea8**\n\n\u00b7 Guests between 16 and 17 admitted with a skate waiver signed by a legal guardian. Guests under 16 admitted if accompanied by a legal guardian.\n\n\u00b7 Ticket does \\*NOT\\* include Skate Rental.\n\n\u00b7 Skates & safety gear are available to rent \\*\\*first come, first served\\*\\*\n\n\u00b7 All sales are final. No refunds.\n\n\u00b7 You must sign the Xanadu waiver in advance here: https://shorturl.at/AJbHn\n\n\u00b7 Valid Government ID required for entry. Photos of IDs are not accepted\n\n\u00b7 Gum, outside food and drink is not allowed.\n\n\u00b7 All bags are subject to search at the venue entrance.\n\n\u00b7 Xanadu is wheelchair accessible and includes entry ramps and ADA bathrooms. Write to info@xanadu.nyc if you require extra assistance.\n\n\u00b7 Xanadu is an inclusive, safe space. We do not tolerate harassment, aggression, racism, bigotry, or hatred of any kind.\n\n**Skating is FUN. Skating is RISKY!**\n\nTogether we will create a skate experience that is fun and safe for everyone on the rink!\n\n\u00b7 Be mindful of yourself, your limits and others around you.\n\n\u00b7 Our Skate Guards are always here to help! Please alert them to any hazards or unsafe behavior on the rink so that they can help.\n\n\u00b7 Rink capacity fluctuates throughout each session- if you are ever feeling overwhelmed, take a quick break and get back into the flow when you\u2019re ready.\n\n\u00b7 Keep each other safe & happy! Less friction, more FLOW.\n\nMore questions? Find answers here: xanadu.nyc/FAQ\n\n\u2728By purchasing a ticket, you agree to and are bound by Xanadu's Terms and Conditions: https://tinyurl.com/XanaduTermsConditions",
-"endDate": "2026-08-09T18:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2025-11-10/334dc32b-a999-4bf3-b92d-148b26c73053.jpg?rect=0%2C0%2C3000%2C3000"
-],
-"location": {
-"@type": "Place",
-"address": "262 Starr Street, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.706478,
-"longitude": -73.921529
-},
-"name": "Xanadu"
-},
-"name": "Sunday Afterglow (skate)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Xanadu Roller Arts"
-},
-"startDate": "2026-08-09T12:00:00-04:00",
-"url": "https://dice.fm/event/92kvgn-sunday-afterglow-skate-9th-aug-xanadu-new-york-city-tickets"
-},
-"lastmod": "2026-07-24T20:22:44.093499Z"
 },
 "https://dice.fm/event/92ky3n-noah-richardson-duunes-jessica-woodlee-1st-oct-the-sultan-room-new-york-tickets": {
 "event": {
@@ -16027,38 +15343,6 @@
 },
 "lastmod": "2026-07-17T08:08:40.666004Z"
 },
-"https://dice.fm/event/avregq-reggaeton-throwbacks-21-8th-aug-the-meadows-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "\ud83c\udfb6 Throwbacks brings you straight back to the golden era of perreo \u2014 with a twist! \ud83d\udcbf\n\nWe\u2019re taking you back to the golden era of perreo in the main room! \ud83d\udcbf\ud83d\udd25 Expect nonstop classics from reggaeton legends like Tego Calder\u00f3n, Daddy Yankee, Wisin & Yandel, Ivy Queen, Don Omar, and more.\n\n**NO REFUNDS**\n\nAll tickets are non-refundable and non-exchangeable. Event cancellations without a rescheduled date will result in an automatic full refund to the original credit card used for the purchase. Your purchase of a ticket implies agreement with this policy. Please verify event details before buying tickets.\n\nBy attending this event, you grant reggaetonLABS permission to photograph and record you, and to use your image for promotional purposes.\n\nPlease ensure you bring a government-issued ID with your date of birth.\n\n**TERMS & CONDITIONS**\n\nBy purchasing this ticket, you agree to our Terms & Conditions  \nwww.reggaetonlabs.com/terms-conditions",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-01/11dc1316-41a6-45ad-b631-049c3d6ed735.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "17 Meadow St, Brooklyn, NY 11206, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7108644,
-"longitude": -73.93657929999999
-},
-"name": "The Meadows"
-},
-"name": "Reggaeton Throwbacks  (21+)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "reggaetonLABS"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/avregq-reggaeton-throwbacks-21-8th-aug-the-meadows-new-york-tickets"
-},
-"lastmod": "2026-07-31T14:36:29.091104Z"
-},
 "https://dice.fm/event/avrk2v-cool-customer-surf-team-superior-ingredients-2-rooms-presented-by-closed-sessions-14th-aug-superior-ingredients-main-room-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -16379,38 +15663,6 @@
 },
 "lastmod": "2026-08-08T08:05:46.003427Z"
 },
-"https://dice.fm/event/avwgeq-abby-holliday-charli-adams-izzy-potter-8th-aug-the-sultan-room-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "***Abby Holliday, Charli Adams, Izzy Potter***",
-"endDate": "2026-08-08T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-04-22/48ca4b9c-63cf-487d-8395-1d07930a6f37.jpg?rect=0%2C0%2C2000%2C2000"
-],
-"location": {
-"@type": "Place",
-"address": "234 Starr St, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70558609999999,
-"longitude": -73.9223421
-},
-"name": "The Sultan Room"
-},
-"name": "Abby Holliday, Charli Adams, Izzy Potter ",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "The Sultan Room"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/avwgeq-abby-holliday-charli-adams-izzy-potter-8th-aug-the-sultan-room-new-york-tickets"
-},
-"lastmod": "2026-07-27T23:10:10.070685Z"
-},
 "https://dice.fm/event/avwkax-1-hotel-brooklyn-bridge-halloween-haunted-lounge-october-30th-30th-oct-harriets-lounge-1-hotel-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -16578,7 +15830,7 @@
 "description": "Global music, powered by Jawani 4eva and Rooted",
 "endDate": "2026-08-15T21:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
+"eventStatus": "https://schema.org/EventCancelled",
 "image": [
 "https://dice-media.imgix.net/attachments/2026-08-08/6699632e-a14f-43f5-8697-a25800f1318d.jpg?rect=0%2C0%2C1080%2C1080"
 ],
@@ -16601,7 +15853,7 @@
 "startDate": "2026-08-15T16:00:00-04:00",
 "url": "https://dice.fm/event/avx3m7-southbound-15th-aug-le-bain-new-york-tickets"
 },
-"lastmod": "2026-08-08T17:58:41.597010Z"
+"lastmod": "2026-08-09T17:47:00.848459Z"
 },
 "https://dice.fm/event/avx6qd-dirty-bird-4th-sep-erf-gallery-new-york-city-tickets": {
 "event": {
@@ -16986,70 +16238,6 @@
 "url": "https://dice.fm/event/avxdev-party-of-the-century-ryal-album-release-party-14th-oct-the-sultan-room-new-york-tickets"
 },
 "lastmod": "2026-07-30T16:30:19.375568Z"
-},
-"https://dice.fm/event/avxdk2-sunday-sunsets-vol-21-9th-aug-sleepwalk-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "SUNDAY SUNSETS vol 21\n\nfeaturing\n\nT\u00dcF ::: SHAWN GHOST ::: IAN TAYLOR ::: JOE WOLFE\n\n5pm ::: No Cover",
-"endDate": "2026-08-09T21:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-30/3630c25e-4775-4a36-85a0-3bd51631097a.jpg?rect=0%2C0%2C2000%2C2000"
-],
-"location": {
-"@type": "Place",
-"address": "251 Bushwick Avenue, Brooklyn, New York 11206, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70733,
-"longitude": -73.939555
-},
-"name": "Sleepwalk"
-},
-"name": "SUNDAY SUNSETS Vol 21",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Sleepwalk"
-},
-"startDate": "2026-08-09T17:00:00-04:00",
-"url": "https://dice.fm/event/avxdk2-sunday-sunsets-vol-21-9th-aug-sleepwalk-new-york-city-tickets"
-},
-"lastmod": "2026-07-31T08:09:25.890857Z"
-},
-"https://dice.fm/event/avxdr2-stereo-mandrax-free-w-rsvp-austin-sley-julian-john-blum-ryan-sawyer-dan-gitlin-rose-tang-duo-9th-aug-pianos-showroom-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "**Austin Sley Julian**\n\nUsing prepared guitar, handmade instruments, discarded artifacts and found debris, Austin Sley Julian creates kinetic, physically jagged sound structures that propel at their audiences. Evoking feelings of anguish, frustration, and inherent conflict, confronting the ugly/beautiful instability of our moment and condition.\n\n\u2022\n\n**John Blum + Ryan Sawyer**\n\n**John Blum** is one of New York's most distinctive voices in creative improvised music. A pianist and composer with more than three decades of international performance experience, Blum has developed a fiercely individual style that draws from the legacies of Cecil Taylor, McCoy Tyner, bebop, stride piano, and the free jazz tradition while remaining unmistakably his own. A longtime fixture of New York City's downtown music scene, he has performed and recorded with luminaries including Sunny Murray, Marshall Allen, Han Bennink, David Murray, Peter Br\u00f6tzman, Dave Liebman, and many others. His performances are celebrated for their explosive energy, technical brilliance, and emotional depth, earning him recognition as one of the most compelling improvising pianists of his generation.\n\n**Ryan Sawyer** is an acclaimed drummer, percussionist, and composer whose adventurous musical voice bridges the worlds of free improvisation, jazz, rock, and experimental music. Originally from San Antonio, Texas, Sawyer has been an integral part of New York's creative music community since the late 1990s. His wide-ranging collaborations include performances with Marshall Allen, Charles Gayle, Thurston Moore, Gang Gang Dance, TV on the Radio, Rhys Chatham, and Nate Wooley, among many others. Renowned for his remarkable command of texture, dynamics, and rhythmic invention, Sawyer brings an unmistakable blend of sensitivity, power, and spontaneity to every performance, making him one of today's most versatile and sought-after improvising drummers.\n\n\u2022\n\n**Dan Gitlin + Rose Tang Duo**\n\n**Dan Gitlin** (he/him/they) is a Brooklyn-based Chapman Stickist, guitarist, and general noise making guy.\n\n**Rose Tang** is a multi-disciplinary artivist. Her current main toys are piano, electric guitar, voice and words. She's the founder/host of Fuck Fascism Festival.",
-"endDate": "2026-08-09T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-30/d8f85fd2-d3ae-4e42-8c1e-a70014eee727.jpg?rect=0%2C0%2C1604%2C1604"
-],
-"location": {
-"@type": "Place",
-"address": "158 Ludlow St, New York, NY 10002, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.72097249999999,
-"longitude": -73.9876401
-},
-"name": "Pianos: Showroom"
-},
-"name": "Stereo Mandrax (FREE w/ RSVP): Austin Sley Julian \u2022 John Blum + Ryan Sawyer \u2022 Dan Gitlin + Rose Tang Duo",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "PIANOS"
-},
-"startDate": "2026-08-09T19:00:00-04:00",
-"url": "https://dice.fm/event/avxdr2-stereo-mandrax-free-w-rsvp-austin-sley-julian-john-blum-ryan-sawyer-dan-gitlin-rose-tang-duo-9th-aug-pianos-showroom-new-york-tickets"
-},
-"lastmod": "2026-08-07T21:25:49.833054Z"
 },
 "https://dice.fm/event/avxdvd-isabel-hagen-night-teacher-eliza-edens-adam-lytle-18th-aug-cassette-new-york-city-tickets": {
 "event": {
@@ -17755,38 +16943,6 @@
 },
 "lastmod": "2026-08-05T20:59:43.079443Z"
 },
-"https://dice.fm/event/bb228x-amu-kaya-kulu-fawn-ridge-9th-aug-the-sultan-room-rooftop-brooklyn-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "***You know that thing that you\u2019re not supposed to want but just caaaaan\u2019t heeeelp but chase? That sweet sweet disease? Sighhh. I know her too well.***\n\n***Join me for my long awaited Album Release. Sweet Disease is finally yours. We\u2019ll have music, poetry, trinkets, and of course, a couple antidotes handy for those afflicted ;)***",
-"endDate": "2026-08-09T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-10/14091001-2ae0-4911-86f5-0486f5e3ae27.jpg?rect=0%2C0%2C768%2C768"
-],
-"location": {
-"@type": "Place",
-"address": "234 Starr St, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70558609999999,
-"longitude": -73.9223421
-},
-"name": "The Sultan Room Rooftop"
-},
-"name": "Amu, Kaya Kulu, Fawn Ridge ",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "The Sultan Room"
-},
-"startDate": "2026-08-09T19:00:00-04:00",
-"url": "https://dice.fm/event/bb228x-amu-kaya-kulu-fawn-ridge-9th-aug-the-sultan-room-rooftop-brooklyn-tickets"
-},
-"lastmod": "2026-07-13T14:25:13.004851Z"
-},
 "https://dice.fm/event/bb22ro-naadi-shehxna-22nd-aug-the-sultan-room-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -17887,7 +17043,7 @@
 "event": {
 "@context": "https://schema.org",
 "@type": "MusicEvent",
-"description": "The hottest emerging artists & bands in premium locations around the city.\n\nFEAT. - Blue Hour Trio, Shaz & MORE!\n\nSponsored by Spirit Airlines",
+"description": "The hottest emerging artists & bands in premium locations around the city.\n\nFEAT. - Blue Hour Trio, Shaz, SEPHRINA & MORE!\n\nSponsored by Spirit Airlines",
 "endDate": "2026-08-27T23:30:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
@@ -17913,7 +17069,7 @@
 "startDate": "2026-08-27T19:30:00-04:00",
 "url": "https://dice.fm/event/bb28vk-breaking-sound-nyc-at-brooklyn-music-kitchen-0827-27th-aug-brooklyn-music-kitchen-new-york-city-tickets"
 },
-"lastmod": "2026-07-29T08:06:21.655749Z"
+"lastmod": "2026-08-09T23:52:48.036217Z"
 },
 "https://dice.fm/event/bb2ayv-minty-boi-presents-bragolin-live-in-new-york-w-carrellee-18th-sep-market-hotel-new-york-tickets": {
 "event": {
@@ -17977,7 +17133,7 @@
 "startDate": "2026-08-15T19:00:00-04:00",
 "url": "https://dice.fm/event/bb2bnk-mayan-warrior-new-york-full-art-car-15th-aug-sunset-flex-under-the-k-bridge-new-york-city-tickets"
 },
-"lastmod": "2026-08-07T19:26:28.268392Z"
+"lastmod": "2026-08-09T18:27:53.107895Z"
 },
 "https://dice.fm/event/bb2edg-weekend-warm-up-skate-4th-sep-xanadu-new-york-city-tickets": {
 "event": {
@@ -18234,38 +17390,6 @@
 "url": "https://dice.fm/event/bb2w5g-monstera-x-sea-wolf-reggaeton-saturday-22nd-aug-sea-wolf-bushwick-new-york-city-tickets"
 },
 "lastmod": "2026-07-24T08:07:14.458863Z"
-},
-"https://dice.fm/event/bb2xkm-dj-fuckoff-trax-unit-bearcat-8th-aug-signal-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Signal moves into Saturday with a lineup built for sweat and a little chaos. This is club music with its teeth showing: rave pressure, bass weight, fast turns, and leftfield grit.\n\nBerlin-based DJ and Producer DJ Fuckoff brings the high-voltage, genre-warping approach that has made her a cult favorite across underground floors, moving through breaks, juke, hardcore, techno, and whatever else the moment demands.\n\nTrax Unit, the Los Angeles duo of DJ KMS and DJ Mahroo, arrive with the Gyration Station sound in tow, channeling 90s dance music, electro, house, and peak-time pressure. Sevyn Love rounds out the night with a fearless local edge sure to round out a night of club music perfectly.\n\n////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\nSignal reserves the right to deny entry to any person. If you are denied entry as a ticket holder, you will receive a refund the following Monday.",
-"endDate": "2026-08-09T05:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-30/af48d55d-5329-4ee2-a414-5321b3f2898b.jpg?rect=0%2C0%2C1090%2C1090"
-],
-"location": {
-"@type": "Place",
-"address": "175 Morgan Avenue, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7101,
-"longitude": -73.93356
-},
-"name": "Signal"
-},
-"name": "DJ Fuckoff, Trax Unit, BEARCAT",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Signal"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/bb2xkm-dj-fuckoff-trax-unit-bearcat-8th-aug-signal-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T21:50:20.070667Z"
 },
 "https://dice.fm/event/bb2xlk-free-pure-chaos-open-mic-comedy-11th-aug-alphaville-new-york-tickets": {
 "event": {
@@ -19537,7 +18661,7 @@
 "startDate": "2026-08-09T15:00:00-04:00",
 "url": "https://dice.fm/event/bb9nam-dusk-open-air-rooftop-party-9th-aug-the-crown-rooftop-new-york-city-tickets"
 },
-"lastmod": "2026-08-05T00:15:17.107766Z"
+"lastmod": "2026-08-09T15:57:08.357892Z"
 },
 "https://dice.fm/event/bb9ngk-kasango-5th-sep-somewhere-nowhere-nyc-new-york-tickets": {
 "event": {
@@ -20307,6 +19431,38 @@
 },
 "lastmod": "2026-07-31T19:40:35.341501Z"
 },
+"https://dice.fm/event/dkd32q-vangas-fasting-record-release-shower-curtain-wiring-14th-aug-union-pool-new-york-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Fasting (record release) \u2022 Vangas \u2022 Wiring\n\nThis is a 21+ event (Physical ID required. Photos of ID + NYC City ID are not accepted)",
+"endDate": "2026-08-14T23:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/8a911417-1941-4357-bf38-1bf34413520c.jpg?rect=0%2C0%2C2700%2C2700"
+],
+"location": {
+"@type": "Place",
+"address": "484 Union Ave, Brooklyn, NY 11211, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7149875,
+"longitude": -73.9516407
+},
+"name": "Union Pool"
+},
+"name": "Vangas \u2022 Fasting (record release) \u2022 Shower Curtain \u2022 Wiring",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "Union Pool"
+},
+"startDate": "2026-08-14T19:00:00-04:00",
+"url": "https://dice.fm/event/dkd32q-vangas-fasting-record-release-shower-curtain-wiring-14th-aug-union-pool-new-york-tickets"
+},
+"lastmod": "2026-08-09T19:30:19.447426Z"
+},
 "https://dice.fm/event/dkd52v-victoria-mont-ny-fashion-week-fest-11th-sep-duggal-greenhouse-brooklyn-navy-yard-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -20594,38 +19750,6 @@
 "url": "https://dice.fm/event/dkdan6-hntr-9th-oct-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets"
 },
 "lastmod": "2026-08-06T14:22:24.423766Z"
-},
-"https://dice.fm/event/dkdaoo-venezuela-en-la-casa-8th-aug-listen-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "LISTEN BROOKLYN PRESENTS\n\n**Venezuela En La Casa**\n\nTWENTY ONE\n\nADELLE - JOSUE CACERES",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-07/b23dd83a-01b0-4b78-ab33-a10cc0e4dc52.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "198 Randolph Street, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70969,
-"longitude": -73.92506
-},
-"name": "LISTEN"
-},
-"name": "Venezuela En La Casa",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Listen Brooklyn"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/dkdaoo-venezuela-en-la-casa-8th-aug-listen-new-york-city-tickets"
-},
-"lastmod": "2026-08-07T02:01:26.869463Z"
 },
 "https://dice.fm/event/dkdb7v-bey-day-a-beyonc-bday-tea-dance-5th-sep-cmon-everybody-new-york-tickets": {
 "event": {
@@ -21009,7 +20133,7 @@
 "startDate": "2026-08-09T20:00:00-04:00",
 "url": "https://dice.fm/event/dkdrdv-bill-divers-passion-project-w-ava-ashlynn-and-arin-reedy-9th-aug-purgatory-new-york-tickets"
 },
-"lastmod": "2026-07-25T08:08:08.697792Z"
+"lastmod": "2026-08-09T23:02:12.219976Z"
 },
 "https://dice.fm/event/dkdrr6-all-shall-perish-carnifex-19th-sep-saint-vitus-new-york-city-tickets": {
 "event": {
@@ -23591,7 +22715,7 @@
 "startDate": "2026-08-09T16:00:00-04:00",
 "url": "https://dice.fm/event/eor2bw-ginja-ft-ethan-tomas-day-party-9th-aug-lohi-rooftop-bar-new-york-city-tickets"
 },
-"lastmod": "2026-08-08T15:04:35.097792Z"
+"lastmod": "2026-08-09T19:14:08.208929Z"
 },
 "https://dice.fm/event/eox2od-milk-bone-28th-aug-the-sultan-room-rooftop-brooklyn-tickets": {
 "event": {
@@ -23917,12 +23041,12 @@
 "event": {
 "@context": "https://schema.org",
 "@type": "MusicEvent",
-"description": "SUNSET SOUNDS at The Turf Club at Westlight \u2014 every Thursday from 4\u201310PM. Join us for sunset-to-night rooftop vibes, skyline views, cocktails, and DJs.\n\nTime: 4:00PM\u201311:00PM (Thursdays)\n\nLocation: The Turf Club at Westlight \u2014 111 N. 12th St, Brooklyn, NY 11249\n\nINCLUDED WITH TICKET\n\nEach ticket includes one (1) drink token, redeemable for beer, wine, house cocktails, mocktails, or standard spirits. Token valid event-night only. No cash value. Additional beverages available for purchase.\n\nProgramming and details may vary week to week.",
+"description": "SUNSET SOUNDS at The Turf Club at Westlight \u2014 every Thursday from 5\u201311PM. Join us for sunset-to-night rooftop vibes, skyline views, cocktails, and DJs.\n\nTime: 5:00PM\u201311:00PM\n\nLocation: The Turf Club at Westlight \u2014 111 N. 12th St, Brooklyn, NY 11249\n\nINCLUDED WITH TICKET\n\nEach ticket (non- free) includes one (1) drink token, redeemable for beer, wine, house cocktails, mocktails, or standard spirits. Token valid event-night only. No cash value. Additional beverages available for purchase.\n\nProgramming and details may vary week to week.",
 "endDate": "2026-08-13T23:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
-"https://dice-media.imgix.net/attachments/2026-06-12/55789a8a-6cf1-459b-9d1b-585ed9002597.jpg?rect=0%2C135%2C1080%2C1080"
+"https://dice-media.imgix.net/attachments/2026-08-09/5edbc95b-70d6-40bd-b3f9-24376fa9eb9b.jpg?rect=0%2C0%2C1024%2C1024"
 ],
 "location": {
 "@type": "Place",
@@ -23940,42 +23064,10 @@
 "@type": "Organization",
 "name": "The William Vale - Westlight"
 },
-"startDate": "2026-08-13T16:00:00-04:00",
+"startDate": "2026-08-13T17:00:00-04:00",
 "url": "https://dice.fm/event/eoxk7y-turf-club-sunset-sounds-13th-aug-westlight-rooftop-at-the-william-vale-new-york-city-tickets"
 },
-"lastmod": "2026-07-24T20:28:41.525930Z"
-},
-"https://dice.fm/event/eoxkkw-paradiso-lovefoxy-550am-kilopatrah-jones-hard-nyc-8th-aug-paragon-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Paragon is 21+. Arrive early to avoid lines. Ground floor is ADA compliant. Dress 2 impress. Be nice to each other.\n\nNo Racism\n\nNo Sexism\n\nNo Homophobia\n\nNo Violence\n\nPlease notify security if you witness any harassment.\n\nDress 2 Impress.\n\nFind the feeling, don\u2019t let go.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-08/54072104-1096-4480-85b5-911104e19523.jpg?rect=0%2C147%2C1171%2C1171"
-],
-"location": {
-"@type": "Place",
-"address": "990 Broadway, Brooklyn, New York 11221, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.69609,
-"longitude": -73.934075
-},
-"name": "Paragon"
-},
-"name": "Paradiso: LOVEFOXY, 550am , Kilopatrah Jones + HARD NYC",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Paragon"
-},
-"startDate": "2026-08-08T21:30:00-04:00",
-"url": "https://dice.fm/event/eoxkkw-paradiso-lovefoxy-550am-kilopatrah-jones-hard-nyc-8th-aug-paragon-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T23:13:22.534825Z"
+"lastmod": "2026-08-09T21:51:38.008610Z"
 },
 "https://dice.fm/event/eoxl8o-iguana-death-cult-3rd-oct-the-sultan-room-new-york-tickets": {
 "event": {
@@ -24136,38 +23228,6 @@
 "url": "https://dice.fm/event/eoxrko-breaking-sound-nyc-at-brooklyn-music-kitchen-0818-18th-aug-brooklyn-music-kitchen-new-york-city-tickets"
 },
 "lastmod": "2026-07-21T14:27:46.625554Z"
-},
-"https://dice.fm/event/eoxryw-azure-pop-up-superior-ingredients-august-8-8th-aug-superior-ingredients-the-roof-room-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "AZURE returns to Superior Ingredients with another edition of their limited pop-up series. Expect an afternoon and evening of carefully curated house music, open sky views, and good energy from start to finish. Limited capacity - get in early.",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-06/0404aed0-9294-4f98-a87c-15e2433a0052.jpg?rect=0%2C0%2C1254%2C1254"
-],
-"location": {
-"@type": "Place",
-"address": "74 Wythe Avenue, Brooklyn, New York 11249, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.72225,
-"longitude": -73.95777
-},
-"name": "Superior Ingredients (The Roof + Room)"
-},
-"name": "Azure Pop Up - Superior Ingredients August 8",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Azure Day Party"
-},
-"startDate": "2026-08-08T15:00:00-04:00",
-"url": "https://dice.fm/event/eoxryw-azure-pop-up-superior-ingredients-august-8-8th-aug-superior-ingredients-the-roof-room-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T18:37:42.858680Z"
 },
 "https://dice.fm/event/eoxvey-chaos-in-the-cbd-present-dust-till-dawn-29th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets": {
 "event": {
@@ -25397,6 +24457,38 @@
 },
 "lastmod": "2026-08-08T08:07:48.660532Z"
 },
+"https://dice.fm/event/g5bdm5-open-decks-w-steen-and-silkyblack-16th-sep-silo-brooklyn-brooklyn-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Hosted by DJ and musician Steen, Open Decks is a creative and fun space where DJs can hang and share their house and techno music live. Hear your favorite or original tracks on Silo's front room sound system, a custom 15,000 watt Danley powerhouse.\n\nIf you want to play, talk to Steen to sign up. Sign-up is in person at the event only, slots are 12 minutes.\n\nThe first 3 DJ's play first-come-first-spin. Then we'll select names randomly from the sign-up list throughout the night. You'll get a half hour notice before your set time. This is to ensure that DJ's who can't make the initial sign up right at 8pm still get a chance to play.\n\nFree with advance RSVP. Question? Hit up your host on IG @steenschmidt\n\nThis week's co-host is SilkyBlack.\n\nIn SILO's front room. Limited capacity.",
+"endDate": "2026-09-17T02:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/4d0ac47f-4070-4ba6-94b8-ee5bf37a8c3e.jpg?rect=0%2C0%2C1500%2C1500"
+],
+"location": {
+"@type": "Place",
+"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7105086,
+"longitude": -73.922873
+},
+"name": "SILO Brooklyn "
+},
+"name": "Open Decks w/ Steen and SilkyBlack",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "SILO Brooklyn"
+},
+"startDate": "2026-09-16T19:00:00-04:00",
+"url": "https://dice.fm/event/g5bdm5-open-decks-w-steen-and-silkyblack-16th-sep-silo-brooklyn-brooklyn-tickets"
+},
+"lastmod": "2026-08-09T02:28:20.152814Z"
+},
 "https://dice.fm/event/g5bdn6-locals-only-at-the-summer-club-15th-aug-summer-club-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -25557,38 +24649,6 @@
 },
 "lastmod": "2026-08-01T08:07:10.746404Z"
 },
-"https://dice.fm/event/g5bgoa-the-equation-ft-acemo-b2b-swami-sound-extended-live-hardware-set-gamma-vibes-live-hardware-set-8th-aug-silo-brooklyn-brooklyn-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "NYC-based Techno savant AceMo is a key figure, among an essential body that is currently reshaping the dynamics of electronic music today. He has procured a following within New York and beyond due to his tactful melding of Techno, House, Rap, and various idiosyncratic sounds.\n\nSwami Sound is a DJ, producer, and creative force bridging the legacy of NYC House with UK Garage. Raised in the Bronx and residing in Bushwick, he's made his presence well known by enticing listeners and club-goers around the world with his distinct take on Garage music.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-27/3faa6bfa-93fe-434c-aecf-e92b9acda479.jpg?rect=0%2C0%2C2500%2C2500"
-],
-"location": {
-"@type": "Place",
-"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7105086,
-"longitude": -73.922873
-},
-"name": "SILO Brooklyn "
-},
-"name": "The Equation ft. AceMo b2b Swami Sound [Extended Live Hardware Set] / Gamma Vibes [Live Hardware Set]",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "SILO Brooklyn"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/g5bgoa-the-equation-ft-acemo-b2b-swami-sound-extended-live-hardware-set-gamma-vibes-live-hardware-set-8th-aug-silo-brooklyn-brooklyn-tickets"
-},
-"lastmod": "2026-08-08T18:45:40.837899Z"
-},
 "https://dice.fm/event/g5bgv6-arcana-skyline-series-092526-25th-sep-the-highlight-room-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -25620,38 +24680,6 @@
 "url": "https://dice.fm/event/g5bgv6-arcana-skyline-series-092526-25th-sep-the-highlight-room-new-york-city-tickets"
 },
 "lastmod": "2026-07-28T20:00:42.358016Z"
-},
-"https://dice.fm/event/g5bgx2-reggaeton-open-bar-21-8th-aug-the-meadows-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "REGGAETON OPEN BAR \u2014 $20 gets you in + OPEN BAR for a limited time. Drink deals all night after. Nonstop perreo. Pull up early or miss out. This is the deal nobody else in NYC can touch. \ud83e\udd43\ud83d\udd25\n\nREGGAETON OPEN BAR \u2014 Con $20 entras + BARRA LIBRE por tiempo limitado. Ofertas de tragos toda la noche. Perreo sin parar. Llega temprano o te lo pierdes. Este deal no lo tiene nadie en NYC. \ud83e\udd43\ud83d\udd25\n\nNO REFUNDS\n\nAll tickets are non-refundable and non-exchangeable. Event cancellations without a rescheduled date will result in an automatic full refund to the original credit card used for the purchase. Your purchase of a ticket implies agreement with this policy. Please verify event details before buying tickets.\n\nBy attending this event, you grant reggaetonLABS permission to photograph and record you, and to use your image for promotional purposes.\n\nPlease ensure you bring a government-issued ID with your date of birth.\n\nBy purchasing this ticket, you agree to our Terms & Conditions",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-28/7cfe5e96-c9c7-4bdc-9b31-b86cdeea33c1.jpg?rect=0%2C144%2C880%2C880"
-],
-"location": {
-"@type": "Place",
-"address": "17 Meadow St, Brooklyn, NY 11206, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7108644,
-"longitude": -73.93657929999999
-},
-"name": "The Meadows"
-},
-"name": "REGGAETON OPEN BAR  (21+)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "reggaetonLABS"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/g5bgx2-reggaeton-open-bar-21-8th-aug-the-meadows-new-york-tickets"
-},
-"lastmod": "2026-07-29T08:07:43.705205Z"
 },
 "https://dice.fm/event/g5bkd5-black-groove-djavan-guy-sade-james-more-28th-aug-the-onyx-room-at-house-of-yes-new-york-city-tickets": {
 "event": {
@@ -26003,7 +25031,7 @@
 "startDate": "2026-08-09T20:00:00-04:00",
 "url": "https://dice.fm/event/g5bwrp-chevrolet-pile-gobby-victor-pearl-dj-jeff-witscher-xander-seren-9th-aug-union-pool-new-york-tickets"
 },
-"lastmod": "2026-07-22T08:08:10.202228Z"
+"lastmod": "2026-08-09T23:01:08.379308Z"
 },
 "https://dice.fm/event/g5mgk5-matroda-day-night-nyc-marathon-14th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets": {
 "event": {
@@ -26047,7 +25075,7 @@
 "startDate": "2026-08-14T15:00:00-04:00",
 "url": "https://dice.fm/event/g5mgk5-matroda-day-night-nyc-marathon-14th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets"
 },
-"lastmod": "2026-08-08T19:32:47.696675Z"
+"lastmod": "2026-08-09T20:41:40.267877Z"
 },
 "https://dice.fm/event/g5q72p-dent-may-28th-oct-public-records-new-york-tickets": {
 "event": {
@@ -26401,6 +25429,38 @@
 },
 "lastmod": "2026-07-23T08:08:55.077996Z"
 },
+"https://dice.fm/event/k65a9p-open-decks-w-steen-rhythm-cartel-15th-sep-silo-brooklyn-brooklyn-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Hosted by DJ and musician Steen, Open Decks is a creative and fun space where DJs can hang and share their house and techno music live. Hear your favorite or original tracks on Silo's front room sound system, a custom 15,000 watt Danley powerhouse.\n\nIf you want to play, talk to Steen to sign up. Sign-up is in person at the event only, slots are 12 minutes.\n\nThe first 3 DJ's play first-come-first-spin. Then we'll select names randomly from the sign-up list throughout the night, with extra weighting for DJs who arrive earlier. You'll get a half hour notice before your set time. This is to ensure that DJ's who can't make the initial sign up right at 8pm still get a chance to play.\n\nThis week's co-host is Rhythm Cartel.\n\nFree with advance RSVP. Question? Hit up your host on IG @steenschmidt\n\nIn SILO's front room. Limited capacity.",
+"endDate": "2026-09-16T02:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/a786e4d3-aaac-4e0f-8a47-48b2b8ec68c4.jpg?rect=0%2C0%2C1500%2C1500"
+],
+"location": {
+"@type": "Place",
+"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7105086,
+"longitude": -73.922873
+},
+"name": "SILO Brooklyn "
+},
+"name": "Open Decks w/ Steen & Rhythm Cartel",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "SILO Brooklyn"
+},
+"startDate": "2026-09-15T19:00:00-04:00",
+"url": "https://dice.fm/event/k65a9p-open-decks-w-steen-rhythm-cartel-15th-sep-silo-brooklyn-brooklyn-tickets"
+},
+"lastmod": "2026-08-09T02:26:46.379832Z"
+},
 "https://dice.fm/event/k65av9-pianos-free-entry-before-11pm-w-rsvp-14th-aug-pianos-main-bar-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -26432,70 +25492,6 @@
 "url": "https://dice.fm/event/k65av9-pianos-free-entry-before-11pm-w-rsvp-14th-aug-pianos-main-bar-new-york-city-tickets"
 },
 "lastmod": "2026-08-08T19:27:10.841687Z"
-},
-"https://dice.fm/event/k65awo-wax-motif-coffee-shop-pop-up-presented-by-project-91-free-rsvp-9th-aug-artbean-coffee-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Wax Motif - Pop-Up Show at Artbean Coffee\n\nEvent Time: 1:00 PM - 3:00 PM\n\nPlease note: RSVP does not guarantee entry - space is limited and admission will be first-come, first-served.",
-"endDate": "2026-08-09T15:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-07/fd9a8a8e-9016-4220-a1d2-b2d4b0bb52b6.jpg?rect=0%2C0%2C1254%2C1254"
-],
-"location": {
-"@type": "Place",
-"address": "19 Doyers Street, New York City, New York 10013, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.714677,
-"longitude": -73.998151
-},
-"name": "Artbean Coffee"
-},
-"name": "Wax Motif Coffee Shop Pop Up Presented By Project 91 (Free RSVP)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Project 91"
-},
-"startDate": "2026-08-09T13:00:00-04:00",
-"url": "https://dice.fm/event/k65awo-wax-motif-coffee-shop-pop-up-presented-by-project-91-free-rsvp-9th-aug-artbean-coffee-new-york-city-tickets"
-},
-"lastmod": "2026-08-07T17:41:36.386033Z"
-},
-"https://dice.fm/event/k65b2o-reclining-nude-cold-mess-gold-roger-8th-aug-alphaville-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Reclining Nude\n\nCold Mess\n\nGold Roger\n\nDoors 7pm | 21+",
-"endDate": "2026-08-08T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-31/53d7df89-1659-410a-abb9-27739fc871e5.jpg?rect=0%2C0%2C1870%2C1870"
-],
-"location": {
-"@type": "Place",
-"address": "140 Wilson Ave, New York, New York 11237",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.700486,
-"longitude": -73.92585500000001
-},
-"name": "ALPHAVILLE"
-},
-"name": "Reclining Nude, Cold Mess, Gold Roger",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "ALPHAVILLE"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/k65b2o-reclining-nude-cold-mess-gold-roger-8th-aug-alphaville-new-york-tickets"
-},
-"lastmod": "2026-08-08T22:02:20.548883Z"
 },
 "https://dice.fm/event/k65b69-loco-carnaval-sundays-23rd-aug-somewhere-nowhere-nyc-new-york-tickets": {
 "event": {
@@ -27277,38 +26273,6 @@
 },
 "lastmod": "2026-07-14T14:55:16.958684Z"
 },
-"https://dice.fm/event/k6d7xp-revision-rooftop-party-0808-8th-aug-phd-lounge-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "revision rooftop party.\n\nevery single saturday night.\n\na party in the clouds.\n\nmeet us on the dance floor at one of new york city's most legendary venues, phd rooftop, for the night out you've been waiting for. djs spinning your favorite music, incredible panoramic views stretching from the hudson river to the empire state building, full scale concert production, rooftop lounge seating.\n\nphd is located on the 12th floor of dream downtown hotel.\n\ntext +1 (917) 670-3532 for table inquiries.\n\nThis event features a live musical arts performance by a house/EDM DJ.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-05-07/304f34b8-73ed-4fd1-b36e-0abd44b5ffd0.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "355 West 16th Street, New York City, New York 10011, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.742168,
-"longitude": -74.003631
-},
-"name": "PHD Lounge"
-},
-"name": "revision rooftop party // 08.08",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Rose Gold Entertainment"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/k6d7xp-revision-rooftop-party-0808-8th-aug-phd-lounge-new-york-city-tickets"
-},
-"lastmod": "2026-07-31T18:16:48.809449Z"
-},
 "https://dice.fm/event/k6d9r9-solid-grooves-new-york-5th-sep-fulton-fish-market-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -27436,38 +26400,6 @@
 "url": "https://dice.fm/event/k6dbrp-fabric-new-york-jeff-mills-ben-ufo-craig-richards-helena-hauff-x3butterly-shvili-5th-sep-creekside-under-the-k-bridge-new-york-city-tickets"
 },
 "lastmod": "2026-08-07T08:05:42.198031Z"
-},
-"https://dice.fm/event/k6dmg8-aboveten-after-dark-at-1-hotel-8th-aug-harriets-lounge-1-hotel-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Please join us for Above(Ten) After Dark for a night of house music inside the famous 1 Hotel in Brooklyn Bridge, Harriet's Lounge.\n\nThe newly renovated micro club boasts floor to ceiling windows with 360 views of New York City. Spacious room for dancing as well as plenty of lounge seating.\n\nThis is in intimate experience, capacity is limited.\n\nThis is a 21+ event. Doors open at 9pm\n\nFor custom reservations & large groups please email tommy@tmmlpresents.com",
-"endDate": "2026-08-09T02:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-04-15/9797c2df-38a7-42ab-b495-209c31500e21.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "60 Furman Street, Brooklyn, New York 11201, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70232,
-"longitude": -73.995534
-},
-"name": "Harriet's Lounge - 1 Hotel"
-},
-"name": "Above(Ten) After Dark At 1 Hotel",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Above(Ten)"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/k6dmg8-aboveten-after-dark-at-1-hotel-8th-aug-harriets-lounge-1-hotel-new-york-city-tickets"
-},
-"lastmod": "2026-07-10T08:06:00.042922Z"
 },
 "https://dice.fm/event/k6dq6o-black-coffee-17th-oct-pacha-new-york-new-york-city-tickets": {
 "event": {
@@ -27949,38 +26881,6 @@
 },
 "lastmod": "2026-08-08T20:52:21.503812Z"
 },
-"https://dice.fm/event/k6lgo9-vshow-presents-zerosum-8th-aug-vshow-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "VSHOW PRESENTS: ZEROSUM\n\nZEROSUM makes his VSHOW debut with a night of HARD DANCE and high BPM energy.\n\nDIRECT SUPPORT: DJ FIREBUNNY\n\nSUPPORT LINEUP:  \nCOOK!3  \nMIGS718  \nCHRISCENDO  \nKAIZENOVA  \nHELLO KETTY\n\nAUGUST 8TH. NYC. GET READY.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-08/d7fc6af4-04d4-43c9-9d6f-dfd3bddee33e.jpg?rect=0%2C0%2C768%2C768"
-],
-"location": {
-"@type": "Place",
-"address": "31-01 Downing Street, 2nd Floor, Flushing, New York 11354, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.76845,
-"longitude": -73.836
-},
-"name": "VShow"
-},
-"name": "VShow Presents: ZEROSUM",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "VShow NYC"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/k6lgo9-vshow-presents-zerosum-8th-aug-vshow-new-york-city-tickets"
-},
-"lastmod": "2026-08-06T20:03:15.090537Z"
-},
 "https://dice.fm/event/k6ln78-pink-eye-pictures-perverts-26th-aug-alphaville-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -28203,7 +27103,7 @@
 "startDate": "2026-08-09T19:00:00-04:00",
 "url": "https://dice.fm/event/k6lxoq-world-i-hate-contempt-top-dollar-bil-9th-aug-gold-sounds-new-york-tickets"
 },
-"lastmod": "2026-07-14T15:06:46.639985Z"
+"lastmod": "2026-08-09T22:10:09.185675Z"
 },
 "https://dice.fm/event/k6y2eq-brown-horse-residency-night-1-w-jackie-west-29th-aug-union-pool-new-york-tickets": {
 "event": {
@@ -28781,38 +27681,6 @@
 },
 "lastmod": "2026-07-31T08:08:08.945126Z"
 },
-"https://dice.fm/event/l873wx-cuffing-season-olea-esentrik-arthur-tan-okay-ivy-sinz-blesst-goldie-harris-friends-8th-aug-elsewhere-brooklyn-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "In order for you to join us, we require a physical, valid, scannable US Government issued ID or foreign passport for admission (expired IDs will NOT be accepted)! If you are traveling, please be prepared to show a physical passport for entry (Photocopies and Photographs of IDs are NOT accepted). We recommend that all customers read Elsewhere's ID Policy in the FAQ section on our website before arriving at the venue.\n\n- HALL - Cuffing Season: OLEA, Esentrik, Arthur Tan, Okay Ivy, SINZ, Blesst\n- ZONE ONE - Goldie Harris & Friends, Jacob Dior, Rae Sada, Miss Monroe, Goldie Harris\n\nBOOK YOUR GROUP PARTY PACKAGE! INQUIRIES EMAIL: EVENTS@ELSEWHERE.CLUB\n\nElsewhere is a community that values inclusivity, joy, and creativity. In order to make this space accessible for everyone, we operate a strict zero-tolerance policy for harassment, discrimination, or hate of any kind. Please keep in mind that ticket sales are final, with the exception of a cancellation. The following items are subject to change without notice at all times; opening performers, set times, location of event within Elsewhere.\n\n**We encourage a present and engaged dance floor...**\n\nYou can head to the courtyard to chat, take pictures and use your phone. Let\u2019s avoid doing so on the dance floor!\n\nMembers enjoy skip-the-line, special access, free +1s, and lots of other perks! Explore today!\n\nFor further information about our ticketing policies and FAQs, please visit elsewhere.club",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-29/52d9267d-3416-40c2-b6d2-4079290fcf10.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "599 Johnson Ave #1, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7093375,
-"longitude": -73.9232313
-},
-"name": "Elsewhere, Brooklyn"
-},
-"name": "Cuffing Season: OLEA, Esentrik, Arthur Tan, Okay Ivy, SINZ, Blesst + Goldie Harris & Friends",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Elsewhere"
-},
-"startDate": "2026-08-08T22:30:00-04:00",
-"url": "https://dice.fm/event/l873wx-cuffing-season-olea-esentrik-arthur-tan-okay-ivy-sinz-blesst-goldie-harris-friends-8th-aug-elsewhere-brooklyn-new-york-tickets"
-},
-"lastmod": "2026-07-29T19:12:58.301783Z"
-},
 "https://dice.fm/event/l8768r-virgin-hotels-31st-dec-virgin-hotels-nyc-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -28972,38 +27840,6 @@
 "url": "https://dice.fm/event/l87aor-memorials-4th-sep-union-pool-new-york-tickets"
 },
 "lastmod": "2026-08-06T08:06:55.551503Z"
-},
-"https://dice.fm/event/l87b6b-pianos-free-entry-before-11pm-w-rsvp-8th-aug-pianos-main-bar-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "*FREE WITH RSVP BEFORE 11PM. FULL VENUE.*\n\nPlease be prepared to present ID at the door.\n\nPianos | 158 Ludlow St, NY",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-08/21a58608-6d90-4e86-95a2-9d6bfc753d8e.jpg?rect=0%2C0%2C768%2C768"
-],
-"location": {
-"@type": "Place",
-"address": "158 Ludlow Street, New York City, New York 10002, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.72104,
-"longitude": -73.987748
-},
-"name": "Pianos: Main Bar"
-},
-"name": "Pianos: Free Entry before 11PM w/ RSVP",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "PIANOS"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/l87b6b-pianos-free-entry-before-11pm-w-rsvp-8th-aug-pianos-main-bar-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T19:26:47.820039Z"
 },
 "https://dice.fm/event/l87b8l-luciio-la-vega-marteen-14th-aug-moondog-hifi-new-york-city-tickets": {
 "event": {
@@ -29613,38 +28449,6 @@
 },
 "lastmod": "2026-08-04T01:43:29.042634Z"
 },
-"https://dice.fm/event/l87rrp-headcrack-c-powers-fugitive-artifact-8th-aug-jupiter-disco-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Headcrack is a sonic journey meticulously crafted to inspire movement. Its aim is to leave the listener in anticipation for what will come next. The focus is on DJs and live performers that strive to push the boundaries of musical exploration through all types of rhythms.",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-03/987ccf2b-a5bb-464b-91bb-aad5b17e10e6.jpg?rect=0%2C0%2C1600%2C1600"
-],
-"location": {
-"@type": "Place",
-"address": "Jupiter Disco, 1237 Flushing Ave, New York City, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.708129,
-"longitude": -73.923495
-},
-"name": "Jupiter Disco"
-},
-"name": "HEADCRACK: C Powers, Fugitive Artifact",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Jupiter Disco"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/l87rrp-headcrack-c-powers-fugitive-artifact-8th-aug-jupiter-disco-new-york-city-tickets"
-},
-"lastmod": "2026-08-03T16:32:00.091082Z"
-},
 "https://dice.fm/event/l87rxw-nussy-andrews-record-release-show-27th-aug-drom-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -30085,38 +28889,6 @@
 },
 "lastmod": "2026-08-03T16:44:27.214151Z"
 },
-"https://dice.fm/event/l8d8ol-james-kennedy-magic-hour-8th-aug-magic-hour-rooftop-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Rooftop Party Under the Empire State Building\n\nIntroducing Lyra - a new rooftop party concept redefining Saturday nights in NYC. Perched beneath the Empire State Building with a retractable roof and panoramic skyline views, Lyra delivers two immersive zones of high-energy sound and atmosphere.\n\nZone 001: Open format, throwbacks, top 40, and house remixes\n\nZone 002: House, tech, afro, minimal, and cutting-edge remixes\n\nTwo stages. Every Saturday.\n\nNot just a rooftop - Lyra is your new ritual.\n\nTable service available - Elevate your experience with bottle service beneath the Empire State. For further inquiries, please contact Shelby at 646-306-0229",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-16/a961b50d-d789-4fa4-b039-b48212b7ece4.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "485 Seventh Avenue, 18th Floor, New York City, New York 10018, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.752334,
-"longitude": -73.989249
-},
-"name": "Magic Hour Rooftop"
-},
-"name": "James Kennedy @ Magic Hour",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Rose Gold Entertainment"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/l8d8ol-james-kennedy-magic-hour-8th-aug-magic-hour-rooftop-new-york-city-tickets"
-},
-"lastmod": "2026-08-03T16:00:29.502855Z"
-},
 "https://dice.fm/event/l8d8vp-the-nursery-eli-escobar-benny-soto-7th-sep-public-records-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -30147,7 +28919,7 @@
 "startDate": "2026-09-07T15:00:00-04:00",
 "url": "https://dice.fm/event/l8d8vp-the-nursery-eli-escobar-benny-soto-7th-sep-public-records-new-york-tickets"
 },
-"lastmod": "2026-07-14T15:06:39.606351Z"
+"lastmod": "2026-08-09T08:05:13.649475Z"
 },
 "https://dice.fm/event/l8dbmp-marco-faraone-21st-aug-silo-brooklyn-brooklyn-tickets": {
 "event": {
@@ -30341,38 +29113,6 @@
 },
 "lastmod": "2026-07-24T20:33:03.634955Z"
 },
-"https://dice.fm/event/l8k5mp-school-supply-drive-w-who-remembers-and-totaled-8th-aug-gold-sounds-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "INSIST ON PUNK x BORED FRIENDS\n\nCOLLECTING SCHOOL SUPPLIES FOR THE BEDSTUY COMMUNITY GARDEN\n\nWHO REMEMBERS\n\nTOTALED\n\nWARBOY\n\nBABY KILLER",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-07/64d66fe9-2ef5-4765-bb75-64ffcf897889.jpg?rect=0%2C369%2C2952%2C2952"
-],
-"location": {
-"@type": "Place",
-"address": "44 Wilson Ave, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.702624,
-"longitude": -73.929611
-},
-"name": "Gold Sounds"
-},
-"name": "School Supply Drive w/ Who Remembers and Totaled",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Gold Sounds"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/l8k5mp-school-supply-drive-w-who-remembers-and-totaled-8th-aug-gold-sounds-new-york-tickets"
-},
-"lastmod": "2026-08-08T22:01:12.119984Z"
-},
 "https://dice.fm/event/l8k63b-twin-diplomacy-guests-17th-jan-the-roof-at-superior-ingredients-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -30564,38 +29304,6 @@
 "url": "https://dice.fm/event/l8kael-teksupport-aline-umber-live-mink-more-21st-aug-sunset-park-rooftop-brooklyn-tickets"
 },
 "lastmod": "2026-07-29T17:28:06.460568Z"
-},
-"https://dice.fm/event/l8kkyw-pablo-bozzi-boris-lauren-flax-9th-aug-ruins-at-knockdown-center-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Pablo Bozzi returns to The Ruins on Aug. 9, alongside Boris and Lauren Flax.\n\nPablo Bozzi made The Ruins his own at his legendary closing set for WIRE, and now he returns as the summer enters its final run. Bozzi\u2019s singular mix of pumping club sounds and iconic house is unparalleled.\n\nBoris joins him. One of the pillars of modern electronic music, Boris has done it all. He\u2019s a longtime Berghain resident, and is equally adept at euphoric house as he is at heavy techno. Lauren Flax is one of NY\u2019s key standard bearers. A master DJ and a lauded producer, Flax\u2019s command of acid-laced grooves and lithe, pumping power is unmatched.",
-"endDate": "2026-08-09T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-14/6a8bd2dc-7a35-450d-ae93-574a9578cc41.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "52-19 Flushing Ave, Queens, NY 11378, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7156792,
-"longitude": -73.9143788
-},
-"name": "Ruins at Knockdown Center"
-},
-"name": "Pablo Bozzi, Boris, Lauren Flax",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Knockdown Center"
-},
-"startDate": "2026-08-09T15:00:00-04:00",
-"url": "https://dice.fm/event/l8kkyw-pablo-bozzi-boris-lauren-flax-9th-aug-ruins-at-knockdown-center-new-york-tickets"
-},
-"lastmod": "2026-08-07T14:50:29.818805Z"
 },
 "https://dice.fm/event/l8klgw-wayne-tucker-listening-session-30th-aug-ernest-records-new-york-city-tickets": {
 "event": {
@@ -30820,38 +29528,6 @@
 "url": "https://dice.fm/event/l8kpqp-lucy-bright-luisa-wilson-hannah-williams-2nd-sep-pianos-showroom-new-york-tickets"
 },
 "lastmod": "2026-08-04T08:06:17.103156Z"
-},
-"https://dice.fm/event/l8kpxb-pork-butt-8th-aug-cmon-everybody-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Sounds: Mike Schreder & WANTED\n\nGogos: Cheeky Pete & Souvenir",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-15/3a14dd55-f114-49aa-a2e6-645e593da359.jpg?rect=0%2C0%2C2160%2C2160"
-],
-"location": {
-"@type": "Place",
-"address": "325 Franklin Ave, Brooklyn, NY 11238, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.6883003,
-"longitude": -73.9568077
-},
-"name": "C'mon Everybody"
-},
-"name": "Pork Butt  ",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "C\u2019mon Everybody"
-},
-"startDate": "2026-08-08T22:30:00-04:00",
-"url": "https://dice.fm/event/l8kpxb-pork-butt-8th-aug-cmon-everybody-new-york-tickets"
-},
-"lastmod": "2026-08-07T20:38:40.834881Z"
 },
 "https://dice.fm/event/l8kx2l-austin-millz-21st-aug-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets": {
 "event": {
@@ -31109,38 +29785,6 @@
 },
 "lastmod": "2026-07-24T08:06:18.491017Z"
 },
-"https://dice.fm/event/l8xpgl-skaterobics-all-experience-levels-instructional-class-9th-aug-xanadu-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "\ud83d\udefc About Skaterobics \ud83d\udefc\n\nSkaterobics is an all-levels roller skating class for adults ages 21 and up who want to learn how to dance on wheels. The class begins with a fun and dynamic warm-up session to get everyone\u2019s muscles ready and to introduce basic movements and techniques. The main portion of the class focuses on developing key skating skills. This includes balance exercises, stopping techniques, turning, and backward skating.\n\n\ud83d\udea8 Important Info\ud83d\udea8\n\n\u00b7 Ticket does \\*NOT\\* include Skate Rental.\n\n\u00b7 Skates & safety gear are available to rent \\*\\*first come, first served\\*\\*\n\n\u00b7 All sales are final. No refunds.\n\n\u00b7 You must sign the Xanadu waiver in advance here: https://shorturl.at/AJbHn\n\n\u00b7 Valid Government ID required for entry. Photos of IDs are not accepted\n\n\u00b7 Gum, outside food and drink is not allowed.\n\n\u00b7 All bags are subject to search at the venue entrance.\n\n\u00b7 Xanadu is wheelchair accessible and includes entry ramps and ADA bathrooms. Write to info@xanadu.nyc if you require extra assistance.\n\n\u00b7 Xanadu is an inclusive, safe space. We do not tolerate harassment, aggression, racism, bigotry, or hatred of any kind.\n\nSkating is FUN. Skating is RISKY!\n\nTogether we will create a skate experience that is fun and safe for everyone on the rink!\n\n\u00b7 Be mindful of yourself, your limits and others around you.\n\n\u00b7 Our Skate Guards are always here to help! Please alert them to any hazards or unsafe behavior on the rink so that they can help.\n\n\u00b7 Rink capacity fluctuates throughout each session- if you are ever feeling overwhelmed, take a quick break and get back into the flow when you\u2019re ready.\n\n\u00b7 Keep each other safe & happy! Less friction, more FLOW.\n\nMore questions? Find answers here: xanadu.nyc/FAQ\n\n\u2728By purchasing a ticket, you agree to and are bound by Xanadu's Terms and Conditions: https://tinyurl.com/XanaduTermsConditions",
-"endDate": "2026-08-09T20:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2025-04-30/0cf5a701-5b4e-4866-a36c-ac37e451b7db.jpg?rect=1%2C0%2C1178%2C1178"
-],
-"location": {
-"@type": "Place",
-"address": "262 Starr Street, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.706478,
-"longitude": -73.921529
-},
-"name": "Xanadu"
-},
-"name": "Skaterobics - All Experience Levels Instructional Class",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Xanadu Presents"
-},
-"startDate": "2026-08-09T18:00:00-04:00",
-"url": "https://dice.fm/event/l8xpgl-skaterobics-all-experience-levels-instructional-class-9th-aug-xanadu-new-york-city-tickets"
-},
-"lastmod": "2026-07-24T20:22:52.958482Z"
-},
 "https://dice.fm/event/l8xx7p-nyc-rave-girls-3-year-anniversary-perel-hybrid-set-ksenyeah-b2b-mangui-20th-sep-elsewhere-rooftop-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -31237,70 +29881,6 @@
 },
 "lastmod": "2026-07-22T08:05:07.760113Z"
 },
-"https://dice.fm/event/mx73bl-teksupport-peace-control-open-to-close-8th-aug-sunset-park-rooftop-brooklyn-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "August 8:  \nSunset Park Rooftop\n\nPeace Control (open to close)\n\nDoors 11pm\n\nTable Reservations:  \nWhatsApp: +1 (718) 614-2563  \nEmail: info@tcepresents.com",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-03-26/3378123e-f143-4bcd-a88a-00cae4150543.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "14b 53rd St, Brooklyn, NY 11232, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.6502107,
-"longitude": -74.02349029999999
-},
-"name": "Sunset Park Rooftop"
-},
-"name": "Teksupport: Peace Control (open to close)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Teksupport"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/mx73bl-teksupport-peace-control-open-to-close-8th-aug-sunset-park-rooftop-brooklyn-tickets"
-},
-"lastmod": "2026-08-08T20:37:16.421929Z"
-},
-"https://dice.fm/event/mx75lk-doubleheader-greg-99-x-pedroz-open-air-8th-aug-h0l0-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Two of Brazil\u2019s fastest rising names in house music come together for a special doubleheader at H0L0 Yard for a DICE listing. PEDROZ and GREG 99 represent a new wave of club focused talent drawing from tech house, minimal, and international club influences. Joining them is local talent Stixx, Jeny Michelle going back to back Bella Mutino.\n\nBoth artists have been building strong support across the international circuit, with support from Chris Lake, Michael Bibi, Vintage Culture, and Fisher, alongside releases on respected labels across the scene.\n\nPEDROZ brings a tight rolling sound shaped by raw energy and detailed production, while GREG 99 focuses on stripped back, high impact cuts built for peak moments on the floor. Together they guide a night centered on rhythm, movement, and late night focus.\n\nWith the summer air in full swing and the open air at H0L0 Yard, there is no better place in New York than outside listening to proper music.",
-"endDate": "2026-08-08T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-24/2208ea52-ce7b-460d-b9bc-e51ff2ee885e.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "1090 Wyckoff Ave, Queens, NY 11385, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.694302,
-"longitude": -73.90216570000001
-},
-"name": "H0l0"
-},
-"name": "DOUBLEHEADER: GREG 99 x Pedroz *Open Air*",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Gray Area"
-},
-"startDate": "2026-08-08T15:00:00-04:00",
-"url": "https://dice.fm/event/mx75lk-doubleheader-greg-99-x-pedroz-open-air-8th-aug-h0l0-new-york-tickets"
-},
-"lastmod": "2026-08-08T20:42:20.715668Z"
-},
 "https://dice.fm/event/mx76d9-everyday-afrique-nyc-7th-sep-nowadays-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -31331,7 +29911,7 @@
 "startDate": "2026-09-07T15:00:00-04:00",
 "url": "https://dice.fm/event/mx76d9-everyday-afrique-nyc-7th-sep-nowadays-new-york-tickets"
 },
-"lastmod": "2026-08-04T17:24:32.915524Z"
+"lastmod": "2026-08-09T08:05:08.578064Z"
 },
 "https://dice.fm/event/mx792r-the-nursery-2026-season-pass-2nd-may-public-records-new-york-tickets": {
 "event": {
@@ -31524,38 +30104,6 @@
 "url": "https://dice.fm/event/mx9d9k-resolute-x-yoyaku-26th-sep-h0l0-new-york-tickets"
 },
 "lastmod": "2026-07-24T20:00:51.808933Z"
-},
-"https://dice.fm/event/mx9nml-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-8th-aug-lost-in-paradise-rooftop-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Join us at Lost In Paradise Rooftop and Lounge\n\nFor table reservations please contact us at lostinparadiserooftop@gmail.com or text at 929-789-3600\n\nJoin us for a night of music, delicious drinks, and unforgettable vibes at Lost in Paradise Rooftop. Get ready to dance the night away under the stars to the hottest Latin beats and experience a taste of Latin Passion right in the heart of the city.\n\nTicket does not garauntee admission. Doorman's discretion.\n\nBOTTLE SERVICE MENU\n\n21 & Over with a valid, unexpired physical ID. Acceptale forms of IDs:\n\nValid NYS Driver's License or NYS Non-Driver's ID\n\nValid Driver's License issued by any other State\n\nValid US Passport or Foreign Passport.\n\nValid US Military ID.\n\nDress Code: No Timbs, Flip Flops or Gym Attire\n\nPlease Note:\n\nThe only IDs that are accepted for entrance to events are the following in physical form only:\n\n\u2022 United States Government State Issued DRIVERS AND NON DRIVERS LICENSES\n\n\u2022 PASSPORTS from any country\n\n\\*\\*\\*ONLY PHYSICAL IDs of the forms listed above will be accepted.\n\nNo pictures of IDs will be accepted\n\nPlease read the description for each table before purchasing. This is a deposit to secure table only, and will not be applied to minimum spend. The minimum spend does not include tax and gratuity. All sales are final and nonrefundable.\n\nPlease have attached digital tickets ready to be scanned at venue door. Must be 21+ with valid ID. All sales are final.",
-"endDate": "2026-08-09T04:30:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-06/fe646199-deef-447e-b2ec-136f81a5ce84.jpg?rect=0%2C135%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "11-01 43rd Avenue, Long Island City, New York 11101, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.752046,
-"longitude": -73.947439
-},
-"name": "Lost in Paradise Rooftop"
-},
-"name": "Reggaeton Rooftop Party at Lost in Paradise in NYC Every Saturday!",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "AIM Hospitality"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/mx9nml-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-8th-aug-lost-in-paradise-rooftop-new-york-city-tickets"
-},
-"lastmod": "2026-07-14T14:55:30.592399Z"
 },
 "https://dice.fm/event/mx9o9w-legendary-locals-open-mic-night-every-wednesday-16th-sep-brooklyn-music-kitchen-new-york-city-tickets": {
 "event": {
@@ -32229,38 +30777,6 @@
 },
 "lastmod": "2026-07-20T20:14:48.131344Z"
 },
-"https://dice.fm/event/mxn2ql-vaudeville-3000-9th-aug-alphaville-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "ComedyEvent",
-"description": "Vaudeville 3000 is a variety show that brings together acts of all kinds, from clown to jazz to drag to standup... no two shows are the same. Every night ends with short form games featuring the acts and our team of seasoned improvisers.",
-"endDate": "2026-08-09T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2025-12-29/aaef6cdf-ff1b-479d-a336-b74ee6c4c155.jpg?rect=0%2C3%2C1026%2C1026"
-],
-"location": {
-"@type": "Place",
-"address": "140 Wilson Ave, New York, New York 11237",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.700486,
-"longitude": -73.92585500000001
-},
-"name": "ALPHAVILLE"
-},
-"name": "Vaudeville 3000",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "ALPHAVILLE"
-},
-"startDate": "2026-08-09T19:00:00-04:00",
-"url": "https://dice.fm/event/mxn2ql-vaudeville-3000-9th-aug-alphaville-new-york-tickets"
-},
-"lastmod": "2026-07-29T17:47:58.977970Z"
-},
 "https://dice.fm/event/mxn2r9-buckaroo-23rd-aug-desert-5-spot-ny-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -32419,7 +30935,7 @@
 "startDate": "2026-08-22T19:00:00-04:00",
 "url": "https://dice.fm/event/mxn5gl-the-velvet-room-persona-karaoke-anyc-afterparty-22nd-aug-seventh-heaven-bar-karaoke-new-york-city-tickets"
 },
-"lastmod": "2026-08-06T08:09:02.076247Z"
+"lastmod": "2026-08-09T02:54:04.109749Z"
 },
 "https://dice.fm/event/mxn5pk-untitled-art-star-s4-r3-fluxus-28th-aug-cmon-everybody-new-york-tickets": {
 "event": {
@@ -32547,7 +31063,7 @@
 "startDate": "2026-09-05T22:00:00-04:00",
 "url": "https://dice.fm/event/mxn65l-justice-5th-sep-pacha-new-york-new-york-city-tickets"
 },
-"lastmod": "2026-08-07T08:08:06.538727Z"
+"lastmod": "2026-08-09T13:09:41.628629Z"
 },
 "https://dice.fm/event/mxn6gw-dawglet-w-esther-kohl-and-shiverboard-21st-aug-purgatory-new-york-tickets": {
 "event": {
@@ -34351,7 +32867,7 @@
 "startDate": "2026-08-09T14:00:00-04:00",
 "url": "https://dice.fm/event/nvnp33-oguz-guests-9th-aug-the-roof-at-superior-ingredients-new-york-tickets"
 },
-"lastmod": "2026-08-08T15:35:50.943887Z"
+"lastmod": "2026-08-09T21:11:06.500437Z"
 },
 "https://dice.fm/event/nvp2eq-les-killshot-halloween-bar-crawl-1031-31st-oct-barcade-new-york-city-tickets": {
 "event": {
@@ -34812,6 +33328,38 @@
 "url": "https://dice.fm/event/nvpk29-tv-buddha-superfan-and-reading-19th-aug-purgatory-new-york-tickets"
 },
 "lastmod": "2026-08-08T08:07:43.728767Z"
+},
+"https://dice.fm/event/nvpk93-open-decks-w-cevich-29th-sep-silo-brooklyn-brooklyn-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Hosted by DJ and musician Steen, Open Decks is a creative and fun space where DJs can hang and share their house and techno music live. Hear your favorite or original tracks on SILO's front room sound system, a custom 15,000 watt Danley powerhouse. This week Cevich\u00e9 is filling in for Steen while he's on vacation.\n\nIf you want to play, talk to Cevich\u00e9 to sign up. Sign-up is in person at the event only, slots are 12 minutes.\n\nThe first 3 DJ's play first-come-first-spin. Then we'll select names randomly from the sign-up list throughout the night, with extra weighting for DJs who arrive earlier. You'll get a half hour notice before your set time. This is to ensure that DJ's who can't make the initial sign up right at 8pm still get a chance to play.\n\nFree with advance RSVP.\n\nIn SILO's front room. Limited capacity.",
+"endDate": "2026-09-30T02:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/00c97fc1-de3b-44e4-b6b8-f4024ab3ae75.jpg?rect=0%2C0%2C1500%2C1500"
+],
+"location": {
+"@type": "Place",
+"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7105086,
+"longitude": -73.922873
+},
+"name": "SILO Brooklyn "
+},
+"name": "Open Decks w/ Cevich\u00e9",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "SILO Brooklyn"
+},
+"startDate": "2026-09-29T19:00:00-04:00",
+"url": "https://dice.fm/event/nvpk93-open-decks-w-cevich-29th-sep-silo-brooklyn-brooklyn-tickets"
+},
+"lastmod": "2026-08-09T02:54:30.022575Z"
 },
 "https://dice.fm/event/nvpkb5-pianos-free-entry-before-11pm-w-rsvp-21st-aug-pianos-main-bar-new-york-city-tickets": {
 "event": {
@@ -36669,38 +35217,6 @@
 },
 "lastmod": "2026-08-06T20:47:00.994383Z"
 },
-"https://dice.fm/event/oe8ny5-ibza-anthems-boat-party-joe-grossman-friends-8th-aug-pier-78-at-hudson-river-park-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Join us Saturday, August 8th, on a two- floor luxury yacht for Ibiza Anthems! Classics done our way. Experience a timeline of hits, fan favorites, and defining anthems. Come relive the memories! Limited capacity. Intimate vibes. Make sure to grab your tickets. This one will sell out quickly!\n\n**Headliner: JOE GROSSMAN**\n\n**Countless mega productions on world class top labels like Nervous Records, Stereo Productions and Juicy music.**\n\n**Event Details:**\n\nBoarding: 10:00 PM\n\nDeparture: 11:00 PM\n\nReturn: 1:30 AM\n\nEnds: 2:00 AM\n\n**Rain or Shine**\n\n21 & over with a physical ID (no pictures of IDs will be accepted)\n\nDress to Impress: No hats | No Tims/boots | No joggers | No sweats | No basketball shorts\n\nReservations and Contact Information:",
-"endDate": "2026-08-09T02:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-05/1918dc16-8e1c-4f17-bc36-81d77a4e9f6a.jpg?rect=0%2C135%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "455 12th Avenue, New York City, New York 10018, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.75969,
-"longitude": -74.003963
-},
-"name": "Pier 78 at Hudson River Park"
-},
-"name": "Ibza Anthems Boat Party: Joe Grossman & Friends",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "House Matters"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/oe8ny5-ibza-anthems-boat-party-joe-grossman-friends-8th-aug-pier-78-at-hudson-river-park-new-york-city-tickets"
-},
-"lastmod": "2026-08-05T01:47:00.681087Z"
-},
 "https://dice.fm/event/oe8oog-dod-at-the-summer-club-5th-sep-summer-club-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -37084,38 +35600,6 @@
 "url": "https://dice.fm/event/oe8wva-drag-me-to-the-movies-hairspray-25th-aug-cmon-everybody-new-york-tickets"
 },
 "lastmod": "2026-08-05T08:08:04.084046Z"
-},
-"https://dice.fm/event/oe8x7y-wise-revolutions-part-deux-8th-aug-purgatory-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "WISE: Revolutions is a two-night mini-festival curated by Women Innovating Sound Experience, a group that features women, non-binary, trans, and queer artists working in experimental sound and visuals, pushing the boundaries of new media and technology. This event features part II of the festival.",
-"endDate": "2026-08-08T23:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-29/c2ff0e60-b441-4893-a484-033df43df5b8.jpg?rect=0%2C0%2C1024%2C1024"
-],
-"location": {
-"@type": "Place",
-"address": "675 Central Ave, Brooklyn, NY 11207, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.6872368,
-"longitude": -73.9057271
-},
-"name": "Purgatory"
-},
-"name": "WISE: Revolutions (part deux)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Purgatory"
-},
-"startDate": "2026-08-08T19:00:00-04:00",
-"url": "https://dice.fm/event/oe8x7y-wise-revolutions-part-deux-8th-aug-purgatory-new-york-tickets"
-},
-"lastmod": "2026-08-08T22:05:07.279771Z"
 },
 "https://dice.fm/event/oe8xgm-lets-get-loud-summer-fade-22nd-aug-moz-nyc-new-york-city-tickets": {
 "event": {
@@ -37949,38 +36433,6 @@
 },
 "lastmod": "2026-07-14T14:55:26.800590Z"
 },
-"https://dice.fm/event/pyb93l-beachcrimes-8th-aug-marquee-new-york-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "**General Terms**\n\nTicket holders must arrive before 12:30AM.\n\n**Refund Policy**\n\nAll items are non-refundable under any circumstances.\n\n**Age Restriction**\n\nFor entry, all guests must be 21+ years old and present valid, original photo identification. The following forms of original photo identification are accepted:\n\n\u00b7 Valid driver\u2019s license from any state in the United States;\n\n\u00b7 Valid identification issued by the New York Department of Motor Vehicles (non-driver ID card);\n\n\u00b7 Valid United States military identification; and\n\n\u00b7 Valid passport or visa from the United States government or any other country.",
-"endDate": "2026-08-09T03:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-02/357e7f8c-bd36-4851-bf89-ec47ed732758.jpg?rect=0%2C135%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "287 10th Avenue, New York City, New York 10001, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.749937,
-"longitude": -74.002839
-},
-"name": "Marquee New York"
-},
-"name": "Beachcrimes",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Marquee New York"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/pyb93l-beachcrimes-8th-aug-marquee-new-york-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T19:20:54.077969Z"
-},
 "https://dice.fm/event/pybb3l-silver-arrow-band-18th-aug-drom-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -38813,6 +37265,38 @@
 },
 "lastmod": "2026-08-04T20:36:43.792787Z"
 },
+"https://dice.fm/event/pyw59l-open-decks-w-cevich-30th-sep-silo-brooklyn-brooklyn-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "MusicEvent",
+"description": "Hosted by DJ and musician Steen, Open Decks is a creative and fun space where DJs can hang and share their house and techno music live. Hear your favorite or original tracks on SILO's front room sound system, a custom 15,000 watt Danley powerhouse. This week Cevich\u00e9 is filling in for Steen while he's on vacation.\n\nIf you want to play, talk to Cevich\u00e9 to sign up. Sign-up is in person at the event only, slots are 12 minutes.\n\nThe first 3 DJ's play first-come-first-spin. Then we'll select names randomly from the sign-up list throughout the night, with extra weighting for DJs who arrive earlier. You'll get a half hour notice before your set time. This is to ensure that DJ's who can't make the initial sign up right at 8pm still get a chance to play.\n\nFree with advance RSVP.\n\nIn SILO's front room. Limited capacity.",
+"endDate": "2026-10-01T02:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/53afb0f3-e770-4471-ab74-c39ac8935b30.jpg?rect=0%2C0%2C1500%2C1500"
+],
+"location": {
+"@type": "Place",
+"address": "90 Scott Ave, Brooklyn, NY 11237, USA",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.7105086,
+"longitude": -73.922873
+},
+"name": "SILO Brooklyn "
+},
+"name": "Open Decks w/ Cevich\u00e9",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "SILO Brooklyn"
+},
+"startDate": "2026-09-30T19:00:00-04:00",
+"url": "https://dice.fm/event/pyw59l-open-decks-w-cevich-30th-sep-silo-brooklyn-brooklyn-tickets"
+},
+"lastmod": "2026-08-09T02:56:11.816138Z"
+},
 "https://dice.fm/event/pyw5gp--night-day-dj-maria-haruka-identified-patient-avenue-f-nema-han-11th-sep-signal-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -38939,7 +37423,7 @@
 "startDate": "2026-09-07T20:30:00-04:00",
 "url": "https://dice.fm/event/pyw63p-rev-vince-anderson-the-love-choir-7th-sep-union-pool-new-york-tickets"
 },
-"lastmod": "2026-08-04T19:58:03.061662Z"
+"lastmod": "2026-08-09T08:06:11.692504Z"
 },
 "https://dice.fm/event/pyw65l-20th-anniversary-of-bday-4th-sep-babys-all-right-new-york-tickets": {
 "event": {
@@ -40425,38 +38909,6 @@
 },
 "lastmod": "2026-07-29T08:06:45.370012Z"
 },
-"https://dice.fm/event/q2q65p-saturday-artist-showcase-0808-8th-aug-unveiled-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Groove Creator returns to Unveiled for a night dedicated to underground house music.\n\nHeadlining the night is Groove Creator, one of the few artists signed to Carl Cox's 23rd Century DGTL imprint, joined by Jayinthecut and Philippe X for an evening of driving rhythms, deep grooves, and late-night energy.\n\nExpect a carefully curated soundtrack, immersive production, and the signature atmosphere that has made Unveiled one of Brooklyn's premier destinations for electronic music. From open to close, the night is built for those who appreciate quality house music in an intimate club setting!\n\nFriday, August 8\n\nDoors: 9:00 PM\n\nUnveiled\n\n94 N 13th St, Brooklyn, NY\n\n21+ | Valid Physical ID Required",
-"endDate": "2026-08-09T03:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-06/ce669891-da6f-413f-89cf-dc4196c41303.jpg?rect=0%2C0%2C3919%2C3919"
-],
-"location": {
-"@type": "Place",
-"address": "94 North 13th Street, Brooklyn, New York 11249, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.722585,
-"longitude": -73.956802
-},
-"name": "UNVEILED"
-},
-"name": "Saturday Artist Showcase 08/08",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Joonbug Presents"
-},
-"startDate": "2026-08-08T21:00:00-04:00",
-"url": "https://dice.fm/event/q2q65p-saturday-artist-showcase-0808-8th-aug-unveiled-new-york-city-tickets"
-},
-"lastmod": "2026-08-06T02:30:20.010684Z"
-},
 "https://dice.fm/event/q2q6pa-breaking-sound-nyc-at-brooklyn-music-kitchen-0929-29th-sep-brooklyn-music-kitchen-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -40498,7 +38950,7 @@
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
-"https://dice-media.imgix.net/attachments/2026-08-08/eb9d8ee5-cd05-4ce4-ae20-c39e255aaf72.jpg?rect=420%2C0%2C1080%2C1080"
+"https://dice-media.imgix.net/attachments/2026-08-09/00a671cc-7550-4c68-b05e-13ac88b6add2.jpg?rect=0%2C234%2C2000%2C2000"
 ],
 "location": {
 "@type": "Place",
@@ -40519,39 +38971,7 @@
 "startDate": "2026-08-14T20:00:00-04:00",
 "url": "https://dice.fm/event/q2q77o-diego-garcia-friends-14th-aug-altheas-hideaway-nyc-new-york-city-tickets"
 },
-"lastmod": "2026-08-08T20:45:22.303836Z"
-},
-"https://dice.fm/event/q2q7kp-deep-meditation-sound-exploratory-9th-aug-surya-sound-temple-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "At Surya Sound Temple, the Deep Meditation Experience is a 60-minute immersive session designed for deep relaxation, inner reset, and sound-vibrational healing. It blends live soundscapes, guided meditation, and subtle movement or stillness ; all in a small-group, intimate setting. Upon arrival you\u2019ll be welcomed into our studio and invited to lie down or recline; soft lighting, cushions, blankets, and treated with respect for silence and presence.\n\nAnyone seeking a deep relax & reset \u2014 good for busy minds, overworked bodies, anyone craving calm and neural rest. Fans of sound-healing, ambient and instrumental meditation.\n\nPeople comfortable lying/sitting silently for 60 minutes in a dim, quiet space, and willing to engage in a contemplative atmosphere.\n\n**Good to know / tips**\n\nArrive on time or 5 minutes early, late entry may disturb the sound field and group energy.  \nWear comfortable clothes you can relax in.  \nBringing a mat, cushion, blanket is a good idea if you like extra comfort.  \nSilence mobile devices; the room is intersection of sound + stillness.",
-"endDate": "2026-08-09T20:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-03-29/372d2e7f-3a33-48f7-9dac-fc28d94a60d0.jpg?rect=0%2C0%2C2560%2C2560"
-],
-"location": {
-"@type": "Place",
-"address": "101 Wyckoff Avenue Unit 1H, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.704752,
-"longitude": -73.919601
-},
-"name": "Surya Sound Temple"
-},
-"name": "Deep Meditation Sound Exploratory",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Surya Sound Temple"
-},
-"startDate": "2026-08-09T19:00:00-04:00",
-"url": "https://dice.fm/event/q2q7kp-deep-meditation-sound-exploratory-9th-aug-surya-sound-temple-new-york-city-tickets"
-},
-"lastmod": "2026-08-07T18:00:26.865138Z"
+"lastmod": "2026-08-09T17:31:38.557779Z"
 },
 "https://dice.fm/event/q2q839-loco-carnaval-sundays-6th-sep-somewhere-nowhere-nyc-new-york-tickets": {
 "event": {
@@ -41352,38 +39772,6 @@
 "url": "https://dice.fm/event/q2qr7y-vesper-26th-sep-laissez-faire-new-york-city-tickets"
 },
 "lastmod": "2026-08-03T19:00:46.794908Z"
-},
-"https://dice.fm/event/q2qrgo-recess-8th-aug-alphaville-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "***Recess***\n\na night of breaks, bass, tribal, and darker garage to bring you back in time\n\nDJ's all night ~ bar and venue!\n\nDoors 10:30pm | 21+",
-"endDate": "2026-08-09T02:30:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-03/07ec1dc0-31e7-41c1-b169-66a55e2ff4a2.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "140 Wilson Ave, New York, New York 11237",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.700486,
-"longitude": -73.92585500000001
-},
-"name": "ALPHAVILLE"
-},
-"name": "Recess",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "ALPHAVILLE"
-},
-"startDate": "2026-08-08T22:30:00-04:00",
-"url": "https://dice.fm/event/q2qrgo-recess-8th-aug-alphaville-new-york-tickets"
-},
-"lastmod": "2026-08-03T14:30:17.586056Z"
 },
 "https://dice.fm/event/q2qy5x-magi-merlin-live-signing-21st-aug-rough-trade-below-new-york-city-tickets": {
 "event": {
@@ -42344,38 +40732,6 @@
 "url": "https://dice.fm/event/ryk77v-tyondai-braxton-qasim-naqvi-16th-sep-public-records-new-york-tickets"
 },
 "lastmod": "2026-07-14T15:06:42.174726Z"
-},
-"https://dice.fm/event/ryk99v-ridgewood-rendezvous-drag-show-8th-aug-cassette-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "RIDGEWOOD RENDEZVOUS DRAG SHOW\n\nRIDGEWOOD'S BEST, WORST AND ONLY WEEKLY DRAG SHOW\n\nEVERY SATURDAY // 10PM-2AM // FREE\n\nTIP YOUR QUEENS!",
-"endDate": "2026-08-09T02:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-02/c697e782-c62f-450b-88dd-18fa46530141.jpg?rect=0%2C95%2C1170%2C1170"
-],
-"location": {
-"@type": "Place",
-"address": "68-38 Forest Avenue, Storefront B, Ridgewood, New York 11385, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.70256,
-"longitude": -73.901176
-},
-"name": "Cassette"
-},
-"name": "RIDGEWOOD RENDEZVOUS DRAG SHOW",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Cassette"
-},
-"startDate": "2026-08-08T22:00:00-04:00",
-"url": "https://dice.fm/event/ryk99v-ridgewood-rendezvous-drag-show-8th-aug-cassette-new-york-city-tickets"
-},
-"lastmod": "2026-07-14T14:55:28.634446Z"
 },
 "https://dice.fm/event/rykdqv-date-nite-vinyl-happy-hour-12th-aug-sleepwalk-new-york-city-tickets": {
 "event": {
@@ -43881,14 +42237,14 @@
 },
 "lastmod": "2026-07-23T08:07:23.907449Z"
 },
-"https://dice.fm/event/v32q77-font-presents-milena-casado-peaceful-faces-and-beyondo-band-19th-sep-the-sultan-room-new-york-tickets": {
+"https://dice.fm/event/v32q77-font-presents-milena-casado-peaceful-faces-and-beyondo-band-16th-sep-the-sultan-room-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
 "@type": "MusicEvent",
 "description": "***An evening of trumpet-forward music from every corner of the genre spectrum. Featuring songwriting, rock grooves, avant-garde electronics, and a whole lot of brass, this show features three eclectic and multi-talented Brooklyn trumpeters acclaimed in the jazz, pop, and indie music worlds.***",
-"endDate": "2026-09-19T23:00:00-04:00",
+"endDate": "2026-09-16T23:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
+"eventStatus": "https://schema.org/EventRescheduled",
 "image": [
 "https://dice-media.imgix.net/attachments/2026-07-02/a57193c6-8aac-4058-ad9b-2bf78b50bea9.jpg?rect=0%2C0%2C960%2C960"
 ],
@@ -43908,10 +42264,10 @@
 "@type": "Organization",
 "name": "The Sultan Room"
 },
-"startDate": "2026-09-19T19:00:00-04:00",
-"url": "https://dice.fm/event/v32q77-font-presents-milena-casado-peaceful-faces-and-beyondo-band-19th-sep-the-sultan-room-new-york-tickets"
+"startDate": "2026-09-16T19:00:00-04:00",
+"url": "https://dice.fm/event/v32q77-font-presents-milena-casado-peaceful-faces-and-beyondo-band-16th-sep-the-sultan-room-new-york-tickets"
 },
-"lastmod": "2026-07-13T14:25:07.091290Z"
+"lastmod": "2026-08-09T15:26:37.999433Z"
 },
 "https://dice.fm/event/v32rmg-shades-29th-oct-silo-brooklyn-brooklyn-tickets": {
 "event": {
@@ -44649,38 +43005,6 @@
 },
 "lastmod": "2026-07-14T14:55:26.572018Z"
 },
-"https://dice.fm/event/v3npml-safaera-8th-aug-the-delancey-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Safaera is a Reggaeton & Latin Music Party.\n\nThis ticket guarantees entry before midnight; If there is no RSVP left tickets at the door will come with \\[ 2 \\] drinks.\ud83c\udf79\ud83c\udf7a\n\nDress Code: Upscale Casual\n\n\u2022\u2022We do not charge cover but due to the popularity of the party after 12 there's a 2 drink minimum to enter!  \n  \n**NO REFUNDS**\n\nAll tickets are non-refundable and non-exchangeable. Event cancellations without a rescheduled date will result in an automatic full refund to the original credit card used for the purchase. Your purchase of a ticket implies agreement with this policy. Please verify event details before buying tickets.\n\nBy attending this event, you grant reggaetonLABS permission to photograph and record you, and to use your image for promotional purposes.\n\nPlease ensure you bring a government-issued ID with your date of birth.\\*\\*\n\n**TERMS & CONDITIONS**\n\nBy purchasing this ticket, you agree to our Terms & Conditions  \nwww.reggaetonlabs.com/terms-conditions",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2023-11-02/4a7dc0f1-59c5-48d0-a318-1b9593d665ea.jpg?rect=0%2C0%2C1200%2C1200"
-],
-"location": {
-"@type": "Place",
-"address": "168 Delancey St, New York, NY 10002, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.71797129999999,
-"longitude": -73.98528870000001
-},
-"name": "The Delancey"
-},
-"name": "Safaera",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "reggaetonLABS"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/v3npml-safaera-8th-aug-the-delancey-new-york-tickets"
-},
-"lastmod": "2026-07-10T08:06:22.542386Z"
-},
 "https://dice.fm/event/v3nxel-lettuce-cook-tour-concert-8th-oct-xanadu-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -44820,38 +43144,6 @@
 "url": "https://dice.fm/event/v3x6v7-dirty-bird-9th-sep-erf-gallery-new-york-city-tickets"
 },
 "lastmod": "2026-07-29T21:23:22.620341Z"
-},
-"https://dice.fm/event/v3x7bd--saturday-sunset-sounds-turf-club-8th-aug-westlight-rooftop-at-the-william-vale-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "WESTLIGHT \u2014 SATURDAY SUNSET SOUNDS (TURF CLUB)\n\nSaturday Sunset Sounds is our weekly rooftop DJ series at The Turf Club at Westlight\u2014a rotating lineup soundtracking golden hour into night with skyline views and peak-weekend energy.\n\nEvery Saturday\n\nDoors: 4:00 PM\n\nMusic:\n\nAdolfo 4:00 PM\n\nI\u00f1aki 5:00 PM\n\nMatte 7:00 PM\n\nValley Latini 9:00 PM\n\nVenue: The Turf Club at Westlight (The William Vale)\n\nAddress: 111 N. 12th St, Brooklyn, NY 11249\n\nTicket perk: Ticket purchase includes one (1) complimentary drink token, redeemable for all house/standard offerings, including signature cocktails.\n\nEntry is subject to venue capacity and house policies. Set times and lineup are subject to change.",
-"endDate": "2026-08-09T00:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventRescheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-31/c1caeb6f-ca2e-4096-ad1d-ea3171d6ccc6.jpg?rect=0%2C270%2C2160%2C2160"
-],
-"location": {
-"@type": "Place",
-"address": "111 North 12th Street, Brooklyn, New York 11249, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.722175,
-"longitude": -73.956705
-},
-"name": "Westlight Rooftop at The William Vale"
-},
-"name": " Saturday Sunset Sounds: Turf Club",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "The William Vale - Westlight"
-},
-"startDate": "2026-08-08T16:00:00-04:00",
-"url": "https://dice.fm/event/v3x7bd--saturday-sunset-sounds-turf-club-8th-aug-westlight-rooftop-at-the-william-vale-new-york-city-tickets"
-},
-"lastmod": "2026-07-31T20:15:20.886631Z"
 },
 "https://dice.fm/event/v3x7rg-saint-vitus-halloween-market-25th-oct-saint-vitus-new-york-city-tickets": {
 "event": {
@@ -45267,7 +43559,7 @@
 "startDate": "2026-09-05T18:30:00-04:00",
 "url": "https://dice.fm/event/v3xg2l-sonic-sounds-5th-sep-the-delancey-new-york-tickets"
 },
-"lastmod": "2026-08-08T08:07:33.024836Z"
+"lastmod": "2026-08-09T02:10:13.224626Z"
 },
 "https://dice.fm/event/v3xgbg-glitterbox-dam-swindle-mike-dunn-cosmo-and-more-5th-sep-house-of-yes-new-york-city-tickets": {
 "event": {
@@ -45685,38 +43977,6 @@
 },
 "lastmod": "2026-08-06T13:47:00.509261Z"
 },
-"https://dice.fm/event/v3xoag-super-gay-sunday-9th-aug-moondog-hifi-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Super Gay Sunday IS BAAAAAAAAAAAAACK!\n\nLouder, prouder, and hotter than ever!\n\nJoin us at Moondog for food, drinks, and flavor all afternoon!\n\nMusic provided by Na$ty Funk, Eklektik Etnik, Nolan Lewis, Keith Brazil, and LEROY.\n\nHosted by Sliq, Jason Carroll, DE'ANDRE, and Compass Rose!",
-"endDate": "2026-08-09T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-04/2d5fb2d8-85b3-4a6b-9e16-80de0b37d020.jpg?rect=0%2C0%2C1094%2C1094"
-],
-"location": {
-"@type": "Place",
-"address": "119 Ingraham Street, Brooklyn, New York 11237, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.707934,
-"longitude": -73.929217
-},
-"name": "Moondog HiFi"
-},
-"name": "Super Gay Sunday",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Moondog HiFi"
-},
-"startDate": "2026-08-09T16:00:00-04:00",
-"url": "https://dice.fm/event/v3xoag-super-gay-sunday-9th-aug-moondog-hifi-new-york-city-tickets"
-},
-"lastmod": "2026-08-04T15:15:15.760708Z"
-},
 "https://dice.fm/event/v3xoog-nervous-records-speakeasy-special-guests-25th-aug-shinsen-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -45779,7 +44039,7 @@
 "startDate": "2026-10-17T19:00:00-04:00",
 "url": "https://dice.fm/event/v3xow7-ajj-greet-death-17th-oct-saint-vitus-new-york-city-tickets"
 },
-"lastmod": "2026-08-06T13:47:00.532921Z"
+"lastmod": "2026-08-09T02:17:35.071172Z"
 },
 "https://dice.fm/event/v3xoyl-soul-clap-a-lana-nita-aviance-dee-diggs-david-paglia-26th-sep-public-records-new-york-tickets": {
 "event": {
@@ -45812,6 +44072,38 @@
 "url": "https://dice.fm/event/v3xoyl-soul-clap-a-lana-nita-aviance-dee-diggs-david-paglia-26th-sep-public-records-new-york-tickets"
 },
 "lastmod": "2026-08-05T13:47:00.445871Z"
+},
+"https://dice.fm/event/v3xqdd-he-he-with-gg-a-variety-show-23rd-aug-alphaville-new-york-tickets": {
+"event": {
+"@context": "https://schema.org",
+"@type": "ComedyEvent",
+"description": "A celebration of Queer Expression featuring original music, comedy, stand up, drag and just about anything else you can accomplish with the power of a lace front",
+"endDate": "2026-08-23T23:30:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://dice-media.imgix.net/attachments/2026-08-09/0d426104-10de-4207-8c06-32a1bfcaa79a.jpg?rect=0%2C135%2C1080%2C1080"
+],
+"location": {
+"@type": "Place",
+"address": "140 Wilson Ave, New York, New York 11237",
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": 40.700486,
+"longitude": -73.92585500000001
+},
+"name": "ALPHAVILLE"
+},
+"name": "He He with GG: a Variety Show",
+"offers": [],
+"organizer": {
+"@type": "Organization",
+"name": "ALPHAVILLE"
+},
+"startDate": "2026-08-23T19:30:00-04:00",
+"url": "https://dice.fm/event/v3xqdd-he-he-with-gg-a-variety-show-23rd-aug-alphaville-new-york-tickets"
+},
+"lastmod": "2026-08-09T19:39:32.643943Z"
 },
 "https://dice.fm/event/v3xqev-dee-diggs-lohi-rooftop-14th-aug-314-scholes-street-new-york-city-tickets": {
 "event": {
@@ -47187,7 +45479,7 @@
 "startDate": "2026-08-09T16:00:00-04:00",
 "url": "https://dice.fm/event/wwdvnn-paraiso-sunset-august-9-w-welker-9th-aug-westlight-rooftop-at-the-william-vale-new-york-city-tickets"
 },
-"lastmod": "2026-08-08T22:59:21.087229Z"
+"lastmod": "2026-08-09T20:28:07.603961Z"
 },
 "https://dice.fm/event/wwdw5r-lyra-rooftop-party-0822-22nd-aug-magic-hour-rooftop-new-york-city-tickets": {
 "event": {
@@ -47349,38 +45641,6 @@
 },
 "lastmod": "2026-07-29T17:58:47.761332Z"
 },
-"https://dice.fm/event/wwm8ep-summer-thunder-sun-ra-arkestra-under-the-direction-of-marshall-allen-9th-aug-union-pool-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "**SUMMER THUNDER: SUN RA ARKESTRA (under the direction of Marshall Allen)**\n\n*FREE 2PM ~ 6PM RAIN OR SHINE*\n\n*RSVP NOT REQUIRED FOR ENTRY*\n\n*ENTRY BASED ON CAPACITY*\n\n*FIRST COME FIRST SERVE*\n\nThis is a 21+ event (Physical ID required. Photos of ID + NYC City ID are not accepted)",
-"endDate": "2026-08-09T18:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-06-15/d696641d-fec0-4a1c-9ba5-1fb2e8ac02a0.jpg?rect=0%2C975%2C4500%2C4500"
-],
-"location": {
-"@type": "Place",
-"address": "484 Union Ave, Brooklyn, NY 11211, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7149875,
-"longitude": -73.9516407
-},
-"name": "Union Pool"
-},
-"name": "SUMMER THUNDER: SUN RA ARKESTRA (under the direction of Marshall Allen)",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Union Pool"
-},
-"startDate": "2026-08-09T14:00:00-04:00",
-"url": "https://dice.fm/event/wwm8ep-summer-thunder-sun-ra-arkestra-under-the-direction-of-marshall-allen-9th-aug-union-pool-new-york-tickets"
-},
-"lastmod": "2026-07-14T14:55:33.649523Z"
-},
 "https://dice.fm/event/wwm8vv-riki-rose-29th-sep-drom-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -47488,70 +45748,6 @@
 "url": "https://dice.fm/event/wwm99v-sleepyheads-early-indie-dance-party-11th-sep-drom-new-york-tickets"
 },
 "lastmod": "2026-07-24T21:24:02.123227Z"
-},
-"https://dice.fm/event/wwm9yr-whos-dancing-no-phones-live-funk-dance-party-8th-aug-drom-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "No phones, all funk. WHO'S DANCING?\u2122\n\nWHO'S DANCING?\u2122 presented by X&ND is a viral no-phones funk dance party for women, queer people, and trans people where there is NO CAMERAS whatsoever. We've ditched phones and cheap marketing for real connection to each other - and the power of funk.\n\nComing off of a fresh release of the WHO'S DANCING? album and a sold out album release event at Elsewhere. X&ND and the WHO'S DANCING? movement is returning to DROM for a night like no other.\n\nHeadlined by funk and soul revivalist, X&ND and their band, The Liberation. Come dance like no one is watching, leave with a new group of friends, and dance the night away to nothing but live funk music.\n\nFUNK IS BACK, WHO'S DANCING?",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-12/1d25d1c8-3214-4f14-affe-e22a4c813b8b.jpg?rect=0%2C1%2C2400%2C2400"
-],
-"location": {
-"@type": "Place",
-"address": "85 Avenue A, New York, NY 10009, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.72525,
-"longitude": -73.9844492
-},
-"name": "DROM"
-},
-"name": "WHO\u2019S DANCING? No-Phones Live Funk Dance Party",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "X&ND"
-},
-"startDate": "2026-08-08T22:30:00-04:00",
-"url": "https://dice.fm/event/wwm9yr-whos-dancing-no-phones-live-funk-dance-party-8th-aug-drom-new-york-tickets"
-},
-"lastmod": "2026-08-06T13:24:40.136144Z"
-},
-"https://dice.fm/event/wwmk5p-haus-of-the-drag-on-9th-aug-cmon-everybody-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "TheaterEvent",
-"description": "Season 3 Finale Viewing of House of Dragon but make it gay!\n\nThemed shows after the episode.",
-"endDate": "2026-08-09T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-14/7f78ecfc-9242-4f46-b9d2-ac327bd028fe.jpg?rect=0%2C141%2C1728%2C1728"
-],
-"location": {
-"@type": "Place",
-"address": "325 Franklin Ave, Brooklyn, NY 11238, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.6883003,
-"longitude": -73.9568077
-},
-"name": "C'mon Everybody"
-},
-"name": "Haus of the DRAG-on",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "C\u2019mon Everybody"
-},
-"startDate": "2026-08-09T20:00:00-04:00",
-"url": "https://dice.fm/event/wwmk5p-haus-of-the-drag-on-9th-aug-cmon-everybody-new-york-tickets"
-},
-"lastmod": "2026-07-15T08:07:37.053745Z"
 },
 "https://dice.fm/event/wwmkkv-comply-mr-beastdeath-2030-seraphines-cleaver-jerkface-3rd-sep-gold-sounds-new-york-tickets": {
 "event": {
@@ -47903,7 +46099,7 @@
 "startDate": "2026-08-09T13:00:00-04:00",
 "url": "https://dice.fm/event/wwpdkx-timmy-trumpet-at-the-summer-club-9th-aug-summer-club-new-york-city-tickets"
 },
-"lastmod": "2026-08-06T20:36:36.358327Z"
+"lastmod": "2026-08-09T22:17:59.427628Z"
 },
 "https://dice.fm/event/wwpg9g-sunday-skate-club-ft-love-games-w-lauren-murada-finn-jones-party-dad-club-flush-andrew-lenox-skate-all-night-23rd-aug-xanadu-new-york-city-tickets": {
 "event": {
@@ -48448,38 +46644,6 @@
 "url": "https://dice.fm/event/xe39n3-buck-wild-20th-sep-desert-5-spot-ny-new-york-city-tickets"
 },
 "lastmod": "2026-07-20T20:15:11.764634Z"
-},
-"https://dice.fm/event/xe39pa-priyanka-presents-india-mapiano-teej-shawna-solaris-mudia-9th-aug-elsewhere-rooftop-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "**In order for you to join us, we require a physical, valid, scannable US Government issued ID or foreign passport for admission (expired IDs will NOT be accepted)! If you are traveling, please be prepared to show a physical passport for entry (Photocopies and Photographs of IDs are NOT accepted). We recommend that all customers read Elsewhere's ID Policy in the FAQ section on our website before arriving at the venue.**\n\nElsewhere is a community that values inclusivity, joy, and creativity. In order to make this space accessible for everyone, we operate a strict zero-tolerance policy for harassment, discrimination, or hate of any kind. Please keep in mind that ticket sales are final, with the exception of a cancellation. The following items are subject to change without notice at all times; opening performers, set times, location of event within Elsewhere.\n\n\u263c Phone Free Dance Floor\n\nWe encourage a present and engaged dance floor...\n\nYou can head to the courtyard to chat, take pictures and use your phone. Let\u2019s avoid doing so on the dance floor!\n\n\u263c Rain or Shine Policy\n\nAll shows and events on the Rooftop are rain or shine! If the weather prevents us from carrying on outdoors we will move the show into one of our indoor spaces. We do not offer refunds for this type of change. When rain plans are required we will update customers.\n\nFor further information about our ticketing policies and FAQs, please visit elsewhere.club",
-"endDate": "2026-08-09T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-20/15a00d1a-0143-4768-ba1e-4418973952c5.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "599 Johnson Ave #1, Brooklyn, NY 11237, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7093375,
-"longitude": -73.9232313
-},
-"name": "Elsewhere - Rooftop"
-},
-"name": "Priyanka Presents: INDIA-MAPIANO, Teej, Shawna Solaris, Mudia ",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Elsewhere"
-},
-"startDate": "2026-08-09T16:00:00-04:00",
-"url": "https://dice.fm/event/xe39pa-priyanka-presents-india-mapiano-teej-shawna-solaris-mudia-9th-aug-elsewhere-rooftop-new-york-tickets"
-},
-"lastmod": "2026-07-27T16:19:57.210269Z"
 },
 "https://dice.fm/event/xe39ra-vaudeville-3000-16th-aug-alphaville-new-york-tickets": {
 "event": {
@@ -49985,38 +48149,6 @@
 },
 "lastmod": "2026-08-07T08:06:50.048321Z"
 },
-"https://dice.fm/event/xeyom3-risqu-bontan-shahar-8th-aug-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "This event takes place at Edge on the 100th floor. Weather permitting, the experience will be held on the outdoor observation deck. If weather conditions require, the event may transition indoors and the outdoor observation deck may be closed. No refunds will be issued due to weather.",
-"endDate": "2026-08-09T03:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-08/1e1d938b-eb81-469b-9523-9d250cb1fd35.jpg?rect=0%2C275%2C2450%2C2450"
-],
-"location": {
-"@type": "Place",
-"address": "30 Hudson Yards, New York City, New York 10001, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.75353,
-"longitude": -74.0009
-},
-"name": "Marquee Skydeck at Edge Hudson Yards"
-},
-"name": "RISQU\u00c9: Bontan | Shahar",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Marquee Skydeck"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/xeyom3-risqu-bontan-shahar-8th-aug-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T21:19:31.840315Z"
-},
 "https://dice.fm/event/xeyqbk-eric-penn-phil-15th-aug-sleepwalk-new-york-city-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -50497,38 +48629,6 @@
 },
 "lastmod": "2026-07-29T08:07:54.428821Z"
 },
-"https://dice.fm/event/yod9ov-dabittan-8th-aug-somewhere-nowhere-nyc-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "On Saturday, August 8th, Somewhere Nowhere NYC presents music by Dabittan.\n\nNo Re-entry & No refunds issued. For details on our dress code, policies, and guidelines, see our FAQ: www.somewherenowherenyc.com/faq\n\nFor further questions, please contact info@elgruposn.com",
-"endDate": "2026-08-09T04:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-04/109fa809-829a-4a92-b937-79e7d585c8f0.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "112 W 25th St, New York, NY 10001, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7443203,
-"longitude": -73.9926957
-},
-"name": "Somewhere Nowhere NYC"
-},
-"name": "Dabittan",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Somewhere Nowhere"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/yod9ov-dabittan-8th-aug-somewhere-nowhere-nyc-new-york-tickets"
-},
-"lastmod": "2026-08-04T20:29:43.494037Z"
-},
 "https://dice.fm/event/yodg5x-somewhere-funny-nowhere-serious-18th-sep-somewhere-nowhere-nyc-new-york-tickets": {
 "event": {
 "@context": "https://schema.org",
@@ -50655,7 +48755,7 @@
 "startDate": "2026-09-07T22:00:00-04:00",
 "url": "https://dice.fm/event/yodkwx-downstairs-karaoke-free-7th-sep-purgatory-new-york-tickets"
 },
-"lastmod": "2026-07-30T20:09:13.283232Z"
+"lastmod": "2026-08-09T08:06:05.748937Z"
 },
 "https://dice.fm/event/yodl6x-doyennes-of-disc-ft-monday-blue-dj-blessed-zo-veranda-29th-aug-the-sultan-room-rooftop-brooklyn-tickets": {
 "event": {
@@ -50720,38 +48820,6 @@
 "url": "https://dice.fm/event/yodllr-dirty-bird-19th-sep-erf-gallery-new-york-city-tickets"
 },
 "lastmod": "2026-07-29T21:24:01.807073Z"
-},
-"https://dice.fm/event/yodlq2-cenote-project-open-air-sunset-party-x-haus-of-joon-9th-aug-somewhere-nowhere-nyc-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Cenote Project, \u201cSun Down Moon Rise,\u201d is a seasonal open-air rooftop odyssey, from Memorial Day Weekend to Labor Day Weekend. Floating high above the pulse of the city, it becomes a skybound sanctuary\u2014reborn with each gathering through the collective breath of our community.\n\nWe come together in sacred celebration\u2014hearts open, spirits stirred\u2014drawn by the rhythm of sound, the language of art, and the alchemy of atmosphere. As the sun softens into dusk, beginning every Sunday at 5 PM, world-renowned artists take us on transcendent journeys through music\u2014sonic ceremonies that awaken, elevate, and transform.",
-"endDate": "2026-08-09T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-07-29/63688325-d8f7-43c6-9365-dc02e504836a.jpg?rect=0%2C0%2C1080%2C1080"
-],
-"location": {
-"@type": "Place",
-"address": "112 W 25th St, New York, NY 10001, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.7443203,
-"longitude": -73.9926957
-},
-"name": "Somewhere Nowhere NYC"
-},
-"name": "Cenote Project [Open-Air Sunset Party] x Haus of Joon",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "Somewhere Nowhere"
-},
-"startDate": "2026-08-09T17:00:00-04:00",
-"url": "https://dice.fm/event/yodlq2-cenote-project-open-air-sunset-party-x-haus-of-joon-9th-aug-somewhere-nowhere-nyc-new-york-tickets"
-},
-"lastmod": "2026-07-29T20:16:18.320594Z"
 },
 "https://dice.fm/event/yodn2x-exploding-in-sound-15th-anniversary-washer-or-best-offer-bimbo-cs-cleaners-8th-oct-union-pool-new-york-tickets": {
 "event": {
@@ -50911,7 +48979,7 @@
 "startDate": "2026-09-07T20:00:00-04:00",
 "url": "https://dice.fm/event/yodrov-anna-mcclellan-w-lomelda-and-100-watt-horse-7th-sep-purgatory-new-york-tickets"
 },
-"lastmod": "2026-07-28T20:43:43.344258Z"
+"lastmod": "2026-08-09T08:06:01.483569Z"
 },
 "https://dice.fm/event/yodrxx-barbie-fairytopia-ft-kiki-kramer-mixie-skank-sinatra-tb-grrrl-regular-degular-26th-aug-the-sultan-room-new-york-tickets": {
 "event": {
@@ -51168,70 +49236,6 @@
 "url": "https://dice.fm/event/yoeem2-sg-lewis-dj-set-in-the-ruins-fri-sat-21st-aug-ruins-at-knockdown-center-new-york-tickets"
 },
 "lastmod": "2026-08-04T15:04:01.400423Z"
-},
-"https://dice.fm/event/yoek7r-bastids-bbq-new-york-26-8th-aug-the-seaport-new-york-city-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "BASTID\u2019S BBQ RETURNS TO NEW YORK \u2014 TOMORROW!\n\nLocated at The Seaport \u2014 Fulton St & Water st.\n\n(Right across the street from Seaport Square, where the event has been held previously)\n\nSaturday, August 8, 2026\n\nA full day of good music, good food, and good people.\n\nTHE LINEUP\n\n2:00 PM \u2014 DJ BIZZON\n\n2:45 PM \u2014 SKRATCH BASTID\n\n3:30 PM \u2014 L3NI\n\n4:30 PM \u2014 GI JOE (Dance Battle presented by Red Bull BC One)\n\n5:00 PM \u2014 DJ MELL STAR\n\n6:00 PM \u2014 GI JOE (Dance Finals presented by Red Bull BC One)\n\n6:15 PM \u2014 KURIOUS\n\n6:30 PM \u2014 BUCK SHOT & EVIL DEE OF BLACK MOON\n\n7:00 PM \u2014 DJ KOOL RED ALERT\n\n8:00 PM \u2014 JUNGLE BROTHERS (ft. TDI MUZIK)\n\n9:00 PM \u2014 SKRATCH BASTID\n\nTHINGS YOU NEED TO KNOW\n\nRain or shine \u2014 the event goes on regardless of the weather.\n\nFood & drinks will be available onsite.\n\nFresh merch drop: Don\u2019t miss the exclusive limited edition Obey x Bastid\u2019s BBQ NY collaboration t-shirt.\n\nChairs are welcome, but please be mindful of the dance floor and avoid blocking the space.\n\nWe're excited to welcome the iconic Rock and Soul DJ Equipment & Records to this year's Bastid's BBQ! This legendary staple of the DJ community will be on-site with a pop-up shop featuring hip hop vinyl, headphones, t-shirts, gear, and more \u2014 don't miss it!\n\nThe Seaport is an open public courtyard. Donations do not provide special seating or exclusive access. Your generosity and support are greatly appreciated!\n\nCome hungry. Come ready to dance. Come ready for some serious hip-hop, DJ culture, and BBQ vibes.\n\nSee you at The Seaport!",
-"endDate": "2026-08-08T22:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-08-05/9e439565-4e8c-432a-b494-40259aafda71.jpg?rect=0%2C0%2C769%2C769"
-],
-"location": {
-"@type": "Place",
-"address": "Fulton Street and Front Street, New York City, New York 10038, United States",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.706786,
-"longitude": -74.003618
-},
-"name": "The Seaport"
-},
-"name": "BASTID'S BBQ - NEW YORK '26",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "First Things First Entertainment Inc"
-},
-"startDate": "2026-08-08T14:00:00-04:00",
-"url": "https://dice.fm/event/yoek7r-bastids-bbq-new-york-26-8th-aug-the-seaport-new-york-city-tickets"
-},
-"lastmod": "2026-08-08T15:18:12.303327Z"
-},
-"https://dice.fm/event/yoewn2-caribbean-vibes-weekly-party-yacht-cruises-nyc-8th-aug-skyport-marina-new-york-tickets": {
-"event": {
-"@context": "https://schema.org",
-"@type": "MusicEvent",
-"description": "Join us every Saturday night this summer for an unforgettable Caribbean-style party cruise along the iconic New York City skyline! Soak in the island rhythms, dance to high-energy sets from live DJs, and enjoy a vibrant reggae vibe that brings vacation energy right here to NYC.\n\n**Live DJ Playing Reggae, Afrobeats, Hip-Hop, Latin & more!**\n\nOur resident yacht DJ will keep the party rocking with monster Caribbean beats - reggae, dancehall, soca, and more! Get ready to dance under the stars every Saturday night.\n\n**Caribbean Vibes & Good Times**\n\nWhether you're a seasoned party-goer or just looking to unwind with a drink in hand, this event is sure to have you dancing all night long. Caribbean-style music, amazing people, and a one-of-a-kind atmosphere - lock in your Saturday plans now. Enjoy signature cocktails inspired by the Caribbean culture, with tropical flavors like rum punch, mojitos, and pi\u00f1a coladas! Secure Private VIP Seating with the purchase of Bottle Service - Rum, Tequila, Bacardi, Vodka.\n\nVIP Bottle Service Pricing:\n\n- Vodka $300 and under: Tito's Ketel One, Grey Goose, Ciroc.\n- Tequila $300 and under: Casamigos Silver/Reposado, Patron Silver, Don Julio Blanco\n- Whiskey $300 and under: Jameson, Jack Daniels, Black Label\n\nEvent Details\n\nLocation: Avalon Yacht (Skyport Marina) - 2430 FDR Drive, New York NY\n\nBoarding: 11:00 PM // Departure: 11:30 PM // Return: 3:00 AM // Ages 21+",
-"endDate": "2026-08-09T03:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://dice-media.imgix.net/attachments/2026-05-05/40a97466-eec7-48ab-88bb-957a22582f3b.jpg?rect=154%2C218%2C1146%2C1147"
-],
-"location": {
-"@type": "Place",
-"address": "2430 FDR Dr, New York, NY 10010, USA",
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": 40.73554809999999,
-"longitude": -73.97441909999999
-},
-"name": "Skyport Marina"
-},
-"name": "Caribbean Vibes Weekly Party Yacht Cruises NYC",
-"offers": [],
-"organizer": {
-"@type": "Organization",
-"name": "EnjoyCruises.com"
-},
-"startDate": "2026-08-08T23:00:00-04:00",
-"url": "https://dice.fm/event/yoewn2-caribbean-vibes-weekly-party-yacht-cruises-nyc-8th-aug-skyport-marina-new-york-tickets"
-},
-"lastmod": "2026-07-10T08:06:16.391622Z"
 },
 "https://dice.fm/event/yowdla-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-15th-aug-lost-in-paradise-rooftop-new-york-city-tickets": {
 "event": {
