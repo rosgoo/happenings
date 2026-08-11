@@ -45,48 +45,6 @@
 },
 "fetched_at": "2026-08-03T04:02:09.870329+00:00"
 },
-"https://grove34.com/shows/improv-night-aug09": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "No scripts, no safety nets\u2014just pure comedy created in the moment. Come see why Grove 34 is THE place for improv comedy in Queens. Follow @improvnight and @grove34nyc for cast announcements and show-specific details!",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2c93463acc0ba878ee97d4_Host%20Team%20Web%20Poster%2001A.jpg",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "Improv Night",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-09T23:00:00.000Z"
-},
-"fetched_at": "2026-08-08T15:13:16.250691+00:00"
-},
 "https://grove34.com/shows/jazz-and-joints": {
 "event": {
 "@context": "https://schema.org",
@@ -212,6 +170,48 @@
 "startDate": "2025-12-06T00:30:00.000Z"
 },
 "fetched_at": "2026-08-03T04:02:07.866424+00:00"
+},
+"https://grove34.com/shows/roast-battle-league-nyc-aug12": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a42cb34d735e21d52ddcd84_7.PNG",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Roast Battle League NYC",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-13T01:00:00.000Z"
+},
+"fetched_at": "2026-08-11T10:57:35.256015+00:00"
 },
 "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat": {
 "event": {
@@ -339,40 +339,6 @@
 "startDate": "2026-08-25T18:00:00-04:00"
 },
 "fetched_at": "2026-08-08T15:13:08.929660+00:00"
-},
-"https://whitney.org/events/closer-look-untitled-america": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/closer-look-untitled-america",
-"@type": "Event",
-"description": "Mondays, 12 pm Saturdays, Sundays, 3 pm Slow down and discover how much there is to see when we take the time to look closely at highlights from \u201cUntitled\u201d (America). Guided by a Museum docent, participants are encouraged to think through and discuss works together. Each forty-five-minute session focuses on a single work of art or explores a connection between two works.\u00a0",
-"endDate": "2026-08-10T12:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/824516/Jasper_Johns_Racing_Thoughts.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "A Closer Look: Guided Close-Looking Through Dialogue",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-10T12:00:00-04:00",
-"url": "https://whitney.org/events/closer-look-untitled-america"
-},
-"fetched_at": "2026-08-10T10:41:47.694056+00:00"
 },
 "https://whitney.org/events/end-of-days": {
 "event": {
@@ -543,6 +509,108 @@
 "startDate": "Apr 26, 2026"
 },
 "fetched_at": "2026-08-03T04:02:00.557421+00:00"
+},
+"https://www.apollotheater.org/event/harlem-summer-nights-2026": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Experience Harlem Summer Nights 2026 with outdoor community celebrations honoring Harlem\u2019s vibrant culture and music.",
+"doorTime": "5:00 PM ",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/66149f879619e045e04cf32a/6a022252c1d70e2f886ca351_HarlemSummerNights_Web_1920x1080.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10027",
+"streetAddress": ""
+},
+"name": "Under The 12th Avenue Viaduct "
+},
+"name": "Harlem Summer Nights",
+"offers": {
+"@type": "Offer",
+"name": "Admission",
+"price": "Free",
+"priceCurrency": "USD",
+"url": "https://www.harlemsummernights.com/",
+"validFrom": "Aug 14, 2026"
+},
+"startDate": "Aug 14, 2026"
+},
+"fetched_at": "2026-08-11T10:57:31.584389+00:00"
+},
+"https://www.apollotheater.org/event/harlem-week-2026": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Celebrate Harlem Week 2026 with live music, culture, community events, and performances honoring Harlem\u2019s rich artistic legacy.",
+"doorTime": "",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/66149f879619e045e04cf32a/6a02215448b9d09c4de9278e_HarlemWeek_Web_1920x1080.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10027",
+"streetAddress": ""
+},
+"name": "Theater Row on 135th Street between Adam Clayton Powell Blvd and St. Nicholas Ave."
+},
+"name": "Harlem Week",
+"offers": {
+"@type": "Offer",
+"name": "Admission",
+"price": "Free",
+"priceCurrency": "USD",
+"url": "https://Harlemweek.org",
+"validFrom": "Aug 16, 2026"
+},
+"startDate": "Aug 15, 2026"
+},
+"fetched_at": "2026-08-11T10:57:33.102119+00:00"
+},
+"https://www.apollotheater.org/event/teen-takeover-we-outsideee": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Free teen Block Party event at the Apollo Theater. Live music, art, and NYC culture. Fully teen-produced. August 14, 6PM. End-of-summer vibes, no ticket required.",
+"doorTime": "",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/66149f879619e045e04cf32a/6a3e88e543c14c3cea3eb2ba_TTO26_Web_1920x1080.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10027",
+"streetAddress": "233 W 125th St"
+},
+"name": "Apollo Stages at The Victoria"
+},
+"name": "Teen Takeover: We Outsideee",
+"offers": {
+"@type": "Offer",
+"name": "Admission",
+"price": "Free with RSVP",
+"priceCurrency": "USD",
+"url": "https://apollo.formstack.com/forms/tt26rsvp",
+"validFrom": "Aug 14, 2026"
+},
+"startDate": "Aug 14, 2026"
+},
+"fetched_at": "2026-08-11T10:57:30.105039+00:00"
 },
 "https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok": {
 "event": {

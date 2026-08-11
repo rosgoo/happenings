@@ -244,6 +244,13 @@
 "matched": "115-115 232 STREET, Cambria Heights, NY, USA",
 "source": "geosearch"
 },
+"233 W 125th St, New York, NY": {
+"confidence": 0.8,
+"lat": 40.809939,
+"lon": -73.949282,
+"matched": "233 WEST 125 STREET, New York, NY, USA",
+"source": "geosearch"
+},
 "234 STREET between MERRICK BOULEVARD and 133 AVENUE": null,
 "235 WEST   44 STREET between 8 AVENUE and BROADWAY": null,
 "236 W 78th Street, New York, NY": {
@@ -3714,6 +3721,7 @@
 "NORMAN AVENUE between DOBBIN STREET and BANKER STREET,  NORMAN AVENUE between DOBBIN STREET and BANKER STREET,  BANKER STREET between NORMAN AVENUE and MESEROLE AVENUE,  BANKER STREET between NORMAN AVENUE and MESEROLE AVENUE": null,
 "NORTH ELLIOTT PLACE between FLUSHING AVENUE and PARK AVENUE": null,
 "NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD": null,
+"New York, NY": null,
 "Newtown Barge Playground": {
 "confidence": 1.0,
 "lat": 40.735817044495526,
