@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-10T10:00:14.554056+00:00",
+ "generated_at": "2026-08-13T09:44:05.226444+00:00",
  "city": "nyc",
  "probed": 120,
- "requests": 533,
+ "requests": 529,
  "venues": [
   {
    "host": "www.frauncestavernmuseum.org",
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 12,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 7,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -93,7 +93,7 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 2,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 3,
+     "upcoming": 4,
      "past": 30
     }
    ],
@@ -381,11 +381,11 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 5,
+     "upcoming": 7,
      "past": 30
     }
    ],
-   "tried": 3
+   "tried": 5
   },
   {
    "host": "www.unixgallery.com",
@@ -414,7 +414,7 @@
      "past": 30
     }
    ],
-   "tried": 6
+   "tried": 4
   },
   {
    "host": "www.carterburdengallery.org",
@@ -464,7 +464,7 @@
    "name": "Sikkema Jenkins & Co.",
    "origin": "https://www.smjny.com",
    "collections": [],
-   "tried": 6
+   "tried": 4
   },
   {
    "host": "www.ehgallery.com",
@@ -504,11 +504,11 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 12,
+     "upcoming": 13,
      "past": 30
     }
    ],
-   "tried": 6
+   "tried": 4
   },
   {
    "host": "www.shootthelobster.com",
@@ -623,7 +623,7 @@
    "name": "The Bushwick Starr",
    "origin": "https://www.thebushwickstarr.org",
    "collections": [],
-   "tried": 3
+   "tried": 4
   },
   {
    "host": "themusebrooklyn.com",
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 12,
+     "upcoming": 9,
      "past": 30
     }
    ],
@@ -772,7 +772,7 @@
    "name": "Triangle Arts Association",
    "origin": "https://www.triangleartsnyc.org",
    "collections": [],
-   "tried": 5
+   "tried": 4
   },
   {
    "host": "www.oygprojects.com",
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 16,
+     "upcoming": 13,
      "past": 30
     }
    ],

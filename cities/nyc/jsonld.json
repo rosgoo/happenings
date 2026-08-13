@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-08-10T10:13:25.544746+00:00",
+ "generated_at": "2026-08-13T09:56:44.548218+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 182,
+   "events": 183,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -229,8 +229,10 @@
    "url": "https://cityparksfoundation.org/calendar",
    "events": 10,
    "locations": [
+    "Bronx",
     "Brooklyn",
-    "Manhattan"
+    "Manhattan",
+    "Queens"
    ],
    "types": [
     "Event"
@@ -317,10 +319,16 @@
    "url": "https://www.newyorkcitytheatre.com/shows",
    "events": 6,
    "locations": [
-    "Isaac Stern Auditorium"
+    "Al Hirschfeld Theater",
+    "American Dream",
+    "Nederlander Theater",
+    "Palace Theater",
+    "Richard Rodgers Theater",
+    "UBS Arena"
    ],
    "types": [
-    "MusicEvent"
+    "Event",
+    "TheaterEvent"
    ],
    "status": 200,
    "error": null,
@@ -359,10 +367,11 @@
    "host": "lucidbody.com",
    "name": "Lucid Body House",
    "url": "https://lucidbody.com/events",
-   "events": 3,
+   "events": 4,
    "locations": [
     "Lambertville Arts and Movement",
-    "St. Michael&#8217;s Church"
+    "St. Michael&#8217;s Church",
+    "The Freeman Studio"
    ],
    "types": [
     "Event"
@@ -544,7 +553,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 37,
+   "links": 38,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -632,7 +641,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 88,
+   "links": 90,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -668,7 +677,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 141,
+   "links": 144,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -704,7 +713,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/event",
-   "links": 1,
+   "links": 4,
    "lat": 40.810129,
    "lon": -73.9498627,
    "borough": "Manhattan"
@@ -720,7 +729,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 32,
+   "links": 38,
    "lat": 40.7628819,
    "lon": -73.8248834,
    "borough": "Queens",
@@ -754,7 +763,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 4,
+   "links": 7,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -770,7 +779,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 42,
+   "links": 39,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -876,7 +885,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 46,
+   "links": 45,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -930,7 +939,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 41,
+   "links": 40,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -966,7 +975,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 5,
+   "links": 8,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
