@@ -87,14 +87,14 @@
 },
 "fetched_at": "2026-08-12T11:06:38.229019+00:00"
 },
-"https://grove34.com/shows/jazz-and-joints": {
+"https://grove34.com/shows/grove-comedy-aug14": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
-"description": "ENJOY A NIGHT OF LIVE JAZZ AND CANNABIS SPONSORED BY TERP BROS NYC! EACH TICKET COMES WITH A FREE GIFT BAG COURTESY OF TERP BROS ",
+"description": "",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a74f4224d493674722848e6_69e152274d16d19a94cff192_JAZZ%20JOINTS%202.jpg",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a6fb82c2c071c033543853f_ASDASDASD.jpg",
 "inLanguage": "en-US",
 "location": {
 "@type": "Place",
@@ -108,7 +108,7 @@
 },
 "name": "Grove34"
 },
-"name": "JAZZ AND JOINTS",
+"name": "Grove Comedy ",
 "offers": {
 "@type": "Offer",
 "availability": "https://schema.org/InStock",
@@ -125,9 +125,9 @@
 ],
 "url": "https://www.grove34.com"
 },
-"startDate": "2026-08-11T23:00:00.000Z"
+"startDate": "2026-08-14T23:30:00.000Z"
 },
-"fetched_at": "2026-08-10T10:41:45.729839+00:00"
+"fetched_at": "2026-08-13T10:36:24.423039+00:00"
 },
 "https://grove34.com/shows/raanan-hershberg2": {
 "event": {
@@ -340,40 +340,6 @@
 },
 "fetched_at": "2026-08-12T11:06:31.524736+00:00"
 },
-"https://whitney.org/events/end-of-days": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/end-of-days",
-"@type": "Event",
-"description": "March 19, 5 pm March 28, 12 pm March 29, 12 pm April 3, 12 pm April 15, 2 pm April 23, 4 pm May 1, 12 pm May 9, 4 pm May 17, 12 pm May 20, 8 pm May 27, 4 pm June 4, 5 pm June 12, 2 pm June 20, 4 pm June 27, 4 pm June 28, 12 pm July 8, 2 pm July 16, 5 pm July 24, 12 pm August 1, 4 pm August 8, 4 pm August 12, 5 pm August 20, 5 pm August 22, 4 pm August 23, 12 pm Presented as part of the 2026 Whitney Biennial, Nile Harris and his collaborator Dyer Rhoads expand on the sculpture \u2018Dark Brown Birkin Bag\u2019, featured in the fifth floor gallery, through the uncrating of a second work of art on the exhibition floor. Collaborators Cast: Andrei Kouznetsov, Vadim Kroll Translation: Bela Shayevich &amp;amp; Igor Gulin in collaboration with the performers\u00a0 Casting: Casting Double (Geraldine Baron &amp;amp; Salome Oggenfuss) Supertitles: Irina Chelidze, Ekaterina Gladkaia\u00a0 Produced by Social Security End of Days was commissioned by the Whitney Museum of American Art as part of the 2026 Whitney Biennial. Duration: Approximately 30 minutes",
-"endDate": "2026-08-12T17:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833328/END_OF_DAYS_lead_image.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "End of Days: \u200bNile Harris &amp;amp; Dyer Rhoads\u200b",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-12T17:00:00-04:00",
-"url": "https://whitney.org/events/end-of-days"
-},
-"fetched_at": "2026-08-10T10:41:52.276261+00:00"
-},
 "https://whitney.org/events/kristine-barilli-cruz-valdez": {
 "event": {
 "@context": "https://schema.org",
@@ -577,6 +543,74 @@
 "url": "https://whitney.org/events/untitled-america-exb-tour"
 },
 "fetched_at": "2026-08-10T10:41:50.546189+00:00"
+},
+"https://whitney.org/events/whitney-biennial-15-min-ffn-floor5": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor5",
+"@type": "Event",
+"description": "Free Friday Nights, 8 pm, 8:30 pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-14T20:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833199/deMonteflores_C_02.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-14T20:00:00-04:00",
+"url": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor5"
+},
+"fetched_at": "2026-08-13T10:36:28.142549+00:00"
+},
+"https://whitney.org/events/whitney-biennial-15-min-ffn-floor6": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor6",
+"@type": "Event",
+"description": "Free Friday Nights, 7 pm and 7:30pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-14T19:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833353/CamachoLien_08.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-14T19:00:00-04:00",
+"url": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor6"
+},
+"fetched_at": "2026-08-13T10:36:26.751451+00:00"
 },
 "https://www.apollotheater.org/event/best-of-the-apollo": {
 "event": {
@@ -961,5 +995,40 @@
 "url": "https://www.e-flux.com/events/6783376/e-flux-book-sale-and-open-house/"
 },
 "fetched_at": "2026-08-12T11:06:35.035871+00:00"
+},
+"https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox": {
+"event": {
+"@id": "https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox/",
+"@type": "Event",
+"description": "Join us at Bar Laika on Wednesday, August 19th from 7pm for the thirty-fifth edition of Playback with Greg Fox.",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://images.e-flux.com/test/664ba717-cecd-4e63-91e3-64a3a50b4592?width=1200&height=630",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "USA",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11238",
+"streetAddress": "224 Greene Avenue"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "40.6870032",
+"longitude": "-73.9620883"
+},
+"name": "Bar Laika by e-flux"
+},
+"name": "Bar Laika presents Playback 0035 with Greg Fox",
+"organizer": {
+"@type": "Organization",
+"name": "e-flux",
+"url": "https://www.e-flux.com/"
+},
+"startDate": "2026-08-19T19:00:00",
+"url": "https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox/"
+},
+"fetched_at": "2026-08-13T10:36:22.662332+00:00"
 }
 }
