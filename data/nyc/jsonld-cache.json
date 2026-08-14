@@ -129,6 +129,48 @@
 },
 "fetched_at": "2026-08-13T10:36:24.423039+00:00"
 },
+"https://grove34.com/shows/kendall-farrell": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "Kendall is a hilarious gay man with exceptional hair. He has one of the best acts in the city right now and is ready to shoot his special in Sept! Don&#39;t miss out on a chance to see it before everyone else. ",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a74e743f1d4aef0648c870e_704018927_18415732258178079_2722697513200646011_n.jpg",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Kendall Farrell",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-16T01:30:00.000Z"
+},
+"fetched_at": "2026-08-14T10:23:55.646144+00:00"
+},
 "https://grove34.com/shows/raanan-hershberg2": {
 "event": {
 "@context": "https://schema.org",
@@ -170,48 +212,6 @@
 "startDate": "2025-12-06T00:30:00.000Z"
 },
 "fetched_at": "2026-08-03T04:02:07.866424+00:00"
-},
-"https://grove34.com/shows/roast-battle-league-nyc-aug12": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a42cb34d735e21d52ddcd84_7.PNG",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "Roast Battle League NYC",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-13T01:00:00.000Z"
-},
-"fetched_at": "2026-08-11T10:57:35.256015+00:00"
 },
 "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat": {
 "event": {
@@ -303,6 +303,96 @@
 },
 "fetched_at": "2026-08-12T11:06:32.986913+00:00"
 },
+"https://skyscraper.org/programs/strings-sounds-of-remembrance": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "<div class=\"entry-summary\">\nOn the 25th anniversary of September 11th, 2001, The Skyscraper Museum will present a program of reflection: a special violin concert by the duo Miolina in our WTC gallery. At 2pm, the violinists Mioi Takeda & Lynn Bechtold will offer an hour-long meditative performance of both somber and uplifting...",
+"endDate": "2026-09-11T15:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://skyscraper.org/wordpress/wp-content/uploads/2026/08/Miolina-June-2025-600x827-1.png"
+],
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10280",
+"streetAddress": "39 Battery Place"
+},
+"name": "The Skyscraper Museum"
+},
+"name": "Strings &#038; Sounds of Remembrance",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"price": "0",
+"priceCurrency": "USD",
+"url": "https://skyscraper.org/programs/strings-sounds-of-remembrance/",
+"validFrom": "August 13, 2026"
+},
+"organizer": {
+"@type": "Organization",
+"name": "The Skyscraper Museum",
+"url": "https://skyscraper.org"
+},
+"performer": {
+"@type": null,
+"name": null
+},
+"startDate": "2026-09-11T13:15:00-04:00"
+},
+"fetched_at": "2026-08-14T10:23:52.278335+00:00"
+},
+"https://skyscraper.org/programs/the-engineers-modern-skyscraper-revolution": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "<div class=\"entry-summary\">\nThe structural innovations of three brilliant young engineers starting in the 1960s led to a revolution in modern skyscraper design. BILL BAKER, the structural designer of the Burj Khalifa, the world's tallest building, will offer his appraisal of three key figures \u2013 Leslie E. Robertson, William J. LeMessurier and...",
+"endDate": "2026-09-01T19:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": [
+"https://skyscraper.org/wordpress/wp-content/uploads/2026/08/WTC-Image-Bill-Baker-Lecture.png"
+],
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10280",
+"streetAddress": "39 Battery Place"
+},
+"name": "The Skyscraper Museum"
+},
+"name": "The Engineers of the Modern Skyscraper Revolution: Leslie E. Robertson, William J. LeMessurier, and Fazlur R. Khan",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"price": "0",
+"priceCurrency": "USD",
+"url": "https://skyscraper.org/programs/the-engineers-modern-skyscraper-revolution/",
+"validFrom": "August 12, 2026"
+},
+"organizer": {
+"@type": "Organization",
+"name": "The Skyscraper Museum",
+"url": "https://skyscraper.org"
+},
+"performer": {
+"@type": null,
+"name": null
+},
+"startDate": "2026-09-01T18:00:00-04:00"
+},
+"fetched_at": "2026-08-14T10:23:50.841706+00:00"
+},
 "https://skyscraper.org/programs/the-world-trade-center-remembered": {
 "event": {
 "@context": "https://schema.org",
@@ -373,6 +463,40 @@
 "url": "https://whitney.org/events/kristine-barilli-cruz-valdez"
 },
 "fetched_at": "2026-08-12T11:06:39.944936+00:00"
+},
+"https://whitney.org/events/open-studio-2026": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/open-studio-2026",
+"@type": "Event",
+"description": "On Saturdays, families with kids of all ages are invited to get creative at the Whitney! Join us to make your own art inspired by works on view in the collection and current exhibitions. Each week we offer a different artmaking project. Open Studio will not take place on long weekends or the second Saturday of every month. Dates: January 24 January 31 February 21 February 28 March 21 March 28 April 4 April 25 May 2 May 16 May 30 June 6 June 27 July 18 July 25 August 1 August 15 August 22 August 29 September 19 September 26 October 3 October 17 October 24 October 31 November 14 November 21 December 5 December 19",
+"endDate": "2026-08-15T15:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/829246/FilipWolak_OpenStudio_0117_1995.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Open Studio 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-15T11:00:00-04:00",
+"url": "https://whitney.org/events/open-studio-2026"
+},
+"fetched_at": "2026-08-14T10:23:58.342230+00:00"
 },
 "https://whitney.org/events/queer-history-walks-2026-july-sept": {
 "event": {
