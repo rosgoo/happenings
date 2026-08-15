@@ -45,48 +45,6 @@
 },
 "fetched_at": "2026-08-03T04:02:09.870329+00:00"
 },
-"https://grove34.com/shows/daniel-simonsen": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "DANIEL SIMONSEN made his US late-night debut on Late Night with Seth Meyers and has appeared on The Late Show with Stephen Colbert, recurred on Comedy Central\u2019s This Week at the Comedy Cellar, and featured in Stavros Halkias\u2019 \u201cLet\u2019s Start a Cult\u201d. Simonsen has toured with Louis C.K., Stavros Halkias, Bert Kreischer, regularly performs at the Edinburgh Fringe Festival and won UK\u2019s So You Think You\u2019re Funny and Best Newcomer awards. In 2022 he won the \u201cNew York\u2019s Funniest\u201d competition at the New York Comedy Festival. He recurred on Vic and Bob\u2019s BBC sitcom, House of Fools and ITV\u2019s Timewasters. His appearance on Russell Howard\u2019s Good News garnered 2.4 millions views on YouTube. He created and wrote his own digital series for ALL4 called Daniel. He is a Comedy Cellar regular and tours nationwide and internationally.",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/69e11a6bc982cbf8b317b2c8_666045821_1220923366539766_5239386991498763064_n.jpg",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "Daniel Simonsen ",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-14T00:00:00.000Z"
-},
-"fetched_at": "2026-08-12T11:06:38.229019+00:00"
-},
 "https://grove34.com/shows/grove-comedy-aug14": {
 "event": {
 "@context": "https://schema.org",
@@ -128,6 +86,48 @@
 "startDate": "2026-08-14T23:30:00.000Z"
 },
 "fetched_at": "2026-08-13T10:36:24.423039+00:00"
+},
+"https://grove34.com/shows/improv-night-aug16": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "No scripts, no safety nets\u2014just pure comedy created in the moment. Come see why Grove 34 is THE place for improv comedy in Queens. Follow @improvnight and @grove34nyc for cast announcements and show-specific details!",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2c93463acc0ba878ee97d4_Host%20Team%20Web%20Poster%2001A.jpg",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Improv Night",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-16T23:00:00.000Z"
+},
+"fetched_at": "2026-08-15T09:49:28.314585+00:00"
 },
 "https://grove34.com/shows/kendall-farrell": {
 "event": {
@@ -430,16 +430,16 @@
 },
 "fetched_at": "2026-08-12T11:06:31.524736+00:00"
 },
-"https://whitney.org/events/kristine-barilli-cruz-valdez": {
+"https://whitney.org/events/closer-look-untitled-america": {
 "event": {
 "@context": "https://schema.org",
-"@id": "https://whitney.org/events/kristine-barilli-cruz-valdez",
+"@id": "https://whitney.org/events/closer-look-untitled-america",
 "@type": "Event",
-"description": "6\u20137:30 pm, Kristine Barilli 7:30\u201310 pm, Cruz Valdez Kristine Barilli is a born and bred New Yorker with a masterful ability to translate her listening habits into rhapsodic DJ sets. As sharp as the city she hails from, Barilli\u2019s punk ethos blends seamlessly with her eclectic style, often incorporating rare and esoteric tracks into her performances. Her sound, which she describes as \u201csleazy and street-based,\u201d is an ode to her independent conviction, creating a symbiotic relationship between her vast knowledge and ever-expanding audience. Cruz Valdez is a multidisciplinary artist based in New York City. While photography remains her primary medium, she expanded her practice into music in 2025 as a co-founder and DJ of the party Hard Flash. Drawing inspiration from electro-pop, house, electroclash, and synth-pop, her DJ sets are dynamic, emotionally charged, and built around lush melodies, driving rhythms, and unexpected turns. Immerse yourself in their vibrant beats and enjoy evening access to Whitney Biennial 2026, drinks and snacks from Frenchette Bakery, skyline views from our terraces, and more as part of Free Friday Nights!\u00a0",
-"endDate": "2026-08-14T22:00:00-04:00",
+"description": "Mondays, 12 pm Saturdays, Sundays, 3 pm Slow down and discover how much there is to see when we take the time to look closely at highlights from \u201cUntitled\u201d (America). Guided by a Museum docent, participants are encouraged to think through and discuss works together. Each forty-five-minute session focuses on a single work of art or explores a connection between two works.\u00a0",
+"endDate": "2026-08-15T15:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833821/26_DJGraphic_0715.png",
+"image": "https://whitneymedia.org/assets/image/824516/Jasper_Johns_Racing_Thoughts.jpg",
 "location": {
 "@type": "Place",
 "address": {
@@ -453,16 +453,16 @@
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"name": "DJ Sets: Kristine Barilli and Cruz Valdez",
+"name": "A Closer Look: Guided Close-Looking Through Dialogue",
 "organizer": {
 "@type": "Organization",
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"startDate": "2026-08-14T18:00:00-04:00",
-"url": "https://whitney.org/events/kristine-barilli-cruz-valdez"
+"startDate": "2026-08-15T15:00:00-04:00",
+"url": "https://whitney.org/events/closer-look-untitled-america"
 },
-"fetched_at": "2026-08-12T11:06:39.944936+00:00"
+"fetched_at": "2026-08-15T09:49:30.762210+00:00"
 },
 "https://whitney.org/events/open-studio-2026": {
 "event": {
@@ -497,40 +497,6 @@
 "url": "https://whitney.org/events/open-studio-2026"
 },
 "fetched_at": "2026-08-14T10:23:58.342230+00:00"
-},
-"https://whitney.org/events/queer-history-walks-2026-july-sept": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/queer-history-walks-2026-july-sept",
-"@type": "Event",
-"description": "Join us for a free walking tour exploring the rich queer history of the Whitney Museum\u2019s neighborhood. This walk will bring visitors to select historical sites that once provided a place to find and create queer community. From the Hudson River piers to the clubs, visitors are invited to consider their connection to the changing landscape of the neighborhood that the Whitney now occupies, as well as the city\u2019s history. Friday, July 10, 6 pm Sunday, July 19, 4 pm Friday, August 14, 6 pm Sunday, August 23, 4 pm Friday, September 18, 6 pm Sunday, September 20, 4 pm Tours will meet outside the entrance of the Museum. The meeting place will be marked with physical signage. View the tour map. Outdoor events are weather dependent and subject to cancellation or being moved indoors should conditions require. Any changes to event plans will be noted online. Can&#39;t join in person? Check out the self-guided audio tour and minisode #3.\u00a0",
-"endDate": "2026-08-14T18:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833672/FilipWolak_Stina-QHW_0055_5734.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "Queer History Walks",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-14T18:00:00-04:00",
-"url": "https://whitney.org/events/queer-history-walks-2026-july-sept"
-},
-"fetched_at": "2026-08-12T11:06:43.126256+00:00"
 },
 "https://whitney.org/events/tour-whitney-biennial-2026-floor5": {
 "event": {
@@ -600,40 +566,6 @@
 },
 "fetched_at": "2026-08-10T10:41:49.103727+00:00"
 },
-"https://whitney.org/events/untitled-america-15min-ffn": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/untitled-america-15min-ffn",
-"@type": "Event",
-"description": "Free Friday Nights, 6 pm, 6:30 pm\u00a0 Free Second Sundays, 1:30 pm, 2 pm\u00a0 Join a Whitney Educator in the galleries for 15- to 20-minute tours of select artworks featured in \u201cUntitled\u201d (America).",
-"endDate": "2026-08-14T18:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/820546/50.23_tooker_web.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "15-Minute Tour: Highlights of the Exhibition \u201cUntitled\u201d (America)",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-14T18:00:00-04:00",
-"url": "https://whitney.org/events/untitled-america-15min-ffn"
-},
-"fetched_at": "2026-08-12T11:06:41.664322+00:00"
-},
 "https://whitney.org/events/untitled-america-exb-tour": {
 "event": {
 "@context": "https://schema.org",
@@ -667,74 +599,6 @@
 "url": "https://whitney.org/events/untitled-america-exb-tour"
 },
 "fetched_at": "2026-08-10T10:41:50.546189+00:00"
-},
-"https://whitney.org/events/whitney-biennial-15-min-ffn-floor5": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor5",
-"@type": "Event",
-"description": "Free Friday Nights, 8 pm, 8:30 pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
-"endDate": "2026-08-14T20:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833199/deMonteflores_C_02.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-14T20:00:00-04:00",
-"url": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor5"
-},
-"fetched_at": "2026-08-13T10:36:28.142549+00:00"
-},
-"https://whitney.org/events/whitney-biennial-15-min-ffn-floor6": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor6",
-"@type": "Event",
-"description": "Free Friday Nights, 7 pm and 7:30pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
-"endDate": "2026-08-14T19:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833353/CamachoLien_08.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-14T19:00:00-04:00",
-"url": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor6"
-},
-"fetched_at": "2026-08-13T10:36:26.751451+00:00"
 },
 "https://www.apollotheater.org/event/best-of-the-apollo": {
 "event": {
@@ -770,40 +634,6 @@
 },
 "fetched_at": "2026-08-03T04:02:00.557421+00:00"
 },
-"https://www.apollotheater.org/event/harlem-summer-nights-2026": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "Experience Harlem Summer Nights 2026 with outdoor community celebrations honoring Harlem\u2019s vibrant culture and music.",
-"doorTime": "5:00 PM ",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/66149f879619e045e04cf32a/6a022252c1d70e2f886ca351_HarlemSummerNights_Web_1920x1080.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10027",
-"streetAddress": ""
-},
-"name": "Under The 12th Avenue Viaduct "
-},
-"name": "Harlem Summer Nights",
-"offers": {
-"@type": "Offer",
-"name": "Admission",
-"price": "Free",
-"priceCurrency": "USD",
-"url": "https://www.harlemsummernights.com/",
-"validFrom": "Aug 14, 2026"
-},
-"startDate": "Aug 14, 2026"
-},
-"fetched_at": "2026-08-11T10:57:31.584389+00:00"
-},
 "https://www.apollotheater.org/event/harlem-week-2026": {
 "event": {
 "@context": "https://schema.org",
@@ -836,7 +666,7 @@
 },
 "startDate": "Aug 15, 2026"
 },
-"fetched_at": "2026-08-11T10:57:33.102119+00:00"
+"fetched_at": "2026-08-15T09:49:25.539307+00:00"
 },
 "https://www.apollotheater.org/event/teen-takeover-we-outsideee": {
 "event": {
