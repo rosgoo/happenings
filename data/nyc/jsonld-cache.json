@@ -45,48 +45,6 @@
 },
 "fetched_at": "2026-08-03T04:02:09.870329+00:00"
 },
-"https://grove34.com/shows/grove-comedy-aug14": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a6fb82c2c071c033543853f_ASDASDASD.jpg",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "Grove Comedy ",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-14T23:30:00.000Z"
-},
-"fetched_at": "2026-08-13T10:36:24.423039+00:00"
-},
 "https://grove34.com/shows/improv-night-aug16": {
 "event": {
 "@context": "https://schema.org",
@@ -213,57 +171,54 @@
 },
 "fetched_at": "2026-08-03T04:02:07.866424+00:00"
 },
-"https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat": {
+"https://grove34.com/shows/the-great-improv-experiment-aug17": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
-"description": "<div class=\"entry-summary\">\nThe North Neighborhood tour of the Museum\u2019s three thematic walking tours of Battery Park City, on Thursday, August 14 at 4pm, will cover the north residential neighborhood, which was developed in several phases, beginning with Stuyvesant High School at the northeast edge and the esplanade and Rockefeller Park along...",
-"endDate": "2026-08-14T17:00:00-04:00",
+"description": "Your headliners are the multi-dimensional talents of HELL YEAH! - A Musical Improv Group as they forge deep into unknown territories of genres both theatricomedic and musicool. With two additional supporting acts. Follow @improvnight and @grove34nyc for more show details!",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://skyscraper.org/wordpress/wp-content/uploads/2022/03/BPCWT03-1-scaled.jpg"
-],
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2d91764b1c2550e503028b_Clown%20Lab%20-%20Hell%20Yeah.png",
+"inLanguage": "en-US",
 "location": {
 "@type": "Place",
 "address": {
 "@type": "PostalAddress",
 "addressCountry": "US",
-"addressLocality": "New York",
+"addressLocality": "Astoria",
 "addressRegion": "NY",
-"postalCode": "10280",
-"streetAddress": "39 Battery Place"
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
 },
-"name": "The Skyscraper Museum"
+"name": "Grove34"
 },
-"name": "Battery Park City Tour: The North Neighborhood &#8211; REPEAT",
+"name": "The Great Improv Experiment",
 "offers": {
 "@type": "Offer",
 "availability": "https://schema.org/InStock",
-"price": "0",
-"priceCurrency": "USD",
-"url": "https://skyscraper.org/programs/bpc-north-neighborhood-walking-tour-2026-repeat/",
-"validFrom": "July 21, 2026"
+"url": "/shows"
 },
 "organizer": {
 "@type": "Organization",
-"name": "The Skyscraper Museum",
-"url": "https://skyscraper.org"
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
 },
-"performer": {
-"@type": null,
-"name": null
+"startDate": "2026-08-17T23:00:00.000Z"
 },
-"startDate": "2026-08-14T16:00:00-04:00"
-},
-"fetched_at": "2026-08-12T11:06:30.094301+00:00"
+"fetched_at": "2026-08-16T09:49:46.182331+00:00"
 },
 "https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
 "description": "<div class=\"entry-summary\">\nThe Museum's director, Carol Willis, will offer a gallery tour of The Invention of Park Avenue, which examines how the creation of Grand Central and an avenue out of thin air, was the catalytic connection of rail and real estate that gave Park Avenue its extraordinary, evolving New York...",
-"endDate": "2026-08-26T16:00:00-04:00",
+"endDate": "2026-09-04T16:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
@@ -299,9 +254,9 @@
 "@type": "Person",
 "name": "Carol Willis"
 },
-"startDate": "2026-08-26T15:00:00-04:00"
+"startDate": "2026-09-04T15:00:00-04:00"
 },
-"fetched_at": "2026-08-12T11:06:32.986913+00:00"
+"fetched_at": "2026-08-16T09:49:40.840034+00:00"
 },
 "https://skyscraper.org/programs/strings-sounds-of-remembrance": {
 "event": {
@@ -402,7 +357,7 @@
 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
 "image": [
-"https://skyscraper.org/wordpress/wp-content/uploads/2026/07/Ries_WTC_Banner.jpg"
+"https://skyscraper.org/wordpress/wp-content/uploads/2026/08/unnamed.jpg"
 ],
 "location": {
 "@type": "VirtualLocation",
@@ -428,7 +383,7 @@
 },
 "startDate": "2026-08-25T18:00:00-04:00"
 },
-"fetched_at": "2026-08-12T11:06:31.524736+00:00"
+"fetched_at": "2026-08-16T09:49:39.306403+00:00"
 },
 "https://whitney.org/events/closer-look-untitled-america": {
 "event": {
@@ -464,16 +419,16 @@
 },
 "fetched_at": "2026-08-15T09:49:30.762210+00:00"
 },
-"https://whitney.org/events/open-studio-2026": {
+"https://whitney.org/events/member-previews-minnie-evans": {
 "event": {
 "@context": "https://schema.org",
-"@id": "https://whitney.org/events/open-studio-2026",
+"@id": "https://whitney.org/events/member-previews-minnie-evans",
 "@type": "Event",
-"description": "On Saturdays, families with kids of all ages are invited to get creative at the Whitney! Join us to make your own art inspired by works on view in the collection and current exhibitions. Each week we offer a different artmaking project. Open Studio will not take place on long weekends or the second Saturday of every month. Dates: January 24 January 31 February 21 February 28 March 21 March 28 April 4 April 25 May 2 May 16 May 30 June 6 June 27 July 18 July 25 August 1 August 15 August 22 August 29 September 19 September 26 October 3 October 17 October 24 October 31 November 14 November 21 December 5 December 19",
-"endDate": "2026-08-15T15:00:00-04:00",
+"description": "Wednesday, August 19, 10:30 am\u20136 pm Thursday, August 20, 10:30 am\u20136 pm Friday, August 21, 10:30 am\u20135 pm Be among the first to explore The Lost World: The Art of Minnie Evans during three days of Member Previews. On August 19, enjoy additional Preview access to The Lost World during a members-only Evening Viewing: Whitney Biennial 2026 from 6:30-8:30 pm.",
+"endDate": "2026-08-19T18:00:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/829246/FilipWolak_OpenStudio_0117_1995.jpg",
+"image": "https://whitneymedia.org/assets/image/833778/EXME072%20Evans.jpg",
 "location": {
 "@type": "Place",
 "address": {
@@ -487,16 +442,16 @@
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"name": "Open Studio 2026",
+"name": "Member Preview Days for The Lost World: The Art of Minnie Evans",
 "organizer": {
 "@type": "Organization",
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"startDate": "2026-08-15T11:00:00-04:00",
-"url": "https://whitney.org/events/open-studio-2026"
+"startDate": "2026-08-19T10:30:00-04:00",
+"url": "https://whitney.org/events/member-previews-minnie-evans"
 },
-"fetched_at": "2026-08-14T10:23:58.342230+00:00"
+"fetched_at": "2026-08-16T09:49:48.742172+00:00"
 },
 "https://whitney.org/events/tour-whitney-biennial-2026-floor5": {
 "event": {
@@ -913,7 +868,7 @@
 "startDate": "2026-09-03T19:00:00",
 "url": "https://www.e-flux.com/events/6783375/bar-laika-presents-playback-0036-with-fergus-jones/"
 },
-"fetched_at": "2026-08-12T11:06:36.473814+00:00"
+"fetched_at": "2026-08-16T09:49:44.414323+00:00"
 },
 "https://www.e-flux.com/events/6783376/e-flux-book-sale-and-open-house": {
 "event": {
@@ -948,7 +903,7 @@
 "startDate": "2026-08-29T12:00:00",
 "url": "https://www.e-flux.com/events/6783376/e-flux-book-sale-and-open-house/"
 },
-"fetched_at": "2026-08-12T11:06:35.035871+00:00"
+"fetched_at": "2026-08-16T09:49:42.909961+00:00"
 },
 "https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox": {
 "event": {
