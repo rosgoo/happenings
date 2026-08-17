@@ -1677,6 +1677,13 @@
 "matched": "Carl Schurz Park",
 "source": "parks-properties"
 },
+"Carmansville Playground": {
+"confidence": 1.0,
+"lat": 40.82915041769041,
+"lon": -73.94417132985849,
+"matched": "Carmansville Playground",
+"source": "parks-properties"
+},
 "Carroll Park": {
 "confidence": 1.0,
 "lat": 40.68105968925588,

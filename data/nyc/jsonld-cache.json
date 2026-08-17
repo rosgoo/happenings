@@ -1,7 +1,7 @@
 {
 "https://grove34.com/shows/abbas-wahab-friends-dec12": {
 "event": null,
-"fetched_at": "2026-08-03T04:02:09.083035+00:00"
+"fetched_at": "2026-08-17T10:03:19.195924+00:00"
 },
 "https://grove34.com/shows/adrienne-iapalucci": {
 "event": {
@@ -87,14 +87,14 @@
 },
 "fetched_at": "2026-08-15T09:49:28.314585+00:00"
 },
-"https://grove34.com/shows/kendall-farrell": {
+"https://grove34.com/shows/monday-improv-jam-aug17": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
-"description": "Kendall is a hilarious gay man with exceptional hair. He has one of the best acts in the city right now and is ready to shoot his special in Sept! Don&#39;t miss out on a chance to see it before everyone else. ",
+"description": "An improv jam is an open, low-pressure playground where performers of all experience levels jump on stage, get mixed into teams, and create scenes on the spot. Whether it\u2019s your first time or your hundredth show, you\u2019ll get a chance to play, experiment, and connect with other improvisers in a supportive, fun environment. ",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a74e743f1d4aef0648c870e_704018927_18415732258178079_2722697513200646011_n.jpg",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2cbfaa810063a43359948c_Improv%20Jam%20Web%20Poster%20V1A.jpg",
 "inLanguage": "en-US",
 "location": {
 "@type": "Place",
@@ -108,7 +108,7 @@
 },
 "name": "Grove34"
 },
-"name": "Kendall Farrell",
+"name": "Monday Improv Jam",
 "offers": {
 "@type": "Offer",
 "availability": "https://schema.org/InStock",
@@ -125,9 +125,9 @@
 ],
 "url": "https://www.grove34.com"
 },
-"startDate": "2026-08-16T01:30:00.000Z"
+"startDate": "2026-08-18T01:00:00.000Z"
 },
-"fetched_at": "2026-08-14T10:23:55.646144+00:00"
+"fetched_at": "2026-08-17T10:03:20.257646+00:00"
 },
 "https://grove34.com/shows/raanan-hershberg2": {
 "event": {
@@ -418,6 +418,74 @@
 "url": "https://whitney.org/events/closer-look-untitled-america"
 },
 "fetched_at": "2026-08-15T09:49:30.762210+00:00"
+},
+"https://whitney.org/events/contemporaries-toast-aug19": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/contemporaries-toast-aug19",
+"@type": "Event",
+"description": "Celebrate summer with fellow Contemporaries as we eagerly anticipate the fall season of exhibitions at the Whitney. Take in the sunset views from the Museum&#39;s Artspace while sharing a toast, connecting with fellow members, and enjoying an exclusive Contemporaries-only preview of upcoming exhibitions from curatorial staff Nakai Falc\u00f3n, Antonia Pocock, and David Lisbon. Plus, don\u2019t miss after-hours access to Whitney Biennial 2026 in its final weeks as part of Member Evening Viewing.",
+"endDate": "2026-08-19T20:30:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833807/MembersNight_byFilipWolak_0234_2649.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Contemporaries Toast",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-19T19:30:00-04:00",
+"url": "https://whitney.org/events/contemporaries-toast-aug19"
+},
+"fetched_at": "2026-08-17T10:03:24.044483+00:00"
+},
+"https://whitney.org/events/member-evening-viewing-biennial26": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/member-evening-viewing-biennial26",
+"@type": "Event",
+"description": "Members are invited for exclusive evening access to Whitney Biennial 2026 after general admission has concluded for the day. Take in the monumental survey during its final week on view,\u00a0plus, explore a new exhibition, The Lost World: The Art of Minnie Evans.",
+"endDate": "2026-08-19T20:30:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833786/MemberNight-May2026_byFilipWolak_0132_2238.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Member Evening Viewing: Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-19T18:30:00-04:00",
+"url": "https://whitney.org/events/member-evening-viewing-biennial26"
+},
+"fetched_at": "2026-08-17T10:03:22.568198+00:00"
 },
 "https://whitney.org/events/member-previews-minnie-evans": {
 "event": {
@@ -938,6 +1006,6 @@
 "startDate": "2026-08-19T19:00:00",
 "url": "https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox/"
 },
-"fetched_at": "2026-08-13T10:36:22.662332+00:00"
+"fetched_at": "2026-08-17T10:03:17.117317+00:00"
 }
 }
