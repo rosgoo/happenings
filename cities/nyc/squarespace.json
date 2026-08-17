@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-13T09:44:05.226444+00:00",
+ "generated_at": "2026-08-17T09:21:23.208181+00:00",
  "city": "nyc",
  "probed": 120,
- "requests": 529,
+ "requests": 542,
  "venues": [
   {
    "host": "www.frauncestavernmuseum.org",
@@ -28,11 +28,11 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 8,
+     "upcoming": 7,
      "past": 30
     }
    ],
-   "tried": 3
+   "tried": 4
   },
   {
    "host": "www.sugarhillmuseum.org",
@@ -50,11 +50,11 @@
      "url": "https://onderdonkhouse.org/events-list?format=json",
      "title": "Events",
      "collection_id": "5d8d052558fca978aa0cbaf9",
-     "upcoming": 1,
+     "upcoming": 0,
      "past": 30
     }
    ],
-   "tried": 3
+   "tried": 5
   },
   {
    "host": "www.mmuseumm.com",
@@ -93,11 +93,11 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 8,
+     "upcoming": 7,
      "past": 30
     }
    ],
-   "tried": 2
+   "tried": 4
   },
   {
    "host": "www.friendsofrockhall.org",
@@ -310,8 +310,8 @@
      "url": "https://synesthesia.space/exhibitions?format=json",
      "title": "Exhibitions",
      "collection_id": "5cb138766e9a7f103498f049",
-     "upcoming": 1,
-     "past": 14
+     "upcoming": 0,
+     "past": 15
     }
    ],
    "tried": 4
@@ -439,11 +439,11 @@
      "url": "https://www.thepaintingcenter.org/new-events-1?format=json",
      "title": "New Events",
      "collection_id": "63ee8e245c21c533a4d31f6e",
-     "upcoming": 6,
-     "past": 7
+     "upcoming": 5,
+     "past": 8
     }
    ],
-   "tried": 3
+   "tried": 5
   },
   {
    "host": "www.nancyhoffmangallery.com",
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 13,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -672,7 +672,7 @@
    "name": "SoHo Playhouse",
    "origin": "https://www.sohoplayhouse.com",
    "collections": [],
-   "tried": 3
+   "tried": 6
   },
   {
    "host": "www.rockawaytheatrecompany.org",
@@ -794,7 +794,7 @@
      "past": 9
     }
    ],
-   "tried": 3
+   "tried": 5
   },
   {
    "host": "www.clayworksoncolumbia.org",
@@ -850,7 +850,7 @@
    "name": "Bklyn Clay",
    "origin": "https://bklynclay.com",
    "collections": [],
-   "tried": 4
+   "tried": 5
   },
   {
    "host": "www.jackny.org",
@@ -935,7 +935,7 @@
    "name": "Scapegrace",
    "origin": "https://www.solidgoldyogi.com",
    "collections": [],
-   "tried": 6
+   "tried": 4
   },
   {
    "host": "www.sculpturespacenyc.com",
@@ -974,11 +974,11 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 13,
+     "upcoming": 11,
      "past": 30
     }
    ],
-   "tried": 2
+   "tried": 3
   },
   {
    "host": "www.gatcha.us",
@@ -1006,7 +1006,7 @@
    "name": "South Brooklyn Fencing",
    "origin": "https://southbrooklynfencing.com",
    "collections": [],
-   "tried": 3
+   "tried": 4
   },
   {
    "host": "www.47bjjcoop.com",

@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-08-13T09:44:05.107504+00:00",
+ "generated_at": "2026-08-17T09:21:23.112678+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -36,6 +36,14 @@
    "checked_at": "2026-08-02T16:38:32.442447+00:00"
   },
   {
+   "id": "cal-QGDhEGQWVMArUaR",
+   "name": "Tavern Community Coworking",
+   "ok": true,
+   "total": 106,
+   "upcoming": 13,
+   "checked_at": "2026-08-17T09:21:03.727321+00:00"
+  },
+  {
    "id": "cal-dGP82mVkrg1FRmr",
    "name": "The New York Philosophy Club",
    "ok": true,
@@ -50,6 +58,38 @@
    "total": 253,
    "upcoming": 9,
    "checked_at": "2026-08-10T10:00:03.657311+00:00"
+  },
+  {
+   "id": "cal-1VimvHYSCVGhHuk",
+   "name": "NYC B2B: Startup Events",
+   "ok": true,
+   "total": 183,
+   "upcoming": 9,
+   "checked_at": "2026-08-17T09:21:06.755897+00:00"
+  },
+  {
+   "id": "cal-kcWhMbIs2X0Y2Xb",
+   "name": "Andrew's Yeung's Tech Events",
+   "ok": true,
+   "total": 206,
+   "upcoming": 8,
+   "checked_at": "2026-08-17T09:21:12.810593+00:00"
+  },
+  {
+   "id": "cal-8ACK0vjqOfKpHXl",
+   "name": "Claude Workshops",
+   "ok": true,
+   "total": 11,
+   "upcoming": 7,
+   "checked_at": "2026-08-17T09:21:02.155745+00:00"
+  },
+  {
+   "id": "cal-8pBzUbxu1rqFgsw",
+   "name": "The Canvas NYC",
+   "ok": true,
+   "total": 120,
+   "upcoming": 7,
+   "checked_at": "2026-08-17T09:21:18.805962+00:00"
   },
   {
    "id": "cal-mmnYmrfNgxGdvQb",
@@ -116,6 +156,14 @@
    "checked_at": "2026-08-02T16:38:56.710284+00:00"
   },
   {
+   "id": "cal-aTEeW3VT6XtAa3Q",
+   "name": "Alex Koshykov",
+   "ok": true,
+   "total": 95,
+   "upcoming": 5,
+   "checked_at": "2026-08-17T09:21:14.059683+00:00"
+  },
+  {
    "id": "cal-H1FY60pnZtchaf4",
    "name": "Corgi NYC",
    "ok": true,
@@ -162,6 +210,14 @@
    "total": 7,
    "upcoming": 3,
    "checked_at": "2026-08-13T09:44:02.040554+00:00"
+  },
+  {
+   "id": "cal-UJKx9AKCHIKyu7R",
+   "name": "AI Engineers - NY",
+   "ok": true,
+   "total": 33,
+   "upcoming": 3,
+   "checked_at": "2026-08-17T09:21:21.600603+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -226,6 +282,46 @@
    "total": 24,
    "upcoming": 2,
    "checked_at": "2026-08-13T09:43:57.561694+00:00"
+  },
+  {
+   "id": "cal-zKFdKuFehqRG7rF",
+   "name": "Collective Z Gallery Calendar",
+   "ok": true,
+   "total": 13,
+   "upcoming": 2,
+   "checked_at": "2026-08-17T09:21:04.974263+00:00"
+  },
+  {
+   "id": "cal-bf1JXZO3y6CaE57",
+   "name": "Animation Nights New York (ANNY)",
+   "ok": true,
+   "total": 72,
+   "upcoming": 2,
+   "checked_at": "2026-08-17T09:21:08.016378+00:00"
+  },
+  {
+   "id": "cal-d3fDYhRV6zFurGF",
+   "name": "Supermoon Events",
+   "ok": true,
+   "total": 126,
+   "upcoming": 2,
+   "checked_at": "2026-08-17T09:21:15.808875+00:00"
+  },
+  {
+   "id": "cal-Icg56OoJNDuOt3e",
+   "name": "Together AI Calendar",
+   "ok": true,
+   "total": 38,
+   "upcoming": 2,
+   "checked_at": "2026-08-17T09:21:20.022586+00:00"
+  },
+  {
+   "id": "cal-foDOrrhU3YOhvgx",
+   "name": "Industrious",
+   "ok": true,
+   "total": 7,
+   "upcoming": 2,
+   "checked_at": "2026-08-17T09:21:23.112656+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -426,6 +522,30 @@
    "total": 8,
    "upcoming": 1,
    "checked_at": "2026-08-13T09:44:05.107481+00:00"
+  },
+  {
+   "id": "cal-Dl4P7yAhJ2l1Wp2",
+   "name": "Agentics NYC",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-08-17T09:21:09.860472+00:00"
+  },
+  {
+   "id": "cal-84OTp0DYXLnv8Sb",
+   "name": "for the firsts",
+   "ok": true,
+   "total": 22,
+   "upcoming": 1,
+   "checked_at": "2026-08-17T09:21:11.013791+00:00"
+  },
+  {
+   "id": "cal-feaB0CSQMPO6k1e",
+   "name": "Personal",
+   "ok": true,
+   "total": 88,
+   "upcoming": 1,
+   "checked_at": "2026-08-17T09:21:17.150117+00:00"
   }
  ]
 }

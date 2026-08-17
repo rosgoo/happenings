@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-08-13T09:56:44.548218+00:00",
+ "generated_at": "2026-08-17T09:34:11.412664+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 183,
+   "events": 186,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -137,7 +137,6 @@
    "url": "https://historichousetrust.org/events/",
    "events": 12,
    "locations": [
-    "Bowne House",
     "Conference House",
     "Historic Richmond Town",
     "King Manor Museum",
@@ -229,10 +228,8 @@
    "url": "https://cityparksfoundation.org/calendar",
    "events": 10,
    "locations": [
-    "Bronx",
     "Brooklyn",
-    "Manhattan",
-    "Queens"
+    "Manhattan"
    ],
    "types": [
     "Event"
@@ -274,7 +271,7 @@
    "host": "aliceausten.org",
    "name": "Alice Austen House",
    "url": "https://aliceausten.org/events/",
-   "events": 7,
+   "events": 6,
    "locations": [
     "Alice Austen House Waterfront Lawn"
    ],
@@ -319,12 +316,12 @@
    "url": "https://www.newyorkcitytheatre.com/shows",
    "events": 6,
    "locations": [
-    "Al Hirschfeld Theater",
-    "American Dream",
-    "Nederlander Theater",
+    "Cherry Lane Theater",
+    "Laura Pels Theater",
+    "Lucille Lortel Theater",
+    "Newman Mills Theater",
     "Palace Theater",
-    "Richard Rodgers Theater",
-    "UBS Arena"
+    "Richard Rodgers Theater"
    ],
    "types": [
     "Event",
@@ -571,7 +568,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 3,
+   "links": 4,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -641,7 +638,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 90,
+   "links": 91,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -677,7 +674,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 144,
+   "links": 140,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -713,7 +710,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/event",
-   "links": 4,
+   "links": 3,
    "lat": 40.810129,
    "lon": -73.9498627,
    "borough": "Manhattan"
@@ -729,7 +726,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 38,
+   "links": 37,
    "lat": 40.7628819,
    "lon": -73.8248834,
    "borough": "Queens",
@@ -779,7 +776,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 39,
+   "links": 40,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -831,7 +828,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/calendar",
-   "links": 36,
+   "links": 33,
    "lat": 40.7031161,
    "lon": -73.803768,
    "borough": "Queens",
@@ -885,7 +882,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 45,
+   "links": 42,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -939,7 +936,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 40,
+   "links": 39,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -975,7 +972,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 8,
+   "links": 7,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
