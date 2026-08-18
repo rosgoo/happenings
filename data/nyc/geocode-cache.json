@@ -1542,6 +1542,13 @@
 "matched": "Brower Park",
 "source": "parks-properties"
 },
+"Brust Park": {
+"confidence": 1.0,
+"lat": 40.88986028941117,
+"lon": -73.90360737517287,
+"matched": "Brust Park",
+"source": "parks-properties"
+},
 "Bryant Park": {
 "confidence": 1.0,
 "lat": 40.753420956654814,
