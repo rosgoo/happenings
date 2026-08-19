@@ -45,14 +45,14 @@
 },
 "fetched_at": "2026-08-03T04:02:09.870329+00:00"
 },
-"https://grove34.com/shows/monday-improv-jam-aug17": {
+"https://grove34.com/shows/cuppa-jokes-3": {
 "event": {
 "@context": "https://schema.org",
 "@type": "Event",
-"description": "An improv jam is an open, low-pressure playground where performers of all experience levels jump on stage, get mixed into teams, and create scenes on the spot. Whether it\u2019s your first time or your hundredth show, you\u2019ll get a chance to play, experiment, and connect with other improvisers in a supportive, fun environment. ",
+"description": "",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2cbfaa810063a43359948c_Improv%20Jam%20Web%20Poster%20V1A.jpg",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a7bd93cc8a145aa439e1c08_Cuppa.Square.8.22.png",
 "inLanguage": "en-US",
 "location": {
 "@type": "Place",
@@ -66,7 +66,7 @@
 },
 "name": "Grove34"
 },
-"name": "Monday Improv Jam",
+"name": "Cuppa Jokes",
 "offers": {
 "@type": "Offer",
 "availability": "https://schema.org/InStock",
@@ -83,9 +83,51 @@
 ],
 "url": "https://www.grove34.com"
 },
-"startDate": "2026-08-18T01:00:00.000Z"
+"startDate": "2026-08-22T23:30:00.000Z"
 },
-"fetched_at": "2026-08-17T10:03:20.257646+00:00"
+"fetched_at": "2026-08-19T10:32:13.667853+00:00"
+},
+"https://grove34.com/shows/grove-comedy-live-21": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a6fb82c2c071c033543853f_ASDASDASD.jpg",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Grove Comedy Live!",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-21T23:30:00.000Z"
+},
+"fetched_at": "2026-08-19T10:32:12.143605+00:00"
 },
 "https://grove34.com/shows/raanan-hershberg2": {
 "event": {
@@ -171,48 +213,6 @@
 },
 "fetched_at": "2026-08-18T09:56:06.697914+00:00"
 },
-"https://grove34.com/shows/the-great-improv-experiment-aug17": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "Your headliners are the multi-dimensional talents of HELL YEAH! - A Musical Improv Group as they forge deep into unknown territories of genres both theatricomedic and musicool. With two additional supporting acts. Follow @improvnight and @grove34nyc for more show details!",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2d91764b1c2550e503028b_Clown%20Lab%20-%20Hell%20Yeah.png",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "The Great Improv Experiment",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-17T23:00:00.000Z"
-},
-"fetched_at": "2026-08-16T09:49:46.182331+00:00"
-},
 "https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue": {
 "event": {
 "@context": "https://schema.org",
@@ -256,7 +256,7 @@
 },
 "startDate": "2026-09-04T15:00:00-04:00"
 },
-"fetched_at": "2026-08-16T09:49:40.840034+00:00"
+"fetched_at": "2026-08-19T10:32:06.477250+00:00"
 },
 "https://skyscraper.org/programs/strings-sounds-of-remembrance": {
 "event": {
@@ -383,7 +383,7 @@
 },
 "startDate": "2026-08-25T18:00:00-04:00"
 },
-"fetched_at": "2026-08-16T09:49:39.306403+00:00"
+"fetched_at": "2026-08-19T10:32:04.991442+00:00"
 },
 "https://whitney.org/events/contemporaries-toast-aug19": {
 "event": {
@@ -418,6 +418,40 @@
 "url": "https://whitney.org/events/contemporaries-toast-aug19"
 },
 "fetched_at": "2026-08-17T10:03:24.044483+00:00"
+},
+"https://whitney.org/events/end-of-days": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/end-of-days",
+"@type": "Event",
+"description": "March 19, 5 pm March 28, 12 pm March 29, 12 pm April 3, 12 pm April 15, 2 pm April 23, 4 pm May 1, 12 pm May 9, 4 pm May 17, 12 pm May 20, 8 pm May 27, 4 pm June 4, 5 pm June 12, 2 pm June 20, 4 pm June 27, 4 pm June 28, 12 pm July 8, 2 pm July 16, 5 pm July 24, 12 pm August 1, 4 pm August 8, 4 pm August 12, 5 pm August 20, 5 pm August 22, 4 pm August 23, 12 pm Presented as part of the 2026 Whitney Biennial, Nile Harris and his collaborator Dyer Rhoads expand on the sculpture \u2018Dark Brown Birkin Bag\u2019, featured in the fifth floor gallery, through the uncrating of a second work of art on the exhibition floor. Collaborators Cast: Andrei Kouznetsov, Vadim Kroll Translation: Bela Shayevich &amp;amp; Igor Gulin in collaboration with the performers\u00a0 Casting: Casting Double (Geraldine Baron &amp;amp; Salome Oggenfuss) Supertitles: Irina Chelidze, Ekaterina Gladkaia\u00a0 Produced by Social Security End of Days was commissioned by the Whitney Museum of American Art as part of the 2026 Whitney Biennial. Duration: Approximately 30 minutes",
+"endDate": "2026-08-20T17:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833328/END_OF_DAYS_lead_image.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "End of Days: \u200bNile Harris &amp;amp; Dyer Rhoads\u200b",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-20T17:00:00-04:00",
+"url": "https://whitney.org/events/end-of-days"
+},
+"fetched_at": "2026-08-19T10:32:17.482105+00:00"
 },
 "https://whitney.org/events/member-evening-viewing-biennial26": {
 "event": {
@@ -485,7 +519,7 @@
 "startDate": "2026-08-19T10:30:00-04:00",
 "url": "https://whitney.org/events/member-previews-minnie-evans"
 },
-"fetched_at": "2026-08-16T09:49:48.742172+00:00"
+"fetched_at": "2026-08-19T10:32:15.977419+00:00"
 },
 "https://whitney.org/events/tour-whitney-biennial-2026-floor5": {
 "event": {
@@ -834,7 +868,7 @@
 "startDate": "2026-09-03T19:00:00",
 "url": "https://www.e-flux.com/events/6783375/bar-laika-presents-playback-0036-with-fergus-jones/"
 },
-"fetched_at": "2026-08-16T09:49:44.414323+00:00"
+"fetched_at": "2026-08-19T10:32:10.301430+00:00"
 },
 "https://www.e-flux.com/events/6783376/e-flux-book-sale-and-open-house": {
 "event": {
@@ -869,7 +903,7 @@
 "startDate": "2026-08-29T12:00:00",
 "url": "https://www.e-flux.com/events/6783376/e-flux-book-sale-and-open-house/"
 },
-"fetched_at": "2026-08-16T09:49:42.909961+00:00"
+"fetched_at": "2026-08-19T10:32:08.891331+00:00"
 },
 "https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox": {
 "event": {
