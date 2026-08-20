@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-17T09:21:23.208181+00:00",
+ "generated_at": "2026-08-20T09:08:13.941277+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 7,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -93,8 +93,8 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 7,
-     "past": 30
+     "upcoming": 10,
+     "past": 1
     }
    ],
    "tried": 4
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 7,
+     "upcoming": 11,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 8,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 9,
+     "upcoming": 10,
      "past": 30
     }
    ],
@@ -754,8 +754,8 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 1,
-     "past": 3
+     "upcoming": 2,
+     "past": 4
     }
    ],
    "tried": 5
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 11,
+     "upcoming": 10,
      "past": 30
     }
    ],

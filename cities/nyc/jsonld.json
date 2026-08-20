@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-08-17T09:34:11.412664+00:00",
+ "generated_at": "2026-08-20T09:20:16.658600+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 40,
+   "events": 39,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -229,7 +229,8 @@
    "events": 10,
    "locations": [
     "Brooklyn",
-    "Manhattan"
+    "Manhattan",
+    "Queens"
    ],
    "types": [
     "Event"
@@ -319,7 +320,7 @@
     "Cherry Lane Theater",
     "Laura Pels Theater",
     "Lucille Lortel Theater",
-    "Newman Mills Theater",
+    "Nederlander Theater",
     "Palace Theater",
     "Richard Rodgers Theater"
    ],
@@ -388,7 +389,7 @@
    "host": "lighthousemuseum.org",
    "name": "National Lighthouse Museum",
    "url": "https://lighthousemuseum.org/events/",
-   "events": 2,
+   "events": 3,
    "locations": [
     "Leaves from Fast Ferry Dock in St. George on the New York Water Taxi",
     "The National Lighthouse Museum"
@@ -403,28 +404,6 @@
    "links": 0,
    "lat": 40.6407356,
    "lon": -74.0734107,
-   "borough": "Staten Island",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "www.statenislandmuseum.org",
-   "name": "Staten Island Museum",
-   "url": "https://www.statenislandmuseum.org/events",
-   "events": 2,
-   "locations": [
-    "Great Kills Park"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.6445211,
-   "lon": -74.1027489,
    "borough": "Staten Island",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
@@ -448,6 +427,26 @@
    "lat": 40.6752349,
    "lon": -74.018312,
    "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
+   "url": "https://www.statenislandmuseum.org/events",
+   "events": 1,
+   "locations": [],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/events",
+   "links": 8,
+   "lat": 40.6445211,
+   "lon": -74.1027489,
+   "borough": "Staten Island",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
@@ -638,7 +637,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 91,
+   "links": 89,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -656,7 +655,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibitions",
-   "links": 33,
+   "links": 34,
    "lat": 40.7220357,
    "lon": -73.9920403,
    "borough": "Manhattan",
@@ -674,7 +673,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 140,
+   "links": 137,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -710,7 +709,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/event",
-   "links": 3,
+   "links": 1,
    "lat": 40.810129,
    "lon": -73.9498627,
    "borough": "Manhattan"
@@ -726,7 +725,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 37,
+   "links": 11,
    "lat": 40.7628819,
    "lon": -73.8248834,
    "borough": "Queens",
@@ -936,7 +935,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 39,
+   "links": 38,
    "lat": null,
    "lon": null,
    "borough": null,
