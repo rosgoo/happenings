@@ -385,40 +385,6 @@
 },
 "fetched_at": "2026-08-19T10:32:04.991442+00:00"
 },
-"https://whitney.org/events/contemporaries-toast-aug19": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/contemporaries-toast-aug19",
-"@type": "Event",
-"description": "Celebrate summer with fellow Contemporaries as we eagerly anticipate the fall season of exhibitions at the Whitney. Take in the sunset views from the Museum&#39;s Artspace while sharing a toast, connecting with fellow members, and enjoying an exclusive Contemporaries-only preview of upcoming exhibitions from curatorial staff Nakai Falc\u00f3n, Antonia Pocock, and David Lisbon. Plus, don\u2019t miss after-hours access to Whitney Biennial 2026 in its final weeks as part of Member Evening Viewing.",
-"endDate": "2026-08-19T20:30:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833807/MembersNight_byFilipWolak_0234_2649.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "Contemporaries Toast",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-19T19:30:00-04:00",
-"url": "https://whitney.org/events/contemporaries-toast-aug19"
-},
-"fetched_at": "2026-08-17T10:03:24.044483+00:00"
-},
 "https://whitney.org/events/end-of-days": {
 "event": {
 "@context": "https://schema.org",
@@ -453,16 +419,16 @@
 },
 "fetched_at": "2026-08-19T10:32:17.482105+00:00"
 },
-"https://whitney.org/events/member-evening-viewing-biennial26": {
+"https://whitney.org/events/free-dance-with-ailey": {
 "event": {
 "@context": "https://schema.org",
-"@id": "https://whitney.org/events/member-evening-viewing-biennial26",
+"@id": "https://whitney.org/events/free-dance-with-ailey",
 "@type": "Event",
-"description": "Members are invited for exclusive evening access to Whitney Biennial 2026 after general admission has concluded for the day. Take in the monumental survey during its final week on view,\u00a0plus, explore a new exhibition, The Lost World: The Art of Minnie Evans.",
-"endDate": "2026-08-19T20:30:00-04:00",
+"description": "Aug 21, 6:30 &amp;amp; 8:30pm, Lobby\u00a0 Sep 18, 6:30 &amp;amp; 8:30pm, Theater\u00a0 Oct 16, 6:30 &amp;amp; 8:30pm, Theater Nov 20, 8:30pm, Lobby\u00a0 Dec 18, 6:30 &amp;amp; 8:30pm, Theater Join us for free pop-up dance classes at the Whitney during Free Friday Nights! Led by Ailey Extension instructors, these dynamic, fun-filled classes will take place every third Friday each month. Each class explores a different dance genre\u2014come groove with us and stay awhile to enjoy access to world-class exhibitions, food and drinks for purchase from Frenchette Bakery, and more. Upcoming classes include: Summer Soiree\u00a0 August 21, 6:30 &amp;amp; 8:30pm Floor 1, Lobby\u00a0 Join instructor Pilin Anice for a Line Dance class. All ages and skill levels are welcome. Afro-Latin\u00a0 September 18, 6:30 &amp;amp; 8:30pm Floor 3, Lobby Join instructor Katherine Jimenez for an Afro-Latin class. All ages and skill levels are welcome.",
+"endDate": "2026-08-21T18:30:00-04:00",
 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 "eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833786/MemberNight-May2026_byFilipWolak_0132_2238.jpg",
+"image": "https://whitneymedia.org/assets/image/833691/FFN_02-27-2026_SSG-26.jpg",
 "location": {
 "@type": "Place",
 "address": {
@@ -476,16 +442,16 @@
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"name": "Member Evening Viewing: Whitney Biennial 2026",
+"name": "Free Dance Classes with Ailey Extension",
 "organizer": {
 "@type": "Organization",
 "name": "Whitney Museum of American Art",
 "url": "https://whitney.org"
 },
-"startDate": "2026-08-19T18:30:00-04:00",
-"url": "https://whitney.org/events/member-evening-viewing-biennial26"
+"startDate": "2026-08-21T18:30:00-04:00",
+"url": "https://whitney.org/events/free-dance-with-ailey"
 },
-"fetched_at": "2026-08-17T10:03:22.568198+00:00"
+"fetched_at": "2026-08-20T09:57:36.935908+00:00"
 },
 "https://whitney.org/events/member-previews-minnie-evans": {
 "event": {
@@ -589,6 +555,40 @@
 },
 "fetched_at": "2026-08-10T10:41:49.103727+00:00"
 },
+"https://whitney.org/events/untitled-america-15min-ffn": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/untitled-america-15min-ffn",
+"@type": "Event",
+"description": "Free Friday Nights, 6 pm, 6:30 pm\u00a0 Free Second Sundays, 1:30 pm, 2 pm\u00a0 Join a Whitney Educator in the galleries for 15- to 20-minute tours of select artworks featured in \u201cUntitled\u201d (America).",
+"endDate": "2026-08-21T18:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/820546/50.23_tooker_web.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Exhibition \u201cUntitled\u201d (America)",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-21T18:00:00-04:00",
+"url": "https://whitney.org/events/untitled-america-15min-ffn"
+},
+"fetched_at": "2026-08-20T09:57:35.726860+00:00"
+},
 "https://whitney.org/events/untitled-america-exb-tour": {
 "event": {
 "@context": "https://schema.org",
@@ -656,40 +656,6 @@
 "startDate": "Apr 26, 2026"
 },
 "fetched_at": "2026-08-03T04:02:00.557421+00:00"
-},
-"https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok": {
-"event": {
-"@id": "https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok/",
-"@type": "Event",
-"description": "Join us at Bar Laika on Wednesday, July 8 from 7pm for the thirty-fourth edition of Playback with Lesley Mok.",
-"image": "https://images.e-flux.com/test/2d55fb0d-7c68-48cb-b59b-a56335523a16?width=1200&height=630",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "USA",
-"addressLocality": "Brooklyn",
-"addressRegion": "NY",
-"postalCode": "11238",
-"streetAddress": "224 Greene Avenue"
-},
-"geo": {
-"@type": "GeoCoordinates",
-"latitude": "40.6870032",
-"longitude": "-73.9620883"
-},
-"name": "Bar Laika by e-flux"
-},
-"name": "Bar Laika presents Playback 0034 with Lesley Mok",
-"organizer": {
-"@type": "Organization",
-"name": "e-flux",
-"url": "https://www.e-flux.com/"
-},
-"startDate": "2026-07-08T19:00:00",
-"url": "https://www.e-flux.com/events/6783364/bar-laika-presents-playback-0034-with-lesley-mok/"
-},
-"fetched_at": "2026-08-03T04:02:06.468181+00:00"
 },
 "https://www.e-flux.com/events/6783371/leap-of-faith-nbsp-ii-the-absolute-demand": {
 "event": {
@@ -939,5 +905,40 @@
 "url": "https://www.e-flux.com/events/6783377/bar-laika-presents-playback-0035-with-greg-fox/"
 },
 "fetched_at": "2026-08-17T10:03:17.117317+00:00"
+},
+"https://www.e-flux.com/events/6783380/bar-laika-presents-playback-0037-with-midgar-records": {
+"event": {
+"@id": "https://www.e-flux.com/events/6783380/bar-laika-presents-playback-0037-with-midgar-records/",
+"@type": "Event",
+"description": "Join us at Bar Laika on Wednesday, September 16th from 7pm for the thirty-seventh edition of Playback with Midgar Records.",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://images.e-flux.com/test/bd50b5ef-79c6-4703-b512-fccc1d5aca34?width=1200&height=630",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "USA",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11238",
+"streetAddress": "224 Greene Avenue"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "40.6870032",
+"longitude": "-73.9620883"
+},
+"name": "Bar Laika by e-flux"
+},
+"name": "Bar Laika presents Playback 0037 with Midgar Records",
+"organizer": {
+"@type": "Organization",
+"name": "e-flux",
+"url": "https://www.e-flux.com/"
+},
+"startDate": "2026-09-16T19:00:00",
+"url": "https://www.e-flux.com/events/6783380/bar-laika-presents-playback-0037-with-midgar-records/"
+},
+"fetched_at": "2026-08-20T09:57:32.627639+00:00"
 }
 }
