@@ -129,6 +129,48 @@
 },
 "fetched_at": "2026-08-19T10:32:12.143605+00:00"
 },
+"https://grove34.com/shows/improv-night-aug23": {
+"event": {
+"@context": "https://schema.org",
+"@type": "Event",
+"description": "No scripts, no safety nets\u2014just pure comedy created in the moment. Come see why Grove 34 is THE place for improv comedy in Queens. Follow @improvnight and @grove34nyc for cast announcements and show-specific details!",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a2c93463acc0ba878ee97d4_Host%20Team%20Web%20Poster%2001A.jpg",
+"inLanguage": "en-US",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "Astoria",
+"addressRegion": "NY",
+"postalCode": "11106",
+"streetAddress": "31-83 34th St"
+},
+"name": "Grove34"
+},
+"name": "Improv Night",
+"offers": {
+"@type": "Offer",
+"availability": "https://schema.org/InStock",
+"url": "/shows"
+},
+"organizer": {
+"@type": "Organization",
+"email": "grove34studio@gmail.com",
+"name": "Grove34",
+"sameAs": [
+"https://www.instagram.com/grove34",
+"https://www.facebook.com/grove34",
+"https://www.youtube.com/grove34"
+],
+"url": "https://www.grove34.com"
+},
+"startDate": "2026-08-23T23:00:00.000Z"
+},
+"fetched_at": "2026-08-21T10:38:10.785779+00:00"
+},
 "https://grove34.com/shows/raanan-hershberg2": {
 "event": {
 "@context": "https://schema.org",
@@ -170,48 +212,6 @@
 "startDate": "2025-12-06T00:30:00.000Z"
 },
 "fetched_at": "2026-08-03T04:02:07.866424+00:00"
-},
-"https://grove34.com/shows/roast-battle-league-nyc19aug": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://cdn.prod.website-files.com/68e79e6d893bc117217bc02f/6a42cb34d735e21d52ddcd84_7.PNG",
-"inLanguage": "en-US",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "Astoria",
-"addressRegion": "NY",
-"postalCode": "11106",
-"streetAddress": "31-83 34th St"
-},
-"name": "Grove34"
-},
-"name": "Roast Battle League NYC",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"url": "/shows"
-},
-"organizer": {
-"@type": "Organization",
-"email": "grove34studio@gmail.com",
-"name": "Grove34",
-"sameAs": [
-"https://www.instagram.com/grove34",
-"https://www.facebook.com/grove34",
-"https://www.youtube.com/grove34"
-],
-"url": "https://www.grove34.com"
-},
-"startDate": "2026-08-20T01:00:00.000Z"
-},
-"fetched_at": "2026-08-18T09:56:06.697914+00:00"
 },
 "https://skyscraper.org/programs/curators-tour-of-the-invention-of-park-avenue": {
 "event": {
@@ -301,52 +301,11 @@
 },
 "startDate": "2026-09-11T13:15:00-04:00"
 },
-"fetched_at": "2026-08-18T09:56:03.754253+00:00"
+"fetched_at": "2026-08-21T10:38:07.786957+00:00"
 },
 "https://skyscraper.org/programs/the-engineers-modern-skyscraper-revolution": {
-"event": {
-"@context": "https://schema.org",
-"@type": "Event",
-"description": "<div class=\"entry-summary\">\nThe structural innovations of three brilliant young engineers starting in the 1960s led to a revolution in modern skyscraper design. BILL BAKER, the structural designer of the Burj Khalifa, the world's tallest building, will offer his appraisal of three key figures \u2013 Leslie E. Robertson, William J. LeMessurier and...",
-"endDate": "2026-09-01T19:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": [
-"https://skyscraper.org/wordpress/wp-content/uploads/2026/08/WTC-Image-Bill-Baker-Lecture.png"
-],
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10280",
-"streetAddress": "39 Battery Place"
-},
-"name": "The Skyscraper Museum"
-},
-"name": "The Engineers of the Modern Skyscraper Revolution: Leslie E. Robertson, William J. LeMessurier, and Fazlur R. Khan",
-"offers": {
-"@type": "Offer",
-"availability": "https://schema.org/InStock",
-"price": "0",
-"priceCurrency": "USD",
-"url": "https://skyscraper.org/programs/the-engineers-modern-skyscraper-revolution/",
-"validFrom": "August 12, 2026"
-},
-"organizer": {
-"@type": "Organization",
-"name": "The Skyscraper Museum",
-"url": "https://skyscraper.org"
-},
-"performer": {
-"@type": null,
-"name": null
-},
-"startDate": "2026-09-01T18:00:00-04:00"
-},
-"fetched_at": "2026-08-18T09:56:02.394936+00:00"
+"event": null,
+"fetched_at": "2026-08-21T10:38:06.449403+00:00"
 },
 "https://skyscraper.org/programs/the-world-trade-center-remembered": {
 "event": {
@@ -385,40 +344,6 @@
 },
 "fetched_at": "2026-08-19T10:32:04.991442+00:00"
 },
-"https://whitney.org/events/end-of-days": {
-"event": {
-"@context": "https://schema.org",
-"@id": "https://whitney.org/events/end-of-days",
-"@type": "Event",
-"description": "March 19, 5 pm March 28, 12 pm March 29, 12 pm April 3, 12 pm April 15, 2 pm April 23, 4 pm May 1, 12 pm May 9, 4 pm May 17, 12 pm May 20, 8 pm May 27, 4 pm June 4, 5 pm June 12, 2 pm June 20, 4 pm June 27, 4 pm June 28, 12 pm July 8, 2 pm July 16, 5 pm July 24, 12 pm August 1, 4 pm August 8, 4 pm August 12, 5 pm August 20, 5 pm August 22, 4 pm August 23, 12 pm Presented as part of the 2026 Whitney Biennial, Nile Harris and his collaborator Dyer Rhoads expand on the sculpture \u2018Dark Brown Birkin Bag\u2019, featured in the fifth floor gallery, through the uncrating of a second work of art on the exhibition floor. Collaborators Cast: Andrei Kouznetsov, Vadim Kroll Translation: Bela Shayevich &amp;amp; Igor Gulin in collaboration with the performers\u00a0 Casting: Casting Double (Geraldine Baron &amp;amp; Salome Oggenfuss) Supertitles: Irina Chelidze, Ekaterina Gladkaia\u00a0 Produced by Social Security End of Days was commissioned by the Whitney Museum of American Art as part of the 2026 Whitney Biennial. Duration: Approximately 30 minutes",
-"endDate": "2026-08-20T17:00:00-04:00",
-"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-"eventStatus": "https://schema.org/EventScheduled",
-"image": "https://whitneymedia.org/assets/image/833328/END_OF_DAYS_lead_image.jpg",
-"location": {
-"@type": "Place",
-"address": {
-"@type": "PostalAddress",
-"addressCountry": "US",
-"addressLocality": "New York",
-"addressRegion": "NY",
-"postalCode": "10014",
-"streetAddress": "99 Gansevoort St"
-},
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"name": "End of Days: \u200bNile Harris &amp;amp; Dyer Rhoads\u200b",
-"organizer": {
-"@type": "Organization",
-"name": "Whitney Museum of American Art",
-"url": "https://whitney.org"
-},
-"startDate": "2026-08-20T17:00:00-04:00",
-"url": "https://whitney.org/events/end-of-days"
-},
-"fetched_at": "2026-08-19T10:32:17.482105+00:00"
-},
 "https://whitney.org/events/free-dance-with-ailey": {
 "event": {
 "@context": "https://schema.org",
@@ -453,6 +378,40 @@
 },
 "fetched_at": "2026-08-20T09:57:36.935908+00:00"
 },
+"https://whitney.org/events/last-look-biennial26": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/last-look-biennial26",
+"@type": "Event",
+"description": "Saturday and Sunday August 22\u201323, 9:30\u201310:30 am Members enjoy a head start in the galleries with special weekend morning access to Whitney Biennial 2026 in the exhibition\u2019s final days on view.",
+"endDate": "2026-08-22T10:30:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833785/WMAA100360_260305_Whitney_Bi_1549_retouched_3x2.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Member Mornings: Last Look at Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-22T09:30:00-04:00",
+"url": "https://whitney.org/events/last-look-biennial26"
+},
+"fetched_at": "2026-08-21T10:38:16.310923+00:00"
+},
 "https://whitney.org/events/member-previews-minnie-evans": {
 "event": {
 "@context": "https://schema.org",
@@ -486,6 +445,40 @@
 "url": "https://whitney.org/events/member-previews-minnie-evans"
 },
 "fetched_at": "2026-08-19T10:32:15.977419+00:00"
+},
+"https://whitney.org/events/open-studio-2026": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/open-studio-2026",
+"@type": "Event",
+"description": "On Saturdays, families with kids of all ages are invited to get creative at the Whitney! Join us to make your own art inspired by works on view in the collection and current exhibitions. Each week we offer a different artmaking project. Open Studio will not take place on long weekends or the second Saturday of every month. Dates: January 24 January 31 February 21 February 28 March 21 March 28 April 4 April 25 May 2 May 16 May 30 June 6 June 27 July 18 July 25 August 1 August 15 August 22 August 29 September 19 September 26 October 3 October 17 October 24 October 31 November 14 November 21 December 5 December 19",
+"endDate": "2026-08-22T15:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/829246/FilipWolak_OpenStudio_0117_1995.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "Open Studio 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-22T11:00:00-04:00",
+"url": "https://whitney.org/events/open-studio-2026"
+},
+"fetched_at": "2026-08-21T10:38:17.809138+00:00"
 },
 "https://whitney.org/events/tour-whitney-biennial-2026-floor5": {
 "event": {
@@ -622,6 +615,74 @@
 "url": "https://whitney.org/events/untitled-america-exb-tour"
 },
 "fetched_at": "2026-08-10T10:41:50.546189+00:00"
+},
+"https://whitney.org/events/whitney-biennial-15-min-ffn-floor5": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor5",
+"@type": "Event",
+"description": "Free Friday Nights, 8 pm, 8:30 pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-21T20:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833199/deMonteflores_C_02.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-21T20:00:00-04:00",
+"url": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor5"
+},
+"fetched_at": "2026-08-21T10:38:14.814043+00:00"
+},
+"https://whitney.org/events/whitney-biennial-15-min-ffn-floor6": {
+"event": {
+"@context": "https://schema.org",
+"@id": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor6",
+"@type": "Event",
+"description": "Free Friday Nights, 7 pm and 7:30pm Join a Whitney Educator in the galleries for 15 to 20 minute tours of select artworks featured in the Whitney Biennial 2026.\u00a0 Free with Museum admission. No reservations are necessary, but capacity is limited to twenty people on a first-come, first-served basis.\u00a0 Times and locations are subject to change or cancellation. Please confirm daily tour times on our calendar.",
+"endDate": "2026-08-21T19:00:00-04:00",
+"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+"eventStatus": "https://schema.org/EventScheduled",
+"image": "https://whitneymedia.org/assets/image/833353/CamachoLien_08.jpg",
+"location": {
+"@type": "Place",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "US",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10014",
+"streetAddress": "99 Gansevoort St"
+},
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"name": "15-Minute Tour: Highlights of the Whitney Biennial 2026",
+"organizer": {
+"@type": "Organization",
+"name": "Whitney Museum of American Art",
+"url": "https://whitney.org"
+},
+"startDate": "2026-08-21T19:00:00-04:00",
+"url": "https://whitney.org/events/whitney-biennial-15-min-ffn-floor6"
+},
+"fetched_at": "2026-08-21T10:38:13.571612+00:00"
 },
 "https://www.apollotheater.org/event/best-of-the-apollo": {
 "event": {

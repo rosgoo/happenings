@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-20T09:50:19.923298+00:00",
+ "generated_at": "2026-08-21T09:52:24.391710+00:00",
  "city": "nyc",
  "city_slugs": [
   "new-york-city",
@@ -7,17 +7,17 @@
   "brooklyn"
  ],
  "sitemaps": 4,
- "scanned": 22072,
+ "scanned": 22209,
  "events": [
   {
    "url": "https://dice.fm/event/2w3k7o-the-nursery-moxie-sinad-20th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-14T15:06:39.220974Z"
+   "lastmod": "2026-08-20T22:31:35.081091Z"
   },
   {
    "url": "https://dice.fm/event/2w3l86-nils-hoffmann-friends-in-high-places-18th-sep-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T14:56:07.858139Z"
+   "lastmod": "2026-08-20T08:05:13.843865Z"
   },
   {
    "url": "https://dice.fm/event/2w3p9a-jazzy-friends-in-high-places-2nd-oct-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
@@ -97,7 +97,7 @@
   {
    "url": "https://dice.fm/event/2w6awp-1926-presents-the-passage-between-worlds-2nd-oct-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-22T21:48:49.846218Z"
+   "lastmod": "2026-08-20T15:29:43.786849Z"
   },
   {
    "url": "https://dice.fm/event/2w6dgm-mercer-day-party-september-19-19th-sep-hotel-50-bowery-new-york-city-tickets",
@@ -183,6 +183,16 @@
    "url": "https://dice.fm/event/2wq9wm-reggaeton-halloween-oct-31-18-31st-oct-the-meadows-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-17T18:34:10.009780Z"
+  },
+  {
+   "url": "https://dice.fm/event/2wqa97-rookie-mistake-album-release-show-with-your-favorite-person-solomon-underwood-9th-oct-pianos-showroom-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T01:41:10.001976Z"
+  },
+  {
+   "url": "https://dice.fm/event/2wqaqm-lyra-rooftop-party-halloween-edition-1030-30th-oct-magic-hour-rooftop-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T23:53:12.943755Z"
   },
   {
    "url": "https://dice.fm/event/2wqb87-boycott-daylight-ep-release-aster-underground-sewer-cult-10th-sep-sleepwalk-new-york-city-tickets",
@@ -337,22 +347,17 @@
   {
    "url": "https://dice.fm/event/3o6oex-experts-only-festival-nyc-2026-19th-sep-randalls-island-park-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T16:17:50.887514Z"
+   "lastmod": "2026-08-20T10:54:19.803766Z"
   },
   {
    "url": "https://dice.fm/event/3o6wqx-teksupport-me-live-b2b-trikk-more-18th-sep-sunset-park-rooftop-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-08-14T03:17:54.817416Z"
+   "lastmod": "2026-08-20T08:05:21.583094Z"
   },
   {
    "url": "https://dice.fm/event/3o725g-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-19th-sep-lost-in-paradise-rooftop-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-07-14T14:55:35.526186Z"
-  },
-  {
-   "url": "https://dice.fm/event/3o72qv-all-ages-open-skate-skate-20th-aug-xanadu-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-07-24T20:34:08.891818Z"
   },
   {
    "url": "https://dice.fm/event/3o756x-brooklyn-storehouse-afrojack-2nd-oct-brooklyn-storehouse-new-york-city-tickets",
@@ -372,7 +377,7 @@
   {
    "url": "https://dice.fm/event/3o7dlg-monstera-x-sea-wolf-reggaeton-friday-18th-sep-sea-wolf-bushwick-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-07T15:26:07.591671Z"
+   "lastmod": "2026-08-20T08:07:03.748337Z"
   },
   {
    "url": "https://dice.fm/event/3o7meg-russian-circles-pelican-3rd-oct-ruins-at-knockdown-center-new-york-tickets",
@@ -412,7 +417,7 @@
   {
    "url": "https://dice.fm/event/3or3xx-sexprience-an-immersive-cabaret-29th-aug-the-reading-room-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-06T08:08:58.173218Z"
+   "lastmod": "2026-08-20T18:45:20.301261Z"
   },
   {
    "url": "https://dice.fm/event/3or5gx-arkose-kevin-oliver-jr-group-freedom-attic-23rd-oct-the-sultan-room-rooftop-brooklyn-tickets",
@@ -458,6 +463,11 @@
    "url": "https://dice.fm/event/3oraox-halloween-at-yesterdays-1030-30th-oct-yesterdays-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-13T00:18:38.954605Z"
+  },
+  {
+   "url": "https://dice.fm/event/3orblp-tini-gessler-18th-sep-marquee-new-york-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T14:17:55.727499Z"
   },
   {
    "url": "https://dice.fm/event/3ordx8-simone-de-kunovich-luke-hess-michelle-kay-emsho-11th-sep-public-records-new-york-tickets",
@@ -522,7 +532,7 @@
   {
    "url": "https://dice.fm/event/3orr6v-nic-fanciulli-roger-sanchez-flower-power-27th-sep-pacha-new-york-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T14:47:01.053507Z"
+   "lastmod": "2026-08-20T17:09:19.748574Z"
   },
   {
    "url": "https://dice.fm/event/3orrm8-endless-summer-felix-cartal-alastair-26th-sep-house-of-yes-new-york-city-tickets",
@@ -552,7 +562,7 @@
   {
    "url": "https://dice.fm/event/3orx98-runway-7-official-after-party-9th-sep-altheas-hideaway-nyc-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-16T18:59:12.237957Z"
+   "lastmod": "2026-08-20T14:31:46.810727Z"
   },
   {
    "url": "https://dice.fm/event/3ory3g-passion-mango-cherry-pick-23rd-oct-the-sultan-room-new-york-tickets",
@@ -582,7 +592,7 @@
   {
    "url": "https://dice.fm/event/3oxbd8-rhythm-residency-2-jerome-jennings-dj-ooochild-20th-aug-michiko-studios-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-15T13:25:25.840750Z"
+   "lastmod": "2026-08-20T22:00:01.791538Z"
   },
   {
    "url": "https://dice.fm/event/3oxkkl-razor-n-tape-presents-a-joyful-noise-live-special-guests-15th-oct-public-records-new-york-tickets",
@@ -647,7 +657,7 @@
   {
    "url": "https://dice.fm/event/53bvmy-palosanto-on-the-roof-august-20th-20th-aug-rooftop-at-arlo-williamsburg-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-12T01:48:51.616946Z"
+   "lastmod": "2026-08-20T20:39:03.193584Z"
   },
   {
    "url": "https://dice.fm/event/53lbbk-the-new-colossus-festival-2027-badges-9th-mar-arlenes-grocery-baker-falls-ki-smith-gallery-niagara-nublu-nublu-classic-parkside-lounge-pianos-sour-mouse-the-francis-kite-club-new-york-city-tickets",
@@ -678,6 +688,11 @@
    "url": "https://dice.fm/event/53m6bk-colin-heshmat-trio-26th-aug-mad-bar-lounge-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-18T08:07:14.346614Z"
+  },
+  {
+   "url": "https://dice.fm/event/53m6dy-honey-dijon-day-night-10th-oct-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T16:34:13.170579Z"
   },
   {
    "url": "https://dice.fm/event/53m6rk--saturday-sunset-sounds-turf-club-22nd-aug-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
@@ -712,7 +727,7 @@
   {
    "url": "https://dice.fm/event/53m9wk-victoria-herrera-more-18th-sep-brooklyn-music-kitchen-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-26T15:38:38.849957Z"
+   "lastmod": "2026-08-20T08:08:04.871712Z"
   },
   {
    "url": "https://dice.fm/event/53m9xy-fleetmac-wood-16th-oct-house-of-yes-new-york-city-tickets",
@@ -760,6 +775,11 @@
    "lastmod": "2026-08-03T20:56:25.565904Z"
   },
   {
+   "url": "https://dice.fm/event/53mk6k-lyd-marie-rebecca-mccartney-hannah-goetz-12th-sep-sleepwalk-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T21:20:30.742302Z"
+  },
+  {
    "url": "https://dice.fm/event/53ml3d-zack-ssa-lin-marlow-shields-15th-sep-sleepwalk-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-17T08:06:52.750304Z"
@@ -768,6 +788,11 @@
    "url": "https://dice.fm/event/53ml5y-durations-kara-lis-coverdale-molina-pavel-milyakov-15th-nov-public-records-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-18T13:47:00.586357Z"
+  },
+  {
+   "url": "https://dice.fm/event/53mm2w-zach-john-king-im-what-you-get-signing-31st-aug-rough-trade-below-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T20:04:08.020664Z"
   },
   {
    "url": "https://dice.fm/event/53mn3l-playgrnd-series-nyc-3rd-oct-the-melrose-ballroom-new-york-city-tickets",
@@ -840,9 +865,9 @@
    "lastmod": "2026-08-05T16:52:51.803290Z"
   },
   {
-   "url": "https://dice.fm/event/53mxpd-merope-shahzad-ismaily-5th-sep-public-records-new-york-tickets",
+   "url": "https://dice.fm/event/53mxpd-merope-with-shahzad-ismaily-surya-botofasina-5th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-07T08:08:52.042247Z"
+   "lastmod": "2026-08-20T19:54:07.961393Z"
   },
   {
    "url": "https://dice.fm/event/53myaw-downtown-crawl-til-the-ball-drops-31st-dec-the-skinny-bar-new-york-city-tickets",
@@ -887,7 +912,7 @@
   {
    "url": "https://dice.fm/event/53pw3k-boy-soda-19th-sep-babys-all-right-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-14T14:55:33.350021Z"
+   "lastmod": "2026-08-20T16:50:12.514566Z"
   },
   {
    "url": "https://dice.fm/event/53pxkd-bruiser-bicycle-assembly-citizenry-vangas-5th-sep-alphaville-new-york-tickets",
@@ -1012,7 +1037,7 @@
   {
    "url": "https://dice.fm/event/6d8yb7-machine-thirst-bollmann-firebunny-18th-sep-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-08-14T23:55:55.787398Z"
+   "lastmod": "2026-08-20T08:07:42.539550Z"
   },
   {
    "url": "https://dice.fm/event/6d8ye8-shaina-louis-quintet-listening-session-22nd-aug-ernest-records-new-york-city-tickets",
@@ -1037,12 +1062,12 @@
   {
    "url": "https://dice.fm/event/6dadr3-unreal-x-rush-day-night-12th-sep-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-14T08:06:04.780662Z"
+   "lastmod": "2026-08-20T18:13:34.402488Z"
   },
   {
    "url": "https://dice.fm/event/6dam7b-loco-dice-seth-troxler-victor-calderone-all-night-long-21st-aug-pacha-new-york-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T18:39:56.097193Z"
+   "lastmod": "2026-08-20T15:27:57.435079Z"
   },
   {
    "url": "https://dice.fm/event/6dark3-paidtimeoff-closecall-elizanoxon-stamps-29th-aug-brooklyn-music-kitchen-new-york-city-tickets",
@@ -1092,7 +1117,7 @@
   {
    "url": "https://dice.fm/event/6do26b-latin-sk8-ft-chiqui-b-vaiina-earthquake-relief-charity-night-for-colombia-venezuela-skate-20th-aug-xanadu-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T18:40:59.498116Z"
+   "lastmod": "2026-08-20T22:43:47.371138Z"
   },
   {
    "url": "https://dice.fm/event/6do2vq-in-tha-fest-presents-percaso-ea-tj-14th-sep-market-hotel-new-york-tickets",
@@ -1122,12 +1147,12 @@
   {
    "url": "https://dice.fm/event/6do7m8-genesi-guests-11th-oct-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-15T20:10:04.963328Z"
+   "lastmod": "2026-08-20T15:30:48.724740Z"
   },
   {
    "url": "https://dice.fm/event/6do7r3-time-warp-nyc-20th-nov-duggal-greenhouse-brooklyn-navy-yard-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T20:31:09.451325Z"
+   "lastmod": "2026-08-20T15:21:18.319143Z"
   },
   {
    "url": "https://dice.fm/event/6do7yb-kumbia-net-turbo-sonidero-space-primo-hosted-by-mc-mextape-3rd-sep-public-records-new-york-tickets",
@@ -1187,7 +1212,7 @@
   {
    "url": "https://dice.fm/event/6dobqb-model-living-admin-funsucker-18th-sep-alphaville-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-04T14:37:47.174286Z"
+   "lastmod": "2026-08-20T08:08:54.672184Z"
   },
   {
    "url": "https://dice.fm/event/6doby7-rev-vince-anderson-the-love-choir-14th-dec-union-pool-new-york-tickets",
@@ -1212,12 +1237,22 @@
   {
    "url": "https://dice.fm/event/6doe53-the-earlies-22nd-aug-honeys-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-29T19:39:42.129131Z"
+   "lastmod": "2026-08-20T12:19:05.697260Z"
   },
   {
    "url": "https://dice.fm/event/6doen7-anyasa-anjunadeep-joseph-ray-anjunadeep-harji-b2b-firungi-26th-sep-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
    "lastmod": "2026-07-22T14:47:00.780405Z"
+  },
+  {
+   "url": "https://dice.fm/event/6dogrq-industry-mondays-21st-sep-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:36:30.710310Z"
+  },
+  {
+   "url": "https://dice.fm/event/6dogwb-friday-artist-showcase-0821-21st-aug-unveiled-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T16:30:26.804775Z"
   },
   {
    "url": "https://dice.fm/event/6dok97-durations-william-basinski-chantal-michelle-11th-nov-public-records-new-york-tickets",
@@ -1327,7 +1362,7 @@
   {
    "url": "https://dice.fm/event/7db8n6-hugel-presented-by-project-91-23rd-aug-brooklyn-army-terminal-pier-4-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T18:36:58.292874Z"
+   "lastmod": "2026-08-20T19:12:12.431088Z"
   },
   {
    "url": "https://dice.fm/event/7dbadp-peter-matson-djhybrid-stuart-bogie-live-upstairs-17th-sep-public-records-new-york-tickets",
@@ -1402,7 +1437,7 @@
   {
    "url": "https://dice.fm/event/7dwgn7-metalheadzgoldie-adred-diverge-anonima-loka-4th-sep-paragon-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-06T08:06:43.389971Z"
+   "lastmod": "2026-08-20T17:37:03.190702Z"
   },
   {
    "url": "https://dice.fm/event/7dwkrb-birthday-behavior-virgo-edition-ft-dj-arson-skate-all-night-29th-aug-xanadu-new-york-city-tickets",
@@ -1427,7 +1462,7 @@
   {
    "url": "https://dice.fm/event/7dwy89-vhs-f2f-main-room-event-20th-aug-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-08-19T15:14:27.330279Z"
+   "lastmod": "2026-08-20T15:47:04.600833Z"
   },
   {
    "url": "https://dice.fm/event/7dx3bb-one-hour-photo-valatie-year-of-the-snake-our-wits-this-might-be-forever-22nd-aug-gold-sounds-new-york-tickets",
@@ -1437,7 +1472,17 @@
   {
    "url": "https://dice.fm/event/7dx3mp-cesar-orozco-sonaheads-album-release-18th-sep-drom-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-16T20:11:17.544464Z"
+   "lastmod": "2026-08-20T08:07:47.181057Z"
+  },
+  {
+   "url": "https://dice.fm/event/7dx5b9-bella-reign-with-um-luke-demas-wavelengths-dj-3rd-oct-sleepwalk-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T21:24:38.894366Z"
+  },
+  {
+   "url": "https://dice.fm/event/7dx5ep-let-it-happen-tame-impala-dance-party-23rd-oct-tv-eye-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T15:47:00.576884Z"
   },
   {
    "url": "https://dice.fm/event/7dx62v-hi-lo-with-rebke-11th-oct-creekside-under-the-k-bridge-new-york-city-tickets",
@@ -1482,7 +1527,7 @@
   {
    "url": "https://dice.fm/event/7dxe97-tba-18th-sep-somewhere-nowhere-nyc-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-05T19:54:31.882090Z"
+   "lastmod": "2026-08-20T08:09:04.610782Z"
   },
   {
    "url": "https://dice.fm/event/7dxebv-xanadu-day-disco-skate-3rd-oct-xanadu-new-york-city-tickets",
@@ -1493,11 +1538,6 @@
    "url": "https://dice.fm/event/7dxeop-yob-7th-oct-saint-vitus-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-19T21:33:52.988203Z"
-  },
-  {
-   "url": "https://dice.fm/event/7dxep6-baci-the-fw26-salon-20th-aug-baci-studio-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T16:55:05.947235Z"
   },
   {
    "url": "https://dice.fm/event/7dxg3v-durations-william-basinski-muein-10th-nov-public-records-new-york-tickets",
@@ -1528,11 +1568,6 @@
    "url": "https://dice.fm/event/7dxkyp-mkultra-mind-kontrol-release-show-boyscoutmarie-wiring-13th-sep-union-pool-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-17T13:47:00.651888Z"
-  },
-  {
-   "url": "https://dice.fm/event/7dxl57-dodiosso-retro-sex-nevada-nevada-20th-aug-sleepwalk-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-05T17:16:09.860448Z"
   },
   {
    "url": "https://dice.fm/event/7dxlr9-haley-smalls-from-matches-to-flames-tour-1st-oct-babys-all-right-new-york-tickets",
@@ -1572,7 +1607,7 @@
   {
    "url": "https://dice.fm/event/7dxpg6-downstairs-y2kunt-20th-aug-purgatory-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-10T08:07:11.514666Z"
+   "lastmod": "2026-08-21T00:05:07.675098Z"
   },
   {
    "url": "https://dice.fm/event/7dxpm6-open-decks-w-village-hidden-in-sound-23rd-sep-silo-brooklyn-brooklyn-tickets",
@@ -1607,7 +1642,7 @@
   {
    "url": "https://dice.fm/event/7dxw2p-marshy-lockimara-little-slugger-21st-sep-sleepwalk-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T19:04:11.318506Z"
+   "lastmod": "2026-08-20T20:44:33.818464Z"
   },
   {
    "url": "https://dice.fm/event/7dxwv7-azure-day-party-september-6th-6th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -1627,7 +1662,7 @@
   {
    "url": "https://dice.fm/event/7dxy69-alyx-astryx-single-release-bunny-x-album-release-pleasure-island-18th-sep-pianos-showroom-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-23T20:47:26.923264Z"
+   "lastmod": "2026-08-20T08:08:13.762484Z"
   },
   {
    "url": "https://dice.fm/event/7dxy9b-nebula-tuesdays-25th-aug-nebula-new-york-tickets",
@@ -1688,6 +1723,16 @@
    "url": "https://dice.fm/event/8e95e2-virgo-rising-11th-sep-house-of-yes-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-18T20:30:24.307816Z"
+  },
+  {
+   "url": "https://dice.fm/event/8e97m2-olivia-and-the-lovers-with-kng-lut-and-ghost-tour-21st-oct-pianos-showroom-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T01:11:53.758011Z"
+  },
+  {
+   "url": "https://dice.fm/event/8e97p2-woodshop-with-mangumami-ellenj-3rd-sep-dead-letter-no9-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T08:10:40.743182Z"
   },
   {
    "url": "https://dice.fm/event/8e985w-downstairs-ankhara-sessions-17th-sep-purgatory-new-york-tickets",
@@ -1755,11 +1800,6 @@
    "lastmod": "2026-08-17T15:36:54.149955Z"
   },
   {
-   "url": "https://dice.fm/event/8e9nl2-the-pacified-rage-2026-indie-film-screening-20th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-04T08:07:38.855781Z"
-  },
-  {
    "url": "https://dice.fm/event/8e9p55-never-dull-boogietraxx-zeeva-22nd-aug-elsewhere-rooftop-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-03T15:09:20.239760Z"
@@ -1767,7 +1807,7 @@
   {
    "url": "https://dice.fm/event/8e9qdw-tahabdra-mark-mcnulty-cuppat-ranch-guerra-visuals-by-hayley-18th-sep-the-sultan-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T14:29:30.955429Z"
+   "lastmod": "2026-08-20T08:09:42.875049Z"
   },
   {
    "url": "https://dice.fm/event/8e9qwr-all-that-glitters-new-years-fireworks-cruise-nyc-31st-dec-skyport-marina-new-york-tickets",
@@ -1817,7 +1857,7 @@
   {
    "url": "https://dice.fm/event/8e9x6w-tita-lau-at-public-hotel-23rd-oct-artspace-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-06T20:47:01.057660Z"
+   "lastmod": "2026-08-20T16:00:02.137459Z"
   },
   {
    "url": "https://dice.fm/event/8e9xdr-tba-26th-sep-somewhere-nowhere-nyc-new-york-tickets",
@@ -1828,11 +1868,6 @@
    "url": "https://dice.fm/event/8e9xl2-xanadu-day-disco-skate-24th-oct-xanadu-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-05T16:52:51.801426Z"
-  },
-  {
-   "url": "https://dice.fm/event/8e9xp7-copeland-james-luzmila-taylor-grace-leckey-19th-aug-gold-sounds-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-19T22:35:22.052418Z"
   },
   {
    "url": "https://dice.fm/event/8e9xq2-supernova-at-public-hotel-15th-jan-artspace-new-york-city-tickets",
@@ -1847,7 +1882,7 @@
   {
    "url": "https://dice.fm/event/8eg2rv-nitefreak-presents-hinde-with-tomer-18th-sep-99-scott-main-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T21:34:20.538481Z"
+   "lastmod": "2026-08-20T12:50:25.049343Z"
   },
   {
    "url": "https://dice.fm/event/8egy9r-palosanto-on-the-roof-sept-17th-17th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -1882,7 +1917,7 @@
   {
    "url": "https://dice.fm/event/8eq7dv-pink-mexico-album-release-genuine-connection-slugwater-20th-aug-cassette-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-22T08:06:49.283702Z"
+   "lastmod": "2026-08-20T22:31:11.253237Z"
   },
   {
    "url": "https://dice.fm/event/8eq7w2-thomas-dollbaum-23rd-sep-union-pool-new-york-tickets",
@@ -1907,7 +1942,7 @@
   {
    "url": "https://dice.fm/event/8eqgn7-superior-ingredients-dave-summer-21st-aug-the-roof-at-superior-ingredients-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T17:07:15.238353Z"
+   "lastmod": "2026-08-20T20:50:44.283415Z"
   },
   {
    "url": "https://dice.fm/event/8eqgpr-ivy-lab-a-farewell-tour-10th-oct-silo-brooklyn-brooklyn-tickets",
@@ -1932,12 +1967,12 @@
   {
    "url": "https://dice.fm/event/8eqpav-tobi-lou-same-old-jeans-tour-18th-sep-sobs-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-14T14:55:35.221767Z"
+   "lastmod": "2026-08-20T08:06:59.913061Z"
   },
   {
    "url": "https://dice.fm/event/8eqrer-hieroglyphic-being-30000ad-physical-therapy-maenad-scott-zacharias-22nd-aug-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-24T08:07:32.820858Z"
+   "lastmod": "2026-08-20T22:24:56.632177Z"
   },
   {
    "url": "https://dice.fm/event/8eqye7-sinatra-under-the-stars-21st-aug-somewhere-nowhere-nyc-new-york-tickets",
@@ -2032,7 +2067,7 @@
   {
    "url": "https://dice.fm/event/923kon-dj-harvey-extended-set-lovie-18th-sep-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T16:07:36.308091Z"
+   "lastmod": "2026-08-20T08:09:27.008116Z"
   },
   {
    "url": "https://dice.fm/event/923lkn-downstairs-karaoke-free-21st-sep-purgatory-new-york-tickets",
@@ -2060,6 +2095,16 @@
    "lastmod": "2026-08-19T20:45:19.486582Z"
   },
   {
+   "url": "https://dice.fm/event/923nln-locals-only-26th-aug-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:30:21.946367Z"
+  },
+  {
+   "url": "https://dice.fm/event/923nrd-vino-vriday-chxrry-official-brooklyn-after-party-27th-aug-jolene-sound-room-brooklyn-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T22:40:34.435762Z"
+  },
+  {
    "url": "https://dice.fm/event/923o67-sam-collins-mona-matsuoka-17th-sep-elsewhere-rooftop-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-19T08:07:04.168587Z"
@@ -2083,11 +2128,6 @@
    "url": "https://dice.fm/event/923p57-damag3-film-and-gender-eevie-echoes-the-locations-and-roseblud-25th-sep-purgatory-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-04T12:58:22.281920Z"
-  },
-  {
-   "url": "https://dice.fm/event/923rd9-a-midsummers-night-dream-peter-storm-j-meech-19th-aug-jupiter-disco-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T20:45:13.139240Z"
   },
   {
    "url": "https://dice.fm/event/923rg9-sunday-at-listen-brooklyn-30th-aug-listen-new-york-city-tickets",
@@ -2115,11 +2155,6 @@
    "lastmod": "2026-08-14T13:47:00.442921Z"
   },
   {
-   "url": "https://dice.fm/event/923wk6--karaoke-wednesday-night-19th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-16T01:45:16.204536Z"
-  },
-  {
    "url": "https://dice.fm/event/923wy9-the-love-choir-24th-aug-union-pool-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-08T08:07:56.684102Z"
@@ -2142,7 +2177,7 @@
   {
    "url": "https://dice.fm/event/925wxo-the-nursery-gerd-janson-ron-like-hell-23rd-aug-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-25T08:05:17.674184Z"
+   "lastmod": "2026-08-20T22:27:01.012334Z"
   },
   {
    "url": "https://dice.fm/event/92726n-lyra-rooftop-party-0904-4th-sep-magic-hour-rooftop-new-york-city-tickets",
@@ -2182,7 +2217,7 @@
   {
    "url": "https://dice.fm/event/92adgd-aboveten-1-hotel-rooftop-5th-sep-1-hotel-brooklyn-bridge-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T00:15:15.925309Z"
+   "lastmod": "2026-08-20T22:13:11.691565Z"
   },
   {
    "url": "https://dice.fm/event/92k2d7-azure-day-party-august-30th-30th-aug-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -2210,9 +2245,9 @@
    "lastmod": "2026-07-27T23:51:03.440459Z"
   },
   {
-   "url": "https://dice.fm/event/92kyod-johanna-samuels-record-release-25th-aug-union-pool-new-york-tickets",
+   "url": "https://dice.fm/event/92kyod-johanna-samuels-record-release-w-nuria-graham-biita-houdei-25th-aug-union-pool-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-27T08:05:35.058075Z"
+   "lastmod": "2026-08-20T18:04:28.514309Z"
   },
   {
    "url": "https://dice.fm/event/92kyrn-lp-rhythm-with-olive-f-guests-4th-oct-the-roof-at-superior-ingredients-new-york-tickets",
@@ -2222,7 +2257,7 @@
   {
    "url": "https://dice.fm/event/92r5go-superior-ingredients-lukas-frank-live-sam-allan-3rd-oct-the-roof-at-superior-ingredients-new-york-superior-ingredients-the-roof-room-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-14T10:29:07.119712Z"
+   "lastmod": "2026-08-20T03:37:00.459680Z"
   },
   {
    "url": "https://dice.fm/event/92ra6d-king-gizz-after-dark-reuben-d-presents-22nd-aug-alphaville-new-york-tickets",
@@ -2302,7 +2337,7 @@
   {
    "url": "https://dice.fm/event/av55xx-dublon-arianna-danae-18th-sep-elsewhere-rooftop-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-24T20:07:33.777256Z"
+   "lastmod": "2026-08-20T08:06:33.079182Z"
   },
   {
    "url": "https://dice.fm/event/av55yd-vuzz-world-enough-and-time-album-release-metamyther-maxx-klaxon-17th-sep-the-sultan-room-rooftop-brooklyn-tickets",
@@ -2312,7 +2347,7 @@
   {
    "url": "https://dice.fm/event/av572d-kshmr-at-the-summer-club-22nd-aug-summer-club-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T20:07:48.716570Z"
+   "lastmod": "2026-08-20T21:41:53.621305Z"
   },
   {
    "url": "https://dice.fm/event/av587d-skaterobics-all-experience-levels-instructional-class-23rd-aug-xanadu-new-york-city-tickets",
@@ -2347,7 +2382,7 @@
   {
    "url": "https://dice.fm/event/avq3e7-the-nursery-frank-tony-roman-flgel-11th-oct-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-14T15:06:39.248165Z"
+   "lastmod": "2026-08-20T22:33:25.612721Z"
   },
   {
    "url": "https://dice.fm/event/avq5nv-open-waters-sunset-boat-series-0822-22nd-aug-pier-78-at-hudson-river-park-new-york-city-tickets",
@@ -2387,7 +2422,7 @@
   {
    "url": "https://dice.fm/event/avr86x-deorro-at-the-summer-club-23rd-aug-summer-club-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T23:28:15.508872Z"
+   "lastmod": "2026-08-20T03:18:51.048766Z"
   },
   {
    "url": "https://dice.fm/event/avrk8x-cs-cleaners-tf-bundy-sam-zalta-suburban-speed-28th-aug-cassette-new-york-city-tickets",
@@ -2402,7 +2437,7 @@
   {
    "url": "https://dice.fm/event/avrp77-armen-miran-open-air-event-29th-aug-solana-park-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T17:00:38.097123Z"
+   "lastmod": "2026-08-20T00:24:36.268615Z"
   },
   {
    "url": "https://dice.fm/event/avrqmd-sunday-skate-club-ft-david-paglia-club-flush-aniche-skate-all-night-30th-aug-xanadu-new-york-city-tickets",
@@ -2477,7 +2512,7 @@
   {
    "url": "https://dice.fm/event/avx5md-durations-dasha-rush-decoder-innersha-live-human-space-machine-claudio-prc-francis-harris-afrikan-sciences-13th-nov-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T13:47:00.664257Z"
+   "lastmod": "2026-08-20T21:04:26.272702Z"
   },
   {
    "url": "https://dice.fm/event/avx6qd-dirty-bird-4th-sep-erf-gallery-new-york-city-tickets",
@@ -2552,7 +2587,7 @@
   {
    "url": "https://dice.fm/event/avxepx-mareux-7th-dec-saint-vitus-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T14:53:43.789617Z"
+   "lastmod": "2026-08-20T15:22:31.633138Z"
   },
   {
    "url": "https://dice.fm/event/avxev2-cenote-project-open-air-sunsets-13th-sep-somewhere-nowhere-nyc-new-york-tickets",
@@ -2577,7 +2612,27 @@
   {
    "url": "https://dice.fm/event/avxgr2-bushwick-princess-and-second-sun-pictures-18th-sep-drom-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-03T23:25:06.829733Z"
+   "lastmod": "2026-08-20T08:08:52.041678Z"
+  },
+  {
+   "url": "https://dice.fm/event/avxkm2-industry-mondays-31st-aug-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:36:30.715474Z"
+  },
+  {
+   "url": "https://dice.fm/event/avxkmd-industry-mondays-28th-sep-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:36:30.685185Z"
+  },
+  {
+   "url": "https://dice.fm/event/avxkw7-nora-stanley-katy-pinke-dangle-22nd-sep-cassette-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T20:23:33.873069Z"
+  },
+  {
+   "url": "https://dice.fm/event/avxkwq-sangam-fdsdf-broken-canyon-goma-20th-sep-cassette-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T20:29:35.991976Z"
   },
   {
    "url": "https://dice.fm/event/avxl3v-whipped-cream-musubi-2nd-oct-elsewhere-rooftop-new-york-tickets",
@@ -2652,7 +2707,7 @@
   {
    "url": "https://dice.fm/event/avxxvv-lucy-cooper-b-handy-fgs-3rd-dec-good-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T16:15:41.297410Z"
+   "lastmod": "2026-08-20T15:47:41.377329Z"
   },
   {
    "url": "https://dice.fm/event/avxy82-rev-vince-anderson-the-love-choir-21st-dec-union-pool-new-york-tickets",
@@ -2685,9 +2740,9 @@
    "lastmod": "2026-08-09T23:52:48.036217Z"
   },
   {
-   "url": "https://dice.fm/event/bb2ayv-minty-boi-presents-bragolin-live-in-new-york-w-carrellee-18th-sep-market-hotel-new-york-tickets",
+   "url": "https://dice.fm/event/bb2ayv-minty-boi-presents-bragolin-live-in-ny-with-ghost-cop-carrellee-howl-and-charity-kill-18th-sep-market-hotel-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T19:35:27.399852Z"
+   "lastmod": "2026-08-20T17:37:54.386527Z"
   },
   {
    "url": "https://dice.fm/event/bb2edg-weekend-warm-up-skate-4th-sep-xanadu-new-york-city-tickets",
@@ -2737,7 +2792,7 @@
   {
    "url": "https://dice.fm/event/bb7w7k-teksupport-four-tet-2nd-show-added-18th-sep-brooklyn-storehouse-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-14T14:55:25.518957Z"
+   "lastmod": "2026-08-20T08:06:04.459672Z"
   },
   {
    "url": "https://dice.fm/event/bb7yqk-joshwa-open-to-close-21st-nov-99-scott-main-room-new-york-tickets",
@@ -2762,7 +2817,7 @@
   {
    "url": "https://dice.fm/event/bb93am-angel-apricot-prairie-princess-and-kid-lake-20th-aug-purgatory-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-08T08:07:42.288864Z"
+   "lastmod": "2026-08-20T23:47:07.887898Z"
   },
   {
    "url": "https://dice.fm/event/bb93em-aisle-knot-ellie-shannon-coolant-2nd-sep-sleepwalk-new-york-city-tickets",
@@ -2802,7 +2857,7 @@
   {
    "url": "https://dice.fm/event/bb96qm-arcana-skyline-series-091826-18th-sep-the-highlight-room-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-31T19:44:46.029536Z"
+   "lastmod": "2026-08-20T08:08:29.827478Z"
   },
   {
    "url": "https://dice.fm/event/bb97bv-mike-cashen-21st-aug-moondog-hifi-new-york-city-tickets",
@@ -2812,12 +2867,12 @@
   {
    "url": "https://dice.fm/event/bb97mm-durations-dj-sprinkles-g-naone-abby-echiverri-eden-aurelius-14th-nov-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T13:47:00.671838Z"
+   "lastmod": "2026-08-20T21:04:11.410115Z"
   },
   {
    "url": "https://dice.fm/event/bb97wm-big-ass-truck-ie-11th-nov-saint-vitus-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T17:45:35.300300Z"
+   "lastmod": "2026-08-20T14:04:26.750033Z"
   },
   {
    "url": "https://dice.fm/event/bb986m-fire-in-the-hole-22nd-aug-cmon-everybody-new-york-tickets",
@@ -2868,6 +2923,26 @@
    "url": "https://dice.fm/event/bb9eyv-joris-voorn-trip-to-galaxy-tour-2nd-oct-the-chocolate-factory-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-17T23:40:22.014371Z"
+  },
+  {
+   "url": "https://dice.fm/event/bb9g5m-hrt-the-party-4th-sep-cmon-everybody-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T14:21:40.742562Z"
+  },
+  {
+   "url": "https://dice.fm/event/bb9g7o-fielded-record-release-pisha-blue-supernatural-associates-20th-sep-union-pool-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T21:13:27.673434Z"
+  },
+  {
+   "url": "https://dice.fm/event/bb9gmk-industry-mondays-7th-sep-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:36:30.702679Z"
+  },
+  {
+   "url": "https://dice.fm/event/bb9gxm-mesto-19th-sep-nebula-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T16:20:03.030437Z"
   },
   {
    "url": "https://dice.fm/event/bb9k3k-dusky-2nd-oct-elsewhere-brooklyn-new-york-tickets",
@@ -2945,11 +3020,6 @@
    "lastmod": "2026-08-10T15:00:28.937788Z"
   },
   {
-   "url": "https://dice.fm/event/bb9pok-silverfade-presents-bring-it-home-w-pop-alma-ami-ezo-yung-blasian-jan-ii-dubby-dj-20th-aug-pianos-showroom-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-07-25T08:07:52.928506Z"
-  },
-  {
    "url": "https://dice.fm/event/bb9rgv-mhmm-music-heals-my-mind-21st-aug-honeys-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-13T08:09:27.286825Z"
@@ -2995,11 +3065,6 @@
    "lastmod": "2026-07-31T18:12:43.199004Z"
   },
   {
-   "url": "https://dice.fm/event/bboe8k-a-lovely-little-evening-with-wetsuit-provider-same-vein-19th-aug-the-sultan-room-rooftop-brooklyn-tickets",
-   "city_slug": "brooklyn",
-   "lastmod": "2026-08-17T18:32:35.697631Z"
-  },
-  {
    "url": "https://dice.fm/event/bbogvg-1-hotel-haunted-lounge-halloween-1031-31st-oct-harriets-lounge-1-hotel-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-17T18:10:44.241469Z"
@@ -3017,7 +3082,7 @@
   {
    "url": "https://dice.fm/event/dk23ne-rossi-jamback-aline-umber-catladyhi-21st-aug-brooklyn-storehouse-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T15:29:16.158229Z"
+   "lastmod": "2026-08-20T20:33:04.733852Z"
   },
   {
    "url": "https://dice.fm/event/dk27lq-aboveten-after-dark-at-1-hotel-3rd-oct-harriets-lounge-1-hotel-new-york-city-tickets",
@@ -3062,12 +3127,17 @@
   {
    "url": "https://dice.fm/event/dkd7lo-dutty-after-dark-labor-day-weekend-edition-4th-sep-deluxx-fluxx-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T23:23:25.956681Z"
+   "lastmod": "2026-08-20T08:10:32.162116Z"
   },
   {
-   "url": "https://dice.fm/event/dkd8mq-rachel-raven-tanasha-g-more-10th-oct-brooklyn-music-kitchen-new-york-city-tickets",
+   "url": "https://dice.fm/event/dkd7vo-hiho-happy-hour-2026-17th-sep-boxers-chelsea-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-14T15:27:31.677950Z"
+   "lastmod": "2026-08-20T08:10:37.933624Z"
+  },
+  {
+   "url": "https://dice.fm/event/dkd8mq-rachel-raven-tanasha-g-greater-bird-of-paradise-more-10th-oct-brooklyn-music-kitchen-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T03:38:17.863249Z"
   },
   {
    "url": "https://dice.fm/event/dkd9mo-rooftop-ball-drop-view-31st-dec-margaritaville-time-square-new-york-city-tickets",
@@ -3090,9 +3160,9 @@
    "lastmod": "2026-08-19T13:44:47.586444Z"
   },
   {
-   "url": "https://dice.fm/event/dkddgq-tba-25th-aug-altheas-hideaway-nyc-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T16:15:12.662893Z"
+   "url": "https://dice.fm/event/dkdd5o-banda-al9-the-burkharts-3rd-nov-the-sultan-room-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-18T18:30:12.745562Z"
   },
   {
    "url": "https://dice.fm/event/dkde2g-sinful-halloween-ft-sistek-30th-oct-the-1896-new-york-tickets",
@@ -3143,11 +3213,6 @@
    "url": "https://dice.fm/event/dkdp9v--klovis-gaynor-the-urinal-cakes-jewel-thief-investigation-7th-oct-sleepwalk-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-15T00:05:59.197963Z"
-  },
-  {
-   "url": "https://dice.fm/event/dkdpgo-the-open-deck-presents-spin-city-20th-aug-moondog-hifi-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-14T13:30:18.371980Z"
   },
   {
    "url": "https://dice.fm/event/dkdpko-scalp-matinee-show-27th-sep-saint-vitus-new-york-city-tickets",
@@ -3207,12 +3272,12 @@
   {
    "url": "https://dice.fm/event/dkm38e-the-nursery-benji-b-nabihah-iqbal-dj-13th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-15T08:05:14.075631Z"
+   "lastmod": "2026-08-20T22:30:22.708177Z"
   },
   {
    "url": "https://dice.fm/event/dko2nv-oscar-g-brooklyn-residency-kickoff-22nd-aug-listen-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T23:01:32.551276Z"
+   "lastmod": "2026-08-20T02:34:32.092872Z"
   },
   {
    "url": "https://dice.fm/event/dko8lg-mixmag-lab-nyc-ft-habibis-house-w-dj-habibeats-17th-oct-webster-hall-new-york-tickets",
@@ -3262,7 +3327,7 @@
   {
    "url": "https://dice.fm/event/dkp93q-arodes-4hr-set-9th-oct-99-scott-main-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-13T18:09:54.249485Z"
+   "lastmod": "2026-08-20T12:50:48.359948Z"
   },
   {
    "url": "https://dice.fm/event/dkpbve-afro-carnival-riddim-n-bass-28th-aug-the-sultan-room-new-york-tickets",
@@ -3352,7 +3417,7 @@
   {
    "url": "https://dice.fm/event/eo6dmo-mochakk-dj-swisha-nocapz-leonce-30th-aug-ruins-at-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-07T14:36:52.819090Z"
+   "lastmod": "2026-08-20T18:30:41.344404Z"
   },
   {
    "url": "https://dice.fm/event/eo6dvy-buzz-kull-kontravoid-normal-bias-20th-sep-saint-vitus-new-york-city-tickets",
@@ -3362,7 +3427,7 @@
   {
    "url": "https://dice.fm/event/eo6grd-mestiza-presents-sacro-under-the-k-bridge-18th-sep-creekside-under-the-k-bridge-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T17:04:24.445847Z"
+   "lastmod": "2026-08-20T08:07:46.886935Z"
   },
   {
    "url": "https://dice.fm/event/eo6kao-buckaroo-30th-aug-desert-5-spot-ny-new-york-city-tickets",
@@ -3393,6 +3458,16 @@
    "url": "https://dice.fm/event/eo6mo6-halloween-at-yesterdays-1031-31st-oct-yesterdays-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-13T00:19:13.382751Z"
+  },
+  {
+   "url": "https://dice.fm/event/eo6neo-yalla-yalla-27th-aug-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:39:37.359652Z"
+  },
+  {
+   "url": "https://dice.fm/event/eo6npd-esmo-quinn-with-special-guests-new-yacht-city-23rd-aug-brooklyn-brewery-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T14:15:19.617566Z"
   },
   {
    "url": "https://dice.fm/event/eo6p86-honey-vhs-alright-star-myella-17th-nov-sleepwalk-new-york-city-tickets",
@@ -3447,7 +3522,7 @@
   {
    "url": "https://dice.fm/event/eo6w9o-sinatra-under-the-stars-18th-sep-somewhere-nowhere-nyc-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-05T19:49:43.949434Z"
+   "lastmod": "2026-08-20T08:09:04.316546Z"
   },
   {
    "url": "https://dice.fm/event/eo6wgo-incendiary-sin-against-sin-total-meltdown-1st-oct-saint-vitus-new-york-city-tickets",
@@ -3467,7 +3542,7 @@
   {
    "url": "https://dice.fm/event/eo6xg6-gil-glaze-18th-sep-nebula-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-17T21:17:32.885153Z"
+   "lastmod": "2026-08-20T08:09:33.488087Z"
   },
   {
    "url": "https://dice.fm/event/eo6xpd-marie-davidson-jubilee-x-paurro-23rd-aug-signal-new-york-city-tickets",
@@ -3478,11 +3553,6 @@
    "url": "https://dice.fm/event/eo6yn6-diamond-club-safety-trance-manuka-honey-24th-oct-paragon-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-12T17:11:31.825634Z"
-  },
-  {
-   "url": "https://dice.fm/event/eo6yqd-low-key-high-key-27th-aug-pianos-the-mezzanine-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-12T08:08:11.489417Z"
   },
   {
    "url": "https://dice.fm/event/eo856d-healing-gems-hannah-telle-smiling-beth-23rd-aug-the-sultan-room-new-york-tickets",
@@ -3520,9 +3590,9 @@
    "lastmod": "2026-08-05T19:20:12.938787Z"
   },
   {
-   "url": "https://dice.fm/event/eomn5y-unheard-at-domino-park-emilio-modeste-friends-20th-aug-domino-square-new-york-city-tickets",
+   "url": "https://dice.fm/event/eomn5y-unheard-emilio-modeste-friends-21st-aug-the-lot-radio-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T15:04:33.497905Z"
+   "lastmod": "2026-08-20T21:14:27.773136Z"
   },
   {
    "url": "https://dice.fm/event/eomnky-aboveten-after-dark-at-1-hotel-10th-oct-harriets-lounge-1-hotel-new-york-city-tickets",
@@ -3555,11 +3625,6 @@
    "lastmod": "2026-08-07T08:07:42.303980Z"
   },
   {
-   "url": "https://dice.fm/event/eox9oy-evan-giia-the-arlo-rooftop-12th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-14T08:07:31.586501Z"
-  },
-  {
    "url": "https://dice.fm/event/eoxbn6--evan-mcmillian-whipporwhill-adam-najemian-23rd-aug-sleepwalk-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-03T19:57:38.649591Z"
@@ -3580,9 +3645,9 @@
    "lastmod": "2026-07-26T08:05:39.083190Z"
   },
   {
-   "url": "https://dice.fm/event/eoxvey-chaos-in-the-cbd-present-dust-till-dawn-29th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets",
+   "url": "https://dice.fm/event/eoxvey-chaos-in-the-cbd-joe-claussell-floorplan-more-day-night-29th-aug-knockdown-center-new-york-ruins-at-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-12T14:12:41.469881Z"
+   "lastmod": "2026-08-20T18:43:48.826114Z"
   },
   {
    "url": "https://dice.fm/event/eoxwq2-yheti-b2b-toadface-extended-av-set-4th-sep-silo-brooklyn-brooklyn-tickets",
@@ -3617,7 +3682,7 @@
   {
    "url": "https://dice.fm/event/g537ob-brunello-presents-mellow-circus-20th-sep-ruins-at-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-17T23:24:19.429901Z"
+   "lastmod": "2026-08-20T15:27:54.942258Z"
   },
   {
    "url": "https://dice.fm/event/g53875-hollow-bastion-savanna-ruth-wulfer-untitled-freak-30th-sep-sleepwalk-new-york-city-tickets",
@@ -3687,7 +3752,7 @@
   {
    "url": "https://dice.fm/event/g5ad6a-the-nursery-leon-vynehall-all-day-long-30th-aug-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-01T08:05:17.050659Z"
+   "lastmod": "2026-08-20T22:28:41.505604Z"
   },
   {
    "url": "https://dice.fm/event/g5ag9a-haus-on-hudson-sunset-yacht-party-19th-sep-skyport-marina-new-york-tickets",
@@ -3735,6 +3800,16 @@
    "lastmod": "2026-07-20T20:10:41.180779Z"
   },
   {
+   "url": "https://dice.fm/event/g5b8ka-yacht-rock-sk8-ft-rich-medina-skate-19th-sep-xanadu-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T16:29:53.443634Z"
+  },
+  {
+   "url": "https://dice.fm/event/g5b8xb-fugu-dugu-the-legend-of-baba-yaga-album-release-concert-28th-oct-drom-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T20:32:59.959949Z"
+  },
+  {
    "url": "https://dice.fm/event/g5b9rp-tommie-sunshine-amber-valenine-sprfrk-5th-sep-dead-letter-no9-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-18T01:18:53.165406Z"
@@ -3752,7 +3827,7 @@
   {
    "url": "https://dice.fm/event/g5baea-shapes-at-lillistar-22nd-aug-lillistar-at-moxy-williamsburg-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T18:40:00.753932Z"
+   "lastmod": "2026-08-20T14:32:25.149524Z"
   },
   {
    "url": "https://dice.fm/event/g5bb5p-fiebre-tropical-29th-aug-altheas-hideaway-nyc-new-york-city-tickets",
@@ -3802,7 +3877,7 @@
   {
    "url": "https://dice.fm/event/g5bg36-pierce-abernathy-every-leaf-every-stem-book-release-21st-aug-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-13T18:05:52.507361Z"
+   "lastmod": "2026-08-20T18:10:08.289334Z"
   },
   {
    "url": "https://dice.fm/event/g5bg5a-loco-carnaval-da-mike-30th-aug-somewhere-nowhere-nyc-new-york-tickets",
@@ -3850,11 +3925,6 @@
    "lastmod": "2026-08-14T08:08:07.682335Z"
   },
   {
-   "url": "https://dice.fm/event/g5bqab-colin-heshmat-trio-19th-aug-mad-bar-lounge-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-17T15:45:12.018764Z"
-  },
-  {
    "url": "https://dice.fm/event/g5bqe6-durations-ballet-buttechno-live-av-klein-matana-roberts-significant-other-live-av-12th-nov-public-records-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-18T13:47:00.632865Z"
@@ -3862,7 +3932,7 @@
   {
    "url": "https://dice.fm/event/g5bqp2-acropolis-by-aziman-tribe-21st-aug-altheas-hideaway-nyc-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-14T17:30:20.183166Z"
+   "lastmod": "2026-08-20T14:21:26.420495Z"
   },
   {
    "url": "https://dice.fm/event/g5bqy6-stereo-mandrax-free-w-rsvp-embryoroom-id-sus-torimimasataka-japan-6th-sep-pianos-showroom-new-york-tickets",
@@ -3920,6 +3990,16 @@
    "lastmod": "2026-07-31T18:45:31.613857Z"
   },
   {
+   "url": "https://dice.fm/event/k652pp-cole-berliner-robert-earl-thomas-ofir-ganon-9th-sep-cassette-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T08:10:25.169066Z"
+  },
+  {
+   "url": "https://dice.fm/event/k652yl-vereda-international-ft-julian-jackson-11th-sep-sleepwalk-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T21:15:26.152642Z"
+  },
+  {
    "url": "https://dice.fm/event/k655w8-the-ritual-w-anan-louie-vega-h0l0-18th-oct-h0l0-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-18T20:48:51.963979Z"
@@ -3927,7 +4007,7 @@
   {
    "url": "https://dice.fm/event/k655yl-carly-rae-jepsen-day-and-night-album-release-party-17th-sep-cmon-everybody-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T15:51:26.220895Z"
+   "lastmod": "2026-08-20T08:10:11.898863Z"
   },
   {
    "url": "https://dice.fm/event/k659e9-port-ross-dan-carr-zach-zaitlin-kai-b-8th-sep-cassette-new-york-city-tickets",
@@ -3950,9 +4030,9 @@
    "lastmod": "2026-08-12T05:02:47.849830Z"
   },
   {
-   "url": "https://dice.fm/event/k65ba8-the-barrytones-the-oxford-drive-band-the-obi-strips-more-26th-sep-brooklyn-music-kitchen-new-york-city-tickets",
+   "url": "https://dice.fm/event/k65ba8-the-barrytones-the-oxford-drive-band-the-obi-strips-denos-party-house-more-26th-sep-brooklyn-music-kitchen-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-10T01:47:40.247688Z"
+   "lastmod": "2026-08-20T02:34:43.393059Z"
   },
   {
    "url": "https://dice.fm/event/k65dk9-fagnet-23rd-aug-cmon-everybody-new-york-tickets",
@@ -3992,7 +4072,7 @@
   {
    "url": "https://dice.fm/event/k65lmq-zerozero-presents-diamond-field-turbo-goth-burial-woods-26th-aug-pianos-showroom-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T08:07:48.097900Z"
+   "lastmod": "2026-08-20T15:29:32.326605Z"
   },
   {
    "url": "https://dice.fm/event/k65lqo-azure-day-party-october-11th-11th-oct-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -4000,9 +4080,9 @@
    "lastmod": "2026-08-17T18:58:18.664865Z"
   },
   {
-   "url": "https://dice.fm/event/k65lro-descendants-an-afrohouse-experience-12th-sep-silo-brooklyn-brooklyn-tickets",
+   "url": "https://dice.fm/event/k65lro-descendants-12th-sep-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-08-19T08:07:50.172399Z"
+   "lastmod": "2026-08-20T00:38:41.330148Z"
   },
   {
    "url": "https://dice.fm/event/k65m2o-wild-card-comedy-1st-sep-alphaville-new-york-tickets",
@@ -4055,9 +4135,9 @@
    "lastmod": "2026-08-18T13:47:00.711723Z"
   },
   {
-   "url": "https://dice.fm/event/k65ywq-povverchords-more-3rd-sep-brooklyn-music-kitchen-new-york-city-tickets",
+   "url": "https://dice.fm/event/k65ywq-povverchords-astral-barreleye-more-3rd-sep-brooklyn-music-kitchen-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-15T08:07:25.084460Z"
+   "lastmod": "2026-08-20T02:51:07.718221Z"
   },
   {
    "url": "https://dice.fm/event/k692y9-sol-september-27th-27th-sep-1-hotel-brooklyn-bridge-new-york-city-harriets-lounge-1-hotel-new-york-city-tickets",
@@ -4067,7 +4147,7 @@
   {
    "url": "https://dice.fm/event/k69eol-aboveten-1-hotel-rooftop-3rd-oct-1-hotel-brooklyn-bridge-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-07T15:25:46.417149Z"
+   "lastmod": "2026-08-20T21:35:20.553871Z"
   },
   {
    "url": "https://dice.fm/event/k69vb9-ginja-ethan-tomas-birthday-edition-22nd-aug-silo-brooklyn-brooklyn-tickets",
@@ -4190,14 +4270,9 @@
    "lastmod": "2026-08-06T19:24:54.509877Z"
   },
   {
-   "url": "https://dice.fm/event/k6lv6o-trivia-thursdays-20th-aug-brooklyn-brewery-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-13T13:41:49.611227Z"
-  },
-  {
    "url": "https://dice.fm/event/k6lw3p-phantasma-phase-fatale-juliana-huxtable-nymph-22nd-aug-paragon-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T17:53:31.249691Z"
+   "lastmod": "2026-08-20T17:06:05.500669Z"
   },
   {
    "url": "https://dice.fm/event/k6y2eq-brown-horse-residency-night-1-w-jackie-west-29th-aug-union-pool-new-york-tickets",
@@ -4302,7 +4377,7 @@
   {
    "url": "https://dice.fm/event/l875xp-clck-osg-mood-merchant-20th-aug-gold-sounds-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-12T23:30:12.892404Z"
+   "lastmod": "2026-08-20T22:30:13.267109Z"
   },
   {
    "url": "https://dice.fm/event/l8768r-virgin-hotels-31st-dec-virgin-hotels-nyc-new-york-city-tickets",
@@ -4327,7 +4402,7 @@
   {
    "url": "https://dice.fm/event/l878lw-qts-brooklyn-17th-oct-3-dollar-bill-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T22:50:57.177319Z"
+   "lastmod": "2026-08-20T18:40:23.675778Z"
   },
   {
    "url": "https://dice.fm/event/l878rl-booker-stardrum-evan-shornstein-alfredo-coln-trio-4th-sep-public-records-new-york-tickets",
@@ -4407,7 +4482,7 @@
   {
    "url": "https://dice.fm/event/l87knr-sabine-blaizin-val-fleury-miss-gypsy-very-j-18th-sep-dead-letter-no9-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T01:01:20.679759Z"
+   "lastmod": "2026-08-20T08:09:36.878933Z"
   },
   {
    "url": "https://dice.fm/event/l87kvl-riva-sunset-gathering-october-10th-10th-oct-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -4417,7 +4492,22 @@
   {
    "url": "https://dice.fm/event/l87lqb-ballet-trickpony-notte-infinita-live-yaki-17th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T08:07:05.815029Z"
+   "lastmod": "2026-08-20T22:16:50.243180Z"
+  },
+  {
+   "url": "https://dice.fm/event/l87mdx-inter-arma-chained-to-the-bottom-of-the-ocean-15th-oct-saint-vitus-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T20:30:55.875711Z"
+  },
+  {
+   "url": "https://dice.fm/event/l87mel-industry-mondays-14th-sep-altheas-hideaway-nyc-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T13:36:30.693776Z"
+  },
+  {
+   "url": "https://dice.fm/event/l87mrr-chris-lake-11th-sep-marquee-new-york-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T16:51:14.923391Z"
   },
   {
    "url": "https://dice.fm/event/l87ndw-the-serfs-cube-content-blocks-record-release-1st-oct-union-pool-new-york-tickets",
@@ -4532,17 +4622,12 @@
   {
    "url": "https://dice.fm/event/l8d8vp-the-nursery-eli-escobar-benny-soto-7th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-09T08:05:13.649475Z"
+   "lastmod": "2026-08-20T22:29:08.559535Z"
   },
   {
    "url": "https://dice.fm/event/l8dbmp-marco-faraone-adam-meliani-remi-jolie-21st-aug-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-08-19T15:11:59.621313Z"
-  },
-  {
-   "url": "https://dice.fm/event/l8dd6r-anyone-awake-wilmah-the-breaks-inc-19th-aug-the-sultan-room-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-18T19:51:41.085218Z"
+   "lastmod": "2026-08-20T16:44:02.051482Z"
   },
   {
    "url": "https://dice.fm/event/l8dldw-riva-sunset-gathering-aug-29-29th-aug-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -4657,7 +4742,7 @@
   {
    "url": "https://dice.fm/event/mx3epk-aboveten-1-hotel-rooftop-20th-aug-1-hotel-brooklyn-bridge-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-22T08:05:07.760113Z"
+   "lastmod": "2026-08-20T20:47:38.234718Z"
   },
   {
    "url": "https://dice.fm/event/mx76d9-everyday-afrique-nyc-7th-sep-nowadays-new-york-tickets",
@@ -4732,7 +4817,7 @@
   {
    "url": "https://dice.fm/event/mxg7pv-superior-ingredients-rello-28th-aug-the-roof-at-superior-ingredients-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-17T15:41:37.173936Z"
+   "lastmod": "2026-08-20T17:51:07.482591Z"
   },
   {
    "url": "https://dice.fm/event/mxg9wr--karaoke-thursday-night-20th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets",
@@ -4748,11 +4833,6 @@
    "url": "https://dice.fm/event/mxgew9-open-decks-w-steen-and-finding-your-niche-26th-aug-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
    "lastmod": "2026-07-28T08:05:55.309154Z"
-  },
-  {
-   "url": "https://dice.fm/event/mxgkww-wednesday-on-wheels-ft-big-bob-skate-all-night-19th-aug-xanadu-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T15:36:29.901405Z"
   },
   {
    "url": "https://dice.fm/event/mxgnew-friday-midnight-on-the-hudson-0904-4th-sep-skyport-marina-new-york-tickets",
@@ -4812,7 +4892,7 @@
   {
    "url": "https://dice.fm/event/mxn5pk-untitled-art-star-s4-r3-fluxus-28th-aug-cmon-everybody-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-06T08:08:25.631658Z"
+   "lastmod": "2026-08-20T15:00:12.512059Z"
   },
   {
    "url": "https://dice.fm/event/mxn5w9-loco-carnaval-sundays-27th-sep-somewhere-nowhere-nyc-new-york-tickets",
@@ -4838,11 +4918,6 @@
    "url": "https://dice.fm/event/mxn7v9-torche-spotlights-7th-nov-saint-vitus-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-14T15:05:38.285423Z"
-  },
-  {
-   "url": "https://dice.fm/event/mxn93k-open-decks-rooftop-edition-with-surprise-guests-19th-aug-altheas-hideaway-nyc-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T15:27:23.807237Z"
   },
   {
    "url": "https://dice.fm/event/mxn9ew-durations-breadtree-farms-presents-remember-we-are-born-in-the-garden-with-meredith-graves-11th-nov-public-records-new-york-tickets",
@@ -4905,14 +4980,14 @@
    "lastmod": "2026-08-14T18:38:48.608174Z"
   },
   {
-   "url": "https://dice.fm/event/mxnmyw-hot-grrrl-shit-zine-release-party-19th-aug-seventh-heaven-bar-karaoke-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-07-28T08:07:29.360526Z"
-  },
-  {
    "url": "https://dice.fm/event/mxnn69-pregame-armii1n-caleb-hobbes-leroy-29th-aug-the-onyx-room-at-house-of-yes-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-19T08:08:25.855980Z"
+  },
+  {
+   "url": "https://dice.fm/event/mxnnnk-integrity-indecision-deadguy-neolithic-28th-nov-saint-vitus-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T16:06:55.848118Z"
   },
   {
    "url": "https://dice.fm/event/mxnpek-weekend-warm-up-skate-25th-sep-xanadu-new-york-city-tickets",
@@ -4935,9 +5010,9 @@
    "lastmod": "2026-07-29T15:59:52.386067Z"
   },
   {
-   "url": "https://dice.fm/event/mxnqnw-midgar-ok-eg-live-upsammy-severja-kamran-sadeghi-live-aion-jacob-gorchov-18th-sep-public-records-new-york-tickets",
+   "url": "https://dice.fm/event/mxnqnw-midgar-upsammy-kamran-sadeghi-ok-eg-live-severja-aion-jacob-gorchov-18th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-05T13:47:00.398741Z"
+   "lastmod": "2026-08-20T18:20:09.347423Z"
   },
   {
    "url": "https://dice.fm/event/mxnvp9-brandon-seabrook-utility-modern-with-bill-frisell-marcus-gilmore-rashaan-carter-zeena-parkins-9th-sep-public-records-new-york-tickets",
@@ -5032,7 +5107,7 @@
   {
    "url": "https://dice.fm/event/nv9e7l-aboveten-1-hotel-rooftop-17th-oct-1-hotel-brooklyn-bridge-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-07T15:25:46.434809Z"
+   "lastmod": "2026-08-20T22:01:56.602815Z"
   },
   {
    "url": "https://dice.fm/event/nv9rk8-arlo-parks-desire-tour-1st-oct-knockdown-center-new-york-tickets",
@@ -5082,7 +5157,7 @@
   {
    "url": "https://dice.fm/event/nvp5o9-very-18th-sep-cmon-everybody-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-17T23:17:58.919827Z"
+   "lastmod": "2026-08-20T08:09:36.586947Z"
   },
   {
    "url": "https://dice.fm/event/nvp6dl-colin-heshmat-trio-9th-sep-mad-bar-lounge-new-york-city-tickets",
@@ -5170,11 +5245,6 @@
    "lastmod": "2026-07-31T21:53:45.248833Z"
   },
   {
-   "url": "https://dice.fm/event/nvpk29-tv-buddha-superfan-and-reading-19th-aug-purgatory-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-19T22:08:16.384198Z"
-  },
-  {
    "url": "https://dice.fm/event/nvpk93-open-decks-w-cevich-29th-sep-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
    "lastmod": "2026-08-09T02:54:30.022575Z"
@@ -5192,17 +5262,12 @@
   {
    "url": "https://dice.fm/event/nvpml5-last-chance-dancers-un-dia-normal-18th-sep-sleepwalk-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-15T00:01:11.152787Z"
+   "lastmod": "2026-08-20T08:08:20.657376Z"
   },
   {
    "url": "https://dice.fm/event/nvpmml-dirty-bird-12th-sep-erf-gallery-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-14T18:37:31.123473Z"
-  },
-  {
-   "url": "https://dice.fm/event/nvpn53-dear-diary-opening-reception-20th-aug-baci-studio-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-13T00:30:12.371119Z"
   },
   {
    "url": "https://dice.fm/event/nvpnlq-gyalhattan-a-dancehallhip-hop-party-5th-sep-deluxx-fluxx-new-york-city-tickets",
@@ -5245,6 +5310,11 @@
    "lastmod": "2026-08-06T08:09:14.442320Z"
   },
   {
+   "url": "https://dice.fm/event/nvpx89-dearjune-silvera-blair-2nd-sep-gold-sounds-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T16:02:00.979706Z"
+  },
+  {
    "url": "https://dice.fm/event/nvpya3-camille-schmidt-wilby-bones-forever-2nd-sep-the-sultan-room-rooftop-brooklyn-tickets",
    "city_slug": "brooklyn",
    "lastmod": "2026-08-04T08:06:28.512737Z"
@@ -5270,9 +5340,9 @@
    "lastmod": "2026-08-13T14:11:46.550799Z"
   },
   {
-   "url": "https://dice.fm/event/oe7akm-halloween-tareneh-whisper-doll-guyscrapers-28th-aug-gold-sounds-new-york-tickets",
+   "url": "https://dice.fm/event/oe7akm-halloween-taraneh-whisper-doll-guyscrapers-28th-aug-gold-sounds-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-30T08:07:24.265088Z"
+   "lastmod": "2026-08-20T16:41:51.726014Z"
   },
   {
    "url": "https://dice.fm/event/oe7axy-fifteen0eight-20th-sep-the-sultan-room-new-york-tickets",
@@ -5327,7 +5397,7 @@
   {
    "url": "https://dice.fm/event/oe7x5g-know-good-presents-against-all-odds-tour-24th-oct-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-07-14T14:55:38.183971Z"
+   "lastmod": "2026-08-20T16:02:34.412771Z"
   },
   {
    "url": "https://dice.fm/event/oe83lm-steve-angello-bob-moses-club-set-we-belong-here-central-park-2026-104-4th-oct-wollman-rink-in-central-park-new-york-tickets",
@@ -5370,9 +5440,9 @@
    "lastmod": "2026-08-18T08:07:35.780178Z"
   },
   {
-   "url": "https://dice.fm/event/oe87ma-locals-only-23rd-aug-altheas-hideaway-nyc-new-york-city-tickets",
+   "url": "https://dice.fm/event/oe87ma-locals-only-rooftop-cocktails-23rd-aug-altheas-hideaway-nyc-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T15:45:10.650302Z"
+   "lastmod": "2026-08-20T13:25:25.555928Z"
   },
   {
    "url": "https://dice.fm/event/oe87xy-azure-day-party-september-20th-20th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -5380,9 +5450,14 @@
    "lastmod": "2026-08-17T18:46:18.454469Z"
   },
   {
-   "url": "https://dice.fm/event/oe8aby-bikini-fashion-show-20th-aug-altheas-hideaway-nyc-new-york-city-tickets",
+   "url": "https://dice.fm/event/oe89r5-steam-labor-day-rooftop-party-7th-sep-the-sultan-room-rooftop-brooklyn-tickets",
+   "city_slug": "brooklyn",
+   "lastmod": "2026-08-20T15:23:53.710300Z"
+  },
+  {
+   "url": "https://dice.fm/event/oe8aby-bikini-fashion-show-25th-aug-altheas-hideaway-nyc-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-14T17:00:20.525612Z"
+   "lastmod": "2026-08-20T02:41:02.697167Z"
   },
   {
    "url": "https://dice.fm/event/oe8ama-subelo-dembow-bachata-mambo-tipico-21-5th-sep-the-meadows-new-york-tickets",
@@ -5417,7 +5492,7 @@
   {
    "url": "https://dice.fm/event/oe8k6m-john-andrews-and-the-yawns-ruby-of-thanks-keven-louis-lareau-18th-sep-union-pool-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-20T19:30:13.625704Z"
+   "lastmod": "2026-08-20T08:07:55.955913Z"
   },
   {
    "url": "https://dice.fm/event/oe8kba-seth-hills-29th-aug-nebula-new-york-tickets",
@@ -5472,7 +5547,7 @@
   {
    "url": "https://dice.fm/event/oe8oog-dod-at-the-summer-club-5th-sep-summer-club-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-12T17:41:17.237374Z"
+   "lastmod": "2026-08-20T16:51:42.046567Z"
   },
   {
    "url": "https://dice.fm/event/oe8p2m-city-of-gods-festival-23rd-oct-industry-city-new-york-city-tickets",
@@ -5547,17 +5622,12 @@
   {
    "url": "https://dice.fm/event/oe8xgm-lets-get-loud-summer-fade-22nd-aug-moz-nyc-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-30T08:09:12.428405Z"
+   "lastmod": "2026-08-20T02:35:06.606671Z"
   },
   {
    "url": "https://dice.fm/event/oe8yxm-skaterobics-all-experience-levels-instructional-class-30th-sep-xanadu-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-19T15:35:11.792062Z"
-  },
-  {
-   "url": "https://dice.fm/event/oea62y-craig-greenberg-band-birthday-show-20th-aug-drom-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-07T18:13:28.032068Z"
   },
   {
    "url": "https://dice.fm/event/oea9ka-helado-negro-and-reyna-tropical-present-helado-tropical-25th-oct-knockdown-center-new-york-tickets",
@@ -5592,7 +5662,7 @@
   {
    "url": "https://dice.fm/event/oedegy-lyra-rooftop-party-0918-18th-sep-magic-hour-rooftop-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-31T19:46:18.180120Z"
+   "lastmod": "2026-08-20T08:05:40.342387Z"
   },
   {
    "url": "https://dice.fm/event/oedovm-those-nights-september-25th-25th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -5602,7 +5672,7 @@
   {
    "url": "https://dice.fm/event/oepgqr-the-nursery-floorplan-carista-4th-oct-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-14T15:06:39.239093Z"
+   "lastmod": "2026-08-20T22:32:46.068099Z"
   },
   {
    "url": "https://dice.fm/event/oepwyy-saturday-midnight-on-the-hudson-0822-22nd-aug-skyport-marina-new-york-tickets",
@@ -5612,17 +5682,17 @@
   {
    "url": "https://dice.fm/event/oev6wg-aboveten-1-hotel-rooftop-19th-sep-1-hotel-brooklyn-bridge-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-23T15:00:58.967616Z"
+   "lastmod": "2026-08-20T22:22:37.557106Z"
   },
   {
    "url": "https://dice.fm/event/oevm75-memba-29th-aug-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-07-31T08:05:13.695375Z"
+   "lastmod": "2026-08-20T16:01:38.445876Z"
   },
   {
    "url": "https://dice.fm/event/py865y-moblack-records-open-air-takeover-4th-sep-ruins-at-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T19:25:55.255908Z"
+   "lastmod": "2026-08-20T15:25:54.737997Z"
   },
   {
    "url": "https://dice.fm/event/py8qwp-palosanto-on-the-roof-sept-10th-10th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -5637,7 +5707,7 @@
   {
    "url": "https://dice.fm/event/pyb3kp-rhythm-residency-5-allison-miller-joe-dyson-23rd-aug-michiko-studios-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-15T13:25:59.862284Z"
+   "lastmod": "2026-08-20T13:24:50.301171Z"
   },
   {
    "url": "https://dice.fm/event/pyb5nl-whomadewho-3rd-sep-marquee-skydeck-at-edge-hudson-yards-new-york-city-tickets",
@@ -5657,7 +5727,7 @@
   {
    "url": "https://dice.fm/event/pybxyl-ferry-corsten-22nd-aug-brooklyn-roots-collective-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T21:28:53.817169Z"
+   "lastmod": "2026-08-20T12:45:56.330479Z"
   },
   {
    "url": "https://dice.fm/event/pyd3gl-aboveten-after-dark-at-1-hotel-19th-sep-harriets-lounge-1-hotel-new-york-city-tickets",
@@ -5722,7 +5792,7 @@
   {
    "url": "https://dice.fm/event/pynky8-parlor-greens-18th-sep-the-sultan-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-27T23:30:08.379146Z"
+   "lastmod": "2026-08-20T08:07:06.106458Z"
   },
   {
    "url": "https://dice.fm/event/pynlal-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-21st-nov-lost-in-paradise-rooftop-new-york-city-tickets",
@@ -5748,6 +5818,11 @@
    "url": "https://dice.fm/event/pyw2wp-sunday-at-listen-brooklyn-23rd-aug-listen-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-18T01:57:17.090242Z"
+  },
+  {
+   "url": "https://dice.fm/event/pyw3ny-fox-indigo-camille-de-beus-hey-fever-6th-oct-sleepwalk-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T21:29:56.562669Z"
   },
   {
    "url": "https://dice.fm/event/pyw59l-open-decks-w-cevich-30th-sep-silo-brooklyn-brooklyn-tickets",
@@ -5900,11 +5975,6 @@
    "lastmod": "2026-08-15T08:06:32.079461Z"
   },
   {
-   "url": "https://dice.fm/event/pywqly-midnight-machina-20th-aug-lavan-541-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T23:24:17.259625Z"
-  },
-  {
    "url": "https://dice.fm/event/pywrpy-the-dead-dance-halloween-party-24th-oct-drom-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-06T15:47:00.572350Z"
@@ -5922,12 +5992,12 @@
   {
    "url": "https://dice.fm/event/pywvql-dos-flakos-camila-valero-raphael-ernesto-more-21st-aug-dead-letter-no9-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-23T08:08:50.111626Z"
+   "lastmod": "2026-08-20T20:18:56.702715Z"
   },
   {
    "url": "https://dice.fm/event/pyww7p-flamenco-jazz-jam-6th-sep-drom-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T08:08:30.638328Z"
+   "lastmod": "2026-08-20T21:37:09.712570Z"
   },
   {
    "url": "https://dice.fm/event/pywwa8-heat-house-fahlberg-13th-nov-silo-brooklyn-brooklyn-tickets",
@@ -5942,7 +6012,7 @@
   {
    "url": "https://dice.fm/event/pywwxl-breachway-lily-too-ella-goodwin-16th-sep-cassette-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T18:53:04.666104Z"
+   "lastmod": "2026-08-20T08:10:21.233303Z"
   },
   {
    "url": "https://dice.fm/event/pywyyy-massano-konstantin-sibold-soel-23rd-oct-knockdown-center-new-york-tickets",
@@ -5965,11 +6035,6 @@
    "lastmod": "2026-08-17T03:24:11.209878Z"
   },
   {
-   "url": "https://dice.fm/event/q2ldy9-rhythm-residency-1-ari-hoenig-daniel-prim-19th-aug-michiko-studios-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T22:07:13.622055Z"
-  },
-  {
    "url": "https://dice.fm/event/q2lery-gibby-haynes-butthole-surfers-mania-august-residency-night-4-w-solarization-26th-aug-union-pool-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-07-28T08:05:26.981171Z"
@@ -5982,7 +6047,7 @@
   {
    "url": "https://dice.fm/event/q2lv3y-reflections-gigi-masin-18th-sep-st-ann-the-holy-trinity-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-07-14T14:55:29.539366Z"
+   "lastmod": "2026-08-20T08:06:31.445570Z"
   },
   {
    "url": "https://dice.fm/event/q2lxya-reggaeton-fridays-28th-aug-the-delancey-new-york-tickets",
@@ -6077,7 +6142,7 @@
   {
    "url": "https://dice.fm/event/q2qabo-weekend-warm-up-skate-18th-sep-xanadu-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-04T18:47:00.155599Z"
+   "lastmod": "2026-08-20T08:08:56.470749Z"
   },
   {
    "url": "https://dice.fm/event/q2qad9-rev-vince-anderson-the-love-choir-28th-sep-union-pool-new-york-tickets",
@@ -6100,14 +6165,14 @@
    "lastmod": "2026-08-05T19:31:03.706099Z"
   },
   {
+   "url": "https://dice.fm/event/q2qdlo-offal-literary-salon-iii-with-special-guest-megan-milks-upstairs-26th-sep-public-records-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T20:44:32.956566Z"
+  },
+  {
    "url": "https://dice.fm/event/q2qexx-yard-sale-comedy-open-mic-24th-aug-alphaville-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-07-28T08:07:35.443194Z"
-  },
-  {
-   "url": "https://dice.fm/event/q2qgox-bug-crush-behaviorist-romi-o-20th-aug-alphaville-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-14T17:30:19.831274Z"
   },
   {
    "url": "https://dice.fm/event/q2qgq9-common-ground-31st-dec-common-ground-bar-new-york-tickets",
@@ -6177,7 +6242,7 @@
   {
    "url": "https://dice.fm/event/q2qqna-bolo-the-dj-14th-nov-314-scholes-street-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T22:07:38.264581Z"
+   "lastmod": "2026-08-20T18:12:48.955519Z"
   },
   {
    "url": "https://dice.fm/event/q2qr7y-vesper-26th-sep-laissez-faire-new-york-city-tickets",
@@ -6237,17 +6302,12 @@
   {
    "url": "https://dice.fm/event/ry8ggv-lost-miracle-sbastien-lger-x-roy-rosenfeld-2nd-oct-ruins-at-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-13T18:43:18.184439Z"
-  },
-  {
-   "url": "https://dice.fm/event/ry8leq-open-decks-w-steen-and-monkey-wrench-techno-19th-aug-silo-brooklyn-brooklyn-tickets",
-   "city_slug": "brooklyn",
-   "lastmod": "2026-08-19T22:48:32.997078Z"
+   "lastmod": "2026-08-20T16:10:29.167298Z"
   },
   {
    "url": "https://dice.fm/event/ry8lw5-petey-usa-dirt-buyer-20th-aug-the-sultan-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-17T18:34:33.528456Z"
+   "lastmod": "2026-08-20T22:48:44.984651Z"
   },
   {
    "url": "https://dice.fm/event/ry8mbw-gabriel-dresden-classics-only-nyc-boat-party-6th-sep-circle-line-sightseeing-cruises-new-york-tickets",
@@ -6257,7 +6317,7 @@
   {
    "url": "https://dice.fm/event/ry8mwq-indo-warehouse-18th-sep-pacha-new-york-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-05T14:25:26.180147Z"
+   "lastmod": "2026-08-20T08:06:57.174922Z"
   },
   {
    "url": "https://dice.fm/event/ry8mx5-silva-bumpa-25th-sep-silo-brooklyn-brooklyn-tickets",
@@ -6300,9 +6360,9 @@
    "lastmod": "2026-08-17T18:55:43.605841Z"
   },
   {
-   "url": "https://dice.fm/event/rydg9q-paraiso-sunset-september-6-w-special-guest-6th-sep-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
+   "url": "https://dice.fm/event/rydg9q-paraiso-sunset-september-6-w-sam-allan-6th-sep-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-08T08:05:28.475299Z"
+   "lastmod": "2026-08-20T15:17:20.642034Z"
   },
   {
    "url": "https://dice.fm/event/rydp5v-mercer-day-party-september-12-12th-sep-hotel-50-bowery-new-york-city-tickets",
@@ -6333,11 +6393,6 @@
    "url": "https://dice.fm/event/rykgkr-legendary-locals-open-mic-night-every-wednesday-2nd-sep-brooklyn-music-kitchen-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-04T08:05:29.415558Z"
-  },
-  {
-   "url": "https://dice.fm/event/rykogw-revision-19th-aug-purgatory-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-07-21T08:05:54.433104Z"
   },
   {
    "url": "https://dice.fm/event/ryql3r-alex-wann-friends-in-high-places-16th-oct-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
@@ -6397,7 +6452,7 @@
   {
    "url": "https://dice.fm/event/ryrb6v-oomfcon-1-year-anniversary-18th-sep-paragon-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-04T16:09:47.897464Z"
+   "lastmod": "2026-08-20T08:08:57.587457Z"
   },
   {
    "url": "https://dice.fm/event/ryrb7y-peter-the-master-keys-6th-oct-mad-bar-lounge-new-york-city-tickets",
@@ -6432,7 +6487,7 @@
   {
    "url": "https://dice.fm/event/ryrdk5-shred-for-your-life-20th-sep-union-pool-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T13:47:00.597450Z"
+   "lastmod": "2026-08-20T14:41:39.071585Z"
   },
   {
    "url": "https://dice.fm/event/ryrdyw-angels-after-dark-at-the-moxy-williamsburg-1030-30th-oct-moxy-williamsburg-jolenelillistarbar-bedford-new-york-tickets",
@@ -6495,6 +6550,11 @@
    "lastmod": "2026-08-19T23:00:19.415343Z"
   },
   {
+   "url": "https://dice.fm/event/ryrovw-joseph-trem-danger-room-and-joey-konopka-4th-sep-brooklyn-music-kitchen-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T08:10:42.217578Z"
+  },
+  {
    "url": "https://dice.fm/event/ryrq2w-gorgeous-gorgeous-11th-sep-the-sultan-room-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-13T08:08:49.751236Z"
@@ -6507,7 +6567,7 @@
   {
    "url": "https://dice.fm/event/ryrrqy-layerhythm-presents-7-to-live-23rd-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T17:01:11.263950Z"
+   "lastmod": "2026-08-20T18:17:19.583150Z"
   },
   {
    "url": "https://dice.fm/event/ryrvqq-dirty-bird-5th-sep-erf-gallery-new-york-city-tickets",
@@ -6517,7 +6577,7 @@
   {
    "url": "https://dice.fm/event/ryrwa5-dale-howard-at-public-hotel-18th-sep-artspace-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-06T20:47:00.955319Z"
+   "lastmod": "2026-08-20T08:09:00.495016Z"
   },
   {
    "url": "https://dice.fm/event/ryrweq-loco-carnaval-sundays-13th-sep-somewhere-nowhere-nyc-new-york-tickets",
@@ -6577,7 +6637,7 @@
   {
    "url": "https://dice.fm/event/v32o7g-elisa-batti-sarah-wreath-echo-elle-dee-b2b-kellam-matthews-mr-murray-21st-aug-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T22:47:51.786157Z"
+   "lastmod": "2026-08-20T21:32:10.403495Z"
   },
   {
    "url": "https://dice.fm/event/v32q77-font-presents-milena-casado-peaceful-faces-and-beyondo-band-16th-sep-the-sultan-room-new-york-tickets",
@@ -6588,11 +6648,6 @@
    "url": "https://dice.fm/event/v32rmg-shades-29th-oct-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
    "lastmod": "2026-08-19T19:53:00.676555Z"
-  },
-  {
-   "url": "https://dice.fm/event/v32v8d-turf-club-sunset-sounds-20th-aug-westlight-rooftop-at-the-william-vale-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-16T22:03:02.522228Z"
   },
   {
    "url": "https://dice.fm/event/v32vvg-paradiso-todd-terry-stonie-blue-madre-gua-29th-aug-paragon-new-york-city-tickets",
@@ -6697,7 +6752,7 @@
   {
    "url": "https://dice.fm/event/v3x2k6-brian-fallon-live-performance-10th-sep-rough-trade-below-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T14:47:00.611100Z"
+   "lastmod": "2026-08-20T20:09:41.848596Z"
   },
   {
    "url": "https://dice.fm/event/v3x2wv-seth-david-the-woodshop-presented-by-closed-sessions-7th-nov-the-woodshop-new-york-city-tickets",
@@ -6742,7 +6797,7 @@
   {
    "url": "https://dice.fm/event/v3xb2l-cassie-watson-francillon-sasha-masakowski-nick-hook-18th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-05T20:20:32.496529Z"
+   "lastmod": "2026-08-20T08:09:02.617289Z"
   },
   {
    "url": "https://dice.fm/event/v3xb5v-sinatra-under-the-stars-25th-sep-somewhere-nowhere-nyc-new-york-tickets",
@@ -6820,6 +6875,11 @@
    "lastmod": "2026-08-11T01:15:47.375854Z"
   },
   {
+   "url": "https://dice.fm/event/v3xl2g-body-pole-student-showcase-10th-oct-drom-new-york-tickets",
+   "city_slug": "new-york",
+   "lastmod": "2026-08-20T23:14:29.729518Z"
+  },
+  {
    "url": "https://dice.fm/event/v3xm8g-nostalgia-a-throwback-classic-night-new-york-vs-atlanta-28th-aug-deluxx-fluxx-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-19T17:54:26.203620Z"
@@ -6847,7 +6907,7 @@
   {
    "url": "https://dice.fm/event/v3xnvl-jan-blomqvist-parallelle-kanykei-16th-oct-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T16:24:29.455039Z"
+   "lastmod": "2026-08-20T17:26:48.469972Z"
   },
   {
    "url": "https://dice.fm/event/v3xnwv-dj-lag-ethan-tomas-mohogany-17th-sep-paragon-new-york-city-tickets",
@@ -6867,7 +6927,7 @@
   {
    "url": "https://dice.fm/event/v3xo67-otis-shanty-real-burn-18th-sep-alphaville-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-08T21:45:58.895767Z"
+   "lastmod": "2026-08-20T08:08:53.644205Z"
   },
   {
    "url": "https://dice.fm/event/v3xo9d-the-dead-tongues-26th-sep-public-records-new-york-tickets",
@@ -6907,7 +6967,7 @@
   {
    "url": "https://dice.fm/event/v3xvvg-omar-30th-jan-knockdown-center-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-15T07:46:44.379591Z"
+   "lastmod": "2026-08-20T15:31:54.423805Z"
   },
   {
    "url": "https://dice.fm/event/v3xwwg-the-dillinger-escape-plan-johnny-booth-godseyes-14th-oct-saint-vitus-new-york-city-tickets",
@@ -6927,7 +6987,7 @@
   {
    "url": "https://dice.fm/event/v3xya6-wavcrash-dj-soda-at-mr-purple-21st-aug-mr-purple-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T17:38:42.261288Z"
+   "lastmod": "2026-08-20T02:26:47.081926Z"
   },
   {
    "url": "https://dice.fm/event/v3xyev-freshly-pressed-roni-amitai-asha-jasz-more-29th-aug-dead-letter-no9-new-york-city-tickets",
@@ -6942,7 +7002,7 @@
   {
    "url": "https://dice.fm/event/v3xypl-night-day-extended-weekender-18th-sep-signal-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-11T15:40:32.437040Z"
+   "lastmod": "2026-08-20T08:09:15.096328Z"
   },
   {
    "url": "https://dice.fm/event/v3xyxd-space-between-gallery-colorlight-play-opening-7th-sep-satellite-gallery-new-york-city-tickets",
@@ -6962,17 +7022,12 @@
   {
    "url": "https://dice.fm/event/v3yqg7-the-nursery-jump-source-pilgrims-of-the-mind-live-jennifer-loveless-27th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-05T01:31:54.650062Z"
-  },
-  {
-   "url": "https://dice.fm/event/ww65ap-black-tiger-sex-machine-22nd-aug-brooklyn-storehouse-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-07-24T08:05:23.261903Z"
+   "lastmod": "2026-08-20T22:32:17.653697Z"
   },
   {
    "url": "https://dice.fm/event/ww6m5p-leo-rising-kyle-hall-shaun-j-wright-tee-em-dee-21st-aug-house-of-yes-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-12T18:21:09.848718Z"
+   "lastmod": "2026-08-20T19:46:00.160880Z"
   },
   {
    "url": "https://dice.fm/event/ww6x9r-palosanto-on-the-roof-sept-24th-24th-sep-rooftop-at-arlo-williamsburg-new-york-city-tickets",
@@ -6997,7 +7052,7 @@
   {
    "url": "https://dice.fm/event/ww96kg-crystal-sword-games-dungeon-crawl-30th-aug-cmon-everybody-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-13T08:09:28.642929Z"
+   "lastmod": "2026-08-20T14:59:47.563308Z"
   },
   {
    "url": "https://dice.fm/event/ww96qp-biloba-shepup-lily-too-26th-aug-cassette-new-york-city-tickets",
@@ -7040,9 +7095,9 @@
    "lastmod": "2026-08-19T14:47:01.012890Z"
   },
   {
-   "url": "https://dice.fm/event/ww99vg-she-keep-bees-pink-mexico-parlor-walls-the-huntress-holder-of-hands-9th-oct-the-sultan-room-new-york-tickets",
+   "url": "https://dice.fm/event/ww99vg-she-keeps-bees-pink-mexico-parlor-walls-the-huntress-and-holder-of-hands-9th-oct-the-sultan-room-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-18T18:17:16.491080Z"
+   "lastmod": "2026-08-20T23:48:03.377847Z"
   },
   {
    "url": "https://dice.fm/event/ww9arr-riria-shaking-clearcast-3rd-oct-elsewhere-brooklyn-new-york-tickets",
@@ -7082,7 +7137,7 @@
   {
    "url": "https://dice.fm/event/ww9geg-jadeworm-single-release-toobin-hazzard-18th-sep-sleepwalk-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-03T20:07:15.729772Z"
+   "lastmod": "2026-08-20T08:08:51.162931Z"
   },
   {
    "url": "https://dice.fm/event/ww9l3r-overkill-tower-3rd-oct-saint-vitus-new-york-city-tickets",
@@ -7095,9 +7150,9 @@
    "lastmod": "2026-08-05T17:02:30.268736Z"
   },
   {
-   "url": "https://dice.fm/event/ww9m7n-quinngblessersecondsbeforecrashanimalshearta-11th-sep-brooklyn-music-kitchen-new-york-city-tickets",
+   "url": "https://dice.fm/event/ww9m7n-mother-of-earl-quinn-gatsby-blesser-seconds-before-the-crash-animal-scream-heartavi-11th-sep-brooklyn-music-kitchen-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-18T08:08:07.093278Z"
+   "lastmod": "2026-08-20T17:55:22.798078Z"
   },
   {
    "url": "https://dice.fm/event/ww9mvg-tiki-disco-in-the-ruins-23rd-aug-ruins-at-knockdown-center-new-york-tickets",
@@ -7147,7 +7202,7 @@
   {
    "url": "https://dice.fm/event/ww9wrp-disco-house-nyc-sunset-cruise-day-party-22nd-aug-pier-78-at-hudson-river-park-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-08T19:57:44.809846Z"
+   "lastmod": "2026-08-20T19:44:23.005659Z"
   },
   {
    "url": "https://dice.fm/event/ww9x3n-cecily-heidy-p-28th-aug-jupiter-disco-new-york-city-tickets",
@@ -7217,7 +7272,7 @@
   {
    "url": "https://dice.fm/event/wwmmxr-jellybean-rocks-the-house-the-boat-ride-22nd-aug-circle-line-boat-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T19:33:08.439738Z"
+   "lastmod": "2026-08-20T18:17:14.854239Z"
   },
   {
    "url": "https://dice.fm/event/wwmqox-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-28th-nov-lost-in-paradise-rooftop-new-york-city-tickets",
@@ -7275,11 +7330,6 @@
    "lastmod": "2026-08-17T03:23:34.233514Z"
   },
   {
-   "url": "https://dice.fm/event/wwpxgx-gibby-haynes-butthole-surfers-mania-august-residency-night-3-w-rojava-19th-aug-union-pool-new-york-tickets",
-   "city_slug": "new-york",
-   "lastmod": "2026-08-19T22:04:25.460251Z"
-  },
-  {
    "url": "https://dice.fm/event/xe2gxk-teksupport-mau-p-saturday-sold-out-12th-sep-brooklyn-army-terminal-pier-4-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-14T08:05:11.576879Z"
@@ -7288,6 +7338,16 @@
    "url": "https://dice.fm/event/xe32e3-eduardo-de-la-calle-bloody-mary-grace-dahl-cirqet-5th-sep-signal-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-08T08:07:40.316262Z"
+  },
+  {
+   "url": "https://dice.fm/event/xe333l-integrity-most-precious-blood-inclination-ferment-29th-nov-saint-vitus-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T16:07:05.808122Z"
+  },
+  {
+   "url": "https://dice.fm/event/xe33m3-liana-flores-solo-performance-signing-4th-sep-rough-trade-below-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T20:04:39.909819Z"
   },
   {
    "url": "https://dice.fm/event/xe33x3-downstairs-queer-music-video-night-30th-aug-purgatory-new-york-tickets",
@@ -7312,12 +7372,12 @@
   {
    "url": "https://dice.fm/event/xe37oa-breaking-sound-nyc-at-brooklyn-music-kitchen-0901-1st-sep-brooklyn-music-kitchen-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T15:44:37.445787Z"
+   "lastmod": "2026-08-20T14:15:10.287753Z"
   },
   {
    "url": "https://dice.fm/event/xe37we-agap-festival-5th-sep-industry-city-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-08T12:32:11.586354Z"
+   "lastmod": "2026-08-20T22:24:38.860545Z"
   },
   {
    "url": "https://dice.fm/event/xe39n3-buck-wild-20th-sep-desert-5-spot-ny-new-york-city-tickets",
@@ -7338,6 +7398,16 @@
    "url": "https://dice.fm/event/xe3d7m-jens-lekman-solo-show-just-added-10th-oct-public-records-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-18T13:47:00.571291Z"
+  },
+  {
+   "url": "https://dice.fm/event/xe3g3l-lyra-rooftop-party-halloween-edition-1031-31st-oct-magic-hour-rooftop-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T23:55:37.727272Z"
+  },
+  {
+   "url": "https://dice.fm/event/xe3gwa-midnight-stereo-presents-stacey-pullen-b2b-joeski-12th-sep-lohi-rooftop-bar-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T15:42:33.498981Z"
   },
   {
    "url": "https://dice.fm/event/xe3k7k-david-liebe-hart-frankie-sunswept-the-sliver-moons-windsor-market-dracula-and-his-band-the-draculas-2nd-sep-alphaville-new-york-tickets",
@@ -7435,14 +7505,19 @@
    "lastmod": "2026-08-15T08:06:38.063644Z"
   },
   {
-   "url": "https://dice.fm/event/xe3xo3-diva-bleach-2nd-oct-union-pool-new-york-tickets",
+   "url": "https://dice.fm/event/xe3xo3-diva-bleach-lolitslea-few-faces-2nd-oct-union-pool-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-07-31T15:47:01.182172Z"
+   "lastmod": "2026-08-20T21:23:42.629589Z"
   },
   {
    "url": "https://dice.fm/event/xe3xvm-revision-rooftop-party-0926-26th-sep-phd-lounge-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-07-31T20:09:43.239538Z"
+  },
+  {
+   "url": "https://dice.fm/event/xe3yb3-the-happy-fits-live-signing-1st-sep-rough-trade-below-new-york-city-tickets",
+   "city_slug": "new-york-city",
+   "lastmod": "2026-08-20T14:49:48.407802Z"
   },
   {
    "url": "https://dice.fm/event/xe3yea-caribbean-vibes-weekly-party-yacht-cruises-nyc-12th-sep-skyport-marina-new-york-tickets",
@@ -7487,7 +7562,7 @@
   {
    "url": "https://dice.fm/event/xedke3-ac-slater-w-chinonegro-facu-baez-more-23rd-aug-the-roof-at-superior-ingredients-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-17T21:42:27.587505Z"
+   "lastmod": "2026-08-20T12:48:38.566473Z"
   },
   {
    "url": "https://dice.fm/event/xeo3ba-reggaeton-rooftop-party-at-lost-in-paradise-in-nyc-every-saturday-22nd-aug-lost-in-paradise-rooftop-new-york-city-tickets",
@@ -7497,7 +7572,7 @@
   {
    "url": "https://dice.fm/event/xeo583-classmatic-guests-open-air-22nd-aug-h0l0-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T17:40:11.850156Z"
+   "lastmod": "2026-08-20T02:56:21.440789Z"
   },
   {
    "url": "https://dice.fm/event/xeowye-legendary-locals-open-mic-night-every-wednesday-30th-sep-brooklyn-music-kitchen-new-york-city-tickets",
@@ -7607,7 +7682,7 @@
   {
    "url": "https://dice.fm/event/yod5op-wine-for-me-5th-sep-public-records-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-19T21:59:35.350493Z"
+   "lastmod": "2026-08-20T21:01:04.545240Z"
   },
   {
    "url": "https://dice.fm/event/yod6l2-ahmed-spins-24th-oct-knockdown-center-new-york-tickets",
@@ -7617,7 +7692,7 @@
   {
    "url": "https://dice.fm/event/yod6rv-alexandria-gwale-listening-session-18th-sep-ernest-records-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-08T14:40:38.113583Z"
+   "lastmod": "2026-08-20T08:09:06.991729Z"
   },
   {
    "url": "https://dice.fm/event/yod6wp-afrojam-first-saturday-5th-sep-acoustik-garden-lounge-new-york-city-tickets",
@@ -7637,7 +7712,7 @@
   {
    "url": "https://dice.fm/event/yod952-capochino-11th-dec-silo-brooklyn-brooklyn-tickets",
    "city_slug": "brooklyn",
-   "lastmod": "2026-08-06T16:47:01.563602Z"
+   "lastmod": "2026-08-20T16:03:08.832158Z"
   },
   {
    "url": "https://dice.fm/event/yod98v-high-mighty-brass-band-25th-aug-sleepwalk-new-york-city-tickets",
@@ -7672,17 +7747,12 @@
   {
    "url": "https://dice.fm/event/yodg5x-somewhere-funny-nowhere-serious-18th-sep-somewhere-nowhere-nyc-new-york-tickets",
    "city_slug": "new-york",
-   "lastmod": "2026-08-05T19:46:13.442378Z"
+   "lastmod": "2026-08-20T08:09:03.623225Z"
   },
   {
    "url": "https://dice.fm/event/yodggr-murphys-law-at-public-hotel-4th-sep-artspace-new-york-city-tickets",
    "city_slug": "new-york-city",
    "lastmod": "2026-08-06T20:47:00.936933Z"
-  },
-  {
-   "url": "https://dice.fm/event/yodkba-the-transitive-property-speedfriending-verna-codeine-awful-christine-19th-aug-cassette-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T22:35:21.034104Z"
   },
   {
    "url": "https://dice.fm/event/yodkwx-downstairs-karaoke-free-7th-sep-purgatory-new-york-tickets",
@@ -7717,7 +7787,7 @@
   {
    "url": "https://dice.fm/event/yodpgp-the-rapture-20th-aug-the-rockaway-hotel-new-york-city-tickets",
    "city_slug": "new-york-city",
-   "lastmod": "2026-08-11T13:18:48.475830Z"
+   "lastmod": "2026-08-20T20:47:38.411319Z"
   },
   {
    "url": "https://dice.fm/event/yodpqx-lorg-9th-sep-union-pool-new-york-tickets",
@@ -7743,11 +7813,6 @@
    "url": "https://dice.fm/event/yodvrp-somewhere-funny-nowhere-serious-21st-aug-somewhere-nowhere-nyc-new-york-tickets",
    "city_slug": "new-york",
    "lastmod": "2026-08-19T17:50:28.851510Z"
-  },
-  {
-   "url": "https://dice.fm/event/yodw6v-extra-spicy-please-19th-aug-bossa-nova-civic-club-new-york-city-tickets",
-   "city_slug": "new-york-city",
-   "lastmod": "2026-08-19T20:14:47.958257Z"
   },
   {
    "url": "https://dice.fm/event/yodw72-durations-acid-horizon-presents-civilization-is-over-with-emma-stamm-stuart-kendall-essentialsalts-12th-nov-public-records-new-york-tickets",
