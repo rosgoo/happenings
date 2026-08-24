@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-08-20T09:20:16.658600+00:00",
+ "generated_at": "2026-08-24T09:39:53.325223+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 186,
+   "events": 187,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 39,
+   "events": 38,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -141,6 +141,7 @@
     "Historic Richmond Town",
     "King Manor Museum",
     "Lefferts Historic House",
+    "Lewis Latimer House",
     "Old Stone House &#038; Washington Park",
     "Van Cortlandt House Museum"
    ],
@@ -206,6 +207,7 @@
    "url": "https://sichildrensmuseum.org/calendar/",
    "events": 12,
    "locations": [
+    "Liberty Science Center",
     "Staten Island Children&#8217;s Museum"
    ],
    "types": [
@@ -229,8 +231,7 @@
    "events": 10,
    "locations": [
     "Brooklyn",
-    "Manhattan",
-    "Queens"
+    "Manhattan"
    ],
    "types": [
     "Event"
@@ -269,6 +270,29 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
+   "url": "https://www.statenislandmuseum.org/events",
+   "events": 9,
+   "locations": [
+    "Great Kills Park",
+    "Staten Island Museum at Snug Harbor"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.6445211,
+   "lon": -74.1027489,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "aliceausten.org",
    "name": "Alice Austen House",
    "url": "https://aliceausten.org/events/",
@@ -294,8 +318,7 @@
    "url": "https://societyillustrators.org/events/",
    "events": 6,
    "locations": [
-    "At the Society",
-    "Zoom"
+    "At the Society"
    ],
    "types": [
     "Event"
@@ -318,14 +341,15 @@
    "events": 6,
    "locations": [
     "Cherry Lane Theater",
-    "Laura Pels Theater",
     "Lucille Lortel Theater",
-    "Nederlander Theater",
+    "MetLife Stadium",
     "Palace Theater",
+    "Palace Theatre",
     "Richard Rodgers Theater"
    ],
    "types": [
     "Event",
+    "MusicEvent",
     "TheaterEvent"
    ],
    "status": 200,
@@ -431,26 +455,6 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "www.statenislandmuseum.org",
-   "name": "Staten Island Museum",
-   "url": "https://www.statenislandmuseum.org/events",
-   "events": 1,
-   "locations": [],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "detail",
-   "prefix": "/events",
-   "links": 8,
-   "lat": 40.6445211,
-   "lon": -74.1027489,
-   "borough": "Staten Island",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "ampmgallery.com",
    "name": "AM:PM Gallery",
    "url": "https://ampmgallery.com/events",
@@ -549,7 +553,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 38,
+   "links": 39,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -637,7 +641,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 89,
+   "links": 84,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -673,7 +677,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 137,
+   "links": 139,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -775,7 +779,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 40,
+   "links": 41,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -811,7 +815,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/shows",
-   "links": 6,
+   "links": 0,
    "lat": 40.7610844,
    "lon": -73.9226348,
    "borough": "Queens"
@@ -881,7 +885,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 42,
+   "links": 39,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -971,7 +975,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 7,
+   "links": 4,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"

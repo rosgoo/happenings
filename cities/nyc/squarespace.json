@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-20T09:08:13.941277+00:00",
+ "generated_at": "2026-08-24T09:27:04.830134+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 14,
+     "upcoming": 13,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 8,
+     "upcoming": 9,
      "past": 30
     }
    ],
@@ -50,7 +50,7 @@
      "url": "https://onderdonkhouse.org/events-list?format=json",
      "title": "Events",
      "collection_id": "5d8d052558fca978aa0cbaf9",
-     "upcoming": 0,
+     "upcoming": 2,
      "past": 30
     }
    ],
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 4,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 11,
+     "upcoming": 9,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 7,
+     "upcoming": 31,
      "past": 30
     }
    ],
@@ -636,7 +636,15 @@
    "host": "www.thetanknyc.org",
    "name": "The Tank",
    "origin": "https://thetanknyc.org",
-   "collections": [],
+   "collections": [
+    {
+     "url": "https://thetanknyc.org/calendar-1?format=json",
+     "title": "Tank Calendar",
+     "collection_id": "5aff0157575d1f7fda332aee",
+     "upcoming": 49,
+     "past": 30
+    }
+   ],
    "tried": 6
   },
   {
@@ -690,7 +698,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 10,
+     "upcoming": 9,
      "past": 30
     }
    ],
@@ -754,8 +762,8 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 2,
-     "past": 4
+     "upcoming": 1,
+     "past": 5
     }
    ],
    "tried": 5
@@ -974,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 10,
+     "upcoming": 8,
      "past": 30
     }
    ],

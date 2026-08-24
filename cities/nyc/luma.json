@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-08-20T09:08:13.843398+00:00",
+ "generated_at": "2026-08-24T09:27:04.722917+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -34,6 +34,22 @@
    "total": 75,
    "upcoming": 15,
    "checked_at": "2026-08-02T16:38:32.442447+00:00"
+  },
+  {
+   "id": "cal-fCr5Y33AwoCPndc",
+   "name": "Personal",
+   "ok": true,
+   "total": 32,
+   "upcoming": 15,
+   "checked_at": "2026-08-24T09:26:54.291610+00:00"
+  },
+  {
+   "id": "cal-l7gcEleWIMCKLbv",
+   "name": "Verci Events",
+   "ok": true,
+   "total": 269,
+   "upcoming": 14,
+   "checked_at": "2026-08-24T09:26:44.076688+00:00"
   },
   {
    "id": "cal-QGDhEGQWVMArUaR",
@@ -196,6 +212,22 @@
    "checked_at": "2026-08-13T09:43:59.140195+00:00"
   },
   {
+   "id": "cal-ItTR6nQ7r4wIvFf",
+   "name": "Lit Club NYC Calendar",
+   "ok": true,
+   "total": 108,
+   "upcoming": 4,
+   "checked_at": "2026-08-24T09:26:47.047127+00:00"
+  },
+  {
+   "id": "cal-oB3sYoup1LDsPL3",
+   "name": "UNMUTED",
+   "ok": true,
+   "total": 66,
+   "upcoming": 4,
+   "checked_at": "2026-08-24T09:27:03.373500+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -338,6 +370,30 @@
    "total": 76,
    "upcoming": 2,
    "checked_at": "2026-08-20T09:08:13.843376+00:00"
+  },
+  {
+   "id": "cal-UMlTltEZ63otrQZ",
+   "name": "New York Focus ",
+   "ok": true,
+   "total": 3,
+   "upcoming": 2,
+   "checked_at": "2026-08-24T09:26:51.220739+00:00"
+  },
+  {
+   "id": "cal-bkO33DlatoB8YHE",
+   "name": "Tech Power Network",
+   "ok": true,
+   "total": 130,
+   "upcoming": 2,
+   "checked_at": "2026-08-24T09:27:00.445905+00:00"
+  },
+  {
+   "id": "cal-DukJHu11ElQhhxx",
+   "name": "Center for Advanced Technology (CAT)",
+   "ok": true,
+   "total": 5,
+   "upcoming": 2,
+   "checked_at": "2026-08-24T09:27:04.722893+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -602,6 +658,78 @@
    "total": 2,
    "upcoming": 1,
    "checked_at": "2026-08-20T09:08:11.774504+00:00"
+  },
+  {
+   "id": "cal-tp9fJuQNa1rcyNN",
+   "name": "All Tech Is Human",
+   "ok": true,
+   "total": 10,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:42.331396+00:00"
+  },
+  {
+   "id": "cal-QhjXaF5Iyyagkar",
+   "name": "The Shortlist NY",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:45.240869+00:00"
+  },
+  {
+   "id": "cal-XgIqgndHF0FwAuO",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:48.215360+00:00"
+  },
+  {
+   "id": "cal-RCkV0QqJKzHoXrD",
+   "name": "Cod\u00e9dex",
+   "ok": true,
+   "total": 6,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:49.723975+00:00"
+  },
+  {
+   "id": "cal-XDPNuFKMLZmFlv3",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:52.730492+00:00"
+  },
+  {
+   "id": "cal-ZDQrtBgbNzSJZkh",
+   "name": "Notion",
+   "ok": true,
+   "total": 31,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:55.766212+00:00"
+  },
+  {
+   "id": "cal-0CmOYg96vjpxlYr",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:57.216017+00:00"
+  },
+  {
+   "id": "cal-rcdFckWAEsET9OD",
+   "name": "Prompt Engineers Society",
+   "ok": true,
+   "total": 12,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:26:58.719910+00:00"
+  },
+  {
+   "id": "cal-7nCwdFHYwV15QbG",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-08-24T09:27:01.713024+00:00"
   }
  ]
 }
