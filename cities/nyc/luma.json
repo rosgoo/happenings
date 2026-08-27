@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-08-24T09:27:04.722917+00:00",
+ "generated_at": "2026-08-27T19:14:39.349828+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -100,6 +100,14 @@
    "checked_at": "2026-08-17T09:21:12.810593+00:00"
   },
   {
+   "id": "cal-k7S7WUj7XGgcjsC",
+   "name": "MotherDuck",
+   "ok": true,
+   "total": 93,
+   "upcoming": 8,
+   "checked_at": "2026-08-27T19:14:20.084322+00:00"
+  },
+  {
    "id": "cal-8ACK0vjqOfKpHXl",
    "name": "Claude Workshops",
    "ok": true,
@@ -114,6 +122,14 @@
    "total": 120,
    "upcoming": 7,
    "checked_at": "2026-08-17T09:21:18.805962+00:00"
+  },
+  {
+   "id": "cal-CLXm28Nz1sKiGt8",
+   "name": "Sleepawake Events Calendar",
+   "ok": true,
+   "total": 28,
+   "upcoming": 7,
+   "checked_at": "2026-08-27T19:14:39.349802+00:00"
   },
   {
    "id": "cal-mmnYmrfNgxGdvQb",
@@ -226,6 +242,14 @@
    "total": 66,
    "upcoming": 4,
    "checked_at": "2026-08-24T09:27:03.373500+00:00"
+  },
+  {
+   "id": "cal-9QAo4pAQjtkRMKM",
+   "name": "CoworkNChill Calendar",
+   "ok": true,
+   "total": 108,
+   "upcoming": 4,
+   "checked_at": "2026-08-27T19:14:32.072334+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -394,6 +418,38 @@
    "total": 5,
    "upcoming": 2,
    "checked_at": "2026-08-24T09:27:04.722893+00:00"
+  },
+  {
+   "id": "cal-PVfhSUgLiiaGDmZ",
+   "name": "Sentry",
+   "ok": true,
+   "total": 99,
+   "upcoming": 2,
+   "checked_at": "2026-08-27T19:14:26.193212+00:00"
+  },
+  {
+   "id": "cal-rFEqEzxd4PNWBE5",
+   "name": "The Retail Edit",
+   "ok": true,
+   "total": 4,
+   "upcoming": 2,
+   "checked_at": "2026-08-27T19:14:27.295282+00:00"
+  },
+  {
+   "id": "cal-dQkYDcDRZVSSG60",
+   "name": "Merge Events",
+   "ok": true,
+   "total": 3,
+   "upcoming": 2,
+   "checked_at": "2026-08-27T19:14:28.788011+00:00"
+  },
+  {
+   "id": "cal-YXJaN3BHjHZDoo3",
+   "name": "Harlem Art House Collective",
+   "ok": true,
+   "total": 28,
+   "upcoming": 2,
+   "checked_at": "2026-08-27T19:14:36.349906+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -730,6 +786,70 @@
    "total": 2,
    "upcoming": 1,
    "checked_at": "2026-08-24T09:27:01.713024+00:00"
+  },
+  {
+   "id": "cal-1e8siNf2QXJQXGr",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:18.410507+00:00"
+  },
+  {
+   "id": "cal-1KdjjoMBXCr3XWh",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:21.320038+00:00"
+  },
+  {
+   "id": "cal-XKARPwdlMIVs9cE",
+   "name": "Pepper NYC",
+   "ok": true,
+   "total": 33,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:22.869417+00:00"
+  },
+  {
+   "id": "cal-0Ed3HhBL0HfJ4e6",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:24.294379+00:00"
+  },
+  {
+   "id": "cal-Ebd3NPtqYZbps3O",
+   "name": "Default.com",
+   "ok": true,
+   "total": 9,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:30.324099+00:00"
+  },
+  {
+   "id": "cal-WFsjO5uLsOawg9v",
+   "name": "East Broadway Workshop",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:33.293413+00:00"
+  },
+  {
+   "id": "cal-Wmx2PaNRFnYZtBA",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:34.824652+00:00"
+  },
+  {
+   "id": "cal-W4VBDBsvB6Nr32U",
+   "name": "Personal",
+   "ok": true,
+   "total": 24,
+   "upcoming": 1,
+   "checked_at": "2026-08-27T19:14:38.150594+00:00"
   }
  ]
 }

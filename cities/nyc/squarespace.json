@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24T09:27:04.830134+00:00",
+ "generated_at": "2026-08-27T19:14:39.477919+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 13,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 9,
+     "upcoming": 10,
      "past": 30
     }
    ],
@@ -93,7 +93,7 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 10,
+     "upcoming": 16,
      "past": 1
     }
    ],
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 9,
+     "upcoming": 10,
      "past": 30
     }
    ],
@@ -641,7 +641,7 @@
      "url": "https://thetanknyc.org/calendar-1?format=json",
      "title": "Tank Calendar",
      "collection_id": "5aff0157575d1f7fda332aee",
-     "upcoming": 49,
+     "upcoming": 50,
      "past": 30
     }
    ],
@@ -698,7 +698,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 9,
+     "upcoming": 12,
      "past": 30
     }
    ],
@@ -762,7 +762,7 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 1,
+     "upcoming": 2,
      "past": 5
     }
    ],
@@ -982,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 8,
+     "upcoming": 10,
      "past": 30
     }
    ],
