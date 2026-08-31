@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-08-27T19:14:39.349828+00:00",
+ "generated_at": "2026-08-31T16:20:55.609247+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -90,6 +90,22 @@
    "total": 183,
    "upcoming": 9,
    "checked_at": "2026-08-17T09:21:06.755897+00:00"
+  },
+  {
+   "id": "cal-d54V4FW22lMwmB9",
+   "name": "Pudgy Penguins",
+   "ok": true,
+   "total": 148,
+   "upcoming": 9,
+   "checked_at": "2026-08-31T16:20:47.786605+00:00"
+  },
+  {
+   "id": "cal-BvuRd9eaZnDGBwy",
+   "name": "welcome to the craftnook",
+   "ok": true,
+   "total": 217,
+   "upcoming": 9,
+   "checked_at": "2026-08-31T16:20:55.609221+00:00"
   },
   {
    "id": "cal-kcWhMbIs2X0Y2Xb",
@@ -204,6 +220,22 @@
    "checked_at": "2026-08-17T09:21:14.059683+00:00"
   },
   {
+   "id": "cal-0JE8SiQKgmJoT5v",
+   "name": "Obvious Community Events",
+   "ok": true,
+   "total": 24,
+   "upcoming": 5,
+   "checked_at": "2026-08-31T16:20:45.589873+00:00"
+  },
+  {
+   "id": "cal-krXXLcJYkKduK3v",
+   "name": "ObliqueTableNYC",
+   "ok": true,
+   "total": 35,
+   "upcoming": 5,
+   "checked_at": "2026-08-31T16:20:53.151177+00:00"
+  },
+  {
    "id": "cal-H1FY60pnZtchaf4",
    "name": "Corgi NYC",
    "ok": true,
@@ -282,6 +314,22 @@
    "total": 33,
    "upcoming": 3,
    "checked_at": "2026-08-17T09:21:21.600603+00:00"
+  },
+  {
+   "id": "cal-KYNaoLq3pS000fL",
+   "name": "Sugary NYC Community",
+   "ok": true,
+   "total": 79,
+   "upcoming": 3,
+   "checked_at": "2026-08-31T16:20:44.235900+00:00"
+  },
+  {
+   "id": "cal-b0bByM1vbBukIX5",
+   "name": "Fireworks",
+   "ok": true,
+   "total": 24,
+   "upcoming": 3,
+   "checked_at": "2026-08-31T16:20:50.081389+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -850,6 +898,62 @@
    "total": 24,
    "upcoming": 1,
    "checked_at": "2026-08-27T19:14:38.150594+00:00"
+  },
+  {
+   "id": "cal-R9IQUb53FUrolUF",
+   "name": "AssemblyAI",
+   "ok": true,
+   "total": 18,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:36.620524+00:00"
+  },
+  {
+   "id": "cal-pIdpm3aUMSuVAHE",
+   "name": "Personal",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:38.054640+00:00"
+  },
+  {
+   "id": "cal-7azGidiinVJre6l",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:39.538529+00:00"
+  },
+  {
+   "id": "cal-wIyt3ie4NDyjMwU",
+   "name": "Personal",
+   "ok": true,
+   "total": 7,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:41.114054+00:00"
+  },
+  {
+   "id": "cal-zM0LMUyQsjRG7xU",
+   "name": "Personal",
+   "ok": true,
+   "total": 28,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:42.638197+00:00"
+  },
+  {
+   "id": "cal-E8nhai2HqvQ6USN",
+   "name": "Gatlin Robotics",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:48.537510+00:00"
+  },
+  {
+   "id": "cal-iagN5wojaozE2Hl",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-08-31T16:20:51.542604+00:00"
   }
  ]
 }
