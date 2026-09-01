@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T16:20:55.713828+00:00",
+ "generated_at": "2026-09-01T12:31:27.755884+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -698,7 +698,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 12,
+     "upcoming": 13,
      "past": 30
     }
    ],
@@ -982,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 5,
+     "upcoming": 4,
      "past": 30
     }
    ],
