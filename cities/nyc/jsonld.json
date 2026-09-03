@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-09-01T12:43:49.563597+00:00",
+ "generated_at": "2026-09-03T13:11:27.583926+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 39,
+   "events": 35,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -82,6 +82,30 @@
    "lat": 40.6858601,
    "lon": -73.9816535,
    "borough": "Brooklyn"
+  },
+  {
+   "host": "littleisland.org",
+   "name": "The Amph",
+   "url": "https://littleisland.org/events/",
+   "events": 19,
+   "locations": [
+    "The Amph",
+    "The Glade",
+    "The Play Ground"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7423062,
+   "lon": -74.0108945,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "www.nytransitmuseum.org",
@@ -106,30 +130,6 @@
    "borough": "Brooklyn",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "littleisland.org",
-   "name": "The Amph",
-   "url": "https://littleisland.org/events/",
-   "events": 15,
-   "locations": [
-    "The Amph",
-    "The Glade",
-    "The Play Ground"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7423062,
-   "lon": -74.0108945,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "www.prospectpark.org",
@@ -347,13 +347,13 @@
    "locations": [
     "Cherry Lane Theater",
     "Lucille Lortel Theater",
-    "Nederlander Theater",
-    "New York City Center",
-    "Palace Theater",
-    "Richard Rodgers Theater"
+    "Lyric Theatre",
+    "Richard Rodgers Theater",
+    "Wellmont Theatre"
    ],
    "types": [
     "Event",
+    "MusicEvent",
     "TheaterEvent"
    ],
    "status": 200,
@@ -554,7 +554,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 40,
+   "links": 39,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -572,7 +572,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 3,
+   "links": 2,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -642,7 +642,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 80,
+   "links": 82,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -660,7 +660,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibitions",
-   "links": 33,
+   "links": 35,
    "lat": 40.7220357,
    "lon": -73.9920403,
    "borough": "Manhattan",
@@ -678,7 +678,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 131,
+   "links": 132,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -714,7 +714,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/event",
-   "links": 8,
+   "links": 10,
    "lat": 40.810129,
    "lon": -73.9498627,
    "borough": "Manhattan"
@@ -730,7 +730,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 17,
+   "links": 18,
    "lat": 40.7628819,
    "lon": -73.8248834,
    "borough": "Queens",
@@ -886,7 +886,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 37,
+   "links": 55,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -940,7 +940,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 34,
+   "links": 41,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -976,7 +976,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 5,
+   "links": 6,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"

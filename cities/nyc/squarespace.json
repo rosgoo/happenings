@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T12:31:27.755884+00:00",
+ "generated_at": "2026-09-03T12:58:51.730763+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 14,
+     "upcoming": 15,
      "past": 30
     }
    ],
@@ -93,7 +93,7 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 16,
+     "upcoming": 17,
      "past": 1
     }
    ],
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 6,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -482,7 +482,7 @@
      "url": "https://www.the8thfloor.org/newevents?format=json",
      "title": "Events",
      "collection_id": "659d84552cb6dd6728f437c7",
-     "upcoming": 1,
+     "upcoming": 2,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 30,
+     "upcoming": 63,
      "past": 30
     }
    ],
@@ -641,7 +641,7 @@
      "url": "https://thetanknyc.org/calendar-1?format=json",
      "title": "Tank Calendar",
      "collection_id": "5aff0157575d1f7fda332aee",
-     "upcoming": 46,
+     "upcoming": 50,
      "past": 30
     }
    ],
@@ -982,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 4,
+     "upcoming": 24,
      "past": 30
     }
    ],

@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-01T12:31:27.650848+00:00",
+ "generated_at": "2026-09-03T12:58:51.616531+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -10,6 +10,14 @@
    "total": 281,
    "upcoming": 46,
    "checked_at": "2026-08-02T16:38:46.335449+00:00"
+  },
+  {
+   "id": "cal-dWMNt952eh2WWAh",
+   "name": "Climate Cafe NYC",
+   "ok": true,
+   "total": 279,
+   "upcoming": 43,
+   "checked_at": "2026-09-03T12:58:42.636536+00:00"
   },
   {
    "id": "cal-Q8l315UsVMWb6h6",
@@ -130,6 +138,14 @@
    "total": 93,
    "upcoming": 8,
    "checked_at": "2026-08-27T19:14:20.084322+00:00"
+  },
+  {
+   "id": "cal-SXakUfDFxvNsTuw",
+   "name": "SOSV's Events",
+   "ok": true,
+   "total": 25,
+   "upcoming": 8,
+   "checked_at": "2026-09-03T12:58:45.396071+00:00"
   },
   {
    "id": "cal-8ACK0vjqOfKpHXl",
@@ -506,6 +522,14 @@
    "total": 28,
    "upcoming": 2,
    "checked_at": "2026-08-27T19:14:36.349906+00:00"
+  },
+  {
+   "id": "cal-MWDK3RkrGD3zl3N",
+   "name": "Love & Lob",
+   "ok": true,
+   "total": 203,
+   "upcoming": 2,
+   "checked_at": "2026-09-03T12:58:39.732170+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -962,6 +986,54 @@
    "total": 2,
    "upcoming": 1,
    "checked_at": "2026-08-31T16:20:51.542604+00:00"
+  },
+  {
+   "id": "cal-sipfbMUaRrgzCOq",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-09-03T12:58:40.870474+00:00"
+  },
+  {
+   "id": "cal-iBzCp65Uap6Zp3z",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-03T12:58:43.866959+00:00"
+  },
+  {
+   "id": "cal-lVeHH5HxVjdQbGR",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-03T12:58:46.873073+00:00"
+  },
+  {
+   "id": "cal-csvhhp9aT5zCokj",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-03T12:58:48.414488+00:00"
+  },
+  {
+   "id": "cal-CMwp0viCQreYB9z",
+   "name": "Credal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-03T12:58:49.866561+00:00"
+  },
+  {
+   "id": "cal-YYACB1sICtMRlDS",
+   "name": "Creator Economy NYC",
+   "ok": true,
+   "total": 35,
+   "upcoming": 1,
+   "checked_at": "2026-09-03T12:58:51.616504+00:00"
   }
  ]
 }
