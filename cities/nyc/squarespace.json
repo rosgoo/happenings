@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03T12:58:51.730763+00:00",
+ "generated_at": "2026-09-07T14:25:01.115957+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 15,
+     "upcoming": 16,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 9,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 15,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -641,7 +641,7 @@
      "url": "https://thetanknyc.org/calendar-1?format=json",
      "title": "Tank Calendar",
      "collection_id": "5aff0157575d1f7fda332aee",
-     "upcoming": 50,
+     "upcoming": 46,
      "past": 30
     }
    ],
@@ -762,7 +762,7 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 2,
+     "upcoming": 5,
      "past": 5
     }
    ],
@@ -982,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 24,
+     "upcoming": 22,
      "past": 30
     }
    ],

@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-03T12:58:51.616531+00:00",
+ "generated_at": "2026-09-07T14:25:01.009275+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -90,6 +90,14 @@
    "total": 165,
    "upcoming": 11,
    "checked_at": "2026-09-01T12:31:27.650822+00:00"
+  },
+  {
+   "id": "cal-MS5jAaElmqxx6De",
+   "name": "mysha happenings",
+   "ok": true,
+   "total": 220,
+   "upcoming": 11,
+   "checked_at": "2026-09-07T14:25:00.486138+00:00"
   },
   {
    "id": "cal-qbsfYMOG654KgPf",
@@ -356,6 +364,22 @@
    "checked_at": "2026-08-31T16:20:50.081389+00:00"
   },
   {
+   "id": "cal-hp9HP2UFTGNaMnY",
+   "name": "Vercel Events",
+   "ok": true,
+   "total": 35,
+   "upcoming": 3,
+   "checked_at": "2026-09-07T14:24:54.976747+00:00"
+  },
+  {
+   "id": "cal-Puula3MAeqvdYgf",
+   "name": "Girl Math Capital",
+   "ok": true,
+   "total": 32,
+   "upcoming": 3,
+   "checked_at": "2026-09-07T14:25:01.009254+00:00"
+  },
+  {
    "id": "cal-8x55tE86VtAD07z",
    "name": "Supabase Community Events",
    "ok": true,
@@ -530,6 +554,14 @@
    "total": 203,
    "upcoming": 2,
    "checked_at": "2026-09-03T12:58:39.732170+00:00"
+  },
+  {
+   "id": "cal-ujvIIHW2gBlz35L",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 2,
+   "checked_at": "2026-09-07T14:24:53.378866+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1034,6 +1066,62 @@
    "total": 35,
    "upcoming": 1,
    "checked_at": "2026-09-03T12:58:51.616504+00:00"
+  },
+  {
+   "id": "cal-rqrEORS1QVhFtWC",
+   "name": "MILER RUNNING",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:45.893168+00:00"
+  },
+  {
+   "id": "cal-Tdg6cy1bIZlDPDK",
+   "name": "Dykes and Dolls Events",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:47.442691+00:00"
+  },
+  {
+   "id": "cal-UKyirHrAjcmB9ND",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:48.915270+00:00"
+  },
+  {
+   "id": "cal-4ZYrlMdVkZDbPrX",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:50.512608+00:00"
+  },
+  {
+   "id": "cal-jzFSUklriSXUe0x",
+   "name": "Boundless global events calendar",
+   "ok": true,
+   "total": 94,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:52.018675+00:00"
+  },
+  {
+   "id": "cal-JC3Cg9mI5HZVK68",
+   "name": "BLOK PARTI",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:56.403018+00:00"
+  },
+  {
+   "id": "cal-kabcvizbeohhrF1",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-09-07T14:24:57.889130+00:00"
   }
  ]
 }

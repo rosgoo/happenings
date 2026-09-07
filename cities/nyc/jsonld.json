@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-09-03T13:11:27.583926+00:00",
+ "generated_at": "2026-09-07T14:37:51.518326+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 217,
+   "events": 218,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 125,
+   "events": 149,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -82,30 +82,6 @@
    "lat": 40.6858601,
    "lon": -73.9816535,
    "borough": "Brooklyn"
-  },
-  {
-   "host": "littleisland.org",
-   "name": "The Amph",
-   "url": "https://littleisland.org/events/",
-   "events": 19,
-   "locations": [
-    "The Amph",
-    "The Glade",
-    "The Play Ground"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7423062,
-   "lon": -74.0108945,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "www.nytransitmuseum.org",
@@ -226,7 +202,7 @@
    "host": "historichousetrust.org",
    "name": "Lewis Howard Latimer House Museum",
    "url": "https://historichousetrust.org/events/",
-   "events": 10,
+   "events": 9,
    "locations": [
     "Conference House",
     "Historic Richmond Town",
@@ -250,28 +226,6 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "mvhm.org",
-   "name": "Mount Vernon Hotel Museum",
-   "url": "https://mvhm.org/events/",
-   "events": 9,
-   "locations": [
-    "Mount Vernon Hotel Museum &amp; Garden"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7605217,
-   "lon": -73.9597128,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "www.statenislandmuseum.org",
    "name": "Staten Island Museum",
    "url": "https://www.statenislandmuseum.org/events",
@@ -290,6 +244,28 @@
    "lat": 40.6445211,
    "lon": -74.1027489,
    "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/",
+   "events": 8,
+   "locations": [
+    "Mount Vernon Hotel Museum &amp; Garden"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7605217,
+   "lon": -73.9597128,
+   "borough": "Manhattan",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
@@ -346,14 +322,14 @@
    "events": 6,
    "locations": [
     "Cherry Lane Theater",
+    "David H Koch Theater",
+    "Greenwich House Theater",
     "Lucille Lortel Theater",
-    "Lyric Theatre",
-    "Richard Rodgers Theater",
-    "Wellmont Theatre"
+    "Nederlander Theater",
+    "Richard Rodgers Theater"
    ],
    "types": [
     "Event",
-    "MusicEvent",
     "TheaterEvent"
    ],
    "status": 200,
@@ -432,6 +408,28 @@
    "borough": "Manhattan",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "littleisland.org",
+   "name": "The Amph",
+   "url": "https://littleisland.org/events/",
+   "events": 3,
+   "locations": [
+    "The Glade"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7423062,
+   "lon": -74.0108945,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "waterfrontmuseum.org",
@@ -554,7 +552,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 39,
+   "links": 38,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -572,7 +570,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 2,
+   "links": 3,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -642,7 +640,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 82,
+   "links": 79,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -660,7 +658,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibitions",
-   "links": 35,
+   "links": 34,
    "lat": 40.7220357,
    "lon": -73.9920403,
    "borough": "Manhattan",
@@ -678,7 +676,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 132,
+   "links": 134,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -764,7 +762,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 13,
+   "links": 12,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -886,7 +884,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 55,
+   "links": 52,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -940,7 +938,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 41,
+   "links": 39,
    "lat": null,
    "lon": null,
    "borough": null,
