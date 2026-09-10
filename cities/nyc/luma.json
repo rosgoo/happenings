@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-07T14:25:01.009275+00:00",
+ "generated_at": "2026-09-10T13:05:27.109529+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -314,6 +314,14 @@
    "total": 108,
    "upcoming": 4,
    "checked_at": "2026-08-27T19:14:32.072334+00:00"
+  },
+  {
+   "id": "cal-DOR6XT7fH3vxxjg",
+   "name": "Personal",
+   "ok": true,
+   "total": 20,
+   "upcoming": 4,
+   "checked_at": "2026-09-10T13:05:22.639967+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -1122,6 +1130,62 @@
    "total": 4,
    "upcoming": 1,
    "checked_at": "2026-09-07T14:24:57.889130+00:00"
+  },
+  {
+   "id": "cal-CQM9S4KmVuJn22e",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:16.816968+00:00"
+  },
+  {
+   "id": "cal-5wNSpAtIuseWWUW",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:18.107789+00:00"
+  },
+  {
+   "id": "cal-GeVZMIuCVCJY5l1",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:19.616581+00:00"
+  },
+  {
+   "id": "cal-NsraRjjJJpOi9eZ",
+   "name": "ANKA",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:21.107413+00:00"
+  },
+  {
+   "id": "cal-jJQyEX2fR91LmFV",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:24.128361+00:00"
+  },
+  {
+   "id": "cal-HQi7FNluMFGyXCD",
+   "name": "Dona Events",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:25.612431+00:00"
+  },
+  {
+   "id": "cal-S4mUxC1030T0RqY",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-09-10T13:05:27.109506+00:00"
   }
  ]
 }

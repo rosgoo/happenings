@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T14:25:01.115957+00:00",
+ "generated_at": "2026-09-10T13:05:27.218581+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 16,
+     "upcoming": 15,
      "past": 30
     }
    ],
@@ -93,7 +93,7 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 17,
+     "upcoming": 19,
      "past": 1
     }
    ],
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 7,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 63,
+     "upcoming": 61,
      "past": 30
     }
    ],
@@ -641,7 +641,7 @@
      "url": "https://thetanknyc.org/calendar-1?format=json",
      "title": "Tank Calendar",
      "collection_id": "5aff0157575d1f7fda332aee",
-     "upcoming": 46,
+     "upcoming": 47,
      "past": 30
     }
    ],
@@ -698,7 +698,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 13,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -982,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 22,
+     "upcoming": 18,
      "past": 30
     }
    ],
