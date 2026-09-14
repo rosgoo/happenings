@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-10T13:05:27.218581+00:00",
+ "generated_at": "2026-09-14T15:12:47.517799+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -50,7 +50,7 @@
      "url": "https://onderdonkhouse.org/events-list?format=json",
      "title": "Events",
      "collection_id": "5d8d052558fca978aa0cbaf9",
-     "upcoming": 4,
+     "upcoming": 3,
      "past": 30
     }
    ],
@@ -93,8 +93,8 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 19,
-     "past": 1
+     "upcoming": 18,
+     "past": 2
     }
    ],
    "tried": 4
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 8,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -482,7 +482,7 @@
      "url": "https://www.the8thfloor.org/newevents?format=json",
      "title": "Events",
      "collection_id": "659d84552cb6dd6728f437c7",
-     "upcoming": 2,
+     "upcoming": 4,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 61,
+     "upcoming": 57,
      "past": 30
     }
    ],
@@ -636,15 +636,7 @@
    "host": "www.thetanknyc.org",
    "name": "The Tank",
    "origin": "https://thetanknyc.org",
-   "collections": [
-    {
-     "url": "https://thetanknyc.org/calendar-1?format=json",
-     "title": "Tank Calendar",
-     "collection_id": "5aff0157575d1f7fda332aee",
-     "upcoming": 47,
-     "past": 30
-    }
-   ],
+   "collections": [],
    "tried": 6
   },
   {
@@ -762,7 +754,7 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 5,
+     "upcoming": 7,
      "past": 5
     }
    ],
@@ -982,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 18,
+     "upcoming": 17,
      "past": 30
     }
    ],

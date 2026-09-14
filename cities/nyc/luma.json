@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-10T13:05:27.109529+00:00",
+ "generated_at": "2026-09-14T15:12:47.286576+00:00",
  "calendars": [
   {
    "id": "cal-TOpA5LAFfuDeFpu",
@@ -268,6 +268,14 @@
    "checked_at": "2026-08-31T16:20:53.151177+00:00"
   },
   {
+   "id": "cal-qdFtD4iSoH7Xj4m",
+   "name": "Index Greenpoint",
+   "ok": true,
+   "total": 41,
+   "upcoming": 5,
+   "checked_at": "2026-09-14T15:12:36.946602+00:00"
+  },
+  {
    "id": "cal-H1FY60pnZtchaf4",
    "name": "Corgi NYC",
    "ok": true,
@@ -322,6 +330,14 @@
    "total": 20,
    "upcoming": 4,
    "checked_at": "2026-09-10T13:05:22.639967+00:00"
+  },
+  {
+   "id": "cal-LxSRAvoOnOWxF9M",
+   "name": "Lenny's Newsletter Meetups",
+   "ok": true,
+   "total": 251,
+   "upcoming": 4,
+   "checked_at": "2026-09-14T15:12:41.911345+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -386,6 +402,30 @@
    "total": 32,
    "upcoming": 3,
    "checked_at": "2026-09-07T14:25:01.009254+00:00"
+  },
+  {
+   "id": "cal-b6BifoQGm6tlUim",
+   "name": "Cyberdeck Tour",
+   "ok": true,
+   "total": 5,
+   "upcoming": 3,
+   "checked_at": "2026-09-14T15:12:33.787869+00:00"
+  },
+  {
+   "id": "cal-jX1B0ZAFOrl7UEw",
+   "name": "Another Tomorrow",
+   "ok": true,
+   "total": 16,
+   "upcoming": 3,
+   "checked_at": "2026-09-14T15:12:42.859936+00:00"
+  },
+  {
+   "id": "cal-zI74LVD6y4jFHqQ",
+   "name": "Pitch Roast Live \ud83d\udd25",
+   "ok": true,
+   "total": 27,
+   "upcoming": 3,
+   "checked_at": "2026-09-14T15:12:45.877802+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -570,6 +610,14 @@
    "total": 5,
    "upcoming": 2,
    "checked_at": "2026-09-07T14:24:53.378866+00:00"
+  },
+  {
+   "id": "cal-UDEZgigcsIiLlbE",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 2,
+   "checked_at": "2026-09-14T15:12:32.250787+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1186,6 +1234,62 @@
    "total": 5,
    "upcoming": 1,
    "checked_at": "2026-09-10T13:05:27.109506+00:00"
+  },
+  {
+   "id": "cal-nHim9cgnIJCN3f7",
+   "name": "Personal",
+   "ok": true,
+   "total": 6,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:29.442986+00:00"
+  },
+  {
+   "id": "cal-Toxq2jCLBf6gdEJ",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:30.851677+00:00"
+  },
+  {
+   "id": "cal-IjRhfmBKbwL7z1T",
+   "name": "Personal",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:35.276825+00:00"
+  },
+  {
+   "id": "cal-AThf9iM7mcI2IgB",
+   "name": "Columbia Climate School, Global Impact Lab",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:38.293907+00:00"
+  },
+  {
+   "id": "cal-WEVxsz58m0GYs6e",
+   "name": "Personal",
+   "ok": true,
+   "total": 7,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:39.763801+00:00"
+  },
+  {
+   "id": "cal-KqP8EQMYQuGKNKG",
+   "name": "turbopuffer",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:44.281725+00:00"
+  },
+  {
+   "id": "cal-QZakhfqqRWWEvfr",
+   "name": "Coffee & Career Transitions NYC",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-09-14T15:12:47.286551+00:00"
   }
  ]
 }
