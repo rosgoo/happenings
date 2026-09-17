@@ -1,8 +1,16 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-14T15:12:47.286576+00:00",
+ "generated_at": "2026-09-17T13:45:06.399681+00:00",
  "calendars": [
+  {
+   "id": "cal-61Cv6COs4g9GKw7",
+   "name": "SpaceXAI Community",
+   "ok": true,
+   "total": 329,
+   "upcoming": 72,
+   "checked_at": "2026-09-17T13:44:49.081532+00:00"
+  },
   {
    "id": "cal-TOpA5LAFfuDeFpu",
    "name": "Claude Community Events",
@@ -154,6 +162,14 @@
    "total": 25,
    "upcoming": 8,
    "checked_at": "2026-09-03T12:58:45.396071+00:00"
+  },
+  {
+   "id": "cal-Z1tslEBMjjCh4fd",
+   "name": "WorkOS Events",
+   "ok": true,
+   "total": 78,
+   "upcoming": 8,
+   "checked_at": "2026-09-17T13:44:49.956197+00:00"
   },
   {
    "id": "cal-8ACK0vjqOfKpHXl",
@@ -340,6 +356,14 @@
    "checked_at": "2026-09-14T15:12:41.911345+00:00"
   },
   {
+   "id": "cal-pKJCIg61FBxpRGw",
+   "name": "Runtime Agent Week",
+   "ok": true,
+   "total": 8,
+   "upcoming": 4,
+   "checked_at": "2026-09-17T13:45:06.399658+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -426,6 +450,22 @@
    "total": 27,
    "upcoming": 3,
    "checked_at": "2026-09-14T15:12:45.877802+00:00"
+  },
+  {
+   "id": "cal-VtoEJdCDdRHAJom",
+   "name": "Tech@NYU",
+   "ok": true,
+   "total": 12,
+   "upcoming": 3,
+   "checked_at": "2026-09-17T13:44:54.388989+00:00"
+  },
+  {
+   "id": "cal-1o9fV45TOfLySKM",
+   "name": "Index Chinatown",
+   "ok": true,
+   "total": 114,
+   "upcoming": 3,
+   "checked_at": "2026-09-17T13:44:56.284403+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -618,6 +658,14 @@
    "total": 3,
    "upcoming": 2,
    "checked_at": "2026-09-14T15:12:32.250787+00:00"
+  },
+  {
+   "id": "cal-Xh9h4GDyoWqJClZ",
+   "name": "Personal",
+   "ok": true,
+   "total": 8,
+   "upcoming": 2,
+   "checked_at": "2026-09-17T13:45:05.107764+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1290,6 +1338,62 @@
    "total": 5,
    "upcoming": 1,
    "checked_at": "2026-09-14T15:12:47.286551+00:00"
+  },
+  {
+   "id": "cal-CKpVPzp5z3BjHBE",
+   "name": "Data Engineer Things NYC Meetup",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:44:51.357346+00:00"
+  },
+  {
+   "id": "cal-Z3KTsjHgFTj6oHj",
+   "name": "The PrePros Events",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:44:52.943027+00:00"
+  },
+  {
+   "id": "cal-bZdvSraT7bVQWiL",
+   "name": "Mesh",
+   "ok": true,
+   "total": 12,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:44:57.464954+00:00"
+  },
+  {
+   "id": "cal-M242XGUN6Hb9LMI",
+   "name": "Viam",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:44:58.871003+00:00"
+  },
+  {
+   "id": "cal-WvHARknDibGIM5Y",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:45:00.360910+00:00"
+  },
+  {
+   "id": "cal-CND6MQgDkQPz7jY",
+   "name": "Personal",
+   "ok": true,
+   "total": 7,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:45:01.903181+00:00"
+  },
+  {
+   "id": "cal-XGDNrUqs3ZkBlFj",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-17T13:45:03.632050+00:00"
   }
  ]
 }

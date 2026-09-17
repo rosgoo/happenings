@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T15:12:47.517799+00:00",
+ "generated_at": "2026-09-17T13:45:06.498696+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 15,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 8,
+     "upcoming": 9,
      "past": 30
     }
    ],
@@ -50,7 +50,7 @@
      "url": "https://onderdonkhouse.org/events-list?format=json",
      "title": "Events",
      "collection_id": "5d8d052558fca978aa0cbaf9",
-     "upcoming": 3,
+     "upcoming": 2,
      "past": 30
     }
    ],
@@ -93,7 +93,7 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 18,
+     "upcoming": 17,
      "past": 2
     }
    ],
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 14,
+     "upcoming": 16,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 14,
+     "upcoming": 13,
      "past": 30
     }
    ],
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 17,
+     "upcoming": 16,
      "past": 30
     }
    ],

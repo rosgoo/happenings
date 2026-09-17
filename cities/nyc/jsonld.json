@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-09-14T15:24:39.325821+00:00",
+ "generated_at": "2026-09-17T13:57:18.874348+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 152,
+   "events": 151,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -206,6 +206,7 @@
    "url": "https://cityparksfoundation.org/calendar",
    "events": 10,
    "locations": [
+    "Bronx",
     "Brooklyn",
     "Manhattan",
     "Queens"
@@ -325,13 +326,14 @@
    "events": 6,
    "locations": [
     "David H Koch Theater",
-    "Greenwich House Theater",
     "Lucille Lortel Theater",
+    "Madison Square Garden",
     "Nederlander Theater",
     "Radio City Music Hall",
     "Richard Rodgers Theater"
    ],
    "types": [
+    "ComedyEvent",
     "Event",
     "TheaterEvent"
    ],
@@ -397,7 +399,7 @@
    "host": "aliceausten.org",
    "name": "Alice Austen House",
    "url": "https://aliceausten.org/events/",
-   "events": 2,
+   "events": 3,
    "locations": [
     "Alice Austen House Waterfront Lawn"
    ],
@@ -554,7 +556,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 38,
+   "links": 39,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -642,7 +644,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 91,
+   "links": 100,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -678,7 +680,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 142,
+   "links": 136,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -730,7 +732,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 20,
+   "links": 19,
    "lat": 40.7628819,
    "lon": -73.8248834,
    "borough": "Queens",
@@ -764,7 +766,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 13,
+   "links": 12,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -780,7 +782,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 45,
+   "links": 43,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -886,7 +888,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 48,
+   "links": 47,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -940,7 +942,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 43,
+   "links": 40,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -976,7 +978,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 7,
+   "links": 9,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
