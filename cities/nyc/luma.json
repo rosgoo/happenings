@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-17T13:45:06.399681+00:00",
+ "generated_at": "2026-09-21T15:18:21.672785+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -76,6 +76,14 @@
    "checked_at": "2026-08-17T09:21:03.727321+00:00"
   },
   {
+   "id": "cal-LQLBUKoHbBrm7eb",
+   "name": "Narrative Change Summit",
+   "ok": true,
+   "total": 23,
+   "upcoming": 13,
+   "checked_at": "2026-09-21T15:18:00.540663+00:00"
+  },
+  {
    "id": "cal-dGP82mVkrg1FRmr",
    "name": "The New York Philosophy Club",
    "ok": true,
@@ -106,6 +114,14 @@
    "total": 220,
    "upcoming": 11,
    "checked_at": "2026-09-07T14:25:00.486138+00:00"
+  },
+  {
+   "id": "cal-gTCvv5vKTHEyvgp",
+   "name": "Activate Ecosystem Events",
+   "ok": true,
+   "total": 37,
+   "upcoming": 10,
+   "checked_at": "2026-09-21T15:18:14.148610+00:00"
   },
   {
    "id": "cal-qbsfYMOG654KgPf",
@@ -364,6 +380,14 @@
    "checked_at": "2026-09-17T13:45:06.399658+00:00"
   },
   {
+   "id": "cal-yM3q6qAJxwVefM4",
+   "name": "AV Events",
+   "ok": true,
+   "total": 52,
+   "upcoming": 4,
+   "checked_at": "2026-09-21T15:18:17.397759+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -466,6 +490,46 @@
    "total": 114,
    "upcoming": 3,
    "checked_at": "2026-09-17T13:44:56.284403+00:00"
+  },
+  {
+   "id": "cal-H7Tl8JpauxFZHjP",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 3,
+   "checked_at": "2026-09-21T15:17:56.022133+00:00"
+  },
+  {
+   "id": "cal-iLgZRTFOCcn0kkE",
+   "name": "PlanetHAUS",
+   "ok": true,
+   "total": 4,
+   "upcoming": 3,
+   "checked_at": "2026-09-21T15:17:57.519785+00:00"
+  },
+  {
+   "id": "cal-6ES3YjPS3KuNyPQ",
+   "name": "FMCIDE at UNGA81",
+   "ok": true,
+   "total": 4,
+   "upcoming": 3,
+   "checked_at": "2026-09-21T15:18:06.646241+00:00"
+  },
+  {
+   "id": "cal-Lo0x0FzITZ27zLo",
+   "name": "Personal",
+   "ok": true,
+   "total": 16,
+   "upcoming": 3,
+   "checked_at": "2026-09-21T15:18:15.525345+00:00"
+  },
+  {
+   "id": "cal-d9p0Y4pW1Y6ZnVn",
+   "name": "Deepline",
+   "ok": true,
+   "total": 26,
+   "upcoming": 3,
+   "checked_at": "2026-09-21T15:18:20.052765+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -666,6 +730,22 @@
    "total": 8,
    "upcoming": 2,
    "checked_at": "2026-09-17T13:45:05.107764+00:00"
+  },
+  {
+   "id": "cal-LquvrqT3qA53h6s",
+   "name": "Plastic Odyssey \ud83c\uddfa\ud83c\uddf8",
+   "ok": true,
+   "total": 40,
+   "upcoming": 2,
+   "checked_at": "2026-09-21T15:18:05.611181+00:00"
+  },
+  {
+   "id": "cal-5gDZkBGND6LlQJG",
+   "name": "Personal",
+   "ok": true,
+   "total": 9,
+   "upcoming": 2,
+   "checked_at": "2026-09-21T15:18:12.521720+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1394,6 +1474,70 @@
    "total": 2,
    "upcoming": 1,
    "checked_at": "2026-09-17T13:45:03.632050+00:00"
+  },
+  {
+   "id": "cal-xnGa1FftDpoNtV4",
+   "name": "Personal",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:17:59.068349+00:00"
+  },
+  {
+   "id": "cal-Ruy5US8xY3QN7ru",
+   "name": "1% for the Planet Volunteer Hackathons",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:02.149847+00:00"
+  },
+  {
+   "id": "cal-XA5tH5N1KbGk6Fy",
+   "name": "Enduring Planet and Friends",
+   "ok": true,
+   "total": 21,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:03.627506+00:00"
+  },
+  {
+   "id": "cal-CzLH0UwE159ur6s",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:08.010026+00:00"
+  },
+  {
+   "id": "cal-YtPHLfSztc6tK9B",
+   "name": "Mataron A Pedro",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:09.605491+00:00"
+  },
+  {
+   "id": "cal-lJCyiOhusgcdSIc",
+   "name": "Tailwind Futures",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:10.990130+00:00"
+  },
+  {
+   "id": "cal-vR9KDer3a9iEfUd",
+   "name": "NY Hardware Meetup",
+   "ok": true,
+   "total": 37,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:18.672282+00:00"
+  },
+  {
+   "id": "cal-BEeTjHfnWQxck13",
+   "name": "Tezos Events",
+   "ok": true,
+   "total": 56,
+   "upcoming": 1,
+   "checked_at": "2026-09-21T15:18:21.672754+00:00"
   }
  ]
 }

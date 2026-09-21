@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-09-17T13:57:18.874348+00:00",
+ "generated_at": "2026-09-21T15:30:59.876063+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -226,32 +226,6 @@
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "historichousetrust.org",
-   "name": "Lewis Howard Latimer House Museum",
-   "url": "https://historichousetrust.org/events/",
-   "events": 6,
-   "locations": [
-    "Conference House",
-    "Historic Richmond Town",
-    "King Manor Museum",
-    "Lefferts Historic House",
-    "Lewis Latimer House"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7660962,
-   "lon": -73.829377,
-   "borough": "Queens",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "lighthousemuseum.org",
    "name": "National Lighthouse Museum",
    "url": "https://lighthousemuseum.org/events/",
@@ -272,28 +246,6 @@
    "lat": 40.6407356,
    "lon": -74.0734107,
    "borough": "Staten Island",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "mvhm.org",
-   "name": "Mount Vernon Hotel Museum",
-   "url": "https://mvhm.org/events/",
-   "events": 6,
-   "locations": [
-    "Mount Vernon Hotel Museum &amp; Garden"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7605217,
-   "lon": -73.9597128,
-   "borough": "Manhattan",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
@@ -327,13 +279,12 @@
    "locations": [
     "David H Koch Theater",
     "Lucille Lortel Theater",
-    "Madison Square Garden",
     "Nederlander Theater",
+    "Perelman Performing Arts Center",
     "Radio City Music Hall",
     "Richard Rodgers Theater"
    ],
    "types": [
-    "ComedyEvent",
     "Event",
     "TheaterEvent"
    ],
@@ -371,10 +322,35 @@
    "why": "Hoboken, New Jersey. The census swept a bounding box; normalize would reject every row as outside nyc, so the honest place to stop is before the request."
   },
   {
+   "host": "historichousetrust.org",
+   "name": "Lewis Howard Latimer House Museum",
+   "url": "https://historichousetrust.org/events/",
+   "events": 5,
+   "locations": [
+    "Conference House",
+    "Historic Richmond Town",
+    "King Manor Museum",
+    "Lefferts Historic House"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7660962,
+   "lon": -73.829377,
+   "borough": "Queens",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "lucidbody.com",
    "name": "Lucid Body House",
    "url": "https://lucidbody.com/events",
-   "events": 5,
+   "events": 4,
    "locations": [
     "Art of Acting Studio",
     "Lambertville Arts and Movement",
@@ -396,12 +372,12 @@
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "aliceausten.org",
-   "name": "Alice Austen House",
-   "url": "https://aliceausten.org/events/",
-   "events": 3,
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/",
+   "events": 4,
    "locations": [
-    "Alice Austen House Waterfront Lawn"
+    "Mount Vernon Hotel Museum &amp; Garden"
    ],
    "types": [
     "Event"
@@ -411,9 +387,11 @@
    "mode": "listing",
    "prefix": null,
    "links": 0,
-   "lat": 40.6151272,
-   "lon": -74.0630286,
-   "borough": "Staten Island"
+   "lat": 40.7605217,
+   "lon": -73.9597128,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "littleisland.org",
@@ -434,6 +412,26 @@
    "borough": "Manhattan",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "aliceausten.org",
+   "name": "Alice Austen House",
+   "url": "https://aliceausten.org/events/",
+   "events": 1,
+   "locations": [
+    "Alice Austen House Waterfront Lawn"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/events",
+   "links": 8,
+   "lat": 40.6151272,
+   "lon": -74.0630286,
+   "borough": "Staten Island"
   },
   {
    "host": "waterfrontmuseum.org",
@@ -556,7 +554,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 39,
+   "links": 37,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -590,7 +588,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 7,
+   "links": 5,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -644,7 +642,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 100,
+   "links": 101,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -680,7 +678,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 136,
+   "links": 131,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -766,7 +764,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 12,
+   "links": 10,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -888,7 +886,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 47,
+   "links": 43,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -942,7 +940,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 40,
+   "links": 47,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -978,7 +976,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 9,
+   "links": 7,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
