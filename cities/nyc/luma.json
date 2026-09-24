@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-21T15:18:21.672785+00:00",
+ "generated_at": "2026-09-24T13:45:09.540959+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -532,6 +532,30 @@
    "checked_at": "2026-09-21T15:18:20.052765+00:00"
   },
   {
+   "id": "cal-Wl0CizyBCFfgaKj",
+   "name": "Table Stakes Poker",
+   "ok": true,
+   "total": 20,
+   "upcoming": 3,
+   "checked_at": "2026-09-24T13:44:55.902267+00:00"
+  },
+  {
+   "id": "cal-KNKJBUE9rLs9fIx",
+   "name": "MongoDB",
+   "ok": true,
+   "total": 41,
+   "upcoming": 3,
+   "checked_at": "2026-09-24T13:45:05.003168+00:00"
+  },
+  {
+   "id": "cal-83Wftl00nobq7Pv",
+   "name": "steph, that quirky bird girl",
+   "ok": true,
+   "total": 43,
+   "upcoming": 3,
+   "checked_at": "2026-09-24T13:45:08.014916+00:00"
+  },
+  {
    "id": "cal-8x55tE86VtAD07z",
    "name": "Supabase Community Events",
    "ok": true,
@@ -746,6 +770,22 @@
    "total": 9,
    "upcoming": 2,
    "checked_at": "2026-09-21T15:18:12.521720+00:00"
+  },
+  {
+   "id": "cal-cFYex74SKX9LLFx",
+   "name": "Personal",
+   "ok": true,
+   "total": 29,
+   "upcoming": 2,
+   "checked_at": "2026-09-24T13:44:51.525572+00:00"
+  },
+  {
+   "id": "cal-ZXqv5ppntTN2N3w",
+   "name": "NYC Founders Club",
+   "ok": true,
+   "total": 36,
+   "upcoming": 2,
+   "checked_at": "2026-09-24T13:44:57.510752+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1538,6 +1578,78 @@
    "total": 56,
    "upcoming": 1,
    "checked_at": "2026-09-21T15:18:21.672754+00:00"
+  },
+  {
+   "id": "cal-FjeaFmqhm68P6Pr",
+   "name": "Equal Ventures Events",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:44:50.062318+00:00"
+  },
+  {
+   "id": "cal-ckNEoL6GrxsNKux",
+   "name": "Double Diamond",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:44:52.912139+00:00"
+  },
+  {
+   "id": "cal-lRax5obCnt97XFH",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:44:54.368040+00:00"
+  },
+  {
+   "id": "cal-fo4UTurRKfe6uhG",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:44:58.877708+00:00"
+  },
+  {
+   "id": "cal-mJqWook0FdRrCQv",
+   "name": "SN\u00d8CAP - Events Calendar",
+   "ok": true,
+   "total": 16,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:45:00.690297+00:00"
+  },
+  {
+   "id": "cal-THPn7mL4KWDnAEl",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:45:02.019786+00:00"
+  },
+  {
+   "id": "cal-VGSry0fMwKU9ZIk",
+   "name": "Yudi J Live Events",
+   "ok": true,
+   "total": 60,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:45:03.836918+00:00"
+  },
+  {
+   "id": "cal-ZpcaGFRAQFgKnEl",
+   "name": "Glow Cultural Center",
+   "ok": true,
+   "total": 9,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:45:06.455687+00:00"
+  },
+  {
+   "id": "cal-qpTbcsGQ1WtSpsO",
+   "name": "KINFOLK TECH EVENTS CALENDAR",
+   "ok": true,
+   "total": 48,
+   "upcoming": 1,
+   "checked_at": "2026-09-24T13:45:09.540933+00:00"
   }
  ]
 }
