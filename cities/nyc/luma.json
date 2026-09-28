@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-24T13:45:09.540959+00:00",
+ "generated_at": "2026-09-28T16:58:29.173536+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -116,6 +116,14 @@
    "checked_at": "2026-09-07T14:25:00.486138+00:00"
   },
   {
+   "id": "cal-QV7Usxo0hj1056W",
+   "name": "Work Like a Girl",
+   "ok": true,
+   "total": 92,
+   "upcoming": 11,
+   "checked_at": "2026-09-28T16:58:20.407359+00:00"
+  },
+  {
    "id": "cal-gTCvv5vKTHEyvgp",
    "name": "Activate Ecosystem Events",
    "ok": true,
@@ -186,6 +194,14 @@
    "total": 78,
    "upcoming": 8,
    "checked_at": "2026-09-17T13:44:49.956197+00:00"
+  },
+  {
+   "id": "cal-07CSI5JNv6xB0zz",
+   "name": "New York Yoga Club",
+   "ok": true,
+   "total": 77,
+   "upcoming": 8,
+   "checked_at": "2026-09-28T16:58:29.173513+00:00"
   },
   {
    "id": "cal-8ACK0vjqOfKpHXl",
@@ -306,6 +322,14 @@
    "total": 41,
    "upcoming": 5,
    "checked_at": "2026-09-14T15:12:36.946602+00:00"
+  },
+  {
+   "id": "cal-1cPqxnoGqUHzp4n",
+   "name": "Founders on Tap",
+   "ok": true,
+   "total": 19,
+   "upcoming": 5,
+   "checked_at": "2026-09-28T16:58:18.387074+00:00"
   },
   {
    "id": "cal-H1FY60pnZtchaf4",
@@ -786,6 +810,30 @@
    "total": 36,
    "upcoming": 2,
    "checked_at": "2026-09-24T13:44:57.510752+00:00"
+  },
+  {
+   "id": "cal-BwOaWCzf7Athmy5",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 2,
+   "checked_at": "2026-09-28T16:58:16.880016+00:00"
+  },
+  {
+   "id": "cal-vsSilU6JylrK1E3",
+   "name": "Punk Monk",
+   "ok": true,
+   "total": 2,
+   "upcoming": 2,
+   "checked_at": "2026-09-28T16:58:24.563594+00:00"
+  },
+  {
+   "id": "cal-624LTkBO2aKUDFn",
+   "name": "Personal",
+   "ok": true,
+   "total": 19,
+   "upcoming": 2,
+   "checked_at": "2026-09-28T16:58:25.913396+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1650,6 +1698,46 @@
    "total": 48,
    "upcoming": 1,
    "checked_at": "2026-09-24T13:45:09.540933+00:00"
+  },
+  {
+   "id": "cal-ostmGiLjzSKeEnK",
+   "name": "NYU Center on International Cooperation",
+   "ok": true,
+   "total": 7,
+   "upcoming": 1,
+   "checked_at": "2026-09-28T16:58:14.188727+00:00"
+  },
+  {
+   "id": "cal-zWajn5F5MuBSr3H",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-09-28T16:58:15.464937+00:00"
+  },
+  {
+   "id": "cal-qaLEig0CzNBZogC",
+   "name": "Metabase",
+   "ok": true,
+   "total": 13,
+   "upcoming": 1,
+   "checked_at": "2026-09-28T16:58:21.798177+00:00"
+  },
+  {
+   "id": "cal-8vX4xl06u6TTaew",
+   "name": "Braintrust",
+   "ok": true,
+   "total": 47,
+   "upcoming": 1,
+   "checked_at": "2026-09-28T16:58:23.615960+00:00"
+  },
+  {
+   "id": "cal-3SJNMeGsUwNG7IW",
+   "name": "Work-Bench",
+   "ok": true,
+   "total": 32,
+   "upcoming": 1,
+   "checked_at": "2026-09-28T16:58:27.549610+00:00"
   }
  ]
 }

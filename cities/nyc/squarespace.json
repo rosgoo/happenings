@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T13:45:09.653005+00:00",
+ "generated_at": "2026-09-28T16:58:29.305457+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 542,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 10,
+     "upcoming": 9,
      "past": 30
     }
    ],
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 9,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -93,8 +93,8 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 15,
-     "past": 4
+     "upcoming": 14,
+     "past": 6
     }
    ],
    "tried": 4
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 5,
+     "upcoming": 6,
      "past": 30
     }
    ],
@@ -439,8 +439,8 @@
      "url": "https://www.thepaintingcenter.org/new-events-1?format=json",
      "title": "New Events",
      "collection_id": "63ee8e245c21c533a4d31f6e",
-     "upcoming": 5,
-     "past": 8
+     "upcoming": 4,
+     "past": 9
     }
    ],
    "tried": 5
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 51,
+     "upcoming": 48,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 13,
+     "upcoming": 10,
      "past": 30
     }
    ],
@@ -755,7 +755,7 @@
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
      "upcoming": 7,
-     "past": 6
+     "past": 7
     }
    ],
    "tried": 5
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 10,
+     "upcoming": 5,
      "past": 30
     }
    ],
