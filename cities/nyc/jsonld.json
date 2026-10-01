@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-01T14:37:16.769386+00:00",
+ "generated_at": "2026-10-01T15:49:24.592607+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -413,6 +413,26 @@
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "aliceausten.org",
+   "name": "Alice Austen House",
+   "url": "https://aliceausten.org/events/",
+   "events": 1,
+   "locations": [
+    "Alice Austen House Waterfront Lawn"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/events",
+   "links": 8,
+   "lat": 40.6151272,
+   "lon": -74.0630286,
+   "borough": "Staten Island"
+  },
+  {
    "host": "waterfrontmuseum.org",
    "name": "The Waterfront Museum",
    "url": "https://waterfrontmuseum.org/event/four-paintings/",
@@ -433,22 +453,6 @@
    "borough": "Brooklyn",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "aliceausten.org",
-   "name": "Alice Austen House",
-   "url": "https://aliceausten.org/events/",
-   "events": 0,
-   "locations": [],
-   "types": [],
-   "status": 200,
-   "error": null,
-   "mode": "detail",
-   "prefix": "/events",
-   "links": 8,
-   "lat": 40.6151272,
-   "lon": -74.0630286,
-   "borough": "Staten Island"
   },
   {
    "host": "ampmgallery.com",
