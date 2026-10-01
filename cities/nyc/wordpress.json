@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T13:18:57.246000+00:00",
+ "generated_at": "2026-10-01T15:13:13.932684+00:00",
  "city": "nyc",
  "venues": [
   {
@@ -11,7 +11,7 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://www.prospectpark.org/wp-json/tribe/events/v1/events",
-   "events": 801,
+   "events": 706,
    "venue_name": "Prospect Park",
    "why": "Prospect Park Alliance publishes for the whole park; OSM matched its website to Lefferts Historic House, one building inside it. Every event is genuinely in the park, so the park is the venue."
   },
@@ -24,29 +24,18 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://waterfrontmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 205
+   "events": 211
   },
   {
-   "host": "casa-belvedere.org",
-   "name": "Casa Belvedere, The Italian Cultural Foundation",
-   "origin": "https://casa-belvedere.org",
-   "lat": 40.6285635,
-   "lon": -74.0880908,
-   "borough": "Staten Island",
+   "host": "www.cmom.org",
+   "name": "Children's Museum of Manhattan",
+   "origin": "https://www.cmom.org",
+   "lat": 40.7858798,
+   "lon": -73.9773343,
+   "borough": "Manhattan",
    "feed": "tribe",
-   "url": "https://casa-belvedere.org/wp-json/tribe/events/v1/events",
-   "events": 94
-  },
-  {
-   "host": "stannswarehouse.org",
-   "name": "St. Ann's Warehouse",
-   "origin": "https://stannswarehouse.org",
-   "lat": 40.7036538,
-   "lon": -73.9928126,
-   "borough": "Brooklyn",
-   "feed": "tribe",
-   "url": "https://stannswarehouse.org/wp-json/tribe/events/v1/events",
-   "events": 72
+   "url": "https://www.cmom.org/wp-json/tribe/events/v1/events",
+   "events": 202
   },
   {
    "host": "cityparksfoundation.org",
@@ -57,7 +46,7 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://cityparksfoundation.org/wp-json/tribe/events/v1/events",
-   "events": 69,
+   "events": 111,
    "skip": true,
    "why": "City Parks Foundation programmes citywide -- SummerStage and It's My Park at McKinley, Fort Washington, Sunset, Highbridge, Alley Pond, Hunter's Point. The feed carries no per-event location, so all 113 would inherit one point at Rumsey Playfield in Central Park. Losing them is honest; placing them there is not."
   },
@@ -70,29 +59,29 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://posterhouse.org/wp-json/tribe/events/v1/events",
-   "events": 54
+   "events": 74
   },
   {
-   "host": "bricktheater.com",
-   "name": "The Brick",
-   "origin": "https://bricktheater.com",
-   "lat": 40.714199,
-   "lon": -73.9497604,
+   "host": "stannswarehouse.org",
+   "name": "St. Ann's Warehouse",
+   "origin": "https://stannswarehouse.org",
+   "lat": 40.7036538,
+   "lon": -73.9928126,
    "borough": "Brooklyn",
    "feed": "tribe",
-   "url": "https://bricktheater.com/wp-json/tribe/events/v1/events",
-   "events": 53
+   "url": "https://stannswarehouse.org/wp-json/tribe/events/v1/events",
+   "events": 70
   },
   {
-   "host": "www.nytransitmuseum.org",
-   "name": "New York Transit Museum",
-   "origin": "https://www.nytransitmuseum.org",
-   "lat": 40.6905176,
-   "lon": -73.9899802,
-   "borough": "Brooklyn",
+   "host": "casa-belvedere.org",
+   "name": "Casa Belvedere, The Italian Cultural Foundation",
+   "origin": "https://casa-belvedere.org",
+   "lat": 40.6285635,
+   "lon": -74.0880908,
+   "borough": "Staten Island",
    "feed": "tribe",
-   "url": "https://www.nytransitmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 49
+   "url": "https://casa-belvedere.org/wp-json/tribe/events/v1/events",
+   "events": 69
   },
   {
    "host": "www.sichildrensmuseum.org",
@@ -103,7 +92,29 @@
    "borough": "Staten Island",
    "feed": "tribe",
    "url": "https://www.sichildrensmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 39
+   "events": 54
+  },
+  {
+   "host": "www.nytransitmuseum.org",
+   "name": "New York Transit Museum",
+   "origin": "https://www.nytransitmuseum.org",
+   "lat": 40.6905176,
+   "lon": -73.9899802,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://www.nytransitmuseum.org/wp-json/tribe/events/v1/events",
+   "events": 50
+  },
+  {
+   "host": "bricktheater.com",
+   "name": "The Brick",
+   "origin": "https://bricktheater.com",
+   "lat": 40.714199,
+   "lon": -73.9497604,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://bricktheater.com/wp-json/tribe/events/v1/events",
+   "events": 38
   },
   {
    "host": "www.resobox.com",
@@ -114,18 +125,7 @@
    "borough": "Queens",
    "feed": "tribe",
    "url": "https://www.resobox.com/wp-json/tribe/events/v1/events",
-   "events": 37
-  },
-  {
-   "host": "libertyhall.kean.edu",
-   "name": "Liberty Hall Museum",
-   "origin": "https://libertyhall.kean.edu",
-   "lat": 40.6770988,
-   "lon": -74.2267249,
-   "borough": null,
-   "feed": "tribe",
-   "url": "https://libertyhall.kean.edu/wp-json/tribe/events/v1/events",
-   "events": 25
+   "events": 31
   },
   {
    "host": "www.mocanyc.org",
@@ -139,25 +139,14 @@
    "events": 21
   },
   {
-   "host": "teatrolatea.org",
-   "name": "Teatro LATEA",
-   "origin": "https://teatrolatea.org",
-   "lat": null,
-   "lon": null,
+   "host": "libertyhall.kean.edu",
+   "name": "Liberty Hall Museum",
+   "origin": "https://libertyhall.kean.edu",
+   "lat": 40.6770988,
+   "lon": -74.2267249,
    "borough": null,
    "feed": "tribe",
-   "url": "https://teatrolatea.org/wp-json/tribe/events/v1/events",
-   "events": 21
-  },
-  {
-   "host": "societyillustrators.org",
-   "name": "Society of Illustrators",
-   "origin": "https://societyillustrators.org",
-   "lat": 40.7648187,
-   "lon": -73.966827,
-   "borough": "Manhattan",
-   "feed": "tribe",
-   "url": "https://societyillustrators.org/wp-json/tribe/events/v1/events",
+   "url": "https://libertyhall.kean.edu/wp-json/tribe/events/v1/events",
    "events": 18
   },
   {
@@ -169,29 +158,7 @@
    "borough": null,
    "feed": "tribe",
    "url": "https://playmeadowlands.com/wp-json/tribe/events/v1/events",
-   "events": 13
-  },
-  {
-   "host": "here.org",
-   "name": "HERE Arts Center",
-   "origin": "https://here.org",
-   "lat": 40.7250601,
-   "lon": -74.0050764,
-   "borough": "Manhattan",
-   "feed": "ics",
-   "url": "http://here.org/shows?ical=1",
-   "events": 9
-  },
-  {
-   "host": "mvhm.org",
-   "name": "Mount Vernon Hotel Museum",
-   "origin": "https://mvhm.org",
-   "lat": 40.7605217,
-   "lon": -73.9597128,
-   "borough": "Manhattan",
-   "feed": "tribe",
-   "url": "https://mvhm.org/wp-json/tribe/events/v1/events",
-   "events": 9
+   "events": 17
   },
   {
    "host": "www.statenislandmuseum.org",
@@ -202,40 +169,73 @@
    "borough": "Staten Island",
    "feed": "tribe",
    "url": "https://www.statenislandmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 9
+   "events": 16
   },
   {
-   "host": "wollmanrinknyc.com",
-   "name": "Wollman Rink",
-   "origin": "https://wollmanrinknyc.com",
-   "lat": 40.7677418,
-   "lon": -73.9744698,
+   "host": "societyillustrators.org",
+   "name": "Society of Illustrators",
+   "origin": "https://societyillustrators.org",
+   "lat": 40.7648187,
+   "lon": -73.966827,
    "borough": "Manhattan",
    "feed": "tribe",
-   "url": "https://wollmanrinknyc.com/wp-json/tribe/events/v1/events",
+   "url": "https://societyillustrators.org/wp-json/tribe/events/v1/events",
+   "events": 15
+  },
+  {
+   "host": "open-source-gallery.org",
+   "name": "Open Source Gallery",
+   "origin": "https://open-source-gallery.org",
+   "lat": 40.6623289,
+   "lon": -73.9892259,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://open-source-gallery.org/wp-json/tribe/events/v1/events",
+   "events": 14
+  },
+  {
+   "host": "teatrolatea.org",
+   "name": "Teatro LATEA",
+   "origin": "https://teatrolatea.org",
+   "lat": null,
+   "lon": null,
+   "borough": null,
+   "feed": "tribe",
+   "url": "https://teatrolatea.org/wp-json/tribe/events/v1/events",
+   "events": 11
+  },
+  {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "origin": "https://mvhm.org",
+   "lat": 40.7605217,
+   "lon": -73.9597128,
+   "borough": "Manhattan",
+   "feed": "tribe",
+   "url": "https://mvhm.org/wp-json/tribe/events/v1/events",
    "events": 8
   },
   {
-   "host": "lighthousemuseum.org",
-   "name": "National Lighthouse Museum",
-   "origin": "https://lighthousemuseum.org",
-   "lat": 40.6407356,
-   "lon": -74.0734107,
-   "borough": "Staten Island",
-   "feed": "tribe",
-   "url": "https://lighthousemuseum.org/wp-json/tribe/events/v1/events",
+   "host": "here.org",
+   "name": "HERE Arts Center",
+   "origin": "https://here.org",
+   "lat": 40.7250601,
+   "lon": -74.0050764,
+   "borough": "Manhattan",
+   "feed": "ics",
+   "url": "http://here.org/shows?ical=1",
    "events": 7
   },
   {
-   "host": "historichousetrust.org",
-   "name": "Lewis Howard Latimer House Museum",
-   "origin": "https://historichousetrust.org",
-   "lat": 40.7660962,
-   "lon": -73.829377,
-   "borough": "Queens",
+   "host": "spokethehub.org",
+   "name": "Spoke the Hub",
+   "origin": "https://spokethehub.org",
+   "lat": 40.6754153,
+   "lon": -73.9783171,
+   "borough": "Brooklyn",
    "feed": "tribe",
-   "url": "https://historichousetrust.org/wp-json/tribe/events/v1/events",
-   "events": 5
+   "url": "https://spokethehub.org/wp-json/tribe/events/v1/events",
+   "events": 6
   },
   {
    "host": "dyckmanfarmhouse.org",
@@ -249,28 +249,6 @@
    "events": 4
   },
   {
-   "host": "www.louisarmstronghouse.org",
-   "name": "Louis Armstrong House Museum",
-   "origin": "https://www.louisarmstronghouse.org",
-   "lat": 40.75457,
-   "lon": -73.8615384,
-   "borough": "Queens",
-   "feed": "tribe",
-   "url": "https://www.louisarmstronghouse.org/wp-json/tribe/events/v1/events",
-   "events": 4
-  },
-  {
-   "host": "spokethehub.org",
-   "name": "Spoke the Hub",
-   "origin": "https://spokethehub.org",
-   "lat": 40.6754153,
-   "lon": -73.9783171,
-   "borough": "Brooklyn",
-   "feed": "tribe",
-   "url": "https://spokethehub.org/wp-json/tribe/events/v1/events",
-   "events": 4
-  },
-  {
    "host": "mocada.org",
    "name": "MoCADA  Culture Lab II",
    "origin": "https://mocada.org",
@@ -279,7 +257,7 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://mocada.org/wp-json/tribe/events/v1/events",
-   "events": 1
+   "events": 3
   },
   {
    "host": "www.mocada.org",
@@ -290,6 +268,50 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://www.mocada.org/wp-json/tribe/events/v1/events",
+   "events": 3
+  },
+  {
+   "host": "lighthousemuseum.org",
+   "name": "National Lighthouse Museum",
+   "origin": "https://lighthousemuseum.org",
+   "lat": 40.6407356,
+   "lon": -74.0734107,
+   "borough": "Staten Island",
+   "feed": "tribe",
+   "url": "https://lighthousemuseum.org/wp-json/tribe/events/v1/events",
+   "events": 3
+  },
+  {
+   "host": "www.howlarts.org",
+   "name": "Howl! Happening",
+   "origin": "https://www.howlarts.org",
+   "lat": 40.7247539,
+   "lon": -73.9916906,
+   "borough": "Manhattan",
+   "feed": "tribe",
+   "url": "https://www.howlarts.org/wp-json/tribe/events/v1/events",
+   "events": 2
+  },
+  {
+   "host": "www.louisarmstronghouse.org",
+   "name": "Louis Armstrong House Museum",
+   "origin": "https://www.louisarmstronghouse.org",
+   "lat": 40.75457,
+   "lon": -73.8615384,
+   "borough": "Queens",
+   "feed": "tribe",
+   "url": "https://www.louisarmstronghouse.org/wp-json/tribe/events/v1/events",
+   "events": 2
+  },
+  {
+   "host": "historichousetrust.org",
+   "name": "Lewis Howard Latimer House Museum",
+   "origin": "https://historichousetrust.org",
+   "lat": 40.7660962,
+   "lon": -73.829377,
+   "borough": "Queens",
+   "feed": "tribe",
+   "url": "https://historichousetrust.org/wp-json/tribe/events/v1/events",
    "events": 1
   },
   {

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T13:18:57.225114+00:00",
+ "generated_at": "2026-10-01T15:13:13.909124+00:00",
  "probed": 668,
  "sites": [
   {
@@ -22,20 +22,20 @@
    "open": [
     {
      "base": "event",
-     "total": "245",
+     "total": "249",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Meet Me At The Park: Public Address",
-     "sample_link": "https://bronxmuseum.org/event/public-address-opening/",
+     "sample_title": "First Friday October 2026: Hispanic Heritage Month\u2014Latin Dancing",
+     "sample_link": "https://bronxmuseum.org/event/first-friday-oct26/",
      "slug": "event"
     },
     {
      "base": "exhibition",
-     "total": "142",
+     "total": "143",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Alex Strada: Public Address",
-     "sample_link": "https://bronxmuseum.org/exhibition/public-address/",
+     "sample_title": "Lifelong Studio Exhibition: Transcending the Form\u2014Abstract Figurative Painting",
+     "sample_link": "https://bronxmuseum.org/exhibition/lifelong-studio-painting/",
      "slug": "exhibition"
     }
    ],
@@ -61,15 +61,15 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "49",
+     "total": "50",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Meet the Transit Mascots",
-     "sample_link": "https://www.nytransitmuseum.org/program/mascots/",
+     "sample_title": "Through the Mirror: Homelessness, Healthcare, and Innovation in the NYC Subways",
+     "sample_link": "https://www.nytransitmuseum.org/program/through-the-mirror/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 49,
+   "tribe": 50,
    "ics": {
     "url": "https://www.nytransitmuseum.org/programs/?ical=1",
     "vevents": 30
@@ -122,11 +122,11 @@
     },
     {
      "base": "event",
-     "total": "186",
+     "total": "192",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Staten Island Shakespearean Theatre Company presents: Macbeth",
-     "sample_link": "https://snug-harbor.org/event/staten-island-shakespearean-theatre-company-presents-macbeth/",
+     "sample_title": "Flying Leap Productions, in association with the New 42 and the New Victory Thea",
+     "sample_link": "https://snug-harbor.org/event/flying-leap-productions-in-association-with-the-new-42-and-the-new-victory-theater-present-the-garden/",
      "slug": "event"
     }
    ],
@@ -163,18 +163,18 @@
     },
     {
      "base": "tribe_events",
-     "total": "9",
+     "total": "16",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Educator Open House",
-     "sample_link": "https://www.statenislandmuseum.org/event/educator-open-house/",
+     "sample_title": "Bird and Nature Walk:\u00a0Great Kills Park",
+     "sample_link": "https://www.statenislandmuseum.org/event/bird-and-nature-walk-great-kills-park-10/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 9,
+   "tribe": 16,
    "ics": {
     "url": "https://www.statenislandmuseum.org/events?ical=1",
-    "vevents": 9
+    "vevents": 16
    }
   },
   {
@@ -190,8 +190,8 @@
      "total": "4",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Free Guided Tour",
-     "sample_link": "https://dyckmanfarmhouse.org/event/free-guided-tour-3/",
+     "sample_title": "Opening Reception: Spot P!",
+     "sample_link": "https://dyckmanfarmhouse.org/event/opening-reception-spot-p/",
      "slug": "tribe_events"
     }
    ],
@@ -273,16 +273,16 @@
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "The Modern Concrete Skyscraper",
-     "sample_link": "https://skyscraper.org/exhibitions/the-modern-concrete-skyscraper/",
+     "sample_link": "https://www.skyscraper.org/exhibitions/the-modern-concrete-skyscraper/",
      "slug": "exhibitions"
     },
     {
      "base": "programs",
-     "total": "464",
+     "total": "467",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Strings &#038; Sounds of Remembrance",
-     "sample_link": "https://skyscraper.org/programs/strings-sounds-of-remembrance/",
+     "sample_title": "Fire and Clay: How Bricks Reveal the Hidden History of Chicago",
+     "sample_link": "https://www.skyscraper.org/programs/fire-and-clay-chicago/",
      "slug": "programs"
     }
    ],
@@ -326,15 +326,15 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "39",
+     "total": "53",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Crazy Science: Liquid Nitrogen",
-     "sample_link": "https://sichildrensmuseum.org/event/crazy-science-liquid-nitrogen-4/2026-12-12/",
+     "sample_title": "Jackie Bouquio Silver Jubilee",
+     "sample_link": "https://sichildrensmuseum.org/event/jackie-bouquio-silver-jubilee-2/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 39,
+   "tribe": 54,
    "ics": {
     "url": "https://sichildrensmuseum.org/calendar/?ical=1",
     "vevents": 30
@@ -593,11 +593,11 @@
    "open": [
     {
      "base": "current-event",
-     "total": "4",
+     "total": "3",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Book Early for Our Labor Day Weekend Deal",
-     "sample_link": "https://newyork.museumofillusions.us/current-event/book-early-for-our-labor-day-weekend-deal/",
+     "sample_title": "Weird Wonders That Reimagine Reality",
+     "sample_link": "https://newyork.museumofillusions.us/current-event/weird-wonders-that-reimagine-reality/",
      "slug": "current-event"
     },
     {
@@ -651,33 +651,33 @@
    "open": [
     {
      "base": "product",
-     "total": "1076",
+     "total": "1102",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Home by Carson Ellis",
-     "sample_link": "https://societyillustrators.org/shop/books-media/childrens-books/home-by-carson-ellis/",
+     "sample_title": "Halloween Family Movie Night \u2022 SI Family Members",
+     "sample_link": "https://societyillustrators.org/event/halloween-family-movie-night-2026/",
      "slug": "product"
     },
     {
      "base": "tribe_events",
-     "total": "23",
+     "total": "18",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Leah Hayes in Conversation with Meg Lemke",
-     "sample_link": "https://societyillustrators.org/event/leah-hayes-identical/",
+     "sample_title": "Halloween Family Movie Night: The Nightmare Before Christmas",
+     "sample_link": "https://societyillustrators.org/event/halloween-family-movie-night-2026/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 18,
+   "tribe": 15,
    "ics": {
     "url": "https://societyillustrators.org/events/?ical=1",
-    "vevents": 17
+    "vevents": 12
    }
   },
   {
@@ -768,33 +768,33 @@
    "open": [
     {
      "base": "ajde_events",
-     "total": "271",
+     "total": "276",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Africa Is the Future 25th Anniversary Film Screening + Director Talk",
-     "sample_link": "https://mocada.org/events/africa-is-the-future-25th-anniversary-film-screening-director-talk/",
+     "sample_title": "The Black Public Relations Society of New York: Who Gets To Shape the Story?",
+     "sample_link": "https://mocada.org/events/the-black-public-relations-society-of-new-york-who-gets-to-shape-the-story/",
      "slug": "ajde_events"
     },
     {
      "base": "tribe_events",
-     "total": "4",
+     "total": "5",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Greg Tate Art Wall: \u201cCarib-Import #1\u201d Mural by Francks Deceus",
-     "sample_link": "https://mocada.org/event/greg-tate-art-wall-carib-import-1-mural-by-francks-deceus-2/",
+     "sample_title": "The Black Public Relations Society of New York: Who Gets To Shape the Story?",
+     "sample_link": "https://mocada.org/event/the-black-public-relations-society-of-new-york-who-gets-to-shape-the-story/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 1,
+   "tribe": 3,
    "ics": {
     "url": "http://mocada.org/events/word-to-mommy-a-comedy-tribute/?ical=1",
-    "vevents": 4
+    "vevents": 5
    }
   },
   {
@@ -847,24 +847,24 @@
      "total": "36",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "09/09-09/30 \u2022 Ciao Ragazzi! Italian Language for Kids 5+",
-     "sample_link": "https://casa-belvedere.org/product/09-09-09-30-ciao-ragazzi-italian-language-for-kids-5/",
+     "sample_title": "10/19 &#8211; 11/09\u2022 Hands &#038; Heritage: Italian Crochet Class",
+     "sample_link": "https://casa-belvedere.org/product/10-19-11-09-hands-heritage-italian-crochet-class/",
      "slug": "product"
     },
     {
      "base": "tribe_events",
-     "total": "92",
+     "total": "68",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Ciao Ragazzi! Italian Language for Kids 5+",
-     "sample_link": "https://casa-belvedere.org/event/ciao-ragazzi-italian-language-for-kids-5/2026-09-09/",
+     "sample_title": "Hands &#038; Heritage: Italian Crochet Class",
+     "sample_link": "https://casa-belvedere.org/event/hands-heritage-italian-crochet-class-5/2026-10-19/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 94,
+   "tribe": 69,
    "ics": {
     "url": "https://casa-belvedere.org/events/?ical=1",
-    "vevents": 27
+    "vevents": 28
    }
   },
   {
@@ -896,11 +896,11 @@
    "open": [
     {
      "base": "upcoming-events",
-     "total": "102",
+     "total": "103",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Tuesday Happy Hour!",
-     "sample_link": "https://museumbanksy.com/upcoming-events/happyhour21-9/",
+     "sample_title": "12pm &amp; 3pm Guided Tour Session",
+     "sample_link": "https://museumbanksy.com/upcoming-events/tours25/",
      "slug": "upcoming-events"
     }
    ],
@@ -1005,8 +1005,8 @@
      "total": "33",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Mind\u2019s Eye: <br>TARYN SIMON <br> FATHER COUNTRY <br> I DO LOVE YOU <br>",
-     "sample_link": "https://www.guggenheim.org/event/minds-eye-taryn-simon",
+     "sample_title": "Under the Oculus: A Celebration of Visionaries",
+     "sample_link": "https://www.guggenheim.org/event/under-the-oculus-a-celebration-of-visionaries",
      "slug": "event"
     },
     {
@@ -1041,7 +1041,7 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "7",
+     "total": "3",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Better Planet Film Festival",
@@ -1049,10 +1049,10 @@
      "slug": "tribe_events"
     }
    ],
-   "tribe": 7,
+   "tribe": 3,
    "ics": {
     "url": "https://lighthousemuseum.org/events/?ical=1",
-    "vevents": 7
+    "vevents": 3
    }
   },
   {
@@ -1065,15 +1065,15 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "1411",
+     "total": "1317",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Islands in the Park: A Caribbean Jam",
-     "sample_link": "https://www.prospectpark.org/event/islands-in-the-park-a-caribbean-jam/",
+     "sample_title": "Fall Festival at Lakeside",
+     "sample_link": "https://www.prospectpark.org/event/fall-festival-at-lakeside-17/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 801,
+   "tribe": 706,
    "ics": {
     "url": "https://www.prospectpark.org/events/?ical=1",
     "vevents": 30
@@ -1101,7 +1101,7 @@
    "open": [
     {
      "base": "mec-events",
-     "total": "353",
+     "total": "360",
      "returned": 3,
      "event_date_meta": [
       "_EventDateTimeSeparator",
@@ -1112,8 +1112,8 @@
       "_EventTimeRangeSeparator",
       "_EventTimezone"
      ],
-     "sample_title": "Exhibition Opening: Andrea Modica: Italian Story",
-     "sample_link": "https://aliceausten.org/events/exhibition-opening-italian-story/",
+     "sample_title": "Aura Photography Open Studio",
+     "sample_link": "https://aliceausten.org/events/aura-photography-studio-553-989-639-509-281-662-906-788-338-300-919-445-650-490-110-352/",
      "slug": "mec-events"
     }
    ],
@@ -1195,11 +1195,11 @@
    "open": [
     {
      "base": "event",
-     "total": "623",
+     "total": "644",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Art After Dark: Brazilian Day",
-     "sample_link": "https://newarkmuseumart.org/event/art-after-dark-brazilian-day-2026/",
+     "sample_title": "Planetarium Shows",
+     "sample_link": "https://newarkmuseumart.org/event/planetarium-shows-dec-2026/",
      "slug": "event"
     },
     {
@@ -1207,7 +1207,7 @@
      "total": "86",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "DREAMTIME IN NEWARK        Aljira and the Making of Global Contemporary Art",
+     "sample_title": "DREAMTIME IN NEWARK <br/>Aljira and the Making of Global Contemporary Art",
      "sample_link": "https://newarkmuseumart.org/exhibition/dreamtime-in-newark-aljira-and-the-making-of-global-contemporary-art/",
      "slug": "exhibition"
     },
@@ -1262,18 +1262,18 @@
     },
     {
      "base": "tribe_events",
-     "total": "9",
+     "total": "8",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Telling Stories Through Art: New York City History in Prints and Paintings",
-     "sample_link": "https://mvhm.org/event/telling-stories-through-art-new-york-city-history-in-prints-and-paintings-3/",
+     "sample_title": "The Empire City: Discover New York City&#8217;s Hidden History + Tea Tasting",
+     "sample_link": "https://mvhm.org/event/the-empire-city-discover-new-york-citys-hidden-history-tea-tasting/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 9,
+   "tribe": 8,
    "ics": {
     "url": "https://mvhm.org/events/?ical=1",
-    "vevents": 9
+    "vevents": 8
    }
   },
   {
@@ -1286,14 +1286,14 @@
    "open": [
     {
      "base": "ch_events",
-     "total": "1542",
+     "total": "1552",
      "returned": 3,
      "event_date_meta": [
       "_ch_exhibition_on_view_date",
       "_ch_exhibition_to_date"
      ],
-     "sample_title": "Tour Made in America with Photographer Christopher Payne",
-     "sample_link": "https://www.cooperhewitt.org/event/tour-made-in-america-with-photographer-christopher-payne-09-12-2026/",
+     "sample_title": "Design Hive | Virtual Information Session",
+     "sample_link": "https://www.cooperhewitt.org/event/design-hive-virtual-information-session-10-06-2026/",
      "slug": "ch_events"
     }
    ],
@@ -1330,11 +1330,26 @@
   {
    "host": "www.cmom.org",
    "name": "Children's Museum of Manhattan",
-   "wp_types": {},
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
    "drupal_types": null,
-   "open": [],
-   "tribe": null,
-   "ics": null
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "199",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Bilingual Author Event: Peque\u00f1a Mar\u00eda / Little Mar\u00eda by Luz Maria Mack",
+     "sample_link": "https://cmom.org/event/bilingual-author-event-pequena-maria-little-maria-by-luz-maria-mack-2/2026-10-11/1/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 202,
+   "ics": {
+    "url": "https://www.cmom.org/events/?ical=1",
+    "vevents": 30
+   }
   },
   {
    "host": "www.roerich.org",
@@ -1367,11 +1382,11 @@
    "open": [
     {
      "base": "events",
-     "total": "72",
+     "total": "74",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Create your own vibrant Carnaval mask and enjoy concert with Leadlights Ensemble",
-     "sample_link": "https://morrisjumel.org/events/create-your-own-vibrant-carnaval-mask-and-enjoy-concert-with-leadlights-ensemble/",
+     "sample_title": "VPC: Light, Shadow, and Chasing the Ghost of Augustin Le Prince",
+     "sample_link": "https://morrisjumel.org/events/vpc-light-shadow-and-chasing-the-ghost-of-augustin-le-prince/",
      "slug": "events"
     },
     {
@@ -1470,7 +1485,7 @@
     },
     {
      "base": "tribe_events",
-     "total": "10",
+     "total": "5",
      "returned": 3,
      "event_date_meta": [
       "_EventDateTimeSeparator",
@@ -1486,10 +1501,10 @@
      "slug": "tribe_events"
     }
    ],
-   "tribe": 5,
+   "tribe": 1,
    "ics": {
     "url": "https://historichousetrust.org/events/?ical=1",
-    "vevents": 10
+    "vevents": 5
    }
   },
   {
@@ -1511,18 +1526,18 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "4",
-     "returned": 3,
+     "total": "2",
+     "returned": 2,
      "event_date_meta": [],
-     "sample_title": "Corona Collection Exhibition Closing day",
-     "sample_link": "https://www.louisarmstronghouse.org/event-details/corona-collection-exhibition-closing-day/",
+     "sample_title": "Ghana Jazz Collective with Special Guest Shenel Johns",
+     "sample_link": "https://www.louisarmstronghouse.org/event-details/ghana-jazz-collective-with-special-guest-shenel-johns/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 4,
+   "tribe": 2,
    "ics": {
     "url": "https://www.louisarmstronghouse.org/events/?ical=1",
-    "vevents": 4
+    "vevents": 2
    }
   },
   {
@@ -1544,11 +1559,11 @@
    "open": [
     {
      "base": "exhibition",
-     "total": "279",
+     "total": "284",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "New York Proud: A Portrait of New York City",
-     "sample_link": "https://queensmuseum.org/exhibition/new-york-proud-a-portrait-of-new-york-city-photoville/",
+     "sample_title": "In the beginning",
+     "sample_link": "https://queensmuseum.org/exhibition/keli-safia-maksud-in-the-beginning/",
      "slug": "exhibition"
     }
    ],
@@ -1592,18 +1607,18 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "505",
+     "total": "513",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "viBe theater",
-     "sample_link": "https://waterfrontmuseum.org/event/vibe-theater/",
+     "sample_title": "Lasso Mary",
+     "sample_link": "https://waterfrontmuseum.org/event/lasso-mary/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 205,
+   "tribe": 211,
    "ics": {
     "url": "https://waterfrontmuseum.org/event/four-paintings/?ical=1",
     "vevents": 1
@@ -1619,11 +1634,11 @@
    "open": [
     {
      "base": "exhibition",
-     "total": "130",
+     "total": "135",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Isamu Noguchi at Lever&nbsp;House",
-     "sample_link": "https://www.noguchi.org/museum/exhibitions/view/isamu-noguchi-at-lever-house/",
+     "sample_title": "Noguchi to Asawa: Designing Postwar America",
+     "sample_link": "https://www.noguchi.org/museum/exhibitions/view/noguchi-to-asawa-designing-postwar-america/",
      "slug": "exhibition"
     }
    ],
@@ -1687,40 +1702,43 @@
    "open": [
     {
      "base": "exhibition",
-     "total": "62",
+     "total": "63",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Jacqueline Casey: American Modernist",
-     "sample_link": "https://posterhouse.org/exhibition/jacqueline-casey-american-modernist/",
+     "sample_title": "Pale Blue Earth, Big Red Moon: The Soviet Space Race",
+     "sample_link": "https://posterhouse.org/exhibition/pale-blue-earth-big-red-moon-the-soviet-space-race/",
      "slug": "exhibition"
     },
     {
      "base": "product",
-     "total": "672",
+     "total": "710",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
      "sample_title": "In-Person RSVP",
-     "sample_link": "https://posterhouse.org/event/open-studio-silkscreen-5/",
+     "sample_link": "https://posterhouse.org/event/third-sunday-always-free-18/",
      "slug": "product"
     },
     {
      "base": "tribe_events",
-     "total": "54",
+     "total": "73",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Open Studio: Silkscreen",
-     "sample_link": "https://posterhouse.org/event/open-studio-silkscreen-5/",
+     "sample_title": "Third Sunday Always Free",
+     "sample_link": "https://posterhouse.org/event/third-sunday-always-free-18/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 54,
-   "ics": null
+   "tribe": 74,
+   "ics": {
+    "url": "https://posterhouse.org/events/?ical=1",
+    "vevents": 30
+   }
   },
   {
    "host": "www.statueofliberty.org",
@@ -1753,21 +1771,21 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "24",
+     "total": "18",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Beat of the Revolution!",
-     "sample_link": "https://libertyhall.kean.edu/events-and-performances/beat-of-the-revolution/",
+     "sample_title": "Member Mondays: Farm to Table Tour",
+     "sample_link": "https://libertyhall.kean.edu/events-and-performances/member-mondays-farm-to-table-tour/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 25,
+   "tribe": 18,
    "ics": {
     "url": "https://libertyhall.kean.edu/events/?ical=1",
-    "vevents": 24
+    "vevents": 18
    }
   },
   {
@@ -1814,8 +1832,8 @@
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "MOCA PERFORMS &#8211; Echoes of Arrival: Becoming",
-     "sample_link": "https://www.mocanyc.org/event/moca-performs-echoes-of-arrival-becoming/",
+     "sample_title": "MOCA Queer StoryJAM #7 \u2013 Age",
+     "sample_link": "https://www.mocanyc.org/event/moca-queer-storyjam-7-age/",
      "slug": "tribe_events"
     }
    ],
@@ -1862,7 +1880,7 @@
    "open": [
     {
      "base": "product",
-     "total": "53",
+     "total": "47",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Crochet for Young Artists (9-12) &#8211; Wed/Fall 26",
@@ -2051,15 +2069,15 @@
     },
     {
      "base": "tribe_events",
-     "total": "37",
+     "total": "31",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Kinpaku: Japanese Gold Leaf \u2013 Chopsticks",
-     "sample_link": "https://resobox.com/event/kinpaku-japanese-gold-leaf-chopsticks/",
+     "sample_title": "Wasanbon Wagashi: Japanese Pressed-Sugar Confectionery",
+     "sample_link": "https://resobox.com/event/wasanbon-wagashi-japanese-pressed-sugar-confectionery-november/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 37,
+   "tribe": 31,
    "ics": {
     "url": "https://resobox.com/events/?ical=1",
     "vevents": 30
@@ -2278,11 +2296,11 @@
    "open": [
     {
      "base": "event",
-     "total": "589",
+     "total": "591",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Artists at Work: Yao Qingmei in Conversation with Xiaoyu Weng",
-     "sample_link": "https://iscp-nyc.org/event/61097",
+     "sample_title": "Artists at Work: Madeleine Andersson presents Toilet Science and the Rise of Sew",
+     "sample_link": "https://iscp-nyc.org/event/artists-at-work-madeleine-andersson-presents-toilet-science-and-the-rise-of-sewer-protestantism",
      "slug": "event"
     }
    ],
@@ -2344,11 +2362,11 @@
    "open": [
     {
      "base": "product",
-     "total": "492",
+     "total": "496",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Randy Wray Special Edition",
-     "sample_link": "https://karmakarma.org/publication/randy-wray-special-edition/",
+     "sample_title": "Dike Blair (Catskill Art Space, 2026)",
+     "sample_link": "https://karmakarma.org/publication/dike-blair-catskill-art-space-2026/",
      "slug": "product"
     }
    ],
@@ -2575,11 +2593,11 @@
    "open": [
     {
      "base": "exhibitions",
-     "total": "47",
+     "total": "48",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "34 Landscapes",
-     "sample_link": "https://www.marchgallery.org/exhibitions/34-landscapes/",
+     "sample_title": "Image from the Past",
+     "sample_link": "https://www.marchgallery.org/exhibitions/images-from-the-past/",
      "slug": "exhibitions"
     }
    ],
@@ -2688,9 +2706,21 @@
   {
    "host": "allouchegallery.com",
    "name": "Allouche Gallery",
-   "wp_types": null,
+   "wp_types": {
+    "product": "product"
+   },
    "drupal_types": null,
-   "open": [],
+   "open": [
+    {
+     "base": "product",
+     "total": "19",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "G.E. Liu, Wings of the Dragon (Original)",
+     "sample_link": "https://www.allouchegallery.com/thestore/g-e-liu-wings-of-the-dragon-original/",
+     "slug": "product"
+    }
+   ],
    "tribe": null,
    "ics": null
   },
@@ -2758,11 +2788,11 @@
    "open": [
     {
      "base": "exhibitions",
-     "total": "369",
+     "total": "370",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Paul Wallach",
-     "sample_link": "https://fergusmccaffrey.com/exhibition/paul-wallach/",
+     "sample_title": "Tatsuo Ikeda",
+     "sample_link": "https://fergusmccaffrey.com/exhibition/tatsuo-ikeda-3/",
      "slug": "exhibitions"
     }
    ],
@@ -3187,7 +3217,7 @@
    "open": [
     {
      "base": "exhibitions",
-     "total": "334",
+     "total": "335",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "WENDELL CASTLE: LIVING",
@@ -3221,11 +3251,11 @@
    "open": [
     {
      "base": "exhibitions",
-     "total": "216",
+     "total": "217",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Art Basel, Basel 2026: Andrew Ross and Dona Nelson",
-     "sample_link": "https://www.thomaserben.com/exhibitions/art-basel-basel-2026-andrew-ross-and-dona-nelson/",
+     "sample_title": "Mike Cloud: Suitcase Portraits",
+     "sample_link": "https://www.thomaserben.com/exhibitions/mike-cloud-suitcase-paintings/",
      "slug": "exhibitions"
     },
     {
@@ -3522,14 +3552,14 @@
    "open": [
     {
      "base": "event",
-     "total": "108",
+     "total": "141",
      "returned": 3,
      "event_date_meta": [
       "_eventorganiser_schedule_start_finish",
       "_eventorganiser_schedule_start_start"
      ],
-     "sample_title": "Climate Week: The Living History of Color: From Plant to Figure",
-     "sample_link": "https://www.pratt.edu/events/climate-week-the-living-history-of-color-from-plant-to-figure/",
+     "sample_title": "Marina Chao and Sean Corcoran Photo Talk Lectures",
+     "sample_link": "https://www.pratt.edu/events/marina-chao-and-sean-corcoran-photo-talk-lectures/",
      "slug": "event"
     },
     {
@@ -3621,7 +3651,7 @@
    "open": [
     {
      "base": "exhibitions-api",
-     "total": "173",
+     "total": "174",
      "returned": 3,
      "event_date_meta": [
       "ag_exh_end_date",
@@ -3629,8 +3659,8 @@
       "ag_exh_start_date",
       "ag_exh_updated_at"
      ],
-     "sample_title": "Size Matters",
-     "sample_link": "https://agora-gallery.com/ag-exhibitions/size-matters/",
+     "sample_title": "The Showroom: Mid-Century Modern",
+     "sample_link": "https://agora-gallery.com/ag-exhibitions/the-showroom-mid-century-modern/",
      "slug": "ag-exhibitions"
     },
     {
@@ -3653,7 +3683,7 @@
     },
     {
      "base": "product",
-     "total": "8951",
+     "total": "9050",
      "returned": 3,
      "event_date_meta": [
       "ag_exh_end_date",
@@ -3661,8 +3691,8 @@
       "ag_exh_start_date",
       "ag_exh_updated_at"
      ],
-     "sample_title": "Winter City - The Red Tram - Lyuba Vasileva",
-     "sample_link": "https://agora-gallery.com/product/lyuba-vasileva-winter-city-the-red-tram/",
+     "sample_title": "#8 - George Dell",
+     "sample_link": "https://agora-gallery.com/product/george-dell-8/",
      "slug": "product"
     }
    ],
@@ -3712,9 +3742,22 @@
     "tribe_events": "tribe_events"
    },
    "drupal_types": null,
-   "open": [],
-   "tribe": 0,
-   "ics": null
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "3",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Punk Before Punk<br><small>film preview</small>",
+     "sample_link": "https://www.howlarts.org/event/punk-before-punkfilm-preview/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 2,
+   "ics": {
+    "url": "https://www.howlarts.org/events/?ical=1",
+    "vevents": 2
+   }
   },
   {
    "host": "stand4gallery.org",
@@ -3916,33 +3959,33 @@
    "open": [
     {
      "base": "ajde_events",
-     "total": "271",
+     "total": "276",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Africa Is the Future 25th Anniversary Film Screening + Director Talk",
-     "sample_link": "https://mocada.org/events/africa-is-the-future-25th-anniversary-film-screening-director-talk/",
+     "sample_title": "The Black Public Relations Society of New York: Who Gets To Shape the Story?",
+     "sample_link": "https://mocada.org/events/the-black-public-relations-society-of-new-york-who-gets-to-shape-the-story/",
      "slug": "ajde_events"
     },
     {
      "base": "tribe_events",
-     "total": "4",
+     "total": "5",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Greg Tate Art Wall: \u201cCarib-Import #1\u201d Mural by Francks Deceus",
-     "sample_link": "https://mocada.org/event/greg-tate-art-wall-carib-import-1-mural-by-francks-deceus-2/",
+     "sample_title": "The Black Public Relations Society of New York: Who Gets To Shape the Story?",
+     "sample_link": "https://mocada.org/event/the-black-public-relations-society-of-new-york-who-gets-to-shape-the-story/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 1,
+   "tribe": 3,
    "ics": {
     "url": "http://mocada.org/events/word-to-mommy-a-comedy-tribute/?ical=1",
-    "vevents": 4
+    "vevents": 5
    }
   },
   {
@@ -4133,11 +4176,11 @@
    "open": [
     {
      "base": "lpr_events",
-     "total": "6776",
+     "total": "6815",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Catie Turner",
-     "sample_link": "https://lpr.com/lpr_events/ct26nyc/",
+     "sample_title": "The Bean Tones",
+     "sample_link": "https://lpr.com/lpr_events/tbt26nyc/",
      "slug": "lpr_events"
     },
     {
@@ -4201,11 +4244,11 @@
     },
     {
      "base": "special-event",
-     "total": "4",
+     "total": "5",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "The Waterfall",
-     "sample_link": "https://wptheater.org/special-event/the-waterfall/",
+     "sample_title": "Fish Special Events",
+     "sample_link": "https://wptheater.org/special-event/fish-special-events/",
      "slug": "special-event"
     }
    ],
@@ -4381,7 +4424,7 @@
    "open": [
     {
      "base": "performance",
-     "total": "315",
+     "total": "318",
      "returned": 3,
      "event_date_meta": [
       "first_date",
@@ -4389,8 +4432,8 @@
       "performance_times",
       "times"
      ],
-     "sample_title": "2026 National Book Awards Finalist Reading",
-     "sample_link": "https://nyuskirball.org/performance/2026-national-book-awards/",
+     "sample_title": "Archives Onstage: Celebrating Mar\u00eda Irene Forn\u00e9s",
+     "sample_link": "https://nyuskirball.org/performance/celebrating-maria-irene-fornes/",
      "slug": "performance"
     }
    ],
@@ -4629,7 +4672,7 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "53",
+     "total": "38",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Letters from Tyra",
@@ -4637,10 +4680,10 @@
      "slug": "tribe_events"
     }
    ],
-   "tribe": 53,
+   "tribe": 38,
    "ics": {
     "url": "https://www.bricktheater.com/events?ical=1",
-    "vevents": 19
+    "vevents": 14
    }
   },
   {
@@ -4839,7 +4882,7 @@
    "tribe": 0,
    "ics": {
     "url": "http://here.org/shows?ical=1",
-    "vevents": 9
+    "vevents": 7
    }
   },
   {
@@ -4865,11 +4908,11 @@
    "open": [
     {
      "base": "event",
-     "total": "1489",
+     "total": "1493",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Emergence: An Artist Showcase",
-     "sample_link": "https://newyorklivearts.org/event/emergence-an-artist-showcase/",
+     "sample_title": "Curriculum V: Space/Circle/Wave and so on\u2026",
+     "sample_link": "https://newyorklivearts.org/event/curriculum-v-space-circle-wave-and-so-on/",
      "slug": "event"
     },
     {
@@ -4904,11 +4947,11 @@
    "open": [
     {
      "base": "production",
-     "total": "8",
+     "total": "9",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Stars in Relations",
-     "sample_link": "https://www.roundabouttheatre.org/production/2026-2027-season/stars-in-relations/",
+     "sample_title": "The Blue Parts",
+     "sample_link": "https://www.roundabouttheatre.org/production/2026-2027-season/the-blue-parts/",
      "slug": "production"
     }
    ],
@@ -4980,33 +5023,33 @@
    "open": [
     {
      "base": "product",
-     "total": "5",
+     "total": "4",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "10% off General Admission before Sept 18",
+     "sample_title": "Front Rows",
      "sample_link": "https://teatrolatea.org/event/dominant-animals-3/",
      "slug": "product"
     },
     {
      "base": "tribe_events",
-     "total": "21",
+     "total": "12",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Becoming Chavela",
-     "sample_link": "https://teatrolatea.org/event/becoming-chavela-3/",
+     "sample_title": "BACKSTAGE: The Human Side of Fashion",
+     "sample_link": "https://teatrolatea.org/event/backstage-the-human-side-of-fashion/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 21,
+   "tribe": 11,
    "ics": {
     "url": "https://teatrolatea.org/events/?ical=1",
-    "vevents": 21
+    "vevents": 12
    }
   },
   {
@@ -5255,7 +5298,7 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "72",
+     "total": "69",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "Saigon",
@@ -5263,7 +5306,7 @@
      "slug": "tribe_events"
     }
    ],
-   "tribe": 72,
+   "tribe": 70,
    "ics": {
     "url": "https://stannswarehouse.org/events/?ical=1",
     "vevents": 30
@@ -5279,15 +5322,15 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "65",
+     "total": "106",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Pinocchio and Gepetto&#8217;s Big Apple Adventure",
-     "sample_link": "https://cityparksfoundation.org/events/pinocchio-and-gepettos-big-apple-adventure-57/",
+     "sample_title": "It&#8217;s My Park at Hunter&#8217;s Point South Park",
+     "sample_link": "https://cityparksfoundation.org/events/its-my-park-at-hunters-point-south-park-48/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 69,
+   "tribe": 111,
    "ics": {
     "url": "https://cityparksfoundation.org/calendar?ical=1",
     "vevents": 30
@@ -5422,9 +5465,21 @@
   {
    "host": "metrograph.com",
    "name": "The Metrograph",
-   "wp_types": null,
+   "wp_types": {
+    "product": "product"
+   },
    "drupal_types": null,
-   "open": [],
+   "open": [
+    {
+     "base": "product",
+     "total": "90",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Collier Schorr &#8211; Writing a Letter: Akerman Ballet, Act 1",
+     "sample_link": "https://metrograph.com/product/collier-schorr-writing-a-letter-akerman-ballet-act-1/",
+     "slug": "product"
+    }
+   ],
    "tribe": null,
    "ics": null
   },
@@ -5749,21 +5804,21 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "5",
+     "total": "7",
      "returned": 3,
      "event_date_meta": [
       "_ticket_end_date",
       "_ticket_start_date"
      ],
-     "sample_title": "Save these dates!",
-     "sample_link": "https://spokethehub.org/event/save-these-dates/",
+     "sample_title": "STH Fall &#8217;26 Songwriter Showcase",
+     "sample_link": "https://spokethehub.org/event/sth-fall-26-songwriter-showcase/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 4,
+   "tribe": 6,
    "ics": {
     "url": "https://spokethehub.org/program/?ical=1",
-    "vevents": 5
+    "vevents": 7
    }
   },
   {
@@ -5776,7 +5831,7 @@
    "open": [
     {
      "base": "product",
-     "total": "2758",
+     "total": "2756",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "2933",
@@ -5829,21 +5884,9 @@
   {
    "host": "eyebeam.org",
    "name": "Eyebeam",
-   "wp_types": {
-    "program": "program"
-   },
+   "wp_types": null,
    "drupal_types": null,
-   "open": [
-    {
-     "base": "program",
-     "total": "7",
-     "returned": 3,
-     "event_date_meta": [],
-     "sample_title": "Speculating on Plurality",
-     "sample_link": "https://eyebeam.org/program/speculating-plurality/",
-     "slug": "program"
-    }
-   ],
+   "open": [],
    "tribe": null,
    "ics": null
   },
@@ -6056,7 +6099,7 @@
    "open": [
     {
      "base": "programs",
-     "total": "796",
+     "total": "806",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "RU Program Summary 2026",
@@ -6086,11 +6129,11 @@
    "open": [
     {
      "base": "product",
-     "total": "81",
+     "total": "83",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Self Finishing Needlepoint Hat Workshop- Adults &#8211; Oct 20th",
-     "sample_link": "https://bondcraftstudio.com/product/self-finishing-needlepoint-hat-workshop-adults-oct-20th/",
+     "sample_title": "Crochet a Pumpkin- Adults -Sept. 30th",
+     "sample_link": "https://bondcraftstudio.com/product/crochet-a-pumpkin-adults-sept-30th/",
      "slug": "product"
     }
    ],
@@ -6318,11 +6361,26 @@
   {
    "host": "open-source-gallery.org",
    "name": "Open Source Gallery",
-   "wp_types": null,
+   "wp_types": {
+    "tribe_events": "tribe_events"
+   },
    "drupal_types": null,
-   "open": [],
-   "tribe": null,
-   "ics": null
+   "open": [
+    {
+     "base": "tribe_events",
+     "total": "15",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Wicked Fun",
+     "sample_link": "https://open-source-gallery.org/event/wicked-fun/",
+     "slug": "tribe_events"
+    }
+   ],
+   "tribe": 14,
+   "ics": {
+    "url": "https://open-source-gallery.org/events/?ical=1",
+    "vevents": 15
+   }
   },
   {
    "host": "www.theafrikanpoetrytheatre.org",
@@ -6352,11 +6410,11 @@
    "open": [
     {
      "base": "product",
-     "total": "623",
+     "total": "609",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "FEDERAL SIDEBOARD MADE BY JOHN AND THOMAS SEYMOUR (Copy)",
-     "sample_link": "https://www.levygalleries.com/product/federal-sideboard-made-by-john-and-thomas-seymour-copy/",
+     "sample_title": "A VERY FINE EARLY QUEEN ANNE ARMCHAIR",
+     "sample_link": "https://www.levygalleries.com/product/a-very-fine-early-queen-anne-armchair/",
      "slug": "product"
     }
    ],
@@ -6510,11 +6568,11 @@
    "open": [
     {
      "base": "cec_event",
-     "total": "33",
+     "total": "45",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Weekly Exclusive: $6.99 Large 1-Topping Pizza",
-     "sample_link": "https://www.chuckecheese.com/?cec_event=weekly-exclusive-6-99-large-1-topping-pizza",
+     "sample_title": "Weekly Exclusive: Bonus Tickets",
+     "sample_link": "https://www.chuckecheese.com/?cec_event=weekly-exclusive-bonus-tickets-2",
      "slug": "cec_event"
     }
    ],
@@ -6596,7 +6654,7 @@
   {
    "host": "bowlritelanes.com",
    "name": "Bowl Rite",
-   "wp_types": {},
+   "wp_types": null,
    "drupal_types": null,
    "open": [],
    "tribe": null,
@@ -6643,7 +6701,7 @@
   {
    "host": "bowl360astoria.com",
    "name": "Bowl 360 Astoria",
-   "wp_types": {},
+   "wp_types": null,
    "drupal_types": null,
    "open": [],
    "tribe": null,
@@ -6699,8 +6757,7 @@
    "name": "Wollman Rink",
    "wp_types": {
     "class": "class",
-    "event": "event",
-    "tribe_events": "tribe_events"
+    "event": "event"
    },
    "drupal_types": null,
    "open": [
@@ -6715,28 +6772,16 @@
     },
     {
      "base": "event",
-     "total": "6",
+     "total": "5",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Join us on the Overlook for your dose of outdoor summer fun",
-     "sample_link": "/community-calendar",
+     "sample_title": "Season Passes",
+     "sample_link": "https://wollmanrinknyc.com/season-passes/",
      "slug": "event"
-    },
-    {
-     "base": "tribe_events",
-     "total": "8",
-     "returned": 3,
-     "event_date_meta": [],
-     "sample_title": "Dancing on the Overlook &#8211; Arthur Murray Experience &#8211; Bachata",
-     "sample_link": "https://wollmanrinknyc.com/date/arthur-murray-dance-experience-8/",
-     "slug": "tribe_events"
     }
    ],
-   "tribe": 8,
-   "ics": {
-    "url": "https://wollmanrinknyc.com/event/dont-miss-this-the-m80s-are-back-on-august-25th-at-730pm/?ical=1",
-    "vevents": 8
-   }
+   "tribe": null,
+   "ics": null
   },
   {
    "host": "www.cityicepavilion.com",
@@ -6767,11 +6812,11 @@
    "open": [
     {
      "base": "mec-events",
-     "total": "26",
+     "total": "29",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Take Downs | Stand-Up | Grappling",
-     "sample_link": "https://zerogbjj.com/classes/fundamentals-mf-735-802/",
+     "sample_title": "Grappling Core Fundamentals",
+     "sample_link": "https://zerogbjj.com/classes/fundamentals-mf-905-534/",
      "slug": "mec-events"
     },
     {
@@ -6810,20 +6855,20 @@
     },
     {
      "base": "location-event",
-     "total": "214",
+     "total": "215",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Broken Arrow, OK",
-     "sample_link": "https://goldfishswimschool.com/broken-arrow/events/",
+     "sample_title": "Flanders, NJ",
+     "sample_link": "https://goldfishswimschool.com/flanders/events/",
      "slug": "location-event"
     },
     {
      "base": "location-program",
-     "total": "220",
+     "total": "221",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Meadowvale, ON",
-     "sample_link": "https://goldfishswimschool.com/meadowvale/programs/",
+     "sample_title": "Danbury, CT",
+     "sample_link": "https://goldfishswimschool.com/danbury/programs/",
      "slug": "location-program"
     },
     {
@@ -6837,11 +6882,11 @@
     },
     {
      "base": "single-program",
-     "total": "1281",
+     "total": "1290",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "The F.L.O.A.T. Method",
-     "sample_link": "https://goldfishswimschool.com/northbrook/programs/float-method/",
+     "sample_link": "https://goldfishswimschool.com/lexington/programs/float-method/",
      "slug": "single-program"
     }
    ],
@@ -6979,20 +7024,20 @@
     },
     {
      "base": "location-event",
-     "total": "214",
+     "total": "215",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Broken Arrow, OK",
-     "sample_link": "https://goldfishswimschool.com/broken-arrow/events/",
+     "sample_title": "Flanders, NJ",
+     "sample_link": "https://goldfishswimschool.com/flanders/events/",
      "slug": "location-event"
     },
     {
      "base": "location-program",
-     "total": "220",
+     "total": "221",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Meadowvale, ON",
-     "sample_link": "https://goldfishswimschool.com/meadowvale/programs/",
+     "sample_title": "Danbury, CT",
+     "sample_link": "https://goldfishswimschool.com/danbury/programs/",
      "slug": "location-program"
     },
     {
@@ -7006,11 +7051,11 @@
     },
     {
      "base": "single-program",
-     "total": "1281",
+     "total": "1290",
      "returned": 3,
      "event_date_meta": [],
      "sample_title": "The F.L.O.A.T. Method",
-     "sample_link": "https://goldfishswimschool.com/northbrook/programs/float-method/",
+     "sample_link": "https://goldfishswimschool.com/lexington/programs/float-method/",
      "slug": "single-program"
     }
    ],
@@ -7158,21 +7203,9 @@
   {
    "host": "overthrownyc.com",
    "name": "Overthrow",
-   "wp_types": {
-    "product": "product"
-   },
+   "wp_types": null,
    "drupal_types": null,
-   "open": [
-    {
-     "base": "product",
-     "total": "341",
-     "returned": 3,
-     "event_date_meta": [],
-     "sample_title": "DON&#8217;T PUNK OUT SOCK 3-PACK",
-     "sample_link": "https://overthrownyc.com/product/dont-punk-out-sock-3-pack/",
-     "slug": "product"
-    }
-   ],
+   "open": [],
    "tribe": null,
    "ics": null
   },
@@ -7248,16 +7281,38 @@
     "programs": "programs"
    },
    "drupal_types": null,
-   "open": [],
+   "open": [
+    {
+     "base": "private-event",
+     "total": "5",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Birthday Parties for Kids",
+     "sample_link": "https://centralrockgym.com/private-event/birthday-parties-for-kids/",
+     "slug": "private-event"
+    }
+   ],
    "tribe": null,
    "ics": null
   },
   {
    "host": "brooklynfencing.com",
    "name": "Brooklyn Fencing Center",
-   "wp_types": null,
+   "wp_types": {
+    "class": "class"
+   },
    "drupal_types": null,
-   "open": [],
+   "open": [
+    {
+     "base": "class",
+     "total": "5",
+     "returned": 3,
+     "event_date_meta": [],
+     "sample_title": "Junior Intermediate",
+     "sample_link": "https://brooklynfencing.com/classe/junior-intermediate/",
+     "slug": "class"
+    }
+   ],
    "tribe": null,
    "ics": null
   },
@@ -7329,11 +7384,11 @@
    "open": [
     {
      "base": "product",
-     "total": "5",
+     "total": "4",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "Intro Lesson @ BBJJ Cobble Hill",
-     "sample_link": "https://brooklynbjj.com/product/intro-lesson-bbjj-cobble-hill/",
+     "sample_title": "Introductory Special \u2014 BBJJ Cobble Hill",
+     "sample_link": "https://brooklynbjj.com/product/introductory-special-bbjj-cobble-hill/",
      "slug": "product"
     }
    ],
@@ -7695,15 +7750,15 @@
    "open": [
     {
      "base": "tribe_events",
-     "total": "13",
+     "total": "17",
      "returned": 3,
      "event_date_meta": [],
-     "sample_title": "The 2026 Jimmy Hoffa Cornhole CLassic",
-     "sample_link": "https://playmeadowlands.com/event/the-2026-jimmy-hoffa-cornhole-classic/",
+     "sample_title": "",
+     "sample_link": "https://playmeadowlands.com/event/23522/",
      "slug": "tribe_events"
     }
    ],
-   "tribe": 13,
+   "tribe": 17,
    "ics": {
     "url": "https://playmeadowlands.com/event/seafood_fest?ical=1",
     "vevents": 1

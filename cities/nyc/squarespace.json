@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-28T16:58:29.305457+00:00",
+ "generated_at": "2026-10-01T14:24:58.044918+00:00",
  "city": "nyc",
  "probed": 120,
- "requests": 542,
+ "requests": 543,
  "venues": [
   {
    "host": "www.frauncestavernmuseum.org",
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 9,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -93,8 +93,8 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 14,
-     "past": 6
+     "upcoming": 16,
+     "past": 4
     }
    ],
    "tried": 4
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 6,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 48,
+     "upcoming": 47,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 10,
+     "upcoming": 11,
      "past": 30
     }
    ],
@@ -900,7 +900,7 @@
    "name": "Painting On Park",
    "origin": "https://www.paintingonpark.com",
    "collections": [],
-   "tried": 3
+   "tried": 4
   },
   {
    "host": "brooklynpoets.org",
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 5,
+     "upcoming": 25,
      "past": 30
     }
    ],

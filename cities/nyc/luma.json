@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-09-28T16:58:29.173536+00:00",
+ "generated_at": "2026-10-01T14:24:57.863450+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -228,6 +228,14 @@
    "checked_at": "2026-08-27T19:14:39.349802+00:00"
   },
   {
+   "id": "cal-0TCzPuYA1mVuvBN",
+   "name": "Boris and Horton",
+   "ok": true,
+   "total": 154,
+   "upcoming": 7,
+   "checked_at": "2026-10-01T14:24:53.735128+00:00"
+  },
+  {
    "id": "cal-mmnYmrfNgxGdvQb",
    "name": "Mistral AI Events",
    "ok": true,
@@ -412,6 +420,14 @@
    "checked_at": "2026-09-21T15:18:17.397759+00:00"
   },
   {
+   "id": "cal-IWx0NMN9YsC8mLE",
+   "name": "NYC Design Community",
+   "ok": true,
+   "total": 53,
+   "upcoming": 4,
+   "checked_at": "2026-10-01T14:24:48.940454+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -578,6 +594,14 @@
    "total": 43,
    "upcoming": 3,
    "checked_at": "2026-09-24T13:45:08.014916+00:00"
+  },
+  {
+   "id": "cal-tToOnE5vrdAmaJs",
+   "name": "Personal",
+   "ok": true,
+   "total": 73,
+   "upcoming": 3,
+   "checked_at": "2026-10-01T14:24:55.097257+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -834,6 +858,14 @@
    "total": 19,
    "upcoming": 2,
    "checked_at": "2026-09-28T16:58:25.913396+00:00"
+  },
+  {
+   "id": "cal-q485DTTj8FIFJ99",
+   "name": "Girls in Growth",
+   "ok": true,
+   "total": 4,
+   "upcoming": 2,
+   "checked_at": "2026-10-01T14:24:44.393631+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1738,6 +1770,62 @@
    "total": 32,
    "upcoming": 1,
    "checked_at": "2026-09-28T16:58:27.549610+00:00"
+  },
+  {
+   "id": "cal-DJ6HihLbtzG3aak",
+   "name": "Pensar",
+   "ok": true,
+   "total": 23,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:43.024688+00:00"
+  },
+  {
+   "id": "cal-Q0tZPoJMDYaZ6n4",
+   "name": "Artifact Uprising",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:45.848866+00:00"
+  },
+  {
+   "id": "cal-tcpyuiVDlBTAVD7",
+   "name": "The Nucleus Network",
+   "ok": true,
+   "total": 21,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:47.417558+00:00"
+  },
+  {
+   "id": "cal-Br3OqulB3bra849",
+   "name": "Third Mind Talks",
+   "ok": true,
+   "total": 12,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:50.416823+00:00"
+  },
+  {
+   "id": "cal-n0oJBXU7xMH7ovj",
+   "name": "MoMI x Light",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:51.893238+00:00"
+  },
+  {
+   "id": "cal-g8IDcWxs2O2SOk3",
+   "name": "AIIR",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:56.358173+00:00"
+  },
+  {
+   "id": "cal-2zezOpd53tsHRCu",
+   "name": "New York City Pizza Crawl",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-10-01T14:24:57.863427+00:00"
   }
  ]
 }
