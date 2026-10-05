@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-01T15:37:45.832774+00:00",
+ "generated_at": "2026-10-05T17:21:35.262185+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -204,6 +204,14 @@
    "checked_at": "2026-09-28T16:58:29.173513+00:00"
   },
   {
+   "id": "cal-8FC7bJOdGaiG8NA",
+   "name": "Van Alen Institute",
+   "ok": true,
+   "total": 26,
+   "upcoming": 8,
+   "checked_at": "2026-10-05T17:21:32.110408+00:00"
+  },
+  {
    "id": "cal-8ACK0vjqOfKpHXl",
    "name": "Claude Workshops",
    "ok": true,
@@ -234,6 +242,14 @@
    "total": 154,
    "upcoming": 7,
    "checked_at": "2026-10-01T14:24:53.735128+00:00"
+  },
+  {
+   "id": "cal-vy8oCEv0Pg24mB1",
+   "name": "Unplugged Collective",
+   "ok": true,
+   "total": 33,
+   "upcoming": 7,
+   "checked_at": "2026-10-05T17:21:17.527206+00:00"
   },
   {
    "id": "cal-mmnYmrfNgxGdvQb",
@@ -282,6 +298,14 @@
    "total": 92,
    "upcoming": 6,
    "checked_at": "2026-08-13T09:43:53.292977+00:00"
+  },
+  {
+   "id": "cal-EVJ0XV6EJegxAT7",
+   "name": "tokens&",
+   "ok": true,
+   "total": 48,
+   "upcoming": 6,
+   "checked_at": "2026-10-05T17:21:32.320235+00:00"
   },
   {
    "id": "cal-2r1Wr2Q80EWW9aM",
@@ -338,6 +362,14 @@
    "total": 19,
    "upcoming": 5,
    "checked_at": "2026-09-28T16:58:18.387074+00:00"
+  },
+  {
+   "id": "cal-ggDlnnjSa9dQvXJ",
+   "name": "Rhone event series",
+   "ok": true,
+   "total": 77,
+   "upcoming": 5,
+   "checked_at": "2026-10-05T17:21:23.421444+00:00"
   },
   {
    "id": "cal-H1FY60pnZtchaf4",
@@ -1826,6 +1858,78 @@
    "total": 11,
    "upcoming": 1,
    "checked_at": "2026-10-01T14:24:57.863427+00:00"
+  },
+  {
+   "id": "cal-aoB8u0eBD0yEDXu",
+   "name": "NeueHouse Productions",
+   "ok": true,
+   "total": 14,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:18.905692+00:00"
+  },
+  {
+   "id": "cal-8shtlHcAm9J5TaR",
+   "name": "Express Checkout Events",
+   "ok": true,
+   "total": 36,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:20.591658+00:00"
+  },
+  {
+   "id": "cal-NI3FXRXzfYwdxcZ",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:21.775386+00:00"
+  },
+  {
+   "id": "cal-1bGaTzctiPwGbpC",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:24.772092+00:00"
+  },
+  {
+   "id": "cal-wOEi0BMM4m4s52y",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:26.250799+00:00"
+  },
+  {
+   "id": "cal-AqNPz93Hou3Xcqq",
+   "name": "Kyndred",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:27.795406+00:00"
+  },
+  {
+   "id": "cal-5ATpF4Dqatma56O",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:29.282253+00:00"
+  },
+  {
+   "id": "cal-1dKWkVQEwFGULwY",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:33.760956+00:00"
+  },
+  {
+   "id": "cal-pvOmUtVZnEUh6LZ",
+   "name": "Events",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-05T17:21:35.262157+00:00"
   }
  ]
 }

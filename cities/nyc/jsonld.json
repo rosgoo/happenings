@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-01T15:49:24.592607+00:00",
+ "generated_at": "2026-10-05T17:33:52.670306+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 197,
+   "events": 227,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 97,
+   "events": 126,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 44,
+   "events": 43,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -90,7 +90,8 @@
    "events": 16,
    "locations": [
     "New York Transit Museum, Brooklyn",
-    "Off-Site"
+    "Off-Site",
+    "Virtual"
    ],
    "types": [
     "Event"
@@ -110,7 +111,7 @@
    "host": "www.statenislandmuseum.org",
    "name": "Staten Island Museum",
    "url": "https://www.statenislandmuseum.org/events",
-   "events": 16,
+   "events": 15,
    "locations": [
     "Blue Heron Park",
     "Brooklfield Park",
@@ -207,8 +208,7 @@
    "locations": [
     "Brooklyn",
     "Manhattan",
-    "Queens",
-    "Staten Island"
+    "Queens"
    ],
    "types": [
     "Event"
@@ -228,7 +228,7 @@
    "host": "mvhm.org",
    "name": "Mount Vernon Hotel Museum",
    "url": "https://mvhm.org/events/",
-   "events": 8,
+   "events": 7,
    "locations": [
     "Mount Vernon Hotel Museum &amp; Garden"
    ],
@@ -344,28 +344,6 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "littleisland.org",
-   "name": "The Amph",
-   "url": "https://littleisland.org/events/",
-   "events": 5,
-   "locations": [
-    "The Play Ground"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7423062,
-   "lon": -74.0108945,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "lighthousemuseum.org",
    "name": "National Lighthouse Museum",
    "url": "https://lighthousemuseum.org/events/",
@@ -413,24 +391,24 @@
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "aliceausten.org",
-   "name": "Alice Austen House",
-   "url": "https://aliceausten.org/events/",
-   "events": 1,
-   "locations": [
-    "Alice Austen House Waterfront Lawn"
-   ],
+   "host": "littleisland.org",
+   "name": "The Amph",
+   "url": "https://littleisland.org/events/",
+   "events": 2,
+   "locations": [],
    "types": [
     "Event"
    ],
    "status": 200,
    "error": null,
-   "mode": "detail",
-   "prefix": "/events",
-   "links": 8,
-   "lat": 40.6151272,
-   "lon": -74.0630286,
-   "borough": "Staten Island"
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7423062,
+   "lon": -74.0108945,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "waterfrontmuseum.org",
@@ -453,6 +431,22 @@
    "borough": "Brooklyn",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "aliceausten.org",
+   "name": "Alice Austen House",
+   "url": "https://aliceausten.org/events/",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/events",
+   "links": 6,
+   "lat": 40.6151272,
+   "lon": -74.0630286,
+   "borough": "Staten Island"
   },
   {
    "host": "ampmgallery.com",
@@ -553,7 +547,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 37,
+   "links": 35,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -641,7 +635,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 122,
+   "links": 119,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -677,7 +671,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 169,
+   "links": 168,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -763,7 +757,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 9,
+   "links": 14,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -779,7 +773,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 41,
+   "links": 44,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -885,7 +879,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 55,
+   "links": 53,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -939,7 +933,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 42,
+   "links": 41,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -975,7 +969,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 11,
+   "links": 7,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
