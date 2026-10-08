@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-05T17:33:52.670306+00:00",
+ "generated_at": "2026-10-08T16:07:41.892927+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 227,
+   "events": 225,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 43,
+   "events": 59,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -111,11 +111,10 @@
    "host": "www.statenislandmuseum.org",
    "name": "Staten Island Museum",
    "url": "https://www.statenislandmuseum.org/events",
-   "events": 15,
+   "events": 14,
    "locations": [
     "Blue Heron Park",
     "Brooklfield Park",
-    "Clove Lakes Park",
     "Freshkills North Park",
     "Great Kills Park",
     "Silver Lake Park",
@@ -206,9 +205,11 @@
    "url": "https://cityparksfoundation.org/calendar",
    "events": 10,
    "locations": [
+    "Bronx",
     "Brooklyn",
     "Manhattan",
-    "Queens"
+    "Queens",
+    "Staten Island"
    ],
    "types": [
     "Event"
@@ -228,7 +229,7 @@
    "host": "mvhm.org",
    "name": "Mount Vernon Hotel Museum",
    "url": "https://mvhm.org/events/",
-   "events": 7,
+   "events": 6,
    "locations": [
     "Mount Vernon Hotel Museum &amp; Garden"
    ],
@@ -344,6 +345,30 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "url": "https://lucidbody.com/events",
+   "events": 4,
+   "locations": [
+    "Art of Acting Studio",
+    "Lambertville Arts and Movement",
+    "St. Michael&#8217;s Church"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7461254,
+   "lon": -73.9801056,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "lighthousemuseum.org",
    "name": "National Lighthouse Museum",
    "url": "https://lighthousemuseum.org/events/",
@@ -367,35 +392,13 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "lucidbody.com",
-   "name": "Lucid Body House",
-   "url": "https://lucidbody.com/events",
-   "events": 3,
-   "locations": [
-    "Art of Acting Studio",
-    "Lambertville Arts and Movement",
-    "St. Michael&#8217;s Church"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7461254,
-   "lon": -73.9801056,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "littleisland.org",
    "name": "The Amph",
    "url": "https://littleisland.org/events/",
    "events": 2,
-   "locations": [],
+   "locations": [
+    "The Play Ground"
+   ],
    "types": [
     "Event"
    ],
@@ -443,7 +446,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 6,
+   "links": 8,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -547,7 +550,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 35,
+   "links": 38,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -635,7 +638,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 119,
+   "links": 124,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -757,7 +760,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 14,
+   "links": 13,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -773,7 +776,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 44,
+   "links": 43,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -879,7 +882,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 53,
+   "links": 51,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -933,7 +936,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 41,
+   "links": 40,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -969,7 +972,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 7,
+   "links": 8,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"

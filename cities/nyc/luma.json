@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-05T17:21:35.262185+00:00",
+ "generated_at": "2026-10-08T15:49:58.688461+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -308,6 +308,14 @@
    "checked_at": "2026-10-05T17:21:32.320235+00:00"
   },
   {
+   "id": "cal-YherBiOwFev0Kov",
+   "name": "Major League Hacking",
+   "ok": true,
+   "total": 16,
+   "upcoming": 6,
+   "checked_at": "2026-10-08T15:49:55.642328+00:00"
+  },
+  {
    "id": "cal-2r1Wr2Q80EWW9aM",
    "name": "NYC Running Events Calendar",
    "ok": true,
@@ -458,6 +466,14 @@
    "total": 53,
    "upcoming": 4,
    "checked_at": "2026-10-01T14:24:48.940454+00:00"
+  },
+  {
+   "id": "cal-SiARKeDrlh99BQV",
+   "name": "Studio Bumi",
+   "ok": true,
+   "total": 46,
+   "upcoming": 4,
+   "checked_at": "2026-10-08T15:49:53.039554+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -1930,6 +1946,46 @@
    "total": 1,
    "upcoming": 1,
    "checked_at": "2026-10-05T17:21:35.262157+00:00"
+  },
+  {
+   "id": "cal-Qd1lDdTjtD8nb9E",
+   "name": "Ambrook",
+   "ok": true,
+   "total": 12,
+   "upcoming": 1,
+   "checked_at": "2026-10-08T15:49:49.879102+00:00"
+  },
+  {
+   "id": "cal-jsUImncJj4k1EeE",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-10-08T15:49:51.148314+00:00"
+  },
+  {
+   "id": "cal-hTbAYtn4EQlKac7",
+   "name": "Kitsby Studio",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-10-08T15:49:54.117183+00:00"
+  },
+  {
+   "id": "cal-sOavINh6eSX5bCg",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-10-08T15:49:57.135951+00:00"
+  },
+  {
+   "id": "cal-QWkbb7W2M4ceY1N",
+   "name": "Product Builders Club",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-10-08T15:49:58.688437+00:00"
   }
  ]
 }
