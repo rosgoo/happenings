@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-08T16:07:41.892927+00:00",
+ "generated_at": "2026-10-12T18:21:51.554725+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 126,
+   "events": 129,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -104,34 +104,6 @@
    "lat": 40.6905176,
    "lon": -73.9899802,
    "borough": "Brooklyn",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "www.statenislandmuseum.org",
-   "name": "Staten Island Museum",
-   "url": "https://www.statenislandmuseum.org/events",
-   "events": 14,
-   "locations": [
-    "Blue Heron Park",
-    "Brooklfield Park",
-    "Freshkills North Park",
-    "Great Kills Park",
-    "Silver Lake Park",
-    "Staten Island Museum at Snug Harbor",
-    "Wolfe&#8217;s Pond Park"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.6445211,
-   "lon": -74.1027489,
-   "borough": "Staten Island",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
@@ -200,12 +172,39 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
+   "url": "https://www.statenislandmuseum.org/events",
+   "events": 12,
+   "locations": [
+    "Blue Heron Park",
+    "Brooklfield Park",
+    "Freshkills North Park",
+    "Great Kills Park",
+    "Silver Lake Park",
+    "Staten Island Museum at Snug Harbor",
+    "Wolfe&#8217;s Pond Park"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.6445211,
+   "lon": -74.1027489,
+   "borough": "Staten Island",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "cityparksfoundation.org",
    "name": "Rumsey Playfield",
    "url": "https://cityparksfoundation.org/calendar",
    "events": 10,
    "locations": [
-    "Bronx",
     "Brooklyn",
     "Manhattan",
     "Queens",
@@ -229,7 +228,7 @@
    "host": "mvhm.org",
    "name": "Mount Vernon Hotel Museum",
    "url": "https://mvhm.org/events/",
-   "events": 6,
+   "events": 7,
    "locations": [
     "Mount Vernon Hotel Museum &amp; Garden"
    ],
@@ -276,11 +275,11 @@
    "events": 6,
    "locations": [
     "David H Koch Theater",
+    "Greenwich House Theater",
     "Nederlander Theater",
     "Perelman Performing Arts Center",
     "Radio City Music Hall",
-    "Richard Rodgers Theater",
-    "Studio Seaview"
+    "Richard Rodgers Theater"
    ],
    "types": [
     "Event",
@@ -374,8 +373,7 @@
    "url": "https://lighthousemuseum.org/events/",
    "events": 3,
    "locations": [
-    "National Lighthouse Museum",
-    "The National Lighthouse Museum"
+    "National Lighthouse Museum"
    ],
    "types": [
     "Event"
@@ -446,7 +444,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 8,
+   "links": 6,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -550,7 +548,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 38,
+   "links": 37,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -584,7 +582,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 5,
+   "links": 7,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -638,7 +636,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 124,
+   "links": 123,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -760,7 +758,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 13,
+   "links": 11,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -776,7 +774,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 43,
+   "links": 44,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -882,7 +880,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 51,
+   "links": 47,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -936,7 +934,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 40,
+   "links": 38,
    "lat": null,
    "lon": null,
    "borough": null,

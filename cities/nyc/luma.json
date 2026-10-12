@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-08T15:49:58.688461+00:00",
+ "generated_at": "2026-10-12T18:09:58.747182+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -130,6 +130,14 @@
    "total": 37,
    "upcoming": 10,
    "checked_at": "2026-09-21T15:18:14.148610+00:00"
+  },
+  {
+   "id": "cal-DruowFUDu3VGKVh",
+   "name": "KOOM Week 2026",
+   "ok": true,
+   "total": 11,
+   "upcoming": 10,
+   "checked_at": "2026-10-12T18:09:47.067811+00:00"
   },
   {
    "id": "cal-qbsfYMOG654KgPf",
@@ -314,6 +322,14 @@
    "total": 16,
    "upcoming": 6,
    "checked_at": "2026-10-08T15:49:55.642328+00:00"
+  },
+  {
+   "id": "cal-ouvsbv3Gj9kvRGD",
+   "name": "Personal",
+   "ok": true,
+   "total": 101,
+   "upcoming": 6,
+   "checked_at": "2026-10-12T18:09:56.311585+00:00"
   },
   {
    "id": "cal-2r1Wr2Q80EWW9aM",
@@ -652,6 +668,22 @@
    "checked_at": "2026-10-01T14:24:55.097257+00:00"
   },
   {
+   "id": "cal-rO5bDCT2uHCAfx4",
+   "name": "Keycard",
+   "ok": true,
+   "total": 6,
+   "upcoming": 3,
+   "checked_at": "2026-10-12T18:09:48.499398+00:00"
+  },
+  {
+   "id": "cal-OTLA6Ppc1wXRy16",
+   "name": "Zed",
+   "ok": true,
+   "total": 46,
+   "upcoming": 3,
+   "checked_at": "2026-10-12T18:09:50.106840+00:00"
+  },
+  {
    "id": "cal-8x55tE86VtAD07z",
    "name": "Supabase Community Events",
    "ok": true,
@@ -914,6 +946,14 @@
    "total": 4,
    "upcoming": 2,
    "checked_at": "2026-10-01T14:24:44.393631+00:00"
+  },
+  {
+   "id": "cal-lZtpBXO4ZCFosw6",
+   "name": "Personal",
+   "ok": true,
+   "total": 24,
+   "upcoming": 2,
+   "checked_at": "2026-10-12T18:09:54.668743+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -1986,6 +2026,30 @@
    "total": 8,
    "upcoming": 1,
    "checked_at": "2026-10-08T15:49:58.688437+00:00"
+  },
+  {
+   "id": "cal-UgzNHDmpkC0jeiz",
+   "name": "Reducto Community Calendar",
+   "ok": true,
+   "total": 33,
+   "upcoming": 1,
+   "checked_at": "2026-10-12T18:09:51.573051+00:00"
+  },
+  {
+   "id": "cal-G2BgR4kMJj6VNVs",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-12T18:09:53.020402+00:00"
+  },
+  {
+   "id": "cal-UTzFmj63wZSRd7e",
+   "name": "FinTech Run Club",
+   "ok": true,
+   "total": 247,
+   "upcoming": 1,
+   "checked_at": "2026-10-12T18:09:58.747155+00:00"
   }
  ]
 }
