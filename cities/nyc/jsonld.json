@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-12T18:21:51.554725+00:00",
+ "generated_at": "2026-10-15T13:51:57.114743+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 225,
+   "events": 223,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 129,
+   "events": 130,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 59,
+   "events": 60,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -205,7 +205,7 @@
    "url": "https://cityparksfoundation.org/calendar",
    "events": 10,
    "locations": [
-    "Brooklyn",
+    "Bronx",
     "Manhattan",
     "Queens",
     "Staten Island"
@@ -444,7 +444,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 6,
+   "links": 4,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -582,7 +582,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 7,
+   "links": 5,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -636,7 +636,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 123,
+   "links": 127,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -654,7 +654,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibitions",
-   "links": 33,
+   "links": 34,
    "lat": 40.7220357,
    "lon": -73.9920403,
    "borough": "Manhattan",
@@ -672,7 +672,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 168,
+   "links": 159,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -758,7 +758,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 11,
+   "links": 10,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -774,7 +774,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 44,
+   "links": 43,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -934,7 +934,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 38,
+   "links": 36,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -970,7 +970,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 8,
+   "links": 9,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"

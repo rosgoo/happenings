@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-12T18:09:58.747182+00:00",
+ "generated_at": "2026-10-15T13:39:33.053331+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -172,6 +172,14 @@
    "checked_at": "2026-08-31T16:20:55.609221+00:00"
   },
   {
+   "id": "cal-Or0NdeYS6Dd43c4",
+   "name": "The Dinner Table Club",
+   "ok": true,
+   "total": 186,
+   "upcoming": 9,
+   "checked_at": "2026-10-15T13:39:29.073640+00:00"
+  },
+  {
    "id": "cal-kcWhMbIs2X0Y2Xb",
    "name": "Andrew's Yeung's Tech Events",
    "ok": true,
@@ -330,6 +338,14 @@
    "total": 101,
    "upcoming": 6,
    "checked_at": "2026-10-12T18:09:56.311585+00:00"
+  },
+  {
+   "id": "cal-HH5XBdHyWPt0yhB",
+   "name": "Design Meetup",
+   "ok": true,
+   "total": 32,
+   "upcoming": 6,
+   "checked_at": "2026-10-15T13:39:31.364651+00:00"
   },
   {
    "id": "cal-2r1Wr2Q80EWW9aM",
@@ -954,6 +970,22 @@
    "total": 24,
    "upcoming": 2,
    "checked_at": "2026-10-12T18:09:54.668743+00:00"
+  },
+  {
+   "id": "cal-UcmN4kNlEUzV7pS",
+   "name": "Dessn",
+   "ok": true,
+   "total": 6,
+   "upcoming": 2,
+   "checked_at": "2026-10-15T13:39:19.122651+00:00"
+  },
+  {
+   "id": "cal-f6iLyfD3TN5qUO2",
+   "name": "Events with Emily Chertow, @journalingclasses",
+   "ok": true,
+   "total": 116,
+   "upcoming": 2,
+   "checked_at": "2026-10-15T13:39:33.053308+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2050,6 +2082,78 @@
    "total": 247,
    "upcoming": 1,
    "checked_at": "2026-10-12T18:09:58.747155+00:00"
+  },
+  {
+   "id": "cal-LzyQl8yXg5Xz7CP",
+   "name": "Personal",
+   "ok": true,
+   "total": 13,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:15.109725+00:00"
+  },
+  {
+   "id": "cal-ntaub36zjjTvcnl",
+   "name": "Propeller",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:16.251779+00:00"
+  },
+  {
+   "id": "cal-o6HIuv6Jc42P3Se",
+   "name": "Personal",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:17.622876+00:00"
+  },
+  {
+   "id": "cal-HESIMY29s0r6fKn",
+   "name": "car part time",
+   "ok": true,
+   "total": 27,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:20.701281+00:00"
+  },
+  {
+   "id": "cal-KWnW3NnanYA9mfF",
+   "name": "Personal",
+   "ok": true,
+   "total": 23,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:22.166476+00:00"
+  },
+  {
+   "id": "cal-dBZx9sknWkkS2Zr",
+   "name": "Dating Lab NYC",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:23.588348+00:00"
+  },
+  {
+   "id": "cal-TcmWOVKS0jgxwH3",
+   "name": "Prior Labs",
+   "ok": true,
+   "total": 6,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:25.126227+00:00"
+  },
+  {
+   "id": "cal-Hy2kYk86h48eefz",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:26.611199+00:00"
+  },
+  {
+   "id": "cal-3WVqvbZj1HkqC9w",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-10-15T13:39:29.695321+00:00"
   }
  ]
 }

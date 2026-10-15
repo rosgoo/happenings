@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-12T18:09:58.860353+00:00",
+ "generated_at": "2026-10-15T13:39:33.149187+00:00",
  "city": "nyc",
  "probed": 120,
- "requests": 541,
+ "requests": 542,
  "venues": [
   {
    "host": "www.frauncestavernmuseum.org",
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 7,
+     "upcoming": 10,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 40,
+     "upcoming": 39,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 14,
+     "upcoming": 13,
      "past": 30
     }
    ],
@@ -893,7 +893,7 @@
    "name": "Hootenanny",
    "origin": "https://hootenannybrooklyn.com",
    "collections": [],
-   "tried": 4
+   "tried": 5
   },
   {
    "host": "www.paintingonpark.com",
