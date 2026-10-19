@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-15T13:39:33.053331+00:00",
+ "generated_at": "2026-10-19T15:50:09.520048+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -180,6 +180,14 @@
    "checked_at": "2026-10-15T13:39:29.073640+00:00"
   },
   {
+   "id": "cal-EDisCieHa0mXu0b",
+   "name": "AI After 5",
+   "ok": true,
+   "total": 56,
+   "upcoming": 9,
+   "checked_at": "2026-10-19T15:49:57.631320+00:00"
+  },
+  {
    "id": "cal-kcWhMbIs2X0Y2Xb",
    "name": "Andrew's Yeung's Tech Events",
    "ok": true,
@@ -348,6 +356,14 @@
    "checked_at": "2026-10-15T13:39:31.364651+00:00"
   },
   {
+   "id": "cal-Dsk3Nwu3x0MmQuE",
+   "name": "Monk",
+   "ok": true,
+   "total": 10,
+   "upcoming": 6,
+   "checked_at": "2026-10-19T15:50:06.558105+00:00"
+  },
+  {
    "id": "cal-2r1Wr2Q80EWW9aM",
    "name": "NYC Running Events Calendar",
    "ok": true,
@@ -506,6 +522,14 @@
    "total": 46,
    "upcoming": 4,
    "checked_at": "2026-10-08T15:49:53.039554+00:00"
+  },
+  {
+   "id": "cal-0R3x1gOWKkO7MuH",
+   "name": "Squarespace Circle",
+   "ok": true,
+   "total": 24,
+   "upcoming": 4,
+   "checked_at": "2026-10-19T15:50:05.057245+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -698,6 +722,14 @@
    "total": 46,
    "upcoming": 3,
    "checked_at": "2026-10-12T18:09:50.106840+00:00"
+  },
+  {
+   "id": "cal-B3mx8vYXAHJKQBU",
+   "name": "US Monday Girl Events",
+   "ok": true,
+   "total": 21,
+   "upcoming": 3,
+   "checked_at": "2026-10-19T15:49:50.148150+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -986,6 +1018,14 @@
    "total": 116,
    "upcoming": 2,
    "checked_at": "2026-10-15T13:39:33.053308+00:00"
+  },
+  {
+   "id": "cal-C6cFvDHZaoJAaKr",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 2,
+   "checked_at": "2026-10-19T15:50:00.500827+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2154,6 +2194,86 @@
    "total": 5,
    "upcoming": 1,
    "checked_at": "2026-10-15T13:39:29.695321+00:00"
+  },
+  {
+   "id": "cal-BakkTpXFfcY7aMS",
+   "name": "Full Range",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:49:48.728949+00:00"
+  },
+  {
+   "id": "cal-I5sAR7YqB9XkHmA",
+   "name": "Pudu: NYC Film Salon",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:49:51.503446+00:00"
+  },
+  {
+   "id": "cal-dlylijfwgPnk5Hz",
+   "name": "STRV",
+   "ok": true,
+   "total": 21,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:49:53.085796+00:00"
+  },
+  {
+   "id": "cal-8F8VrHcPVp7EBNd",
+   "name": "TikTok for Business",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:49:54.535819+00:00"
+  },
+  {
+   "id": "cal-ZSyFOE4yAVFecLW",
+   "name": "Ramp Events",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:49:56.005019+00:00"
+  },
+  {
+   "id": "cal-aEBDvjpdvOYcEFP",
+   "name": "All Things Advertising Networking Events",
+   "ok": true,
+   "total": 11,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:49:59.016022+00:00"
+  },
+  {
+   "id": "cal-etCaMeHp1OZVZq1",
+   "name": "Informal Proofs",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:50:02.402954+00:00"
+  },
+  {
+   "id": "cal-iJSyFyHHQ1F3bcX",
+   "name": "Mercor",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:50:03.527812+00:00"
+  },
+  {
+   "id": "cal-MkduhwWoOk8wjD7",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:50:07.983984+00:00"
+  },
+  {
+   "id": "cal-JHkAWi9Krpj9gFY",
+   "name": "Concentrate AI",
+   "ok": true,
+   "total": 10,
+   "upcoming": 1,
+   "checked_at": "2026-10-19T15:50:09.520023+00:00"
   }
  ]
 }

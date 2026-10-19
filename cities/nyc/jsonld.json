@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-15T13:51:57.114743+00:00",
+ "generated_at": "2026-10-19T16:02:31.888499+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 223,
+   "events": 225,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 130,
+   "events": 129,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -172,10 +172,35 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "url": "https://cityparksfoundation.org/calendar",
+   "events": 10,
+   "locations": [
+    "Brooklyn",
+    "Manhattan",
+    "Queens",
+    "Staten Island"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7725851,
+   "lon": -73.9702129,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "www.statenislandmuseum.org",
    "name": "Staten Island Museum",
    "url": "https://www.statenislandmuseum.org/events",
-   "events": 12,
+   "events": 10,
    "locations": [
     "Blue Heron Park",
     "Brooklfield Park",
@@ -198,31 +223,6 @@
    "borough": "Staten Island",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "cityparksfoundation.org",
-   "name": "Rumsey Playfield",
-   "url": "https://cityparksfoundation.org/calendar",
-   "events": 10,
-   "locations": [
-    "Bronx",
-    "Manhattan",
-    "Queens",
-    "Staten Island"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7725851,
-   "lon": -73.9702129,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "mvhm.org",
@@ -252,7 +252,8 @@
    "url": "https://societyillustrators.org/events/",
    "events": 6,
    "locations": [
-    "At the Society"
+    "At the Society",
+    "Zoom"
    ],
    "types": [
     "Event"
@@ -322,9 +323,8 @@
    "host": "historichousetrust.org",
    "name": "Lewis Howard Latimer House Museum",
    "url": "https://historichousetrust.org/events/",
-   "events": 5,
+   "events": 4,
    "locations": [
-    "Conference House",
     "Historic Richmond Town",
     "King Manor Museum",
     "Lefferts Historic House"
@@ -342,30 +342,6 @@
    "borough": "Queens",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "lucidbody.com",
-   "name": "Lucid Body House",
-   "url": "https://lucidbody.com/events",
-   "events": 4,
-   "locations": [
-    "Art of Acting Studio",
-    "Lambertville Arts and Movement",
-    "St. Michael&#8217;s Church"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7461254,
-   "lon": -73.9801056,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "lighthousemuseum.org",
@@ -390,12 +366,14 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "littleisland.org",
-   "name": "The Amph",
-   "url": "https://littleisland.org/events/",
-   "events": 2,
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "url": "https://lucidbody.com/events",
+   "events": 3,
    "locations": [
-    "The Play Ground"
+    "Art of Acting Studio",
+    "Lambertville Arts and Movement",
+    "St. Michael&#8217;s Church"
    ],
    "types": [
     "Event"
@@ -405,11 +383,11 @@
    "mode": "listing",
    "prefix": null,
    "links": 0,
-   "lat": 40.7423062,
-   "lon": -74.0108945,
+   "lat": 40.7461254,
+   "lon": -73.9801056,
    "borough": "Manhattan",
    "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "waterfrontmuseum.org",
@@ -444,7 +422,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 4,
+   "links": 6,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -522,6 +500,24 @@
    "why": "Already fetched as a Squarespace collection. One venue, one adapter."
   },
   {
+   "host": "littleisland.org",
+   "name": "The Amph",
+   "url": "https://littleisland.org/events/",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/events",
+   "links": 3,
+   "lat": 40.7423062,
+   "lon": -74.0108945,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over ics. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "michaelrosenfeldart.com",
    "name": "Michael Rosenfield Art",
    "url": "https://michaelrosenfeld.com/exhibitions",
@@ -548,7 +544,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 37,
+   "links": 36,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -566,7 +562,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 2,
+   "links": 3,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -582,7 +578,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 5,
+   "links": 8,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -636,7 +632,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 127,
+   "links": 109,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -672,7 +668,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 159,
+   "links": 158,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -774,7 +770,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 43,
+   "links": 44,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -880,7 +876,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 47,
+   "links": 42,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -934,7 +930,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 36,
+   "links": 34,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -970,7 +966,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 9,
+   "links": 6,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
