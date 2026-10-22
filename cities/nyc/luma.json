@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-19T15:50:09.520048+00:00",
+ "generated_at": "2026-10-22T14:03:18.903808+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -68,6 +68,14 @@
    "checked_at": "2026-08-24T09:26:44.076688+00:00"
   },
   {
+   "id": "cal-gUD01KOJSMG5vwd",
+   "name": "The Collective",
+   "ok": true,
+   "total": 125,
+   "upcoming": 14,
+   "checked_at": "2026-10-22T14:03:13.041416+00:00"
+  },
+  {
    "id": "cal-QGDhEGQWVMArUaR",
    "name": "Tavern Community Coworking",
    "ok": true,
@@ -122,6 +130,22 @@
    "total": 92,
    "upcoming": 11,
    "checked_at": "2026-09-28T16:58:20.407359+00:00"
+  },
+  {
+   "id": "cal-pm6Om6Q9tP4AG8G",
+   "name": "Center for Urban Science + Progress \u2022 Events",
+   "ok": true,
+   "total": 55,
+   "upcoming": 11,
+   "checked_at": "2026-10-22T14:03:11.522976+00:00"
+  },
+  {
+   "id": "cal-OQdnB4l9PUgEzuw",
+   "name": "Girls Who Meet",
+   "ok": true,
+   "total": 254,
+   "upcoming": 11,
+   "checked_at": "2026-10-22T14:03:17.793191+00:00"
   },
   {
    "id": "cal-gTCvv5vKTHEyvgp",
@@ -532,6 +556,14 @@
    "checked_at": "2026-10-19T15:50:05.057245+00:00"
   },
   {
+   "id": "cal-tHnWGYVNBO7qMBm",
+   "name": "Figma for Education",
+   "ok": true,
+   "total": 39,
+   "upcoming": 4,
+   "checked_at": "2026-10-22T14:03:04.026709+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -730,6 +762,14 @@
    "total": 21,
    "upcoming": 3,
    "checked_at": "2026-10-19T15:49:50.148150+00:00"
+  },
+  {
+   "id": "cal-bC1rT0iHAcGU5FI",
+   "name": "Tech Tribe",
+   "ok": true,
+   "total": 61,
+   "upcoming": 3,
+   "checked_at": "2026-10-22T14:03:14.486480+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -1026,6 +1066,14 @@
    "total": 4,
    "upcoming": 2,
    "checked_at": "2026-10-19T15:50:00.500827+00:00"
+  },
+  {
+   "id": "cal-lfZsS1HrTbRIiTk",
+   "name": "Reasoning Project",
+   "ok": true,
+   "total": 54,
+   "upcoming": 2,
+   "checked_at": "2026-10-22T14:03:09.861139+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2274,6 +2322,54 @@
    "total": 10,
    "upcoming": 1,
    "checked_at": "2026-10-19T15:50:09.520023+00:00"
+  },
+  {
+   "id": "cal-e4DIvoV2nacr0b2",
+   "name": "asapty events",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-22T14:03:02.476385+00:00"
+  },
+  {
+   "id": "cal-pDIUBMU5VzUR9cM",
+   "name": "Nanotech NYC",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-10-22T14:03:05.329205+00:00"
+  },
+  {
+   "id": "cal-WQdHOC8maJn4fyw",
+   "name": "Undefined by Design Systems House",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-10-22T14:03:06.810469+00:00"
+  },
+  {
+   "id": "cal-mEYBFFqWpcWaNZD",
+   "name": "Apptuitive",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-22T14:03:08.450578+00:00"
+  },
+  {
+   "id": "cal-Te3DiiBvhNRURax",
+   "name": "Gondor",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-10-22T14:03:15.830424+00:00"
+  },
+  {
+   "id": "cal-DHZNknmRGSvGgrZ",
+   "name": "Personal",
+   "ok": true,
+   "total": 26,
+   "upcoming": 1,
+   "checked_at": "2026-10-22T14:03:18.903784+00:00"
   }
  ]
 }
