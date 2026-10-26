@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-22T14:15:07.847646+00:00",
+ "generated_at": "2026-10-26T15:38:01.204750+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 130,
+   "events": 129,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -133,6 +133,7 @@
    "url": "https://resobox.com/events/",
    "events": 12,
    "locations": [
+    "Carl Hansen &#038; S\u00f8n Flagship Store, Midtown East",
     "RESOBOX"
    ],
    "types": [
@@ -179,7 +180,6 @@
    "locations": [
     "Bronx",
     "Brooklyn",
-    "Manhattan",
     "Queens",
     "Staten Island"
    ],
@@ -196,6 +196,28 @@
    "borough": "Manhattan",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/",
+   "events": 10,
+   "locations": [
+    "Mount Vernon Hotel Museum &amp; Garden"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7605217,
+   "lon": -73.9597128,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "www.statenislandmuseum.org",
@@ -225,35 +247,12 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "mvhm.org",
-   "name": "Mount Vernon Hotel Museum",
-   "url": "https://mvhm.org/events/",
-   "events": 7,
-   "locations": [
-    "Mount Vernon Hotel Museum &amp; Garden"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7605217,
-   "lon": -73.9597128,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "societyillustrators.org",
    "name": "Society of Illustrators",
    "url": "https://societyillustrators.org/events/",
    "events": 6,
    "locations": [
-    "At the Society",
-    "Zoom"
+    "At the Society"
    ],
    "types": [
     "Event"
@@ -347,7 +346,7 @@
    "host": "lucidbody.com",
    "name": "Lucid Body House",
    "url": "https://lucidbody.com/events",
-   "events": 3,
+   "events": 4,
    "locations": [
     "Art of Acting Studio",
     "Lambertville Arts and Movement",
@@ -371,8 +370,10 @@
    "host": "lighthousemuseum.org",
    "name": "National Lighthouse Museum",
    "url": "https://lighthousemuseum.org/events/",
-   "events": 2,
-   "locations": [],
+   "events": 3,
+   "locations": [
+    "National Lighthouse Museum"
+   ],
    "types": [
     "Event"
    ],
@@ -420,7 +421,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 4,
+   "links": 2,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -450,11 +451,11 @@
    "events": 0,
    "locations": [],
    "types": [],
-   "status": 200,
-   "error": null,
-   "mode": "detail",
-   "prefix": "/exhibition",
-   "links": 157,
+   "status": null,
+   "error": "URLError: <urlopen error timed out>",
+   "mode": null,
+   "prefix": null,
+   "links": 0,
    "lat": 40.7200826,
    "lon": -73.990232,
    "borough": "Manhattan",
@@ -630,7 +631,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 113,
+   "links": 109,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -666,7 +667,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 158,
+   "links": 157,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -748,11 +749,11 @@
    "events": 0,
    "locations": [],
    "types": [],
-   "status": 500,
+   "status": 200,
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 0,
+   "links": 8,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -768,7 +769,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 43,
+   "links": 44,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -874,7 +875,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 39,
+   "links": 35,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -928,7 +929,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 34,
+   "links": 33,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -964,7 +965,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 9,
+   "links": 6,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"

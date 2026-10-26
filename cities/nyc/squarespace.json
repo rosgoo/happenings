@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T14:03:18.983097+00:00",
+ "generated_at": "2026-10-26T15:25:54.059114+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 545,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 7,
+     "upcoming": 6,
      "past": 30
     }
    ],
@@ -93,8 +93,8 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 12,
-     "past": 9
+     "upcoming": 9,
+     "past": 12
     }
    ],
    "tried": 4
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 9,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 8,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -439,8 +439,8 @@
      "url": "https://www.thepaintingcenter.org/new-events-1?format=json",
      "title": "New Events",
      "collection_id": "63ee8e245c21c533a4d31f6e",
-     "upcoming": 4,
-     "past": 9
+     "upcoming": 3,
+     "past": 10
     }
    ],
    "tried": 5
@@ -482,7 +482,7 @@
      "url": "https://www.the8thfloor.org/newevents?format=json",
      "title": "Events",
      "collection_id": "659d84552cb6dd6728f437c7",
-     "upcoming": 2,
+     "upcoming": 1,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 30,
+     "upcoming": 27,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 13,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -754,8 +754,8 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 5,
-     "past": 10
+     "upcoming": 4,
+     "past": 11
     }
    ],
    "tried": 5
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 9,
+     "upcoming": 5,
      "past": 30
     }
    ],
