@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-26T15:25:53.949441+00:00",
+ "generated_at": "2026-10-29T15:30:14.492636+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -452,6 +452,14 @@
    "checked_at": "2026-10-05T17:21:23.421444+00:00"
   },
   {
+   "id": "cal-hRPVAjoVOFL3Zhp",
+   "name": "Call to Gather",
+   "ok": true,
+   "total": 12,
+   "upcoming": 5,
+   "checked_at": "2026-10-29T15:30:01.924125+00:00"
+  },
+  {
    "id": "cal-H1FY60pnZtchaf4",
    "name": "Corgi NYC",
    "ok": true,
@@ -570,6 +578,14 @@
    "total": 43,
    "upcoming": 4,
    "checked_at": "2026-10-26T15:25:50.993867+00:00"
+  },
+  {
+   "id": "cal-8bdGdIm9fi8GJfV",
+   "name": "Nous Research",
+   "ok": true,
+   "total": 18,
+   "upcoming": 4,
+   "checked_at": "2026-10-29T15:30:09.910382+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -778,6 +794,14 @@
    "total": 61,
    "upcoming": 3,
    "checked_at": "2026-10-22T14:03:14.486480+00:00"
+  },
+  {
+   "id": "cal-lxslZiMMfmidQVG",
+   "name": "Personal",
+   "ok": true,
+   "total": 7,
+   "upcoming": 3,
+   "checked_at": "2026-10-29T15:30:14.492585+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -1106,6 +1130,22 @@
    "total": 8,
    "upcoming": 2,
    "checked_at": "2026-10-26T15:25:52.469153+00:00"
+  },
+  {
+   "id": "cal-m38PCKUwiKmJuxP",
+   "name": "AI/ML Lecture & Networking @ NYC",
+   "ok": true,
+   "total": 4,
+   "upcoming": 2,
+   "checked_at": "2026-10-29T15:29:56.047354+00:00"
+  },
+  {
+   "id": "cal-ZDFh8LfGtFHWT7u",
+   "name": "Personal",
+   "ok": true,
+   "total": 9,
+   "upcoming": 2,
+   "checked_at": "2026-10-29T15:30:05.652859+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2490,6 +2530,70 @@
    "total": 7,
    "upcoming": 1,
    "checked_at": "2026-10-26T15:25:53.949417+00:00"
+  },
+  {
+   "id": "cal-2MIghgBZHUiGVxf",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:29:57.384517+00:00"
+  },
+  {
+   "id": "cal-KlqOG3ekRBDBRrM",
+   "name": "Personal",
+   "ok": true,
+   "total": 20,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:29:58.961460+00:00"
+  },
+  {
+   "id": "cal-HSwK2CSYc5cDPKB",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:30:00.438535+00:00"
+  },
+  {
+   "id": "cal-dynaMaXtUWXq7E7",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:30:05.282471+00:00"
+  },
+  {
+   "id": "cal-uqGforzQHYf9BwR",
+   "name": "PROOF Running Co",
+   "ok": true,
+   "total": 23,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:30:06.943853+00:00"
+  },
+  {
+   "id": "cal-9d3XkDSrkapWaWD",
+   "name": "Bambas Sports Club",
+   "ok": true,
+   "total": 46,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:30:08.718079+00:00"
+  },
+  {
+   "id": "cal-gNlmsQS4Po8iN5Z",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:30:11.492062+00:00"
+  },
+  {
+   "id": "cal-qFYvA6UpiQMFI4p",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-10-29T15:30:12.879992+00:00"
   }
  ]
 }

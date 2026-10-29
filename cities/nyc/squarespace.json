@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T15:25:54.059114+00:00",
+ "generated_at": "2026-10-29T15:30:14.591209+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 545,
@@ -28,7 +28,7 @@
      "url": "https://noblemaritime.org/events?format=json",
      "title": "Events",
      "collection_id": "56c3845840261db04aaa8260",
-     "upcoming": 7,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -310,8 +310,8 @@
      "url": "https://synesthesia.space/exhibitions?format=json",
      "title": "Exhibitions",
      "collection_id": "5cb138766e9a7f103498f049",
-     "upcoming": 0,
-     "past": 15
+     "upcoming": 1,
+     "past": 16
     }
    ],
    "tried": 4
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 7,
+     "upcoming": 6,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 27,
+     "upcoming": 26,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 14,
+     "upcoming": 13,
      "past": 30
     }
    ],
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 5,
+     "upcoming": 23,
      "past": 30
     }
    ],
