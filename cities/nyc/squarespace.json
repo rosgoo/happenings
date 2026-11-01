@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T15:30:14.591209+00:00",
+ "generated_at": "2026-11-01T14:13:31.020915+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 545,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 6,
+     "upcoming": 5,
      "past": 30
     }
    ],
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 8,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -381,7 +381,7 @@
      "url": "https://www.printcenternewyork.org/public-programs?format=json",
      "title": "Programs",
      "collection_id": "62f5191254684c274c1be9c9",
-     "upcoming": 6,
+     "upcoming": 5,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 26,
+     "upcoming": 24,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 13,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -754,8 +754,8 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 4,
-     "past": 11
+     "upcoming": 3,
+     "past": 12
     }
    ],
    "tried": 5
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 23,
+     "upcoming": 18,
      "past": 30
     }
    ],

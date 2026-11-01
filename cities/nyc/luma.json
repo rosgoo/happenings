@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-10-29T15:30:14.492636+00:00",
+ "generated_at": "2026-11-01T14:13:30.923790+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -146,6 +146,14 @@
    "total": 254,
    "upcoming": 11,
    "checked_at": "2026-10-22T14:03:17.793191+00:00"
+  },
+  {
+   "id": "cal-6tv1prDhKjKaoE7",
+   "name": "21st",
+   "ok": true,
+   "total": 27,
+   "upcoming": 11,
+   "checked_at": "2026-11-01T14:13:21.970107+00:00"
   },
   {
    "id": "cal-gTCvv5vKTHEyvgp",
@@ -1146,6 +1154,14 @@
    "total": 9,
    "upcoming": 2,
    "checked_at": "2026-10-29T15:30:05.652859+00:00"
+  },
+  {
+   "id": "cal-LxIFzo90Bhl8zAx",
+   "name": "FiveTwoNine Events",
+   "ok": true,
+   "total": 40,
+   "upcoming": 2,
+   "checked_at": "2026-11-01T14:13:26.478383+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2594,6 +2610,46 @@
    "total": 1,
    "upcoming": 1,
    "checked_at": "2026-10-29T15:30:12.879992+00:00"
+  },
+  {
+   "id": "cal-cO9PKLujBzVtZt4",
+   "name": "Personal",
+   "ok": true,
+   "total": 62,
+   "upcoming": 1,
+   "checked_at": "2026-11-01T14:13:23.633995+00:00"
+  },
+  {
+   "id": "cal-CdeadKNAnmYSSZj",
+   "name": "New York Robotics",
+   "ok": true,
+   "total": 6,
+   "upcoming": 1,
+   "checked_at": "2026-11-01T14:13:24.895507+00:00"
+  },
+  {
+   "id": "cal-ISRVPdGyDNhGgrQ",
+   "name": "At Warp Speed",
+   "ok": true,
+   "total": 8,
+   "upcoming": 1,
+   "checked_at": "2026-11-01T14:13:27.901537+00:00"
+  },
+  {
+   "id": "cal-xbNIikeyaCkXX2u",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-01T14:13:29.442820+00:00"
+  },
+  {
+   "id": "cal-Y67cYVfrKY12JLQ",
+   "name": "SemiAnalysis",
+   "ok": true,
+   "total": 21,
+   "upcoming": 1,
+   "checked_at": "2026-11-01T14:13:30.923770+00:00"
   }
  ]
 }

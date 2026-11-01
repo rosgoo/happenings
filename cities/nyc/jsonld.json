@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-10-29T15:42:45.514450+00:00",
+ "generated_at": "2026-11-01T14:26:04.871201+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 226,
+   "events": 216,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 131,
+   "events": 100,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 59,
+   "events": 63,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -90,8 +90,7 @@
    "events": 16,
    "locations": [
     "New York Transit Museum, Brooklyn",
-    "Off-Site",
-    "Virtual"
+    "Off-Site"
    ],
    "types": [
     "Event"
@@ -134,7 +133,8 @@
    "events": 12,
    "locations": [
     "Carl Hansen &#038; S\u00f8n Flagship Store, Midtown East",
-    "RESOBOX"
+    "RESOBOX",
+    "The New York Botanical Garden"
    ],
    "types": [
     "Event"
@@ -202,7 +202,6 @@
    "locations": [
     "Bronx",
     "Brooklyn",
-    "Manhattan",
     "Queens",
     "Staten Island"
    ],
@@ -345,30 +344,6 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "lucidbody.com",
-   "name": "Lucid Body House",
-   "url": "https://lucidbody.com/events",
-   "events": 4,
-   "locations": [
-    "Art of Acting Studio",
-    "Lambertville Arts and Movement",
-    "St. Michael&#8217;s Church"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7461254,
-   "lon": -73.9801056,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "lighthousemuseum.org",
    "name": "National Lighthouse Museum",
    "url": "https://lighthousemuseum.org/events/",
@@ -387,6 +362,29 @@
    "borough": "Staten Island",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "url": "https://lucidbody.com/events",
+   "events": 2,
+   "locations": [
+    "Lambertville Arts and Movement",
+    "St. Michael&#8217;s Church"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7461254,
+   "lon": -73.9801056,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "waterfrontmuseum.org",
@@ -421,7 +419,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 2,
+   "links": 0,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -631,7 +629,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 114,
+   "links": 113,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -753,7 +751,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 11,
+   "links": 13,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -769,7 +767,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 43,
+   "links": 37,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -787,7 +785,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 4,
+   "links": 2,
    "lat": 40.6089555,
    "lon": -73.7339552,
    "borough": null,
@@ -875,7 +873,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 54,
+   "links": 49,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -965,7 +963,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 8,
+   "links": 5,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"

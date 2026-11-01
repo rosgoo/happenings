@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T15:13:13.932684+00:00",
+ "generated_at": "2026-11-01T15:04:07.279112+00:00",
  "city": "nyc",
  "venues": [
   {
@@ -11,7 +11,7 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://www.prospectpark.org/wp-json/tribe/events/v1/events",
-   "events": 706,
+   "events": 545,
    "venue_name": "Prospect Park",
    "why": "Prospect Park Alliance publishes for the whole park; OSM matched its website to Lefferts Historic House, one building inside it. Every event is genuinely in the park, so the park is the venue."
   },
@@ -24,7 +24,7 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://waterfrontmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 211
+   "events": 201
   },
   {
    "host": "www.cmom.org",
@@ -35,20 +35,7 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://www.cmom.org/wp-json/tribe/events/v1/events",
-   "events": 202
-  },
-  {
-   "host": "cityparksfoundation.org",
-   "name": "Rumsey Playfield",
-   "origin": "https://cityparksfoundation.org",
-   "lat": 40.7725851,
-   "lon": -73.9702129,
-   "borough": "Manhattan",
-   "feed": "tribe",
-   "url": "https://cityparksfoundation.org/wp-json/tribe/events/v1/events",
-   "events": 111,
-   "skip": true,
-   "why": "City Parks Foundation programmes citywide -- SummerStage and It's My Park at McKinley, Fort Washington, Sunset, Highbridge, Alley Pond, Hunter's Point. The feed carries no per-event location, so all 113 would inherit one point at Rumsey Playfield in Central Park. Losing them is honest; placing them there is not."
+   "events": 193
   },
   {
    "host": "posterhouse.org",
@@ -59,18 +46,7 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://posterhouse.org/wp-json/tribe/events/v1/events",
-   "events": 74
-  },
-  {
-   "host": "stannswarehouse.org",
-   "name": "St. Ann's Warehouse",
-   "origin": "https://stannswarehouse.org",
-   "lat": 40.7036538,
-   "lon": -73.9928126,
-   "borough": "Brooklyn",
-   "feed": "tribe",
-   "url": "https://stannswarehouse.org/wp-json/tribe/events/v1/events",
-   "events": 70
+   "events": 60
   },
   {
    "host": "casa-belvedere.org",
@@ -81,7 +57,7 @@
    "borough": "Staten Island",
    "feed": "tribe",
    "url": "https://casa-belvedere.org/wp-json/tribe/events/v1/events",
-   "events": 69
+   "events": 47
   },
   {
    "host": "www.sichildrensmuseum.org",
@@ -92,7 +68,18 @@
    "borough": "Staten Island",
    "feed": "tribe",
    "url": "https://www.sichildrensmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 54
+   "events": 46
+  },
+  {
+   "host": "stannswarehouse.org",
+   "name": "St. Ann's Warehouse",
+   "origin": "https://stannswarehouse.org",
+   "lat": 40.7036538,
+   "lon": -73.9928126,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://stannswarehouse.org/wp-json/tribe/events/v1/events",
+   "events": 40
   },
   {
    "host": "www.nytransitmuseum.org",
@@ -103,18 +90,7 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://www.nytransitmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 50
-  },
-  {
-   "host": "bricktheater.com",
-   "name": "The Brick",
-   "origin": "https://bricktheater.com",
-   "lat": 40.714199,
-   "lon": -73.9497604,
-   "borough": "Brooklyn",
-   "feed": "tribe",
-   "url": "https://bricktheater.com/wp-json/tribe/events/v1/events",
-   "events": 38
+   "events": 36
   },
   {
    "host": "www.resobox.com",
@@ -125,51 +101,7 @@
    "borough": "Queens",
    "feed": "tribe",
    "url": "https://www.resobox.com/wp-json/tribe/events/v1/events",
-   "events": 31
-  },
-  {
-   "host": "www.mocanyc.org",
-   "name": "Museum of Chinese in America",
-   "origin": "https://www.mocanyc.org",
-   "lat": 40.7194554,
-   "lon": -73.9991571,
-   "borough": "Manhattan",
-   "feed": "tribe",
-   "url": "https://www.mocanyc.org/wp-json/tribe/events/v1/events",
-   "events": 21
-  },
-  {
-   "host": "libertyhall.kean.edu",
-   "name": "Liberty Hall Museum",
-   "origin": "https://libertyhall.kean.edu",
-   "lat": 40.6770988,
-   "lon": -74.2267249,
-   "borough": null,
-   "feed": "tribe",
-   "url": "https://libertyhall.kean.edu/wp-json/tribe/events/v1/events",
-   "events": 18
-  },
-  {
-   "host": "playmeadowlands.com",
-   "name": "Meadowlands Racing & Entertainment",
-   "origin": "https://playmeadowlands.com",
-   "lat": null,
-   "lon": null,
-   "borough": null,
-   "feed": "tribe",
-   "url": "https://playmeadowlands.com/wp-json/tribe/events/v1/events",
-   "events": 17
-  },
-  {
-   "host": "www.statenislandmuseum.org",
-   "name": "Staten Island Museum",
-   "origin": "https://www.statenislandmuseum.org",
-   "lat": 40.6445211,
-   "lon": -74.1027489,
-   "borough": "Staten Island",
-   "feed": "tribe",
-   "url": "https://www.statenislandmuseum.org/wp-json/tribe/events/v1/events",
-   "events": 16
+   "events": 30
   },
   {
    "host": "societyillustrators.org",
@@ -180,7 +112,53 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://societyillustrators.org/wp-json/tribe/events/v1/events",
+   "events": 28
+  },
+  {
+   "host": "bricktheater.com",
+   "name": "The Brick",
+   "origin": "https://bricktheater.com",
+   "lat": 40.714199,
+   "lon": -73.9497604,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://bricktheater.com/wp-json/tribe/events/v1/events",
+   "events": 24
+  },
+  {
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "origin": "https://cityparksfoundation.org",
+   "lat": 40.7725851,
+   "lon": -73.9702129,
+   "borough": "Manhattan",
+   "feed": "tribe",
+   "url": "https://cityparksfoundation.org/wp-json/tribe/events/v1/events",
+   "events": 16,
+   "skip": true,
+   "why": "City Parks Foundation programmes citywide -- SummerStage and It's My Park at McKinley, Fort Washington, Sunset, Highbridge, Alley Pond, Hunter's Point. The feed carries no per-event location, so all 113 would inherit one point at Rumsey Playfield in Central Park. Losing them is honest; placing them there is not."
+  },
+  {
+   "host": "playmeadowlands.com",
+   "name": "Meadowlands Racing & Entertainment",
+   "origin": "https://playmeadowlands.com",
+   "lat": null,
+   "lon": null,
+   "borough": null,
+   "feed": "tribe",
+   "url": "https://playmeadowlands.com/wp-json/tribe/events/v1/events",
    "events": 15
+  },
+  {
+   "host": "www.mocanyc.org",
+   "name": "Museum of Chinese in America",
+   "origin": "https://www.mocanyc.org",
+   "lat": 40.7194554,
+   "lon": -73.9991571,
+   "borough": "Manhattan",
+   "feed": "tribe",
+   "url": "https://www.mocanyc.org/wp-json/tribe/events/v1/events",
+   "events": 14
   },
   {
    "host": "open-source-gallery.org",
@@ -194,14 +172,14 @@
    "events": 14
   },
   {
-   "host": "teatrolatea.org",
-   "name": "Teatro LATEA",
-   "origin": "https://teatrolatea.org",
-   "lat": null,
-   "lon": null,
+   "host": "libertyhall.kean.edu",
+   "name": "Liberty Hall Museum",
+   "origin": "https://libertyhall.kean.edu",
+   "lat": 40.6770988,
+   "lon": -74.2267249,
    "borough": null,
    "feed": "tribe",
-   "url": "https://teatrolatea.org/wp-json/tribe/events/v1/events",
+   "url": "https://libertyhall.kean.edu/wp-json/tribe/events/v1/events",
    "events": 11
   },
   {
@@ -213,7 +191,7 @@
    "borough": "Manhattan",
    "feed": "tribe",
    "url": "https://mvhm.org/wp-json/tribe/events/v1/events",
-   "events": 8
+   "events": 11
   },
   {
    "host": "here.org",
@@ -224,7 +202,29 @@
    "borough": "Manhattan",
    "feed": "ics",
    "url": "http://here.org/shows?ical=1",
-   "events": 7
+   "events": 9
+  },
+  {
+   "host": "www.statenislandmuseum.org",
+   "name": "Staten Island Museum",
+   "origin": "https://www.statenislandmuseum.org",
+   "lat": 40.6445211,
+   "lon": -74.1027489,
+   "borough": "Staten Island",
+   "feed": "tribe",
+   "url": "https://www.statenislandmuseum.org/wp-json/tribe/events/v1/events",
+   "events": 9
+  },
+  {
+   "host": "historichousetrust.org",
+   "name": "Lewis Howard Latimer House Museum",
+   "origin": "https://historichousetrust.org",
+   "lat": 40.7660962,
+   "lon": -73.829377,
+   "borough": "Queens",
+   "feed": "ics",
+   "url": "https://historichousetrust.org/events/?ical=1",
+   "events": 4
   },
   {
    "host": "spokethehub.org",
@@ -235,62 +235,7 @@
    "borough": "Brooklyn",
    "feed": "tribe",
    "url": "https://spokethehub.org/wp-json/tribe/events/v1/events",
-   "events": 6
-  },
-  {
-   "host": "dyckmanfarmhouse.org",
-   "name": "Dyckman Farmhouse Museum",
-   "origin": "https://dyckmanfarmhouse.org",
-   "lat": 40.8673822,
-   "lon": -73.9228859,
-   "borough": "Manhattan",
-   "feed": "tribe",
-   "url": "https://dyckmanfarmhouse.org/wp-json/tribe/events/v1/events",
    "events": 4
-  },
-  {
-   "host": "mocada.org",
-   "name": "MoCADA  Culture Lab II",
-   "origin": "https://mocada.org",
-   "lat": 40.6863854,
-   "lon": -73.9785143,
-   "borough": "Brooklyn",
-   "feed": "tribe",
-   "url": "https://mocada.org/wp-json/tribe/events/v1/events",
-   "events": 3
-  },
-  {
-   "host": "www.mocada.org",
-   "name": "Museum of Contemporary African Diasporan Arts",
-   "origin": "https://www.mocada.org",
-   "lat": 40.68535,
-   "lon": -73.9744276,
-   "borough": "Brooklyn",
-   "feed": "tribe",
-   "url": "https://www.mocada.org/wp-json/tribe/events/v1/events",
-   "events": 3
-  },
-  {
-   "host": "lighthousemuseum.org",
-   "name": "National Lighthouse Museum",
-   "origin": "https://lighthousemuseum.org",
-   "lat": 40.6407356,
-   "lon": -74.0734107,
-   "borough": "Staten Island",
-   "feed": "tribe",
-   "url": "https://lighthousemuseum.org/wp-json/tribe/events/v1/events",
-   "events": 3
-  },
-  {
-   "host": "www.howlarts.org",
-   "name": "Howl! Happening",
-   "origin": "https://www.howlarts.org",
-   "lat": 40.7247539,
-   "lon": -73.9916906,
-   "borough": "Manhattan",
-   "feed": "tribe",
-   "url": "https://www.howlarts.org/wp-json/tribe/events/v1/events",
-   "events": 2
   },
   {
    "host": "www.louisarmstronghouse.org",
@@ -304,14 +249,69 @@
    "events": 2
   },
   {
-   "host": "historichousetrust.org",
-   "name": "Lewis Howard Latimer House Museum",
-   "origin": "https://historichousetrust.org",
-   "lat": 40.7660962,
-   "lon": -73.829377,
-   "borough": "Queens",
+   "host": "lighthousemuseum.org",
+   "name": "National Lighthouse Museum",
+   "origin": "https://lighthousemuseum.org",
+   "lat": 40.6407356,
+   "lon": -74.0734107,
+   "borough": "Staten Island",
    "feed": "tribe",
-   "url": "https://historichousetrust.org/wp-json/tribe/events/v1/events",
+   "url": "https://lighthousemuseum.org/wp-json/tribe/events/v1/events",
+   "events": 2
+  },
+  {
+   "host": "teatrolatea.org",
+   "name": "Teatro LATEA",
+   "origin": "https://teatrolatea.org",
+   "lat": null,
+   "lon": null,
+   "borough": null,
+   "feed": "tribe",
+   "url": "https://teatrolatea.org/wp-json/tribe/events/v1/events",
+   "events": 2
+  },
+  {
+   "host": "dyckmanfarmhouse.org",
+   "name": "Dyckman Farmhouse Museum",
+   "origin": "https://dyckmanfarmhouse.org",
+   "lat": 40.8673822,
+   "lon": -73.9228859,
+   "borough": "Manhattan",
+   "feed": "tribe",
+   "url": "https://dyckmanfarmhouse.org/wp-json/tribe/events/v1/events",
+   "events": 1
+  },
+  {
+   "host": "www.howlarts.org",
+   "name": "Howl! Happening",
+   "origin": "https://www.howlarts.org",
+   "lat": 40.7247539,
+   "lon": -73.9916906,
+   "borough": "Manhattan",
+   "feed": "tribe",
+   "url": "https://www.howlarts.org/wp-json/tribe/events/v1/events",
+   "events": 1
+  },
+  {
+   "host": "mocada.org",
+   "name": "MoCADA  Culture Lab II",
+   "origin": "https://mocada.org",
+   "lat": 40.6863854,
+   "lon": -73.9785143,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://mocada.org/wp-json/tribe/events/v1/events",
+   "events": 1
+  },
+  {
+   "host": "www.mocada.org",
+   "name": "Museum of Contemporary African Diasporan Arts",
+   "origin": "https://www.mocada.org",
+   "lat": 40.68535,
+   "lon": -73.9744276,
+   "borough": "Brooklyn",
+   "feed": "tribe",
+   "url": "https://www.mocada.org/wp-json/tribe/events/v1/events",
    "events": 1
   },
   {
