@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T14:13:31.020915+00:00",
+ "generated_at": "2026-11-02T18:46:01.605466+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 545,
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 7,
+     "upcoming": 6,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 24,
+     "upcoming": 21,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 7,
+     "upcoming": 6,
      "past": 30
     }
    ],
@@ -754,7 +754,7 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 3,
+     "upcoming": 4,
      "past": 12
     }
    ],

@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-11-01T14:26:04.871201+00:00",
+ "generated_at": "2026-11-02T18:57:57.750111+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -202,6 +202,7 @@
    "locations": [
     "Bronx",
     "Brooklyn",
+    "Manhattan",
     "Queens",
     "Staten Island"
    ],
@@ -629,7 +630,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 113,
+   "links": 112,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -767,7 +768,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 37,
+   "links": 36,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -873,7 +874,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 49,
+   "links": 48,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",

@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-01T14:13:30.923790+00:00",
+ "generated_at": "2026-11-02T18:46:01.539653+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -2650,6 +2650,14 @@
    "total": 21,
    "upcoming": 1,
    "checked_at": "2026-11-01T14:13:30.923770+00:00"
+  },
+  {
+   "id": "cal-t8ruZ0173tRElvd",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-02T18:46:01.539631+00:00"
   }
  ]
 }
