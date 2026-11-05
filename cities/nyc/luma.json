@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-02T18:46:01.539653+00:00",
+ "generated_at": "2026-11-05T16:44:36.786743+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -26,6 +26,14 @@
    "total": 279,
    "upcoming": 43,
    "checked_at": "2026-09-03T12:58:42.636536+00:00"
+  },
+  {
+   "id": "cal-8nB8IN4xWZLHphA",
+   "name": "TechWalk",
+   "ok": true,
+   "total": 267,
+   "upcoming": 19,
+   "checked_at": "2026-11-05T16:44:34.100175+00:00"
   },
   {
    "id": "cal-Q8l315UsVMWb6h6",
@@ -468,6 +476,22 @@
    "checked_at": "2026-10-29T15:30:01.924125+00:00"
   },
   {
+   "id": "cal-xIDT6vXOhDyC4FM",
+   "name": "Solana Skyline NYC",
+   "ok": true,
+   "total": 241,
+   "upcoming": 5,
+   "checked_at": "2026-11-05T16:44:20.742722+00:00"
+  },
+  {
+   "id": "cal-Ve0M7LoDOpdnF3z",
+   "name": "South Park Commons",
+   "ok": true,
+   "total": 137,
+   "upcoming": 5,
+   "checked_at": "2026-11-05T16:44:21.963078+00:00"
+  },
+  {
    "id": "cal-H1FY60pnZtchaf4",
    "name": "Corgi NYC",
    "ok": true,
@@ -810,6 +834,22 @@
    "total": 7,
    "upcoming": 3,
    "checked_at": "2026-10-29T15:30:14.492585+00:00"
+  },
+  {
+   "id": "cal-xfhWyktPBBNqvML",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 3,
+   "checked_at": "2026-11-05T16:44:26.263751+00:00"
+  },
+  {
+   "id": "cal-SBXLKHG56wqFfgZ",
+   "name": "Personal",
+   "ok": true,
+   "total": 21,
+   "upcoming": 3,
+   "checked_at": "2026-11-05T16:44:29.458720+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -1162,6 +1202,22 @@
    "total": 40,
    "upcoming": 2,
    "checked_at": "2026-11-01T14:13:26.478383+00:00"
+  },
+  {
+   "id": "cal-zgGcKswZRqDTOo3",
+   "name": "Take2",
+   "ok": true,
+   "total": 15,
+   "upcoming": 2,
+   "checked_at": "2026-11-05T16:44:30.780974+00:00"
+  },
+  {
+   "id": "cal-EeM4PXDNjdjIP8y",
+   "name": "Uprise Art",
+   "ok": true,
+   "total": 9,
+   "upcoming": 2,
+   "checked_at": "2026-11-05T16:44:36.786720+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2658,6 +2714,54 @@
    "total": 1,
    "upcoming": 1,
    "checked_at": "2026-11-02T18:46:01.539631+00:00"
+  },
+  {
+   "id": "cal-oqbs7v9KfG4RU2j",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-05T16:44:18.983638+00:00"
+  },
+  {
+   "id": "cal-7vzN5DeFFL4BBVT",
+   "name": "FDE of NY",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-05T16:44:23.302720+00:00"
+  },
+  {
+   "id": "cal-pVFe7MnkTOVXZFu",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-11-05T16:44:24.770293+00:00"
+  },
+  {
+   "id": "cal-C5KOWyf0wcfmizl",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-05T16:44:27.773003+00:00"
+  },
+  {
+   "id": "cal-0HkxDUZriOoCf4y",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-05T16:44:32.271953+00:00"
+  },
+  {
+   "id": "cal-aHJdMkWO0l7wC3A",
+   "name": "Allen Street Gallery",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-05T16:44:35.471652+00:00"
   }
  ]
 }

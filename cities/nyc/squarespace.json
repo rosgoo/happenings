@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T18:46:01.605466+00:00",
+ "generated_at": "2026-11-05T16:44:36.892990+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 545,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 5,
+     "upcoming": 4,
      "past": 30
     }
    ],
@@ -310,8 +310,8 @@
      "url": "https://synesthesia.space/exhibitions?format=json",
      "title": "Exhibitions",
      "collection_id": "5cb138766e9a7f103498f049",
-     "upcoming": 1,
-     "past": 16
+     "upcoming": 0,
+     "past": 17
     }
    ],
    "tried": 4
@@ -482,7 +482,7 @@
      "url": "https://www.the8thfloor.org/newevents?format=json",
      "title": "Events",
      "collection_id": "659d84552cb6dd6728f437c7",
-     "upcoming": 1,
+     "upcoming": 2,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 21,
+     "upcoming": 20,
      "past": 30
     }
    ],
@@ -609,7 +609,7 @@
    "name": "Secret Theatre",
    "origin": "https://www.secrettheatre.com",
    "collections": [],
-   "tried": 3
+   "tried": 4
   },
   {
    "host": "jalopytheatre.org",
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 6,
+     "upcoming": 7,
      "past": 30
     }
    ],
@@ -754,7 +754,7 @@
      "url": "https://www.rbpmw-efanyc.org/events-1?format=json",
      "title": "Events",
      "collection_id": "6a4d328f92d09a34082e15b6",
-     "upcoming": 4,
+     "upcoming": 3,
      "past": 12
     }
    ],
@@ -850,7 +850,7 @@
    "name": "Bklyn Clay",
    "origin": "https://bklynclay.com",
    "collections": [],
-   "tried": 5
+   "tried": 4
   },
   {
    "host": "www.jackny.org",
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 18,
+     "upcoming": 15,
      "past": 30
     }
    ],

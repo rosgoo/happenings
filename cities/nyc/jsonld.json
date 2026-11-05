@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-11-02T18:57:57.750111+00:00",
+ "generated_at": "2026-11-05T16:56:01.438179+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 216,
+   "events": 215,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -47,7 +47,7 @@
    "host": "thetinycupboard.com",
    "name": "The Tiny Cupboard",
    "url": "https://www.thetinycupboard.com/calendar",
-   "events": 100,
+   "events": 102,
    "locations": [
     "The Tiny Cupboard"
    ],
@@ -67,7 +67,7 @@
    "host": "eastvillecomedy.com",
    "name": "Eastville Comedy Club & Bar",
    "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 63,
+   "events": 67,
    "locations": [
     "Eastville Comedy Club"
    ],
@@ -173,28 +173,6 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "mvhm.org",
-   "name": "Mount Vernon Hotel Museum",
-   "url": "https://mvhm.org/events/",
-   "events": 11,
-   "locations": [
-    "Mount Vernon Hotel Museum &amp; Garden"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7605217,
-   "lon": -73.9597128,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "cityparksfoundation.org",
    "name": "Rumsey Playfield",
    "url": "https://cityparksfoundation.org/calendar",
@@ -221,13 +199,34 @@
    "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/",
+   "events": 10,
+   "locations": [
+    "Mount Vernon Hotel Museum &amp; Garden"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7605217,
+   "lon": -73.9597128,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "www.statenislandmuseum.org",
    "name": "Staten Island Museum",
    "url": "https://www.statenislandmuseum.org/events",
-   "events": 9,
+   "events": 8,
    "locations": [
     "Blue Heron Park",
-    "Freshkills North Park",
     "Great Kills Park",
     "Silver Lake Park",
     "Staten Island Museum at Snug Harbor",
@@ -321,6 +320,29 @@
    "why": "Hoboken, New Jersey. The census swept a bounding box; normalize would reject every row as outside nyc, so the honest place to stop is before the request."
   },
   {
+   "host": "lucidbody.com",
+   "name": "Lucid Body House",
+   "url": "https://lucidbody.com/events",
+   "events": 5,
+   "locations": [
+    "Lambertville Arts and Movement",
+    "St. Michael&#8217;s Church"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7461254,
+   "lon": -73.9801056,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "historichousetrust.org",
    "name": "Lewis Howard Latimer House Museum",
    "url": "https://historichousetrust.org/events/",
@@ -363,29 +385,6 @@
    "borough": "Staten Island",
    "skip": true,
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
-   "host": "lucidbody.com",
-   "name": "Lucid Body House",
-   "url": "https://lucidbody.com/events",
-   "events": 2,
-   "locations": [
-    "Lambertville Arts and Movement",
-    "St. Michael&#8217;s Church"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7461254,
-   "lon": -73.9801056,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "waterfrontmuseum.org",
@@ -560,7 +559,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 3,
+   "links": 2,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -630,7 +629,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 112,
+   "links": 122,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -752,7 +751,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 13,
+   "links": 12,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -768,7 +767,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 36,
+   "links": 37,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -874,7 +873,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 48,
+   "links": 45,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -964,7 +963,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 5,
+   "links": 9,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
