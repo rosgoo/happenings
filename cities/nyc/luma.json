@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-05T16:44:36.786743+00:00",
+ "generated_at": "2026-11-09T19:03:41.572009+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -26,6 +26,14 @@
    "total": 279,
    "upcoming": 43,
    "checked_at": "2026-09-03T12:58:42.636536+00:00"
+  },
+  {
+   "id": "cal-gmMOid1Rsqc3Hih",
+   "name": "ClickHouse Events",
+   "ok": true,
+   "total": 235,
+   "upcoming": 30,
+   "checked_at": "2026-11-09T19:03:41.571986+00:00"
   },
   {
    "id": "cal-8nB8IN4xWZLHphA",
@@ -620,6 +628,14 @@
    "checked_at": "2026-10-29T15:30:09.910382+00:00"
   },
   {
+   "id": "cal-4CkxHm20dbJfKOL",
+   "name": "NODE",
+   "ok": true,
+   "total": 22,
+   "upcoming": 4,
+   "checked_at": "2026-11-09T19:03:29.278212+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -850,6 +866,14 @@
    "total": 21,
    "upcoming": 3,
    "checked_at": "2026-11-05T16:44:29.458720+00:00"
+  },
+  {
+   "id": "cal-EeDJt2cPbgGca1W",
+   "name": "Cartesia",
+   "ok": true,
+   "total": 16,
+   "upcoming": 3,
+   "checked_at": "2026-11-09T19:03:38.130051+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -1218,6 +1242,14 @@
    "total": 9,
    "upcoming": 2,
    "checked_at": "2026-11-05T16:44:36.786720+00:00"
+  },
+  {
+   "id": "cal-zL55NLG4X719tC8",
+   "name": "Personal",
+   "ok": true,
+   "total": 11,
+   "upcoming": 2,
+   "checked_at": "2026-11-09T19:03:39.723850+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2762,6 +2794,46 @@
    "total": 1,
    "upcoming": 1,
    "checked_at": "2026-11-05T16:44:35.471652+00:00"
+  },
+  {
+   "id": "cal-kMhlZsjnqXDUc3w",
+   "name": "Faire Design",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-11-09T19:03:30.599766+00:00"
+  },
+  {
+   "id": "cal-4yR55zILLGNsvRJ",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-09T19:03:32.124687+00:00"
+  },
+  {
+   "id": "cal-5pBJ4gkFo4PLCtv",
+   "name": "BUY THEM FLOWERS",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-09T19:03:33.609649+00:00"
+  },
+  {
+   "id": "cal-zrTphLrgjdhzvEt",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-11-09T19:03:35.101001+00:00"
+  },
+  {
+   "id": "cal-arIKMhjsER074KV",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-11-09T19:03:36.621030+00:00"
   }
  ]
 }

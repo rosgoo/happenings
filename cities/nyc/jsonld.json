@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-11-05T16:56:01.438179+00:00",
+ "generated_at": "2026-11-09T19:15:38.568063+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 215,
+   "events": 212,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -90,7 +90,8 @@
    "events": 16,
    "locations": [
     "New York Transit Museum, Brooklyn",
-    "Off-Site"
+    "Off-Site",
+    "Virtual"
    ],
    "types": [
     "Event"
@@ -133,8 +134,7 @@
    "events": 12,
    "locations": [
     "Carl Hansen &#038; S\u00f8n Flagship Store, Midtown East",
-    "RESOBOX",
-    "The New York Botanical Garden"
+    "RESOBOX"
    ],
    "types": [
     "Event"
@@ -173,36 +173,10 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "cityparksfoundation.org",
-   "name": "Rumsey Playfield",
-   "url": "https://cityparksfoundation.org/calendar",
-   "events": 10,
-   "locations": [
-    "Bronx",
-    "Brooklyn",
-    "Manhattan",
-    "Queens",
-    "Staten Island"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.7725851,
-   "lon": -73.9702129,
-   "borough": "Manhattan",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "mvhm.org",
    "name": "Mount Vernon Hotel Museum",
    "url": "https://mvhm.org/events/",
-   "events": 10,
+   "events": 8,
    "locations": [
     "Mount Vernon Hotel Museum &amp; Garden"
    ],
@@ -247,13 +221,36 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "url": "https://cityparksfoundation.org/calendar",
+   "events": 6,
+   "locations": [
+    "Brooklyn",
+    "Manhattan",
+    "Staten Island"
+   ],
+   "types": [
+    "Event"
+   ],
+   "status": 200,
+   "error": null,
+   "mode": "listing",
+   "prefix": null,
+   "links": 0,
+   "lat": 40.7725851,
+   "lon": -73.9702129,
+   "borough": "Manhattan",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "societyillustrators.org",
    "name": "Society of Illustrators",
    "url": "https://societyillustrators.org/events/",
    "events": 6,
    "locations": [
-    "At the Society",
-    "Zoom"
+    "At the Society"
    ],
    "types": [
     "Event"
@@ -453,7 +450,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibition",
-   "links": 157,
+   "links": 7,
    "lat": 40.7200826,
    "lon": -73.990232,
    "borough": "Manhattan",
@@ -541,7 +538,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 38,
+   "links": 35,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -559,7 +556,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/programs",
-   "links": 2,
+   "links": 4,
    "lat": 40.70575,
    "lon": -74.017691,
    "borough": "Manhattan"
@@ -575,7 +572,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 8,
+   "links": 7,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -629,7 +626,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 122,
+   "links": 121,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -665,7 +662,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 157,
+   "links": 158,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -751,7 +748,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 12,
+   "links": 9,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -767,7 +764,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 37,
+   "links": 40,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -873,7 +870,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 45,
+   "links": 43,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -927,7 +924,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/workshops",
-   "links": 32,
+   "links": 31,
    "lat": null,
    "lon": null,
    "borough": null,
@@ -963,7 +960,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 9,
+   "links": 5,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
