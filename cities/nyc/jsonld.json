@@ -16,7 +16,7 @@
   "than inheriting one point per host -- which is what lets a club with",
   "three rooms place all three correctly."
  ],
- "generated_at": "2026-11-09T19:15:38.568063+00:00",
+ "generated_at": "2026-11-12T17:14:31.223705+00:00",
  "city": "nyc",
  "source": "jsonld.py",
  "min_events": 2,
@@ -25,7 +25,7 @@
    "host": "newyorkcomedyclub.com",
    "name": "New York Comedy Club",
    "url": "https://newyorkcomedyclub.com/calendar",
-   "events": 212,
+   "events": 214,
    "locations": [
     "New York Comedy Club",
     "New York Comedy Club Upper West Side",
@@ -61,26 +61,6 @@
    "links": 0,
    "lat": 40.6836915,
    "lon": -73.9112136,
-   "borough": "Brooklyn"
-  },
-  {
-   "host": "eastvillecomedy.com",
-   "name": "Eastville Comedy Club & Bar",
-   "url": "https://www.eastvillecomedy.com/calendar",
-   "events": 67,
-   "locations": [
-    "Eastville Comedy Club"
-   ],
-   "types": [
-    "ComedyEvent"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "listing",
-   "prefix": null,
-   "links": 0,
-   "lat": 40.6858601,
-   "lon": -73.9816535,
    "borough": "Brooklyn"
   },
   {
@@ -173,12 +153,16 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "mvhm.org",
-   "name": "Mount Vernon Hotel Museum",
-   "url": "https://mvhm.org/events/",
-   "events": 8,
+   "host": "cityparksfoundation.org",
+   "name": "Rumsey Playfield",
+   "url": "https://cityparksfoundation.org/calendar",
+   "events": 10,
    "locations": [
-    "Mount Vernon Hotel Museum &amp; Garden"
+    "Bronx",
+    "Brooklyn",
+    "Manhattan",
+    "Queens",
+    "Staten Island"
    ],
    "types": [
     "Event"
@@ -188,11 +172,11 @@
    "mode": "listing",
    "prefix": null,
    "links": 0,
-   "lat": 40.7605217,
-   "lon": -73.9597128,
+   "lat": 40.7725851,
+   "lon": -73.9702129,
    "borough": "Manhattan",
    "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "www.statenislandmuseum.org",
@@ -221,14 +205,12 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "cityparksfoundation.org",
-   "name": "Rumsey Playfield",
-   "url": "https://cityparksfoundation.org/calendar",
+   "host": "mvhm.org",
+   "name": "Mount Vernon Hotel Museum",
+   "url": "https://mvhm.org/events/",
    "events": 6,
    "locations": [
-    "Brooklyn",
-    "Manhattan",
-    "Staten Island"
+    "Mount Vernon Hotel Museum &amp; Garden"
    ],
    "types": [
     "Event"
@@ -238,11 +220,11 @@
    "mode": "listing",
    "prefix": null,
    "links": 0,
-   "lat": 40.7725851,
-   "lon": -73.9702129,
+   "lat": 40.7605217,
+   "lon": -73.9597128,
    "borough": "Manhattan",
    "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and skipped there too. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
    "host": "societyillustrators.org",
@@ -272,15 +254,16 @@
    "url": "https://www.newyorkcitytheatre.com/shows",
    "events": 6,
    "locations": [
+    "Citi Field",
     "David H Koch Theater",
-    "Nederlander Theater",
+    "MetLife Stadium",
     "Perelman Performing Arts Center",
     "Radio City Music Hall",
-    "Richard Rodgers Theater",
-    "Theater555"
+    "Richard Rodgers Theater"
    ],
    "types": [
     "Event",
+    "MusicEvent",
     "TheaterEvent"
    ],
    "status": 200,
@@ -384,28 +367,6 @@
    "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
   },
   {
-   "host": "waterfrontmuseum.org",
-   "name": "The Waterfront Museum",
-   "url": "https://waterfrontmuseum.org/event/four-paintings/",
-   "events": 1,
-   "locations": [
-    "Waterfront Museum"
-   ],
-   "types": [
-    "Event"
-   ],
-   "status": 200,
-   "error": null,
-   "mode": "detail",
-   "prefix": "/event",
-   "links": 1,
-   "lat": 40.6752349,
-   "lon": -74.018312,
-   "borough": "Brooklyn",
-   "skip": true,
-   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
-  },
-  {
    "host": "aliceausten.org",
    "name": "Alice Austen House",
    "url": "https://aliceausten.org/events/",
@@ -416,7 +377,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 0,
+   "links": 2,
    "lat": 40.6151272,
    "lon": -74.0630286,
    "borough": "Staten Island"
@@ -450,7 +411,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/exhibition",
-   "links": 7,
+   "links": 158,
    "lat": 40.7200826,
    "lon": -73.990232,
    "borough": "Manhattan",
@@ -474,6 +435,22 @@
    "borough": "Manhattan",
    "skip": true,
    "why": "Crawled 52 event pages and not one carries an Event object -- the census saw the markup on a different page shape than /event/<id> serves. 52 requests a run for nothing is exactly what the politeness in lib/http exists to prevent. Re-check if the site is rebuilt."
+  },
+  {
+   "host": "eastvillecomedy.com",
+   "name": "Eastville Comedy Club & Bar",
+   "url": "https://www.eastvillecomedy.com/calendar",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/calendar",
+   "links": 0,
+   "lat": 40.6858601,
+   "lon": -73.9816535,
+   "borough": "Brooklyn"
   },
   {
    "host": "gloriasprojectspace.com",
@@ -538,7 +515,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 35,
+   "links": 37,
    "lat": 40.6443066,
    "lon": -74.1017627,
    "borough": "Staten Island",
@@ -572,7 +549,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 7,
+   "links": 9,
    "lat": 40.6803238,
    "lon": -73.9692441,
    "borough": "Brooklyn",
@@ -626,7 +603,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 121,
+   "links": 120,
    "lat": 40.7473981,
    "lon": -73.9922667,
    "borough": "Manhattan",
@@ -652,6 +629,24 @@
    "why": "Already fetched as a Squarespace collection. One venue, one adapter."
   },
   {
+   "host": "waterfrontmuseum.org",
+   "name": "The Waterfront Museum",
+   "url": "https://waterfrontmuseum.org/event/four-paintings/",
+   "events": 0,
+   "locations": [],
+   "types": [],
+   "status": 200,
+   "error": null,
+   "mode": "detail",
+   "prefix": "/event",
+   "links": 0,
+   "lat": 40.6752349,
+   "lon": -74.018312,
+   "borough": "Brooklyn",
+   "skip": true,
+   "why": "Already in cities/nyc/wordpress.json and fetched over tribe. One venue, one adapter: two sources for the same room means two venue records whenever the names differ by a word, and dedup keys on the venue."
+  },
+  {
    "host": "wonderville.nyc",
    "name": "Wonderville",
    "url": "https://www.wonderville.nyc/events",
@@ -662,7 +657,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 158,
+   "links": 159,
    "lat": 40.6924111,
    "lon": -73.9275164,
    "borough": "Brooklyn",
@@ -748,7 +743,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 9,
+   "links": 8,
    "lat": 40.6947588,
    "lon": -73.9614259,
    "borough": "Brooklyn"
@@ -764,7 +759,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/program",
-   "links": 40,
+   "links": 39,
    "lat": 40.7273136,
    "lon": -73.951608,
    "borough": "Brooklyn",
@@ -870,7 +865,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 43,
+   "links": 44,
    "lat": 40.7159355,
    "lon": -73.9964993,
    "borough": "Manhattan",
@@ -960,7 +955,7 @@
    "error": null,
    "mode": "detail",
    "prefix": "/events",
-   "links": 5,
+   "links": 8,
    "lat": 40.739633,
    "lon": -74.0089385,
    "borough": "Manhattan"
