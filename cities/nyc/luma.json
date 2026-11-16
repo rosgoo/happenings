@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-12T17:01:57.331009+00:00",
+ "generated_at": "2026-11-16T18:51:12.770639+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -26,6 +26,14 @@
    "total": 279,
    "upcoming": 43,
    "checked_at": "2026-09-03T12:58:42.636536+00:00"
+  },
+  {
+   "id": "cal-p6wrlIz7NXddCxz",
+   "name": "Reforesters Wellness Classes & Ambient/ Electronic Events",
+   "ok": true,
+   "total": 295,
+   "upcoming": 36,
+   "checked_at": "2026-11-16T18:51:11.502516+00:00"
   },
   {
    "id": "cal-gmMOid1Rsqc3Hih",
@@ -290,6 +298,14 @@
    "total": 26,
    "upcoming": 8,
    "checked_at": "2026-10-05T17:21:32.110408+00:00"
+  },
+  {
+   "id": "cal-WBTnwevJeuo1Fg1",
+   "name": "Asian Tech Week - 2026",
+   "ok": true,
+   "total": 10,
+   "upcoming": 8,
+   "checked_at": "2026-11-16T18:50:57.492095+00:00"
   },
   {
    "id": "cal-8ACK0vjqOfKpHXl",
@@ -1274,6 +1290,46 @@
    "total": 11,
    "upcoming": 2,
    "checked_at": "2026-11-09T19:03:39.723850+00:00"
+  },
+  {
+   "id": "cal-wcwR3WeprjAOQuw",
+   "name": "Open Note Labs",
+   "ok": true,
+   "total": 11,
+   "upcoming": 2,
+   "checked_at": "2026-11-16T18:51:02.194047+00:00"
+  },
+  {
+   "id": "cal-HBdw8ow2gcl1Kui",
+   "name": "Personal",
+   "ok": true,
+   "total": 6,
+   "upcoming": 2,
+   "checked_at": "2026-11-16T18:51:03.509910+00:00"
+  },
+  {
+   "id": "cal-ZebmAmpFMCe1E2R",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 2,
+   "checked_at": "2026-11-16T18:51:05.027949+00:00"
+  },
+  {
+   "id": "cal-wYHDiuJD5JdAolS",
+   "name": "Agora",
+   "ok": true,
+   "total": 45,
+   "upcoming": 2,
+   "checked_at": "2026-11-16T18:51:06.618647+00:00"
+  },
+  {
+   "id": "cal-mW7AHB6Y80u0pqK",
+   "name": "Amplify",
+   "ok": true,
+   "total": 3,
+   "upcoming": 2,
+   "checked_at": "2026-11-16T18:51:09.496120+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -2906,6 +2962,46 @@
    "total": 1,
    "upcoming": 1,
    "checked_at": "2026-11-12T17:01:57.330985+00:00"
+  },
+  {
+   "id": "cal-ekACnNi9RoWxBX9",
+   "name": "Nguyen Wahed: Events",
+   "ok": true,
+   "total": 10,
+   "upcoming": 1,
+   "checked_at": "2026-11-16T18:50:56.091294+00:00"
+  },
+  {
+   "id": "cal-Bk4XqPFMDiSZODi",
+   "name": "ISLAA EVENTS",
+   "ok": true,
+   "total": 25,
+   "upcoming": 1,
+   "checked_at": "2026-11-16T18:50:59.082460+00:00"
+  },
+  {
+   "id": "cal-mK7m897PkP7MHHv",
+   "name": "Personal",
+   "ok": true,
+   "total": 13,
+   "upcoming": 1,
+   "checked_at": "2026-11-16T18:51:00.563496+00:00"
+  },
+  {
+   "id": "cal-3S8A6aAKOQSXHIe",
+   "name": "Personal",
+   "ok": true,
+   "total": 25,
+   "upcoming": 1,
+   "checked_at": "2026-11-16T18:51:08.047627+00:00"
+  },
+  {
+   "id": "cal-JjjpG3xMF2l1hQ4",
+   "name": "EchoHer Events",
+   "ok": true,
+   "total": 126,
+   "upcoming": 1,
+   "checked_at": "2026-11-16T18:51:12.770615+00:00"
   }
  ]
 }
