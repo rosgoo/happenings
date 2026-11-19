@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-16T18:51:12.770639+00:00",
+ "generated_at": "2026-11-19T17:36:15.391568+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -676,6 +676,14 @@
    "checked_at": "2026-11-12T17:01:55.950507+00:00"
   },
   {
+   "id": "cal-EgB2GR8mpTeEXG1",
+   "name": "localhost:nyc",
+   "ok": true,
+   "total": 120,
+   "upcoming": 4,
+   "checked_at": "2026-11-19T17:36:11.274831+00:00"
+  },
+  {
    "id": "cal-dTkKDhuPFba9zmb",
    "name": "SideQuest",
    "ok": true,
@@ -1330,6 +1338,30 @@
    "total": 3,
    "upcoming": 2,
    "checked_at": "2026-11-16T18:51:09.496120+00:00"
+  },
+  {
+   "id": "cal-jXfT6xlaPQuXNsp",
+   "name": "Club Reign",
+   "ok": true,
+   "total": 31,
+   "upcoming": 2,
+   "checked_at": "2026-11-19T17:36:06.416095+00:00"
+  },
+  {
+   "id": "cal-jEKA9mqmxxbbjPw",
+   "name": "Pleased to Meet You",
+   "ok": true,
+   "total": 18,
+   "upcoming": 2,
+   "checked_at": "2026-11-19T17:36:12.350124+00:00"
+  },
+  {
+   "id": "cal-BKhvjmdm9gt72BE",
+   "name": "Personal",
+   "ok": true,
+   "total": 12,
+   "upcoming": 2,
+   "checked_at": "2026-11-19T17:36:15.391545+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -3002,6 +3034,54 @@
    "total": 126,
    "upcoming": 1,
    "checked_at": "2026-11-16T18:51:12.770615+00:00"
+  },
+  {
+   "id": "cal-cRAkoeu56h8zaxC",
+   "name": "OpenAI for Startups",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-11-19T17:36:01.896871+00:00"
+  },
+  {
+   "id": "cal-wWM1NQlLnAXdoVo",
+   "name": "Hanover Park",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-19T17:36:03.300343+00:00"
+  },
+  {
+   "id": "cal-OxwoYvpSzyo9D1N",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-19T17:36:04.801135+00:00"
+  },
+  {
+   "id": "cal-JRdBR74LStD4nHv",
+   "name": "Personal",
+   "ok": true,
+   "total": 5,
+   "upcoming": 1,
+   "checked_at": "2026-11-19T17:36:07.818764+00:00"
+  },
+  {
+   "id": "cal-s3hHGH5TJeXm3pV",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-19T17:36:09.297360+00:00"
+  },
+  {
+   "id": "cal-EDHIiRSHjWB8tEG",
+   "name": "The Jam Showcase",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-11-19T17:36:13.803109+00:00"
   }
  ]
 }

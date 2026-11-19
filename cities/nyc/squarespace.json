@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T18:51:12.879436+00:00",
+ "generated_at": "2026-11-19T17:36:15.477515+00:00",
  "city": "nyc",
  "probed": 120,
  "requests": 546,
@@ -13,7 +13,7 @@
      "url": "https://www.frauncestavernmuseum.org/events-calendar?format=json",
      "title": "Calendar of Events",
      "collection_id": "58da88e615d5db908fcda484",
-     "upcoming": 4,
+     "upcoming": 3,
      "past": 30
     }
    ],
@@ -50,7 +50,7 @@
      "url": "https://onderdonkhouse.org/events-list?format=json",
      "title": "Events",
      "collection_id": "5d8d052558fca978aa0cbaf9",
-     "upcoming": 1,
+     "upcoming": 2,
      "past": 30
     }
    ],
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 20,
+     "upcoming": 19,
      "past": 30
     }
    ],
@@ -690,7 +690,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 6,
+     "upcoming": 8,
      "past": 30
     }
    ],
@@ -974,7 +974,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 9,
+     "upcoming": 6,
      "past": 30
     }
    ],
