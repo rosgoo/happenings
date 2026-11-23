@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-19T17:36:15.391568+00:00",
+ "generated_at": "2026-11-23T20:29:51.767784+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -348,6 +348,14 @@
    "checked_at": "2026-10-05T17:21:17.527206+00:00"
   },
   {
+   "id": "cal-v16GxkbCbT7bTxk",
+   "name": "Higgsfield AI",
+   "ok": true,
+   "total": 8,
+   "upcoming": 7,
+   "checked_at": "2026-11-23T20:29:44.261339+00:00"
+  },
+  {
    "id": "cal-mmnYmrfNgxGdvQb",
    "name": "Mistral AI Events",
    "ok": true,
@@ -532,6 +540,14 @@
    "checked_at": "2026-11-05T16:44:21.963078+00:00"
   },
   {
+   "id": "cal-0neuOewMEmpSQVc",
+   "name": "Personal",
+   "ok": true,
+   "total": 7,
+   "upcoming": 5,
+   "checked_at": "2026-11-23T20:29:36.764058+00:00"
+  },
+  {
    "id": "cal-H1FY60pnZtchaf4",
    "name": "Corgi NYC",
    "ok": true,
@@ -682,6 +698,14 @@
    "total": 120,
    "upcoming": 4,
    "checked_at": "2026-11-19T17:36:11.274831+00:00"
+  },
+  {
+   "id": "cal-bwxXhCsVdVffTmW",
+   "name": "ElevenLabs",
+   "ok": true,
+   "total": 149,
+   "upcoming": 4,
+   "checked_at": "2026-11-23T20:29:50.441245+00:00"
   },
   {
    "id": "cal-dTkKDhuPFba9zmb",
@@ -922,6 +946,14 @@
    "total": 16,
    "upcoming": 3,
    "checked_at": "2026-11-09T19:03:38.130051+00:00"
+  },
+  {
+   "id": "cal-2ARnYOB5PIHpxbh",
+   "name": "VCC Club",
+   "ok": true,
+   "total": 30,
+   "upcoming": 3,
+   "checked_at": "2026-11-23T20:29:35.273407+00:00"
   },
   {
    "id": "cal-8x55tE86VtAD07z",
@@ -1362,6 +1394,14 @@
    "total": 12,
    "upcoming": 2,
    "checked_at": "2026-11-19T17:36:15.391545+00:00"
+  },
+  {
+   "id": "cal-qeFdfuQasKizGRs",
+   "name": "Protege",
+   "ok": true,
+   "total": 9,
+   "upcoming": 2,
+   "checked_at": "2026-11-23T20:29:51.767761+00:00"
   },
   {
    "id": "cal-7vvbL2BqUXZ74hj",
@@ -3082,6 +3122,70 @@
    "total": 2,
    "upcoming": 1,
    "checked_at": "2026-11-19T17:36:13.803109+00:00"
+  },
+  {
+   "id": "cal-tvsAmdeHDeDIXW2",
+   "name": "Personal",
+   "ok": true,
+   "total": 2,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:33.772762+00:00"
+  },
+  {
+   "id": "cal-NEmlu7dX3oYwrKm",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:38.240177+00:00"
+  },
+  {
+   "id": "cal-kg8nCyYpt6LUZ89",
+   "name": "Context Engineering Guild of New York City",
+   "ok": true,
+   "total": 10,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:39.747464+00:00"
+  },
+  {
+   "id": "cal-9ATodvwyPqnvzgN",
+   "name": "New York Wellness Events 2026 Curated By The Mama Green",
+   "ok": true,
+   "total": 9,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:41.264165+00:00"
+  },
+  {
+   "id": "cal-J6PuCj3NwrrilqG",
+   "name": "Your Best Friend",
+   "ok": true,
+   "total": 28,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:42.904191+00:00"
+  },
+  {
+   "id": "cal-k16J0uoB4bUd2M9",
+   "name": "Databento",
+   "ok": true,
+   "total": 9,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:45.767423+00:00"
+  },
+  {
+   "id": "cal-ylEVXB43QepH08w",
+   "name": "Personal",
+   "ok": true,
+   "total": 4,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:47.243479+00:00"
+  },
+  {
+   "id": "cal-4BmpF2n63Zr5MKg",
+   "name": "UnHerd",
+   "ok": true,
+   "total": 3,
+   "upcoming": 1,
+   "checked_at": "2026-11-23T20:29:48.743148+00:00"
   }
  ]
 }

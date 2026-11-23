@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-19T17:36:15.477515+00:00",
+ "generated_at": "2026-11-23T20:29:51.869933+00:00",
  "city": "nyc",
  "probed": 120,
- "requests": 546,
+ "requests": 543,
  "venues": [
   {
    "host": "www.frauncestavernmuseum.org",
@@ -39,7 +39,7 @@
    "name": "Sugar Hill Children's Museum of Art and Story Telling",
    "origin": "https://www.sugarhillmuseum.org",
    "collections": [],
-   "tried": 6
+   "tried": 3
   },
   {
    "host": "onderdonkhouse.org",
@@ -93,8 +93,8 @@
      "url": "https://www.bownehouse.org/events?format=json",
      "title": "Events",
      "collection_id": "5e2a09271c8a125886405f41",
-     "upcoming": 6,
-     "past": 15
+     "upcoming": 4,
+     "past": 17
     }
    ],
    "tried": 4
@@ -187,7 +187,7 @@
      "url": "https://440gallery.com/new-events?format=json",
      "title": "Events",
      "collection_id": "554d4368e4b09c38677f8e44",
-     "upcoming": 7,
+     "upcoming": 3,
      "past": 30
     }
    ],
@@ -311,7 +311,7 @@
      "title": "Exhibitions",
      "collection_id": "5cb138766e9a7f103498f049",
      "upcoming": 0,
-     "past": 17
+     "past": 18
     }
    ],
    "tried": 4
@@ -439,8 +439,8 @@
      "url": "https://www.thepaintingcenter.org/new-events-1?format=json",
      "title": "New Events",
      "collection_id": "63ee8e245c21c533a4d31f6e",
-     "upcoming": 3,
-     "past": 10
+     "upcoming": 2,
+     "past": 11
     }
    ],
    "tried": 5
@@ -504,7 +504,7 @@
      "url": "https://www.smushgallery.com/calendar?format=json",
      "title": "Calendar",
      "collection_id": "62f676504a05270d48a93255",
-     "upcoming": 19,
+     "upcoming": 14,
      "past": 30
     }
    ],
@@ -636,7 +636,15 @@
    "host": "www.thetanknyc.org",
    "name": "The Tank",
    "origin": "https://thetanknyc.org",
-   "collections": [],
+   "collections": [
+    {
+     "url": "https://thetanknyc.org/calendar-1?format=json",
+     "title": "Tank Calendar",
+     "collection_id": "5aff0157575d1f7fda332aee",
+     "upcoming": 30,
+     "past": 30
+    }
+   ],
    "tried": 6
   },
   {
@@ -690,7 +698,7 @@
      "url": "https://www.filmnoircinema.com/program?format=json",
      "title": "Program",
      "collection_id": "58dc341f2e69cf921e5f1b56",
-     "upcoming": 8,
+     "upcoming": 10,
      "past": 30
     }
    ],
@@ -974,7 +982,7 @@
      "url": "https://www.os-nyc.com/events?format=json",
      "title": "EVENTS",
      "collection_id": "6220ef3adf8c823174cf8c63",
-     "upcoming": 6,
+     "upcoming": 5,
      "past": 30
     }
    ],
