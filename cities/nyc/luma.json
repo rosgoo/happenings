@@ -1,7 +1,7 @@
 {
  "city": "nyc",
  "place": "nyc",
- "generated_at": "2026-11-23T20:29:51.767784+00:00",
+ "generated_at": "2026-11-26T18:36:20.645909+00:00",
  "calendars": [
   {
    "id": "cal-61Cv6COs4g9GKw7",
@@ -250,6 +250,14 @@
    "total": 56,
    "upcoming": 9,
    "checked_at": "2026-10-19T15:49:57.631320+00:00"
+  },
+  {
+   "id": "cal-BzXVFN3bX7zNdDL",
+   "name": "Nea",
+   "ok": true,
+   "total": 28,
+   "upcoming": 9,
+   "checked_at": "2026-11-26T18:36:20.645887+00:00"
   },
   {
    "id": "cal-kcWhMbIs2X0Y2Xb",
@@ -3186,6 +3194,22 @@
    "total": 3,
    "upcoming": 1,
    "checked_at": "2026-11-23T20:29:48.743148+00:00"
+  },
+  {
+   "id": "cal-8Bhv0prpBTlofeS",
+   "name": "Personal",
+   "ok": true,
+   "total": 1,
+   "upcoming": 1,
+   "checked_at": "2026-11-26T18:36:17.846248+00:00"
+  },
+  {
+   "id": "cal-6cetfrzqEENHdBJ",
+   "name": "831 Stories",
+   "ok": true,
+   "total": 25,
+   "upcoming": 1,
+   "checked_at": "2026-11-26T18:36:19.244049+00:00"
   }
  ]
 }
